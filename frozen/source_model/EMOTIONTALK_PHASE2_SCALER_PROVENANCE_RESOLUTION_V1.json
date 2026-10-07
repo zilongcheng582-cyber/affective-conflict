@@ -1,0 +1,146 @@
+{
+  "artifact_name": "EMOTIONTALK_PHASE2_SCALER_PROVENANCE_RESOLUTION_V1",
+  "status": "RESOLVED",
+  "scope": "B1 EmotionTalk Phase2 scaler provenance resolution only",
+  "authoritative_script": {
+    "path": "/root/autodl-tmp/affective-conflict/audit/EMOTIONTALK_CONTROLLED_V1/phase2_scientific_analysis_v1/run_emotiontalk_phase2_scientific_analysis_v1.py",
+    "sha256": "9e17702a2106a8872218d6fdecb9170cc22b4643784f07c9cb917417213af4e6",
+    "relevant_lines": {
+      "taxonomy": "50-56",
+      "phase1_merge_and_features": "115-178",
+      "m3a_population_filter": "237-244",
+      "scaler_fit": "245-250",
+      "diagnostic_population": "394-409"
+    }
+  },
+  "authoritative_inputs": [
+    {
+      "role": "Phase2 authoritative input JSONL",
+      "path": "/root/autodl-tmp/affective-conflict/audit/EMOTIONTALK_CONTROLLED_V1/phase2_pairwise_full_v1_attempt_002/emotiontalk_phase2_pairwise_full_v1_attempt_002.jsonl",
+      "sha256": "677f96d9cd8650c08486bedde14457d62a2e930d3c0b7560983d6d1c456b1381"
+    },
+    {
+      "role": "Phase1 feature source used by executed script",
+      "path": "/root/autodl-tmp/affective-conflict/audit/EMOTIONTALK_CONTROLLED_V1/phase1_competence_full_v1_2/EMOTIONTALK_PHASE1_SAMPLE_TABLE_V1_2.csv",
+      "sha256": "3cc270054de466387e874be0dcb180dad12250e348c332a98fffba7d1c647042"
+    },
+    {
+      "role": "Phase1 merged output cross-check",
+      "path": "/root/autodl-tmp/affective-conflict/audit/EMOTIONTALK_CONTROLLED_V1/phase2_scientific_analysis_v1/06_phase1_merged_analysis_table.csv",
+      "sha256": "12564ec77c869036324e8a9824af90e92130286576ad52af0c3cd321bd33f5c6"
+    }
+  ],
+  "lineage_findings": {
+    "independent_staging_copy_found": false,
+    "unique_executed_source_found": true,
+    "feature_construction": "delta = modality1 - modality2 for source_label_probability, normalized_entropy, and top1_top2_margin",
+    "fit_filter": "source_relation == CONFLICT and taxonomy in {SIDE_MODALITY_1, SIDE_MODALITY_2}",
+    "taxonomy_basis": "parser_status == OK and parsed_label equals one of the two source-side evidence labels",
+    "fit_unit": "order record",
+    "scaling_method": "center by arithmetic mean and divide by NumPy ndarray.std()",
+    "scaling_ddof": 0,
+    "scaling_population": "the same 663 M3a order records used after the conflict plus resolved SIDE outcome filter; no pair-utterance deduplication for scaler fitting"
+  },
+  "population_resolution": {
+    "raw_phase2_records": 2132,
+    "raw_pair_utterance_keys": 1066,
+    "raw_unique_utterance_ids": 706,
+    "conflict_records_before_side_filter": 696,
+    "conflict_pair_utterance_keys_before_side_filter": 348,
+    "conflict_unique_utterance_ids_before_side_filter": 275,
+    "m3a_actual_fit_rows": 663,
+    "m3a_actual_fit_pair_utterance_keys": 346,
+    "m3a_actual_fit_utterance_ids": 274,
+    "m3a_fit_rows_by_pair": {
+      "AT": 116,
+      "AV": 284,
+      "VT": 263
+    },
+    "m3a_fit_utterance_ids_by_pair": {
+      "AT": 61,
+      "AV": 146,
+      "VT": 139
+    },
+    "excluded_after_conflict_plus_side_filter": {
+      "records": 33,
+      "pair_utterance_keys": 2,
+      "unique_utterance_ids": 1
+    },
+    "steps": [
+      "2132 raw Phase2 records -> 1066 complete pair-utterance keys",
+      "1066 pair-utterance keys -> 696 conflict order records / 348 conflict pair-utterance keys",
+      "696 conflict order records -> 663 SIDE outcome order records / 346 pair-utterance keys / 274 unique utterance IDs"
+    ]
+  },
+  "fit_time_scalers": {
+    "source_probability": {
+      "feature": "delta_source_label_probability",
+      "n": 663,
+      "mean": -0.02103924985500564,
+      "sd": 0.25324466896447845
+    },
+    "normalized_entropy": {
+      "feature": "delta_normalized_entropy",
+      "n": 663,
+      "mean": 0.010404252684427913,
+      "sd": 0.24060545308601983
+    },
+    "top1_top2_margin": {
+      "feature": "delta_top1_top2_margin",
+      "n": 663,
+      "mean": -0.020377329894437538,
+      "sd": 0.3055869765131503
+    }
+  },
+  "diagnostic_07_all_pairs": {
+    "path": "/root/autodl-tmp/affective-conflict/audit/EMOTIONTALK_CONTROLLED_V1/phase2_scientific_analysis_v1/07_feature_diagnostics.csv",
+    "sha256": "e994d0c90fdd4f6da917753ded2c93afccb4f11463d0e7d3a02ef310f7e089b9",
+    "population": "one row per unique pair-utterance key from the M3a SIDE-filtered records",
+    "n": 346,
+    "source_probability": {
+      "mean": -0.020756470381645534,
+      "sd": 0.24967130446121275
+    },
+    "normalized_entropy": {
+      "mean": 0.010677101290381895,
+      "sd": 0.2372161619046711
+    },
+    "top1_top2_margin": {
+      "mean": -0.018670105929121515,
+      "sd": 0.3009332519728305
+    }
+  },
+  "summary_scalers": {
+    "path": "/root/autodl-tmp/affective-conflict/audit/EMOTIONTALK_CONTROLLED_V1/phase2_scientific_analysis_v1/EMOTIONTALK_PHASE2_SCIENTIFIC_ANALYSIS_V1_SUMMARY.json",
+    "sha256": "e2d58be3cdfcf0089bf18edf6c080ad997c98405843b045cbbe94926dcaf1be9",
+    "source_probability": {
+      "mean": -0.02103924985500564,
+      "sd": 0.25324466896447845
+    },
+    "normalized_entropy": {
+      "mean": 0.010404252684427913,
+      "sd": 0.24060545308601983
+    },
+    "top1_top2_margin": {
+      "mean": -0.020377329894437538,
+      "sd": 0.3055869765131503
+    }
+  },
+  "replay": {
+    "performed": true,
+    "mode": "read-only population reconstruction and mean/std calculation; no model fitting",
+    "replay_match_summary": true,
+    "replay_match_07": false,
+    "replay_match_07_interpretation": "Expected false: 07 is a deduplicated 346 pair-utterance diagnostic population, while scaler fitting uses 663 order records.",
+    "scientific_result_changed": false
+  },
+  "guardrails": {
+    "model_refit_performed": false,
+    "m3a_refit_performed": false,
+    "qwen_inference_performed": false,
+    "model_generate_performed": false,
+    "gpu_used": false,
+    "phase3_or_transfer_work_performed": false
+  },
+  "next_action": "B2"
+}

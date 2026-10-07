@@ -1,0 +1,38 @@
+{
+  "protocol_id": "CA_MER_DERIVED_CONTROLLED_AV_ARBITRATION",
+  "version": "1.0",
+  "candidate_interface": "FULL_SOURCE_LOCAL_ONTOLOGY",
+  "candidate_source": "Sorted union of official audio_pseudo_label and video_pseudo_label values from the three pinned CA-MER annotation files; no semantic merging.",
+  "candidates_placeholder": "{{CANDIDATES_JSON_ARRAY}}",
+  "output_contract": {
+    "format": "JSON",
+    "schema": {"label": "one exact candidate string"},
+    "extra_keys_allowed": false,
+    "free_text_allowed": false
+  },
+  "shared_instruction": "Select exactly one label from the candidate list that best describes the emotion conveyed by the provided input. The candidate list is: {{CANDIDATES_JSON_ARRAY}}. Return only a JSON object with the single key label, for example {\"label\":\"neutral\"}. Do not include explanation or any other keys.",
+  "arms": {
+    "A_ONLY": {
+      "payload_order": ["audio", "instruction"],
+      "media_contract": "One separately derived mono 16 kHz audio file; no video, subtitle, transcript, source label, reasoning, sample metadata, or other textual payload."
+    },
+    "V_ONLY": {
+      "payload_order": ["silent_video", "instruction"],
+      "media_contract": "One separately derived video with exactly one video stream and zero audio streams; no source audio, subtitle, transcript, source label, reasoning, sample metadata, or other textual payload."
+    },
+    "A_THEN_V": {
+      "payload_order": ["audio", "silent_video", "instruction"],
+      "media_contract": "Separate mono 16 kHz audio followed by silent video. The video has zero audio streams. No modality-named text headings or source metadata."
+    },
+    "V_THEN_A": {
+      "payload_order": ["silent_video", "audio", "instruction"],
+      "media_contract": "Silent video followed by separate mono 16 kHz audio. The video has zero audio streams. No modality-named text headings or source metadata."
+    }
+  },
+  "rendering_rules": [
+    "Use the exact same candidate set and per-sample candidate ordering in all four arms.",
+    "Place the shared instruction last in every arm.",
+    "Do not add modality-named headings, source pseudo-labels, final_label, emotionllama_pseudo_label, reasoning, subtitle, transcript, or analysis text.",
+    "Use no model-generated explanation; preserve the exact raw response for later parsing."
+  ]
+}

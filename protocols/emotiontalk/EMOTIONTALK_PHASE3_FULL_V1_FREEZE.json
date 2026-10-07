@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-09-28T15:32:44.436486+00:00",
+  "status": "FROZEN",
+  "authoritative_full_path": "/root/autodl-tmp/affective-conflict/audit/EMOTIONTALK_CONTROLLED_V1/phase3_trimodal_v1/emotiontalk_phase3_full_v1.jsonl",
+  "authoritative_full_sha256": "4d47052a8de4625b3e25f105f2c3be94eea943752a58accf5683e520cf0fbbc1",
+  "rows": 402,
+  "unique_utterances": 67,
+  "unique_primary_keys": 402,
+  "generation_success": 402,
+  "parser_status_OK": 402,
+  "phase3_primary_plan_sha256": "14fdc30700bbdebdf97f9bc21e15a98f07e48a00038c8976579431d5163e00ab",
+  "composition_rule_sha256": "fe1623e42402d32f2ebebda8c5d8b1feaad69a852a0391e7ad2c2030dfd4d3b6",
+  "pairwise_model_freeze_sha256": "2f5e5e639ce22d79452aa54ca599fd0e14bc525cf874042b04065edadeed5019",
+  "gpu_gate_attempt_003_output_sha256": "2528969c7b93262a4ed8f8f1224f7b55ad3c2eb027414885d138a558257e7999",
+  "gpu_gate_attempt_003_report_sha256": "27322644b099edbc4045102796a6e1d661a1af28ab9831961aa3681f457f3a7f",
+  "gpu_gate_attempt_003_provenance_sha256": "bae6cb82367f9778fcf5c8cdd1c5554341903b48e8107a7b6a00db94fc82c727",
+  "runner_v1_3_sha256": "43b83db5ca2fb6738ebdee7ae23f8c8674168f420b4ce442ae37be3af9d61407",
+  "scientific_protocol_changed": false
+}

@@ -1,0 +1,32 @@
+{
+  "status": "FROZEN_BEFORE_TRI_MODAL_OUTPUT",
+  "version": "1.1",
+  "edge_construction": "Conflict-only directed edge for a source-side choice; OTHER/PARSE_FAIL is UNRESOLVED. A source-label-consistent pair has relation SAME_LABEL and does not create a directed edge.",
+  "stable_graph": "Both reciprocal pair orders select the same side; opposite choices are ORDER_SENSITIVE and remain order-specific.",
+  "stable_prediction": "TWO_VS_ONE: the two cross-group conflict edges must each be stable and agree on the shared-versus-minority winner; the shared/shared pair is SAME_LABEL. ALL_DIFFERENT: all three conflict edges must be stable and form a transitive total order with a unique top label. Order-sensitive, cyclic, or unresolved cases yield UNRESOLVED.",
+  "order_conditioned_prediction": "For each exact tri-modal order, use only pairwise outputs matching each conflict pair relative order. TWO_VS_ONE requires both cross-group conflict edges to agree; ALL_DIFFERENT requires all three edges to form a transitive tournament with a unique Condorcet winner. Any disagreement, cycle, or unresolved edge yields UNRESOLVED.",
+  "two_vs_one_rule": "The two induced conflict edges between the shared-label group and minority-label group must both favor the same group; the consistent shared/shared pair is SAME_LABEL. Disagreement, unresolved edge, or cycle yields UNRESOLVED.",
+  "all_different_rule": "Unique Condorcet winner if one label beats both alternatives and the remaining edge is consistent; directed cycle or any unresolved edge yields UNRESOLVED.",
+  "graph_categories": [
+    "TRANSITIVE_TOTAL_ORDER",
+    "CYCLIC",
+    "PARTIALLY_UNRESOLVED",
+    "ORDER_SENSITIVE_GRAPH"
+  ],
+  "metrics": [
+    "prediction coverage",
+    "resolved accuracy among resolved predictions",
+    "overall eligible correct rate counting unresolved as not resolved/correct",
+    "cycle rate",
+    "unresolved rate"
+  ],
+  "six_tri_modal_orders": [
+    "T>A>V",
+    "T>V>A",
+    "A>T>V",
+    "A>V>T",
+    "V>T>A",
+    "V>A>T"
+  ],
+  "post_hoc_rule_change": "FORBIDDEN"
+}

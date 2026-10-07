@@ -1,0 +1,2 @@
+majority_N,majority_accuracy,minority_N,minority_accuracy,accuracy_gap_majority_minus_minority,cluster_unit,bootstrap_replicates,seed,CI95_low,CI95_high,bootstrap_two_sided_p
+199,0.9849246231155779,95,0.7578947368421053,0.22702988627347265,utterance_id,10000,42,0.10661594147968473,0.3728077648596832,0.0

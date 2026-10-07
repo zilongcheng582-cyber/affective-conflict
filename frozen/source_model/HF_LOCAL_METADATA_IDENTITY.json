@@ -1,0 +1,191 @@
+{
+  "cache_exclusion": "No locks, incomplete downloads, temporary cache bytes, README, license or .gitattributes participate in inference identity.",
+  "commit_candidates": [
+    "ae9e1690543ffd5c0221dc27f79834d0294cba00"
+  ],
+  "immutable_commit": "ae9e1690543ffd5c0221dc27f79834d0294cba00",
+  "inference_relevant_files": 17,
+  "lfs_etag_sha256_checks": {
+    "model-00001-of-00005.safetensors": true,
+    "model-00002-of-00005.safetensors": true,
+    "model-00003-of-00005.safetensors": true,
+    "model-00004-of-00005.safetensors": true,
+    "model-00005-of-00005.safetensors": true,
+    "spk_dict.pt": true,
+    "tokenizer.json": true
+  },
+  "metadata_records": [
+    {
+      "SHA256": "910f044b30e92e74e45f00b19b6a129cd34c4e2185ddd3e1723f62e87a2eb562",
+      "commit_hash": "ae9e1690543ffd5c0221dc27f79834d0294cba00",
+      "etag": "52373fe24473b1aa44333d318f578ae6bf04b49b",
+      "file": ".gitattributes",
+      "source_path": "/root/autodl-tmp/affective-conflict/models/Qwen2.5-Omni-7B/.cache/huggingface/download/.gitattributes.metadata",
+      "timestamp": "1789187408.2658703"
+    },
+    {
+      "SHA256": "6caa82e0c63d9e7e75fc17c4764431f9bf5199900b7d1f9cec2692f1eed72e7b",
+      "commit_hash": "ae9e1690543ffd5c0221dc27f79834d0294cba00",
+      "etag": "9b1dd49441cd594560125cc7d79e886d0816cd8f",
+      "file": "LICENSE",
+      "source_path": "/root/autodl-tmp/affective-conflict/models/Qwen2.5-Omni-7B/.cache/huggingface/download/LICENSE.metadata",
+      "timestamp": "1789187408.6609287"
+    },
+    {
+      "SHA256": "4ae619b712f82dbbaa68f6beaf814f5f414fbef27ded3b3bd599cdba4a8c28b4",
+      "commit_hash": "ae9e1690543ffd5c0221dc27f79834d0294cba00",
+      "etag": "9eb4a8e90deb0e208a9db6fdf1ea2e4c6dbf518f",
+      "file": "README.md",
+      "source_path": "/root/autodl-tmp/affective-conflict/models/Qwen2.5-Omni-7B/.cache/huggingface/download/README.md.metadata",
+      "timestamp": "1789187408.802161"
+    },
+    {
+      "SHA256": "f845a78c296fa76ede23bee4335936e45938c0dc8262f1c4136704a4a27432c5",
+      "commit_hash": "ae9e1690543ffd5c0221dc27f79834d0294cba00",
+      "etag": "4562256351969d3b68f81fd5623ae42a9c7fbb25",
+      "file": "added_tokens.json",
+      "source_path": "/root/autodl-tmp/affective-conflict/models/Qwen2.5-Omni-7B/.cache/huggingface/download/added_tokens.json.metadata",
+      "timestamp": "1789187408.6587534"
+    },
+    {
+      "SHA256": "fe151d831f2364045a369b36fb9f2528524baa40cfbaec32b83c3f6977b085c9",
+      "commit_hash": "ae9e1690543ffd5c0221dc27f79834d0294cba00",
+      "etag": "e696060ab7ab6e20f60e4e09b18e5da4c1830000",
+      "file": "chat_template.json",
+      "source_path": "/root/autodl-tmp/affective-conflict/models/Qwen2.5-Omni-7B/.cache/huggingface/download/chat_template.json.metadata",
+      "timestamp": "1789187409.5184703"
+    },
+    {
+      "SHA256": "c8ba8aa214e1716c0a626875fd019aaca05c5115450d53b1cc27f448e5ab4de8",
+      "commit_hash": "ae9e1690543ffd5c0221dc27f79834d0294cba00",
+      "etag": "633e1b2b157826cce16b51dee904750f02a7ac9c",
+      "file": "config.json",
+      "source_path": "/root/autodl-tmp/affective-conflict/models/Qwen2.5-Omni-7B/.cache/huggingface/download/config.json.metadata",
+      "timestamp": "1789187399.651483"
+    },
+    {
+      "SHA256": "c6c7014bf1d05fc30d934ac58048eec16a6d48a0114810f762361ab5052d07fb",
+      "commit_hash": "ae9e1690543ffd5c0221dc27f79834d0294cba00",
+      "etag": "1c1ac9d737684b833c80a438e30fc3ba53e89bd4",
+      "file": "generation_config.json",
+      "source_path": "/root/autodl-tmp/affective-conflict/models/Qwen2.5-Omni-7B/.cache/huggingface/download/generation_config.json.metadata",
+      "timestamp": "1789187409.4340146"
+    },
+    {
+      "SHA256": "ffc4fe95bcbf777439b3138848450020f5903d17e76bf4a1a85d861fc4f35c3f",
+      "commit_hash": "ae9e1690543ffd5c0221dc27f79834d0294cba00",
+      "etag": "31349551d90c7606f325fe0f11bbb8bd5fa0d7c7",
+      "file": "merges.txt",
+      "source_path": "/root/autodl-tmp/affective-conflict/models/Qwen2.5-Omni-7B/.cache/huggingface/download/merges.txt.metadata",
+      "timestamp": "1789187409.3918076"
+    },
+    {
+      "SHA256": "b759a90ef4f8e23cb0433d56aad2cbf4fbf588bfa70379d5fb9943f8a210523e",
+      "commit_hash": "ae9e1690543ffd5c0221dc27f79834d0294cba00",
+      "etag": "5edb02fd7c98803239468375cc9dc1bff492865c2aa086b78f348597021d6cbc",
+      "file": "model-00001-of-00005.safetensors",
+      "source_path": "/root/autodl-tmp/affective-conflict/models/Qwen2.5-Omni-7B/.cache/huggingface/download/model-00001-of-00005.safetensors.metadata",
+      "timestamp": "1789188616.8072722"
+    },
+    {
+      "SHA256": "ec4c19c92af6628abcb785cb7c3fba10bf47404d31bc5ada865ca14b861b20e9",
+      "commit_hash": "ae9e1690543ffd5c0221dc27f79834d0294cba00",
+      "etag": "7c99b55c6e5bc63fd4b19d4dc23cdc3ddac4b0101bb3c0958cc2b5d05c2bbafe",
+      "file": "model-00002-of-00005.safetensors",
+      "source_path": "/root/autodl-tmp/affective-conflict/models/Qwen2.5-Omni-7B/.cache/huggingface/download/model-00002-of-00005.safetensors.metadata",
+      "timestamp": "1789191132.8070147"
+    },
+    {
+      "SHA256": "170eabb997d82f4030d39dd1a8fef3fe1ca6a707de57360e7e9967f297c01840",
+      "commit_hash": "ae9e1690543ffd5c0221dc27f79834d0294cba00",
+      "etag": "ad00c3ac296300db905934ed213c4077ff49b85d30c0099270c814e2c77ec812",
+      "file": "model-00003-of-00005.safetensors",
+      "source_path": "/root/autodl-tmp/affective-conflict/models/Qwen2.5-Omni-7B/.cache/huggingface/download/model-00003-of-00005.safetensors.metadata",
+      "timestamp": "1789192583.462607"
+    },
+    {
+      "SHA256": "7b8dea29d0c71906725600af0a4dac22450b68ee4b53ffea2379e1a40444232c",
+      "commit_hash": "ae9e1690543ffd5c0221dc27f79834d0294cba00",
+      "etag": "152bc7d81441eaba22547d8d96c03d32dd592ce0e0e1d0e449347a4b23a532d3",
+      "file": "model-00004-of-00005.safetensors",
+      "source_path": "/root/autodl-tmp/affective-conflict/models/Qwen2.5-Omni-7B/.cache/huggingface/download/model-00004-of-00005.safetensors.metadata",
+      "timestamp": "1789194095.9781778"
+    },
+    {
+      "SHA256": "56893491ed01cb0eac2633e648a840bb1096c8e2510c8fc3a7e0e77b20942b94",
+      "commit_hash": "ae9e1690543ffd5c0221dc27f79834d0294cba00",
+      "etag": "b8b18276481ba8cdf4fe2c98ac4c7a2da6e0d1c8a51850d162a391760cb2b81e",
+      "file": "model-00005-of-00005.safetensors",
+      "source_path": "/root/autodl-tmp/affective-conflict/models/Qwen2.5-Omni-7B/.cache/huggingface/download/model-00005-of-00005.safetensors.metadata",
+      "timestamp": "1789194849.8334692"
+    },
+    {
+      "SHA256": "a7cf9eca2c1e1f7c65256c6920af25f2510d5c5e2e3ee98c367edd44cb70441f",
+      "commit_hash": "ae9e1690543ffd5c0221dc27f79834d0294cba00",
+      "etag": "e8728f00dd29744bb14d7ed4f374c4f05c75b6c5",
+      "file": "model.safetensors.index.json",
+      "source_path": "/root/autodl-tmp/affective-conflict/models/Qwen2.5-Omni-7B/.cache/huggingface/download/model.safetensors.index.json.metadata",
+      "timestamp": "1789187410.3583632"
+    },
+    {
+      "SHA256": "069662d232be5b2f97746423b54b071bdda7ecea47d71102c2295961daa6aad1",
+      "commit_hash": "ae9e1690543ffd5c0221dc27f79834d0294cba00",
+      "etag": "63c79f1c43bce173ab13d94096dea54b3688436f",
+      "file": "preprocessor_config.json",
+      "source_path": "/root/autodl-tmp/affective-conflict/models/Qwen2.5-Omni-7B/.cache/huggingface/download/preprocessor_config.json.metadata",
+      "timestamp": "1789187410.0330203"
+    },
+    {
+      "SHA256": "e4c247d7820c62c8d586b87e495f163598fd6c9095a9866cf00da0226c0975aa",
+      "commit_hash": "ae9e1690543ffd5c0221dc27f79834d0294cba00",
+      "etag": "8c2a71eaac0f526df324364d953503def113b7a1",
+      "file": "special_tokens_map.json",
+      "source_path": "/root/autodl-tmp/affective-conflict/models/Qwen2.5-Omni-7B/.cache/huggingface/download/special_tokens_map.json.metadata",
+      "timestamp": "1789187410.04243"
+    },
+    {
+      "SHA256": "c3a3541a99c7bd0a679145e33fec92e7d737aa13565f8e3de3f410c08105385c",
+      "commit_hash": "ae9e1690543ffd5c0221dc27f79834d0294cba00",
+      "etag": "6a05609b28f5d42b7b748f0f07592545c8f1f6885b9ae8fff64baf56e86b2a18",
+      "file": "spk_dict.pt",
+      "source_path": "/root/autodl-tmp/affective-conflict/models/Qwen2.5-Omni-7B/.cache/huggingface/download/spk_dict.pt.metadata",
+      "timestamp": "1789187439.5118268"
+    },
+    {
+      "SHA256": "d0a81501ac5e892bda36554a57e49f3665be8a62c68d503fed2baa1ca978c4f4",
+      "commit_hash": "ae9e1690543ffd5c0221dc27f79834d0294cba00",
+      "etag": "8441917e39ae0244e06d704b95b3124795cec478e297f9afac39ba670d7e9d99",
+      "file": "tokenizer.json",
+      "source_path": "/root/autodl-tmp/affective-conflict/models/Qwen2.5-Omni-7B/.cache/huggingface/download/tokenizer.json.metadata",
+      "timestamp": "1789187449.6625032"
+    },
+    {
+      "SHA256": "ddd1b118f91c73f34d3ab11518c87516e334dd72bc74c13adcb30570158263bf",
+      "commit_hash": "ae9e1690543ffd5c0221dc27f79834d0294cba00",
+      "etag": "22c6d3668a32e4fe6dc09331bff96e7cc3a2290f",
+      "file": "tokenizer_config.json",
+      "source_path": "/root/autodl-tmp/affective-conflict/models/Qwen2.5-Omni-7B/.cache/huggingface/download/tokenizer_config.json.metadata",
+      "timestamp": "1789187411.8167255"
+    },
+    {
+      "SHA256": "c81d6e02095551184896b497adadc3256b87d770752d003a82baaf7cd215b092",
+      "commit_hash": "ae9e1690543ffd5c0221dc27f79834d0294cba00",
+      "etag": "4783fe10ac3adce15ac8f358ef5462739852c569",
+      "file": "vocab.json",
+      "source_path": "/root/autodl-tmp/affective-conflict/models/Qwen2.5-Omni-7B/.cache/huggingface/download/vocab.json.metadata",
+      "timestamp": "1789187414.5182626"
+    }
+  ],
+  "model_local_path": "/root/autodl-tmp/affective-conflict/models/Qwen2.5-Omni-7B",
+  "processor_files": 9,
+  "repo_id": "Qwen/Qwen2.5-Omni-7B",
+  "snapshot_unchanged_while_hashed": true,
+  "weight_index_shards_complete": true,
+  "weight_shards": [
+    "model-00001-of-00005.safetensors",
+    "model-00002-of-00005.safetensors",
+    "model-00003-of-00005.safetensors",
+    "model-00004-of-00005.safetensors",
+    "model-00005-of-00005.safetensors"
+  ]
+}

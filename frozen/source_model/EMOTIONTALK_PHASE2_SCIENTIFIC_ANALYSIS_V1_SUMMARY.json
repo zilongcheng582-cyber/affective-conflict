@@ -1,0 +1,931 @@
+{
+  "analysis_name": "EMOTIONTALK PHASE 2 SCIENTIFIC ANALYSIS V1",
+  "FINAL_ANALYSIS_STATUS": "COMPLETE_PENDING_PAIRWISE_MODEL_AND_COMPOSITION_FREEZE",
+  "PHASE3_AUTHORIZATION": "NOT_AUTHORIZED",
+  "PHASE3_USED": false,
+  "INPUT_LOCK": "PASS",
+  "authoritative_input_path": "/root/autodl-tmp/affective-conflict/audit/EMOTIONTALK_CONTROLLED_V1/phase2_pairwise_full_v1_attempt_002/emotiontalk_phase2_pairwise_full_v1_attempt_002.jsonl",
+  "authoritative_sha256": "677f96d9cd8650c08486bedde14457d62a2e930d3c0b7560983d6d1c456b1381",
+  "records": 2132,
+  "unique_primary_keys": 2132,
+  "duplicates": 0,
+  "generation_success": 2132,
+  "parser_execution": 2132,
+  "parser_status_OK": 2132,
+  "technical_missing": 0,
+  "pair_records": {
+    "AT": 794,
+    "AV": 742,
+    "VT": 596
+  },
+  "pair_complete_memberships": {
+    "AT": 397,
+    "AV": 371,
+    "VT": 298
+  },
+  "conflict_utterances": {
+    "AT": 62,
+    "AV": 146,
+    "VT": 140
+  },
+  "consistent_utterances": {
+    "AT": 335,
+    "AV": 225,
+    "VT": 158
+  },
+  "population_integrity": [
+    {
+      "pair": "AT",
+      "utterance_N": 397,
+      "record_N": 794,
+      "conflict_utterance_N": 62,
+      "conflict_record_N": 124,
+      "consistent_utterance_N": 335,
+      "consistent_record_N": 670,
+      "order_1_N": 397,
+      "order_2_N": 397,
+      "pair_complete_N": 397,
+      "technical_missing_N": 0
+    },
+    {
+      "pair": "AV",
+      "utterance_N": 371,
+      "record_N": 742,
+      "conflict_utterance_N": 146,
+      "conflict_record_N": 292,
+      "consistent_utterance_N": 225,
+      "consistent_record_N": 450,
+      "order_1_N": 371,
+      "order_2_N": 371,
+      "pair_complete_N": 371,
+      "technical_missing_N": 0
+    },
+    {
+      "pair": "VT",
+      "utterance_N": 298,
+      "record_N": 596,
+      "conflict_utterance_N": 140,
+      "conflict_record_N": 280,
+      "consistent_utterance_N": 158,
+      "consistent_record_N": 316,
+      "order_1_N": 298,
+      "order_2_N": 298,
+      "pair_complete_N": 298,
+      "technical_missing_N": 0
+    }
+  ],
+  "conflict_outcomes_by_pair_and_order": {
+    "AT": {
+      "A_THEN_T": {
+        "denominator": 62,
+        "counts": {
+          "SIDE_A": 28,
+          "SIDE_T": 28,
+          "OTHER": 6,
+          "PARSE_FAIL": 0
+        },
+        "rates_all_eligible": {
+          "SIDE_A": 0.45161290322580644,
+          "SIDE_T": 0.45161290322580644,
+          "OTHER": 0.0967741935483871,
+          "PARSE_FAIL": 0.0
+        },
+        "coverage": 0.9032258064516129
+      },
+      "T_THEN_A": {
+        "denominator": 62,
+        "counts": {
+          "SIDE_A": 29,
+          "SIDE_T": 31,
+          "OTHER": 2,
+          "PARSE_FAIL": 0
+        },
+        "rates_all_eligible": {
+          "SIDE_A": 0.46774193548387094,
+          "SIDE_T": 0.5,
+          "OTHER": 0.03225806451612903,
+          "PARSE_FAIL": 0.0
+        },
+        "coverage": 0.967741935483871
+      },
+      "POOLED_DESCRIPTIVE": {
+        "denominator": 124,
+        "counts": {
+          "SIDE_A": 57,
+          "SIDE_T": 59,
+          "OTHER": 8,
+          "PARSE_FAIL": 0
+        },
+        "rates_all_eligible": {
+          "SIDE_A": 0.4596774193548387,
+          "SIDE_T": 0.47580645161290325,
+          "OTHER": 0.06451612903225806,
+          "PARSE_FAIL": 0.0
+        },
+        "coverage": 0.9354838709677419
+      }
+    },
+    "AV": {
+      "A_THEN_V": {
+        "denominator": 146,
+        "counts": {
+          "SIDE_A": 54,
+          "SIDE_V": 86,
+          "OTHER": 6,
+          "PARSE_FAIL": 0
+        },
+        "rates_all_eligible": {
+          "SIDE_A": 0.3698630136986301,
+          "SIDE_V": 0.589041095890411,
+          "OTHER": 0.0410958904109589,
+          "PARSE_FAIL": 0.0
+        },
+        "coverage": 0.958904109589041
+      },
+      "V_THEN_A": {
+        "denominator": 146,
+        "counts": {
+          "SIDE_A": 71,
+          "SIDE_V": 73,
+          "OTHER": 2,
+          "PARSE_FAIL": 0
+        },
+        "rates_all_eligible": {
+          "SIDE_A": 0.4863013698630137,
+          "SIDE_V": 0.5,
+          "OTHER": 0.0136986301369863,
+          "PARSE_FAIL": 0.0
+        },
+        "coverage": 0.9863013698630136
+      },
+      "POOLED_DESCRIPTIVE": {
+        "denominator": 292,
+        "counts": {
+          "SIDE_A": 125,
+          "SIDE_V": 159,
+          "OTHER": 8,
+          "PARSE_FAIL": 0
+        },
+        "rates_all_eligible": {
+          "SIDE_A": 0.4280821917808219,
+          "SIDE_V": 0.5445205479452054,
+          "OTHER": 0.0273972602739726,
+          "PARSE_FAIL": 0.0
+        },
+        "coverage": 0.9726027397260274
+      }
+    },
+    "VT": {
+      "V_THEN_T": {
+        "denominator": 140,
+        "counts": {
+          "SIDE_V": 45,
+          "SIDE_T": 81,
+          "OTHER": 14,
+          "PARSE_FAIL": 0
+        },
+        "rates_all_eligible": {
+          "SIDE_V": 0.32142857142857145,
+          "SIDE_T": 0.5785714285714286,
+          "OTHER": 0.1,
+          "PARSE_FAIL": 0.0
+        },
+        "coverage": 0.9
+      },
+      "T_THEN_V": {
+        "denominator": 140,
+        "counts": {
+          "SIDE_V": 87,
+          "SIDE_T": 50,
+          "OTHER": 3,
+          "PARSE_FAIL": 0
+        },
+        "rates_all_eligible": {
+          "SIDE_V": 0.6214285714285714,
+          "SIDE_T": 0.35714285714285715,
+          "OTHER": 0.02142857142857143,
+          "PARSE_FAIL": 0.0
+        },
+        "coverage": 0.9785714285714285
+      },
+      "POOLED_DESCRIPTIVE": {
+        "denominator": 280,
+        "counts": {
+          "SIDE_V": 132,
+          "SIDE_T": 131,
+          "OTHER": 17,
+          "PARSE_FAIL": 0
+        },
+        "rates_all_eligible": {
+          "SIDE_V": 0.4714285714285714,
+          "SIDE_T": 0.46785714285714286,
+          "OTHER": 0.060714285714285714,
+          "PARSE_FAIL": 0.0
+        },
+        "coverage": 0.9392857142857143
+      }
+    }
+  },
+  "paired_order_behavior": {
+    "AT": {
+      "SWITCH_A_TO_T": 5,
+      "STABLE_T": 24,
+      "STABLE_A": 23,
+      "SWITCH_T_TO_A": 3,
+      "OTHER_INVOLVED": 7
+    },
+    "AV": {
+      "STABLE_A": 48,
+      "STABLE_V": 64,
+      "SWITCH_V_TO_A": 20,
+      "OTHER_INVOLVED": 8,
+      "SWITCH_A_TO_V": 6
+    },
+    "VT": {
+      "SWITCH_T_TO_V": 40,
+      "STABLE_T": 39,
+      "STABLE_V": 40,
+      "OTHER_INVOLVED": 16,
+      "SWITCH_V_TO_T": 5
+    }
+  },
+  "consistent_controls": {
+    "AT": {
+      "eligible_records": 670,
+      "shared_label_records": 649,
+      "shared_label_preservation_rate": 0.9686567164179104,
+      "paired_categories": {
+        "PRESERVED_BOTH": 318,
+        "PRESERVED_ONLY_ORDER1": 7,
+        "FAILED_BOTH": 4,
+        "PRESERVED_ONLY_ORDER2": 6
+      }
+    },
+    "AV": {
+      "eligible_records": 450,
+      "shared_label_records": 448,
+      "shared_label_preservation_rate": 0.9955555555555555,
+      "paired_categories": {
+        "PRESERVED_BOTH": 223,
+        "PRESERVED_ONLY_ORDER1": 1,
+        "PRESERVED_ONLY_ORDER2": 1
+      }
+    },
+    "VT": {
+      "eligible_records": 316,
+      "shared_label_records": 309,
+      "shared_label_preservation_rate": 0.9778481012658228,
+      "paired_categories": {
+        "PRESERVED_BOTH": 152,
+        "PRESERVED_ONLY_ORDER2": 4,
+        "FAILED_BOTH": 1,
+        "PRESERVED_ONLY_ORDER1": 1
+      }
+    }
+  },
+  "phase1_feature_merge": {
+    "rows": 1066,
+    "expected_rows": 1066,
+    "missing_feature_rows": 0,
+    "path": "/root/autodl-tmp/affective-conflict/audit/EMOTIONTALK_CONTROLLED_V1/phase1_competence_full_v1_2/EMOTIONTALK_PHASE1_SAMPLE_TABLE_V1_2.csv",
+    "sha256": "3cc270054de466387e874be0dcb180dad12250e348c332a98fffba7d1c647042",
+    "provenance_sha256": "552396cdf4a18f6825141e522928b562a1f269f68c7cc3ed8df5503b5be16e76",
+    "feature_mapping": {
+      "entropy": "normalized_entropy",
+      "margin": "top1_top2_margin",
+      "source_prob": "source_label_probability"
+    },
+    "readability_definition": "greedy parsed label == source-side evidence label"
+  },
+  "delta_sign_convention": {
+    "AT": "A-T",
+    "AV": "A-V",
+    "VT": "V-T",
+    "all_deltas": "modality1 minus modality2"
+  },
+  "model_population": {
+    "definition": "conflict plus resolved SIDE outcomes only",
+    "records": 663,
+    "utterance_id_clusters": 274,
+    "coverage_by_pair": {
+      "AT": 0.9354838709677419,
+      "AV": 0.9726027397260274,
+      "VT": 0.9392857142857143
+    },
+    "excluded_OTHER_by_pair": {
+      "AT": 8,
+      "AV": 8,
+      "VT": 17
+    },
+    "excluded_PARSE_FAIL_by_pair": {
+      "AT": 0,
+      "AV": 0,
+      "VT": 0
+    }
+  },
+  "models": {
+    "M0": {
+      "features": [],
+      "converged": true,
+      "log_likelihood": -457.4973363753098,
+      "AIC": 920.9946727506197,
+      "BIC": 934.4849977211773,
+      "grouped_CV": {
+        "log_loss": 0.6972389204736985,
+        "balanced_accuracy": 0.46470808314930734,
+        "AUROC": 0.4721588524081543,
+        "Brier_score": 0.2520361081440249,
+        "grouped_CV_folds": 5,
+        "grouped_CV_successful_folds": 5,
+        "unit": "utterance_id"
+      },
+      "coefficients": {
+        "intercept_AT": {
+          "beta": -0.034486176071169515,
+          "se": 0.2409759888164849,
+          "p": 0.8862029720714343,
+          "lo": -0.5067991141514799,
+          "hi": 0.43782676200914095
+        },
+        "pair_AV": {
+          "beta": -0.20610428884676107,
+          "se": 0.2843742696181048,
+          "p": 0.4685967044503646,
+          "lo": -0.7634778572982466,
+          "hi": 0.35126927960472437
+        },
+        "pair_VT": {
+          "beta": 0.04209077545638878,
+          "se": 0.2607585568579087,
+          "p": 0.8717652455201355,
+          "lo": -0.46899599598511227,
+          "hi": 0.5531775468978898
+        }
+      }
+    },
+    "M1a": {
+      "features": [
+        "src"
+      ],
+      "converged": true,
+      "log_likelihood": -367.2726129733214,
+      "AIC": 742.5452259466427,
+      "BIC": 760.5323259073862,
+      "grouped_CV": {
+        "log_loss": 0.557686807056768,
+        "balanced_accuracy": 0.6924014016388955,
+        "AUROC": 0.7760434727063676,
+        "Brier_score": 0.19147636944701668,
+        "grouped_CV_folds": 5,
+        "grouped_CV_successful_folds": 5,
+        "unit": "utterance_id"
+      },
+      "coefficients": {
+        "intercept_AT": {
+          "beta": 0.02971258484631756,
+          "se": 0.265502189459632,
+          "p": 0.9108940662758704,
+          "lo": -0.49067170649456116,
+          "hi": 0.5500968761871963
+        },
+        "pair_AV": {
+          "beta": -0.062232183368489374,
+          "se": 0.31524582240864013,
+          "p": 0.8435079319908032,
+          "lo": -0.680113995289424,
+          "hi": 0.5556496285524453
+        },
+        "pair_VT": {
+          "beta": -0.3919002987488441,
+          "se": 0.28877707054635204,
+          "p": 0.1747484083997185,
+          "lo": -0.957903357019694,
+          "hi": 0.17410275952200588
+        },
+        "delta_source_label_probability_per_SD": {
+          "beta": 1.334018012395325,
+          "se": 0.12816510586844068,
+          "p": 2.265527074414123e-25,
+          "lo": 1.0828144048931811,
+          "hi": 1.5852216198974687
+        }
+      }
+    },
+    "M1b": {
+      "features": [
+        "mar"
+      ],
+      "converged": true,
+      "log_likelihood": -378.2035554938799,
+      "AIC": 764.4071109877598,
+      "BIC": 782.3942109485032,
+      "grouped_CV": {
+        "log_loss": 0.5747549700844234,
+        "balanced_accuracy": 0.6678818462212326,
+        "AUROC": 0.754215866990309,
+        "Brier_score": 0.19905895144733626,
+        "grouped_CV_folds": 5,
+        "grouped_CV_successful_folds": 5,
+        "unit": "utterance_id"
+      },
+      "coefficients": {
+        "intercept_AT": {
+          "beta": 0.025325735745948583,
+          "se": 0.25175711721204,
+          "p": 0.9198712453472506,
+          "lo": -0.46811821398964987,
+          "hi": 0.518769685481547
+        },
+        "pair_AV": {
+          "beta": -0.016128564116717047,
+          "se": 0.2998611895789492,
+          "p": 0.957105052182468,
+          "lo": -0.6038564956914575,
+          "hi": 0.5715993674580234
+        },
+        "pair_VT": {
+          "beta": -0.41616148522014546,
+          "se": 0.2785786176352039,
+          "p": 0.13520843200192875,
+          "lo": -0.9621755757851451,
+          "hi": 0.12985260534485427
+        },
+        "delta_top1_top2_margin_per_SD": {
+          "beta": 1.2364476782928535,
+          "se": 0.12342349517789594,
+          "p": 1.2714044747730272e-23,
+          "lo": 0.9945376277441775,
+          "hi": 1.4783577288415295
+        }
+      }
+    },
+    "M2a": {
+      "features": [
+        "src",
+        "ent"
+      ],
+      "converged": true,
+      "log_likelihood": -354.6711223565336,
+      "AIC": 719.3422447130672,
+      "BIC": 741.8261196639966,
+      "grouped_CV": {
+        "log_loss": 0.5423897901900573,
+        "balanced_accuracy": 0.7057744602412717,
+        "AUROC": 0.7915107769240597,
+        "Brier_score": 0.18508861311310362,
+        "grouped_CV_folds": 5,
+        "grouped_CV_successful_folds": 5,
+        "unit": "utterance_id"
+      },
+      "coefficients": {
+        "intercept_AT": {
+          "beta": 0.08232141478551236,
+          "se": 0.2708059363957557,
+          "p": 0.7611379905356399,
+          "lo": -0.4484582205501687,
+          "hi": 0.6131010501211934
+        },
+        "pair_AV": {
+          "beta": -0.2994885684429195,
+          "se": 0.3201260826905685,
+          "p": 0.3495135981419274,
+          "lo": -0.9269356905164338,
+          "hi": 0.3279585536305948
+        },
+        "pair_VT": {
+          "beta": -0.3043657528925767,
+          "se": 0.29395476707435864,
+          "p": 0.30047422605062735,
+          "lo": -0.8805170963583197,
+          "hi": 0.2717855905731662
+        },
+        "delta_source_label_probability_per_SD": {
+          "beta": -0.10803314744998456,
+          "se": 0.32651322738262106,
+          "p": 0.7407433406294884,
+          "lo": -0.7479990731199219,
+          "hi": 0.5319327782199527
+        },
+        "delta_normalized_entropy_per_SD": {
+          "beta": -1.60084840197746,
+          "se": 0.37072289381805884,
+          "p": 1.573206910012762e-05,
+          "lo": -2.3274652738608554,
+          "hi": -0.8742315300940647
+        }
+      }
+    },
+    "M2b": {
+      "features": [
+        "mar",
+        "ent"
+      ],
+      "converged": true,
+      "log_likelihood": -354.54697322255174,
+      "AIC": 719.0939464451035,
+      "BIC": 741.5778213960328,
+      "grouped_CV": {
+        "log_loss": 0.5427281374580051,
+        "balanced_accuracy": 0.7060938441041739,
+        "AUROC": 0.7908902597047068,
+        "Brier_score": 0.1853615481295165,
+        "grouped_CV_folds": 5,
+        "grouped_CV_successful_folds": 5,
+        "unit": "utterance_id"
+      },
+      "coefficients": {
+        "intercept_AT": {
+          "beta": 0.07497727099113212,
+          "se": 0.2687375735386245,
+          "p": 0.7802462869450232,
+          "lo": -0.4517483731445719,
+          "hi": 0.6017029151268362
+        },
+        "pair_AV": {
+          "beta": -0.2571816269983997,
+          "se": 0.318127851388216,
+          "p": 0.41884755919084615,
+          "lo": -0.880712215719303,
+          "hi": 0.3663489617225036
+        },
+        "pair_VT": {
+          "beta": -0.3318840324326918,
+          "se": 0.29093807659204474,
+          "p": 0.25397909289460097,
+          "lo": -0.9021226625530995,
+          "hi": 0.23835459768771583
+        },
+        "delta_top1_top2_margin_per_SD": {
+          "beta": 0.12251307324872855,
+          "se": 0.22256895130670354,
+          "p": 0.5820107807893333,
+          "lo": -0.31372207131241037,
+          "hi": 0.5587482178098675
+        },
+        "delta_normalized_entropy_per_SD": {
+          "beta": -1.3932349663198222,
+          "se": 0.2541222682459098,
+          "p": 4.192671464262839e-08,
+          "lo": -1.8913146120818054,
+          "hi": -0.8951553205578391
+        }
+      }
+    },
+    "M3a": {
+      "features": [
+        "src",
+        "ent",
+        "ord"
+      ],
+      "converged": true,
+      "log_likelihood": -344.0719496805291,
+      "AIC": 700.1438993610582,
+      "BIC": 727.1245493021734,
+      "grouped_CV": {
+        "log_loss": 0.5333269436036616,
+        "balanced_accuracy": 0.7210592593944481,
+        "AUROC": 0.8021645100651543,
+        "Brier_score": 0.1810438991135412,
+        "grouped_CV_folds": 5,
+        "grouped_CV_successful_folds": 5,
+        "unit": "utterance_id"
+      },
+      "coefficients": {
+        "intercept_AT": {
+          "beta": 0.4957299419812353,
+          "se": 0.294809742481905,
+          "p": 0.0926609914275449,
+          "lo": -0.08209715328329847,
+          "hi": 1.0735570372457692
+        },
+        "pair_AV": {
+          "beta": -0.3002756093311054,
+          "se": 0.33318202867081614,
+          "p": 0.36746290083746735,
+          "lo": -0.953312385525905,
+          "hi": 0.3527611668636942
+        },
+        "pair_VT": {
+          "beta": -0.3184049210301859,
+          "se": 0.30554678565231036,
+          "p": 0.2973734877894547,
+          "lo": -0.9172766209087142,
+          "hi": 0.28046677884834237
+        },
+        "delta_source_label_probability_per_SD": {
+          "beta": -0.10768566922804151,
+          "se": 0.33780401937181104,
+          "p": 0.7498922140504234,
+          "lo": -0.769781547196791,
+          "hi": 0.5544102087407081
+        },
+        "delta_normalized_entropy_per_SD": {
+          "beta": -1.6501776858506354,
+          "se": 0.3832086741102216,
+          "p": 1.66074109418192e-05,
+          "lo": -2.40126668710667,
+          "hi": -0.8990886845946011
+        },
+        "FIRST_IS_MODALITY1": {
+          "beta": -0.8560767556273149,
+          "se": 0.16299076825173023,
+          "p": 1.5020981569027117e-07,
+          "lo": -1.1755386614007062,
+          "hi": -0.5366148498539236
+        }
+      }
+    },
+    "M3b": {
+      "features": [
+        "mar",
+        "ent",
+        "ord"
+      ],
+      "converged": true,
+      "log_likelihood": -343.9584969641328,
+      "AIC": 699.9169939282656,
+      "BIC": 726.8976438693808,
+      "grouped_CV": {
+        "log_loss": 0.5321102464581453,
+        "balanced_accuracy": 0.7177148540872009,
+        "AUROC": 0.8033416677312796,
+        "Brier_score": 0.18055487050828636,
+        "grouped_CV_folds": 5,
+        "grouped_CV_successful_folds": 5,
+        "unit": "utterance_id"
+      },
+      "coefficients": {
+        "intercept_AT": {
+          "beta": 0.48850059879084057,
+          "se": 0.29312585546745606,
+          "p": 0.09560954988847924,
+          "lo": -0.08602607792537326,
+          "hi": 1.0630272755070544
+        },
+        "pair_AV": {
+          "beta": -0.25864252629703066,
+          "se": 0.3311180024260038,
+          "p": 0.4347325730880046,
+          "lo": -0.9076338110519981,
+          "hi": 0.3903487584579368
+        },
+        "pair_VT": {
+          "beta": -0.34583313013118355,
+          "se": 0.3026963089005085,
+          "p": 0.25324268157485497,
+          "lo": -0.9391178955761803,
+          "hi": 0.2474516353138132
+        },
+        "delta_top1_top2_margin_per_SD": {
+          "beta": 0.1202309037249221,
+          "se": 0.23067693366211098,
+          "p": 0.6022211556124311,
+          "lo": -0.3318958862528154,
+          "hi": 0.5723576937026597
+        },
+        "delta_normalized_entropy_per_SD": {
+          "beta": -1.4451503200171585,
+          "se": 0.26434562765554914,
+          "p": 4.5798198119417154e-08,
+          "lo": -1.9632677502220348,
+          "hi": -0.9270328898122822
+        },
+        "FIRST_IS_MODALITY1": {
+          "beta": -0.8558655386186873,
+          "se": 0.1630309941869209,
+          "p": 1.5233834629048387e-07,
+          "lo": -1.1754062872250524,
+          "hi": -0.5363247900123223
+        }
+      }
+    }
+  },
+  "model_comparisons": [
+    {
+      "comparison_type": "MODEL_FIT_AND_GROUPED_CV",
+      "model": "M0",
+      "n_model_records": 663,
+      "utterance_id_clusters": 274,
+      "parameters_k": 3,
+      "log_likelihood": -457.4973363753098,
+      "AIC": 920.9946727506197,
+      "BIC": 934.4849977211773,
+      "grouped_CV_log_loss": 0.6972389204736985,
+      "grouped_CV_balanced_accuracy": 0.46470808314930734,
+      "grouped_CV_AUROC": 0.4721588524081543,
+      "grouped_CV_Brier_score": 0.2520361081440249,
+      "grouped_CV_successful_folds": 5,
+      "model_converged": true,
+      "CV_scope": "out-of-fold grouped by utterance_id; likelihood criteria full-data"
+    },
+    {
+      "comparison_type": "MODEL_FIT_AND_GROUPED_CV",
+      "model": "M1a",
+      "n_model_records": 663,
+      "utterance_id_clusters": 274,
+      "parameters_k": 4,
+      "log_likelihood": -367.2726129733214,
+      "AIC": 742.5452259466427,
+      "BIC": 760.5323259073862,
+      "grouped_CV_log_loss": 0.557686807056768,
+      "grouped_CV_balanced_accuracy": 0.6924014016388955,
+      "grouped_CV_AUROC": 0.7760434727063676,
+      "grouped_CV_Brier_score": 0.19147636944701668,
+      "grouped_CV_successful_folds": 5,
+      "model_converged": true,
+      "CV_scope": "out-of-fold grouped by utterance_id; likelihood criteria full-data"
+    },
+    {
+      "comparison_type": "MODEL_FIT_AND_GROUPED_CV",
+      "model": "M1b",
+      "n_model_records": 663,
+      "utterance_id_clusters": 274,
+      "parameters_k": 4,
+      "log_likelihood": -378.2035554938799,
+      "AIC": 764.4071109877598,
+      "BIC": 782.3942109485032,
+      "grouped_CV_log_loss": 0.5747549700844234,
+      "grouped_CV_balanced_accuracy": 0.6678818462212326,
+      "grouped_CV_AUROC": 0.754215866990309,
+      "grouped_CV_Brier_score": 0.19905895144733626,
+      "grouped_CV_successful_folds": 5,
+      "model_converged": true,
+      "CV_scope": "out-of-fold grouped by utterance_id; likelihood criteria full-data"
+    },
+    {
+      "comparison_type": "MODEL_FIT_AND_GROUPED_CV",
+      "model": "M2a",
+      "n_model_records": 663,
+      "utterance_id_clusters": 274,
+      "parameters_k": 5,
+      "log_likelihood": -354.6711223565336,
+      "AIC": 719.3422447130672,
+      "BIC": 741.8261196639966,
+      "grouped_CV_log_loss": 0.5423897901900573,
+      "grouped_CV_balanced_accuracy": 0.7057744602412717,
+      "grouped_CV_AUROC": 0.7915107769240597,
+      "grouped_CV_Brier_score": 0.18508861311310362,
+      "grouped_CV_successful_folds": 5,
+      "model_converged": true,
+      "CV_scope": "out-of-fold grouped by utterance_id; likelihood criteria full-data"
+    },
+    {
+      "comparison_type": "MODEL_FIT_AND_GROUPED_CV",
+      "model": "M2b",
+      "n_model_records": 663,
+      "utterance_id_clusters": 274,
+      "parameters_k": 5,
+      "log_likelihood": -354.54697322255174,
+      "AIC": 719.0939464451035,
+      "BIC": 741.5778213960328,
+      "grouped_CV_log_loss": 0.5427281374580051,
+      "grouped_CV_balanced_accuracy": 0.7060938441041739,
+      "grouped_CV_AUROC": 0.7908902597047068,
+      "grouped_CV_Brier_score": 0.1853615481295165,
+      "grouped_CV_successful_folds": 5,
+      "model_converged": true,
+      "CV_scope": "out-of-fold grouped by utterance_id; likelihood criteria full-data"
+    },
+    {
+      "comparison_type": "MODEL_FIT_AND_GROUPED_CV",
+      "model": "M3a",
+      "n_model_records": 663,
+      "utterance_id_clusters": 274,
+      "parameters_k": 6,
+      "log_likelihood": -344.0719496805291,
+      "AIC": 700.1438993610582,
+      "BIC": 727.1245493021734,
+      "grouped_CV_log_loss": 0.5333269436036616,
+      "grouped_CV_balanced_accuracy": 0.7210592593944481,
+      "grouped_CV_AUROC": 0.8021645100651543,
+      "grouped_CV_Brier_score": 0.1810438991135412,
+      "grouped_CV_successful_folds": 5,
+      "model_converged": true,
+      "CV_scope": "out-of-fold grouped by utterance_id; likelihood criteria full-data"
+    },
+    {
+      "comparison_type": "MODEL_FIT_AND_GROUPED_CV",
+      "model": "M3b",
+      "n_model_records": 663,
+      "utterance_id_clusters": 274,
+      "parameters_k": 6,
+      "log_likelihood": -343.9584969641328,
+      "AIC": 699.9169939282656,
+      "BIC": 726.8976438693808,
+      "grouped_CV_log_loss": 0.5321102464581453,
+      "grouped_CV_balanced_accuracy": 0.7177148540872009,
+      "grouped_CV_AUROC": 0.8033416677312796,
+      "grouped_CV_Brier_score": 0.18055487050828636,
+      "grouped_CV_successful_folds": 5,
+      "model_converged": true,
+      "CV_scope": "out-of-fold grouped by utterance_id; likelihood criteria full-data"
+    },
+    {
+      "comparison_type": "NESTED_INCREMENT",
+      "model": "M1a",
+      "nested_base_model": "M0",
+      "added_predictor": "delta_source_label_probability_per_SD",
+      "likelihood_ratio_statistic": 180.4494468039769,
+      "LRT_df": 1,
+      "ordinary_LRT_p_not_cluster_adjusted": 3.866237314499297e-41,
+      "added_term_cluster_robust_Wald_p": 2.265527074414123e-25,
+      "note": "ordinary LR is not cluster-adjusted; robust Wald accounts for utterance_id"
+    },
+    {
+      "comparison_type": "NESTED_INCREMENT",
+      "model": "M1b",
+      "nested_base_model": "M0",
+      "added_predictor": "delta_top1_top2_margin_per_SD",
+      "likelihood_ratio_statistic": 158.58756176285988,
+      "LRT_df": 1,
+      "ordinary_LRT_p_not_cluster_adjusted": 2.3028061665990285e-36,
+      "added_term_cluster_robust_Wald_p": 1.2714044747730272e-23,
+      "note": "ordinary LR is not cluster-adjusted; robust Wald accounts for utterance_id"
+    },
+    {
+      "comparison_type": "NESTED_INCREMENT",
+      "model": "M2a",
+      "nested_base_model": "M1a",
+      "added_predictor": "delta_normalized_entropy_per_SD",
+      "likelihood_ratio_statistic": 25.202981233575542,
+      "LRT_df": 1,
+      "ordinary_LRT_p_not_cluster_adjusted": 5.160236887738341e-07,
+      "added_term_cluster_robust_Wald_p": 1.573206910012762e-05,
+      "note": "ordinary LR is not cluster-adjusted; robust Wald accounts for utterance_id"
+    },
+    {
+      "comparison_type": "NESTED_INCREMENT",
+      "model": "M2b",
+      "nested_base_model": "M1b",
+      "added_predictor": "delta_normalized_entropy_per_SD",
+      "likelihood_ratio_statistic": 47.313164542656295,
+      "LRT_df": 1,
+      "ordinary_LRT_p_not_cluster_adjusted": 6.050449721506651e-12,
+      "added_term_cluster_robust_Wald_p": 4.192671464262839e-08,
+      "note": "ordinary LR is not cluster-adjusted; robust Wald accounts for utterance_id"
+    },
+    {
+      "comparison_type": "NESTED_INCREMENT",
+      "model": "M3a",
+      "nested_base_model": "M2a",
+      "added_predictor": "FIRST_IS_MODALITY1",
+      "likelihood_ratio_statistic": 21.198345352009028,
+      "LRT_df": 1,
+      "ordinary_LRT_p_not_cluster_adjusted": 4.141218799249704e-06,
+      "added_term_cluster_robust_Wald_p": 1.5020981569027117e-07,
+      "note": "ordinary LR is not cluster-adjusted; robust Wald accounts for utterance_id"
+    },
+    {
+      "comparison_type": "NESTED_INCREMENT",
+      "model": "M3b",
+      "nested_base_model": "M2b",
+      "added_predictor": "FIRST_IS_MODALITY1",
+      "likelihood_ratio_statistic": 21.1769525168379,
+      "LRT_df": 1,
+      "ordinary_LRT_p_not_cluster_adjusted": 4.1877024038077705e-06,
+      "added_term_cluster_robust_Wald_p": 1.5233834629048387e-07,
+      "note": "ordinary LR is not cluster-adjusted; robust Wald accounts for utterance_id"
+    }
+  ],
+  "scalers": {
+    "src": {
+      "mean": -0.02103924985500564,
+      "sd": 0.25324466896447845
+    },
+    "mar": {
+      "mean": -0.020377329894437538,
+      "sd": 0.3055869765131503
+    },
+    "ent": {
+      "mean": 0.010404252684427913,
+      "sd": 0.24060545308601983
+    }
+  },
+  "pair_heterogeneity": {
+    "LR": 0.8476848358320694,
+    "LR_p_not_cluster_adjusted": 0.6545270155137572,
+    "cluster_robust_Wald": 0.4666372698029237,
+    "cluster_robust_Wald_p": 0.7919012059571641
+  },
+  "bootstrap": {
+    "B": 2000,
+    "seed": 20260928,
+    "primary_cluster_unit": "utterance_id",
+    "secondary_cluster_unit": "speaker_id",
+    "speaker_clusters": 19
+  },
+  "balanced_mechanism_panel": {
+    "counts": {
+      "ALL_DIFFERENT": 300,
+      "A=V!=T": 300,
+      "T=A!=V": 300,
+      "T=V!=A": 300,
+      "ALL_SAME": 300
+    },
+    "warning": "conditional on balanced panel, not natural EmotionTalk prevalence"
+  },
+  "attempt_001_excluded": true,
+  "attempt_001_scientific_use": "FORBIDDEN",
+  "legacy_glob_used": false,
+  "raw_emotion_identity": "not analyzed; exploratory only"
+}

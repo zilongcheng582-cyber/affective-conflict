@@ -1,0 +1,56 @@
+{
+  "protocol_id": "CA_MER_DERIVED_CONTROLLED_AV_ARBITRATION",
+  "version": "1.0",
+  "status": "FROZEN_FOR_TECHNICAL_GATE",
+  "candidate_interface": {
+    "choice": "FULL_SOURCE_LOCAL_ONTOLOGY",
+    "candidate_count": 16,
+    "candidate_source": "Unmerged normalized union of audio_pseudo_label and video_pseudo_label values in the three official CA-MER files at the pinned commit.",
+    "normalization": "Unicode casefold, trim whitespace and obvious punctuation at the two edges only; no semantic, synonym, morphology, or internal-punctuation merging.",
+    "ordering": "Sort sample_id; cycle candidate rotations by rank modulo 16; reverse base order every 16-rank block. Reuse each sample's exact order in all four arms."
+  },
+  "labels": {
+    "audio_side": "audio_pseudo_label",
+    "video_side": "video_pseudo_label",
+    "y_A_semantics": "Official source-provided audio-side pseudo-label; not objective ground truth.",
+    "y_V_semantics": "Official source-provided video-side pseudo-label; not objective ground truth.",
+    "conflict_definition": "norm(y_A) != norm(y_V)",
+    "excluded_fields": ["final_label", "emotionllama_pseudo_label", "reasoning", "subtitle", "audio_analysis", "video_analysis", "mapping.target"]
+  },
+  "frozen_source_counts": {
+    "audio-aligned": {"n": 500, "conflict_n": 500},
+    "video-aligned": {"n": 500, "conflict_n": 500},
+    "consistent": {"n": 500, "conflict_n": 0},
+    "conflict_pool_n": 1000,
+    "consistent_control_n": 500
+  },
+  "media_contract": {
+    "audio": "Derived from source A/V via software decode to mono 16 kHz PCM s16le WAV; audio stream only.",
+    "video": "Derived separately from source A/V by copying only the first video stream into AVI; exactly one video stream and zero audio streams.",
+    "joint_arms": "Pass the separate audio file and silent-video file as distinct payloads; never use original A/V media in V_ONLY or joint arms.",
+    "source_preservation": "Original source media and Native artifacts remain unchanged."
+  },
+  "arms": {
+    "A_ONLY": ["audio", "instruction"],
+    "V_ONLY": ["silent_video", "instruction"],
+    "A_THEN_V": ["audio", "silent_video", "instruction"],
+    "V_THEN_A": ["silent_video", "audio", "instruction"]
+  },
+  "prompt_rules": {
+    "instruction_last": true,
+    "modality_named_headings": false,
+    "same_candidate_order_in_all_arms_per_sample": true,
+    "forbidden_input": ["source labels", "final_label", "reasoning", "subtitle", "transcript", "audio/video analysis", "sample metadata"],
+    "response": "Strict JSON object with exactly one key label and one exact candidate value; no explanation."
+  },
+  "runtime_properties": {
+    "DualReadable": "Conflict sample for which parsed A_ONLY prediction normalizes exactly to y_A and parsed V_ONLY prediction normalizes exactly to y_V.",
+    "DualReadable_status": "Evaluation-time property; remains null/NOT_RUN in the frozen static manifest.",
+    "primary_population": "conflict_pool AND DualReadable",
+    "sensitivity_population": "all 1000 conflict-pool samples",
+    "consistent_controls": "500 records; separate reporting only and never included in AudioShare/VideoShare denominators."
+  },
+  "joint_outcomes": ["SIDE_AUDIO", "SIDE_VIDEO", "OTHER", "PARSE_FAIL"],
+  "order_sensitivity": ["STABLE_AUDIO", "STABLE_VIDEO", "RECENCY_LIKE_FLIP", "PRIMACY_LIKE_FLIP", "OTHER_OR_INVALID"],
+  "science_status": "NOT_RUN"
+}

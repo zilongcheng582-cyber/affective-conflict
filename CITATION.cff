@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite this frozen software release. No paper bibliographic identifier is asserted."
+type: software
+title: "Affective-Conflict: Reproducible Qwen Mainline"
+authors:
+  - name: "Affective-Conflict contributors"
+version: 1.0.0
+date-released: 2026-10-07
+license: MIT
+repository-code: "https://github.com/zilongcheng582-cyber/affective-conflict"

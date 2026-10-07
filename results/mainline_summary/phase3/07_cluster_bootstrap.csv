@@ -1,0 +1,2 @@
+estimand,estimate,CI95_low,CI95_high,bootstrap_unit,bootstrap_replicates,seed
+resolved_exact_label_accuracy,0.9115646258503401,0.8547297297297297,0.9565217391304348,utterance_id,10000,42

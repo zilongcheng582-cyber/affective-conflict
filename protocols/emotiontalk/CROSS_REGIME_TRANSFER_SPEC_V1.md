@@ -1,0 +1,3 @@
+# Cross-Regime Transfer Spec V1
+
+EmotionTalk A-T to LISTEN A-T and EmotionTalk A-V to CA-MER A-V are held-out zero-refit targets. EmotionTalk V-T has no target in this mapping; EmoMM remains held-out for a later protocol. Features: delta entropy, delta top-1/top-2 margin, delta source-label probability, presentation-order indicator, and pair identity. Exclude raw emotion identity. Fit scalers only on source training data; never fit or tune on target. Primary metric is log loss; secondary metrics are balanced accuracy, AUROC, Brier score, and calibration. Compare against a constant source modality-preference baseline fixed on source. All transfer claims are conditional on pair-specific DualReadable.

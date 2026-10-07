@@ -1,0 +1,8 @@
+# Export these environment variables, or use the corresponding B3 CLI arguments.
+work_root: ./workspace
+data_root: ./workspace
+model_dir: ./models/Qwen2.5-Omni-7B
+# Optional explicit external prefix mappings for preserved evidence metadata.
+path_mapping: {}
+# Original frozen artifact paths are metadata; current code resolves registered
+# inputs within this repository and uses data_root for physical media.

@@ -1,0 +1,4 @@
+trimodal_pattern,all_rows,unique_utterances,resolved_predictions,prediction_coverage,correct,accuracy,observed_side_coverage
+A=V!=T,96,16,74,0.7708333333333334,67,0.9054054054054054,0.9791666666666666
+T=A!=V,258,43,193,0.748062015503876,174,0.9015544041450777,0.9496124031007752
+T=V!=A,48,8,27,0.5625,27,1.0,1.0

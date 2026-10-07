@@ -1,0 +1,157 @@
+{
+  "status": "FROZEN_BEFORE_FULL_PHASE1",
+  "version": "1.2",
+  "purpose": "Pre-full-run measurement and inference freeze; no scientific outcome analysis.",
+  "estimand": {
+    "primary": "balanced source-label-pattern master-panel estimand",
+    "population": "1500 frozen utterances, 300 in each frozen T/A/V pattern",
+    "natural_distribution_sensitivity": "tuple post-stratification only where panel support is positive; unsupported tuples are non-identifiable and are never imputed."
+  },
+  "frozen_readability": {
+    "Readable_T": "parsed T_ONLY label equals source y_T",
+    "Readable_A": "parsed A_ONLY label equals source y_A",
+    "Readable_V": "parsed V_ONLY label equals source y_V",
+    "DualReadable_pair": "both corresponding unimodal Readable indicators are true",
+    "TripleReadable": "Readable_T AND Readable_A AND Readable_V",
+    "change_allowed": false
+  },
+  "measurement_extension": {
+    "inference_stage": "same fixed 18 gate records; greedy generation and parser first; then candidate scoring on same prompt/media inputs",
+    "candidate_order": "frozen per utterance and identical across all arms; do not rotate or alter",
+    "canonical_candidate_labels": [
+      "angry",
+      "disgusted",
+      "fearful",
+      "happy",
+      "neutral",
+      "sad",
+      "surprised"
+    ],
+    "tokenizer_audit": {
+      "assistant_generation_prefix": "actual rendered V1 prompt with add_generation_prompt=True",
+      "observed_token_counts_example": {
+        "angry": 2,
+        "disgusted": 3,
+        "fearful": 3,
+        "happy": 1,
+        "neutral": 1,
+        "sad": 1,
+        "surprised": 3
+      },
+      "branch": "MULTI_TOKEN_TEACHER_FORCED"
+    },
+    "scoring": {
+      "candidate_tokenization": "tokenize exact canonical lowercase string appended to the rendered assistant-generation prefix; require prefix token IDs unchanged; retain per-candidate continuation token IDs and counts.",
+      "score": "sum of teacher-forced token log probabilities for the exact candidate continuation; also report mean token log probability.",
+      "primary_probability": "softmax(mean token log probability across the seven labels).",
+      "sensitivity_probability": "softmax(sum token log probability across the seven labels).",
+      "greedy_label": "unchanged V1.1 greedy generation plus frozen parser; remains the sole input to frozen readability.",
+      "uncertainty": "normalized entropy H/log(7), top-1, top-2, top-1 minus top-2 probability margin, source-label probability, greedy/parser-label versus score argmax agreement.",
+      "not_allowed": "No score/probability is used to change generation, parse labels, readability, sample inclusion, or scientific outcomes."
+    }
+  },
+  "annotation_uncertainty": {
+    "source": "official selected-panel annotation JSON A-E entries, emotion votes and Confidence_degree",
+    "outputs": "raw per-annotator categorical votes and confidence values plus vote entropy, agreement fractions, and confidence summaries",
+    "role": "descriptive annotation metadata only; not sample selection, readability, primary pairwise analysis, or transfer fitting",
+    "y_M": "if present, descriptive metadata only; no primary target use"
+  },
+  "pairwise_spec": {
+    "population": "pair-specific source-label conflict AND frozen DualReadable; same-panel consistent AND DualReadable controls",
+    "arms": "paired reciprocal evidence orders per utterance; never independent samples",
+    "primary_outcomes": [
+      "side-choice among the two source labels",
+      "coverage",
+      "OTHER",
+      "PARSE_FAIL"
+    ],
+    "consistent_control": "SAME_LABEL / OTHER / PARSE_FAIL",
+    "order_sensitivity": [
+      "stable same-side choice",
+      "switch between sides",
+      "side versus OTHER",
+      "side versus PARSE_FAIL",
+      "OTHER/PARSE_FAIL combinations"
+    ]
+  },
+  "pairwise_to_trimodal": {
+    "population": "TripleReadable and not ALL_SAME",
+    "edge_rule": "Conflict-only directed edge for a source-side choice; OTHER/PARSE_FAIL is UNRESOLVED. A source-label-consistent pair has relation SAME_LABEL and does not create a directed edge.",
+    "stable_edge": "Both reciprocal pair orders select the same side; opposite choices are ORDER_SENSITIVE and remain order-specific.",
+    "stable_prediction": "TWO_VS_ONE: the two cross-group conflict edges must each be stable and agree on the shared-versus-minority winner; the shared/shared pair is SAME_LABEL. ALL_DIFFERENT: all three conflict edges must be stable and form a transitive total order with a unique top label. Order-sensitive, cyclic, or unresolved cases yield UNRESOLVED.",
+    "order_conditioned_prediction": "For each exact tri-modal order, use only pairwise outputs matching each conflict pair relative order. TWO_VS_ONE requires both cross-group conflict edges to agree; ALL_DIFFERENT requires all three edges to form a transitive tournament with a unique Condorcet winner. Any disagreement, cycle, or unresolved edge yields UNRESOLVED.",
+    "graph_categories": [
+      "TRANSITIVE_TOTAL_ORDER",
+      "CYCLIC",
+      "PARTIALLY_UNRESOLVED",
+      "ORDER_SENSITIVE_GRAPH"
+    ],
+    "TWO_VS_ONE": "The two induced conflict edges between the shared-label group and minority-label group must both favor the same group; the consistent shared/shared pair is SAME_LABEL. Disagreement, unresolved edge, or cycle yields UNRESOLVED.",
+    "ALL_DIFFERENT": "Unique Condorcet winner if one label beats both alternatives and the remaining edge is consistent; directed cycle or any unresolved edge yields UNRESOLVED.",
+    "primary_metrics": [
+      "prediction coverage",
+      "resolved accuracy among resolved predictions",
+      "overall eligible correct rate counting unresolved as not resolved/correct",
+      "cycle rate",
+      "unresolved rate"
+    ],
+    "post_hoc_rule_change": "FORBIDDEN",
+    "secondary_learned_composition": "If added in a later explicitly scoped analysis, use speaker-grouped cross-fitting; hold out each evaluation fold and prohibit its tri-modal outputs from fitting or tuning; no full-sample fit evaluated on the same tri-modal outputs."
+  },
+  "cross_regime_transfer": {
+    "source_target_pairs": [
+      "EmotionTalk A-T -> LISTEN A-T",
+      "EmotionTalk A-V -> CA-MER A-V"
+    ],
+    "target_use": "held-out zero-refit only; no target fitting/tuning/scaler fitting",
+    "unsupported": [
+      "EmotionTalk V-T has no target dataset in the declared mapping",
+      "EmoMM remains held-out only for a later specified mapping"
+    ],
+    "features": [
+      "delta entropy",
+      "delta top1-top2 margin",
+      "delta source-label probability",
+      "presentation-order indicator",
+      "pair identity"
+    ],
+    "excluded": [
+      "raw emotion identity",
+      "target labels for fitting",
+      "target-derived preprocessing/scaling"
+    ],
+    "scaling": "fit on source only",
+    "primary_metric": "log loss",
+    "secondary_metrics": [
+      "balanced accuracy",
+      "AUROC",
+      "Brier score",
+      "calibration"
+    ],
+    "baseline": "constant source-modality-preference prediction, fixed from source; no target fit",
+    "interpretation": "all claims conditional on frozen pair-specific DualReadable population"
+  },
+  "evidence_language": {
+    "A": "audio-channel evidence",
+    "V": "silent visual-channel evidence",
+    "T": "textual evidence",
+    "prohibited_claims": [
+      "pure prosody/acoustic emotion",
+      "face-only emotion"
+    ]
+  },
+  "compute": {
+    "phase1_fixed_generations": 4500,
+    "phase2_conditional_generations": "2*N_DualReadable_AV + 2*N_DualReadable_AT + 2*N_DualReadable_VT",
+    "phase3_conditional_generations": "6*N_TripleReadable_non_ALL_SAME",
+    "readability_rates": "unknown until Phase 1; do not assume"
+  },
+  "technical_policy": {
+    "OOM": "TECHNICAL_MISSINGNESS",
+    "retry_with_changed_preprocessing": false,
+    "auto_lower_video_quality": false,
+    "skip_by_model_result": false
+  },
+  "phase1_full_run_launched": false,
+  "scientific_result_analysis": false
+}

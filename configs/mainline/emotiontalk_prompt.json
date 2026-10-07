@@ -1,0 +1,19 @@
+{
+  "prompt_version": "emotiontalk_controlled_prompt_v1",
+  "ontology": ["angry", "disgusted", "fearful", "happy", "neutral", "sad", "surprised"],
+  "candidate_sequence_source": "EMOTIONTALK_MASTER_PANEL_V1.csv",
+  "candidate_sequence_encoding": "The seven labels are rendered in the exact frozen per-utterance order, joined by comma-space.",
+  "instruction_template": "Using only the emotion evidence provided for this sample, choose the single best-matching label from this candidate list, in the listed order: {candidate_labels}. Return exactly one candidate label in lowercase, with no explanation or additional text.",
+  "templates": {
+    "T_ONLY": "Text evidence:\n{text_evidence}\n\n{instruction}",
+    "A_ONLY": "{instruction}",
+    "V_ONLY": "{instruction}"
+  },
+  "evidence_contract": {
+    "T_ONLY": "official Text.content only",
+    "A_ONLY": "official standalone audio only",
+    "V_ONLY": "derived silent video only"
+  },
+  "output_contract": "Exactly one candidate label; lowercase; no explanation or additional text.",
+  "future_joint_arms_used_in_this_file": false
+}

@@ -1,0 +1,118 @@
+{
+  "SECRETS_FOUND": 0,
+  "SOURCE_HARDCODED_PATHS": 0,
+  "FORBIDDEN_PAYLOADS": 0,
+  "commands": [
+    {
+      "name": "ALL_IMPORTS",
+      "exit_code": 0
+    },
+    {
+      "name": "HELP src.reconstruction.emotiontalk.reconstruct",
+      "exit_code": 0
+    },
+    {
+      "name": "HELP src.reconstruction.mcr.reconstruct",
+      "exit_code": 0
+    },
+    {
+      "name": "HELP src.reconstruction.listen.reconstruct",
+      "exit_code": 0
+    },
+    {
+      "name": "HELP src.reconstruction.camer.reconstruct",
+      "exit_code": 0
+    },
+    {
+      "name": "HELP src.reconstruction.camer.prepare_media",
+      "exit_code": 0
+    },
+    {
+      "name": "HELP src.emotiontalk.phase1.run",
+      "exit_code": 0
+    },
+    {
+      "name": "HELP src.emotiontalk.phase2.run",
+      "exit_code": 0
+    },
+    {
+      "name": "HELP src.emotiontalk.phase3.run",
+      "exit_code": 0
+    },
+    {
+      "name": "HELP src.cross_regime.target_scoring.run",
+      "exit_code": 0
+    },
+    {
+      "name": "HELP src.cross_regime.target_scoring.finalize",
+      "exit_code": 0
+    },
+    {
+      "name": "HELP src.cross_regime.zero_refit.evaluate",
+      "exit_code": 0
+    },
+    {
+      "name": "HELP src.cross_regime.run_mcr_joint",
+      "exit_code": 0
+    },
+    {
+      "name": "HELP src.cross_regime.run_listen_joint",
+      "exit_code": 0
+    },
+    {
+      "name": "HELP src.cross_regime.run_camer_joint",
+      "exit_code": 0
+    },
+    {
+      "name": "HELP analyses.phase2.publication_cv",
+      "exit_code": 0
+    },
+    {
+      "name": "HELP analyses.phase3.report",
+      "exit_code": 0
+    },
+    {
+      "name": "HELP analyses.cross_regime.report",
+      "exit_code": 0
+    },
+    {
+      "name": "CONFIGS_MANIFESTS_REGISTRY",
+      "exit_code": 0
+    },
+    {
+      "name": "FROZEN_B3_PACKAGE_VERIFY",
+      "exit_code": 0
+    },
+    {
+      "name": "PHASE3_CPU_PLAN",
+      "exit_code": 0
+    },
+    {
+      "name": "CAMER_CPU_PLAN",
+      "exit_code": 0
+    },
+    {
+      "name": "PHASE3_FROZEN_REPORT",
+      "exit_code": 0
+    },
+    {
+      "name": "CORRECTED_FROZEN_REPORT",
+      "exit_code": 0
+    },
+    {
+      "name": "CLEAN_CHECKOUT_PYTEST",
+      "exit_code": 0
+    }
+  ],
+  "GPU_executed": false,
+  "external_corrected_archive_modified": false,
+  "scientific_kernel_AST_parity_functions": 22,
+  "pytest_summary": "31 passed, 15 subtests passed in 17.85s",
+  "ZERO_REFIT_CPU_REPLAY": "EXACT_FROZEN_ANALYSES_MATCH",
+  "FORMAL_PROJECTION_CPU_REPLAY": "EXACT_FROZEN_ANALYSES_MATCH",
+  "ALL_TESTS": "PASS",
+  "CLEAN_REPO_TEST": "PASS",
+  "RELEASE_HASH_RECHECK": "PASS",
+  "ORIGINAL_CORRECTED_ARCHIVE_SHA256_RECHECK": "PASS",
+  "CITATION_YAML": "PASS"
+}

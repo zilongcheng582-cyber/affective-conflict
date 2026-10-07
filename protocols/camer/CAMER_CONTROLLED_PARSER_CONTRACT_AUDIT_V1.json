@@ -1,0 +1,446 @@
+{
+  "ACTUAL_PARSER_STATUS_ENUM": [
+    "OK",
+    "PARSE_FAIL"
+  ],
+  "ACTUAL_PARSE_OBJECT_SCHEMA": {
+    "item_0": "parsed_label: str | None",
+    "item_1": "parse_status: str",
+    "keys": [],
+    "length": 2,
+    "runtime_type": "tuple"
+  },
+  "all_explicit_string_literals_in_source": [
+    "A_ONLY",
+    "A_THEN_V",
+    "CONTROL_MATCH",
+    "CONTROL_OTHER",
+    "Classify the joint-arm pair; recency/primacy labels describe order association only.",
+    "Map a valid prediction to the source evidence side; other/invalid stays distinct.",
+    "Mechanical normalization only; never merges semantically related labels.",
+    "OK",
+    "OTHER",
+    "OTHER_OR_INVALID",
+    "PARSE_FAIL",
+    "PRIMACY_LIKE_FLIP",
+    "RECENCY_LIKE_FLIP",
+    "Return (canonical candidate or None, status). Accept only a one-key JSON object.",
+    "SIDE_AUDIO",
+    "SIDE_VIDEO",
+    "STABLE_AUDIO",
+    "STABLE_VIDEO",
+    "Score a consistent control separately from conflict-side outcomes.",
+    "Strict parser and outcome mapping for the CA-MER controlled arbitration protocol.",
+    "V_ONLY",
+    "V_THEN_A",
+    "label",
+    "����"
+  ],
+  "created_utc": "2026-09-24T15:59:20.912848+00:00",
+  "failure_status_literals": [
+    "PARSE_FAIL"
+  ],
+  "frozen_contract_artifacts": {
+    "audit/QWEN25_CAMER_CONTROLLED_V1/CAMER_CONTROLLED_ANALYSIS_SPEC_V1.md": {
+      "OK_word_occurrence_count": 0,
+      "PARSE_FAIL_occurrence_count": 2,
+      "PARSE_OK_exact_literal_count": 0,
+      "relevant_matches": [
+        {
+          "line": 8,
+          "text": "4. **Arm outcomes.** For each joint arm, report SIDE_AUDIO, SIDE_VIDEO, OTHER, PARSE_FAIL counts/rates. AudioShare = SIDE_AUDIO/(SIDE_AUDIO+SIDE_VIDEO), VideoShare = SIDE_VIDEO/(SIDE_AUDIO+SIDE_VIDEO). Additionally show SIDE_AUDIO/N and SIDE_VIDEO/N where N is the entire eligible population, so OTHER/PARSE_FAIL do not vanish from view. Keep consistent controls out of these denominators; report con"
+        },
+        {
+          "line": 12,
+          "text": "8. **Reproducibility.** Preserve raw response text, parser version/hash, model/tokenizer/config hashes, candidate order/hash, arm order, media hashes, decoding parameters, timestamps, and request IDs for any future authorized run. Do not merge evaluation labels into request payloads."
+        }
+      ],
+      "sha256": "2004bb748024231212a992f6346369ee2d203080e0d4db7b6ce50877d06d149f"
+    },
+    "audit/QWEN25_CAMER_CONTROLLED_V1/CAMER_CONTROLLED_PROTOCOL_V1.json": {
+      "OK_word_occurrence_count": 0,
+      "PARSE_FAIL_occurrence_count": 1,
+      "PARSE_OK_exact_literal_count": 0,
+      "relevant_matches": [
+        {
+          "line": 53,
+          "text": "  \"joint_outcomes\": [\"SIDE_AUDIO\", \"SIDE_VIDEO\", \"OTHER\", \"PARSE_FAIL\"],"
+        }
+      ],
+      "sha256": "efbe18fefcd3964e1ccbb48df671cad7279d543a021f90bbd6c11dfbef83306f"
+    },
+    "audit/QWEN25_CAMER_CONTROLLED_V1/CAMER_CONTROLLED_PROTOCOL_V1.md": {
+      "OK_word_occurrence_count": 0,
+      "PARSE_FAIL_occurrence_count": 2,
+      "PARSE_OK_exact_literal_count": 0,
+      "relevant_matches": [
+        {
+          "line": 30,
+          "text": "For each joint arm on conflict records, map a valid prediction to `SIDE_AUDIO` if it equals `y_A), `SIDE_VIDEO` if it equals `y_V), `OTHER` if it is a valid candidate matching neither, and `PARSE_FAIL` if output violates the strict parser contract. Equal-label controls are not side outcomes; report them separately as control-match / control-other / parse-fail."
+        },
+        {
+          "line": 32,
+          "text": "Report each joint arm's four outcome counts over the eligible population. Define `AudioShare = SIDE_AUDIO / (SIDE_AUDIO + SIDE_VIDEO)` and `VideoShare = SIDE_VIDEO / (SIDE_AUDIO + SIDE_VIDEO)`. Also report OTHER and PARSE_FAIL rates using the entire eligible N, plus an all-eligible-N share sensitivity so parser failures and other labels cannot disappear silently. Never include consistent controls "
+        },
+        {
+          "line": 38,
+          "text": "All normalized source labels are single-token atomic labels; the union is finite (16), and no observed surface variant or compound-label construction requires special ontology handling. A global union avoids silently restricting one evidence side to the other side's subset while keeping a common, auditable candidate interface. This is a protocol choice, not a claim that source pseudo-labels are ex"
+        }
+      ],
+      "sha256": "7b3a72dbd8e85a9ae80f8556b8e0465862c6f7e6ce5ed4b602647669b3fca6af"
+    },
+    "audit/QWEN25_CAMER_CONTROLLED_V1/CAMER_CONTROLLED_STATIC_VALIDATION_V1.json": {
+      "OK_word_occurrence_count": 0,
+      "PARSE_FAIL_occurrence_count": 0,
+      "PARSE_OK_exact_literal_count": 0,
+      "relevant_matches": [],
+      "sha256": "e2e945a6a49f6be2612c5ce510675fcc53fb08e336667dbbb8c3f2a89e12d5f0"
+    }
+  },
+  "frozen_contract_interpretation": {
+    "PARSER_CONTRACT_CONSISTENCY": "PASS",
+    "analysis_spec_separates_PARSE_FAIL_from_OTHER": true,
+    "decision": "RUNNER_ASSUMED_PARSER_ENUM_BUG",
+    "parser_OK_means_valid_unique_candidate_parse": true,
+    "parser_PARSE_FAIL_means_invalid_parse": true,
+    "protocol_requires_exact_PARSE_OK_literal": false,
+    "protocol_requires_strict_parse_success_semantics": true
+  },
+  "frozen_parser_sha256_expected": "95de335c625f3071d66e317e3ecf99ae7742b201952f1c41bb3bd70084c1a233",
+  "gate_v3_runtime_evidence": {
+    "arm": "A_ONLY",
+    "counter_issue": "V3 increments only after the allowlist check; one normal parser return was rejected before increment.",
+    "gate_report_sha256": "6aeda96e71e124bd158fab647bf884dec4b0cac110cd0e8a55cadc485e1808a8",
+    "generation_status": "SUCCESS",
+    "parser_call_count_from_traceback": 1,
+    "persisted_record_parse_status": "NOT_RUN",
+    "persisted_record_parsed_label": null,
+    "raw_output_content_examined": false,
+    "reported_parser_execution_count": 0,
+    "runner_sha256": "0ce3e1b509f538e17b4df379282798bb5ab3d565455a6646d9f69bfb2aca5c0b",
+    "runtime_parse_status": "OK",
+    "runtime_return_object_keys": [],
+    "runtime_return_object_type": "tuple (frozen source signature and V3 two-value unpack)",
+    "sample_id": "sample_00000002",
+    "successful_two_value_unpack_in_runner": true,
+    "traceback_confirms_parser_returned_OK": true,
+    "tuple_item_0_value_persisted": false
+  },
+  "model_generate_called_during_audit": false,
+  "other_parser_result_literals": {
+    "OUTCOMES": [
+      "SIDE_AUDIO",
+      "SIDE_VIDEO",
+      "OTHER",
+      "PARSE_FAIL"
+    ],
+    "control_outcomes": [
+      "CONTROL_MATCH",
+      "CONTROL_OTHER"
+    ],
+    "order_outcomes": [
+      "STABLE_AUDIO",
+      "STABLE_VIDEO",
+      "RECENCY_LIKE_FLIP",
+      "PRIMACY_LIKE_FLIP",
+      "OTHER_OR_INVALID"
+    ]
+  },
+  "parse_label_signature": {
+    "arguments": [
+      {
+        "annotation": "str",
+        "name": "raw_text"
+      },
+      {
+        "annotation": "Iterable[str]",
+        "name": "candidates"
+      }
+    ],
+    "explicit_returns": [
+      {
+        "expression": "(None, 'PARSE_FAIL')",
+        "line": 24,
+        "literal": [
+          null,
+          "PARSE_FAIL"
+        ]
+      },
+      {
+        "expression": "(None, 'PARSE_FAIL')",
+        "line": 26,
+        "literal": [
+          null,
+          "PARSE_FAIL"
+        ]
+      },
+      {
+        "expression": "(None, 'PARSE_FAIL')",
+        "line": 30,
+        "literal": [
+          null,
+          "PARSE_FAIL"
+        ]
+      },
+      {
+        "expression": "(matches[0], 'OK')",
+        "line": 31,
+        "literal": {
+          "expression": "(matches[0], 'OK')"
+        }
+      }
+    ],
+    "line": 19,
+    "return_annotation": "tuple[str | None, str]"
+  },
+  "parsed_label_correctness_examined": false,
+  "parser_called_during_audit": false,
+  "parser_entry_functions": [
+    "parse_label"
+  ],
+  "parser_path": "code/benchmarks/camer_controlled_parser_v1.py",
+  "parser_sha256": "95de335c625f3071d66e317e3ecf99ae7742b201952f1c41bb3bd70084c1a233",
+  "parser_sha_matches_frozen": true,
+  "public_functions": {
+    "conflict_outcome": {
+      "arguments": [
+        {
+          "annotation": "str | None",
+          "name": "predicted"
+        },
+        {
+          "annotation": "str",
+          "name": "y_audio"
+        },
+        {
+          "annotation": "str",
+          "name": "y_video"
+        }
+      ],
+      "explicit_returns": [
+        {
+          "expression": "'PARSE_FAIL'",
+          "line": 37,
+          "literal": "PARSE_FAIL"
+        },
+        {
+          "expression": "'OTHER'",
+          "line": 40,
+          "literal": "OTHER"
+        },
+        {
+          "expression": "'SIDE_AUDIO'",
+          "line": 42,
+          "literal": "SIDE_AUDIO"
+        },
+        {
+          "expression": "'SIDE_VIDEO'",
+          "line": 44,
+          "literal": "SIDE_VIDEO"
+        },
+        {
+          "expression": "'OTHER'",
+          "line": 45,
+          "literal": "OTHER"
+        }
+      ],
+      "line": 34,
+      "return_annotation": "str"
+    },
+    "consistent_control_outcome": {
+      "arguments": [
+        {
+          "annotation": "str | None",
+          "name": "predicted"
+        },
+        {
+          "annotation": "str",
+          "name": "y_consistent"
+        }
+      ],
+      "explicit_returns": [
+        {
+          "expression": "'PARSE_FAIL'",
+          "line": 51,
+          "literal": "PARSE_FAIL"
+        },
+        {
+          "expression": "'CONTROL_MATCH'",
+          "line": 53,
+          "literal": "CONTROL_MATCH"
+        },
+        {
+          "expression": "'CONTROL_OTHER'",
+          "line": 54,
+          "literal": "CONTROL_OTHER"
+        }
+      ],
+      "line": 48,
+      "return_annotation": "str"
+    },
+    "normalize_label": {
+      "arguments": [
+        {
+          "annotation": "str",
+          "name": "value"
+        }
+      ],
+      "explicit_returns": [
+        {
+          "expression": "str(value).casefold().strip().strip(string.whitespace + string.punctuation + '����')",
+          "line": 14,
+          "literal": {
+            "expression": "str(value).casefold().strip().strip(string.whitespace + string.punctuation + '����')"
+          }
+        }
+      ],
+      "line": 12,
+      "return_annotation": "str"
+    },
+    "order_sensitivity": {
+      "arguments": [
+        {
+          "annotation": "str",
+          "name": "a_then_v"
+        },
+        {
+          "annotation": "str",
+          "name": "v_then_a"
+        }
+      ],
+      "explicit_returns": [
+        {
+          "expression": "'STABLE_AUDIO'",
+          "line": 60,
+          "literal": "STABLE_AUDIO"
+        },
+        {
+          "expression": "'STABLE_VIDEO'",
+          "line": 62,
+          "literal": "STABLE_VIDEO"
+        },
+        {
+          "expression": "'RECENCY_LIKE_FLIP'",
+          "line": 64,
+          "literal": "RECENCY_LIKE_FLIP"
+        },
+        {
+          "expression": "'PRIMACY_LIKE_FLIP'",
+          "line": 66,
+          "literal": "PRIMACY_LIKE_FLIP"
+        },
+        {
+          "expression": "'OTHER_OR_INVALID'",
+          "line": 67,
+          "literal": "OTHER_OR_INVALID"
+        }
+      ],
+      "line": 57,
+      "return_annotation": "str"
+    },
+    "parse_label": {
+      "arguments": [
+        {
+          "annotation": "str",
+          "name": "raw_text"
+        },
+        {
+          "annotation": "Iterable[str]",
+          "name": "candidates"
+        }
+      ],
+      "explicit_returns": [
+        {
+          "expression": "(None, 'PARSE_FAIL')",
+          "line": 24,
+          "literal": [
+            null,
+            "PARSE_FAIL"
+          ]
+        },
+        {
+          "expression": "(None, 'PARSE_FAIL')",
+          "line": 26,
+          "literal": [
+            null,
+            "PARSE_FAIL"
+          ]
+        },
+        {
+          "expression": "(None, 'PARSE_FAIL')",
+          "line": 30,
+          "literal": [
+            null,
+            "PARSE_FAIL"
+          ]
+        },
+        {
+          "expression": "(matches[0], 'OK')",
+          "line": 31,
+          "literal": {
+            "expression": "(matches[0], 'OK')"
+          }
+        }
+      ],
+      "line": 19,
+      "return_annotation": "tuple[str | None, str]"
+    }
+  },
+  "raw_output_handling": "strip raw_text; json.loads; catches TypeError and JSONDecodeError; requires exactly {label: string}; normalize candidates and require exactly one match.",
+  "source_lines": 67,
+  "source_read_completely": true,
+  "synthetic_parser_contract_tests": {
+    "all_pass": true,
+    "cases": [
+      {
+        "case": "one_valid_candidate",
+        "passed": true,
+        "raw_status": "OK",
+        "return_object_type": "tuple",
+        "tuple_length": 2
+      },
+      {
+        "case": "no_matching_candidate",
+        "passed": true,
+        "raw_status": "PARSE_FAIL",
+        "return_object_type": "tuple",
+        "tuple_length": 2
+      },
+      {
+        "case": "multiple_normalized_matches",
+        "passed": true,
+        "raw_status": "PARSE_FAIL",
+        "return_object_type": "tuple",
+        "tuple_length": 2
+      },
+      {
+        "case": "whitespace_case_punctuation_variant",
+        "passed": true,
+        "raw_status": "OK",
+        "return_object_type": "tuple",
+        "tuple_length": 2
+      },
+      {
+        "case": "invalid_json",
+        "passed": true,
+        "raw_status": "PARSE_FAIL",
+        "return_object_type": "tuple",
+        "tuple_length": 2
+      },
+      {
+        "case": "invalid_object_schema",
+        "passed": true,
+        "raw_status": "PARSE_FAIL",
+        "return_object_type": "tuple",
+        "tuple_length": 2
+      }
+    ],
+    "model_generate_called": false,
+    "parser_entry": "parse_label",
+    "scientific_records_used": false,
+    "statuses_observed": [
+      "OK",
+      "PARSE_FAIL"
+    ]
+  }
+}

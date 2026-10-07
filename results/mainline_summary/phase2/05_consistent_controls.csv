@@ -1,0 +1,34 @@
+﻿pair,presentation_order,outcome,count,eligible_records,percentage_all_eligible,shared_label_preservation_rate,interpretation_scope
+AT,A_THEN_T,SHARED_LABEL,325,335,97.01492537313433,0.9701492537313433,shared-label preservation only; no modality preference
+AT,A_THEN_T,OTHER,10,335,2.985074626865672,0.9701492537313433,shared-label preservation only; no modality preference
+AT,A_THEN_T,PARSE_FAIL,0,335,0.0,0.9701492537313433,shared-label preservation only; no modality preference
+AT,T_THEN_A,SHARED_LABEL,324,335,96.71641791044776,0.9671641791044776,shared-label preservation only; no modality preference
+AT,T_THEN_A,OTHER,11,335,3.283582089552239,0.9671641791044776,shared-label preservation only; no modality preference
+AT,T_THEN_A,PARSE_FAIL,0,335,0.0,0.9671641791044776,shared-label preservation only; no modality preference
+AT,PAIRED_UTTERANCE_CLASSIFICATION,PRESERVED_BOTH,318,335,94.92537313432835,,paired shared-label preservation only
+AT,PAIRED_UTTERANCE_CLASSIFICATION,PRESERVED_ONLY_ORDER1,7,335,2.08955223880597,,paired shared-label preservation only
+AT,PAIRED_UTTERANCE_CLASSIFICATION,PRESERVED_ONLY_ORDER2,6,335,1.791044776119403,,paired shared-label preservation only
+AT,PAIRED_UTTERANCE_CLASSIFICATION,FAILED_BOTH,4,335,1.1940298507462686,,paired shared-label preservation only
+AT,PAIRED_UTTERANCE_CLASSIFICATION,PARSE_FAIL_INVOLVED,0,335,0.0,,paired shared-label preservation only
+AV,A_THEN_V,SHARED_LABEL,224,225,99.55555555555556,0.9955555555555555,shared-label preservation only; no modality preference
+AV,A_THEN_V,OTHER,1,225,0.4444444444444444,0.9955555555555555,shared-label preservation only; no modality preference
+AV,A_THEN_V,PARSE_FAIL,0,225,0.0,0.9955555555555555,shared-label preservation only; no modality preference
+AV,V_THEN_A,SHARED_LABEL,224,225,99.55555555555556,0.9955555555555555,shared-label preservation only; no modality preference
+AV,V_THEN_A,OTHER,1,225,0.4444444444444444,0.9955555555555555,shared-label preservation only; no modality preference
+AV,V_THEN_A,PARSE_FAIL,0,225,0.0,0.9955555555555555,shared-label preservation only; no modality preference
+AV,PAIRED_UTTERANCE_CLASSIFICATION,PRESERVED_BOTH,223,225,99.11111111111111,,paired shared-label preservation only
+AV,PAIRED_UTTERANCE_CLASSIFICATION,PRESERVED_ONLY_ORDER1,1,225,0.4444444444444444,,paired shared-label preservation only
+AV,PAIRED_UTTERANCE_CLASSIFICATION,PRESERVED_ONLY_ORDER2,1,225,0.4444444444444444,,paired shared-label preservation only
+AV,PAIRED_UTTERANCE_CLASSIFICATION,FAILED_BOTH,0,225,0.0,,paired shared-label preservation only
+AV,PAIRED_UTTERANCE_CLASSIFICATION,PARSE_FAIL_INVOLVED,0,225,0.0,,paired shared-label preservation only
+VT,V_THEN_T,SHARED_LABEL,153,158,96.83544303797468,0.9683544303797469,shared-label preservation only; no modality preference
+VT,V_THEN_T,OTHER,5,158,3.1645569620253164,0.9683544303797469,shared-label preservation only; no modality preference
+VT,V_THEN_T,PARSE_FAIL,0,158,0.0,0.9683544303797469,shared-label preservation only; no modality preference
+VT,T_THEN_V,SHARED_LABEL,156,158,98.73417721518987,0.9873417721518988,shared-label preservation only; no modality preference
+VT,T_THEN_V,OTHER,2,158,1.2658227848101267,0.9873417721518988,shared-label preservation only; no modality preference
+VT,T_THEN_V,PARSE_FAIL,0,158,0.0,0.9873417721518988,shared-label preservation only; no modality preference
+VT,PAIRED_UTTERANCE_CLASSIFICATION,PRESERVED_BOTH,152,158,96.20253164556962,,paired shared-label preservation only
+VT,PAIRED_UTTERANCE_CLASSIFICATION,PRESERVED_ONLY_ORDER1,1,158,0.6329113924050633,,paired shared-label preservation only
+VT,PAIRED_UTTERANCE_CLASSIFICATION,PRESERVED_ONLY_ORDER2,4,158,2.5316455696202533,,paired shared-label preservation only
+VT,PAIRED_UTTERANCE_CLASSIFICATION,FAILED_BOTH,1,158,0.6329113924050633,,paired shared-label preservation only
+VT,PAIRED_UTTERANCE_CLASSIFICATION,PARSE_FAIL_INVOLVED,0,158,0.0,,paired shared-label preservation only

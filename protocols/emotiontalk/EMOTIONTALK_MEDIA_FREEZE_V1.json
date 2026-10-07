@@ -1,0 +1,238 @@
+{
+  "EMOTIONTALK_MASTER_PANEL_MEDIA_FREEZE_STATUS": "PASS",
+  "EMOTIONTALK_SCIENCE_STATUS": "NOT_RUN",
+  "MODEL_INFERENCE_RUN": false,
+  "all_derived_sha256_complete": true,
+  "calibration_candidate_n": 6,
+  "contract_violations": 0,
+  "derivation_failures": 0,
+  "duration_check_not_available": 0,
+  "master_panel_n": 1500,
+  "master_panel_unique_utterance_id_n": 1500,
+  "media_source_modified": false,
+  "next_step": "EMOTIONTALK_PHASE1_COMPETENCE_TECHNICAL_GATE",
+  "pairwise_conflict_consistent": {
+    "AT": {
+      "conflict": 900,
+      "consistent": 600
+    },
+    "AV": {
+      "conflict": 900,
+      "consistent": 600
+    },
+    "VT": {
+      "conflict": 900,
+      "consistent": 600
+    }
+  },
+  "panel_or_labels_modified": false,
+  "pattern_counts": {
+    "A=V!=T": 300,
+    "ALL_DIFFERENT": 300,
+    "ALL_SAME": 300,
+    "T=A!=V": 300,
+    "T=V!=A": 300
+  },
+  "resolution_counts": {
+    "1080x1918": 2,
+    "1080x1920": 1478,
+    "1080x1922": 15,
+    "608x1080": 5
+  },
+  "resource_metrics": {
+    "duration": {
+      "MAX": {
+        "n": 1500,
+        "value": 17.8
+      },
+      "P100": {
+        "n": 1500,
+        "value": 17.8
+      },
+      "P50": {
+        "n": 1500,
+        "value": 3.566667
+      },
+      "P75": {
+        "n": 1500,
+        "value": 6.733333
+      },
+      "P90": {
+        "n": 1500,
+        "value": 9.533333
+      },
+      "P95": {
+        "n": 1500,
+        "value": 10.66833365
+      },
+      "P99": {
+        "n": 1500,
+        "value": 12.96733366
+      }
+    },
+    "fps": {
+      "MAX": {
+        "n": 1500,
+        "value": 30.0
+      },
+      "P100": {
+        "n": 1500,
+        "value": 30.0
+      },
+      "P50": {
+        "n": 1500,
+        "value": 30.0
+      },
+      "P75": {
+        "n": 1500,
+        "value": 30.0
+      },
+      "P90": {
+        "n": 1500,
+        "value": 30.0
+      },
+      "P95": {
+        "n": 1500,
+        "value": 30.0
+      },
+      "P99": {
+        "n": 1500,
+        "value": 30.0
+      }
+    },
+    "height": {
+      "MAX": {
+        "n": 1500,
+        "value": 1922.0
+      },
+      "P100": {
+        "n": 1500,
+        "value": 1922.0
+      },
+      "P50": {
+        "n": 1500,
+        "value": 1920.0
+      },
+      "P75": {
+        "n": 1500,
+        "value": 1920.0
+      },
+      "P90": {
+        "n": 1500,
+        "value": 1920.0
+      },
+      "P95": {
+        "n": 1500,
+        "value": 1920.0
+      },
+      "P99": {
+        "n": 1500,
+        "value": 1920.02
+      }
+    },
+    "resource_proxy_duration_width_height": {
+      "MAX": {
+        "n": 1500,
+        "value": 36910080.0
+      },
+      "P100": {
+        "n": 1500,
+        "value": 36910080.0
+      },
+      "P50": {
+        "n": 1500,
+        "value": 7326719.3088
+      },
+      "P75": {
+        "n": 1500,
+        "value": 13962239.3088
+      },
+      "P90": {
+        "n": 1500,
+        "value": 19768319.3088
+      },
+      "P95": {
+        "n": 1500,
+        "value": 22121856.656639997
+      },
+      "P99": {
+        "n": 1500,
+        "value": 26889063.077375997
+      }
+    },
+    "source_size_bytes": {
+      "MAX": {
+        "n": 1500,
+        "value": 4987811.0
+      },
+      "P100": {
+        "n": 1500,
+        "value": 4987811.0
+      },
+      "P50": {
+        "n": 1500,
+        "value": 774871.5
+      },
+      "P75": {
+        "n": 1500,
+        "value": 1636204.75
+      },
+      "P90": {
+        "n": 1500,
+        "value": 2506623.2000000007
+      },
+      "P95": {
+        "n": 1500,
+        "value": 2821554.6
+      },
+      "P99": {
+        "n": 1500,
+        "value": 3401381.659999999
+      }
+    },
+    "width": {
+      "MAX": {
+        "n": 1500,
+        "value": 1080.0
+      },
+      "P100": {
+        "n": 1500,
+        "value": 1080.0
+      },
+      "P50": {
+        "n": 1500,
+        "value": 1080.0
+      },
+      "P75": {
+        "n": 1500,
+        "value": 1080.0
+      },
+      "P90": {
+        "n": 1500,
+        "value": 1080.0
+      },
+      "P95": {
+        "n": 1500,
+        "value": 1080.0
+      },
+      "P99": {
+        "n": 1500,
+        "value": 1080.0
+      }
+    }
+  },
+  "silent_audio_stream_zero": 1500,
+  "silent_video_derived_or_valid_resume": 1500,
+  "silent_video_validated": 1500,
+  "source_audio_found_nonempty": 1500,
+  "source_data_stream_total": 0,
+  "source_multiple_audio_streams": 0,
+  "source_subtitle_stream_total": 0,
+  "source_video_found": 1500,
+  "source_video_stream_count_distribution": {
+    "1": 1500
+  },
+  "source_with_audio_stream": 1500,
+  "source_without_audio_stream": 0,
+  "validation_incomplete": 0
+}

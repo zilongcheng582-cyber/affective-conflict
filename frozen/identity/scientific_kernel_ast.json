@@ -1,0 +1,156 @@
+[
+  {
+    "current_path": "src/emotiontalk/phase1/execution.py",
+    "function": "build_messages",
+    "origin_file": "run_qwen25_emotiontalk_phase1_v1_2.py",
+    "AST_SHA256": "4bfd2ddd702b5f7c03b9f4036c47bca95ce65728b968b56b3afbf53c4b3fb9f1",
+    "origin_file_SHA256": "e9423fe9490c6a5eb7d6a771764d5678a97f5b6d55578215d3cc89dcf85c51b6"
+  },
+  {
+    "current_path": "src/emotiontalk/phase1/execution.py",
+    "function": "score_candidate_strings",
+    "origin_file": "run_qwen25_emotiontalk_phase1_v1_2.py",
+    "AST_SHA256": "e03011b950e0e76927bc9e8083d84c3173930c010924dd7c1d11ada624e0484e",
+    "origin_file_SHA256": "e9423fe9490c6a5eb7d6a771764d5678a97f5b6d55578215d3cc89dcf85c51b6"
+  },
+  {
+    "current_path": "src/emotiontalk/phase1/execution.py",
+    "function": "normalize_template_result",
+    "origin_file": "run_qwen25_emotiontalk_phase1_v1_2.py",
+    "AST_SHA256": "a98c4959671c4f709041684604b038cdc3fdb5e0a70fd4c420daf325b0266345",
+    "origin_file_SHA256": "e9423fe9490c6a5eb7d6a771764d5678a97f5b6d55578215d3cc89dcf85c51b6"
+  },
+  {
+    "current_path": "src/emotiontalk/phase2/core.py",
+    "function": "build_messages",
+    "origin_file": "run_qwen25_emotiontalk_pairwise_v1.py",
+    "AST_SHA256": "faebe6cec467b7335db3dff14605146afddaf66f05863eb217d050c450b766d5",
+    "origin_file_SHA256": "7f07055b76b00020375682a85fac14963030137852c3f3c9f0acbf8a13e266df"
+  },
+  {
+    "current_path": "src/emotiontalk/phase2/core.py",
+    "function": "classify",
+    "origin_file": "run_qwen25_emotiontalk_pairwise_v1.py",
+    "AST_SHA256": "2228d27360931b9102961437b2634db3e5ad32e1f7223bd86955f5a099f7321a",
+    "origin_file_SHA256": "7f07055b76b00020375682a85fac14963030137852c3f3c9f0acbf8a13e266df"
+  },
+  {
+    "current_path": "src/emotiontalk/phase2/core.py",
+    "function": "population_preflight",
+    "origin_file": "run_qwen25_emotiontalk_pairwise_v1.py",
+    "AST_SHA256": "e5e6e4dcf4da17e63bf85a3fa794ee135dcaf777800a802d5901ca9811d89f26",
+    "origin_file_SHA256": "7f07055b76b00020375682a85fac14963030137852c3f3c9f0acbf8a13e266df"
+  },
+  {
+    "current_path": "src/emotiontalk/phase2/execution.py",
+    "function": "execute_pairwise_record",
+    "origin_file": "run_qwen25_emotiontalk_pairwise_v1_2.py",
+    "AST_SHA256": "2440140ec236e526733f744bb8891a36bfb69aa19973e8d47f288ae0343459dd",
+    "origin_file_SHA256": "663a184bc59b17627137d7022e1d8e0fda97e708f280452975be49e65bcf93f1"
+  },
+  {
+    "current_path": "src/emotiontalk/phase2/execution.py",
+    "function": "canonical_outcomes",
+    "origin_file": "run_qwen25_emotiontalk_pairwise_v1_2.py",
+    "AST_SHA256": "bb0e21e718e08198146ed60c4daa48b8519cee43af3cac14217f42c507390ca3",
+    "origin_file_SHA256": "663a184bc59b17627137d7022e1d8e0fda97e708f280452975be49e65bcf93f1"
+  },
+  {
+    "current_path": "src/emotiontalk/phase2/execution.py",
+    "function": "paired_outcome_class",
+    "origin_file": "run_qwen25_emotiontalk_pairwise_v1_2.py",
+    "AST_SHA256": "fd4eed717b1b63049cfdfe6c4b03381cce43f26230437c2e83684ffeda0e0009",
+    "origin_file_SHA256": "663a184bc59b17627137d7022e1d8e0fda97e708f280452975be49e65bcf93f1"
+  },
+  {
+    "current_path": "src/emotiontalk/phase3/execution.py",
+    "function": "build_messages",
+    "origin_file": "run_qwen25_emotiontalk_trimodal_v1_3.py",
+    "AST_SHA256": "e9a0c43f2029dce1725ac5459257b30e314f5b027a2e799aafef534354cab0df",
+    "origin_file_SHA256": "43b83db5ca2fb6738ebdee7ae23f8c8674168f420b4ce442ae37be3af9d61407"
+  },
+  {
+    "current_path": "src/emotiontalk/phase3/execution.py",
+    "function": "run_records",
+    "origin_file": "run_qwen25_emotiontalk_trimodal_v1_3.py",
+    "AST_SHA256": "a44672ef4f82d1b030a2ed88c8af54c0a554a109e27c5dfa1858b5abfa4ac32e",
+    "origin_file_SHA256": "43b83db5ca2fb6738ebdee7ae23f8c8674168f420b4ce442ae37be3af9d61407"
+  },
+  {
+    "current_path": "src/emotiontalk/phase3/execution.py",
+    "function": "prediction_input",
+    "origin_file": "run_qwen25_emotiontalk_trimodal_v1_3.py",
+    "AST_SHA256": "72f0c84aacc61b3d13bda9ece8277999cbf4d4c2bc1a69a3e2fd7d9130462d37",
+    "origin_file_SHA256": "43b83db5ca2fb6738ebdee7ae23f8c8674168f420b4ce442ae37be3af9d61407"
+  },
+  {
+    "current_path": "src/cross_regime/run_mcr_joint.py",
+    "function": "resume_contract",
+    "origin_file": "run_qwen25_mcr_controlled_v3.py",
+    "AST_SHA256": "b4fee0f38c49aace31cbb2016afb9a8448e4904ee2c56c05ec88de3085bfba37",
+    "origin_file_SHA256": "36f704ed98955e3b25565f079a05ced729deece4a0f0b0aa7fee2760456a8ff3"
+  },
+  {
+    "current_path": "src/cross_regime/run_mcr_joint.py",
+    "function": "existing_keys",
+    "origin_file": "run_qwen25_mcr_controlled_v3.py",
+    "AST_SHA256": "3e0a92a5d57c4c7a7d7a109188fc915d70254b6e7cd89bd74125c1080c35c793",
+    "origin_file_SHA256": "36f704ed98955e3b25565f079a05ced729deece4a0f0b0aa7fee2760456a8ff3"
+  },
+  {
+    "current_path": "src/cross_regime/run_mcr_joint.py",
+    "function": "render_prompt",
+    "origin_file": "run_qwen25_mcr_controlled_v3.py",
+    "AST_SHA256": "d158815b2044a7175519e32fa94bf122a21fecddb6c38b489b989f374a71a241",
+    "origin_file_SHA256": "36f704ed98955e3b25565f079a05ced729deece4a0f0b0aa7fee2760456a8ff3"
+  },
+  {
+    "current_path": "src/cross_regime/run_listen_joint.py",
+    "function": "extract_letter",
+    "origin_file": "run_listen_source_aligned_v4.py",
+    "AST_SHA256": "70dd7f27dc4c0623106868c3f2d751e0aab24bd5a4f4b0667d7375eade133d93",
+    "origin_file_SHA256": "854d22c9c4aa8c2e2a641b8c48d56f168c29618505f3e04a7418588a6568e58f"
+  },
+  {
+    "current_path": "src/cross_regime/run_listen_joint.py",
+    "function": "decode_continuation",
+    "origin_file": "run_listen_source_aligned_v4.py",
+    "AST_SHA256": "c3d0f11842816a332684df23d0966be6eb6862102ed6fc9ffb1682e986ecb513",
+    "origin_file_SHA256": "854d22c9c4aa8c2e2a641b8c48d56f168c29618505f3e04a7418588a6568e58f"
+  },
+  {
+    "current_path": "src/cross_regime/run_camer_joint.py",
+    "function": "build_messages",
+    "origin_file": "run_qwen25_camer_controlled_v4.py",
+    "origin_file_SHA256": "8d8f80ddd6577a91e2606374fda493b19675cc01caf25d31aba6a8af8ad69c20",
+    "AST_SHA256": "3a54991db7135ef64f80eb1488b7c01c1e100da2c5231ccf8121446604283678"
+  },
+  {
+    "current_path": "src/cross_regime/run_camer_joint.py",
+    "function": "effective_prompt",
+    "origin_file": "run_qwen25_camer_controlled_v4.py",
+    "origin_file_SHA256": "8d8f80ddd6577a91e2606374fda493b19675cc01caf25d31aba6a8af8ad69c20",
+    "AST_SHA256": "0875bddc8e01b33c724c8f6f8ac90598488fbf8d4a34e87225f03752616724c2"
+  },
+  {
+    "current_path": "src/cross_regime/run_camer_joint.py",
+    "function": "validate_parser_result",
+    "origin_file": "run_qwen25_camer_controlled_v4.py",
+    "origin_file_SHA256": "8d8f80ddd6577a91e2606374fda493b19675cc01caf25d31aba6a8af8ad69c20",
+    "AST_SHA256": "f37f3eee641ac63e91d4155ea9a5bd67b534f45bb8faa2ffb6d8500ba7a149b2"
+  },
+  {
+    "current_path": "src/cross_regime/run_camer_joint.py",
+    "function": "extract_generated_suffix",
+    "origin_file": "run_qwen25_camer_controlled_v4.py",
+    "origin_file_SHA256": "8d8f80ddd6577a91e2606374fda493b19675cc01caf25d31aba6a8af8ad69c20",
+    "AST_SHA256": "4f70399334b0cf23df1df995c1d5843348e8979c30de60b290837bd244575459"
+  },
+  {
+    "current_path": "src/cross_regime/run_camer_joint.py",
+    "function": "audit_leakage",
+    "origin_file": "run_qwen25_camer_controlled_v4.py",
+    "origin_file_SHA256": "8d8f80ddd6577a91e2606374fda493b19675cc01caf25d31aba6a8af8ad69c20",
+    "AST_SHA256": "a7da2a08987302a47311b2e36fc3936155fc60a3eb3050708adc87c089566051"
+  }
+]

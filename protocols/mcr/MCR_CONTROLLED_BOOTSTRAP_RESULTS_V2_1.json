@@ -1,0 +1,297 @@
+{
+  "cluster_summary": {
+    "count": 255,
+    "max_size": 10,
+    "median_size": 3,
+    "min_size": 1
+  },
+  "configuration": {
+    "additional_hypothesis_tests": false,
+    "additional_interval_methods": false,
+    "bootstrap_replicates": 10000,
+    "cluster_order": "sorted dialogue_id",
+    "confidence_level": 0.95,
+    "derived_seed": 2697856816,
+    "dialogue_cluster_count": 255,
+    "dual_readable_indicator": "frozen observed sample-level indicator",
+    "duplicate_cluster_selection_preserves_multiplicity": true,
+    "interval_construction": "ordinary percentile cluster-bootstrap; empirical 2.5th/97.5th percentiles; NumPy method=linear",
+    "paired_joint_orders_preserved": true,
+    "resampling_unit": "dialogue_cluster",
+    "rng": "NumPy Generator(PCG64)",
+    "seed_derivation_rule": "first 16 hex chars of Analysis Spec V2 SHA256 -> unsigned integer -> modulo 2**32"
+  },
+  "full_pool_cis": {
+    "order_averaged": {
+      "OTHER": {
+        "invalid_replicates": 0,
+        "lower": 0.03559322033898305,
+        "upper": 0.05738658313265101,
+        "valid_replicates": 10000
+      },
+      "PARSE_FAIL": {
+        "invalid_replicates": 0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "valid_replicates": 10000
+      },
+      "SIDE_AUDIO": {
+        "invalid_replicates": 0,
+        "lower": 0.04684092786851384,
+        "upper": 0.0719305207463102,
+        "valid_replicates": 10000
+      },
+      "SIDE_TEXT": {
+        "invalid_replicates": 0,
+        "lower": 0.8779002333935051,
+        "upper": 0.9115092290988056,
+        "valid_replicates": 10000
+      }
+    },
+    "order_specific": {
+      "A_THEN_T": {
+        "OTHER": {
+          "invalid_replicates": 0,
+          "lower": 0.005549389567147614,
+          "upper": 0.019438444924406047,
+          "valid_replicates": 10000
+        },
+        "PARSE_FAIL": {
+          "invalid_replicates": 0,
+          "lower": 0.0,
+          "upper": 0.0,
+          "valid_replicates": 10000
+        },
+        "SIDE_AUDIO": {
+          "invalid_replicates": 0,
+          "lower": 0.015069967707212056,
+          "upper": 0.03463203463203463,
+          "valid_replicates": 10000
+        },
+        "SIDE_TEXT": {
+          "invalid_replicates": 0,
+          "lower": 0.951434645482073,
+          "upper": 0.9748959678412871,
+          "valid_replicates": 10000
+        }
+      },
+      "T_THEN_A": {
+        "OTHER": {
+          "invalid_replicates": 0,
+          "lower": 0.0625,
+          "upper": 0.09881909595981841,
+          "valid_replicates": 10000
+        },
+        "PARSE_FAIL": {
+          "invalid_replicates": 0,
+          "lower": 0.0,
+          "upper": 0.0,
+          "valid_replicates": 10000
+        },
+        "SIDE_AUDIO": {
+          "invalid_replicates": 0,
+          "lower": 0.07491436059905075,
+          "upper": 0.11320804632125386,
+          "valid_replicates": 10000
+        },
+        "SIDE_TEXT": {
+          "invalid_replicates": 0,
+          "lower": 0.79858244982961,
+          "upper": 0.8530410009188215,
+          "valid_replicates": 10000
+        }
+      }
+    },
+    "os_resolved": {
+      "invalid_replicates": 0,
+      "lower": 0.06674746807512262,
+      "upper": 0.10677116048994974,
+      "valid_replicates": 10000
+    },
+    "resolved_audio_share": {
+      "invalid_replicates": 0,
+      "lower": 0.04911699779249448,
+      "upper": 0.0754018870431339,
+      "valid_replicates": 10000
+    },
+    "stability": {
+      "OTHER_OR_INVALID": {
+        "invalid_replicates": 0,
+        "lower": 0.0625,
+        "upper": 0.09881909595981841,
+        "valid_replicates": 10000
+      },
+      "PRIMACY_FLIP": {
+        "invalid_replicates": 0,
+        "lower": 0.001053740779768177,
+        "upper": 0.009153580200314019,
+        "valid_replicates": 10000
+      },
+      "RECENCY_FLIP": {
+        "invalid_replicates": 0,
+        "lower": 0.05769181256436664,
+        "upper": 0.09299658708644959,
+        "valid_replicates": 10000
+      },
+      "STABLE_AUDIO": {
+        "invalid_replicates": 0,
+        "lower": 0.010548523206751054,
+        "upper": 0.02802716776329575,
+        "valid_replicates": 10000
+      },
+      "STABLE_TEXT": {
+        "invalid_replicates": 0,
+        "lower": 0.7938144329896907,
+        "upper": 0.849207209998967,
+        "valid_replicates": 10000
+      }
+    }
+  },
+  "gpu_required": false,
+  "inference_executed": false,
+  "model_loaded": false,
+  "point_estimate_reproduction": {
+    "dual_readable_primary": "PASS",
+    "full_pool_sensitivity": "PASS",
+    "readability": "PASS",
+    "status": "PASS",
+    "tolerance": 1e-12
+  },
+  "point_estimates_changed": false,
+  "primary_cis": {
+    "order_averaged": {
+      "OTHER": {
+        "invalid_replicates": 0,
+        "lower": 0.004123287961218485,
+        "upper": 0.016233766233766232,
+        "valid_replicates": 10000
+      },
+      "PARSE_FAIL": {
+        "invalid_replicates": 0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "valid_replicates": 10000
+      },
+      "SIDE_AUDIO": {
+        "invalid_replicates": 0,
+        "lower": 0.08924139460185052,
+        "upper": 0.1357150937297996,
+        "valid_replicates": 10000
+      },
+      "SIDE_TEXT": {
+        "invalid_replicates": 0,
+        "lower": 0.8540305010893247,
+        "upper": 0.9022878692646135,
+        "valid_replicates": 10000
+      }
+    },
+    "order_specific": {
+      "A_THEN_T": {
+        "OTHER": {
+          "invalid_replicates": 0,
+          "lower": 0.0,
+          "upper": 0.0,
+          "valid_replicates": 10000
+        },
+        "PARSE_FAIL": {
+          "invalid_replicates": 0,
+          "lower": 0.0,
+          "upper": 0.0,
+          "valid_replicates": 10000
+        },
+        "SIDE_AUDIO": {
+          "invalid_replicates": 0,
+          "lower": 0.029473580808603038,
+          "upper": 0.0674168450151596,
+          "valid_replicates": 10000
+        },
+        "SIDE_TEXT": {
+          "invalid_replicates": 0,
+          "lower": 0.9325831549848403,
+          "upper": 0.9705264191913969,
+          "valid_replicates": 10000
+        }
+      },
+      "T_THEN_A": {
+        "OTHER": {
+          "invalid_replicates": 0,
+          "lower": 0.00824657592243697,
+          "upper": 0.032467532467532464,
+          "valid_replicates": 10000
+        },
+        "PARSE_FAIL": {
+          "invalid_replicates": 0,
+          "lower": 0.0,
+          "upper": 0.0,
+          "valid_replicates": 10000
+        },
+        "SIDE_AUDIO": {
+          "invalid_replicates": 0,
+          "lower": 0.1415929203539823,
+          "upper": 0.21232982629572092,
+          "valid_replicates": 10000
+        },
+        "SIDE_TEXT": {
+          "invalid_replicates": 0,
+          "lower": 0.766599489872856,
+          "upper": 0.8413800698769558,
+          "valid_replicates": 10000
+        }
+      }
+    },
+    "os_resolved": {
+      "invalid_replicates": 0,
+      "lower": 0.11777765881513204,
+      "upper": 0.18629650072485932,
+      "valid_replicates": 10000
+    },
+    "resolved_audio_share": {
+      "invalid_replicates": 0,
+      "lower": 0.09008073856596456,
+      "upper": 0.13698700170882705,
+      "valid_replicates": 10000
+    },
+    "stability": {
+      "OTHER_OR_INVALID": {
+        "invalid_replicates": 0,
+        "lower": 0.00824657592243697,
+        "upper": 0.032467532467532464,
+        "valid_replicates": 10000
+      },
+      "PRIMACY_FLIP": {
+        "invalid_replicates": 0,
+        "lower": 0.002036659877800407,
+        "upper": 0.017977528089887642,
+        "valid_replicates": 10000
+      },
+      "RECENCY_FLIP": {
+        "invalid_replicates": 0,
+        "lower": 0.1081662788616431,
+        "upper": 0.17241567535009786,
+        "valid_replicates": 10000
+      },
+      "STABLE_AUDIO": {
+        "invalid_replicates": 0,
+        "lower": 0.0205761316872428,
+        "upper": 0.05466970387243736,
+        "valid_replicates": 10000
+      },
+      "STABLE_TEXT": {
+        "invalid_replicates": 0,
+        "lower": 0.756704882095035,
+        "upper": 0.8340248962655602,
+        "valid_replicates": 10000
+      }
+    }
+  },
+  "raw_outputs_modified": false,
+  "scientific_results_status": "FROZEN_V2",
+  "source_hashes": {
+    "analysis_spec_sha256": "17230d00a0ce07305658b5de4cdeaf14cf830bd5c70e87a74bca6195ed6b04b7",
+    "original_bootstrap_gap_artifact_sha256": "1d39ee959ad458bc5357c1ee72c72f1ddedf2c1a600d81df560b6036854d23f0",
+    "raw_output_sha256": "2772bd2d536caa4e55f1305300b4e9a523a5315afd37992c098d6724e4c25775",
+    "sample_table_sha256": "e7c9f6ec9f65f87ba7f84a37275702e05c6695a9726cb045f846731046c21000",
+    "scientific_results_sha256": "009d2fadfe128ea2e7e512f972a112db8d7bd0949064bb6c7b12dc7315b874a6"
+  },
+  "status": "COMPLETE_V2_1"
+}

@@ -1,0 +1,37 @@
+{
+  "artifact_type": "MCR_SER_SER_ONTOLOGY",
+  "ontology_version": "mcr_ser_ontology_v1",
+  "provenance": "SOURCE_SCHEMA_VERIFIED_PROJECT_DEFINED_FROZEN",
+  "source_path": "/root/autodl-tmp/affective-conflict/data/MCR-Bench/MCR-Bench/SER/SER.json",
+  "source_sha256": "58aff644175739b142f46ea9f47c32f9230f3cf7fc033dfdd4e8750ee3e6b880",
+  "record_count": 1000,
+  "canonical_labels": [
+    "neutral",
+    "happy",
+    "surprised",
+    "angry",
+    "sad",
+    "disgusted",
+    "fearful"
+  ],
+  "label_counts": {
+    "neutral": 468,
+    "happy": 165,
+    "surprised": 125,
+    "angry": 118,
+    "sad": 80,
+    "disgusted": 25,
+    "fearful": 19
+  },
+  "prompt_candidate_order": [
+    "sad",
+    "happy",
+    "fearful",
+    "angry",
+    "surprised",
+    "disgusted",
+    "neutral"
+  ],
+  "response_serialization": "UNSPECIFIED_IN_SOURCE",
+  "parser_scope": "raw_generated_text_to_one_canonical_label_or_explicit_failure"
+}

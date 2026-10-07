@@ -1,0 +1,3176 @@
+{
+  "status": "FROZEN_PRE_FULL_PHASE1",
+  "primary_estimand": "equal-quota frozen master panel: 300 per T/A/V source-label pattern",
+  "natural_distribution_sensitivity": "ordered (T,A,V) source-label tuple post-stratification only where panel support is positive",
+  "weight_definition": "population tuple count / panel tuple count",
+  "zero_panel_support_rule": "weight is undefined; do not impute, pool across tuples, or claim full-population identification",
+  "population_n": 19250,
+  "panel_n": 1500,
+  "population_mass_supported_by_panel_tuples": 1.0,
+  "unsupported_population_tuple_n": 0,
+  "unsupported_population_mass_n": 0,
+  "full_population_reweighting_identifiable": true,
+  "ordered_tuple_counts": [
+    {
+      "text_label": "angry",
+      "audio_label": "angry",
+      "video_label": "angry",
+      "trimodal_pattern": "ALL_SAME",
+      "population_n": 1600,
+      "panel_n": 91,
+      "population_to_panel_weight": 17.582417582417584,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "angry",
+      "video_label": "disgusted",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 152,
+      "panel_n": 12,
+      "population_to_panel_weight": 12.666666666666666,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "angry",
+      "video_label": "fearful",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 4,
+      "panel_n": 1,
+      "population_to_panel_weight": 4.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "angry",
+      "video_label": "happy",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 44,
+      "panel_n": 4,
+      "population_to_panel_weight": 11.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "angry",
+      "video_label": "neutral",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 220,
+      "panel_n": 17,
+      "population_to_panel_weight": 12.941176470588236,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "angry",
+      "video_label": "sad",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 26,
+      "panel_n": 3,
+      "population_to_panel_weight": 8.666666666666666,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "angry",
+      "video_label": "surprised",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 20,
+      "panel_n": 2,
+      "population_to_panel_weight": 10.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "disgusted",
+      "video_label": "angry",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 91,
+      "panel_n": 16,
+      "population_to_panel_weight": 5.6875,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "disgusted",
+      "video_label": "disgusted",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 76,
+      "panel_n": 5,
+      "population_to_panel_weight": 15.2,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "disgusted",
+      "video_label": "fearful",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 3,
+      "panel_n": 1,
+      "population_to_panel_weight": 3.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "disgusted",
+      "video_label": "happy",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 17,
+      "panel_n": 2,
+      "population_to_panel_weight": 8.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "disgusted",
+      "video_label": "neutral",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 66,
+      "panel_n": 4,
+      "population_to_panel_weight": 16.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "disgusted",
+      "video_label": "sad",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 6,
+      "panel_n": 1,
+      "population_to_panel_weight": 6.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "disgusted",
+      "video_label": "surprised",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 8,
+      "panel_n": 1,
+      "population_to_panel_weight": 8.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "fearful",
+      "video_label": "angry",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 12,
+      "panel_n": 3,
+      "population_to_panel_weight": 4.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "fearful",
+      "video_label": "disgusted",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 14,
+      "panel_n": 2,
+      "population_to_panel_weight": 7.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "fearful",
+      "video_label": "fearful",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 16,
+      "panel_n": 2,
+      "population_to_panel_weight": 8.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "fearful",
+      "video_label": "happy",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 3,
+      "panel_n": 1,
+      "population_to_panel_weight": 3.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "fearful",
+      "video_label": "neutral",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 12,
+      "panel_n": 2,
+      "population_to_panel_weight": 6.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "fearful",
+      "video_label": "sad",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 4,
+      "panel_n": 1,
+      "population_to_panel_weight": 4.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "fearful",
+      "video_label": "surprised",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 1,
+      "panel_n": 1,
+      "population_to_panel_weight": 1.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "happy",
+      "video_label": "angry",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 3,
+      "panel_n": 1,
+      "population_to_panel_weight": 3.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "happy",
+      "video_label": "disgusted",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 4,
+      "panel_n": 1,
+      "population_to_panel_weight": 4.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "happy",
+      "video_label": "fearful",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 1,
+      "panel_n": 1,
+      "population_to_panel_weight": 1.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "happy",
+      "video_label": "happy",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 114,
+      "panel_n": 6,
+      "population_to_panel_weight": 19.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "happy",
+      "video_label": "neutral",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 9,
+      "panel_n": 1,
+      "population_to_panel_weight": 9.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "happy",
+      "video_label": "surprised",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 4,
+      "panel_n": 1,
+      "population_to_panel_weight": 4.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "neutral",
+      "video_label": "angry",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 144,
+      "panel_n": 25,
+      "population_to_panel_weight": 5.76,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "neutral",
+      "video_label": "disgusted",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 109,
+      "panel_n": 5,
+      "population_to_panel_weight": 21.8,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "neutral",
+      "video_label": "fearful",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 6,
+      "panel_n": 1,
+      "population_to_panel_weight": 6.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "neutral",
+      "video_label": "happy",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 127,
+      "panel_n": 6,
+      "population_to_panel_weight": 21.166666666666668,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "neutral",
+      "video_label": "neutral",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 467,
+      "panel_n": 22,
+      "population_to_panel_weight": 21.227272727272727,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "neutral",
+      "video_label": "sad",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 31,
+      "panel_n": 2,
+      "population_to_panel_weight": 15.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "neutral",
+      "video_label": "surprised",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 37,
+      "panel_n": 3,
+      "population_to_panel_weight": 12.333333333333334,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "sad",
+      "video_label": "angry",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 13,
+      "panel_n": 3,
+      "population_to_panel_weight": 4.333333333333333,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "sad",
+      "video_label": "disgusted",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 9,
+      "panel_n": 1,
+      "population_to_panel_weight": 9.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "sad",
+      "video_label": "fearful",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 2,
+      "panel_n": 1,
+      "population_to_panel_weight": 2.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "sad",
+      "video_label": "happy",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 5,
+      "panel_n": 1,
+      "population_to_panel_weight": 5.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "sad",
+      "video_label": "neutral",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 29,
+      "panel_n": 2,
+      "population_to_panel_weight": 14.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "sad",
+      "video_label": "sad",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 66,
+      "panel_n": 4,
+      "population_to_panel_weight": 16.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "sad",
+      "video_label": "surprised",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 2,
+      "panel_n": 1,
+      "population_to_panel_weight": 2.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "surprised",
+      "video_label": "angry",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 19,
+      "panel_n": 4,
+      "population_to_panel_weight": 4.75,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "surprised",
+      "video_label": "disgusted",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 13,
+      "panel_n": 2,
+      "population_to_panel_weight": 6.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "surprised",
+      "video_label": "fearful",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 4,
+      "panel_n": 1,
+      "population_to_panel_weight": 4.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "surprised",
+      "video_label": "happy",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 24,
+      "panel_n": 2,
+      "population_to_panel_weight": 12.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "surprised",
+      "video_label": "neutral",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 31,
+      "panel_n": 2,
+      "population_to_panel_weight": 15.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "surprised",
+      "video_label": "sad",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 2,
+      "panel_n": 1,
+      "population_to_panel_weight": 2.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "angry",
+      "audio_label": "surprised",
+      "video_label": "surprised",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 28,
+      "panel_n": 2,
+      "population_to_panel_weight": 14.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "angry",
+      "video_label": "angry",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 253,
+      "panel_n": 13,
+      "population_to_panel_weight": 19.46153846153846,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "angry",
+      "video_label": "disgusted",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 36,
+      "panel_n": 7,
+      "population_to_panel_weight": 5.142857142857143,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "angry",
+      "video_label": "happy",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 7,
+      "panel_n": 1,
+      "population_to_panel_weight": 7.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "angry",
+      "video_label": "neutral",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 43,
+      "panel_n": 3,
+      "population_to_panel_weight": 14.333333333333334,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "angry",
+      "video_label": "sad",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 2,
+      "panel_n": 1,
+      "population_to_panel_weight": 2.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "angry",
+      "video_label": "surprised",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 5,
+      "panel_n": 1,
+      "population_to_panel_weight": 5.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "disgusted",
+      "video_label": "angry",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 53,
+      "panel_n": 5,
+      "population_to_panel_weight": 10.6,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "disgusted",
+      "video_label": "disgusted",
+      "trimodal_pattern": "ALL_SAME",
+      "population_n": 49,
+      "panel_n": 4,
+      "population_to_panel_weight": 12.25,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "disgusted",
+      "video_label": "fearful",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 3,
+      "panel_n": 1,
+      "population_to_panel_weight": 3.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "disgusted",
+      "video_label": "happy",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 16,
+      "panel_n": 2,
+      "population_to_panel_weight": 8.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "disgusted",
+      "video_label": "neutral",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 65,
+      "panel_n": 6,
+      "population_to_panel_weight": 10.833333333333334,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "disgusted",
+      "video_label": "sad",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 9,
+      "panel_n": 2,
+      "population_to_panel_weight": 4.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "disgusted",
+      "video_label": "surprised",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 3,
+      "panel_n": 1,
+      "population_to_panel_weight": 3.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "fearful",
+      "video_label": "angry",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 4,
+      "panel_n": 1,
+      "population_to_panel_weight": 4.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "fearful",
+      "video_label": "disgusted",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 2,
+      "panel_n": 1,
+      "population_to_panel_weight": 2.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "fearful",
+      "video_label": "fearful",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 2,
+      "panel_n": 1,
+      "population_to_panel_weight": 2.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "fearful",
+      "video_label": "neutral",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 3,
+      "panel_n": 1,
+      "population_to_panel_weight": 3.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "fearful",
+      "video_label": "sad",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 3,
+      "panel_n": 1,
+      "population_to_panel_weight": 3.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "fearful",
+      "video_label": "surprised",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 1,
+      "panel_n": 1,
+      "population_to_panel_weight": 1.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "happy",
+      "video_label": "angry",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 1,
+      "panel_n": 1,
+      "population_to_panel_weight": 1.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "happy",
+      "video_label": "disgusted",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 1,
+      "panel_n": 1,
+      "population_to_panel_weight": 1.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "happy",
+      "video_label": "fearful",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 2,
+      "panel_n": 1,
+      "population_to_panel_weight": 2.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "happy",
+      "video_label": "happy",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 45,
+      "panel_n": 3,
+      "population_to_panel_weight": 15.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "happy",
+      "video_label": "neutral",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 9,
+      "panel_n": 1,
+      "population_to_panel_weight": 9.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "happy",
+      "video_label": "sad",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 1,
+      "panel_n": 1,
+      "population_to_panel_weight": 1.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "happy",
+      "video_label": "surprised",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 1,
+      "panel_n": 1,
+      "population_to_panel_weight": 1.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "neutral",
+      "video_label": "angry",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 44,
+      "panel_n": 3,
+      "population_to_panel_weight": 14.666666666666666,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "neutral",
+      "video_label": "disgusted",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 64,
+      "panel_n": 12,
+      "population_to_panel_weight": 5.333333333333333,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "neutral",
+      "video_label": "fearful",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 3,
+      "panel_n": 1,
+      "population_to_panel_weight": 3.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "neutral",
+      "video_label": "happy",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 53,
+      "panel_n": 3,
+      "population_to_panel_weight": 17.666666666666668,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "neutral",
+      "video_label": "neutral",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 219,
+      "panel_n": 11,
+      "population_to_panel_weight": 19.90909090909091,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "neutral",
+      "video_label": "sad",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 8,
+      "panel_n": 1,
+      "population_to_panel_weight": 8.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "neutral",
+      "video_label": "surprised",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 25,
+      "panel_n": 2,
+      "population_to_panel_weight": 12.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "sad",
+      "video_label": "angry",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 2,
+      "panel_n": 1,
+      "population_to_panel_weight": 2.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "sad",
+      "video_label": "disgusted",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 7,
+      "panel_n": 2,
+      "population_to_panel_weight": 3.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "sad",
+      "video_label": "happy",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 4,
+      "panel_n": 1,
+      "population_to_panel_weight": 4.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "sad",
+      "video_label": "neutral",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 5,
+      "panel_n": 1,
+      "population_to_panel_weight": 5.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "sad",
+      "video_label": "sad",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 16,
+      "panel_n": 2,
+      "population_to_panel_weight": 8.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "surprised",
+      "video_label": "angry",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 6,
+      "panel_n": 1,
+      "population_to_panel_weight": 6.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "surprised",
+      "video_label": "disgusted",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 14,
+      "panel_n": 3,
+      "population_to_panel_weight": 4.666666666666667,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "surprised",
+      "video_label": "fearful",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 1,
+      "panel_n": 1,
+      "population_to_panel_weight": 1.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "surprised",
+      "video_label": "happy",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 6,
+      "panel_n": 1,
+      "population_to_panel_weight": 6.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "surprised",
+      "video_label": "neutral",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 10,
+      "panel_n": 1,
+      "population_to_panel_weight": 10.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "disgusted",
+      "audio_label": "surprised",
+      "video_label": "surprised",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 5,
+      "panel_n": 1,
+      "population_to_panel_weight": 5.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "angry",
+      "video_label": "angry",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 48,
+      "panel_n": 3,
+      "population_to_panel_weight": 16.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "angry",
+      "video_label": "disgusted",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 5,
+      "panel_n": 1,
+      "population_to_panel_weight": 5.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "angry",
+      "video_label": "fearful",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 4,
+      "panel_n": 2,
+      "population_to_panel_weight": 2.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "angry",
+      "video_label": "neutral",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 11,
+      "panel_n": 2,
+      "population_to_panel_weight": 5.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "angry",
+      "video_label": "sad",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 3,
+      "panel_n": 1,
+      "population_to_panel_weight": 3.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "angry",
+      "video_label": "surprised",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 1,
+      "panel_n": 1,
+      "population_to_panel_weight": 1.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "disgusted",
+      "video_label": "angry",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 10,
+      "panel_n": 1,
+      "population_to_panel_weight": 10.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "disgusted",
+      "video_label": "disgusted",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 8,
+      "panel_n": 1,
+      "population_to_panel_weight": 8.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "disgusted",
+      "video_label": "fearful",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 4,
+      "panel_n": 2,
+      "population_to_panel_weight": 2.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "disgusted",
+      "video_label": "happy",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 1,
+      "panel_n": 1,
+      "population_to_panel_weight": 1.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "disgusted",
+      "video_label": "neutral",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 5,
+      "panel_n": 1,
+      "population_to_panel_weight": 5.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "disgusted",
+      "video_label": "sad",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 1,
+      "panel_n": 1,
+      "population_to_panel_weight": 1.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "fearful",
+      "video_label": "angry",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 32,
+      "panel_n": 3,
+      "population_to_panel_weight": 10.666666666666666,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "fearful",
+      "video_label": "disgusted",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 46,
+      "panel_n": 4,
+      "population_to_panel_weight": 11.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "fearful",
+      "video_label": "fearful",
+      "trimodal_pattern": "ALL_SAME",
+      "population_n": 77,
+      "panel_n": 5,
+      "population_to_panel_weight": 15.4,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "fearful",
+      "video_label": "happy",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 6,
+      "panel_n": 1,
+      "population_to_panel_weight": 6.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "fearful",
+      "video_label": "neutral",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 99,
+      "panel_n": 8,
+      "population_to_panel_weight": 12.375,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "fearful",
+      "video_label": "sad",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 16,
+      "panel_n": 2,
+      "population_to_panel_weight": 8.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "fearful",
+      "video_label": "surprised",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 19,
+      "panel_n": 2,
+      "population_to_panel_weight": 9.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "happy",
+      "video_label": "disgusted",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 1,
+      "panel_n": 1,
+      "population_to_panel_weight": 1.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "happy",
+      "video_label": "fearful",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 2,
+      "panel_n": 1,
+      "population_to_panel_weight": 2.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "happy",
+      "video_label": "happy",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 31,
+      "panel_n": 2,
+      "population_to_panel_weight": 15.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "happy",
+      "video_label": "neutral",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 3,
+      "panel_n": 1,
+      "population_to_panel_weight": 3.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "happy",
+      "video_label": "surprised",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 1,
+      "panel_n": 1,
+      "population_to_panel_weight": 1.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "neutral",
+      "video_label": "angry",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 50,
+      "panel_n": 3,
+      "population_to_panel_weight": 16.666666666666668,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "neutral",
+      "video_label": "disgusted",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 59,
+      "panel_n": 3,
+      "population_to_panel_weight": 19.666666666666668,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "neutral",
+      "video_label": "fearful",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 24,
+      "panel_n": 5,
+      "population_to_panel_weight": 4.8,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "neutral",
+      "video_label": "happy",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 47,
+      "panel_n": 3,
+      "population_to_panel_weight": 15.666666666666666,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "neutral",
+      "video_label": "neutral",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 263,
+      "panel_n": 13,
+      "population_to_panel_weight": 20.23076923076923,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "neutral",
+      "video_label": "sad",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 11,
+      "panel_n": 2,
+      "population_to_panel_weight": 5.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "neutral",
+      "video_label": "surprised",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 24,
+      "panel_n": 2,
+      "population_to_panel_weight": 12.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "sad",
+      "video_label": "angry",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 7,
+      "panel_n": 1,
+      "population_to_panel_weight": 7.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "sad",
+      "video_label": "disgusted",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 5,
+      "panel_n": 1,
+      "population_to_panel_weight": 5.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "sad",
+      "video_label": "fearful",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 1,
+      "panel_n": 1,
+      "population_to_panel_weight": 1.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "sad",
+      "video_label": "happy",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 2,
+      "panel_n": 1,
+      "population_to_panel_weight": 2.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "sad",
+      "video_label": "neutral",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 13,
+      "panel_n": 2,
+      "population_to_panel_weight": 6.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "sad",
+      "video_label": "sad",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 26,
+      "panel_n": 2,
+      "population_to_panel_weight": 13.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "sad",
+      "video_label": "surprised",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 3,
+      "panel_n": 1,
+      "population_to_panel_weight": 3.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "surprised",
+      "video_label": "angry",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 6,
+      "panel_n": 1,
+      "population_to_panel_weight": 6.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "surprised",
+      "video_label": "disgusted",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 11,
+      "panel_n": 2,
+      "population_to_panel_weight": 5.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "surprised",
+      "video_label": "fearful",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 8,
+      "panel_n": 2,
+      "population_to_panel_weight": 4.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "surprised",
+      "video_label": "happy",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 3,
+      "panel_n": 1,
+      "population_to_panel_weight": 3.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "surprised",
+      "video_label": "neutral",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 20,
+      "panel_n": 2,
+      "population_to_panel_weight": 10.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "fearful",
+      "audio_label": "surprised",
+      "video_label": "surprised",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 6,
+      "panel_n": 1,
+      "population_to_panel_weight": 6.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "angry",
+      "video_label": "angry",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 27,
+      "panel_n": 2,
+      "population_to_panel_weight": 13.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "angry",
+      "video_label": "disgusted",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 3,
+      "panel_n": 1,
+      "population_to_panel_weight": 3.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "angry",
+      "video_label": "happy",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 3,
+      "panel_n": 1,
+      "population_to_panel_weight": 3.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "angry",
+      "video_label": "neutral",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 9,
+      "panel_n": 1,
+      "population_to_panel_weight": 9.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "angry",
+      "video_label": "sad",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 1,
+      "panel_n": 1,
+      "population_to_panel_weight": 1.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "angry",
+      "video_label": "surprised",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 1,
+      "panel_n": 1,
+      "population_to_panel_weight": 1.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "disgusted",
+      "video_label": "angry",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 4,
+      "panel_n": 1,
+      "population_to_panel_weight": 4.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "disgusted",
+      "video_label": "disgusted",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 5,
+      "panel_n": 1,
+      "population_to_panel_weight": 5.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "disgusted",
+      "video_label": "fearful",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 1,
+      "panel_n": 1,
+      "population_to_panel_weight": 1.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "disgusted",
+      "video_label": "happy",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 6,
+      "panel_n": 2,
+      "population_to_panel_weight": 3.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "disgusted",
+      "video_label": "neutral",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 2,
+      "panel_n": 1,
+      "population_to_panel_weight": 2.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "disgusted",
+      "video_label": "surprised",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 1,
+      "panel_n": 1,
+      "population_to_panel_weight": 1.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "fearful",
+      "video_label": "fearful",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 1,
+      "panel_n": 1,
+      "population_to_panel_weight": 1.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "fearful",
+      "video_label": "neutral",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 2,
+      "panel_n": 1,
+      "population_to_panel_weight": 2.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "happy",
+      "video_label": "angry",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 4,
+      "panel_n": 1,
+      "population_to_panel_weight": 4.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "happy",
+      "video_label": "disgusted",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 5,
+      "panel_n": 1,
+      "population_to_panel_weight": 5.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "happy",
+      "video_label": "fearful",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 3,
+      "panel_n": 1,
+      "population_to_panel_weight": 3.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "happy",
+      "video_label": "happy",
+      "trimodal_pattern": "ALL_SAME",
+      "population_n": 475,
+      "panel_n": 27,
+      "population_to_panel_weight": 17.59259259259259,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "happy",
+      "video_label": "neutral",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 35,
+      "panel_n": 3,
+      "population_to_panel_weight": 11.666666666666666,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "happy",
+      "video_label": "sad",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 2,
+      "panel_n": 1,
+      "population_to_panel_weight": 2.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "happy",
+      "video_label": "surprised",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 9,
+      "panel_n": 2,
+      "population_to_panel_weight": 4.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "neutral",
+      "video_label": "angry",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 46,
+      "panel_n": 3,
+      "population_to_panel_weight": 15.333333333333334,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "neutral",
+      "video_label": "disgusted",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 45,
+      "panel_n": 3,
+      "population_to_panel_weight": 15.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "neutral",
+      "video_label": "fearful",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 6,
+      "panel_n": 1,
+      "population_to_panel_weight": 6.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "neutral",
+      "video_label": "happy",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 310,
+      "panel_n": 53,
+      "population_to_panel_weight": 5.849056603773585,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "neutral",
+      "video_label": "neutral",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 463,
+      "panel_n": 22,
+      "population_to_panel_weight": 21.045454545454547,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "neutral",
+      "video_label": "sad",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 23,
+      "panel_n": 2,
+      "population_to_panel_weight": 11.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "neutral",
+      "video_label": "surprised",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 28,
+      "panel_n": 2,
+      "population_to_panel_weight": 14.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "sad",
+      "video_label": "angry",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 2,
+      "panel_n": 1,
+      "population_to_panel_weight": 2.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "sad",
+      "video_label": "disgusted",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 1,
+      "panel_n": 1,
+      "population_to_panel_weight": 1.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "sad",
+      "video_label": "happy",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 7,
+      "panel_n": 2,
+      "population_to_panel_weight": 3.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "sad",
+      "video_label": "neutral",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 16,
+      "panel_n": 2,
+      "population_to_panel_weight": 8.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "sad",
+      "video_label": "sad",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 18,
+      "panel_n": 2,
+      "population_to_panel_weight": 9.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "surprised",
+      "video_label": "angry",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 2,
+      "panel_n": 1,
+      "population_to_panel_weight": 2.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "surprised",
+      "video_label": "disgusted",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 3,
+      "panel_n": 1,
+      "population_to_panel_weight": 3.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "surprised",
+      "video_label": "fearful",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 1,
+      "panel_n": 1,
+      "population_to_panel_weight": 1.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "surprised",
+      "video_label": "happy",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 27,
+      "panel_n": 5,
+      "population_to_panel_weight": 5.4,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "surprised",
+      "video_label": "neutral",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 13,
+      "panel_n": 2,
+      "population_to_panel_weight": 6.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "happy",
+      "audio_label": "surprised",
+      "video_label": "surprised",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 10,
+      "panel_n": 1,
+      "population_to_panel_weight": 10.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "angry",
+      "video_label": "angry",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 567,
+      "panel_n": 27,
+      "population_to_panel_weight": 21.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "angry",
+      "video_label": "disgusted",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 49,
+      "panel_n": 3,
+      "population_to_panel_weight": 16.333333333333332,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "angry",
+      "video_label": "fearful",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 7,
+      "panel_n": 1,
+      "population_to_panel_weight": 7.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "angry",
+      "video_label": "happy",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 43,
+      "panel_n": 3,
+      "population_to_panel_weight": 14.333333333333334,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "angry",
+      "video_label": "neutral",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 127,
+      "panel_n": 22,
+      "population_to_panel_weight": 5.7727272727272725,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "angry",
+      "video_label": "sad",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 13,
+      "panel_n": 2,
+      "population_to_panel_weight": 6.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "angry",
+      "video_label": "surprised",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 15,
+      "panel_n": 2,
+      "population_to_panel_weight": 7.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "disgusted",
+      "video_label": "angry",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 54,
+      "panel_n": 3,
+      "population_to_panel_weight": 18.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "disgusted",
+      "video_label": "disgusted",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 55,
+      "panel_n": 4,
+      "population_to_panel_weight": 13.75,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "disgusted",
+      "video_label": "fearful",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 3,
+      "panel_n": 1,
+      "population_to_panel_weight": 3.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "disgusted",
+      "video_label": "happy",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 20,
+      "panel_n": 2,
+      "population_to_panel_weight": 10.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "disgusted",
+      "video_label": "neutral",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 74,
+      "panel_n": 13,
+      "population_to_panel_weight": 5.6923076923076925,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "disgusted",
+      "video_label": "sad",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 2,
+      "panel_n": 1,
+      "population_to_panel_weight": 2.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "disgusted",
+      "video_label": "surprised",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 9,
+      "panel_n": 1,
+      "population_to_panel_weight": 9.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "fearful",
+      "video_label": "angry",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 26,
+      "panel_n": 2,
+      "population_to_panel_weight": 13.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "fearful",
+      "video_label": "disgusted",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 20,
+      "panel_n": 2,
+      "population_to_panel_weight": 10.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "fearful",
+      "video_label": "fearful",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 54,
+      "panel_n": 3,
+      "population_to_panel_weight": 18.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "fearful",
+      "video_label": "happy",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 13,
+      "panel_n": 2,
+      "population_to_panel_weight": 6.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "fearful",
+      "video_label": "neutral",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 54,
+      "panel_n": 10,
+      "population_to_panel_weight": 5.4,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "fearful",
+      "video_label": "sad",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 9,
+      "panel_n": 1,
+      "population_to_panel_weight": 9.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "fearful",
+      "video_label": "surprised",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 17,
+      "panel_n": 2,
+      "population_to_panel_weight": 8.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "happy",
+      "video_label": "angry",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 15,
+      "panel_n": 2,
+      "population_to_panel_weight": 7.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "happy",
+      "video_label": "disgusted",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 10,
+      "panel_n": 1,
+      "population_to_panel_weight": 10.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "happy",
+      "video_label": "fearful",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 5,
+      "panel_n": 1,
+      "population_to_panel_weight": 5.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "happy",
+      "video_label": "happy",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 880,
+      "panel_n": 41,
+      "population_to_panel_weight": 21.463414634146343,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "happy",
+      "video_label": "neutral",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 69,
+      "panel_n": 12,
+      "population_to_panel_weight": 5.75,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "happy",
+      "video_label": "sad",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 6,
+      "panel_n": 1,
+      "population_to_panel_weight": 6.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "happy",
+      "video_label": "surprised",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 13,
+      "panel_n": 2,
+      "population_to_panel_weight": 6.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "neutral",
+      "video_label": "angry",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 395,
+      "panel_n": 29,
+      "population_to_panel_weight": 13.620689655172415,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "neutral",
+      "video_label": "disgusted",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 348,
+      "panel_n": 26,
+      "population_to_panel_weight": 13.384615384615385,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "neutral",
+      "video_label": "fearful",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 48,
+      "panel_n": 4,
+      "population_to_panel_weight": 12.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "neutral",
+      "video_label": "happy",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 1107,
+      "panel_n": 79,
+      "population_to_panel_weight": 14.012658227848101,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "neutral",
+      "video_label": "neutral",
+      "trimodal_pattern": "ALL_SAME",
+      "population_n": 2600,
+      "panel_n": 147,
+      "population_to_panel_weight": 17.687074829931973,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "neutral",
+      "video_label": "sad",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 104,
+      "panel_n": 8,
+      "population_to_panel_weight": 13.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "neutral",
+      "video_label": "surprised",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 246,
+      "panel_n": 18,
+      "population_to_panel_weight": 13.666666666666666,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "sad",
+      "video_label": "angry",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 14,
+      "panel_n": 2,
+      "population_to_panel_weight": 7.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "sad",
+      "video_label": "disgusted",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 20,
+      "panel_n": 2,
+      "population_to_panel_weight": 10.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "sad",
+      "video_label": "fearful",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 7,
+      "panel_n": 1,
+      "population_to_panel_weight": 7.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "sad",
+      "video_label": "happy",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 37,
+      "panel_n": 3,
+      "population_to_panel_weight": 12.333333333333334,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "sad",
+      "video_label": "neutral",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 113,
+      "panel_n": 20,
+      "population_to_panel_weight": 5.65,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "sad",
+      "video_label": "sad",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 219,
+      "panel_n": 11,
+      "population_to_panel_weight": 19.90909090909091,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "sad",
+      "video_label": "surprised",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 3,
+      "panel_n": 1,
+      "population_to_panel_weight": 3.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "surprised",
+      "video_label": "angry",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 65,
+      "panel_n": 4,
+      "population_to_panel_weight": 16.25,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "surprised",
+      "video_label": "disgusted",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 34,
+      "panel_n": 2,
+      "population_to_panel_weight": 17.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "surprised",
+      "video_label": "fearful",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 11,
+      "panel_n": 2,
+      "population_to_panel_weight": 5.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "surprised",
+      "video_label": "happy",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 104,
+      "panel_n": 5,
+      "population_to_panel_weight": 20.8,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "surprised",
+      "video_label": "neutral",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 120,
+      "panel_n": 21,
+      "population_to_panel_weight": 5.714285714285714,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "surprised",
+      "video_label": "sad",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 3,
+      "panel_n": 1,
+      "population_to_panel_weight": 3.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "neutral",
+      "audio_label": "surprised",
+      "video_label": "surprised",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 76,
+      "panel_n": 5,
+      "population_to_panel_weight": 15.2,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "angry",
+      "video_label": "angry",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 99,
+      "panel_n": 6,
+      "population_to_panel_weight": 16.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "angry",
+      "video_label": "disgusted",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 10,
+      "panel_n": 1,
+      "population_to_panel_weight": 10.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "angry",
+      "video_label": "fearful",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 2,
+      "panel_n": 1,
+      "population_to_panel_weight": 2.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "angry",
+      "video_label": "happy",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 6,
+      "panel_n": 1,
+      "population_to_panel_weight": 6.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "angry",
+      "video_label": "neutral",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 21,
+      "panel_n": 2,
+      "population_to_panel_weight": 10.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "angry",
+      "video_label": "sad",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 5,
+      "panel_n": 2,
+      "population_to_panel_weight": 2.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "angry",
+      "video_label": "surprised",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 2,
+      "panel_n": 1,
+      "population_to_panel_weight": 2.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "disgusted",
+      "video_label": "angry",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 9,
+      "panel_n": 1,
+      "population_to_panel_weight": 9.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "disgusted",
+      "video_label": "disgusted",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 10,
+      "panel_n": 1,
+      "population_to_panel_weight": 10.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "disgusted",
+      "video_label": "happy",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 1,
+      "panel_n": 1,
+      "population_to_panel_weight": 1.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "disgusted",
+      "video_label": "neutral",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 1,
+      "panel_n": 1,
+      "population_to_panel_weight": 1.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "disgusted",
+      "video_label": "sad",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 1,
+      "panel_n": 1,
+      "population_to_panel_weight": 1.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "disgusted",
+      "video_label": "surprised",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 1,
+      "panel_n": 1,
+      "population_to_panel_weight": 1.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "fearful",
+      "video_label": "angry",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 9,
+      "panel_n": 1,
+      "population_to_panel_weight": 9.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "fearful",
+      "video_label": "disgusted",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 5,
+      "panel_n": 1,
+      "population_to_panel_weight": 5.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "fearful",
+      "video_label": "fearful",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 6,
+      "panel_n": 1,
+      "population_to_panel_weight": 6.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "fearful",
+      "video_label": "happy",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 4,
+      "panel_n": 1,
+      "population_to_panel_weight": 4.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "fearful",
+      "video_label": "neutral",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 7,
+      "panel_n": 1,
+      "population_to_panel_weight": 7.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "fearful",
+      "video_label": "sad",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 4,
+      "panel_n": 1,
+      "population_to_panel_weight": 4.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "fearful",
+      "video_label": "surprised",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 1,
+      "panel_n": 1,
+      "population_to_panel_weight": 1.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "happy",
+      "video_label": "happy",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 63,
+      "panel_n": 4,
+      "population_to_panel_weight": 15.75,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "happy",
+      "video_label": "neutral",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 10,
+      "panel_n": 1,
+      "population_to_panel_weight": 10.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "happy",
+      "video_label": "surprised",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 1,
+      "panel_n": 1,
+      "population_to_panel_weight": 1.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "neutral",
+      "video_label": "angry",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 50,
+      "panel_n": 3,
+      "population_to_panel_weight": 16.666666666666668,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "neutral",
+      "video_label": "disgusted",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 52,
+      "panel_n": 3,
+      "population_to_panel_weight": 17.333333333333332,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "neutral",
+      "video_label": "fearful",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 10,
+      "panel_n": 1,
+      "population_to_panel_weight": 10.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "neutral",
+      "video_label": "happy",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 85,
+      "panel_n": 5,
+      "population_to_panel_weight": 17.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "neutral",
+      "video_label": "neutral",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 270,
+      "panel_n": 13,
+      "population_to_panel_weight": 20.76923076923077,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "neutral",
+      "video_label": "sad",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 31,
+      "panel_n": 6,
+      "population_to_panel_weight": 5.166666666666667,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "neutral",
+      "video_label": "surprised",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 16,
+      "panel_n": 2,
+      "population_to_panel_weight": 8.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "sad",
+      "video_label": "angry",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 13,
+      "panel_n": 2,
+      "population_to_panel_weight": 6.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "sad",
+      "video_label": "disgusted",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 13,
+      "panel_n": 2,
+      "population_to_panel_weight": 6.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "sad",
+      "video_label": "fearful",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 4,
+      "panel_n": 1,
+      "population_to_panel_weight": 4.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "sad",
+      "video_label": "happy",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 17,
+      "panel_n": 2,
+      "population_to_panel_weight": 8.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "sad",
+      "video_label": "neutral",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 108,
+      "panel_n": 9,
+      "population_to_panel_weight": 12.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "sad",
+      "video_label": "sad",
+      "trimodal_pattern": "ALL_SAME",
+      "population_n": 198,
+      "panel_n": 12,
+      "population_to_panel_weight": 16.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "sad",
+      "video_label": "surprised",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 2,
+      "panel_n": 1,
+      "population_to_panel_weight": 2.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "surprised",
+      "video_label": "angry",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 4,
+      "panel_n": 1,
+      "population_to_panel_weight": 4.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "surprised",
+      "video_label": "disgusted",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 3,
+      "panel_n": 1,
+      "population_to_panel_weight": 3.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "surprised",
+      "video_label": "fearful",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 1,
+      "panel_n": 1,
+      "population_to_panel_weight": 1.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "surprised",
+      "video_label": "happy",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 5,
+      "panel_n": 1,
+      "population_to_panel_weight": 5.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "surprised",
+      "video_label": "neutral",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 15,
+      "panel_n": 2,
+      "population_to_panel_weight": 7.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "surprised",
+      "video_label": "sad",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 2,
+      "panel_n": 1,
+      "population_to_panel_weight": 2.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "sad",
+      "audio_label": "surprised",
+      "video_label": "surprised",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 6,
+      "panel_n": 1,
+      "population_to_panel_weight": 6.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "angry",
+      "video_label": "angry",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 214,
+      "panel_n": 11,
+      "population_to_panel_weight": 19.454545454545453,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "angry",
+      "video_label": "disgusted",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 25,
+      "panel_n": 2,
+      "population_to_panel_weight": 12.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "angry",
+      "video_label": "fearful",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 1,
+      "panel_n": 1,
+      "population_to_panel_weight": 1.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "angry",
+      "video_label": "happy",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 20,
+      "panel_n": 2,
+      "population_to_panel_weight": 10.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "angry",
+      "video_label": "neutral",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 49,
+      "panel_n": 3,
+      "population_to_panel_weight": 16.333333333333332,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "angry",
+      "video_label": "sad",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 4,
+      "panel_n": 1,
+      "population_to_panel_weight": 4.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "angry",
+      "video_label": "surprised",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 13,
+      "panel_n": 3,
+      "population_to_panel_weight": 4.333333333333333,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "disgusted",
+      "video_label": "angry",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 12,
+      "panel_n": 2,
+      "population_to_panel_weight": 6.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "disgusted",
+      "video_label": "disgusted",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 19,
+      "panel_n": 2,
+      "population_to_panel_weight": 9.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "disgusted",
+      "video_label": "fearful",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 1,
+      "panel_n": 1,
+      "population_to_panel_weight": 1.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "disgusted",
+      "video_label": "happy",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 8,
+      "panel_n": 1,
+      "population_to_panel_weight": 8.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "disgusted",
+      "video_label": "neutral",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 20,
+      "panel_n": 2,
+      "population_to_panel_weight": 10.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "disgusted",
+      "video_label": "sad",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 4,
+      "panel_n": 1,
+      "population_to_panel_weight": 4.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "disgusted",
+      "video_label": "surprised",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 1,
+      "panel_n": 1,
+      "population_to_panel_weight": 1.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "fearful",
+      "video_label": "angry",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 4,
+      "panel_n": 1,
+      "population_to_panel_weight": 4.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "fearful",
+      "video_label": "disgusted",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 8,
+      "panel_n": 1,
+      "population_to_panel_weight": 8.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "fearful",
+      "video_label": "fearful",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 17,
+      "panel_n": 2,
+      "population_to_panel_weight": 8.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "fearful",
+      "video_label": "happy",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 4,
+      "panel_n": 1,
+      "population_to_panel_weight": 4.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "fearful",
+      "video_label": "neutral",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 10,
+      "panel_n": 1,
+      "population_to_panel_weight": 10.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "fearful",
+      "video_label": "sad",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 2,
+      "panel_n": 1,
+      "population_to_panel_weight": 2.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "fearful",
+      "video_label": "surprised",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 7,
+      "panel_n": 2,
+      "population_to_panel_weight": 3.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "happy",
+      "video_label": "angry",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 5,
+      "panel_n": 1,
+      "population_to_panel_weight": 5.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "happy",
+      "video_label": "disgusted",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 4,
+      "panel_n": 1,
+      "population_to_panel_weight": 4.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "happy",
+      "video_label": "fearful",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 1,
+      "panel_n": 1,
+      "population_to_panel_weight": 1.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "happy",
+      "video_label": "happy",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 236,
+      "panel_n": 12,
+      "population_to_panel_weight": 19.666666666666668,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "happy",
+      "video_label": "neutral",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 10,
+      "panel_n": 1,
+      "population_to_panel_weight": 10.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "happy",
+      "video_label": "sad",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 2,
+      "panel_n": 1,
+      "population_to_panel_weight": 2.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "happy",
+      "video_label": "surprised",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 9,
+      "panel_n": 2,
+      "population_to_panel_weight": 4.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "neutral",
+      "video_label": "angry",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 80,
+      "panel_n": 4,
+      "population_to_panel_weight": 20.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "neutral",
+      "video_label": "disgusted",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 89,
+      "panel_n": 5,
+      "population_to_panel_weight": 17.8,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "neutral",
+      "video_label": "fearful",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 14,
+      "panel_n": 2,
+      "population_to_panel_weight": 7.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "neutral",
+      "video_label": "happy",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 271,
+      "panel_n": 12,
+      "population_to_panel_weight": 22.583333333333332,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "neutral",
+      "video_label": "neutral",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 642,
+      "panel_n": 30,
+      "population_to_panel_weight": 21.4,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "neutral",
+      "video_label": "sad",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 20,
+      "panel_n": 2,
+      "population_to_panel_weight": 10.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "neutral",
+      "video_label": "surprised",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 164,
+      "panel_n": 28,
+      "population_to_panel_weight": 5.857142857142857,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "sad",
+      "video_label": "angry",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 1,
+      "panel_n": 1,
+      "population_to_panel_weight": 1.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "sad",
+      "video_label": "disgusted",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 4,
+      "panel_n": 1,
+      "population_to_panel_weight": 4.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "sad",
+      "video_label": "happy",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 6,
+      "panel_n": 1,
+      "population_to_panel_weight": 6.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "sad",
+      "video_label": "neutral",
+      "trimodal_pattern": "ALL_DIFFERENT",
+      "population_n": 13,
+      "panel_n": 2,
+      "population_to_panel_weight": 6.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "sad",
+      "video_label": "sad",
+      "trimodal_pattern": "A=V!=T",
+      "population_n": 54,
+      "panel_n": 3,
+      "population_to_panel_weight": 18.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "sad",
+      "video_label": "surprised",
+      "trimodal_pattern": "T=V!=A",
+      "population_n": 3,
+      "panel_n": 1,
+      "population_to_panel_weight": 3.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "surprised",
+      "video_label": "angry",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 71,
+      "panel_n": 6,
+      "population_to_panel_weight": 11.833333333333334,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "surprised",
+      "video_label": "disgusted",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 38,
+      "panel_n": 4,
+      "population_to_panel_weight": 9.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "surprised",
+      "video_label": "fearful",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 19,
+      "panel_n": 2,
+      "population_to_panel_weight": 9.5,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "surprised",
+      "video_label": "happy",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 138,
+      "panel_n": 11,
+      "population_to_panel_weight": 12.545454545454545,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "surprised",
+      "video_label": "neutral",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 133,
+      "panel_n": 10,
+      "population_to_panel_weight": 13.3,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "surprised",
+      "video_label": "sad",
+      "trimodal_pattern": "T=A!=V",
+      "population_n": 6,
+      "panel_n": 1,
+      "population_to_panel_weight": 6.0,
+      "panel_support": true
+    },
+    {
+      "text_label": "surprised",
+      "audio_label": "surprised",
+      "video_label": "surprised",
+      "trimodal_pattern": "ALL_SAME",
+      "population_n": 236,
+      "panel_n": 14,
+      "population_to_panel_weight": 16.857142857142858,
+      "panel_support": true
+    }
+  ],
+  "panel_tuple_counts_csv": "EMOTIONTALK_POPULATION_TUPLE_SUPPORT_V1_2.csv"
+}

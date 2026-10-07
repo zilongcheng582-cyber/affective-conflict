@@ -1,0 +1,313 @@
+{
+  "status": "FROZEN",
+  "ontology_order": [
+    "angry",
+    "disgusted",
+    "fearful",
+    "happy",
+    "neutral",
+    "sad",
+    "surprised"
+  ],
+  "construction": "7 cyclic rotations and 7 reverse cyclic rotations",
+  "assignment": "107 uses each; CS01 and CS02 one extra; seed 42 shuffled, assigned by sorted utterance_id",
+  "same_sequence_all_arms_per_utterance": true,
+  "usage": {
+    "CS01": 108,
+    "CS02": 108,
+    "CS03": 107,
+    "CS04": 107,
+    "CS05": 107,
+    "CS06": 107,
+    "CS07": 107,
+    "CS08": 107,
+    "CS09": 107,
+    "CS10": 107,
+    "CS11": 107,
+    "CS12": 107,
+    "CS13": 107,
+    "CS14": 107
+  },
+  "position_balance": {
+    "min": 214,
+    "max": 215,
+    "range": 1,
+    "counts": {
+      "angry": {
+        "1": 215,
+        "2": 214,
+        "3": 214,
+        "4": 214,
+        "5": 214,
+        "6": 214,
+        "7": 215
+      },
+      "disgusted": {
+        "1": 215,
+        "2": 215,
+        "3": 214,
+        "4": 214,
+        "5": 214,
+        "6": 214,
+        "7": 214
+      },
+      "fearful": {
+        "1": 214,
+        "2": 215,
+        "3": 215,
+        "4": 214,
+        "5": 214,
+        "6": 214,
+        "7": 214
+      },
+      "happy": {
+        "1": 214,
+        "2": 214,
+        "3": 215,
+        "4": 215,
+        "5": 214,
+        "6": 214,
+        "7": 214
+      },
+      "neutral": {
+        "1": 214,
+        "2": 214,
+        "3": 214,
+        "4": 215,
+        "5": 215,
+        "6": 214,
+        "7": 214
+      },
+      "sad": {
+        "1": 214,
+        "2": 214,
+        "3": 214,
+        "4": 214,
+        "5": 215,
+        "6": 215,
+        "7": 214
+      },
+      "surprised": {
+        "1": 214,
+        "2": 214,
+        "3": 214,
+        "4": 214,
+        "5": 214,
+        "6": 215,
+        "7": 215
+      }
+    }
+  },
+  "sequences": [
+    {
+      "candidate_sequence_id": "CS01",
+      "family": "cyclic",
+      "rotation_index": 0,
+      "labels": [
+        "angry",
+        "disgusted",
+        "fearful",
+        "happy",
+        "neutral",
+        "sad",
+        "surprised"
+      ],
+      "pipe": "angry|disgusted|fearful|happy|neutral|sad|surprised"
+    },
+    {
+      "candidate_sequence_id": "CS02",
+      "family": "cyclic",
+      "rotation_index": 1,
+      "labels": [
+        "disgusted",
+        "fearful",
+        "happy",
+        "neutral",
+        "sad",
+        "surprised",
+        "angry"
+      ],
+      "pipe": "disgusted|fearful|happy|neutral|sad|surprised|angry"
+    },
+    {
+      "candidate_sequence_id": "CS03",
+      "family": "cyclic",
+      "rotation_index": 2,
+      "labels": [
+        "fearful",
+        "happy",
+        "neutral",
+        "sad",
+        "surprised",
+        "angry",
+        "disgusted"
+      ],
+      "pipe": "fearful|happy|neutral|sad|surprised|angry|disgusted"
+    },
+    {
+      "candidate_sequence_id": "CS04",
+      "family": "cyclic",
+      "rotation_index": 3,
+      "labels": [
+        "happy",
+        "neutral",
+        "sad",
+        "surprised",
+        "angry",
+        "disgusted",
+        "fearful"
+      ],
+      "pipe": "happy|neutral|sad|surprised|angry|disgusted|fearful"
+    },
+    {
+      "candidate_sequence_id": "CS05",
+      "family": "cyclic",
+      "rotation_index": 4,
+      "labels": [
+        "neutral",
+        "sad",
+        "surprised",
+        "angry",
+        "disgusted",
+        "fearful",
+        "happy"
+      ],
+      "pipe": "neutral|sad|surprised|angry|disgusted|fearful|happy"
+    },
+    {
+      "candidate_sequence_id": "CS06",
+      "family": "cyclic",
+      "rotation_index": 5,
+      "labels": [
+        "sad",
+        "surprised",
+        "angry",
+        "disgusted",
+        "fearful",
+        "happy",
+        "neutral"
+      ],
+      "pipe": "sad|surprised|angry|disgusted|fearful|happy|neutral"
+    },
+    {
+      "candidate_sequence_id": "CS07",
+      "family": "cyclic",
+      "rotation_index": 6,
+      "labels": [
+        "surprised",
+        "angry",
+        "disgusted",
+        "fearful",
+        "happy",
+        "neutral",
+        "sad"
+      ],
+      "pipe": "surprised|angry|disgusted|fearful|happy|neutral|sad"
+    },
+    {
+      "candidate_sequence_id": "CS08",
+      "family": "reversed_cyclic",
+      "rotation_index": 0,
+      "labels": [
+        "surprised",
+        "sad",
+        "neutral",
+        "happy",
+        "fearful",
+        "disgusted",
+        "angry"
+      ],
+      "pipe": "surprised|sad|neutral|happy|fearful|disgusted|angry"
+    },
+    {
+      "candidate_sequence_id": "CS09",
+      "family": "reversed_cyclic",
+      "rotation_index": 1,
+      "labels": [
+        "sad",
+        "neutral",
+        "happy",
+        "fearful",
+        "disgusted",
+        "angry",
+        "surprised"
+      ],
+      "pipe": "sad|neutral|happy|fearful|disgusted|angry|surprised"
+    },
+    {
+      "candidate_sequence_id": "CS10",
+      "family": "reversed_cyclic",
+      "rotation_index": 2,
+      "labels": [
+        "neutral",
+        "happy",
+        "fearful",
+        "disgusted",
+        "angry",
+        "surprised",
+        "sad"
+      ],
+      "pipe": "neutral|happy|fearful|disgusted|angry|surprised|sad"
+    },
+    {
+      "candidate_sequence_id": "CS11",
+      "family": "reversed_cyclic",
+      "rotation_index": 3,
+      "labels": [
+        "happy",
+        "fearful",
+        "disgusted",
+        "angry",
+        "surprised",
+        "sad",
+        "neutral"
+      ],
+      "pipe": "happy|fearful|disgusted|angry|surprised|sad|neutral"
+    },
+    {
+      "candidate_sequence_id": "CS12",
+      "family": "reversed_cyclic",
+      "rotation_index": 4,
+      "labels": [
+        "fearful",
+        "disgusted",
+        "angry",
+        "surprised",
+        "sad",
+        "neutral",
+        "happy"
+      ],
+      "pipe": "fearful|disgusted|angry|surprised|sad|neutral|happy"
+    },
+    {
+      "candidate_sequence_id": "CS13",
+      "family": "reversed_cyclic",
+      "rotation_index": 5,
+      "labels": [
+        "disgusted",
+        "angry",
+        "surprised",
+        "sad",
+        "neutral",
+        "happy",
+        "fearful"
+      ],
+      "pipe": "disgusted|angry|surprised|sad|neutral|happy|fearful"
+    },
+    {
+      "candidate_sequence_id": "CS14",
+      "family": "reversed_cyclic",
+      "rotation_index": 6,
+      "labels": [
+        "angry",
+        "surprised",
+        "sad",
+        "neutral",
+        "happy",
+        "fearful",
+        "disgusted"
+      ],
+      "pipe": "angry|surprised|sad|neutral|happy|fearful|disgusted"
+    }
+  ]
+}

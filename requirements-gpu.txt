@@ -1,0 +1,14 @@
+# Frozen GPU execution versions. Use the recorded CUDA index/build and archived transformers dev build; do not substitute a floating latest version.
+accelerate==1.15.0
+av==18.1.0
+flash-attn==2.8.3
+huggingface-hub==0.36.2
+librosa==1.0.0
+numpy==2.3.2
+qwen-omni-utils==0.0.9
+safetensors==0.8.0
+soundfile==0.14.0
+tokenizers==0.21.4
+torch==2.8.0+cu128
+torchvision==0.23.0+cu128
+transformers==4.52.0.dev0

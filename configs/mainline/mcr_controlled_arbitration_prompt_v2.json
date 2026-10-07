@@ -1,0 +1,177 @@
+{
+  "arms": {
+    "A_ONLY": {
+      "structured_content_order": [
+        "audio",
+        "instruction"
+      ]
+    },
+    "A_THEN_T": {
+      "structured_content_order": [
+        "audio",
+        "text_evidence",
+        "instruction"
+      ]
+    },
+    "T_ONLY": {
+      "structured_content_order": [
+        "text_evidence",
+        "instruction"
+      ]
+    },
+    "T_THEN_A": {
+      "structured_content_order": [
+        "text_evidence",
+        "audio",
+        "instruction"
+      ]
+    }
+  },
+  "candidate_order_salt": "MCR_CONTROLLED_SCI_PROTOCOL_V2_CANDIDATE_ORDER",
+  "candidate_sequences": {
+    "C0": [
+      "sad",
+      "happy",
+      "fearful",
+      "angry",
+      "surprised",
+      "disgusted",
+      "neutral"
+    ],
+    "C1": [
+      "happy",
+      "fearful",
+      "angry",
+      "surprised",
+      "disgusted",
+      "neutral",
+      "sad"
+    ],
+    "C2": [
+      "fearful",
+      "angry",
+      "surprised",
+      "disgusted",
+      "neutral",
+      "sad",
+      "happy"
+    ],
+    "C3": [
+      "angry",
+      "surprised",
+      "disgusted",
+      "neutral",
+      "sad",
+      "happy",
+      "fearful"
+    ],
+    "C4": [
+      "surprised",
+      "disgusted",
+      "neutral",
+      "sad",
+      "happy",
+      "fearful",
+      "angry"
+    ],
+    "C5": [
+      "disgusted",
+      "neutral",
+      "sad",
+      "happy",
+      "fearful",
+      "angry",
+      "surprised"
+    ],
+    "C6": [
+      "neutral",
+      "sad",
+      "happy",
+      "fearful",
+      "angry",
+      "surprised",
+      "disgusted"
+    ],
+    "R0": [
+      "neutral",
+      "disgusted",
+      "surprised",
+      "angry",
+      "fearful",
+      "happy",
+      "sad"
+    ],
+    "R1": [
+      "sad",
+      "neutral",
+      "disgusted",
+      "surprised",
+      "angry",
+      "fearful",
+      "happy"
+    ],
+    "R2": [
+      "happy",
+      "sad",
+      "neutral",
+      "disgusted",
+      "surprised",
+      "angry",
+      "fearful"
+    ],
+    "R3": [
+      "fearful",
+      "happy",
+      "sad",
+      "neutral",
+      "disgusted",
+      "surprised",
+      "angry"
+    ],
+    "R4": [
+      "angry",
+      "fearful",
+      "happy",
+      "sad",
+      "neutral",
+      "disgusted",
+      "surprised"
+    ],
+    "R5": [
+      "surprised",
+      "angry",
+      "fearful",
+      "happy",
+      "sad",
+      "neutral",
+      "disgusted"
+    ],
+    "R6": [
+      "disgusted",
+      "surprised",
+      "angry",
+      "fearful",
+      "happy",
+      "sad",
+      "neutral"
+    ]
+  },
+  "canonical_labels": [
+    "sad",
+    "happy",
+    "fearful",
+    "angry",
+    "surprised",
+    "disgusted",
+    "neutral"
+  ],
+  "classification_instruction": "Classify the emotion conveyed by the provided evidence into exactly one canonical class.",
+  "model_visible_text_policy": {
+    "chain_of_thought_requested": false,
+    "headings": [],
+    "instruction_is_last_content_item": true
+  },
+  "prompt_version": "MCR_CONTROLLED_PROMPT_V2",
+  "protocol_version": "MCR_CONTROLLED_PROTOCOL_V2",
+  "runner_version": "QWEN25_MCR_CONTROLLED_RUNNER_V3"
+}

@@ -1,0 +1,36 @@
+{
+  "arm_counts": {
+    "A_ONLY": 909,
+    "A_THEN_T": 909,
+    "T_ONLY": 909,
+    "T_THEN_A": 909
+  },
+  "arms_per_group": {
+    "4_arms_groups": 909
+  },
+  "attempted": 3636,
+  "candidate_sequence_identity": "PASS",
+  "duplicate_key_count": 0,
+  "frozen_input_hash_verification": "PASS",
+  "full_run_output": "audit/QWEN25_MCR_CONTROLLED_V3/full_run/qwen25_mcr_controlled_full_v2.jsonl",
+  "generation_success": 3636,
+  "manifest_identity": "PASS",
+  "manifest_identity_join_resolvable": 3636,
+  "old_artifacts_modified": false,
+  "parse_fail_breakdown": {},
+  "parse_ok": 3636,
+  "parser_executions": 3636,
+  "provenance_path": "audit/QWEN25_MCR_CONTROLLED_V3/full_run/MCR_CONTROLLED_FULL_V2_PROVENANCE.json",
+  "provenance_sha256": "47509ee5d0fa0823d3ed0e6e914c0609ebb99d283a1ba6e58e532c42791b07e0",
+  "raw_output_sha256": "2772bd2d536caa4e55f1305300b4e9a523a5315afd37992c098d6724e4c25775",
+  "sample_groups": 909,
+  "schema_valid_records": 3636,
+  "science_driven_retries": false,
+  "scientific_analysis_status": "NOT_RUN",
+  "scientific_protocol_changed": false,
+  "serialization_valid_records": 3636,
+  "status": "PASS",
+  "technical_failures": 0,
+  "technical_only": true,
+  "unique_sample_arm_pairs": 3636
+}

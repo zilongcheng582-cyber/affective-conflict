@@ -1,0 +1,8 @@
+{
+  "scope": "Current semantic entry points; original scientific kernels retained",
+  "CA_MER": "Full V4 acquisition loop; historical failed preflight removed; immutable current release/model verification replaces it",
+  "Phase1": "Final scorer patch merged, failure rows retained, confirmed summarize builds readability/plans",
+  "Phase2": "Final executor, confirmed build_analysis writes completeness and descriptive tables",
+  "Phase3": "Frozen full plan and shipped live locks; preceding full output remains cataloged external evidence",
+  "GPU_validation": "Not reexecuted during packaging; CPU/static validation only"
+}

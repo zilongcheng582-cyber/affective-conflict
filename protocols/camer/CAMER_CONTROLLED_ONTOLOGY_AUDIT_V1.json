@@ -1,0 +1,603 @@
+{
+  "audio_label_union_count": 16,
+  "candidate_count": 16,
+  "candidate_labels_sorted": [
+    "angry",
+    "assertive",
+    "calm",
+    "confident",
+    "contemptuous",
+    "curious",
+    "determined",
+    "doubtful",
+    "fearful",
+    "grateful",
+    "happy",
+    "jealous",
+    "neutral",
+    "sad",
+    "surprised",
+    "worried"
+  ],
+  "label_fields": {
+    "audio": "audio_pseudo_label",
+    "video": "video_pseudo_label"
+  },
+  "normalization": "Unicode casefold; trim whitespace and obvious punctuation only at both edges; no internal rewriting, synonymy, morphology, or semantic merging.",
+  "ontology_interface": "FULL_SOURCE_LOCAL_ONTOLOGY",
+  "rationale": "The pinned labels form a finite, single-token source-local set; edge normalization does not change any observed value; no composite constructions or semantically justified merges are needed. Use the unmerged union so candidate support is explicit and identical across arms.",
+  "sources": {
+    "audio-aligned": {
+      "audio_label_counts": {
+        "angry": 144,
+        "doubtful": 9,
+        "fearful": 2,
+        "happy": 31,
+        "neutral": 143,
+        "sad": 80,
+        "worried": 91
+      },
+      "conflict_records": 500,
+      "consistent_records": 0,
+      "format_flags": {},
+      "normalized_pair_counts": [
+        {
+          "audio": "angry",
+          "n": 8,
+          "video": "contemptuous"
+        },
+        {
+          "audio": "angry",
+          "n": 1,
+          "video": "curious"
+        },
+        {
+          "audio": "angry",
+          "n": 36,
+          "video": "doubtful"
+        },
+        {
+          "audio": "angry",
+          "n": 1,
+          "video": "fearful"
+        },
+        {
+          "audio": "angry",
+          "n": 3,
+          "video": "happy"
+        },
+        {
+          "audio": "angry",
+          "n": 30,
+          "video": "neutral"
+        },
+        {
+          "audio": "angry",
+          "n": 6,
+          "video": "sad"
+        },
+        {
+          "audio": "angry",
+          "n": 6,
+          "video": "surprised"
+        },
+        {
+          "audio": "angry",
+          "n": 53,
+          "video": "worried"
+        },
+        {
+          "audio": "doubtful",
+          "n": 1,
+          "video": "fearful"
+        },
+        {
+          "audio": "doubtful",
+          "n": 6,
+          "video": "neutral"
+        },
+        {
+          "audio": "doubtful",
+          "n": 2,
+          "video": "worried"
+        },
+        {
+          "audio": "fearful",
+          "n": 1,
+          "video": "neutral"
+        },
+        {
+          "audio": "fearful",
+          "n": 1,
+          "video": "worried"
+        },
+        {
+          "audio": "happy",
+          "n": 1,
+          "video": "doubtful"
+        },
+        {
+          "audio": "happy",
+          "n": 21,
+          "video": "neutral"
+        },
+        {
+          "audio": "happy",
+          "n": 6,
+          "video": "surprised"
+        },
+        {
+          "audio": "happy",
+          "n": 3,
+          "video": "worried"
+        },
+        {
+          "audio": "neutral",
+          "n": 1,
+          "video": "angry"
+        },
+        {
+          "audio": "neutral",
+          "n": 3,
+          "video": "contemptuous"
+        },
+        {
+          "audio": "neutral",
+          "n": 1,
+          "video": "determined"
+        },
+        {
+          "audio": "neutral",
+          "n": 29,
+          "video": "doubtful"
+        },
+        {
+          "audio": "neutral",
+          "n": 27,
+          "video": "happy"
+        },
+        {
+          "audio": "neutral",
+          "n": 10,
+          "video": "sad"
+        },
+        {
+          "audio": "neutral",
+          "n": 2,
+          "video": "surprised"
+        },
+        {
+          "audio": "neutral",
+          "n": 70,
+          "video": "worried"
+        },
+        {
+          "audio": "sad",
+          "n": 1,
+          "video": "contemptuous"
+        },
+        {
+          "audio": "sad",
+          "n": 9,
+          "video": "doubtful"
+        },
+        {
+          "audio": "sad",
+          "n": 1,
+          "video": "fearful"
+        },
+        {
+          "audio": "sad",
+          "n": 4,
+          "video": "happy"
+        },
+        {
+          "audio": "sad",
+          "n": 11,
+          "video": "neutral"
+        },
+        {
+          "audio": "sad",
+          "n": 5,
+          "video": "surprised"
+        },
+        {
+          "audio": "sad",
+          "n": 49,
+          "video": "worried"
+        },
+        {
+          "audio": "worried",
+          "n": 5,
+          "video": "angry"
+        },
+        {
+          "audio": "worried",
+          "n": 1,
+          "video": "contemptuous"
+        },
+        {
+          "audio": "worried",
+          "n": 18,
+          "video": "doubtful"
+        },
+        {
+          "audio": "worried",
+          "n": 7,
+          "video": "fearful"
+        },
+        {
+          "audio": "worried",
+          "n": 9,
+          "video": "happy"
+        },
+        {
+          "audio": "worried",
+          "n": 36,
+          "video": "neutral"
+        },
+        {
+          "audio": "worried",
+          "n": 10,
+          "video": "sad"
+        },
+        {
+          "audio": "worried",
+          "n": 5,
+          "video": "surprised"
+        }
+      ],
+      "normalized_pair_type_count": 41,
+      "rows": 500,
+      "video_label_counts": {
+        "angry": 6,
+        "contemptuous": 13,
+        "curious": 1,
+        "determined": 1,
+        "doubtful": 93,
+        "fearful": 10,
+        "happy": 43,
+        "neutral": 105,
+        "sad": 26,
+        "surprised": 24,
+        "worried": 178
+      }
+    },
+    "consistent": {
+      "audio_label_counts": {
+        "angry": 97,
+        "doubtful": 4,
+        "happy": 89,
+        "neutral": 139,
+        "sad": 56,
+        "worried": 115
+      },
+      "conflict_records": 0,
+      "consistent_records": 500,
+      "format_flags": {},
+      "normalized_pair_counts": [
+        {
+          "audio": "angry",
+          "n": 97,
+          "video": "angry"
+        },
+        {
+          "audio": "doubtful",
+          "n": 4,
+          "video": "doubtful"
+        },
+        {
+          "audio": "happy",
+          "n": 89,
+          "video": "happy"
+        },
+        {
+          "audio": "neutral",
+          "n": 139,
+          "video": "neutral"
+        },
+        {
+          "audio": "sad",
+          "n": 56,
+          "video": "sad"
+        },
+        {
+          "audio": "worried",
+          "n": 115,
+          "video": "worried"
+        }
+      ],
+      "normalized_pair_type_count": 6,
+      "rows": 500,
+      "video_label_counts": {
+        "angry": 97,
+        "doubtful": 4,
+        "happy": 89,
+        "neutral": 139,
+        "sad": 56,
+        "worried": 115
+      }
+    },
+    "video-aligned": {
+      "audio_label_counts": {
+        "angry": 23,
+        "assertive": 1,
+        "calm": 2,
+        "confident": 14,
+        "contemptuous": 57,
+        "curious": 1,
+        "determined": 7,
+        "doubtful": 108,
+        "fearful": 6,
+        "grateful": 1,
+        "happy": 25,
+        "jealous": 1,
+        "neutral": 205,
+        "sad": 12,
+        "surprised": 12,
+        "worried": 25
+      },
+      "conflict_records": 500,
+      "consistent_records": 0,
+      "format_flags": {},
+      "normalized_pair_counts": [
+        {
+          "audio": "angry",
+          "n": 2,
+          "video": "happy"
+        },
+        {
+          "audio": "angry",
+          "n": 9,
+          "video": "neutral"
+        },
+        {
+          "audio": "angry",
+          "n": 4,
+          "video": "sad"
+        },
+        {
+          "audio": "angry",
+          "n": 8,
+          "video": "worried"
+        },
+        {
+          "audio": "assertive",
+          "n": 1,
+          "video": "neutral"
+        },
+        {
+          "audio": "calm",
+          "n": 1,
+          "video": "neutral"
+        },
+        {
+          "audio": "calm",
+          "n": 1,
+          "video": "worried"
+        },
+        {
+          "audio": "confident",
+          "n": 3,
+          "video": "happy"
+        },
+        {
+          "audio": "confident",
+          "n": 11,
+          "video": "neutral"
+        },
+        {
+          "audio": "contemptuous",
+          "n": 11,
+          "video": "angry"
+        },
+        {
+          "audio": "contemptuous",
+          "n": 8,
+          "video": "happy"
+        },
+        {
+          "audio": "contemptuous",
+          "n": 24,
+          "video": "neutral"
+        },
+        {
+          "audio": "contemptuous",
+          "n": 4,
+          "video": "sad"
+        },
+        {
+          "audio": "contemptuous",
+          "n": 10,
+          "video": "worried"
+        },
+        {
+          "audio": "curious",
+          "n": 1,
+          "video": "happy"
+        },
+        {
+          "audio": "determined",
+          "n": 6,
+          "video": "neutral"
+        },
+        {
+          "audio": "determined",
+          "n": 1,
+          "video": "sad"
+        },
+        {
+          "audio": "doubtful",
+          "n": 6,
+          "video": "angry"
+        },
+        {
+          "audio": "doubtful",
+          "n": 10,
+          "video": "happy"
+        },
+        {
+          "audio": "doubtful",
+          "n": 33,
+          "video": "neutral"
+        },
+        {
+          "audio": "doubtful",
+          "n": 9,
+          "video": "sad"
+        },
+        {
+          "audio": "doubtful",
+          "n": 50,
+          "video": "worried"
+        },
+        {
+          "audio": "fearful",
+          "n": 1,
+          "video": "happy"
+        },
+        {
+          "audio": "fearful",
+          "n": 3,
+          "video": "sad"
+        },
+        {
+          "audio": "fearful",
+          "n": 2,
+          "video": "worried"
+        },
+        {
+          "audio": "grateful",
+          "n": 1,
+          "video": "happy"
+        },
+        {
+          "audio": "happy",
+          "n": 1,
+          "video": "angry"
+        },
+        {
+          "audio": "happy",
+          "n": 21,
+          "video": "neutral"
+        },
+        {
+          "audio": "happy",
+          "n": 1,
+          "video": "sad"
+        },
+        {
+          "audio": "happy",
+          "n": 2,
+          "video": "worried"
+        },
+        {
+          "audio": "jealous",
+          "n": 1,
+          "video": "neutral"
+        },
+        {
+          "audio": "neutral",
+          "n": 9,
+          "video": "angry"
+        },
+        {
+          "audio": "neutral",
+          "n": 1,
+          "video": "doubtful"
+        },
+        {
+          "audio": "neutral",
+          "n": 104,
+          "video": "happy"
+        },
+        {
+          "audio": "neutral",
+          "n": 33,
+          "video": "sad"
+        },
+        {
+          "audio": "neutral",
+          "n": 58,
+          "video": "worried"
+        },
+        {
+          "audio": "sad",
+          "n": 2,
+          "video": "happy"
+        },
+        {
+          "audio": "sad",
+          "n": 2,
+          "video": "neutral"
+        },
+        {
+          "audio": "sad",
+          "n": 8,
+          "video": "worried"
+        },
+        {
+          "audio": "surprised",
+          "n": 1,
+          "video": "angry"
+        },
+        {
+          "audio": "surprised",
+          "n": 1,
+          "video": "doubtful"
+        },
+        {
+          "audio": "surprised",
+          "n": 5,
+          "video": "happy"
+        },
+        {
+          "audio": "surprised",
+          "n": 2,
+          "video": "neutral"
+        },
+        {
+          "audio": "surprised",
+          "n": 1,
+          "video": "sad"
+        },
+        {
+          "audio": "surprised",
+          "n": 2,
+          "video": "worried"
+        },
+        {
+          "audio": "worried",
+          "n": 1,
+          "video": "angry"
+        },
+        {
+          "audio": "worried",
+          "n": 8,
+          "video": "happy"
+        },
+        {
+          "audio": "worried",
+          "n": 8,
+          "video": "neutral"
+        },
+        {
+          "audio": "worried",
+          "n": 8,
+          "video": "sad"
+        }
+      ],
+      "normalized_pair_type_count": 49,
+      "rows": 500,
+      "video_label_counts": {
+        "angry": 29,
+        "doubtful": 2,
+        "happy": 145,
+        "neutral": 119,
+        "sad": 64,
+        "worried": 141
+      }
+    }
+  },
+  "video_label_union_count": 11
+}

@@ -1,0 +1,154 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": true,
+  "properties": {
+    "arm": {
+      "enum": [
+        "A_ONLY",
+        "T_ONLY",
+        "A_THEN_T",
+        "T_THEN_A"
+      ]
+    },
+    "candidate_sequence": {
+      "items": {
+        "enum": [
+          "sad",
+          "happy",
+          "fearful",
+          "angry",
+          "surprised",
+          "disgusted",
+          "neutral"
+        ]
+      },
+      "maxItems": 7,
+      "minItems": 7,
+      "type": "array"
+    },
+    "candidate_sequence_id": {
+      "enum": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6",
+        "R0",
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6"
+      ]
+    },
+    "generation_success": {
+      "type": "boolean"
+    },
+    "match_counts": {
+      "type": "object"
+    },
+    "matched_labels": {
+      "type": "array"
+    },
+    "normalized_response": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "parse_status": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "parsed_label": {
+      "enum": [
+        "sad",
+        "happy",
+        "fearful",
+        "angry",
+        "surprised",
+        "disgusted",
+        "neutral",
+        null
+      ],
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "protocol_version": {
+      "const": "MCR_CONTROLLED_PROTOCOL_V2"
+    },
+    "raw_model_output": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "record_key": {
+      "type": "string"
+    },
+    "return_audio": {
+      "const": false
+    },
+    "runner_version": {
+      "const": "QWEN25_MCR_CONTROLLED_RUNNER_V3"
+    },
+    "sample_id": {
+      "type": "string"
+    },
+    "source_index": {
+      "type": "integer"
+    },
+    "technical_error": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "y_audio": {
+      "enum": [
+        "sad",
+        "happy",
+        "fearful",
+        "angry",
+        "surprised",
+        "disgusted",
+        "neutral"
+      ]
+    },
+    "y_text": {
+      "enum": [
+        "sad",
+        "happy",
+        "fearful",
+        "angry",
+        "surprised",
+        "disgusted",
+        "neutral"
+      ]
+    }
+  },
+  "required": [
+    "protocol_version",
+    "runner_version",
+    "record_key",
+    "sample_id",
+    "source_index",
+    "arm",
+    "candidate_sequence_id",
+    "candidate_sequence",
+    "raw_model_output",
+    "parse_status",
+    "parsed_label",
+    "generation_success",
+    "return_audio"
+  ],
+  "title": "MCR Controlled Protocol V2 Output",
+  "type": "object"
+}

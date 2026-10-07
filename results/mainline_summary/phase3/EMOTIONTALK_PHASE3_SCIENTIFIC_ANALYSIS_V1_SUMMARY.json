@@ -1,0 +1,49 @@
+{
+  "status": "COMPLETE",
+  "authoritative_full_sha256": "4d47052a8de4625b3e25f105f2c3be94eea943752a58accf5683e520cf0fbbc1",
+  "population": {
+    "rows": 402,
+    "unique_utterances": 67,
+    "analysis_population": "TripleReadable TWO_VS_ONE"
+  },
+  "frozen_composition_prediction": {
+    "resolved_N": 294,
+    "unresolved_N": 108,
+    "coverage": 0.7313432835820896,
+    "majority_prediction_N": 199,
+    "minority_prediction_N": 95,
+    "unresolved_reason_counts": {
+      "EDGE_DISAGREEMENT": 93,
+      "OTHER_INVOLVED": 15
+    }
+  },
+  "observed_outcome_counts": {
+    "MAJORITY_LABEL": 288,
+    "MINORITY_LABEL": 99,
+    "OTHER": 15
+  },
+  "primary_compositionality": {
+    "denominator": "frozen resolved composition predictions",
+    "N": 294,
+    "correct_N": 268,
+    "accuracy": 0.9115646258503401,
+    "cluster_unit": "utterance_id",
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 42,
+    "CI95": [
+      0.8547297297297297,
+      0.9565217391304348
+    ]
+  },
+  "secondary": {
+    "observed_majority_or_minority_coverage": 0.9626865671641791,
+    "conditional_accuracy_given_observed_side_choice": 0.9241379310344827
+  },
+  "important_constraints": [
+    "Six tri-modal orders are repeated measures within utterance.",
+    "Utterance, not row, is the independent sampling unit.",
+    "Unresolved frozen predictions are not assigned an accuracy.",
+    "Predictions were read from the frozen Phase 3 primary plan and were not reconstructed from observed tri-modal outputs.",
+    "ALL_DIFFERENT utterances are not included in this TWO_VS_ONE primary analysis."
+  ]
+}

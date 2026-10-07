@@ -1,0 +1,33 @@
+{
+  "source_target_pairs": [
+    "EmotionTalk A-T -> LISTEN A-T",
+    "EmotionTalk A-V -> CA-MER A-V"
+  ],
+  "target_use": "held-out zero-refit only; no target fitting/tuning/scaler fitting",
+  "unsupported": [
+    "EmotionTalk V-T has no target dataset in the declared mapping",
+    "EmoMM remains held-out only for a later specified mapping"
+  ],
+  "features": [
+    "delta entropy",
+    "delta top1-top2 margin",
+    "delta source-label probability",
+    "presentation-order indicator",
+    "pair identity"
+  ],
+  "excluded": [
+    "raw emotion identity",
+    "target labels for fitting",
+    "target-derived preprocessing/scaling"
+  ],
+  "scaling": "fit on source only",
+  "primary_metric": "log loss",
+  "secondary_metrics": [
+    "balanced accuracy",
+    "AUROC",
+    "Brier score",
+    "calibration"
+  ],
+  "baseline": "constant source-modality-preference prediction, fixed from source; no target fit",
+  "interpretation": "all claims conditional on frozen pair-specific DualReadable population"
+}

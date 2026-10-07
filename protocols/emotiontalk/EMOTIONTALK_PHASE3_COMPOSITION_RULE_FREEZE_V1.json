@@ -1,0 +1,73 @@
+{
+  "schema_version": "EMOTIONTALK_PHASE3_COMPOSITION_RULE_FREEZE_V1",
+  "created_utc": "2026-09-28T07:07:25Z",
+  "freeze_status": "FROZEN",
+  "pairwise_model_freeze_path": "/root/autodl-tmp/affective-conflict/audit/EMOTIONTALK_CONTROLLED_V1/phase2_scientific_analysis_v1/EMOTIONTALK_PHASE2_PAIRWISE_MODEL_FREEZE_V1.json",
+  "pairwise_model_freeze_sha256": "2f5e5e639ce22d79452aa54ca599fd0e14bc525cf874042b04065edadeed5019",
+  "phase2_authoritative_jsonl_path": "/root/autodl-tmp/affective-conflict/audit/EMOTIONTALK_CONTROLLED_V1/phase2_pairwise_full_v1_attempt_002/emotiontalk_phase2_pairwise_full_v1_attempt_002.jsonl",
+  "phase2_authoritative_jsonl_sha256": "677f96d9cd8650c08486bedde14457d62a2e930d3c0b7560983d6d1c456b1381",
+  "population": {
+    "source": "frozen Phase 1 V1.2 sample table",
+    "eligibility": "Readable_A == TRUE AND Readable_T == TRUE AND Readable_V == TRUE",
+    "primary_pattern": "TWO_VS_ONE only",
+    "expected_unique_utterances": 67,
+    "all_different_count_only": 3,
+    "disallowed_target": "official multimodal y_M is not read or used"
+  },
+  "source_label_fields": {
+    "A": "y_A",
+    "T": "y_T",
+    "V": "y_V"
+  },
+  "edge_selection": {
+    "non_informative_edge": "pair joining the two majority modalities",
+    "informative_edges": "the two majority-modality versus minority-modality pairs",
+    "pair_order": [
+      "AT",
+      "AV",
+      "VT"
+    ],
+    "phase2_arm_matching": "for each informative pair, choose the Phase 2 arm matching the relative order of its two modalities within tri_order"
+  },
+  "frozen_prediction_rule": {
+    "both_informative_edges_select_majority_side": {
+      "prediction_class": "MAJORITY",
+      "label": "majority_label"
+    },
+    "both_informative_edges_select_minority_side": {
+      "prediction_class": "MINORITY",
+      "label": "minority_label"
+    },
+    "one_edge_each_side": {
+      "prediction_class": "UNRESOLVED",
+      "reason": "EDGE_DISAGREEMENT"
+    },
+    "invalid_edge_outcomes": {
+      "OTHER": {
+        "prediction_class": "UNRESOLVED",
+        "reason": "OTHER_INVOLVED"
+      },
+      "PARSE_FAIL": {
+        "prediction_class": "UNRESOLVED",
+        "reason": "PARSE_FAIL_INVOLVED"
+      },
+      "technical_missing": {
+        "prediction_class": "UNRESOLVED",
+        "reason": "TECHNICAL_MISSING_INVOLVED"
+      }
+    },
+    "order_averaging": false,
+    "pooled_side_rate": false,
+    "refit_using_tri_modal_information": false
+  },
+  "tri_orders": [
+    "A_THEN_T_THEN_V",
+    "A_THEN_V_THEN_T",
+    "T_THEN_A_THEN_V",
+    "T_THEN_V_THEN_A",
+    "V_THEN_A_THEN_T",
+    "V_THEN_T_THEN_A"
+  ],
+  "tri_modal_model_output_used_to_define_rule": false,
+  "phase3_full_run_authorized": false
+}

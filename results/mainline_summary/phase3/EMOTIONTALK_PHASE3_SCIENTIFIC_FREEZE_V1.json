@@ -1,0 +1,44 @@
+{
+  "created_utc": "2026-09-29T15:12:55.681564+00:00",
+  "status": "FROZEN",
+  "authoritative_full_sha256": "4d47052a8de4625b3e25f105f2c3be94eea943752a58accf5683e520cf0fbbc1",
+  "full_freeze_sha256": "e2e9e0dbf54d91c1471bee473439a7e6970bc3890598562c39438f4cc1ccf783",
+  "main_summary_sha256": "984960a92787bcda2426940325021a13cb22564278fd58a2c3fdb1300a8b3a20",
+  "prediction_class_contrast_sha256": "a091a021989573ddef2beaee915081435c89a5482e63daced198f7fe90eb5bd5",
+  "order_heterogeneity_sha256": "95dbce96e8c185918f0cbab0c079258390c9ebf1663318d0b6eeb8bb5f04a94f",
+  "limited_inferential_audit_sha256": "0ed5acb299926a07c662ee5915c53e6832b09d11aa0cad9acfb623e916898961",
+  "primary": {
+    "total_rows": 402,
+    "unique_utterances": 67,
+    "resolved_predictions": 294,
+    "unresolved_predictions": 108,
+    "prediction_coverage": 0.7313432835820896,
+    "exact_label_accuracy": 0.9115646258503401,
+    "cluster_bootstrap_CI95": [
+      0.8547297297297297,
+      0.9565217391304348
+    ]
+  },
+  "supplemental": {
+    "majority_accuracy": 0.9849246231155779,
+    "minority_accuracy": 0.7578947368421053,
+    "majority_minus_minority_gap": 0.22702988627347265,
+    "gap_CI95": [
+      0.10661594147968473,
+      0.3728077648596832
+    ],
+    "bootstrap_p_report": "<0.0002",
+    "order_heterogeneity_wald_chi2_df5": 0.4382646673443836,
+    "order_heterogeneity_p": 0.9942098330910555,
+    "order_heterogeneity_detected": false
+  },
+  "constraints": {
+    "unresolved_outside_accuracy_estimand": true,
+    "all_different_primary_analysis": false,
+    "no_further_phase3_modeling": true,
+    "no_new_phase3_subgroup_slicing": true,
+    "no_rule_change": true,
+    "no_posthoc_refit": true
+  },
+  "next_stage": "CROSS_REGIME_ZERO_REFIT_TRANSFER"
+}

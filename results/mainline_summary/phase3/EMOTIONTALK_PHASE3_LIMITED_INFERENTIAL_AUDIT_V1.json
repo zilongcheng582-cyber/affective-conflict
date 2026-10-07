@@ -1,0 +1,81 @@
+{
+  "status": "COMPLETE",
+  "scope": "LIMITED_PRE_FREEZE_INFERENTIAL_AUDIT",
+  "cpu_only": true,
+  "model_loaded": false,
+  "cuda_used": false,
+  "authoritative_analysis_input": "/root/autodl-tmp/affective-conflict/audit/EMOTIONTALK_CONTROLLED_V1/phase3_trimodal_v1/phase3_scientific_analysis_v1/01_merged_primary_analysis.csv",
+  "authoritative_analysis_input_sha256": "2ea12d5b455daa2f5cbbce59290a95624abf52889ff09ecc8faaee1f7816d2ba",
+  "prediction_class_contrast": {
+    "majority_N": 199,
+    "majority_accuracy": 0.984924623115578,
+    "minority_N": 95,
+    "minority_accuracy": 0.7578947368421053,
+    "accuracy_gap_majority_minus_minority": 0.2270298862734726,
+    "cluster_unit": "utterance_id",
+    "bootstrap_replicates": 10000,
+    "seed": 42,
+    "CI95_low": 0.1066159414796847,
+    "CI95_high": 0.3728077648596832,
+    "bootstrap_two_sided_p": 0.0,
+    "bootstrap_p_reporting_note": "No bootstrap replicate crossed zero; with B=10000, report empirical two-sided p < 0.0002 rather than p=0.",
+    "bootstrap_two_sided_p_report": "<0.0002"
+  },
+  "order_heterogeneity": {
+    "reference_order": "A_THEN_T_THEN_V",
+    "test": "custom logistic regression with utterance-cluster robust sandwich covariance; joint Wald test",
+    "cluster_unit": "utterance_id",
+    "df": 5,
+    "wald_chi2": 0.4382646673443836,
+    "p_value": 0.9942098330910555,
+    "coefficients": {
+      "intercept": 2.4638532405901676,
+      "order_A_THEN_V_THEN_T": -0.16126814759612165,
+      "order_T_THEN_A_THEN_V": 0.04167269640056756,
+      "order_T_THEN_V_THEN_A": -0.0434851119397381,
+      "order_V_THEN_A_THEN_T": -0.3120910373307064,
+      "order_V_THEN_T_THEN_A": -0.2891015191060079
+    },
+    "descriptive_orders": [
+      {
+        "tri_order": "A_THEN_T_THEN_V",
+        "resolved_N": 51,
+        "accuracy": 0.9215686274509803
+      },
+      {
+        "tri_order": "A_THEN_V_THEN_T",
+        "resolved_N": 44,
+        "accuracy": 0.9090909090909091
+      },
+      {
+        "tri_order": "T_THEN_A_THEN_V",
+        "resolved_N": 53,
+        "accuracy": 0.9245283018867925
+      },
+      {
+        "tri_order": "T_THEN_V_THEN_A",
+        "resolved_N": 49,
+        "accuracy": 0.9183673469387755
+      },
+      {
+        "tri_order": "V_THEN_A_THEN_T",
+        "resolved_N": 48,
+        "accuracy": 0.8958333333333334
+      },
+      {
+        "tri_order": "V_THEN_T_THEN_A",
+        "resolved_N": 49,
+        "accuracy": 0.8979591836734694
+      }
+    ]
+  },
+  "scientific_protocol_changed": false,
+  "interpretation_constraints": [
+    "Prediction-class contrast is supplemental.",
+    "Six presentation orders are repeated measures within utterance.",
+    "Order heterogeneity is tested with utterance-cluster robust covariance.",
+    "No new model features or post-Phase3 refitting were performed.",
+    "Unresolved predictions remain outside the primary accuracy estimand.",
+    "ALL_DIFFERENT remains outside the TWO_VS_ONE primary analysis."
+  ]
+}

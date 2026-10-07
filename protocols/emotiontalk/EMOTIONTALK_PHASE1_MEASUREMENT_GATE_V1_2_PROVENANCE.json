@@ -1,0 +1,177 @@
+{
+  "created_utc": "2026-09-25T11:38:33.284984+00:00",
+  "status": "PASS",
+  "project_root": "/root/autodl-tmp/affective-conflict",
+  "official_repo": {
+    "path": "/root/autodl-tmp/affective-conflict/external/EmotionTalk",
+    "commit": "cb8397e226ce7c1fccee41ea21161a3f98f578e1",
+    "branch": "main",
+    "worktree_clean": true,
+    "crosscheck_status": "PASS",
+    "crosscheck_artifact_sha256": "135f30feb2e7a0fe468a2a9c92d01964d7997bde942eba71fc6b4bf6ad4130aa"
+  },
+  "official_hugging_face_revision": "adbc17fc944e8cf2873643906160c6ca0259ab61",
+  "dataset_root": "/root/autodl-tmp/affective-conflict/data/EmotionTalk/extracted",
+  "annotation_directory_paths": {
+    "Audio": "/root/autodl-tmp/affective-conflict/data/EmotionTalk/extracted/Audio/json",
+    "Multimodal": "/root/autodl-tmp/affective-conflict/data/EmotionTalk/extracted/Multimodal/json",
+    "Text": "/root/autodl-tmp/affective-conflict/data/EmotionTalk/extracted/Text/json",
+    "Video": "/root/autodl-tmp/affective-conflict/data/EmotionTalk/extracted/Video/json"
+  },
+  "annotation_file_counts": {
+    "Audio": 19250,
+    "Multimodal": 19250,
+    "Text": 19250,
+    "Video": 19250
+  },
+  "official_split_provenance_and_descriptive_panel_counts": {
+    "source": "LABEL_NPZ",
+    "archives": {
+      "T": "/root/autodl-tmp/affective-conflict/external/EmotionTalk/EmotionTalk/dataset/mm-process/txt_label.npz",
+      "A": "/root/autodl-tmp/affective-conflict/external/EmotionTalk/EmotionTalk/dataset/mm-process/audio_label.npz",
+      "V": "/root/autodl-tmp/affective-conflict/external/EmotionTalk/EmotionTalk/dataset/mm-process/video_label.npz",
+      "M": "/root/autodl-tmp/affective-conflict/external/EmotionTalk/EmotionTalk/dataset/mm-process/mm_label.npz"
+    },
+    "counts_by_archive": {
+      "T": {
+        "train": 15413,
+        "val": 1908,
+        "test": 1929
+      },
+      "A": {
+        "train": 15413,
+        "val": 1908,
+        "test": 1929
+      },
+      "V": {
+        "train": 15413,
+        "val": 1908,
+        "test": 1929
+      },
+      "M": {
+        "train": 15413,
+        "val": 1908,
+        "test": 1929
+      }
+    },
+    "memberships_identical": true,
+    "generation_rule": "NOT_FOUND",
+    "speaker_split_implementation": "NOT_FOUND",
+    "selection_filter": false,
+    "panel_train_n": 1190,
+    "panel_val_n": 158,
+    "panel_test_n": 152
+  },
+  "fast_audit_v2_provenance_sha256": "fa2312931235345cd606aef8f0ffdfba3938e098e54298cbadac7c728d4353ec",
+  "controlled_protocol_provenance_sha256": "4c1fdac18afbd00aa1e0374595f2db3ceab9961b22bc0784f6be7b301fa50fe7",
+  "media_freeze_provenance_sha256": "2d0ad33483ba955c9c13d4c699c2ee1e387b07411f09ba2b767279c840a7f6ad",
+  "V1_1_runner_sha256_before_and_after": "e6a7be3a729350c4d4c38299c1f889739b6e2c0cee2ee9d0ba361dfcb4c6eadb",
+  "V1_1_results_jsonl_sha256_before_and_after": "ccc72a28d4a5a57f4c506e61704248b1e61208e57d9cad335be3e3e45840e951",
+  "frozen_input_hashes": {
+    "master_panel_sha256": "1ca8b79d8c146c6d807dd97a7bcd6cda519d5655e4cd0300afe7a92d159f406b",
+    "prompt_sha256": "ba6b71f080ea186a1494a54a0990a5740fc0aea69f008622618102f39efe55f8",
+    "parser_sha256": "c852f18279dd0d89fc8a97bab0516943775580a1a7dbcfe276e901d14ff7d374",
+    "candidate_sequences_sha256": "b249c68e92fa16ec7c41f617baffd1d293db8807b01b9c0f5d8490d41b790750",
+    "media_manifest_sha256": "c0343ac1cf79038dc5b9cfaf2cdebe9da3fbf13a18c24960656e2fabbd438c9d"
+  },
+  "generation_configuration": {
+    "copied_from": "run_qwen25_emotiontalk_phase1_v1_1.py",
+    "do_sample": false,
+    "max_new_tokens": 16,
+    "use_audio_in_video": false,
+    "return_audio": false,
+    "prompt_parser_candidate_sequence_and_media": "unchanged"
+  },
+  "candidate_scoring": {
+    "successful_scored_records": 18,
+    "teacher_forced_forward_call_total": 90,
+    "candidate_token_count_histogram": {
+      "1": 54,
+      "2": 18,
+      "3": 54
+    },
+    "method": "exact canonical candidate string teacher forcing; sum and mean token log probabilities",
+    "primary_probability": "softmax(mean token log probability)",
+    "sensitivity_probability": "softmax(sum token log probability)",
+    "readability_or_prediction_changed": false
+  },
+  "gate_checks": {
+    "preaudit_static_pass": true,
+    "all_measurement_specs_exist": true,
+    "candidate_assignment_independent_by_design": true,
+    "candidate_position_balance_pass": true,
+    "official_TAV_ID_tuple_support_complete": true,
+    "human_annotation_uncertainty_metadata_available": true,
+    "V1_1_runner_and_results_unchanged": true,
+    "official_repo_commit_main_clean": true,
+    "18_generation_parser_rows": true,
+    "candidate_score_rows_18": true,
+    "candidate_score_probabilities_valid": true,
+    "candidate_score_labels_and_token_counts_valid": true,
+    "greedy_score_agreement_measurement_valid": true,
+    "V1_1_repeat_same_samples_arms_sequences_parsed_output": true,
+    "frozen_inputs_verified_by_runner": true,
+    "technical_gate_runner_pass": true,
+    "no_OOM_or_other_technical_failure": true
+  },
+  "technical_run_counts": {
+    "planned_records": 18,
+    "attempted_records": 18,
+    "generation_attempt_count": 18,
+    "generation_success_count": 18,
+    "parser_execution_count": 18,
+    "parse_successes": 18,
+    "parse_failures": 0,
+    "cuda_oom_count": 0,
+    "other_technical_failure_count": 0
+  },
+  "science_status": "NOT_RUN",
+  "scientific_metrics_computed": false,
+  "full_phase1_started": false,
+  "media_modified": false,
+  "model_loaded_for_18_record_gate": true,
+  "files_sha256": {
+    "code/run_qwen25_emotiontalk_phase1_v1_2.py": "e9423fe9490c6a5eb7d6a771764d5678a97f5b6d55578215d3cc89dcf85c51b6",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/EMOTIONTALK_POPULATION_TUPLE_SUPPORT_V1_2.csv": "c78c0ac57866a663d05895a83649de354826d8bf21140b13101a167d81362662",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/EMOTIONTALK_ANNOTATION_UNCERTAINTY_V1.csv": "7ca0a5e2d7b4e21af849bb6fc7f30324fc27821b6fb4baada2e4212eed7dfba8",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/EMOTIONTALK_CANDIDATE_ORDER_AUDIT_V1.csv": "6f886a747835d5326180f89ae3f0b0650eb20a8134653d16ce3d6eab84528d4f",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/EMOTIONTALK_MEASUREMENT_SPEC_V1_2.json": "e65eb6aa3fc1f7aafef4c7390dcf78443fa9dc8f7791e76af311e7734f117c18",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/EMOTIONTALK_COMPOSITIONALITY_SPEC_V1_1.json": "91de88c803eb91280f4d25852ffb4fe7e70f89ea1c5abdbacef863f2919ef2dc",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/CROSS_REGIME_TRANSFER_SPEC_V1.json": "73495ba69b346db05323179683e16cf7abdf88be86d26e9224d79050c50e0714",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/EMOTIONTALK_MEASUREMENT_SPEC_V1_2.md": "03ade2a4a6763f0736cb3a54161c3cc1c27ecddacdb06be2af199e7659afecc6",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/EMOTIONTALK_COMPOSITIONALITY_SPEC_V1_1.md": "6afd7395345eda4c3be8dc9e3b295561d9a2ef9e628cb7b85ef330845cf4eceb",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/CROSS_REGIME_TRANSFER_SPEC_V1.md": "17a1e2fb8d8265289ec82704756c9844e98a47157def74b8b1fd3252c98866b9",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/EMOTIONTALK_POPULATION_WEIGHTING_SPEC_V1.json": "423c872dd9052f0d099db45d8564e96a565d0bb3dcd7bd2e1a0b9ee6fd105387",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/EMOTIONTALK_PREAUDIT_STATIC_V1_2.json": "9654727cd6164f52e5d1e4efacf3dc46c5337cf175a4c50d5626ed4f50096765",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2.json": "5823abd732a60d5f0f9ed90ad6ef2e53463e4d159758ca12e7cdf94ec0e60d7a",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/emotiontalk_phase1_measurement_gate_v1_2.jsonl": "ef84377d85aba14bda2ac63bb6402fa6d764ab877a0b0f6ecbbc4bb630d31a61",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2.md": "a7ed5050fa7c48c9921c580d088706bb52cf119f8daed8688504bc98ffcab5ab",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/EMOTIONTALK_V1_1_V1_2_GATE_REPEAT_COMPARISON_V1_2.csv": "5d5f01c22993ce04a0ba093f27ed62b4ba1982d57f23b653cdb83582b7dfd1a9",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/attempt_1_candidate_scorer_failure/EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2.json": "66380b7f4cae2e0ec394a139f85644ca5b3a85763fd057222dcbe256bd56dbb4",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/attempt_1_candidate_scorer_failure/EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2.md": "cfb191e8ff8ed4e576c3caa8acc7d4248e19d0582a76f6066fac793aaa023007",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/attempt_1_candidate_scorer_failure/EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2_PROVENANCE.json": "57558b0338a886eb948d8b38e07da2d82adf63278b76ddab48b3701360784ed4",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/attempt_1_candidate_scorer_failure/emotiontalk_phase1_measurement_gate_v1_2.jsonl": "7fd37f1f38f1fe6ecf79b7712d14ed07f368c2d98f597fdbc104291815985632",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/attempt_2/EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2.json": "561ffaf0f4d0beab946f5a872d32c4d31f1501f68f95aa4c24caa62ee9c4b8f3",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/attempt_2/EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2_PROVENANCE.json": "ec231027d5d1b0bd34d9ab925dcf61065a103834cf98fb82c3eaf9c7280df8ab",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/attempt_2/emotiontalk_phase1_measurement_gate_v1_2.jsonl": "20c0d06f33a85f56e2eeed202f6c2ea537c60f4144600fe01f562c1176cdbfc0",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/attempt_2/EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2.md": "cfb191e8ff8ed4e576c3caa8acc7d4248e19d0582a76f6066fac793aaa023007",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/attempt_2/run_qwen25_emotiontalk_phase1_v1_2_cache_branch.py": "20b7ce6fd680f82e298f55223c9ad783049af29b7297fc9bc5aa208bfc5c8550",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/attempt_2_cache_branch_failure/EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2.json": "561ffaf0f4d0beab946f5a872d32c4d31f1501f68f95aa4c24caa62ee9c4b8f3",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/attempt_2_cache_branch_failure/EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2.md": "cfb191e8ff8ed4e576c3caa8acc7d4248e19d0582a76f6066fac793aaa023007",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/attempt_2_cache_branch_failure/EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2_PROVENANCE.json": "ec231027d5d1b0bd34d9ab925dcf61065a103834cf98fb82c3eaf9c7280df8ab",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/attempt_2_cache_branch_failure/emotiontalk_phase1_measurement_gate_v1_2.jsonl": "20c0d06f33a85f56e2eeed202f6c2ea537c60f4144600fe01f562c1176cdbfc0",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/attempt_3/EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2.json": "4f16db7d1b599c1c70500e3e9c64e6bb830ebc6a657794bc00a6c1d49a1d61a8",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/attempt_3/EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2_PROVENANCE.json": "f047f8a87f0d6d1096f54f4349a4633b729c2b05810c9ac32a3e97d9f738a610",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/attempt_3/emotiontalk_phase1_measurement_gate_v1_2.jsonl": "796c2ca37d77b79b226ee9f1b26debbac7cbf3e24c14313883d3bc0cbddf6463",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/attempt_3/EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2.md": "cfb191e8ff8ed4e576c3caa8acc7d4248e19d0582a76f6066fac793aaa023007",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/attempt_3_source_label_field_failure/EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2.json": "4f16db7d1b599c1c70500e3e9c64e6bb830ebc6a657794bc00a6c1d49a1d61a8",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/attempt_3_source_label_field_failure/EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2.md": "cfb191e8ff8ed4e576c3caa8acc7d4248e19d0582a76f6066fac793aaa023007",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/attempt_3_source_label_field_failure/EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2_PROVENANCE.json": "f047f8a87f0d6d1096f54f4349a4633b729c2b05810c9ac32a3e97d9f738a610",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/attempt_3_source_label_field_failure/emotiontalk_phase1_measurement_gate_v1_2.jsonl": "796c2ca37d77b79b226ee9f1b26debbac7cbf3e24c14313883d3bc0cbddf6463",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/attempt_3_source_label_field_failure/run_qwen25_emotiontalk_phase1_v1_2.py": "d56877633169dcb60c54842bd0607c602fd1b6944406c9892a2d53a086cd9315",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/attempt_4/EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2.json": "2589be48a4fc69b5d43c6eb56efe85d0527a267e7669217affaa803835871d7a",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/attempt_4/EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2_PROVENANCE.json": "470fdd74451084349f270ed559d0883986615d678f73947fef043b48f976b7c6",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/attempt_4/emotiontalk_phase1_measurement_gate_v1_2.jsonl": "ef84377d85aba14bda2ac63bb6402fa6d764ab877a0b0f6ecbbc4bb630d31a61",
+    "audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/attempt_4/EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2.md": "ddb5a1f8b2c54fc3d6da84c9d5c5d3dfbef7f346d493fe6448f98d9f2f91dd6b"
+  }
+}

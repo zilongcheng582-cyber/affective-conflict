@@ -1,0 +1,31 @@
+{
+  "git_blob_etag_matches": {
+    ".gitattributes": true,
+    "LICENSE": true,
+    "README.md": true,
+    "added_tokens.json": true,
+    "chat_template.json": true,
+    "config.json": true,
+    "generation_config.json": true,
+    "merges.txt": true,
+    "model.safetensors.index.json": true,
+    "preprocessor_config.json": true,
+    "special_tokens_map.json": true,
+    "tokenizer_config.json": true,
+    "vocab.json": true
+  },
+  "all_git_blob_etags_match": true,
+  "git_HEAD": null,
+  "hf_local_tree_files": [
+    "/root/autodl-tmp/affective-conflict/models/Qwen2.5-Omni-7B/.cache/huggingface/trees/ae9e1690543ffd5c0221dc27f79834d0294cba00.json"
+  ],
+  "repository_readme_reference_lines": [
+    "license_link: https://huggingface.co/Qwen/Qwen2.5-Omni-7B/blob/main/LICENSE",
+    "model = Qwen2_5OmniForConditionalGeneration.from_pretrained(\"Qwen/Qwen2.5-Omni-7B\", torch_dtype=\"auto\", device_map=\"auto\")",
+    "#     \"Qwen/Qwen2.5-Omni-7B\",",
+    "processor = Qwen2_5OmniProcessor.from_pretrained(\"Qwen/Qwen2.5-Omni-7B\")",
+    "    \"Qwen/Qwen2.5-Omni-7B\","
+  ],
+  "cache_reference_directories": [],
+  "model_config_name_or_path": null
+}

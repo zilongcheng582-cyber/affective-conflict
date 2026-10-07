@@ -1,0 +1,15 @@
+# CA-MER controlled analysis specification V1
+
+Status: frozen before inference; science NOT RUN.
+
+1. **Label construction.** Use only official `audio_pseudo_label` as (y_A) and `video_pseudo_label` as (y_V). Normalize by casefold plus edge trim of whitespace/punctuation. Conflict iff normalized labels differ. These are evidence-side pseudo-labels, not ground truth. No semantic merges.
+2. **Population.** Conflict pool is the 500 audio-aligned plus 500 video-aligned examples (N=1,000). The consistent split (N=500) is a separate control set. The static manifest must not assign DualReadable; it is calculated only from future A_ONLY/V_ONLY responses.
+3. **DualReadable.** On conflict examples, require strict parse success and normalized exact equality A_ONLY = (y_A), V_ONLY = (y_V). Primary arbitration population is the resulting intersection. Report the DualReadable count/rate overall and by official source subset. The full conflict pool is the fixed sensitivity population.
+4. **Arm outcomes.** For each joint arm, report SIDE_AUDIO, SIDE_VIDEO, OTHER, PARSE_FAIL counts/rates. AudioShare = SIDE_AUDIO/(SIDE_AUDIO+SIDE_VIDEO), VideoShare = SIDE_VIDEO/(SIDE_AUDIO+SIDE_VIDEO). Additionally show SIDE_AUDIO/N and SIDE_VIDEO/N where N is the entire eligible population, so OTHER/PARSE_FAIL do not vanish from view. Keep consistent controls out of these denominators; report control-match, control-other, and parse-fail separately.
+5. **Order.** Report paired A_THEN_V versus V_THEN_A outcome tables and the five frozen order-sensitivity categories. The main order contrast is the paired difference in each arm's AudioShare; do not interpret recency/primacy-like flips causally.
+6. **Uncertainty and dependence.** The only available unit is a clip. No speaker/person/source-video cluster identifier is exposed by the official annotations or mapping; source dependence is unknown. Report point estimates descriptively. Any sample bootstrap interval must be labeled sample-level and non-cluster-robust; do not present it as population-level uncertainty. If a trusted cluster key becomes available before inference, amend and re-freeze this specification before seeing outputs.
+7. **Multiplicity.** The two joint-arm share estimates and their paired order contrast are primary. A_ONLY/V_ONLY label match, parse validity, full-pool sensitivity, and consistent-control behavior are diagnostic. No unregistered subgroup search or significance fishing.
+8. **Reproducibility.** Preserve raw response text, parser version/hash, model/tokenizer/config hashes, candidate order/hash, arm order, media hashes, decoding parameters, timestamps, and request IDs for any future authorized run. Do not merge evaluation labels into request payloads.
+9. **Interpretation boundary.** This protocol measures model choices relative to source-provided side pseudo-labels and candidate availability. It does not establish which modality is objectively correct and does not reproduce any official open-vocabulary benchmark.
+
+No results are reported in this document; no model or judge was run.

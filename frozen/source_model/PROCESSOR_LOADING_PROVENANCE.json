@@ -1,0 +1,1538 @@
+[
+  {
+    "SHA256": "2f07155fa0acf7efb718236d7b7c015bb04a7986b4a3599b0aeab73d5e5b3635",
+    "path": "/root/autodl-tmp/affective-conflict/code/run_qwen_smoke.py",
+    "source_excerpts": [
+      {
+        "line": 492,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor  # type: ignore"
+      },
+      {
+        "line": 496,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained(str(MODEL_DIR), torch_dtype=\"auto\", device_map=\"auto\")"
+      },
+      {
+        "line": 497,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL_DIR))"
+      }
+    ]
+  },
+  {
+    "SHA256": "929e831d847d9ec3c66458a5708e9645501659faaa1ad0a950fb9b1907d8ec6d",
+    "path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_emotiontalk_phase1_full_v1_2_r1.py",
+    "source_excerpts": [
+      {
+        "line": 4,
+        "source": "This technical revision imports the already-frozen V1.2 runner for all prompt,"
+      },
+      {
+        "line": 323,
+        "source": "\"full_runner_revision_sha256\": sha_file(RUNNER_REVISION),"
+      },
+      {
+        "line": 832,
+        "source": "\"technical_runner_revision\": str(RUNNER_REVISION),"
+      },
+      {
+        "line": 833,
+        "source": "\"technical_runner_revision_sha256\": frozen_hashes[\"full_runner_revision_sha256\"],"
+      },
+      {
+        "line": 873,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 882,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(runner.MODEL_DIR), local_files_only=True)"
+      },
+      {
+        "line": 888,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      },
+      {
+        "line": 937,
+        "source": "\"technical_runner_revision_sha256\": frozen_hashes[\"full_runner_revision_sha256\"],"
+      }
+    ]
+  },
+  {
+    "SHA256": "be08ddcd2a7c2f4083b786883b6142e6b1613b71957b24d63bb0b2af5d4c096c",
+    "path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_emotiontalk_pairwise_v1_1.py",
+    "source_excerpts": [
+      {
+        "line": 118,
+        "source": "\"processor\": \"Qwen2_5OmniProcessor\", \"processor_local_files_only\": True,"
+      },
+      {
+        "line": 826,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 828,
+        "source": "model_dir = ROOT / \"models/Qwen2.5-Omni-7B\""
+      },
+      {
+        "line": 829,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(model_dir), local_files_only=True)"
+      },
+      {
+        "line": 830,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      },
+      {
+        "line": 831,
+        "source": "str(model_dir), torch_dtype=\"auto\", device_map=\"cuda\","
+      }
+    ]
+  },
+  {
+    "SHA256": "8238584f38e42065fa651d7ddd052aaa3eca853e56aff72f92072e8f1be37af6",
+    "path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_emotiontalk_trimodal_v1_1.py",
+    "source_excerpts": [
+      {
+        "line": 167,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 168,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL_DIR), local_files_only=True)"
+      },
+      {
+        "line": 169,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      }
+    ]
+  },
+  {
+    "SHA256": "6848b469eb15e51b068262afb5d3c7899793d8910e08b842ce4c9e6c42a1ea7b",
+    "path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_mcr_native_v1.py",
+    "source_excerpts": [
+      {
+        "line": 134,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor  # type: ignore"
+      },
+      {
+        "line": 140,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      },
+      {
+        "line": 145,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(model_path)"
+      }
+    ]
+  },
+  {
+    "SHA256": "361d9f57317dbf516512bf7801fa8b158a2ecfd7dc25ca6d780447a7f0eb6907",
+    "path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_mcr_controlled_v1.py",
+    "source_excerpts": [
+      {
+        "line": 53,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 64,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      },
+      {
+        "line": 69,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(execution_config[\"model_absolute_path\"])"
+      }
+    ]
+  },
+  {
+    "SHA256": "dba339b31731c0b8e6d80a9e509251051e5e48d303b7af0ea86c93dae441a2c8",
+    "path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_mcr_controlled_v2.py",
+    "source_excerpts": [
+      {
+        "line": 53,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 64,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      },
+      {
+        "line": 69,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(execution_config[\"model_absolute_path\"])"
+      }
+    ]
+  },
+  {
+    "SHA256": "c111d4dfd314b25088afff7e5ec7ad46c7869e0a692d2bca1d8e760c4fc25273",
+    "path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_mcr_controlled_v3.py",
+    "source_excerpts": [
+      {
+        "line": 55,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 66,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      },
+      {
+        "line": 71,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(execution_config['model_absolute_path'])"
+      }
+    ]
+  },
+  {
+    "SHA256": "b60d3c38f57cf7fde66152f65288c0aeb417c220c4bb5fc53e743057fbd9416e",
+    "path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_camer_native_v1.py",
+    "source_excerpts": [
+      {
+        "line": 21,
+        "source": "MODEL_PATH = ROOT / \"models/Qwen2.5-Omni-7B\""
+      },
+      {
+        "line": 434,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 439,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL_PATH), local_files_only=True)"
+      },
+      {
+        "line": 440,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      }
+    ]
+  },
+  {
+    "SHA256": "83275a8902f957f8d5f214fd00a0ae80d1f86a4ac079f1fdd5568e625d0e67a2",
+    "path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_camer_controlled_v1.py",
+    "source_excerpts": [
+      {
+        "line": 27,
+        "source": "MODEL = ROOT / 'models/Qwen2.5-Omni-7B'"
+      },
+      {
+        "line": 402,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 406,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL), local_files_only=True)"
+      },
+      {
+        "line": 407,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained(str(MODEL), **model_kwargs)"
+      }
+    ]
+  },
+  {
+    "SHA256": "fc5f8bf93d4cb98d5fc6493d958199a2c5758de63e1025faf61ce23e01f93add",
+    "path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_camer_controlled_v2.py",
+    "source_excerpts": [
+      {
+        "line": 27,
+        "source": "MODEL = ROOT / 'models/Qwen2.5-Omni-7B'"
+      },
+      {
+        "line": 417,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 421,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL), local_files_only=True)"
+      },
+      {
+        "line": 422,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained(str(MODEL), **model_kwargs)"
+      }
+    ]
+  },
+  {
+    "SHA256": "90fb75a0704f29622f5de7c2526ba2457c6dbc2200f75fbc0be778432253aca7",
+    "path": "/root/autodl-tmp/affective-conflict/code/qwen25_adapter_preflight_v3.py",
+    "source_excerpts": [
+      {
+        "line": 166,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 179,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(v2.MODEL), local_files_only=True)"
+      },
+      {
+        "line": 236,
+        "source": "gc = GenerationConfig.from_pretrained(str(v2.MODEL), local_files_only=True)"
+      }
+    ]
+  },
+  {
+    "SHA256": "0ce3e1b509f538e17b4df379282798bb5ab3d565455a6646d9f69bfb2aca5c0b",
+    "path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_camer_controlled_v3.py",
+    "source_excerpts": [
+      {
+        "line": 39,
+        "source": "MODEL = ROOT / 'models/Qwen2.5-Omni-7B'"
+      },
+      {
+        "line": 730,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 752,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL), local_files_only=True)"
+      },
+      {
+        "line": 753,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained(str(MODEL), **model_kwargs)"
+      }
+    ]
+  },
+  {
+    "SHA256": "8d8f80ddd6577a91e2606374fda493b19675cc01caf25d31aba6a8af8ad69c20",
+    "path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_camer_controlled_v4.py",
+    "source_excerpts": [
+      {
+        "line": 43,
+        "source": "MODEL = ROOT / 'models/Qwen2.5-Omni-7B'"
+      },
+      {
+        "line": 863,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 885,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL), local_files_only=True)"
+      },
+      {
+        "line": 886,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained(str(MODEL), **model_kwargs)"
+      }
+    ]
+  },
+  {
+    "SHA256": "663a184bc59b17627137d7022e1d8e0fda97e708f280452975be49e65bcf93f1",
+    "path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_emotiontalk_pairwise_v1_2.py",
+    "source_excerpts": [
+      {
+        "line": 119,
+        "source": "\"processor\": \"Qwen2_5OmniProcessor\", \"processor_local_files_only\": True,"
+      },
+      {
+        "line": 868,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 870,
+        "source": "model_dir = ROOT / \"models/Qwen2.5-Omni-7B\""
+      },
+      {
+        "line": 871,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(model_dir), local_files_only=True)"
+      },
+      {
+        "line": 872,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      },
+      {
+        "line": 873,
+        "source": "str(model_dir), torch_dtype=\"auto\", device_map=\"cuda\","
+      }
+    ]
+  },
+  {
+    "SHA256": "3555b5b90baefe1e45b84562bdb3a8c3c791b0a2e0faa1dbb22e27521cbaf509",
+    "path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_emotiontalk_trimodal_v1.py",
+    "source_excerpts": [
+      {
+        "line": 161,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 162,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL_DIR), local_files_only=True)"
+      },
+      {
+        "line": 163,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      }
+    ]
+  },
+  {
+    "SHA256": "a474c102c6dea042c155991284f148f6b2404889e52af9972a2ec0fe2019263e",
+    "path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_emotiontalk_trimodal_v1_2.py",
+    "source_excerpts": [
+      {
+        "line": 167,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 168,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL_DIR), local_files_only=True)"
+      },
+      {
+        "line": 169,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      }
+    ]
+  },
+  {
+    "SHA256": "c9b193329cedade1aef262cbbe5de9e88c23b533bc9f1aa4256a72f1ee3b2a45",
+    "path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_camer_controlled_resource_sweep_v1.py",
+    "source_excerpts": [
+      {
+        "line": 45,
+        "source": "MODEL = ROOT / 'models/Qwen2.5-Omni-7B'"
+      },
+      {
+        "line": 729,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 733,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL), local_files_only=True)"
+      },
+      {
+        "line": 734,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      }
+    ]
+  },
+  {
+    "SHA256": "f1e4d033e03c492ef86ad3db496f01af4f1c8364f8ac412d36be4556a4991641",
+    "path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_emotiontalk_phase1_v1.py",
+    "source_excerpts": [
+      {
+        "line": 926,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 935,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL_DIR), local_files_only=True)"
+      },
+      {
+        "line": 944,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      }
+    ]
+  },
+  {
+    "SHA256": "e6a7be3a729350c4d4c38299c1f889739b6e2c0cee2ee9d0ba361dfcb4c6eadb",
+    "path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_emotiontalk_phase1_v1_1.py",
+    "source_excerpts": [
+      {
+        "line": 926,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 935,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL_DIR), local_files_only=True)"
+      },
+      {
+        "line": 944,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      }
+    ]
+  },
+  {
+    "SHA256": "e9423fe9490c6a5eb7d6a771764d5678a97f5b6d55578215d3cc89dcf85c51b6",
+    "path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_emotiontalk_phase1_v1_2.py",
+    "source_excerpts": [
+      {
+        "line": 1071,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 1080,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL_DIR), local_files_only=True)"
+      },
+      {
+        "line": 1089,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      }
+    ]
+  },
+  {
+    "SHA256": "7f07055b76b00020375682a85fac14963030137852c3f3c9f0acbf8a13e266df",
+    "path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_emotiontalk_pairwise_v1.py",
+    "source_excerpts": [
+      {
+        "line": 382,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 383,
+        "source": "model_dir = ROOT / \"models/Qwen2.5-Omni-7B\""
+      },
+      {
+        "line": 384,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(model_dir), local_files_only=True)"
+      },
+      {
+        "line": 385,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      },
+      {
+        "line": 386,
+        "source": "str(model_dir), torch_dtype=\"auto\", device_map=\"cuda\","
+      }
+    ]
+  },
+  {
+    "SHA256": "43b83db5ca2fb6738ebdee7ae23f8c8674168f420b4ce442ae37be3af9d61407",
+    "path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_emotiontalk_trimodal_v1_3.py",
+    "source_excerpts": [
+      {
+        "line": 173,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 174,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL_DIR), local_files_only=True)"
+      },
+      {
+        "line": 175,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      }
+    ]
+  },
+  {
+    "SHA256": "c9b193329cedade1aef262cbbe5de9e88c23b533bc9f1aa4256a72f1ee3b2a45",
+    "path": "/root/autodl-tmp/affective-conflict/code/.ipynb_checkpoints/run_qwen25_camer_controlled_resource_sweep_v1-checkpoint.py",
+    "source_excerpts": [
+      {
+        "line": 45,
+        "source": "MODEL = ROOT / 'models/Qwen2.5-Omni-7B'"
+      },
+      {
+        "line": 729,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 733,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL), local_files_only=True)"
+      },
+      {
+        "line": 734,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      }
+    ]
+  },
+  {
+    "SHA256": "a474c102c6dea042c155991284f148f6b2404889e52af9972a2ec0fe2019263e",
+    "path": "/root/autodl-tmp/affective-conflict/code/.ipynb_checkpoints/run_qwen25_emotiontalk_trimodal_v1_2-checkpoint.py",
+    "source_excerpts": [
+      {
+        "line": 167,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 168,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL_DIR), local_files_only=True)"
+      },
+      {
+        "line": 169,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      }
+    ]
+  },
+  {
+    "SHA256": "20b7ce6fd680f82e298f55223c9ad783049af29b7297fc9bc5aa208bfc5c8550",
+    "path": "/root/autodl-tmp/affective-conflict/audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/attempt_2/run_qwen25_emotiontalk_phase1_v1_2_cache_branch.py",
+    "source_excerpts": [
+      {
+        "line": 1064,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 1073,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL_DIR), local_files_only=True)"
+      },
+      {
+        "line": 1082,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      }
+    ]
+  },
+  {
+    "SHA256": "d56877633169dcb60c54842bd0607c602fd1b6944406c9892a2d53a086cd9315",
+    "path": "/root/autodl-tmp/affective-conflict/audit/EMOTIONTALK_CONTROLLED_V1/pre_full_measurement_freeze_v1_2/attempt_3_source_label_field_failure/run_qwen25_emotiontalk_phase1_v1_2.py",
+    "source_excerpts": [
+      {
+        "line": 1068,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 1077,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL_DIR), local_files_only=True)"
+      },
+      {
+        "line": 1086,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      }
+    ]
+  },
+  {
+    "SHA256": "b8436f347909574e50d335ab4802dd1f407cbc7c2bad42eaf597ada4b380acc8",
+    "path": "/root/autodl-tmp/affective-conflict/audit/CROSS_REGIME_TRANSFER_V1/target_unimodal_evidence_inference_v2/run_target_unimodal_evidence_inference_v2.py",
+    "source_excerpts": [
+      {
+        "line": 148,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration,Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 151,
+        "source": "t0=time.perf_counter();proc=Qwen2_5OmniProcessor.from_pretrained(str(MODEL),local_files_only=True);model=Qwen2_5OmniForConditionalGeneration.from_pretrained(str(MODEL),torch_dtype=\"auto\",device_map=\"cuda\",attn_implementation=\"flash_attention_2\",local_files_only=True);model.eval();prov(\"RUNNING\",h,{\"runner_script_sha256\":H(Path(__file__)),\"model_load_seconds\":round(time.perf_counter()-t0,3),\"model_dtype\":str(model.dtype),\"model_device\":str(model.device),\"cuda_device\":torch.cuda.get_device_name(0)});lg(f\"model loaded {model.device} {model.dtype}\")"
+      }
+    ]
+  },
+  {
+    "SHA256": "b8436f347909574e50d335ab4802dd1f407cbc7c2bad42eaf597ada4b380acc8",
+    "path": "/root/autodl-tmp/affective-conflict/audit/PAPER_CORE_ASSET_GITHUB_SNAPSHOT_V1/candidate_snapshot/audit/CROSS_REGIME_TRANSFER_V1/target_unimodal_evidence_inference_v2/run_target_unimodal_evidence_inference_v2.py",
+    "source_excerpts": [
+      {
+        "line": 148,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration,Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 151,
+        "source": "t0=time.perf_counter();proc=Qwen2_5OmniProcessor.from_pretrained(str(MODEL),local_files_only=True);model=Qwen2_5OmniForConditionalGeneration.from_pretrained(str(MODEL),torch_dtype=\"auto\",device_map=\"cuda\",attn_implementation=\"flash_attention_2\",local_files_only=True);model.eval();prov(\"RUNNING\",h,{\"runner_script_sha256\":H(Path(__file__)),\"model_load_seconds\":round(time.perf_counter()-t0,3),\"model_dtype\":str(model.dtype),\"model_device\":str(model.device),\"cuda_device\":torch.cuda.get_device_name(0)});lg(f\"model loaded {model.device} {model.dtype}\")"
+      }
+    ]
+  },
+  {
+    "SHA256": "c9b193329cedade1aef262cbbe5de9e88c23b533bc9f1aa4256a72f1ee3b2a45",
+    "path": "/root/autodl-tmp/affective-conflict/audit/PAPER_CORE_ASSET_GITHUB_SNAPSHOT_V1/candidate_snapshot/code/run_qwen25_camer_controlled_resource_sweep_v1.py",
+    "source_excerpts": [
+      {
+        "line": 45,
+        "source": "MODEL = ROOT / 'models/Qwen2.5-Omni-7B'"
+      },
+      {
+        "line": 729,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 733,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL), local_files_only=True)"
+      },
+      {
+        "line": 734,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      }
+    ]
+  },
+  {
+    "SHA256": "8d8f80ddd6577a91e2606374fda493b19675cc01caf25d31aba6a8af8ad69c20",
+    "path": "/root/autodl-tmp/affective-conflict/audit/PAPER_CORE_ASSET_GITHUB_SNAPSHOT_V1/candidate_snapshot/code/run_qwen25_camer_controlled_v4.py",
+    "source_excerpts": [
+      {
+        "line": 43,
+        "source": "MODEL = ROOT / 'models/Qwen2.5-Omni-7B'"
+      },
+      {
+        "line": 863,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 885,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL), local_files_only=True)"
+      },
+      {
+        "line": 886,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained(str(MODEL), **model_kwargs)"
+      }
+    ]
+  },
+  {
+    "SHA256": "663a184bc59b17627137d7022e1d8e0fda97e708f280452975be49e65bcf93f1",
+    "path": "/root/autodl-tmp/affective-conflict/audit/PAPER_CORE_ASSET_GITHUB_SNAPSHOT_V1/candidate_snapshot/code/run_qwen25_emotiontalk_pairwise_v1_2.py",
+    "source_excerpts": [
+      {
+        "line": 119,
+        "source": "\"processor\": \"Qwen2_5OmniProcessor\", \"processor_local_files_only\": True,"
+      },
+      {
+        "line": 868,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 870,
+        "source": "model_dir = ROOT / \"models/Qwen2.5-Omni-7B\""
+      },
+      {
+        "line": 871,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(model_dir), local_files_only=True)"
+      },
+      {
+        "line": 872,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      },
+      {
+        "line": 873,
+        "source": "str(model_dir), torch_dtype=\"auto\", device_map=\"cuda\","
+      }
+    ]
+  },
+  {
+    "SHA256": "929e831d847d9ec3c66458a5708e9645501659faaa1ad0a950fb9b1907d8ec6d",
+    "path": "/root/autodl-tmp/affective-conflict/audit/PAPER_CORE_ASSET_GITHUB_SNAPSHOT_V1/candidate_snapshot/code/run_qwen25_emotiontalk_phase1_full_v1_2_r1.py",
+    "source_excerpts": [
+      {
+        "line": 4,
+        "source": "This technical revision imports the already-frozen V1.2 runner for all prompt,"
+      },
+      {
+        "line": 323,
+        "source": "\"full_runner_revision_sha256\": sha_file(RUNNER_REVISION),"
+      },
+      {
+        "line": 832,
+        "source": "\"technical_runner_revision\": str(RUNNER_REVISION),"
+      },
+      {
+        "line": 833,
+        "source": "\"technical_runner_revision_sha256\": frozen_hashes[\"full_runner_revision_sha256\"],"
+      },
+      {
+        "line": 873,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 882,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(runner.MODEL_DIR), local_files_only=True)"
+      },
+      {
+        "line": 888,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      },
+      {
+        "line": 937,
+        "source": "\"technical_runner_revision_sha256\": frozen_hashes[\"full_runner_revision_sha256\"],"
+      }
+    ]
+  },
+  {
+    "SHA256": "e9423fe9490c6a5eb7d6a771764d5678a97f5b6d55578215d3cc89dcf85c51b6",
+    "path": "/root/autodl-tmp/affective-conflict/audit/PAPER_CORE_ASSET_GITHUB_SNAPSHOT_V1/candidate_snapshot/code/run_qwen25_emotiontalk_phase1_v1_2.py",
+    "source_excerpts": [
+      {
+        "line": 1071,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 1080,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL_DIR), local_files_only=True)"
+      },
+      {
+        "line": 1089,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      }
+    ]
+  },
+  {
+    "SHA256": "43b83db5ca2fb6738ebdee7ae23f8c8674168f420b4ce442ae37be3af9d61407",
+    "path": "/root/autodl-tmp/affective-conflict/audit/PAPER_CORE_ASSET_GITHUB_SNAPSHOT_V1/candidate_snapshot/code/run_qwen25_emotiontalk_trimodal_v1_3.py",
+    "source_excerpts": [
+      {
+        "line": 173,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 174,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL_DIR), local_files_only=True)"
+      },
+      {
+        "line": 175,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      }
+    ]
+  },
+  {
+    "SHA256": "c111d4dfd314b25088afff7e5ec7ad46c7869e0a692d2bca1d8e760c4fc25273",
+    "path": "/root/autodl-tmp/affective-conflict/audit/PAPER_CORE_ASSET_GITHUB_SNAPSHOT_V1/candidate_snapshot/code/run_qwen25_mcr_controlled_v3.py",
+    "source_excerpts": [
+      {
+        "line": 55,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 66,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      },
+      {
+        "line": 71,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(execution_config['model_absolute_path'])"
+      }
+    ]
+  },
+  {
+    "SHA256": "2f07155fa0acf7efb718236d7b7c015bb04a7986b4a3599b0aeab73d5e5b3635",
+    "path": "/root/autodl-tmp/affective-conflict/audit/PAPER_CORE_ASSET_GITHUB_SNAPSHOT_V1/candidate_snapshot/code/run_qwen_smoke.py",
+    "source_excerpts": [
+      {
+        "line": 492,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor  # type: ignore"
+      },
+      {
+        "line": 496,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained(str(MODEL_DIR), torch_dtype=\"auto\", device_map=\"auto\")"
+      },
+      {
+        "line": 497,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL_DIR))"
+      }
+    ]
+  },
+  {
+    "SHA256": "77c533d789fbc6443691e4b700473a512ed9c7aa3142ceabab53e40e837a845c",
+    "path": "/root/autodl-tmp/affective-conflict/audit/RECONSTRUCTION_REMAINDER_SCAN_V3/recovered_candidates/77c533d789fb_test_qwen2_5_omni_all.py",
+    "source_excerpts": [
+      {
+        "line": 11,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 739,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      },
+      {
+        "line": 745,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(model_name)"
+      },
+      {
+        "line": 806,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      },
+      {
+        "line": 812,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(model_name)"
+      }
+    ]
+  },
+  {
+    "SHA256": "2f07155fa0acf7efb718236d7b7c015bb04a7986b4a3599b0aeab73d5e5b3635",
+    "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_PRODUCER_BYTECODE_RECOVERY_V5/recovered_source_candidates/c08e94198e4b_run_qwen_smoke.py",
+    "source_excerpts": [
+      {
+        "line": 492,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor  # type: ignore"
+      },
+      {
+        "line": 496,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained(str(MODEL_DIR), torch_dtype=\"auto\", device_map=\"auto\")"
+      },
+      {
+        "line": 497,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL_DIR))"
+      }
+    ]
+  },
+  {
+    "SHA256": "43b83db5ca2fb6738ebdee7ae23f8c8674168f420b4ce442ae37be3af9d61407",
+    "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_PRODUCER_BYTECODE_RECOVERY_V5/recovered_source_candidates/a79cf77412be_run_qwen25_emotiontalk_trimodal_v1_3.py",
+    "source_excerpts": [
+      {
+        "line": 173,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 174,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL_DIR), local_files_only=True)"
+      },
+      {
+        "line": 175,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      }
+    ]
+  },
+  {
+    "SHA256": "dba339b31731c0b8e6d80a9e509251051e5e48d303b7af0ea86c93dae441a2c8",
+    "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_PRODUCER_BYTECODE_RECOVERY_V5/recovered_source_candidates/fb55b6f31f15_run_qwen25_mcr_controlled_v2.py",
+    "source_excerpts": [
+      {
+        "line": 53,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 64,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      },
+      {
+        "line": 69,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(execution_config[\"model_absolute_path\"])"
+      }
+    ]
+  },
+  {
+    "SHA256": "361d9f57317dbf516512bf7801fa8b158a2ecfd7dc25ca6d780447a7f0eb6907",
+    "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_PRODUCER_BYTECODE_RECOVERY_V5/recovered_source_candidates/0078f2d9b30e_run_qwen25_mcr_controlled_v1.py",
+    "source_excerpts": [
+      {
+        "line": 53,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 64,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      },
+      {
+        "line": 69,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(execution_config[\"model_absolute_path\"])"
+      }
+    ]
+  },
+  {
+    "SHA256": "c111d4dfd314b25088afff7e5ec7ad46c7869e0a692d2bca1d8e760c4fc25273",
+    "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_PRODUCER_BYTECODE_RECOVERY_V5/recovered_source_candidates/2166970b275d_run_qwen25_mcr_controlled_v3.py",
+    "source_excerpts": [
+      {
+        "line": 55,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 66,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      },
+      {
+        "line": 71,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(execution_config['model_absolute_path'])"
+      }
+    ]
+  },
+  {
+    "SHA256": "f1e4d033e03c492ef86ad3db496f01af4f1c8364f8ac412d36be4556a4991641",
+    "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_PRODUCER_BYTECODE_RECOVERY_V5/recovered_source_candidates/87f9c36d4597_run_qwen25_emotiontalk_phase1_v1.py",
+    "source_excerpts": [
+      {
+        "line": 926,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 935,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL_DIR), local_files_only=True)"
+      },
+      {
+        "line": 944,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      }
+    ]
+  },
+  {
+    "SHA256": "e6a7be3a729350c4d4c38299c1f889739b6e2c0cee2ee9d0ba361dfcb4c6eadb",
+    "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_PRODUCER_BYTECODE_RECOVERY_V5/recovered_source_candidates/448baa7a0ca4_run_qwen25_emotiontalk_phase1_v1_1.py",
+    "source_excerpts": [
+      {
+        "line": 926,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 935,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL_DIR), local_files_only=True)"
+      },
+      {
+        "line": 944,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      }
+    ]
+  },
+  {
+    "SHA256": "e9423fe9490c6a5eb7d6a771764d5678a97f5b6d55578215d3cc89dcf85c51b6",
+    "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_PRODUCER_BYTECODE_RECOVERY_V5/recovered_source_candidates/9bd36e5e1e87_run_qwen25_emotiontalk_phase1_v1_2.py",
+    "source_excerpts": [
+      {
+        "line": 1071,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 1080,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL_DIR), local_files_only=True)"
+      },
+      {
+        "line": 1089,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      }
+    ]
+  },
+  {
+    "SHA256": "8238584f38e42065fa651d7ddd052aaa3eca853e56aff72f92072e8f1be37af6",
+    "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_PRODUCER_BYTECODE_RECOVERY_V5/recovered_source_candidates/d9df5fe4eb7d_run_qwen25_emotiontalk_trimodal_v1_1.py",
+    "source_excerpts": [
+      {
+        "line": 167,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 168,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL_DIR), local_files_only=True)"
+      },
+      {
+        "line": 169,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      }
+    ]
+  },
+  {
+    "SHA256": "929e831d847d9ec3c66458a5708e9645501659faaa1ad0a950fb9b1907d8ec6d",
+    "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_PRODUCER_BYTECODE_RECOVERY_V5/recovered_source_candidates/7c632ee3f98e_run_qwen25_emotiontalk_phase1_full_v1_2_r1.py",
+    "source_excerpts": [
+      {
+        "line": 4,
+        "source": "This technical revision imports the already-frozen V1.2 runner for all prompt,"
+      },
+      {
+        "line": 323,
+        "source": "\"full_runner_revision_sha256\": sha_file(RUNNER_REVISION),"
+      },
+      {
+        "line": 832,
+        "source": "\"technical_runner_revision\": str(RUNNER_REVISION),"
+      },
+      {
+        "line": 833,
+        "source": "\"technical_runner_revision_sha256\": frozen_hashes[\"full_runner_revision_sha256\"],"
+      },
+      {
+        "line": 873,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 882,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(runner.MODEL_DIR), local_files_only=True)"
+      },
+      {
+        "line": 888,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      },
+      {
+        "line": 937,
+        "source": "\"technical_runner_revision_sha256\": frozen_hashes[\"full_runner_revision_sha256\"],"
+      }
+    ]
+  },
+  {
+    "SHA256": "7f07055b76b00020375682a85fac14963030137852c3f3c9f0acbf8a13e266df",
+    "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_PRODUCER_BYTECODE_RECOVERY_V5/recovered_source_candidates/2c3b830a0221_run_qwen25_emotiontalk_pairwise_v1.py",
+    "source_excerpts": [
+      {
+        "line": 382,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 383,
+        "source": "model_dir = ROOT / \"models/Qwen2.5-Omni-7B\""
+      },
+      {
+        "line": 384,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(model_dir), local_files_only=True)"
+      },
+      {
+        "line": 385,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      },
+      {
+        "line": 386,
+        "source": "str(model_dir), torch_dtype=\"auto\", device_map=\"cuda\","
+      }
+    ]
+  },
+  {
+    "SHA256": "be08ddcd2a7c2f4083b786883b6142e6b1613b71957b24d63bb0b2af5d4c096c",
+    "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_PRODUCER_BYTECODE_RECOVERY_V5/recovered_source_candidates/ce82b2f968b3_run_qwen25_emotiontalk_pairwise_v1_1.py",
+    "source_excerpts": [
+      {
+        "line": 118,
+        "source": "\"processor\": \"Qwen2_5OmniProcessor\", \"processor_local_files_only\": True,"
+      },
+      {
+        "line": 826,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 828,
+        "source": "model_dir = ROOT / \"models/Qwen2.5-Omni-7B\""
+      },
+      {
+        "line": 829,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(model_dir), local_files_only=True)"
+      },
+      {
+        "line": 830,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      },
+      {
+        "line": 831,
+        "source": "str(model_dir), torch_dtype=\"auto\", device_map=\"cuda\","
+      }
+    ]
+  },
+  {
+    "SHA256": "6848b469eb15e51b068262afb5d3c7899793d8910e08b842ce4c9e6c42a1ea7b",
+    "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_PRODUCER_BYTECODE_RECOVERY_V5/recovered_source_candidates/22a566aae910_run_qwen25_mcr_native_v1.py",
+    "source_excerpts": [
+      {
+        "line": 134,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor  # type: ignore"
+      },
+      {
+        "line": 140,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      },
+      {
+        "line": 145,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(model_path)"
+      }
+    ]
+  },
+  {
+    "SHA256": "b60d3c38f57cf7fde66152f65288c0aeb417c220c4bb5fc53e743057fbd9416e",
+    "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_PRODUCER_BYTECODE_RECOVERY_V5/recovered_source_candidates/b3706b8f77a0_run_qwen25_camer_native_v1.py",
+    "source_excerpts": [
+      {
+        "line": 21,
+        "source": "MODEL_PATH = ROOT / \"models/Qwen2.5-Omni-7B\""
+      },
+      {
+        "line": 434,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 439,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL_PATH), local_files_only=True)"
+      },
+      {
+        "line": 440,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      }
+    ]
+  },
+  {
+    "SHA256": "83275a8902f957f8d5f214fd00a0ae80d1f86a4ac079f1fdd5568e625d0e67a2",
+    "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_PRODUCER_BYTECODE_RECOVERY_V5/recovered_source_candidates/e63b9f6f5cd2_run_qwen25_camer_controlled_v1.py",
+    "source_excerpts": [
+      {
+        "line": 27,
+        "source": "MODEL = ROOT / 'models/Qwen2.5-Omni-7B'"
+      },
+      {
+        "line": 402,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 406,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL), local_files_only=True)"
+      },
+      {
+        "line": 407,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained(str(MODEL), **model_kwargs)"
+      }
+    ]
+  },
+  {
+    "SHA256": "fc5f8bf93d4cb98d5fc6493d958199a2c5758de63e1025faf61ce23e01f93add",
+    "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_PRODUCER_BYTECODE_RECOVERY_V5/recovered_source_candidates/5ba361547802_run_qwen25_camer_controlled_v2.py",
+    "source_excerpts": [
+      {
+        "line": 27,
+        "source": "MODEL = ROOT / 'models/Qwen2.5-Omni-7B'"
+      },
+      {
+        "line": 417,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 421,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL), local_files_only=True)"
+      },
+      {
+        "line": 422,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained(str(MODEL), **model_kwargs)"
+      }
+    ]
+  },
+  {
+    "SHA256": "8d8f80ddd6577a91e2606374fda493b19675cc01caf25d31aba6a8af8ad69c20",
+    "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_PRODUCER_BYTECODE_RECOVERY_V5/recovered_source_candidates/ec545af914d1_run_qwen25_camer_controlled_v4.py",
+    "source_excerpts": [
+      {
+        "line": 43,
+        "source": "MODEL = ROOT / 'models/Qwen2.5-Omni-7B'"
+      },
+      {
+        "line": 863,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 885,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL), local_files_only=True)"
+      },
+      {
+        "line": 886,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained(str(MODEL), **model_kwargs)"
+      }
+    ]
+  },
+  {
+    "SHA256": "663a184bc59b17627137d7022e1d8e0fda97e708f280452975be49e65bcf93f1",
+    "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_PRODUCER_BYTECODE_RECOVERY_V5/recovered_source_candidates/71fd76df2bdb_run_qwen25_emotiontalk_pairwise_v1_2.py",
+    "source_excerpts": [
+      {
+        "line": 119,
+        "source": "\"processor\": \"Qwen2_5OmniProcessor\", \"processor_local_files_only\": True,"
+      },
+      {
+        "line": 868,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 870,
+        "source": "model_dir = ROOT / \"models/Qwen2.5-Omni-7B\""
+      },
+      {
+        "line": 871,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(model_dir), local_files_only=True)"
+      },
+      {
+        "line": 872,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      },
+      {
+        "line": 873,
+        "source": "str(model_dir), torch_dtype=\"auto\", device_map=\"cuda\","
+      }
+    ]
+  },
+  {
+    "SHA256": "a474c102c6dea042c155991284f148f6b2404889e52af9972a2ec0fe2019263e",
+    "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_PRODUCER_BYTECODE_RECOVERY_V5/recovered_source_candidates/b39c61a8ccd4_run_qwen25_emotiontalk_trimodal_v1_2.py",
+    "source_excerpts": [
+      {
+        "line": 167,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 168,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL_DIR), local_files_only=True)"
+      },
+      {
+        "line": 169,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      }
+    ]
+  },
+  {
+    "SHA256": "c9b193329cedade1aef262cbbe5de9e88c23b533bc9f1aa4256a72f1ee3b2a45",
+    "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_PRODUCER_BYTECODE_RECOVERY_V5/recovered_source_candidates/ee12ac954c28_run_qwen25_camer_controlled_resource_sweep_v1.py",
+    "source_excerpts": [
+      {
+        "line": 45,
+        "source": "MODEL = ROOT / 'models/Qwen2.5-Omni-7B'"
+      },
+      {
+        "line": 729,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 733,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL), local_files_only=True)"
+      },
+      {
+        "line": 734,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      }
+    ]
+  },
+  {
+    "SHA256": "d56877633169dcb60c54842bd0607c602fd1b6944406c9892a2d53a086cd9315",
+    "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_PRODUCER_BYTECODE_RECOVERY_V5/recovered_source_candidates/89f6b57d1dd2_run_qwen25_emotiontalk_phase1_v1_2.py",
+    "source_excerpts": [
+      {
+        "line": 1068,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 1077,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL_DIR), local_files_only=True)"
+      },
+      {
+        "line": 1086,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      }
+    ]
+  },
+  {
+    "SHA256": "b8436f347909574e50d335ab4802dd1f407cbc7c2bad42eaf597ada4b380acc8",
+    "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_PRODUCER_BYTECODE_RECOVERY_V5/recovered_source_candidates/f5d7f257f42f_run_target_unimodal_evidence_inference_v2.py",
+    "source_excerpts": [
+      {
+        "line": 148,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration,Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 151,
+        "source": "t0=time.perf_counter();proc=Qwen2_5OmniProcessor.from_pretrained(str(MODEL),local_files_only=True);model=Qwen2_5OmniForConditionalGeneration.from_pretrained(str(MODEL),torch_dtype=\"auto\",device_map=\"cuda\",attn_implementation=\"flash_attention_2\",local_files_only=True);model.eval();prov(\"RUNNING\",h,{\"runner_script_sha256\":H(Path(__file__)),\"model_load_seconds\":round(time.perf_counter()-t0,3),\"model_dtype\":str(model.dtype),\"model_device\":str(model.device),\"cuda_device\":torch.cuda.get_device_name(0)});lg(f\"model loaded {model.device} {model.dtype}\")"
+      }
+    ]
+  },
+  {
+    "SHA256": "b8436f347909574e50d335ab4802dd1f407cbc7c2bad42eaf597ada4b380acc8",
+    "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_PRODUCER_BYTECODE_RECOVERY_V5/recovered_source_candidates/a785f46a8110_run_target_unimodal_evidence_inference_v2.py",
+    "source_excerpts": [
+      {
+        "line": 148,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration,Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 151,
+        "source": "t0=time.perf_counter();proc=Qwen2_5OmniProcessor.from_pretrained(str(MODEL),local_files_only=True);model=Qwen2_5OmniForConditionalGeneration.from_pretrained(str(MODEL),torch_dtype=\"auto\",device_map=\"cuda\",attn_implementation=\"flash_attention_2\",local_files_only=True);model.eval();prov(\"RUNNING\",h,{\"runner_script_sha256\":H(Path(__file__)),\"model_load_seconds\":round(time.perf_counter()-t0,3),\"model_dtype\":str(model.dtype),\"model_device\":str(model.device),\"cuda_device\":torch.cuda.get_device_name(0)});lg(f\"model loaded {model.device} {model.dtype}\")"
+      }
+    ]
+  },
+  {
+    "SHA256": "c9b193329cedade1aef262cbbe5de9e88c23b533bc9f1aa4256a72f1ee3b2a45",
+    "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_PRODUCER_BYTECODE_RECOVERY_V5/recovered_source_candidates/de1b4a96bcb2_run_qwen25_camer_controlled_resource_sweep_v1.py",
+    "source_excerpts": [
+      {
+        "line": 45,
+        "source": "MODEL = ROOT / 'models/Qwen2.5-Omni-7B'"
+      },
+      {
+        "line": 729,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 733,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL), local_files_only=True)"
+      },
+      {
+        "line": 734,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      }
+    ]
+  },
+  {
+    "SHA256": "8d8f80ddd6577a91e2606374fda493b19675cc01caf25d31aba6a8af8ad69c20",
+    "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_PRODUCER_BYTECODE_RECOVERY_V5/recovered_source_candidates/959b99a27ca4_run_qwen25_camer_controlled_v4.py",
+    "source_excerpts": [
+      {
+        "line": 43,
+        "source": "MODEL = ROOT / 'models/Qwen2.5-Omni-7B'"
+      },
+      {
+        "line": 863,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 885,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL), local_files_only=True)"
+      },
+      {
+        "line": 886,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained(str(MODEL), **model_kwargs)"
+      }
+    ]
+  },
+  {
+    "SHA256": "663a184bc59b17627137d7022e1d8e0fda97e708f280452975be49e65bcf93f1",
+    "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_PRODUCER_BYTECODE_RECOVERY_V5/recovered_source_candidates/75a4703ae41a_run_qwen25_emotiontalk_pairwise_v1_2.py",
+    "source_excerpts": [
+      {
+        "line": 119,
+        "source": "\"processor\": \"Qwen2_5OmniProcessor\", \"processor_local_files_only\": True,"
+      },
+      {
+        "line": 868,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 870,
+        "source": "model_dir = ROOT / \"models/Qwen2.5-Omni-7B\""
+      },
+      {
+        "line": 871,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(model_dir), local_files_only=True)"
+      },
+      {
+        "line": 872,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      },
+      {
+        "line": 873,
+        "source": "str(model_dir), torch_dtype=\"auto\", device_map=\"cuda\","
+      }
+    ]
+  },
+  {
+    "SHA256": "929e831d847d9ec3c66458a5708e9645501659faaa1ad0a950fb9b1907d8ec6d",
+    "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_PRODUCER_BYTECODE_RECOVERY_V5/recovered_source_candidates/d663de191994_run_qwen25_emotiontalk_phase1_full_v1_2_r1.py",
+    "source_excerpts": [
+      {
+        "line": 4,
+        "source": "This technical revision imports the already-frozen V1.2 runner for all prompt,"
+      },
+      {
+        "line": 323,
+        "source": "\"full_runner_revision_sha256\": sha_file(RUNNER_REVISION),"
+      },
+      {
+        "line": 832,
+        "source": "\"technical_runner_revision\": str(RUNNER_REVISION),"
+      },
+      {
+        "line": 833,
+        "source": "\"technical_runner_revision_sha256\": frozen_hashes[\"full_runner_revision_sha256\"],"
+      },
+      {
+        "line": 873,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 882,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(runner.MODEL_DIR), local_files_only=True)"
+      },
+      {
+        "line": 888,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      },
+      {
+        "line": 937,
+        "source": "\"technical_runner_revision_sha256\": frozen_hashes[\"full_runner_revision_sha256\"],"
+      }
+    ]
+  },
+  {
+    "SHA256": "e9423fe9490c6a5eb7d6a771764d5678a97f5b6d55578215d3cc89dcf85c51b6",
+    "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_PRODUCER_BYTECODE_RECOVERY_V5/recovered_source_candidates/74b86d1c4b21_run_qwen25_emotiontalk_phase1_v1_2.py",
+    "source_excerpts": [
+      {
+        "line": 1071,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 1080,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL_DIR), local_files_only=True)"
+      },
+      {
+        "line": 1089,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      }
+    ]
+  },
+  {
+    "SHA256": "43b83db5ca2fb6738ebdee7ae23f8c8674168f420b4ce442ae37be3af9d61407",
+    "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_PRODUCER_BYTECODE_RECOVERY_V5/recovered_source_candidates/e036a83c5148_run_qwen25_emotiontalk_trimodal_v1_3.py",
+    "source_excerpts": [
+      {
+        "line": 173,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 174,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL_DIR), local_files_only=True)"
+      },
+      {
+        "line": 175,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      }
+    ]
+  },
+  {
+    "SHA256": "c111d4dfd314b25088afff7e5ec7ad46c7869e0a692d2bca1d8e760c4fc25273",
+    "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_PRODUCER_BYTECODE_RECOVERY_V5/recovered_source_candidates/ef7277db49b2_run_qwen25_mcr_controlled_v3.py",
+    "source_excerpts": [
+      {
+        "line": 55,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 66,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      },
+      {
+        "line": 71,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(execution_config['model_absolute_path'])"
+      }
+    ]
+  },
+  {
+    "SHA256": "2f07155fa0acf7efb718236d7b7c015bb04a7986b4a3599b0aeab73d5e5b3635",
+    "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_PRODUCER_BYTECODE_RECOVERY_V5/recovered_source_candidates/6f3d9ae56346_run_qwen_smoke.py",
+    "source_excerpts": [
+      {
+        "line": 492,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor  # type: ignore"
+      },
+      {
+        "line": 496,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained(str(MODEL_DIR), torch_dtype=\"auto\", device_map=\"auto\")"
+      },
+      {
+        "line": 497,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(str(MODEL_DIR))"
+      }
+    ]
+  },
+  {
+    "SHA256": "77c533d789fbc6443691e4b700473a512ed9c7aa3142ceabab53e40e837a845c",
+    "path": "/tmp/tmp.VQmExYTWXC/LISTEN/scripts/test_qwen2_5_omni_all.py",
+    "source_excerpts": [
+      {
+        "line": 11,
+        "source": "from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor"
+      },
+      {
+        "line": 739,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      },
+      {
+        "line": 745,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(model_name)"
+      },
+      {
+        "line": 806,
+        "source": "model = Qwen2_5OmniForConditionalGeneration.from_pretrained("
+      },
+      {
+        "line": 812,
+        "source": "processor = Qwen2_5OmniProcessor.from_pretrained(model_name)"
+      }
+    ]
+  },
+  {
+    "SHA256": "17f08b1338b50d79ee28a452d2d47d4c479350e363781e34c253c051ad9c66f0",
+    "path": "/tmp/tmp.VQmExYTWXC/LISTEN/scripts/test_qwen3_instruct.py",
+    "source_excerpts": [
+      {
+        "line": 463,
+        "source": "tokenizer = AutoTokenizer.from_pretrained(model_name)"
+      },
+      {
+        "line": 464,
+        "source": "model = AutoModelForCausalLM.from_pretrained("
+      },
+      {
+        "line": 522,
+        "source": "tokenizer = AutoTokenizer.from_pretrained(model_name)"
+      },
+      {
+        "line": 523,
+        "source": "model = AutoModelForCausalLM.from_pretrained("
+      }
+    ]
+  },
+  {
+    "SHA256": "ae27a4494daaefadb630d34a65079f868ba324ecc56be0c96b89afb4eedc7cdc",
+    "path": "/tmp/tmp.VQmExYTWXC/LISTEN/scripts/test_qwen3_save.py",
+    "source_excerpts": [
+      {
+        "line": 778,
+        "source": "model = Qwen3OmniMoeForConditionalGeneration.from_pretrained("
+      },
+      {
+        "line": 784,
+        "source": "processor = Qwen3OmniMoeProcessor.from_pretrained(model_name)"
+      },
+      {
+        "line": 846,
+        "source": "model = Qwen3OmniMoeForConditionalGeneration.from_pretrained("
+      },
+      {
+        "line": 852,
+        "source": "processor = Qwen3OmniMoeProcessor.from_pretrained(model_name)"
+      }
+    ]
+  }
+]

@@ -1,0 +1,7 @@
+numpy==2.4.3
+scipy==1.17.1
+pytest==9.0.3
+pyarrow==23.0.1
+PyYAML==6.0.3
+# Synthetic CPU tensor fixture; inference environment is separately frozen.
+torch>=2.8,<3

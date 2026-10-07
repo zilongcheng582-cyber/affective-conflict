@@ -1,0 +1,149 @@
+{
+  "role": "COMPARISON_ONLY_NOT_CURRENT_RESULTS",
+  "analysis_roles": {
+    "MCR_AT_PRIMARY": {
+      "metrics": {
+        "log_loss": 0.24211330544354984,
+        "balanced_accuracy": 0.5,
+        "AUROC": 0.727805892388376,
+        "Brier_score": 0.05781411183758002,
+        "threshold": 0.5
+      },
+      "population": {
+        "planned_rows_in_route": 1818,
+        "eligible_conflict_N": 1818,
+        "resolved_SIDE_N": 1734,
+        "resolved_SIDE_A_N": 107,
+        "resolved_SIDE_MODALITY2_N": 1627,
+        "OTHER_N": 84,
+        "PARSE_FAIL_N": 0,
+        "technical_missing_N": 0,
+        "feature_missing_N": 0,
+        "resolved_coverage": 0.9537953795379538,
+        "denominator_definition": "CONFLICT rows with required frozen analysis features finite; technical missing remains in denominator"
+      },
+      "evaluable_binary_N": 1734,
+      "analysis_role": "PRIMARY_SOURCEPROB_TRANSFER"
+    },
+    "MCR_AT_MARGIN_SENSITIVITY": {
+      "metrics": {
+        "log_loss": 0.23955559843886365,
+        "balanced_accuracy": 0.5,
+        "AUROC": 0.7417700141881451,
+        "Brier_score": 0.057624342270183614,
+        "threshold": 0.5
+      },
+      "population": {
+        "planned_rows_in_route": 1818,
+        "eligible_conflict_N": 1818,
+        "resolved_SIDE_N": 1734,
+        "resolved_SIDE_A_N": 107,
+        "resolved_SIDE_MODALITY2_N": 1627,
+        "OTHER_N": 84,
+        "PARSE_FAIL_N": 0,
+        "technical_missing_N": 0,
+        "feature_missing_N": 0,
+        "resolved_coverage": 0.9537953795379538,
+        "denominator_definition": "CONFLICT rows with required frozen analysis features finite; technical missing remains in denominator"
+      },
+      "evaluable_binary_N": 1734,
+      "analysis_role": "SENSITIVITY"
+    },
+    "LISTEN_AT_PRIMARY": {
+      "metrics": null,
+      "population": null,
+      "evaluable_binary_N": null,
+      "analysis_role": "PRIMARY_SOURCEPROB_TRANSFER"
+    },
+    "LISTEN_AT_MARGIN_SENSITIVITY": {
+      "metrics": {
+        "log_loss": 1.0209664532148084,
+        "balanced_accuracy": 0.4628556210051385,
+        "AUROC": 0.4784904123323725,
+        "Brier_score": 0.36916490389111106,
+        "threshold": 0.5
+      },
+      "population": {
+        "planned_rows_in_route": 1149,
+        "eligible_conflict_N": 1139,
+        "resolved_SIDE_N": 518,
+        "resolved_SIDE_A_N": 316,
+        "resolved_SIDE_MODALITY2_N": 202,
+        "OTHER_N": 621,
+        "PARSE_FAIL_N": 0,
+        "technical_missing_N": 0,
+        "feature_missing_N": 0,
+        "resolved_coverage": 0.4547848990342406,
+        "denominator_definition": "CONFLICT rows with required frozen analysis features finite; technical missing remains in denominator"
+      },
+      "evaluable_binary_N": 518,
+      "analysis_role": "SENSITIVITY"
+    },
+    "CAMER_AV_FULL_PRIMARY": {
+      "metrics": null,
+      "population": {
+        "planned_rows_in_route": 3000,
+        "eligible_conflict_N": 672,
+        "resolved_SIDE_N": 416,
+        "resolved_SIDE_A_N": 236,
+        "resolved_SIDE_MODALITY2_N": 180,
+        "OTHER_N": 238,
+        "PARSE_FAIL_N": 0,
+        "technical_missing_N": 18,
+        "feature_missing_N": 1328,
+        "resolved_coverage": 0.6190476190476191,
+        "denominator_definition": "CONFLICT rows with required frozen analysis features finite; technical missing remains in denominator"
+      },
+      "evaluable_binary_N": null,
+      "analysis_role": "FULL_POPULATION_PRIMARY_SOURCEPROB"
+    },
+    "CAMER_AV_SUPPORT_LIMITED_SOURCEPROB": {
+      "metrics": {
+        "log_loss": 0.8197070379181096,
+        "balanced_accuracy": 0.5733521657250471,
+        "AUROC": 0.6588041431261771,
+        "Brier_score": 0.2879342825604944,
+        "threshold": 0.5
+      },
+      "population": {
+        "planned_rows_in_route": 3000,
+        "eligible_conflict_N": 672,
+        "resolved_SIDE_N": 416,
+        "resolved_SIDE_A_N": 236,
+        "resolved_SIDE_MODALITY2_N": 180,
+        "OTHER_N": 238,
+        "PARSE_FAIL_N": 0,
+        "technical_missing_N": 18,
+        "feature_missing_N": 0,
+        "resolved_coverage": 0.6190476190476191,
+        "denominator_definition": "CONFLICT rows with required frozen analysis features finite; technical missing remains in denominator"
+      },
+      "evaluable_binary_N": 416,
+      "analysis_role": "PRIMARY_SOURCEPROB_TRANSFER"
+    },
+    "CAMER_AV_MARGIN_SENSITIVITY": {
+      "metrics": {
+        "log_loss": 0.8224940002540959,
+        "balanced_accuracy": 0.5270703896889966,
+        "AUROC": 0.5648643476403254,
+        "Brier_score": 0.29334167342229983,
+        "threshold": 0.5
+      },
+      "population": {
+        "planned_rows_in_route": 3000,
+        "eligible_conflict_N": 2000,
+        "resolved_SIDE_N": 1350,
+        "resolved_SIDE_A_N": 754,
+        "resolved_SIDE_MODALITY2_N": 596,
+        "OTHER_N": 588,
+        "PARSE_FAIL_N": 0,
+        "technical_missing_N": 62,
+        "feature_missing_N": 0,
+        "resolved_coverage": 0.675,
+        "denominator_definition": "CONFLICT rows with required frozen analysis features finite; technical missing remains in denominator"
+      },
+      "evaluable_binary_N": 1350,
+      "analysis_role": "SENSITIVITY"
+    }
+  }
+}

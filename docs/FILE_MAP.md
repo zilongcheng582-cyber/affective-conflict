@@ -1,0 +1,3 @@
+# File map
+
+ src/reconstruction: unique current raw/canonical producers. src/emotiontalk: current execution kernels and portable entry points. src/cross_regime/target_scoring: byte-identical frozen scoring kernels plus portable orchestration. src/cross_regime/zero_refit: corrected-only closeout/evaluation and unchanged pure metric equations. frozen/protocols/manifests/configs: scientific definitions and bounded required derived records. analyses: current publication CV and frozen report readers. results/mainline_summary: corrected summaries and comparison-only references. tests: CPU regression and identity negative cases. docs: reproducibility, provenance, limitations and release verification.

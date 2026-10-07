@@ -1,0 +1,994 @@
+[
+  {
+    "relative_path": "src/cross_regime/target_scoring/b3_protocol.py",
+    "origin_name": "b3_protocol.py",
+    "origin_SHA256": "5f0ad0066088f870a47bbbaa3f20994b3597cc4f98843db5e0601c51d3f8552a",
+    "current_SHA256": "5f0ad0066088f870a47bbbaa3f20994b3597cc4f98843db5e0601c51d3f8552a",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_CURRENT_MEASUREMENT_KERNEL"
+  },
+  {
+    "relative_path": "src/cross_regime/target_scoring/b3_scorer.py",
+    "origin_name": "b3_scorer.py",
+    "origin_SHA256": "82d7b0b59487147291477987643980476f79a4e8b7c723cbe010fec7963e18ab",
+    "current_SHA256": "82d7b0b59487147291477987643980476f79a4e8b7c723cbe010fec7963e18ab",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_CURRENT_MEASUREMENT_KERNEL"
+  },
+  {
+    "relative_path": "src/cross_regime/target_scoring/source_teacher_forcing.py",
+    "origin_name": "source_teacher_forcing.py",
+    "origin_SHA256": "62d50ec5972341f3a33651c3ef30dde39291176e5f0188eb44012c42cc0b4c1b",
+    "current_SHA256": "62d50ec5972341f3a33651c3ef30dde39291176e5f0188eb44012c42cc0b4c1b",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_CURRENT_MEASUREMENT_KERNEL"
+  },
+  {
+    "relative_path": "src/common/benchmarks/camer_adapter.py",
+    "origin_name": "code\\current\\project\\code\\benchmarks\\camer_adapter.py",
+    "origin_SHA256": "67e8a85b1454fc6e2044fbac75dabc64e7a4110ee7cef75ede3138edc73548dc",
+    "current_SHA256": "67e8a85b1454fc6e2044fbac75dabc64e7a4110ee7cef75ede3138edc73548dc",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "CURRENT_PARSER_OR_ADAPTER"
+  },
+  {
+    "relative_path": "src/common/benchmarks/camer_controlled_parser_v1.py",
+    "origin_name": "code\\current\\project\\code\\benchmarks\\camer_controlled_parser_v1.py",
+    "origin_SHA256": "95de335c625f3071d66e317e3ecf99ae7742b201952f1c41bb3bd70084c1a233",
+    "current_SHA256": "95de335c625f3071d66e317e3ecf99ae7742b201952f1c41bb3bd70084c1a233",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "CURRENT_PARSER_OR_ADAPTER"
+  },
+  {
+    "relative_path": "src/common/benchmarks/emotiontalk_controlled_parser_v1.py",
+    "origin_name": "code\\current\\project\\code\\benchmarks\\emotiontalk_controlled_parser_v1.py",
+    "origin_SHA256": "c852f18279dd0d89fc8a97bab0516943775580a1a7dbcfe276e901d14ff7d374",
+    "current_SHA256": "c852f18279dd0d89fc8a97bab0516943775580a1a7dbcfe276e901d14ff7d374",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "CURRENT_PARSER_OR_ADAPTER"
+  },
+  {
+    "relative_path": "src/common/benchmarks/listen_adapter.py",
+    "origin_name": "code\\current\\project\\code\\benchmarks\\listen_adapter.py",
+    "origin_SHA256": "4088b0c6aa4cc59c0d0d67b5a01774de92bf06ee13a245fad15db09c0a6efc9e",
+    "current_SHA256": "4088b0c6aa4cc59c0d0d67b5a01774de92bf06ee13a245fad15db09c0a6efc9e",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "CURRENT_PARSER_OR_ADAPTER"
+  },
+  {
+    "relative_path": "src/common/benchmarks/listen_native_parser_v1.py",
+    "origin_name": "code\\current\\project\\code\\benchmarks\\listen_native_parser_v1.py",
+    "origin_SHA256": "5165b586e7c08370b5d6d73bb72a4a5317baec57d0cb1695697943646665f14b",
+    "current_SHA256": "5165b586e7c08370b5d6d73bb72a4a5317baec57d0cb1695697943646665f14b",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "CURRENT_PARSER_OR_ADAPTER"
+  },
+  {
+    "relative_path": "src/common/benchmarks/mcr_adapter.py",
+    "origin_name": "code\\current\\project\\code\\benchmarks\\mcr_adapter.py",
+    "origin_SHA256": "d9e643a46e605a80d56cbb15b55dce0022e9f8af0bce0ffee37903acf9f390d6",
+    "current_SHA256": "d9e643a46e605a80d56cbb15b55dce0022e9f8af0bce0ffee37903acf9f390d6",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "CURRENT_PARSER_OR_ADAPTER"
+  },
+  {
+    "relative_path": "src/common/benchmarks/mcr_controlled_manifest_v1.py",
+    "origin_name": "code\\current\\project\\code\\benchmarks\\mcr_controlled_manifest_v1.py",
+    "origin_SHA256": "22d435dde7a141dd82a2b3caf6db89e6c168641e5cb91ee400ae624f592ad83f",
+    "current_SHA256": "22d435dde7a141dd82a2b3caf6db89e6c168641e5cb91ee400ae624f592ad83f",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "CURRENT_PARSER_OR_ADAPTER"
+  },
+  {
+    "relative_path": "src/common/benchmarks/mcr_controlled_text_extractor_v1.py",
+    "origin_name": "code\\current\\project\\code\\benchmarks\\mcr_controlled_text_extractor_v1.py",
+    "origin_SHA256": "5530af1f47812de8ae6f0c8ae00a466f57294e8f00aa3833a7dcec0013daf02c",
+    "current_SHA256": "5530af1f47812de8ae6f0c8ae00a466f57294e8f00aa3833a7dcec0013daf02c",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "CURRENT_PARSER_OR_ADAPTER"
+  },
+  {
+    "relative_path": "src/common/benchmarks/mcr_ser_parser_v1.py",
+    "origin_name": "code\\current\\project\\code\\benchmarks\\mcr_ser_parser_v1.py",
+    "origin_SHA256": "f72e825f686528b038dbb6c26b15574e78fddbab8cb3777e04e0680544d4580e",
+    "current_SHA256": "f72e825f686528b038dbb6c26b15574e78fddbab8cb3777e04e0680544d4580e",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "CURRENT_PARSER_OR_ADAPTER"
+  },
+  {
+    "relative_path": "tests/test_emotiontalk_parser.py",
+    "origin_name": "test_emotiontalk_controlled_parser_v1.py",
+    "origin_SHA256": "369571aef80258d85a2cb2e58610d186855fc4aad9a0244400855350f847c6f6",
+    "current_SHA256": "369571aef80258d85a2cb2e58610d186855fc4aad9a0244400855350f847c6f6",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "analyses/phase2/publication_cv.py",
+    "origin_name": "code\\current\\publication_cv.py",
+    "origin_SHA256": "d75ba8b879f3f217764e6743818a77a0a27ac22c593c93aefe0f77940b5bb2ec",
+    "current_SHA256": "d75ba8b879f3f217764e6743818a77a0a27ac22c593c93aefe0f77940b5bb2ec",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "CURRENT_SHARED_FOLD_PUBLICATION_ANALYSIS"
+  },
+  {
+    "relative_path": "analyses/phase2/publication_cv_math.py",
+    "origin_name": "code\\current\\publication_cv_math.py",
+    "origin_SHA256": "4be21430e592d3334306f8c728a38591e2e1b312bc646f885a7666268913c028",
+    "current_SHA256": "4be21430e592d3334306f8c728a38591e2e1b312bc646f885a7666268913c028",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "CURRENT_SHARED_FOLD_PUBLICATION_ANALYSIS"
+  },
+  {
+    "relative_path": "frozen/source_model/08_M0_M3_model_results.csv",
+    "origin_name": "08_M0_M3_model_results.csv",
+    "origin_SHA256": "bd576a092eda349cccc34965468fd6d003de1da61118eef337ab6cd94e701426",
+    "current_SHA256": "bd576a092eda349cccc34965468fd6d003de1da61118eef337ab6cd94e701426",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "frozen/source_model/B3_MODEL_PROCESSOR_IDENTITY.json",
+    "origin_name": "B3_MODEL_PROCESSOR_IDENTITY.json",
+    "origin_SHA256": "f911d829077ec32bc0633f97ab52010c85ecc5d6fea4912cc328af71a38888f7",
+    "current_SHA256": "f911d829077ec32bc0633f97ab52010c85ecc5d6fea4912cc328af71a38888f7",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "frozen/source_model/B3_SOURCE_MODEL_BINDING_ORIGINAL.json",
+    "origin_name": "B3_SOURCE_MODEL_BINDING_ORIGINAL.json",
+    "origin_SHA256": "2774b1dab0e93912a3795ca3d1994c087213a01f04b9e4280981cd4430e2a887",
+    "current_SHA256": "2774b1dab0e93912a3795ca3d1994c087213a01f04b9e4280981cd4430e2a887",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "frozen/source_model/EMOTIONTALK_PHASE2_PAIRWISE_MODEL_FREEZE_V1.json",
+    "origin_name": "EMOTIONTALK_PHASE2_PAIRWISE_MODEL_FREEZE_V1.json",
+    "origin_SHA256": "2f5e5e639ce22d79452aa54ca599fd0e14bc525cf874042b04065edadeed5019",
+    "current_SHA256": "2f5e5e639ce22d79452aa54ca599fd0e14bc525cf874042b04065edadeed5019",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "frozen/source_model/EMOTIONTALK_PHASE2_SCALER_PROVENANCE_RESOLUTION_V1.json",
+    "origin_name": "EMOTIONTALK_PHASE2_SCALER_PROVENANCE_RESOLUTION_V1.json",
+    "origin_SHA256": "cd90c4238cb59096418d57eedc3da83f25e98be0ec4870e9662e8ce289410bb4",
+    "current_SHA256": "cd90c4238cb59096418d57eedc3da83f25e98be0ec4870e9662e8ce289410bb4",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "frozen/source_model/EMOTIONTALK_PHASE2_SCIENTIFIC_ANALYSIS_V1_SUMMARY.json",
+    "origin_name": "EMOTIONTALK_PHASE2_SCIENTIFIC_ANALYSIS_V1_SUMMARY.json",
+    "origin_SHA256": "e2d58be3cdfcf0089bf18edf6c080ad997c98405843b045cbbe94926dcaf1be9",
+    "current_SHA256": "e2d58be3cdfcf0089bf18edf6c080ad997c98405843b045cbbe94926dcaf1be9",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "frozen/source_model/HF_COMMIT_CONTENT_VERIFICATION.json",
+    "origin_name": "HF_COMMIT_CONTENT_VERIFICATION.json",
+    "origin_SHA256": "8bbb419343bbf7cacf6d3444f5f382b229bee75db1ebd8ceee578215b9af874e",
+    "current_SHA256": "8bbb419343bbf7cacf6d3444f5f382b229bee75db1ebd8ceee578215b9af874e",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "frozen/source_model/HF_LOCAL_METADATA_IDENTITY.json",
+    "origin_name": "HF_LOCAL_METADATA_IDENTITY.json",
+    "origin_SHA256": "dd17b8464534b4d9542f94daa0d790098db42c4745b53cf3c4a46ec7f0275451",
+    "current_SHA256": "dd17b8464534b4d9542f94daa0d790098db42c4745b53cf3c4a46ec7f0275451",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "frozen/source_model/HISTORICAL_B3_FORWARD_IDENTITY.csv",
+    "origin_name": "HISTORICAL_B3_FORWARD_IDENTITY.csv",
+    "origin_SHA256": "1834d4929aa6dab46c39dc7a455ebae7b64e319c10081d64282ee85c2ec2f5f1",
+    "current_SHA256": "1834d4929aa6dab46c39dc7a455ebae7b64e319c10081d64282ee85c2ec2f5f1",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "frozen/source_model/HISTORICAL_B3_MEASUREMENT_IDENTITY.csv",
+    "origin_name": "HISTORICAL_B3_MEASUREMENT_IDENTITY.csv",
+    "origin_SHA256": "a93f3bb76dbc02f65c168fca740147f466aad902b20b8a66a4cb4cf9e5740e1b",
+    "current_SHA256": "a93f3bb76dbc02f65c168fca740147f466aad902b20b8a66a4cb4cf9e5740e1b",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "frozen/source_model/PROCESSOR_LOADING_PROVENANCE.json",
+    "origin_name": "PROCESSOR_LOADING_PROVENANCE.json",
+    "origin_SHA256": "54063c8a8494f91cf3bf4586df4f1d2d3d333bdb1954b2b3e04146ca043791bd",
+    "current_SHA256": "54063c8a8494f91cf3bf4586df4f1d2d3d333bdb1954b2b3e04146ca043791bd",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "frozen/source_model/REPRODUCIBILITY_BOUNDARY_STATEMENT_V1.md",
+    "origin_name": "REPRODUCIBILITY_BOUNDARY_STATEMENT_V1.md",
+    "origin_SHA256": "771bf1fd1243e2bc5db2a2e31af087bac3ecd0e1f7ac388a7e6ca4df4158450a",
+    "current_SHA256": "771bf1fd1243e2bc5db2a2e31af087bac3ecd0e1f7ac388a7e6ca4df4158450a",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "frozen/candidate_sequences/definition.json",
+    "origin_name": "EMOTIONTALK_CANDIDATE_SEQUENCES_V1.json",
+    "origin_SHA256": "b249c68e92fa16ec7c41f617baffd1d293db8807b01b9c0f5d8490d41b790750",
+    "current_SHA256": "b249c68e92fa16ec7c41f617baffd1d293db8807b01b9c0f5d8490d41b790750",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "frozen/target_assignment/assignment.json",
+    "origin_name": "B3_TARGET_SEQUENCE_ASSIGNMENT_V1.json",
+    "origin_SHA256": "65069110f64ba2e518c411b784c8b9aa581d2dd8154d7dcb0e23111d436dde35",
+    "current_SHA256": "65069110f64ba2e518c411b784c8b9aa581d2dd8154d7dcb0e23111d436dde35",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "frozen/source_model/binding.json",
+    "origin_name": "B3_SOURCE_MODEL_BINDING_V1.json",
+    "origin_SHA256": "642c2ed7b023aea8c6bd762891ff436f0f3eff6a95a58e56bf6f8c4b5d41dd20",
+    "current_SHA256": "642c2ed7b023aea8c6bd762891ff436f0f3eff6a95a58e56bf6f8c4b5d41dd20",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "frozen/identity/model.json",
+    "origin_name": "B3_MODEL_IDENTITY_BINDING_V1.json",
+    "origin_SHA256": "a8b1c73a04896d0be47936abef2f0d66678b752ff66278bb07b3575f2049673f",
+    "current_SHA256": "a8b1c73a04896d0be47936abef2f0d66678b752ff66278bb07b3575f2049673f",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "frozen/identity/processor.json",
+    "origin_name": "B3_PROCESSOR_IDENTITY_BINDING_V1.json",
+    "origin_SHA256": "9af99deaaf6ec18adfb2b71129d05f9cc2ec00dcb634f4be05b611ddb574a102",
+    "current_SHA256": "9af99deaaf6ec18adfb2b71129d05f9cc2ec00dcb634f4be05b611ddb574a102",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "manifests/cross_regime/measurement_tasks.json",
+    "origin_name": "B3_TARGET_MEASUREMENT_MANIFEST_V1.json",
+    "origin_SHA256": "82798a27d5f55707ed1f1b0a76f07f65241989d0acbda1da3af7841011189fef",
+    "current_SHA256": "82798a27d5f55707ed1f1b0a76f07f65241989d0acbda1da3af7841011189fef",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/b3/evaluation_plan.json",
+    "origin_name": "B3_EVALUATION_PLAN_V1.json",
+    "origin_SHA256": "6b52298a6d0bc1c62b837e170226be67b91b3153e47812e5df4ee10683724266",
+    "current_SHA256": "6b52298a6d0bc1c62b837e170226be67b91b3153e47812e5df4ee10683724266",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/b3/measurement_freeze.md",
+    "origin_name": "B3_CORRECTED_MEASUREMENT_FREEZE_V1.md",
+    "origin_SHA256": "9cc035d639333a7478ebfc60ff3d5662ba30d7c8873d776349fa01aebbb89f9b",
+    "current_SHA256": "9cc035d639333a7478ebfc60ff3d5662ba30d7c8873d776349fa01aebbb89f9b",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "configs/mainline/b3_runtime.json",
+    "origin_name": "B3_EXECUTION_CONFIG_V1.json",
+    "origin_SHA256": "3fce0635937e51c6833d3755c8fe250feffda323cd5db3e2c244cad3d2e3ca05",
+    "current_SHA256": "3fce0635937e51c6833d3755c8fe250feffda323cd5db3e2c244cad3d2e3ca05",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/b3/output_schema.json",
+    "origin_name": "B3_OUTPUT_SCHEMA_V1.json",
+    "origin_SHA256": "e9c9df94e73e606d0d7332d9ecb5236fc6ac1d2e391144c450f6e62d3604c05c",
+    "current_SHA256": "e9c9df94e73e606d0d7332d9ecb5236fc6ac1d2e391144c450f6e62d3604c05c",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "configs/mainline/emotiontalk_prompt.json",
+    "origin_name": "emotiontalk_controlled_prompt_v1.json",
+    "origin_SHA256": "ba6b71f080ea186a1494a54a0990a5740fc0aea69f008622618102f39efe55f8",
+    "current_SHA256": "ba6b71f080ea186a1494a54a0990a5740fc0aea69f008622618102f39efe55f8",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "frozen/identity/model_files.csv",
+    "origin_name": "MODEL_FILE_HASH_MANIFEST.csv",
+    "origin_SHA256": "8240abe64f8df444e7a4ebbcb636f51e6ef7e6833b62cf60adec0b2d14125a09",
+    "current_SHA256": "8240abe64f8df444e7a4ebbcb636f51e6ef7e6833b62cf60adec0b2d14125a09",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "frozen/identity/processor_files.csv",
+    "origin_name": "PROCESSOR_FILE_HASH_MANIFEST.csv",
+    "origin_SHA256": "e471b7e2830ec4f53ee249b2a6707480858e357b30b4dc1616e718ef6fe18d41",
+    "current_SHA256": "e471b7e2830ec4f53ee249b2a6707480858e357b30b4dc1616e718ef6fe18d41",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "manifests/emotiontalk/EMOTIONTALK_MASTER_PANEL_SELECTION_V1.json",
+    "origin_name": "EMOTIONTALK_MASTER_PANEL_SELECTION_V1.json",
+    "origin_SHA256": "be985d99121e4cb8de59a97761d6cdb026eceff42c3d7bbf3c444bed99e28d8b",
+    "current_SHA256": "be985d99121e4cb8de59a97761d6cdb026eceff42c3d7bbf3c444bed99e28d8b",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "manifests/emotiontalk/EMOTIONTALK_MASTER_PANEL_V1.csv",
+    "origin_name": "EMOTIONTALK_MASTER_PANEL_V1.csv",
+    "origin_SHA256": "1ca8b79d8c146c6d807dd97a7bcd6cda519d5655e4cd0300afe7a92d159f406b",
+    "current_SHA256": "1ca8b79d8c146c6d807dd97a7bcd6cda519d5655e4cd0300afe7a92d159f406b",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "manifests/emotiontalk/EMOTIONTALK_MEDIA_MANIFEST_V1.csv",
+    "origin_name": "EMOTIONTALK_MEDIA_MANIFEST_V1.csv",
+    "origin_SHA256": "c0343ac1cf79038dc5b9cfaf2cdebe9da3fbf13a18c24960656e2fabbd438c9d",
+    "current_SHA256": "c0343ac1cf79038dc5b9cfaf2cdebe9da3fbf13a18c24960656e2fabbd438c9d",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "manifests/emotiontalk/EMOTIONTALK_VIDEO_CALIBRATION_CANDIDATES_V1.csv",
+    "origin_name": "EMOTIONTALK_VIDEO_CALIBRATION_CANDIDATES_V1.csv",
+    "origin_SHA256": "2d8c479a9b9e0eac2aeec1e2f00d533d38d7806c9247b464e5bdfef778f585be",
+    "current_SHA256": "2d8c479a9b9e0eac2aeec1e2f00d533d38d7806c9247b464e5bdfef778f585be",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "manifests/emotiontalk/EMOTIONTALK_VIDEO_RESOURCE_INVENTORY_V1.csv",
+    "origin_name": "EMOTIONTALK_VIDEO_RESOURCE_INVENTORY_V1.csv",
+    "origin_SHA256": "b8895958cd0f8ea536af5d679353c40d9e0c6d725b73064eacc8e83bb3e459f4",
+    "current_SHA256": "b8895958cd0f8ea536af5d679353c40d9e0c6d725b73064eacc8e83bb3e459f4",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "manifests/emotiontalk/EMOTIONTALK_PHASE2_POPULATION_PLAN_V1_2.json",
+    "origin_name": "EMOTIONTALK_PHASE2_POPULATION_PLAN_V1_2.json",
+    "origin_SHA256": "0363b012bf5ce083854efa210d2b739c04a10262136ba6abc81e3d7438d05e20",
+    "current_SHA256": "0363b012bf5ce083854efa210d2b739c04a10262136ba6abc81e3d7438d05e20",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "manifests/emotiontalk/EMOTIONTALK_PHASE3_GATE_SELECTION_V1.csv",
+    "origin_name": "EMOTIONTALK_PHASE3_GATE_SELECTION_V1.csv",
+    "origin_SHA256": "6658998d788965f4f80eabae305989469431fe79755e2f9cb3d785dec2120460",
+    "current_SHA256": "6658998d788965f4f80eabae305989469431fe79755e2f9cb3d785dec2120460",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/emotiontalk/CROSS_REGIME_TRANSFER_SPEC_V1.json",
+    "origin_name": "CROSS_REGIME_TRANSFER_SPEC_V1.json",
+    "origin_SHA256": "73495ba69b346db05323179683e16cf7abdf88be86d26e9224d79050c50e0714",
+    "current_SHA256": "73495ba69b346db05323179683e16cf7abdf88be86d26e9224d79050c50e0714",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/emotiontalk/CROSS_REGIME_TRANSFER_SPEC_V1.md",
+    "origin_name": "CROSS_REGIME_TRANSFER_SPEC_V1.md",
+    "origin_SHA256": "17a1e2fb8d8265289ec82704756c9844e98a47157def74b8b1fd3252c98866b9",
+    "current_SHA256": "17a1e2fb8d8265289ec82704756c9844e98a47157def74b8b1fd3252c98866b9",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/emotiontalk/EMOTIONTALK_CANDIDATE_ORDER_AUDIT_V1.csv",
+    "origin_name": "EMOTIONTALK_CANDIDATE_ORDER_AUDIT_V1.csv",
+    "origin_SHA256": "6f886a747835d5326180f89ae3f0b0650eb20a8134653d16ce3d6eab84528d4f",
+    "current_SHA256": "6f886a747835d5326180f89ae3f0b0650eb20a8134653d16ce3d6eab84528d4f",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/emotiontalk/EMOTIONTALK_COMPOSITIONALITY_SPEC_V1_1.json",
+    "origin_name": "EMOTIONTALK_COMPOSITIONALITY_SPEC_V1_1.json",
+    "origin_SHA256": "91de88c803eb91280f4d25852ffb4fe7e70f89ea1c5abdbacef863f2919ef2dc",
+    "current_SHA256": "91de88c803eb91280f4d25852ffb4fe7e70f89ea1c5abdbacef863f2919ef2dc",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/emotiontalk/EMOTIONTALK_COMPOSITIONALITY_SPEC_V1_1.md",
+    "origin_name": "EMOTIONTALK_COMPOSITIONALITY_SPEC_V1_1.md",
+    "origin_SHA256": "6afd7395345eda4c3be8dc9e3b295561d9a2ef9e628cb7b85ef330845cf4eceb",
+    "current_SHA256": "6afd7395345eda4c3be8dc9e3b295561d9a2ef9e628cb7b85ef330845cf4eceb",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/emotiontalk/EMOTIONTALK_MEASUREMENT_SPEC_V1_2.json",
+    "origin_name": "EMOTIONTALK_MEASUREMENT_SPEC_V1_2.json",
+    "origin_SHA256": "e65eb6aa3fc1f7aafef4c7390dcf78443fa9dc8f7791e76af311e7734f117c18",
+    "current_SHA256": "e65eb6aa3fc1f7aafef4c7390dcf78443fa9dc8f7791e76af311e7734f117c18",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/emotiontalk/EMOTIONTALK_MEASUREMENT_SPEC_V1_2.md",
+    "origin_name": "EMOTIONTALK_MEASUREMENT_SPEC_V1_2.md",
+    "origin_SHA256": "03ade2a4a6763f0736cb3a54161c3cc1c27ecddacdb06be2af199e7659afecc6",
+    "current_SHA256": "03ade2a4a6763f0736cb3a54161c3cc1c27ecddacdb06be2af199e7659afecc6",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/emotiontalk/EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2.json",
+    "origin_name": "EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2.json",
+    "origin_SHA256": "5823abd732a60d5f0f9ed90ad6ef2e53463e4d159758ca12e7cdf94ec0e60d7a",
+    "current_SHA256": "5823abd732a60d5f0f9ed90ad6ef2e53463e4d159758ca12e7cdf94ec0e60d7a",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/emotiontalk/EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2.md",
+    "origin_name": "EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2.md",
+    "origin_SHA256": "a7ed5050fa7c48c9921c580d088706bb52cf119f8daed8688504bc98ffcab5ab",
+    "current_SHA256": "a7ed5050fa7c48c9921c580d088706bb52cf119f8daed8688504bc98ffcab5ab",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/emotiontalk/EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2_PROVENANCE.json",
+    "origin_name": "EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2_PROVENANCE.json",
+    "origin_SHA256": "fdd8b75a8803ad52f6a72b15e4799066d27afe29a6109fa8524b58962d478ed1",
+    "current_SHA256": "fdd8b75a8803ad52f6a72b15e4799066d27afe29a6109fa8524b58962d478ed1",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/emotiontalk/EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2_SHA256SUMS.txt",
+    "origin_name": "EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2_SHA256SUMS.txt",
+    "origin_SHA256": "e8e550a9587fd891fd94cac6cfef5210befa4e203accbe1d01352b5472f469fe",
+    "current_SHA256": "e8e550a9587fd891fd94cac6cfef5210befa4e203accbe1d01352b5472f469fe",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/emotiontalk/EMOTIONTALK_POPULATION_TUPLE_SUPPORT_V1_2.csv",
+    "origin_name": "EMOTIONTALK_POPULATION_TUPLE_SUPPORT_V1_2.csv",
+    "origin_SHA256": "c78c0ac57866a663d05895a83649de354826d8bf21140b13101a167d81362662",
+    "current_SHA256": "c78c0ac57866a663d05895a83649de354826d8bf21140b13101a167d81362662",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/emotiontalk/EMOTIONTALK_POPULATION_WEIGHTING_SPEC_V1.json",
+    "origin_name": "EMOTIONTALK_POPULATION_WEIGHTING_SPEC_V1.json",
+    "origin_SHA256": "423c872dd9052f0d099db45d8564e96a565d0bb3dcd7bd2e1a0b9ee6fd105387",
+    "current_SHA256": "423c872dd9052f0d099db45d8564e96a565d0bb3dcd7bd2e1a0b9ee6fd105387",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/emotiontalk/EMOTIONTALK_PREAUDIT_STATIC_V1_2.json",
+    "origin_name": "EMOTIONTALK_PREAUDIT_STATIC_V1_2.json",
+    "origin_SHA256": "9654727cd6164f52e5d1e4efacf3dc46c5337cf175a4c50d5626ed4f50096765",
+    "current_SHA256": "9654727cd6164f52e5d1e4efacf3dc46c5337cf175a4c50d5626ed4f50096765",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/emotiontalk/EMOTIONTALK_V1_1_V1_2_GATE_REPEAT_COMPARISON_V1_2.csv",
+    "origin_name": "EMOTIONTALK_V1_1_V1_2_GATE_REPEAT_COMPARISON_V1_2.csv",
+    "origin_SHA256": "5d5f01c22993ce04a0ba093f27ed62b4ba1982d57f23b653cdb83582b7dfd1a9",
+    "current_SHA256": "5d5f01c22993ce04a0ba093f27ed62b4ba1982d57f23b653cdb83582b7dfd1a9",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/emotiontalk/EMOTIONTALK_CANDIDATE_SEQUENCES_V1.json",
+    "origin_name": "code\\current\\project\\audit\\EMOTIONTALK_CONTROLLED_V1\\EMOTIONTALK_CANDIDATE_SEQUENCES_V1.json",
+    "origin_SHA256": "b249c68e92fa16ec7c41f617baffd1d293db8807b01b9c0f5d8490d41b790750",
+    "current_SHA256": "b249c68e92fa16ec7c41f617baffd1d293db8807b01b9c0f5d8490d41b790750",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/emotiontalk/EMOTIONTALK_CONTROLLED_PROTOCOL_V1.json",
+    "origin_name": "code\\current\\project\\audit\\EMOTIONTALK_CONTROLLED_V1\\EMOTIONTALK_CONTROLLED_PROTOCOL_V1.json",
+    "origin_SHA256": "3c66b0a379fac6ce7aef8e27d589b9901825ec3c8db54dcda3e3b16772e60837",
+    "current_SHA256": "3c66b0a379fac6ce7aef8e27d589b9901825ec3c8db54dcda3e3b16772e60837",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/emotiontalk/EMOTIONTALK_CONTROLLED_PROTOCOL_V1.md",
+    "origin_name": "code\\current\\project\\audit\\EMOTIONTALK_CONTROLLED_V1\\EMOTIONTALK_CONTROLLED_PROTOCOL_V1.md",
+    "origin_SHA256": "949c51d55144e7b0df43dc59b0e696512d294ba7c06db3879f758a978eeae2d3",
+    "current_SHA256": "949c51d55144e7b0df43dc59b0e696512d294ba7c06db3879f758a978eeae2d3",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/emotiontalk/EMOTIONTALK_MEDIA_FREEZE_V1.json",
+    "origin_name": "code\\current\\project\\audit\\EMOTIONTALK_CONTROLLED_V1\\media_freeze_v1\\EMOTIONTALK_MEDIA_FREEZE_V1.json",
+    "origin_SHA256": "02e8127e80e87a529ac713a006d04971b63d13b943e103efcf1d24f305725883",
+    "current_SHA256": "02e8127e80e87a529ac713a006d04971b63d13b943e103efcf1d24f305725883",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "results/mainline_summary/phase2/01_population_integrity.csv",
+    "origin_name": "code\\current\\project\\audit\\EMOTIONTALK_CONTROLLED_V1\\phase2_scientific_analysis_v1\\01_population_integrity.csv",
+    "origin_SHA256": "1deac0a644652906d3b62ffe1f181fd48d08bd8915ad7f385fafa84a479ce9de",
+    "current_SHA256": "1deac0a644652906d3b62ffe1f181fd48d08bd8915ad7f385fafa84a479ce9de",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "results/mainline_summary/phase2/02_conflict_descriptive_by_order.csv",
+    "origin_name": "code\\current\\project\\audit\\EMOTIONTALK_CONTROLLED_V1\\phase2_scientific_analysis_v1\\02_conflict_descriptive_by_order.csv",
+    "origin_SHA256": "642a97d69ac9b3bc80aa72d6aab9f791e4c3fde4e4321d8024131f11e074a21f",
+    "current_SHA256": "642a97d69ac9b3bc80aa72d6aab9f791e4c3fde4e4321d8024131f11e074a21f",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "results/mainline_summary/phase2/03_conflict_coverage.csv",
+    "origin_name": "code\\current\\project\\audit\\EMOTIONTALK_CONTROLLED_V1\\phase2_scientific_analysis_v1\\03_conflict_coverage.csv",
+    "origin_SHA256": "45d6729351833258e2c6e8b022b13491f0d9db0cc36f5bc0a03d3a131b227f40",
+    "current_SHA256": "45d6729351833258e2c6e8b022b13491f0d9db0cc36f5bc0a03d3a131b227f40",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "results/mainline_summary/phase2/04_paired_order_behavior.csv",
+    "origin_name": "code\\current\\project\\audit\\EMOTIONTALK_CONTROLLED_V1\\phase2_scientific_analysis_v1\\04_paired_order_behavior.csv",
+    "origin_SHA256": "08e4726dd06935734d60278476739822a3c0b915301e9584ddb5d759a35d2352",
+    "current_SHA256": "08e4726dd06935734d60278476739822a3c0b915301e9584ddb5d759a35d2352",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "results/mainline_summary/phase2/05_consistent_controls.csv",
+    "origin_name": "code\\current\\project\\audit\\EMOTIONTALK_CONTROLLED_V1\\phase2_scientific_analysis_v1\\05_consistent_controls.csv",
+    "origin_SHA256": "e02eb6a4a9edd6efd67829f1bd707a0f77643f6281baf5b3892871af733ae612",
+    "current_SHA256": "e02eb6a4a9edd6efd67829f1bd707a0f77643f6281baf5b3892871af733ae612",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "results/mainline_summary/phase2/07_feature_diagnostics.csv",
+    "origin_name": "code\\current\\project\\audit\\EMOTIONTALK_CONTROLLED_V1\\phase2_scientific_analysis_v1\\07_feature_diagnostics.csv",
+    "origin_SHA256": "e994d0c90fdd4f6da917753ded2c93afccb4f11463d0e7d3a02ef310f7e089b9",
+    "current_SHA256": "e994d0c90fdd4f6da917753ded2c93afccb4f11463d0e7d3a02ef310f7e089b9",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "results/mainline_summary/phase2/10_cluster_bootstrap_results.csv",
+    "origin_name": "code\\current\\project\\audit\\EMOTIONTALK_CONTROLLED_V1\\phase2_scientific_analysis_v1\\10_cluster_bootstrap_results.csv",
+    "origin_SHA256": "4c685b78306276019d8b8cfd4eb8032053b0711b29a8de4709142cc647521e4b",
+    "current_SHA256": "4c685b78306276019d8b8cfd4eb8032053b0711b29a8de4709142cc647521e4b",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "results/mainline_summary/phase2/11_pair_heterogeneity_diagnostics.csv",
+    "origin_name": "code\\current\\project\\audit\\EMOTIONTALK_CONTROLLED_V1\\phase2_scientific_analysis_v1\\11_pair_heterogeneity_diagnostics.csv",
+    "origin_SHA256": "e9cc1b4c6eb25aaeb43fe2d4e4e4d7b35fa078c1f91cdcfe6c32f9247837b028",
+    "current_SHA256": "e9cc1b4c6eb25aaeb43fe2d4e4e4d7b35fa078c1f91cdcfe6c32f9247837b028",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/emotiontalk/EMOTIONTALK_PHASE3_COMPOSITION_RULE_FREEZE_V1.json",
+    "origin_name": "code\\current\\project\\audit\\EMOTIONTALK_CONTROLLED_V1\\phase3_trimodal_v1\\EMOTIONTALK_PHASE3_COMPOSITION_RULE_FREEZE_V1.json",
+    "origin_SHA256": "fe1623e42402d32f2ebebda8c5d8b1feaad69a852a0391e7ad2c2030dfd4d3b6",
+    "current_SHA256": "fe1623e42402d32f2ebebda8c5d8b1feaad69a852a0391e7ad2c2030dfd4d3b6",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/emotiontalk/EMOTIONTALK_PHASE3_FULL_V1_FREEZE.json",
+    "origin_name": "code\\current\\project\\audit\\EMOTIONTALK_CONTROLLED_V1\\phase3_trimodal_v1\\EMOTIONTALK_PHASE3_FULL_V1_FREEZE.json",
+    "origin_SHA256": "e2e9e0dbf54d91c1471bee473439a7e6970bc3890598562c39438f4cc1ccf783",
+    "current_SHA256": "e2e9e0dbf54d91c1471bee473439a7e6970bc3890598562c39438f4cc1ccf783",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "results/mainline_summary/phase3/02_overall_compositionality.csv",
+    "origin_name": "code\\current\\project\\audit\\EMOTIONTALK_CONTROLLED_V1\\phase3_trimodal_v1\\phase3_scientific_analysis_v1\\02_overall_compositionality.csv",
+    "origin_SHA256": "1de022f44bb8ad330676311cf4d37aa6cb97f729e443cb1a54f1cb3b872259e1",
+    "current_SHA256": "1de022f44bb8ad330676311cf4d37aa6cb97f729e443cb1a54f1cb3b872259e1",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "results/mainline_summary/phase3/03_by_order.csv",
+    "origin_name": "code\\current\\project\\audit\\EMOTIONTALK_CONTROLLED_V1\\phase3_trimodal_v1\\phase3_scientific_analysis_v1\\03_by_order.csv",
+    "origin_SHA256": "9db824ca01849a7d6e73871e331069a335f744bc747a3025443f9d11310fd3a8",
+    "current_SHA256": "9db824ca01849a7d6e73871e331069a335f744bc747a3025443f9d11310fd3a8",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "results/mainline_summary/phase3/04_by_prediction_class.csv",
+    "origin_name": "code\\current\\project\\audit\\EMOTIONTALK_CONTROLLED_V1\\phase3_trimodal_v1\\phase3_scientific_analysis_v1\\04_by_prediction_class.csv",
+    "origin_SHA256": "80e21ddb95721c774235a9965cfdb1acec6d5ca62e190371b20e858cacfc3f0a",
+    "current_SHA256": "80e21ddb95721c774235a9965cfdb1acec6d5ca62e190371b20e858cacfc3f0a",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "results/mainline_summary/phase3/05_by_pattern.csv",
+    "origin_name": "code\\current\\project\\audit\\EMOTIONTALK_CONTROLLED_V1\\phase3_trimodal_v1\\phase3_scientific_analysis_v1\\05_by_pattern.csv",
+    "origin_SHA256": "ad4ebb03b188c9c85f6adaf241d65ffa5d00c67b314661404802b6636b61a419",
+    "current_SHA256": "ad4ebb03b188c9c85f6adaf241d65ffa5d00c67b314661404802b6636b61a419",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "results/mainline_summary/phase3/07_cluster_bootstrap.csv",
+    "origin_name": "code\\current\\project\\audit\\EMOTIONTALK_CONTROLLED_V1\\phase3_trimodal_v1\\phase3_scientific_analysis_v1\\07_cluster_bootstrap.csv",
+    "origin_SHA256": "a94e9f1f0d341cca0dec1e889f2afd57cfbb3acba0a498a40e39cea41cffea24",
+    "current_SHA256": "a94e9f1f0d341cca0dec1e889f2afd57cfbb3acba0a498a40e39cea41cffea24",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "results/mainline_summary/phase3/08_prediction_class_contrast.csv",
+    "origin_name": "code\\current\\project\\audit\\EMOTIONTALK_CONTROLLED_V1\\phase3_trimodal_v1\\phase3_scientific_analysis_v1\\08_prediction_class_contrast.csv",
+    "origin_SHA256": "a091a021989573ddef2beaee915081435c89a5482e63daced198f7fe90eb5bd5",
+    "current_SHA256": "a091a021989573ddef2beaee915081435c89a5482e63daced198f7fe90eb5bd5",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "results/mainline_summary/phase3/09_order_heterogeneity.csv",
+    "origin_name": "code\\current\\project\\audit\\EMOTIONTALK_CONTROLLED_V1\\phase3_trimodal_v1\\phase3_scientific_analysis_v1\\09_order_heterogeneity.csv",
+    "origin_SHA256": "95dbce96e8c185918f0cbab0c079258390c9ebf1663318d0b6eeb8bb5f04a94f",
+    "current_SHA256": "95dbce96e8c185918f0cbab0c079258390c9ebf1663318d0b6eeb8bb5f04a94f",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "results/mainline_summary/phase3/EMOTIONTALK_PHASE3_LIMITED_INFERENTIAL_AUDIT_V1.json",
+    "origin_name": "code\\current\\project\\audit\\EMOTIONTALK_CONTROLLED_V1\\phase3_trimodal_v1\\phase3_scientific_analysis_v1\\EMOTIONTALK_PHASE3_LIMITED_INFERENTIAL_AUDIT_V1.json",
+    "origin_SHA256": "0ed5acb299926a07c662ee5915c53e6832b09d11aa0cad9acfb623e916898961",
+    "current_SHA256": "0ed5acb299926a07c662ee5915c53e6832b09d11aa0cad9acfb623e916898961",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "results/mainline_summary/phase3/EMOTIONTALK_PHASE3_SCIENTIFIC_ANALYSIS_V1_SUMMARY.json",
+    "origin_name": "code\\current\\project\\audit\\EMOTIONTALK_CONTROLLED_V1\\phase3_trimodal_v1\\phase3_scientific_analysis_v1\\EMOTIONTALK_PHASE3_SCIENTIFIC_ANALYSIS_V1_SUMMARY.json",
+    "origin_SHA256": "984960a92787bcda2426940325021a13cb22564278fd58a2c3fdb1300a8b3a20",
+    "current_SHA256": "984960a92787bcda2426940325021a13cb22564278fd58a2c3fdb1300a8b3a20",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "results/mainline_summary/phase3/EMOTIONTALK_PHASE3_SCIENTIFIC_FREEZE_V1.json",
+    "origin_name": "code\\current\\project\\audit\\EMOTIONTALK_CONTROLLED_V1\\phase3_trimodal_v1\\phase3_scientific_analysis_v1\\EMOTIONTALK_PHASE3_SCIENTIFIC_FREEZE_V1.json",
+    "origin_SHA256": "d18eeaa9994bdbd65e4d6edc1a3d5f081dd4c7bdc48d1459d3932e4c51bde99f",
+    "current_SHA256": "d18eeaa9994bdbd65e4d6edc1a3d5f081dd4c7bdc48d1459d3932e4c51bde99f",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/mcr/MCR_CONTROLLED_ARBITRATION_ANALYSIS_SPEC_V2.md",
+    "origin_name": "code\\current\\project\\audit\\QWEN25_MCR_CONTROLLED_V3\\MCR_CONTROLLED_ARBITRATION_ANALYSIS_SPEC_V2.md",
+    "origin_SHA256": "17230d00a0ce07305658b5de4cdeaf14cf830bd5c70e87a74bca6195ed6b04b7",
+    "current_SHA256": "17230d00a0ce07305658b5de4cdeaf14cf830bd5c70e87a74bca6195ed6b04b7",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/mcr/MCR_CONTROLLED_PROTOCOL_V2_STATIC_AUDIT.json",
+    "origin_name": "code\\current\\project\\audit\\QWEN25_MCR_CONTROLLED_V3\\MCR_CONTROLLED_PROTOCOL_V2_STATIC_AUDIT.json",
+    "origin_SHA256": "f43b320b2b897189ec32580becb95218ec0573b67764da6eb0eef8bcbf9b1201",
+    "current_SHA256": "f43b320b2b897189ec32580becb95218ec0573b67764da6eb0eef8bcbf9b1201",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/mcr/MCR_CONTROLLED_PROTOCOL_V2_STATIC_AUDIT.md",
+    "origin_name": "code\\current\\project\\audit\\QWEN25_MCR_CONTROLLED_V3\\MCR_CONTROLLED_PROTOCOL_V2_STATIC_AUDIT.md",
+    "origin_SHA256": "a20c6f5b452c774c119ac33df7324bce76b29f952ae1ba1fa76ed59d31ad0cbb",
+    "current_SHA256": "a20c6f5b452c774c119ac33df7324bce76b29f952ae1ba1fa76ed59d31ad0cbb",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/mcr/MCR_CONTROLLED_FULL_V2_COMPLETENESS.json",
+    "origin_name": "code\\current\\project\\audit\\QWEN25_MCR_CONTROLLED_V3\\full_run\\MCR_CONTROLLED_FULL_V2_COMPLETENESS.json",
+    "origin_SHA256": "639e7a118b1fea4539626546d3345a880f507a7efa2f01ce716a6907524f1fa3",
+    "current_SHA256": "639e7a118b1fea4539626546d3345a880f507a7efa2f01ce716a6907524f1fa3",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/mcr/MCR_CONTROLLED_DIRECTIONAL_PAIR_RESULTS_V2.csv",
+    "origin_name": "code\\current\\project\\audit\\QWEN25_MCR_CONTROLLED_V3\\scientific_analysis_v2\\MCR_CONTROLLED_DIRECTIONAL_PAIR_RESULTS_V2.csv",
+    "origin_SHA256": "8895bff4acee8361e46ded60a1bea372d55bf860eac38855e3f30c5a22550464",
+    "current_SHA256": "8895bff4acee8361e46ded60a1bea372d55bf860eac38855e3f30c5a22550464",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/mcr/MCR_CONTROLLED_DUAL_READABLE_DIAGNOSTICS_V2.csv",
+    "origin_name": "code\\current\\project\\audit\\QWEN25_MCR_CONTROLLED_V3\\scientific_analysis_v2\\MCR_CONTROLLED_DUAL_READABLE_DIAGNOSTICS_V2.csv",
+    "origin_SHA256": "d96f982a3d1e43bc17b29dc67dc3b9b606325a7147e949d65c07aa7e9c081b3f",
+    "current_SHA256": "d96f982a3d1e43bc17b29dc67dc3b9b606325a7147e949d65c07aa7e9c081b3f",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/mcr/MCR_CONTROLLED_SCIENTIFIC_RESULTS_V2.json",
+    "origin_name": "code\\current\\project\\audit\\QWEN25_MCR_CONTROLLED_V3\\scientific_analysis_v2\\MCR_CONTROLLED_SCIENTIFIC_RESULTS_V2.json",
+    "origin_SHA256": "009d2fadfe128ea2e7e512f972a112db8d7bd0949064bb6c7b12dc7315b874a6",
+    "current_SHA256": "009d2fadfe128ea2e7e512f972a112db8d7bd0949064bb6c7b12dc7315b874a6",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/mcr/MCR_CONTROLLED_SCIENTIFIC_RESULTS_V2.md",
+    "origin_name": "code\\current\\project\\audit\\QWEN25_MCR_CONTROLLED_V3\\scientific_analysis_v2\\MCR_CONTROLLED_SCIENTIFIC_RESULTS_V2.md",
+    "origin_SHA256": "36d05f18632e190aa11c6efb85c121ea0567c3bbc69605600dc7534a01d0d2a2",
+    "current_SHA256": "36d05f18632e190aa11c6efb85c121ea0567c3bbc69605600dc7534a01d0d2a2",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/mcr/MCR_CONTROLLED_BOOTSTRAP_RESULTS_V2_1.json",
+    "origin_name": "code\\current\\project\\audit\\QWEN25_MCR_CONTROLLED_V3\\scientific_analysis_v2_1\\MCR_CONTROLLED_BOOTSTRAP_RESULTS_V2_1.json",
+    "origin_SHA256": "e80297894dfe1adc4a3c507f76b1118b1cbc47902224affdaad0296b2fcb850d",
+    "current_SHA256": "e80297894dfe1adc4a3c507f76b1118b1cbc47902224affdaad0296b2fcb850d",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/mcr/MCR_CONTROLLED_BOOTSTRAP_RESULTS_V2_1.md",
+    "origin_name": "code\\current\\project\\audit\\QWEN25_MCR_CONTROLLED_V3\\scientific_analysis_v2_1\\MCR_CONTROLLED_BOOTSTRAP_RESULTS_V2_1.md",
+    "origin_SHA256": "a307cf86b0ad7bd04b3313b4c6e91c84c14583251f19b0dce14fa79de8e4c105",
+    "current_SHA256": "a307cf86b0ad7bd04b3313b4c6e91c84c14583251f19b0dce14fa79de8e4c105",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/mcr/MCR_CONTROLLED_STATISTICAL_EXECUTION_ADDENDUM_V2_1.md",
+    "origin_name": "code\\current\\project\\audit\\QWEN25_MCR_CONTROLLED_V3\\scientific_analysis_v2_1\\MCR_CONTROLLED_STATISTICAL_EXECUTION_ADDENDUM_V2_1.md",
+    "origin_SHA256": "c222559a5188ca7bc8a20224324e17456ea7ebf1045dadb3d1e69b4fefd04762",
+    "current_SHA256": "c222559a5188ca7bc8a20224324e17456ea7ebf1045dadb3d1e69b4fefd04762",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/camer/CAMER_CONTROLLED_ANALYSIS_SPEC_V1.md",
+    "origin_name": "code\\current\\project\\audit\\QWEN25_CAMER_CONTROLLED_V1\\CAMER_CONTROLLED_ANALYSIS_SPEC_V1.md",
+    "origin_SHA256": "2004bb748024231212a992f6346369ee2d203080e0d4db7b6ce50877d06d149f",
+    "current_SHA256": "2004bb748024231212a992f6346369ee2d203080e0d4db7b6ce50877d06d149f",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/camer/CAMER_CONTROLLED_ONTOLOGY_AUDIT_V1.json",
+    "origin_name": "code\\current\\project\\audit\\QWEN25_CAMER_CONTROLLED_V1\\CAMER_CONTROLLED_ONTOLOGY_AUDIT_V1.json",
+    "origin_SHA256": "62534b269c76b2ba91f39c0b56e7d121304f025fcfc776738004f417b156e4d8",
+    "current_SHA256": "62534b269c76b2ba91f39c0b56e7d121304f025fcfc776738004f417b156e4d8",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/camer/CAMER_CONTROLLED_PARSER_CONTRACT_AUDIT_V1.json",
+    "origin_name": "code\\current\\project\\audit\\QWEN25_CAMER_CONTROLLED_V1\\CAMER_CONTROLLED_PARSER_CONTRACT_AUDIT_V1.json",
+    "origin_SHA256": "37da7b305f536cea7c2822d902a549650682289171c501c2b79d5df2500f5d17",
+    "current_SHA256": "37da7b305f536cea7c2822d902a549650682289171c501c2b79d5df2500f5d17",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/camer/CAMER_CONTROLLED_PROTOCOL_V1.json",
+    "origin_name": "code\\current\\project\\audit\\QWEN25_CAMER_CONTROLLED_V1\\CAMER_CONTROLLED_PROTOCOL_V1.json",
+    "origin_SHA256": "efbe18fefcd3964e1ccbb48df671cad7279d543a021f90bbd6c11dfbef83306f",
+    "current_SHA256": "efbe18fefcd3964e1ccbb48df671cad7279d543a021f90bbd6c11dfbef83306f",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "protocols/camer/CAMER_CONTROLLED_PROTOCOL_V1.md",
+    "origin_name": "code\\current\\project\\audit\\QWEN25_CAMER_CONTROLLED_V1\\CAMER_CONTROLLED_PROTOCOL_V1.md",
+    "origin_SHA256": "7b3a72dbd8e85a9ae80f8556b8e0465862c6f7e6ce5ed4b602647669b3fca6af",
+    "current_SHA256": "7b3a72dbd8e85a9ae80f8556b8e0465862c6f7e6ce5ed4b602647669b3fca6af",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "manifests/emotiontalk/source_measurements.csv",
+    "origin_name": "historical\\recovered\\artifact_v4\\audit\\EMOTIONTALK_CONTROLLED_V1\\phase1_competence_full_v1_2\\EMOTIONTALK_PHASE1_SAMPLE_TABLE_V1_2.csv",
+    "origin_SHA256": "3cc270054de466387e874be0dcb180dad12250e348c332a98fffba7d1c647042",
+    "current_SHA256": "3cc270054de466387e874be0dcb180dad12250e348c332a98fffba7d1c647042",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "manifests/emotiontalk/trimodal_plan.csv",
+    "origin_name": "historical\\recovered\\artifact_v4\\audit\\EMOTIONTALK_CONTROLLED_V1\\phase3_trimodal_v1\\EMOTIONTALK_PHASE3_PRIMARY_PLAN_V1.csv",
+    "origin_SHA256": "14fdc30700bbdebdf97f9bc21e15a98f07e48a00038c8976579431d5163e00ab",
+    "current_SHA256": "14fdc30700bbdebdf97f9bc21e15a98f07e48a00038c8976579431d5163e00ab",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "manifests/mcr/frozen_joint_outcomes.csv",
+    "origin_name": "MCR_AT_ATTEMPT002_GATE_INPUT_V2.csv",
+    "origin_SHA256": "789261e4fce394e6466bb67c0e55a3e0dce49c3d8b37ed76308c075660329266",
+    "current_SHA256": "789261e4fce394e6466bb67c0e55a3e0dce49c3d8b37ed76308c075660329266",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "manifests/camer/frozen_joint_outcomes.csv",
+    "origin_name": "CAMER_AV_ATTEMPT002_GATE_INPUT_V2.csv",
+    "origin_SHA256": "57ed776d5009ba50b3e07bcb7b78c4323a66b08e960e65bee20ecbfef82abd13",
+    "current_SHA256": "57ed776d5009ba50b3e07bcb7b78c4323a66b08e960e65bee20ecbfef82abd13",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "manifests/listen/frozen_joint_outcomes.csv",
+    "origin_name": "historical\\recovered\\artifact_v4\\audit\\CROSS_REGIME_TRANSFER_V1\\attempt002_gate_preparation_v2\\LISTEN_AT_ATTEMPT002_GATE_INPUT_V2.csv",
+    "origin_SHA256": "cc145efa4b187deab567b547ab8b71b6456da6484820d96ec49810742b77aced",
+    "current_SHA256": "cc145efa4b187deab567b547ab8b71b6456da6484820d96ec49810742b77aced",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "manifests/mcr/canonical_arbitration.csv",
+    "origin_name": "mcr_ser_arbitration_pool_909.csv",
+    "origin_SHA256": "c81079ad56ef3957fb978b753d98ee31d0e0cafbe6876eb7489125fd805e0716",
+    "current_SHA256": "c81079ad56ef3957fb978b753d98ee31d0e0cafbe6876eb7489125fd805e0716",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "manifests/camer/controlled.jsonl",
+    "origin_name": "camer_controlled_manifest_v1.jsonl",
+    "origin_SHA256": "929a9734a5099c60f83890544401c09d703e32b728e0b9f4d6afd98b46c7869b",
+    "current_SHA256": "929a9734a5099c60f83890544401c09d703e32b728e0b9f4d6afd98b46c7869b",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "src/reconstruction/emotiontalk/reconstruct.py",
+    "origin_name": "EMOTIONTALK_CONTROLLED_PROTOCOL_V1_BUILDER.py",
+    "origin_SHA256": "bbcba3616e3ccec14555a66496d6d15ccfc84fdbb1c43565d789959da0b73e3c",
+    "current_SHA256": "86bcb5bfaa906b62e0f9f1194b38243eef96ebfa15746d0ce1c995bf90a77822",
+    "transformation": "Validated V2 canonical raw-prefix; original audit/writer tail excluded; CLI I/O only adapted",
+    "role": "VALIDATED_POSTHOC_RECONSTRUCTION"
+  },
+  {
+    "relative_path": "src/reconstruction/mcr/reconstruct.py",
+    "origin_name": "reconstruct_mcr.py",
+    "origin_SHA256": "ae976ec90ecdd14cd73636379d05fb43848aae00a5562571abb75c9b471bac51",
+    "current_SHA256": "4f767ed8e8dec94edce516742efe306338d94e81013944c8bba142dfa3726bd9",
+    "transformation": "Validated replay; output location configurable; unresolved G08 writer removed",
+    "role": "VALIDATED_POSTHOC_RECONSTRUCTION"
+  },
+  {
+    "relative_path": "src/reconstruction/listen/reconstruct.py",
+    "origin_name": "reconstruct_listen.py",
+    "origin_SHA256": "3e66a396e2e4a5474abcfcb5a57693d5591e49f6607dc12fa209976984c73727",
+    "current_SHA256": "c529bead372cf26604fb52b61e9e823ea48f452f457295443e90c85de2fc347c",
+    "transformation": "Validated replay; output location configurable; unresolved G08 writer removed",
+    "role": "VALIDATED_POSTHOC_RECONSTRUCTION"
+  },
+  {
+    "relative_path": "src/reconstruction/camer/prepare_media.py",
+    "origin_name": "prepare_camer_controlled_media_v1.py",
+    "origin_SHA256": "b6d3e61726116e2bd9bc2e1bfe096f87df9de8614597e97baba069ec97a112c9",
+    "current_SHA256": "1e4d5af35db6a6d93798bf147647470bd039209e5c3af59a8896b969aaf895cd",
+    "transformation": "CURRENT_KERNELS_WITH_PORTABLE_IO; obsolete CLI removed",
+    "role": "CURRENT_IMPLEMENTATION"
+  },
+  {
+    "relative_path": "src/emotiontalk/phase1/execution.py",
+    "origin_name": "run_qwen25_emotiontalk_phase1_v1_2.py",
+    "origin_SHA256": "e9423fe9490c6a5eb7d6a771764d5678a97f5b6d55578215d3cc89dcf85c51b6",
+    "current_SHA256": "248c39a2768a19f64625381273a24b5f90db7cea47790af28edd585e77ddd264",
+    "transformation": "CURRENT_KERNELS_WITH_PORTABLE_IO; obsolete CLI removed",
+    "role": "CURRENT_IMPLEMENTATION"
+  },
+  {
+    "relative_path": "src/emotiontalk/phase1/plan.py",
+    "origin_name": "run_qwen25_emotiontalk_phase1_full_v1_2_r1.py",
+    "origin_SHA256": "929e831d847d9ec3c66458a5708e9645501659faaa1ad0a950fb9b1907d8ec6d",
+    "current_SHA256": "1a54e19271efd072e9409b7dfff3ecb8a940f27fc7074f44dfdbf2c98e203aa9",
+    "transformation": "CURRENT_KERNELS_WITH_PORTABLE_IO; obsolete CLI removed",
+    "role": "CURRENT_IMPLEMENTATION"
+  },
+  {
+    "relative_path": "src/emotiontalk/phase2/core.py",
+    "origin_name": "run_qwen25_emotiontalk_pairwise_v1.py",
+    "origin_SHA256": "7f07055b76b00020375682a85fac14963030137852c3f3c9f0acbf8a13e266df",
+    "current_SHA256": "cf7b08ce206caa546241dd688508310e13a0748e7b3d904fb37fa7a43bf781f4",
+    "transformation": "CURRENT_KERNELS_WITH_PORTABLE_IO; obsolete CLI removed",
+    "role": "CURRENT_IMPLEMENTATION"
+  },
+  {
+    "relative_path": "src/emotiontalk/phase2/execution.py",
+    "origin_name": "run_qwen25_emotiontalk_pairwise_v1_2.py",
+    "origin_SHA256": "663a184bc59b17627137d7022e1d8e0fda97e708f280452975be49e65bcf93f1",
+    "current_SHA256": "4ff4ec3b925cd3019e4b6b8dd20070f0e6e5e50971aff37e1aba4a928c3e12ef",
+    "transformation": "CURRENT_KERNELS_WITH_PORTABLE_IO; obsolete CLI removed",
+    "role": "CURRENT_IMPLEMENTATION"
+  },
+  {
+    "relative_path": "src/emotiontalk/phase3/execution.py",
+    "origin_name": "run_qwen25_emotiontalk_trimodal_v1_3.py",
+    "origin_SHA256": "43b83db5ca2fb6738ebdee7ae23f8c8674168f420b4ce442ae37be3af9d61407",
+    "current_SHA256": "3ae86ec68541f66e201137b21c34640c69e75c4cb308b693a5dce0bc7ef41c86",
+    "transformation": "CURRENT_KERNELS_WITH_PORTABLE_IO; obsolete CLI removed",
+    "role": "CURRENT_IMPLEMENTATION"
+  },
+  {
+    "relative_path": "results/mainline_summary/cross_regime/B3_CORRECTED_DATASET_METRICS_V1.csv",
+    "origin_name": "B3_CORRECTED_DATASET_METRICS_V1.csv",
+    "origin_SHA256": "b6f0892cb2ec799cdeaf5413ce31bad554ca3dfa7d7713a080b5e3c806788b6b",
+    "current_SHA256": "b6f0892cb2ec799cdeaf5413ce31bad554ca3dfa7d7713a080b5e3c806788b6b",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "results/mainline_summary/cross_regime/B3_OLD_VS_CORRECTED_COMPARISON_V1.csv",
+    "origin_name": "B3_OLD_VS_CORRECTED_COMPARISON_V1.csv",
+    "origin_SHA256": "e07cdd2d2a749e1fe39e57c587e6a15e47fb3c85e1e135f307a5b158c4fb0423",
+    "current_SHA256": "e07cdd2d2a749e1fe39e57c587e6a15e47fb3c85e1e135f307a5b158c4fb0423",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "results/mainline_summary/cross_regime/B3_CORRECTED_MEASUREMENT_CLOSEOUT_V1.json",
+    "origin_name": "B3_CORRECTED_MEASUREMENT_CLOSEOUT_V1.json",
+    "origin_SHA256": "bd42436eb87bbe52978c9fb37c43c1b89257e028b180416d7f33bb3f4a7754fa",
+    "current_SHA256": "bd42436eb87bbe52978c9fb37c43c1b89257e028b180416d7f33bb3f4a7754fa",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "results/mainline_summary/cross_regime/B3_ZERO_REFIT_FINAL_EVALUATION_V1.md",
+    "origin_name": "B3_ZERO_REFIT_FINAL_EVALUATION_V1.md",
+    "origin_SHA256": "8a008993d5a2ce98b9c6b2440535c934fdbd193c26da1c671003b69c497890c3",
+    "current_SHA256": "8a008993d5a2ce98b9c6b2440535c934fdbd193c26da1c671003b69c497890c3",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "results/mainline_summary/cross_regime/B3_ZERO_REFIT_FINAL_EVALUATION_V1.json",
+    "origin_name": "B3_ZERO_REFIT_FINAL_EVALUATION_V1.json",
+    "origin_SHA256": "d92fe29bc7ac9d2b580f2ec41b9bcf07c1bcb3961e865b582e9f503a9a2936b4",
+    "current_SHA256": "d92fe29bc7ac9d2b580f2ec41b9bcf07c1bcb3961e865b582e9f503a9a2936b4",
+    "transformation": "BYTE_IDENTICAL",
+    "role": "FROZEN_SCIENTIFIC_ARTIFACT"
+  },
+  {
+    "relative_path": "src/common/audio_compat.py",
+    "origin_name": "run_qwen_smoke.py",
+    "origin_SHA256": "2f07155fa0acf7efb718236d7b7c015bb04a7986b4a3599b0aeab73d5e5b3635",
+    "current_SHA256": "99635369cc14ad47b6db32f5028abda1cd6bdb3c39cc23200c0dc60b5f178e39",
+    "transformation": "Exact current patch_audioread_compat function; smoke CLI excluded",
+    "role": "CURRENT_IMPLEMENTATION"
+  }
+]

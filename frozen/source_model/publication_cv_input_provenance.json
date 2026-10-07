@@ -1,0 +1,27 @@
+{
+  "role": "FROZEN_SOURCE_FEATURES_FOR_CORRECTED_PUBLICATION_CV_ONLY",
+  "records": 663,
+  "pair_counts": {
+    "AT": 116,
+    "AV": 284,
+    "VT": 263
+  },
+  "prepared_SHA256": "8fb93aadd79eac9597677bd3409666ec2a31311762e0c6850673fb50f4129a13",
+  "merged_source_feature_table": {
+    "filename": "phase2_source_features.csv",
+    "SHA256": "12564ec77c869036324e8a9824af90e92130286576ad52af0c3cd321bd33f5c6",
+    "rows": 1066
+  },
+  "frozen_pairwise_outputs": {
+    "filename": "emotiontalk_phase2_pairwise_full_v1_attempt_002.jsonl",
+    "SHA256": "677f96d9cd8650c08486bedde14457d62a2e930d3c0b7560983d6d1c456b1381",
+    "rows": 2132
+  },
+  "row_order": "Original frozen pairwise JSONL order; only resolved conflict side choices",
+  "outcome_crosscheck": "All 2132 outcomes agree with the frozen merged source table",
+  "scaler_binding_SHA256": "642c2ed7b023aea8c6bd762891ff436f0f3eff6a95a58e56bf6f8c4b5d41dd20",
+  "source_scaler_refitted": false,
+  "source_model_replaced": false,
+  "target_refit_performed": false,
+  "publication_CV_recomputed_during_packaging": false
+}

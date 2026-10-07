@@ -1,0 +1,1217 @@
+{
+  "release": "v1.0.0-mainline",
+  "version": "1.0.0",
+  "files": [
+    {
+      "relative_path": ".gitignore",
+      "role": "RELEASE_DOCUMENTATION",
+      "SHA256": "af7fa37620bd8e17797c7fbe711750c0c559271fe0a11473240a13a44380525d",
+      "size": 180
+    },
+    {
+      "relative_path": "analyses/__init__.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "relative_path": "analyses/cross_regime/__init__.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "relative_path": "analyses/cross_regime/report.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "0bc2cffc63083f38458208a3d47c70fbc3d65cadf48def86f088ba4d0f84dd59",
+      "size": 458
+    },
+    {
+      "relative_path": "analyses/phase2/__init__.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "a4d1dec569e641466808daf0157969fd8494913f3ceca707d47cacb6ade24862",
+      "size": 92
+    },
+    {
+      "relative_path": "analyses/phase2/publication_cv.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "d75ba8b879f3f217764e6743818a77a0a27ac22c593c93aefe0f77940b5bb2ec",
+      "size": 2803
+    },
+    {
+      "relative_path": "analyses/phase2/publication_cv_math.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "4be21430e592d3334306f8c728a38591e2e1b312bc646f885a7666268913c028",
+      "size": 2764
+    },
+    {
+      "relative_path": "analyses/phase3/__init__.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "relative_path": "analyses/phase3/report.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "ab965aa0b63f4bac6ea9839a873de27559e18399105c7fce2cef81ea96bed600",
+      "size": 699
+    },
+    {
+      "relative_path": "CITATION.cff",
+      "role": "RELEASE_DOCUMENTATION",
+      "SHA256": "2e372078febee1337943f3d44cf3df27d9603afe2eef3b501b8ff4716212aab3",
+      "size": 385
+    },
+    {
+      "relative_path": "configs/mainline/b3_runtime.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "3fce0635937e51c6833d3755c8fe250feffda323cd5db3e2c244cad3d2e3ca05",
+      "size": 5775
+    },
+    {
+      "relative_path": "configs/mainline/camer_controlled_arbitration_prompt_v1.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "4f80f8d451ed9397d32860dd2df7ab5d29b2720f0d86223ad00d4e8b20bdd0f5",
+      "size": 2348
+    },
+    {
+      "relative_path": "configs/mainline/emotiontalk_controlled_prompt_v1.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "ba6b71f080ea186a1494a54a0990a5740fc0aea69f008622618102f39efe55f8",
+      "size": 1085
+    },
+    {
+      "relative_path": "configs/mainline/emotiontalk_prompt.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "ba6b71f080ea186a1494a54a0990a5740fc0aea69f008622618102f39efe55f8",
+      "size": 1085
+    },
+    {
+      "relative_path": "configs/mainline/mcr_controlled_arbitration_prompt_v2.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "f48431f666fc84987c9e4d17acab31fd80998bac098611fed7016c92abd37082",
+      "size": 3026
+    },
+    {
+      "relative_path": "configs/mainline/mcr_controlled_output_schema_v2.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "bcea2b7af9401a03ddecce7ae327059978bd3a823f2c350ffe0356c95aad2b40",
+      "size": 2634
+    },
+    {
+      "relative_path": "configs/mainline/mcr_ser_ontology_v1.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "06ab9bbe3af6d27f05c39103e68d39bd681605e7ee1d31e69f8ddfccb9b3695c",
+      "size": 918
+    },
+    {
+      "relative_path": "configs/mainline/qwen25_mcr_controlled_execution_v1.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "6e7f6921427d18a05a88de30be6c01066432dc1d1e783ed7546bf3fe963f7ba4",
+      "size": 696
+    },
+    {
+      "relative_path": "configs/paths.example.yaml",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "649bab2a6667e848c6b958010ec705ef7a1e3f1a63ad497e4db210e2afff0135",
+      "size": 409
+    },
+    {
+      "relative_path": "docs/DATASETS.md",
+      "role": "RELEASE_DOCUMENTATION",
+      "SHA256": "de0cbfc52cf4b48fe9d6c40a6e805e905f488503b240cdfd2e2dc2980ac71d14",
+      "size": 3388
+    },
+    {
+      "relative_path": "docs/DECISIONS.md",
+      "role": "RELEASE_DOCUMENTATION",
+      "SHA256": "f82cd1eaca3f9cbcd60eeee4ade6aa03a28da25420dbf87593799ebba8bc1fba",
+      "size": 1210
+    },
+    {
+      "relative_path": "docs/FILE_MAP.md",
+      "role": "RELEASE_DOCUMENTATION",
+      "SHA256": "84a177ad52cb36b065e08933be05f668e64e40485da6a989fbdd9d9d26d55c49",
+      "size": 703
+    },
+    {
+      "relative_path": "docs/KNOWN_LIMITATIONS.md",
+      "role": "RELEASE_DOCUMENTATION",
+      "SHA256": "da05e8d92a4a2d3f7746b5d98a1cb6ed74ad6da2336aa70fc5d382ad65cee7d0",
+      "size": 2330
+    },
+    {
+      "relative_path": "docs/MAINLINE_FREEZE.md",
+      "role": "RELEASE_DOCUMENTATION",
+      "SHA256": "ddcd514d75ee3e0430e4d6bd2666e17f7941d924b036286608b85ae5a1f7d4e2",
+      "size": 1319
+    },
+    {
+      "relative_path": "docs/portable_orchestration.json",
+      "role": "RELEASE_DOCUMENTATION",
+      "SHA256": "f86f00bc99e9f1c96b0fa7da873af44ee6fac2c914c063e8f61bdc277f897631",
+      "size": 626
+    },
+    {
+      "relative_path": "docs/PROJECT_STATE.md",
+      "role": "RELEASE_DOCUMENTATION",
+      "SHA256": "af228ce97981c429423dba296ef05af62f8aaa40fcc3a243808233cd6dfdf358",
+      "size": 955
+    },
+    {
+      "relative_path": "docs/PROVENANCE.md",
+      "role": "RELEASE_DOCUMENTATION",
+      "SHA256": "4ae16652f29a558c39188a84e86472aac07644637115e0bdc2c9358ef9d76d19",
+      "size": 3574
+    },
+    {
+      "relative_path": "docs/RELEASE_VERIFICATION.json",
+      "role": "RELEASE_DOCUMENTATION",
+      "SHA256": "31c1612eb788849b8608c2e041971b5980f6d03f3ad782d4e224940a7b921b01",
+      "size": 2668
+    },
+    {
+      "relative_path": "docs/REPRODUCIBILITY.md",
+      "role": "RELEASE_DOCUMENTATION",
+      "SHA256": "aa2a0439b18d6e00c5a1deba3c6774d2c017099fce5b550b9a02f9a0e42b85c7",
+      "size": 4960
+    },
+    {
+      "relative_path": "docs/source_selection.json",
+      "role": "RELEASE_DOCUMENTATION",
+      "SHA256": "ad8ed5264c6aa60cc6defc02d984d18ebfa9225e94f939e40731f31e675110aa",
+      "size": 54879
+    },
+    {
+      "relative_path": "frozen/candidate_sequences/definition.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "b249c68e92fa16ec7c41f617baffd1d293db8807b01b9c0f5d8490d41b790750",
+      "size": 6476
+    },
+    {
+      "relative_path": "frozen/identity/acquisition.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "006a20bf6673bdba788f89bec21618c59d282eb56b624c99b4074800b7b9feff",
+      "size": 5161
+    },
+    {
+      "relative_path": "frozen/identity/artifact_registry.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "4667bef4022237f24443e78d50c2a6617c32e0c6b0dee1a620e46bd26ea18c92",
+      "size": 13577
+    },
+    {
+      "relative_path": "frozen/identity/corrected_output_catalog.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "b696fb1dfc7d32250e27b7e389953010c4749797005d9719ac76bbd474b8e34c",
+      "size": 3609
+    },
+    {
+      "relative_path": "frozen/identity/metric_function_ast.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "172474a61de838260be344aeb131d8455fe7cc3ad4b0642c9f25f3c40bda21af",
+      "size": 998
+    },
+    {
+      "relative_path": "frozen/identity/model.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "a8b1c73a04896d0be47936abef2f0d66678b752ff66278bb07b3575f2049673f",
+      "size": 1111
+    },
+    {
+      "relative_path": "frozen/identity/model_files.csv",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "8240abe64f8df444e7a4ebbcb636f51e6ef7e6833b62cf60adec0b2d14125a09",
+      "size": 1648
+    },
+    {
+      "relative_path": "frozen/identity/processor.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "9af99deaaf6ec18adfb2b71129d05f9cc2ec00dcb634f4be05b611ddb574a102",
+      "size": 1171
+    },
+    {
+      "relative_path": "frozen/identity/processor_files.csv",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "e471b7e2830ec4f53ee249b2a6707480858e357b30b4dc1616e718ef6fe18d41",
+      "size": 827
+    },
+    {
+      "relative_path": "frozen/identity/scientific_kernel_ast.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "5a6ad5c88d36120f19297a89ac0d56198d737ab394fa912ac977cbd71b7fc8a8",
+      "size": 7509
+    },
+    {
+      "relative_path": "frozen/source_model/08_M0_M3_model_results.csv",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "bd576a092eda349cccc34965468fd6d003de1da61118eef337ab6cd94e701426",
+      "size": 11639
+    },
+    {
+      "relative_path": "frozen/source_model/B3_MODEL_PROCESSOR_IDENTITY.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "f911d829077ec32bc0633f97ab52010c85ecc5d6fea4912cc328af71a38888f7",
+      "size": 2198
+    },
+    {
+      "relative_path": "frozen/source_model/B3_SOURCE_MODEL_BINDING_ORIGINAL.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "2774b1dab0e93912a3795ca3d1994c087213a01f04b9e4280981cd4430e2a887",
+      "size": 3111
+    },
+    {
+      "relative_path": "frozen/source_model/binding.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "642c2ed7b023aea8c6bd762891ff436f0f3eff6a95a58e56bf6f8c4b5d41dd20",
+      "size": 2758
+    },
+    {
+      "relative_path": "frozen/source_model/EMOTIONTALK_PHASE2_PAIRWISE_MODEL_FREEZE_V1.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "2f5e5e639ce22d79452aa54ca599fd0e14bc525cf874042b04065edadeed5019",
+      "size": 2440
+    },
+    {
+      "relative_path": "frozen/source_model/EMOTIONTALK_PHASE2_SCALER_PROVENANCE_RESOLUTION_V1.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "cd90c4238cb59096418d57eedc3da83f25e98be0ec4870e9662e8ce289410bb4",
+      "size": 5907
+    },
+    {
+      "relative_path": "frozen/source_model/EMOTIONTALK_PHASE2_SCIENTIFIC_ANALYSIS_V1_SUMMARY.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "e2d58be3cdfcf0089bf18edf6c080ad997c98405843b045cbbe94926dcaf1be9",
+      "size": 28199
+    },
+    {
+      "relative_path": "frozen/source_model/HF_COMMIT_CONTENT_VERIFICATION.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "8bbb419343bbf7cacf6d3444f5f382b229bee75db1ebd8ceee578215b9af874e",
+      "size": 1152
+    },
+    {
+      "relative_path": "frozen/source_model/HF_LOCAL_METADATA_IDENTITY.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "dd17b8464534b4d9542f94daa0d790098db42c4745b53cf3c4a46ec7f0275451",
+      "size": 10067
+    },
+    {
+      "relative_path": "frozen/source_model/HISTORICAL_B3_FORWARD_IDENTITY.csv",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "1834d4929aa6dab46c39dc7a455ebae7b64e319c10081d64282ee85c2ec2f5f1",
+      "size": 3063356
+    },
+    {
+      "relative_path": "frozen/source_model/HISTORICAL_B3_MEASUREMENT_IDENTITY.csv",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "a93f3bb76dbc02f65c168fca740147f466aad902b20b8a66a4cb4cf9e5740e1b",
+      "size": 3838213
+    },
+    {
+      "relative_path": "frozen/source_model/PROCESSOR_LOADING_PROVENANCE.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "54063c8a8494f91cf3bf4586df4f1d2d3d333bdb1954b2b3e04146ca043791bd",
+      "size": 57303
+    },
+    {
+      "relative_path": "frozen/source_model/publication_cv_input_provenance.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "20668a2def6787c8e5069304bbec6c89058e2aa9d2c91df2adb6540714c7b613",
+      "size": 1074
+    },
+    {
+      "relative_path": "frozen/source_model/publication_cv_records.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "8fb93aadd79eac9597677bd3409666ec2a31311762e0c6850673fb50f4129a13",
+      "size": 130527
+    },
+    {
+      "relative_path": "frozen/source_model/REPRODUCIBILITY_BOUNDARY_STATEMENT_V1.md",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "771bf1fd1243e2bc5db2a2e31af087bac3ecd0e1f7ac388a7e6ca4df4158450a",
+      "size": 3449
+    },
+    {
+      "relative_path": "frozen/target_assignment/assignment.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "65069110f64ba2e518c411b784c8b9aa581d2dd8154d7dcb0e23111d436dde35",
+      "size": 755744
+    },
+    {
+      "relative_path": "LICENSE",
+      "role": "RELEASE_DOCUMENTATION",
+      "SHA256": "5cd7b99cf6f781e0a312d72f434c5cd327c274d0165241712c34eed971a77651",
+      "size": 1104
+    },
+    {
+      "relative_path": "manifests/camer/controlled.jsonl",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "929a9734a5099c60f83890544401c09d703e32b728e0b9f4d6afd98b46c7869b",
+      "size": 2703030
+    },
+    {
+      "relative_path": "manifests/camer/frozen_joint_outcomes.csv",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "57ed776d5009ba50b3e07bcb7b78c4323a66b08e960e65bee20ecbfef82abd13",
+      "size": 3192677
+    },
+    {
+      "relative_path": "manifests/cross_regime/measurement_tasks.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "82798a27d5f55707ed1f1b0a76f07f65241989d0acbda1da3af7841011189fef",
+      "size": 24881087
+    },
+    {
+      "relative_path": "manifests/emotiontalk/EMOTIONTALK_MASTER_PANEL_SELECTION_V1.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "be985d99121e4cb8de59a97761d6cdb026eceff42c3d7bbf3c444bed99e28d8b",
+      "size": 154073
+    },
+    {
+      "relative_path": "manifests/emotiontalk/EMOTIONTALK_MASTER_PANEL_V1.csv",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "1ca8b79d8c146c6d807dd97a7bcd6cda519d5655e4cd0300afe7a92d159f406b",
+      "size": 804014
+    },
+    {
+      "relative_path": "manifests/emotiontalk/EMOTIONTALK_MEDIA_MANIFEST_V1.csv",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "c0343ac1cf79038dc5b9cfaf2cdebe9da3fbf13a18c24960656e2fabbd438c9d",
+      "size": 903223
+    },
+    {
+      "relative_path": "manifests/emotiontalk/EMOTIONTALK_PHASE2_POPULATION_PLAN_V1_2.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "0363b012bf5ce083854efa210d2b739c04a10262136ba6abc81e3d7438d05e20",
+      "size": 30778
+    },
+    {
+      "relative_path": "manifests/emotiontalk/EMOTIONTALK_PHASE3_GATE_SELECTION_V1.csv",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "6658998d788965f4f80eabae305989469431fe79755e2f9cb3d785dec2120460",
+      "size": 1581
+    },
+    {
+      "relative_path": "manifests/emotiontalk/EMOTIONTALK_VIDEO_CALIBRATION_CANDIDATES_V1.csv",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "2d8c479a9b9e0eac2aeec1e2f00d533d38d7806c9247b464e5bdfef778f585be",
+      "size": 1808
+    },
+    {
+      "relative_path": "manifests/emotiontalk/EMOTIONTALK_VIDEO_RESOURCE_INVENTORY_V1.csv",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "b8895958cd0f8ea536af5d679353c40d9e0c6d725b73064eacc8e83bb3e459f4",
+      "size": 548343
+    },
+    {
+      "relative_path": "manifests/emotiontalk/source_measurements.csv",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "3cc270054de466387e874be0dcb180dad12250e348c332a98fffba7d1c647042",
+      "size": 599216
+    },
+    {
+      "relative_path": "manifests/emotiontalk/trimodal_plan.csv",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "14fdc30700bbdebdf97f9bc21e15a98f07e48a00038c8976579431d5163e00ab",
+      "size": 233640
+    },
+    {
+      "relative_path": "manifests/listen/frozen_joint_outcomes.csv",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "cc145efa4b187deab567b547ab8b71b6456da6484820d96ec49810742b77aced",
+      "size": 1045827
+    },
+    {
+      "relative_path": "manifests/mcr/canonical_arbitration.csv",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "c81079ad56ef3957fb978b753d98ee31d0e0cafbe6876eb7489125fd805e0716",
+      "size": 1332051
+    },
+    {
+      "relative_path": "manifests/mcr/frozen_joint_outcomes.csv",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "789261e4fce394e6466bb67c0e55a3e0dce49c3d8b37ed76308c075660329266",
+      "size": 1895410
+    },
+    {
+      "relative_path": "protocols/b3/evaluation_plan.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "6b52298a6d0bc1c62b837e170226be67b91b3153e47812e5df4ee10683724266",
+      "size": 179641
+    },
+    {
+      "relative_path": "protocols/b3/measurement_freeze.md",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "9cc035d639333a7478ebfc60ff3d5662ba30d7c8873d776349fa01aebbb89f9b",
+      "size": 10924
+    },
+    {
+      "relative_path": "protocols/b3/output_schema.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "e9c9df94e73e606d0d7332d9ecb5236fc6ac1d2e391144c450f6e62d3604c05c",
+      "size": 626
+    },
+    {
+      "relative_path": "protocols/camer/CAMER_CONTROLLED_ANALYSIS_SPEC_V1.md",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "2004bb748024231212a992f6346369ee2d203080e0d4db7b6ce50877d06d149f",
+      "size": 3074
+    },
+    {
+      "relative_path": "protocols/camer/CAMER_CONTROLLED_ONTOLOGY_AUDIT_V1.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "62534b269c76b2ba91f39c0b56e7d121304f025fcfc776738004f417b156e4d8",
+      "size": 12393
+    },
+    {
+      "relative_path": "protocols/camer/CAMER_CONTROLLED_PARSER_CONTRACT_AUDIT_V1.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "37da7b305f536cea7c2822d902a549650682289171c501c2b79d5df2500f5d17",
+      "size": 13817
+    },
+    {
+      "relative_path": "protocols/camer/CAMER_CONTROLLED_PROTOCOL_V1.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "efbe18fefcd3964e1ccbb48df671cad7279d543a021f90bbd6c11dfbef83306f",
+      "size": 3387
+    },
+    {
+      "relative_path": "protocols/camer/CAMER_CONTROLLED_PROTOCOL_V1.md",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "7b3a72dbd8e85a9ae80f8556b8e0465862c6f7e6ce5ed4b602647669b3fca6af",
+      "size": 5749
+    },
+    {
+      "relative_path": "protocols/emotiontalk/CROSS_REGIME_TRANSFER_SPEC_V1.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "73495ba69b346db05323179683e16cf7abdf88be86d26e9224d79050c50e0714",
+      "size": 1005
+    },
+    {
+      "relative_path": "protocols/emotiontalk/CROSS_REGIME_TRANSFER_SPEC_V1.md",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "17a1e2fb8d8265289ec82704756c9844e98a47157def74b8b1fd3252c98866b9",
+      "size": 708
+    },
+    {
+      "relative_path": "protocols/emotiontalk/EMOTIONTALK_CANDIDATE_ORDER_AUDIT_V1.csv",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "6f886a747835d5326180f89ae3f0b0650eb20a8134653d16ce3d6eab84528d4f",
+      "size": 273392
+    },
+    {
+      "relative_path": "protocols/emotiontalk/EMOTIONTALK_CANDIDATE_SEQUENCES_V1.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "b249c68e92fa16ec7c41f617baffd1d293db8807b01b9c0f5d8490d41b790750",
+      "size": 6476
+    },
+    {
+      "relative_path": "protocols/emotiontalk/EMOTIONTALK_COMPOSITIONALITY_SPEC_V1_1.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "91de88c803eb91280f4d25852ffb4fe7e70f89ea1c5abdbacef863f2919ef2dc",
+      "size": 2063
+    },
+    {
+      "relative_path": "protocols/emotiontalk/EMOTIONTALK_COMPOSITIONALITY_SPEC_V1_1.md",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "6afd7395345eda4c3be8dc9e3b295561d9a2ef9e628cb7b85ef330845cf4eceb",
+      "size": 1774
+    },
+    {
+      "relative_path": "protocols/emotiontalk/EMOTIONTALK_CONTROLLED_PROTOCOL_V1.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "3c66b0a379fac6ce7aef8e27d589b9901825ec3c8db54dcda3e3b16772e60837",
+      "size": 11241
+    },
+    {
+      "relative_path": "protocols/emotiontalk/EMOTIONTALK_CONTROLLED_PROTOCOL_V1.md",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "949c51d55144e7b0df43dc59b0e696512d294ba7c06db3879f758a978eeae2d3",
+      "size": 3945
+    },
+    {
+      "relative_path": "protocols/emotiontalk/EMOTIONTALK_MEASUREMENT_SPEC_V1_2.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "e65eb6aa3fc1f7aafef4c7390dcf78443fa9dc8f7791e76af311e7734f117c18",
+      "size": 8005
+    },
+    {
+      "relative_path": "protocols/emotiontalk/EMOTIONTALK_MEASUREMENT_SPEC_V1_2.md",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "03ade2a4a6763f0736cb3a54161c3cc1c27ecddacdb06be2af199e7659afecc6",
+      "size": 4699
+    },
+    {
+      "relative_path": "protocols/emotiontalk/EMOTIONTALK_MEDIA_FREEZE_V1.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "02e8127e80e87a529ac713a006d04971b63d13b943e103efcf1d24f305725883",
+      "size": 4556
+    },
+    {
+      "relative_path": "protocols/emotiontalk/EMOTIONTALK_MEDIA_FREEZE_V1_PROVENANCE.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "2d0ad33483ba955c9c13d4c699c2ee1e387b07411f09ba2b767279c840a7f6ad",
+      "size": 507699
+    },
+    {
+      "relative_path": "protocols/emotiontalk/EMOTIONTALK_PHASE1_COMPETENCE_FULL_V1_2.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "4890dc0b1c96cb7cc638ce8ed3483548d0aaf02c2de3b929e03b06f8a6be7b85",
+      "size": 50552
+    },
+    {
+      "relative_path": "protocols/emotiontalk/EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "5823abd732a60d5f0f9ed90ad6ef2e53463e4d159758ca12e7cdf94ec0e60d7a",
+      "size": 7240
+    },
+    {
+      "relative_path": "protocols/emotiontalk/EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2.md",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "a7ed5050fa7c48c9921c580d088706bb52cf119f8daed8688504bc98ffcab5ab",
+      "size": 1728
+    },
+    {
+      "relative_path": "protocols/emotiontalk/EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2_PROVENANCE.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "fdd8b75a8803ad52f6a72b15e4799066d27afe29a6109fa8524b58962d478ed1",
+      "size": 13838
+    },
+    {
+      "relative_path": "protocols/emotiontalk/EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2_SHA256SUMS.txt",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "e8e550a9587fd891fd94cac6cfef5210befa4e203accbe1d01352b5472f469fe",
+      "size": 8134
+    },
+    {
+      "relative_path": "protocols/emotiontalk/EMOTIONTALK_PHASE3_COMPOSITION_RULE_FREEZE_V1.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "fe1623e42402d32f2ebebda8c5d8b1feaad69a852a0391e7ad2c2030dfd4d3b6",
+      "size": 2696
+    },
+    {
+      "relative_path": "protocols/emotiontalk/EMOTIONTALK_PHASE3_FULL_V1_FREEZE.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "e2e9e0dbf54d91c1471bee473439a7e6970bc3890598562c39438f4cc1ccf783",
+      "size": 1216
+    },
+    {
+      "relative_path": "protocols/emotiontalk/EMOTIONTALK_POPULATION_TUPLE_SUPPORT_V1_2.csv",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "c78c0ac57866a663d05895a83649de354826d8bf21140b13101a167d81362662",
+      "size": 16249
+    },
+    {
+      "relative_path": "protocols/emotiontalk/EMOTIONTALK_POPULATION_WEIGHTING_SPEC_V1.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "423c872dd9052f0d099db45d8564e96a565d0bb3dcd7bd2e1a0b9ee6fd105387",
+      "size": 84240
+    },
+    {
+      "relative_path": "protocols/emotiontalk/EMOTIONTALK_PREAUDIT_STATIC_V1_2.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "9654727cd6164f52e5d1e4efacf3dc46c5337cf175a4c50d5626ed4f50096765",
+      "size": 4365
+    },
+    {
+      "relative_path": "protocols/emotiontalk/EMOTIONTALK_V1_1_V1_2_GATE_REPEAT_COMPARISON_V1_2.csv",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "5d5f01c22993ce04a0ba093f27ed62b4ba1982d57f23b653cdb83582b7dfd1a9",
+      "size": 1795
+    },
+    {
+      "relative_path": "protocols/mcr/MCR_CONTROLLED_ARBITRATION_ANALYSIS_SPEC_V2.md",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "17230d00a0ce07305658b5de4cdeaf14cf830bd5c70e87a74bca6195ed6b04b7",
+      "size": 6171
+    },
+    {
+      "relative_path": "protocols/mcr/MCR_CONTROLLED_BOOTSTRAP_RESULTS_V2_1.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "e80297894dfe1adc4a3c507f76b1118b1cbc47902224affdaad0296b2fcb850d",
+      "size": 8658
+    },
+    {
+      "relative_path": "protocols/mcr/MCR_CONTROLLED_BOOTSTRAP_RESULTS_V2_1.md",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "a307cf86b0ad7bd04b3313b4c6e91c84c14583251f19b0dce14fa79de8e4c105",
+      "size": 1820
+    },
+    {
+      "relative_path": "protocols/mcr/MCR_CONTROLLED_DIRECTIONAL_PAIR_RESULTS_V2.csv",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "8895bff4acee8361e46ded60a1bea372d55bf860eac38855e3f30c5a22550464",
+      "size": 16233
+    },
+    {
+      "relative_path": "protocols/mcr/MCR_CONTROLLED_DUAL_READABLE_DIAGNOSTICS_V2.csv",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "d96f982a3d1e43bc17b29dc67dc3b9b606325a7147e949d65c07aa7e9c081b3f",
+      "size": 25535
+    },
+    {
+      "relative_path": "protocols/mcr/MCR_CONTROLLED_FULL_V2_COMPLETENESS.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "639e7a118b1fea4539626546d3345a880f507a7efa2f01ce716a6907524f1fa3",
+      "size": 1217
+    },
+    {
+      "relative_path": "protocols/mcr/MCR_CONTROLLED_PROTOCOL_V2_STATIC_AUDIT.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "f43b320b2b897189ec32580becb95218ec0573b67764da6eb0eef8bcbf9b1201",
+      "size": 9181
+    },
+    {
+      "relative_path": "protocols/mcr/MCR_CONTROLLED_PROTOCOL_V2_STATIC_AUDIT.md",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "a20c6f5b452c774c119ac33df7324bce76b29f952ae1ba1fa76ed59d31ad0cbb",
+      "size": 377
+    },
+    {
+      "relative_path": "protocols/mcr/MCR_CONTROLLED_SCIENTIFIC_RESULTS_V2.json",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "009d2fadfe128ea2e7e512f972a112db8d7bd0949064bb6c7b12dc7315b874a6",
+      "size": 265522
+    },
+    {
+      "relative_path": "protocols/mcr/MCR_CONTROLLED_SCIENTIFIC_RESULTS_V2.md",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "36d05f18632e190aa11c6efb85c121ea0567c3bbc69605600dc7534a01d0d2a2",
+      "size": 2486
+    },
+    {
+      "relative_path": "protocols/mcr/MCR_CONTROLLED_STATISTICAL_EXECUTION_ADDENDUM_V2_1.md",
+      "role": "FROZEN_SCIENTIFIC_DEFINITION",
+      "SHA256": "c222559a5188ca7bc8a20224324e17456ea7ebf1045dadb3d1e69b4fefd04762",
+      "size": 1468
+    },
+    {
+      "relative_path": "pytest.ini",
+      "role": "RELEASE_DOCUMENTATION",
+      "SHA256": "6a96ba0e2d5a8296fb90f474da9d2f0173d3e41eba18965513f711104155f913",
+      "size": 41
+    },
+    {
+      "relative_path": "README.md",
+      "role": "RELEASE_DOCUMENTATION",
+      "SHA256": "deb69f7dac0ad1eb1c9a3a71f43e7e69f5856b842dfc43c97159ecf6ba4da7e6",
+      "size": 9525
+    },
+    {
+      "relative_path": "requirements-gpu.txt",
+      "role": "RELEASE_DOCUMENTATION",
+      "SHA256": "f6f1cd7bdbdcf33da8459cf183815c123c43ecd1f7c1c27500bf7d3f21fcdf56",
+      "size": 399
+    },
+    {
+      "relative_path": "requirements.txt",
+      "role": "RELEASE_DOCUMENTATION",
+      "SHA256": "b8442247827a3dff87c8c54a9d01ca65da460516ea75b9bf07f2350da53f97cb",
+      "size": 168
+    },
+    {
+      "relative_path": "results/mainline_summary/cross_regime/B3_CORRECTED_DATASET_METRICS_V1.csv",
+      "role": "FROZEN_RESULT",
+      "SHA256": "b6f0892cb2ec799cdeaf5413ce31bad554ca3dfa7d7713a080b5e3c806788b6b",
+      "size": 2291
+    },
+    {
+      "relative_path": "results/mainline_summary/cross_regime/B3_CORRECTED_MEASUREMENT_CLOSEOUT_V1.json",
+      "role": "FROZEN_RESULT",
+      "SHA256": "bd42436eb87bbe52978c9fb37c43c1b89257e028b180416d7f33bb3f4a7754fa",
+      "size": 2391
+    },
+    {
+      "relative_path": "results/mainline_summary/cross_regime/B3_OLD_VS_CORRECTED_COMPARISON_V1.csv",
+      "role": "FROZEN_RESULT",
+      "SHA256": "e07cdd2d2a749e1fe39e57c587e6a15e47fb3c85e1e135f307a5b158c4fb0423",
+      "size": 5794
+    },
+    {
+      "relative_path": "results/mainline_summary/cross_regime/B3_ZERO_REFIT_FINAL_EVALUATION_V1.json",
+      "role": "FROZEN_RESULT",
+      "SHA256": "d92fe29bc7ac9d2b580f2ec41b9bcf07c1bcb3961e865b582e9f503a9a2936b4",
+      "size": 10031
+    },
+    {
+      "relative_path": "results/mainline_summary/cross_regime/B3_ZERO_REFIT_FINAL_EVALUATION_V1.md",
+      "role": "FROZEN_RESULT",
+      "SHA256": "8a008993d5a2ce98b9c6b2440535c934fdbd193c26da1c671003b69c497890c3",
+      "size": 7303
+    },
+    {
+      "relative_path": "results/mainline_summary/cross_regime/comparison_reference.json",
+      "role": "FROZEN_RESULT",
+      "SHA256": "42914094ae687ebfac7f8bc1155c8323b161a36c522740d6847b3e312e90c8f8",
+      "size": 5196
+    },
+    {
+      "relative_path": "results/mainline_summary/phase2/01_population_integrity.csv",
+      "role": "FROZEN_RESULT",
+      "SHA256": "1deac0a644652906d3b62ffe1f181fd48d08bd8915ad7f385fafa84a479ce9de",
+      "size": 293
+    },
+    {
+      "relative_path": "results/mainline_summary/phase2/02_conflict_descriptive_by_order.csv",
+      "role": "FROZEN_RESULT",
+      "SHA256": "642a97d69ac9b3bc80aa72d6aab9f791e4c3fde4e4321d8024131f11e074a21f",
+      "size": 1705
+    },
+    {
+      "relative_path": "results/mainline_summary/phase2/03_conflict_coverage.csv",
+      "role": "FROZEN_RESULT",
+      "SHA256": "45d6729351833258e2c6e8b022b13491f0d9db0cc36f5bc0a03d3a131b227f40",
+      "size": 129
+    },
+    {
+      "relative_path": "results/mainline_summary/phase2/04_paired_order_behavior.csv",
+      "role": "FROZEN_RESULT",
+      "SHA256": "08e4726dd06935734d60278476739822a3c0b915301e9584ddb5d759a35d2352",
+      "size": 3243
+    },
+    {
+      "relative_path": "results/mainline_summary/phase2/05_consistent_controls.csv",
+      "role": "FROZEN_RESULT",
+      "SHA256": "e02eb6a4a9edd6efd67829f1bd707a0f77643f6281baf5b3892871af733ae612",
+      "size": 3960
+    },
+    {
+      "relative_path": "results/mainline_summary/phase2/07_feature_diagnostics.csv",
+      "role": "FROZEN_RESULT",
+      "SHA256": "e994d0c90fdd4f6da917753ded2c93afccb4f11463d0e7d3a02ef310f7e089b9",
+      "size": 3453
+    },
+    {
+      "relative_path": "results/mainline_summary/phase2/10_cluster_bootstrap_results.csv",
+      "role": "FROZEN_RESULT",
+      "SHA256": "4c685b78306276019d8b8cfd4eb8032053b0711b29a8de4709142cc647521e4b",
+      "size": 11260
+    },
+    {
+      "relative_path": "results/mainline_summary/phase2/11_pair_heterogeneity_diagnostics.csv",
+      "role": "FROZEN_RESULT",
+      "SHA256": "e9cc1b4c6eb25aaeb43fe2d4e4e4d7b35fa078c1f91cdcfe6c32f9247837b028",
+      "size": 5823
+    },
+    {
+      "relative_path": "results/mainline_summary/phase3/02_overall_compositionality.csv",
+      "role": "FROZEN_RESULT",
+      "SHA256": "1de022f44bb8ad330676311cf4d37aa6cb97f729e443cb1a54f1cb3b872259e1",
+      "size": 475
+    },
+    {
+      "relative_path": "results/mainline_summary/phase3/03_by_order.csv",
+      "role": "FROZEN_RESULT",
+      "SHA256": "9db824ca01849a7d6e73871e331069a335f744bc747a3025443f9d11310fd3a8",
+      "size": 592
+    },
+    {
+      "relative_path": "results/mainline_summary/phase3/04_by_prediction_class.csv",
+      "role": "FROZEN_RESULT",
+      "SHA256": "80e21ddb95721c774235a9965cfdb1acec6d5ca62e190371b20e858cacfc3f0a",
+      "size": 106
+    },
+    {
+      "relative_path": "results/mainline_summary/phase3/05_by_pattern.csv",
+      "role": "FROZEN_RESULT",
+      "SHA256": "ad4ebb03b188c9c85f6adaf241d65ffa5d00c67b314661404802b6636b61a419",
+      "size": 312
+    },
+    {
+      "relative_path": "results/mainline_summary/phase3/07_cluster_bootstrap.csv",
+      "role": "FROZEN_RESULT",
+      "SHA256": "a94e9f1f0d341cca0dec1e889f2afd57cfbb3acba0a498a40e39cea41cffea24",
+      "size": 187
+    },
+    {
+      "relative_path": "results/mainline_summary/phase3/08_prediction_class_contrast.csv",
+      "role": "FROZEN_RESULT",
+      "SHA256": "a091a021989573ddef2beaee915081435c89a5482e63daced198f7fe90eb5bd5",
+      "size": 305
+    },
+    {
+      "relative_path": "results/mainline_summary/phase3/09_order_heterogeneity.csv",
+      "role": "FROZEN_RESULT",
+      "SHA256": "95dbce96e8c185918f0cbab0c079258390c9ebf1663318d0b6eeb8bb5f04a94f",
+      "size": 586
+    },
+    {
+      "relative_path": "results/mainline_summary/phase3/EMOTIONTALK_PHASE3_LIMITED_INFERENTIAL_AUDIT_V1.json",
+      "role": "FROZEN_RESULT",
+      "SHA256": "0ed5acb299926a07c662ee5915c53e6832b09d11aa0cad9acfb623e916898961",
+      "size": 2949
+    },
+    {
+      "relative_path": "results/mainline_summary/phase3/EMOTIONTALK_PHASE3_SCIENTIFIC_ANALYSIS_V1_SUMMARY.json",
+      "role": "FROZEN_RESULT",
+      "SHA256": "984960a92787bcda2426940325021a13cb22564278fd58a2c3fdb1300a8b3a20",
+      "size": 1588
+    },
+    {
+      "relative_path": "results/mainline_summary/phase3/EMOTIONTALK_PHASE3_SCIENTIFIC_FREEZE_V1.json",
+      "role": "FROZEN_RESULT",
+      "SHA256": "d18eeaa9994bdbd65e4d6edc1a3d5f081dd4c7bdc48d1459d3932e4c51bde99f",
+      "size": 1747
+    },
+    {
+      "relative_path": "src/__init__.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "relative_path": "src/common/__init__.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "relative_path": "src/common/audio_compat.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "99635369cc14ad47b6db32f5028abda1cd6bdb3c39cc23200c0dc60b5f178e39",
+      "size": 1647
+    },
+    {
+      "relative_path": "src/common/benchmarks/__init__.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "relative_path": "src/common/benchmarks/camer_adapter.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "67e8a85b1454fc6e2044fbac75dabc64e7a4110ee7cef75ede3138edc73548dc",
+      "size": 12752
+    },
+    {
+      "relative_path": "src/common/benchmarks/camer_controlled_parser_v1.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "95de335c625f3071d66e317e3ecf99ae7742b201952f1c41bb3bd70084c1a233",
+      "size": 2520
+    },
+    {
+      "relative_path": "src/common/benchmarks/emotiontalk_controlled_parser_v1.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "c852f18279dd0d89fc8a97bab0516943775580a1a7dbcfe276e901d14ff7d374",
+      "size": 1050
+    },
+    {
+      "relative_path": "src/common/benchmarks/listen_adapter.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "4088b0c6aa4cc59c0d0d67b5a01774de92bf06ee13a245fad15db09c0a6efc9e",
+      "size": 12577
+    },
+    {
+      "relative_path": "src/common/benchmarks/listen_native_parser_v1.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "5165b586e7c08370b5d6d73bb72a4a5317baec57d0cb1695697943646665f14b",
+      "size": 1168
+    },
+    {
+      "relative_path": "src/common/benchmarks/mcr_adapter.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "d9e643a46e605a80d56cbb15b55dce0022e9f8af0bce0ffee37903acf9f390d6",
+      "size": 4068
+    },
+    {
+      "relative_path": "src/common/benchmarks/mcr_controlled_manifest_v1.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "22d435dde7a141dd82a2b3caf6db89e6c168641e5cb91ee400ae624f592ad83f",
+      "size": 4539
+    },
+    {
+      "relative_path": "src/common/benchmarks/mcr_controlled_text_extractor_v1.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "5530af1f47812de8ae6f0c8ae00a466f57294e8f00aa3833a7dcec0013daf02c",
+      "size": 5227
+    },
+    {
+      "relative_path": "src/common/benchmarks/mcr_ser_parser_v1.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "f72e825f686528b038dbb6c26b15574e78fddbab8cb3777e04e0680544d4580e",
+      "size": 2256
+    },
+    {
+      "relative_path": "src/common/runtime.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "8cba662a3148af1f7281c96fffa185ec719ef8dc80592533f4d3d197e38efe32",
+      "size": 2636
+    },
+    {
+      "relative_path": "src/cross_regime/__init__.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "relative_path": "src/cross_regime/run_camer_joint.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "3e6c68660839d69346aa53edb7657c1b949ba4ff0b136bed25025c74ee17590e",
+      "size": 59232
+    },
+    {
+      "relative_path": "src/cross_regime/run_listen_joint.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "7cc0bccb901c4a76fe3c2911c76dff36339b22401c8335e80f1fdb7a12cc4728",
+      "size": 10380
+    },
+    {
+      "relative_path": "src/cross_regime/run_mcr_joint.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "ef60a1d48ba0fec49493df3da67de7f35268df7581223121a3ae726bd8b62b16",
+      "size": 10711
+    },
+    {
+      "relative_path": "src/cross_regime/target_scoring/__init__.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "a4d1dec569e641466808daf0157969fd8494913f3ceca707d47cacb6ade24862",
+      "size": 92
+    },
+    {
+      "relative_path": "src/cross_regime/target_scoring/b3_protocol.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "5f0ad0066088f870a47bbbaa3f20994b3597cc4f98843db5e0601c51d3f8552a",
+      "size": 9775
+    },
+    {
+      "relative_path": "src/cross_regime/target_scoring/b3_scorer.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "82d7b0b59487147291477987643980476f79a4e8b7c723cbe010fec7963e18ab",
+      "size": 5068
+    },
+    {
+      "relative_path": "src/cross_regime/target_scoring/finalize.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "078c434d0f2a34bb3d43e7c7bda4c121ffe96de1eeb8aaeb6cba80963fbb5f6f",
+      "size": 4306
+    },
+    {
+      "relative_path": "src/cross_regime/target_scoring/inputs.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "c5c6f5baeca125971708341d27ae65825bdcc6831c9b77b1ab6c9222d8860634",
+      "size": 2063
+    },
+    {
+      "relative_path": "src/cross_regime/target_scoring/run.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "3ec6cd89a4751df0526a330bb063506a81ffe1a9016cec78ee81a823158e8c3c",
+      "size": 6767
+    },
+    {
+      "relative_path": "src/cross_regime/target_scoring/source_teacher_forcing.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "62d50ec5972341f3a33651c3ef30dde39291176e5f0188eb44012c42cc0b4c1b",
+      "size": 8516
+    },
+    {
+      "relative_path": "src/cross_regime/target_scoring/verify_runtime.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "3e4e20356682a236c73876231c8ef39f3281b0c7f86a67d9a7608777ae3a673f",
+      "size": 2742
+    },
+    {
+      "relative_path": "src/cross_regime/zero_refit/__init__.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "relative_path": "src/cross_regime/zero_refit/evaluate.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "631a4a1fbde1dfb5dbaa66412cb31aedb14eefe4c010256e33e2ebf88d1c9862",
+      "size": 27590
+    },
+    {
+      "relative_path": "src/cross_regime/zero_refit/metrics.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "374618ae7d3045adf712f4c798f4fd372f335e89a767115aaaff2fe2eba1ef1c",
+      "size": 7224
+    },
+    {
+      "relative_path": "src/emotiontalk/__init__.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "relative_path": "src/emotiontalk/phase1/__init__.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "relative_path": "src/emotiontalk/phase1/execution.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "248c39a2768a19f64625381273a24b5f90db7cea47790af28edd585e77ddd264",
+      "size": 41136
+    },
+    {
+      "relative_path": "src/emotiontalk/phase1/plan.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "1a54e19271efd072e9409b7dfff3ecb8a940f27fc7074f44dfdbf2c98e203aa9",
+      "size": 35961
+    },
+    {
+      "relative_path": "src/emotiontalk/phase1/run.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "a7c9b373f0e952609967da25bb6d0f4923b925f81fe9ea1c722d22c721fe8e06",
+      "size": 3908
+    },
+    {
+      "relative_path": "src/emotiontalk/phase2/__init__.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "relative_path": "src/emotiontalk/phase2/core.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "cf7b08ce206caa546241dd688508310e13a0748e7b3d904fb37fa7a43bf781f4",
+      "size": 12485
+    },
+    {
+      "relative_path": "src/emotiontalk/phase2/execution.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "4ff4ec3b925cd3019e4b6b8dd20070f0e6e5e50971aff37e1aba4a928c3e12ef",
+      "size": 37276
+    },
+    {
+      "relative_path": "src/emotiontalk/phase2/run.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "42628411a0a9c27d1dcf3c250137772bd775d1bbff659c21b73e8eaad57b55b3",
+      "size": 1721
+    },
+    {
+      "relative_path": "src/emotiontalk/phase3/__init__.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "relative_path": "src/emotiontalk/phase3/execution.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "3ae86ec68541f66e201137b21c34640c69e75c4cb308b693a5dce0bc7ef41c86",
+      "size": 12704
+    },
+    {
+      "relative_path": "src/emotiontalk/phase3/run.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "1c86aa631a4b6df769ba8171a5d5d6adb50d5d3a512682dc180ece06267d465b",
+      "size": 1315
+    },
+    {
+      "relative_path": "src/emotiontalk/runtime.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "72f394160a658789697b00422e044868efa74d84a2ed7b533f1637585ba86944",
+      "size": 947
+    },
+    {
+      "relative_path": "src/reconstruction/__init__.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "relative_path": "src/reconstruction/camer/__init__.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "relative_path": "src/reconstruction/camer/prepare_media.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "1e4d5af35db6a6d93798bf147647470bd039209e5c3af59a8896b969aaf895cd",
+      "size": 25082
+    },
+    {
+      "relative_path": "src/reconstruction/camer/reconstruct.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "aabb0ce8e9691ff0d44548605369abbf6a27e688e9233317fee640f13f9cfce6",
+      "size": 15322
+    },
+    {
+      "relative_path": "src/reconstruction/emotiontalk/__init__.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "relative_path": "src/reconstruction/emotiontalk/reconstruct.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "86bcb5bfaa906b62e0f9f1194b38243eef96ebfa15746d0ce1c995bf90a77822",
+      "size": 7547
+    },
+    {
+      "relative_path": "src/reconstruction/listen/__init__.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "relative_path": "src/reconstruction/listen/reconstruct.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "c529bead372cf26604fb52b61e9e823ea48f452f457295443e90c85de2fc347c",
+      "size": 7109
+    },
+    {
+      "relative_path": "src/reconstruction/mcr/__init__.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "relative_path": "src/reconstruction/mcr/reconstruct.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "4f767ed8e8dec94edce516742efe306338d94e81013944c8bba142dfa3726bd9",
+      "size": 7639
+    },
+    {
+      "relative_path": "src/utils/__init__.py",
+      "role": "CURRENT_SOURCE",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "relative_path": "tests/conftest.py",
+      "role": "REGRESSION_TEST",
+      "SHA256": "68068960f72c42bffa0ffb5ce71b369536fddff18868c4225e3ce3e4f474f76d",
+      "size": 150
+    },
+    {
+      "relative_path": "tests/test_emotiontalk_parser.py",
+      "role": "REGRESSION_TEST",
+      "SHA256": "369571aef80258d85a2cb2e58610d186855fc4aad9a0244400855350f847c6f6",
+      "size": 1060
+    },
+    {
+      "relative_path": "tests/test_frozen_measurement.py",
+      "role": "REGRESSION_TEST",
+      "SHA256": "3da04cef0a494fbf76600bf9c10c3a8639b4d9ff3c6047a020ddf2a3b9e6a351",
+      "size": 10034
+    },
+    {
+      "relative_path": "tests/test_pipeline_regressions.py",
+      "role": "REGRESSION_TEST",
+      "SHA256": "3a43a8ae387405daa68b4f7cc63662aa5f31e5e0266e9ee0933d9d7ef7f74ac4",
+      "size": 4250
+    },
+    {
+      "relative_path": "tests/test_release_contracts.py",
+      "role": "REGRESSION_TEST",
+      "SHA256": "05b8e9a225bafd71df10724f4e5f5e151257c8aa4fb488c075a9745cfa055fb4",
+      "size": 6504
+    },
+    {
+      "relative_path": "tests/test_release_source_inputs.py",
+      "role": "REGRESSION_TEST",
+      "SHA256": "d29dd59e45ea5bab3db0254436bbbb8dacf49bb266bc3a108d7db3e01710fa22",
+      "size": 1644
+    }
+  ],
+  "QWEN_MAINLINE_SCIENCE": "CLOSED",
+  "B3_FINAL_SCIENTIFIC_RULING": "SURVIVES_WITH_CORRECTION",
+  "raw_data_included": false,
+  "model_weights_included": false,
+  "GPU_executed_for_packaging": false
+}

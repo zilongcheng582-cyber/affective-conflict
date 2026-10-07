@@ -1,0 +1,229 @@
+{
+  "EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2_STATUS": "PASS",
+  "EMOTIONTALK_PRE_FULL_RUN_MEASUREMENT_FREEZE_V1_2_STATUS": "PASS",
+  "scope": "pre-full-run methods and measurement gate only; no scientific result analysis",
+  "checks": {
+    "preaudit_static_pass": true,
+    "all_measurement_specs_exist": true,
+    "candidate_assignment_independent_by_design": true,
+    "candidate_position_balance_pass": true,
+    "official_TAV_ID_tuple_support_complete": true,
+    "human_annotation_uncertainty_metadata_available": true,
+    "V1_1_runner_and_results_unchanged": true,
+    "official_repo_commit_main_clean": true,
+    "18_generation_parser_rows": true,
+    "candidate_score_rows_18": true,
+    "candidate_score_probabilities_valid": true,
+    "candidate_score_labels_and_token_counts_valid": true,
+    "greedy_score_agreement_measurement_valid": true,
+    "V1_1_repeat_same_samples_arms_sequences_parsed_output": true,
+    "frozen_inputs_verified_by_runner": true,
+    "technical_gate_runner_pass": true,
+    "no_OOM_or_other_technical_failure": true
+  },
+  "technical_run_counts": {
+    "planned_records": 18,
+    "attempted_records": 18,
+    "generation_attempt_count": 18,
+    "generation_success_count": 18,
+    "parser_execution_count": 18,
+    "parse_successes": 18,
+    "parse_failures": 0,
+    "cuda_oom_count": 0,
+    "other_technical_failure_count": 0
+  },
+  "candidate_scoring": {
+    "successful_scored_records": 18,
+    "teacher_forced_forward_call_total": 90,
+    "candidate_token_count_histogram": {
+      "1": 54,
+      "2": 18,
+      "3": 54
+    },
+    "method": "exact canonical candidate string teacher forcing; sum and mean token log probabilities",
+    "primary_probability": "softmax(mean token log probability)",
+    "sensitivity_probability": "softmax(sum token log probability)",
+    "readability_or_prediction_changed": false
+  },
+  "V1_1_repeat_comparison": {
+    "record_pairs": 18,
+    "sample_and_arm_equal": 18,
+    "candidate_sequence_equal": 18,
+    "parsed_label_equal": 18,
+    "generation_configuration_equal": 18,
+    "raw_output_exact_equal": 18,
+    "raw_output_whitespace_only_difference": 0,
+    "comparison_csv": "EMOTIONTALK_V1_1_V1_2_GATE_REPEAT_COMPARISON_V1_2.csv"
+  },
+  "candidate_order_audit": {
+    "schedule_mechanism_verified": true,
+    "label_independence_by_design": true,
+    "candidate_sequence_usage": {
+      "CS01": 108,
+      "CS02": 108,
+      "CS03": 107,
+      "CS04": 107,
+      "CS05": 107,
+      "CS06": 107,
+      "CS07": 107,
+      "CS08": 107,
+      "CS09": 107,
+      "CS10": 107,
+      "CS11": 107,
+      "CS12": 107,
+      "CS13": 107,
+      "CS14": 107
+    },
+    "sequence_usage_pass": true,
+    "panel_source_label_alignment": true,
+    "overall_position_label_counts": {
+      "1": {
+        "angry": 215,
+        "disgusted": 215,
+        "fearful": 214,
+        "happy": 214,
+        "neutral": 214,
+        "sad": 214,
+        "surprised": 214
+      },
+      "2": {
+        "angry": 214,
+        "disgusted": 215,
+        "fearful": 215,
+        "happy": 214,
+        "neutral": 214,
+        "sad": 214,
+        "surprised": 214
+      },
+      "3": {
+        "angry": 214,
+        "disgusted": 214,
+        "fearful": 215,
+        "happy": 215,
+        "neutral": 214,
+        "sad": 214,
+        "surprised": 214
+      },
+      "4": {
+        "angry": 214,
+        "disgusted": 214,
+        "fearful": 214,
+        "happy": 215,
+        "neutral": 215,
+        "sad": 214,
+        "surprised": 214
+      },
+      "5": {
+        "angry": 214,
+        "disgusted": 214,
+        "fearful": 214,
+        "happy": 214,
+        "neutral": 215,
+        "sad": 215,
+        "surprised": 214
+      },
+      "6": {
+        "angry": 214,
+        "disgusted": 214,
+        "fearful": 214,
+        "happy": 214,
+        "neutral": 214,
+        "sad": 215,
+        "surprised": 215
+      },
+      "7": {
+        "angry": 215,
+        "disgusted": 214,
+        "fearful": 214,
+        "happy": 214,
+        "neutral": 214,
+        "sad": 214,
+        "surprised": 215
+      }
+    },
+    "overall_position_balance_max_minus_min": 1,
+    "position_balance_pass": true,
+    "cross_tabs_csv": "EMOTIONTALK_CANDIDATE_ORDER_AUDIT_V1.csv",
+    "interpretation": "schedule shuffled globally after label-controlled panel selection; cross-tabs are descriptive diagnostics; no sequence reassignment or panel reselection."
+  },
+  "population_weighting": {
+    "population_n": 19250,
+    "panel_n": 1500,
+    "population_pattern_counts": {
+      "A=V!=T": 5700,
+      "ALL_SAME": 5235,
+      "ALL_DIFFERENT": 3015,
+      "T=A!=V": 3701,
+      "T=V!=A": 1599
+    },
+    "panel_pattern_counts": {
+      "ALL_DIFFERENT": 300,
+      "A=V!=T": 300,
+      "T=A!=V": 300,
+      "T=V!=A": 300,
+      "ALL_SAME": 300
+    },
+    "ordered_tuple_count_population": 316,
+    "ordered_tuple_count_panel": 316,
+    "population_mass_supported_by_panel_tuples": 1.0,
+    "unsupported_population_tuple_n": 0,
+    "unsupported_population_mass_n": 0,
+    "full_population_reweighting_identifiable": true,
+    "weighting_csv": "EMOTIONTALK_POPULATION_TUPLE_SUPPORT_V1_2.csv",
+    "primary_estimand": "balanced frozen panel, not naturally distributed population"
+  },
+  "panel_static_validation": {
+    "panel_n": 1500,
+    "unique_utterances": 1500,
+    "pattern_counts": {
+      "ALL_DIFFERENT": 300,
+      "A=V!=T": 300,
+      "T=A!=V": 300,
+      "T=V!=A": 300,
+      "ALL_SAME": 300
+    },
+    "pairwise_conflict_consistent_counts": {
+      "AV": {
+        "conflict": 900,
+        "consistent": 600
+      },
+      "AT": {
+        "conflict": 900,
+        "consistent": 600
+      },
+      "VT": {
+        "conflict": 900,
+        "consistent": 600
+      }
+    },
+    "panel_source_labels_match_official_TAV_annotations": true
+  },
+  "annotation_uncertainty": {
+    "rows": 6000,
+    "five_A_to_E_votes_and_confidence_available": true,
+    "role": "descriptive only; not used for panel selection/readability/primary outcome/transfer",
+    "file": "EMOTIONTALK_ANNOTATION_UNCERTAINTY_V1.csv"
+  },
+  "phase1_full_run_started": false,
+  "prior_scorer_implementation_attempt": {
+    "status": "THREE_TECHNICAL_FAILURES_PRESERVED",
+    "artifact_dirs": [
+      "attempt_1_candidate_scorer_failure",
+      "attempt_2_cache_branch_failure",
+      "attempt_3_source_label_field_failure"
+    ],
+    "causes": [
+      "outer Qwen2.5-Omni wrapper has no forward; use its text-generating thinker submodule",
+      "incremental cache branch shape was incompatible with this Flash Attention cache path; final scorer uses full teacher-forced sequence forwards per multi-token candidate",
+      "selected sample records did not carry source-side labels needed only for source-label probability; V1.2 now attaches these panel fields after selection without changing prompt inputs"
+    ],
+    "generation_and_parser_completed_before_each_failure": 1,
+    "CUDA_OOM": false
+  },
+  "EMOTIONTALK_SCIENCE_STATUS": "NOT_RUN",
+  "SCIENTIFIC_METRICS_COMPUTED": false,
+  "MODEL_INFERENCE_RUN": true,
+  "model_inference_scope": "only repeated 18-record technical gate, including candidate measurement scoring",
+  "next_step": "EMOTIONTALK_PHASE1_COMPETENCE_FULL_RUN_V1_2",
+  "created_utc": "2026-09-25T11:38:33.279668+00:00"
+}

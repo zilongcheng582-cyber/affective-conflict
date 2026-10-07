@@ -1,0 +1,396 @@
+{
+  "arms": [
+    "A_ONLY",
+    "T_ONLY",
+    "A_THEN_T",
+    "T_THEN_A"
+  ],
+  "candidate_group_counts": {
+    "C0": 65,
+    "C1": 62,
+    "C2": 64,
+    "C3": 65,
+    "C4": 66,
+    "C5": 65,
+    "C6": 66,
+    "R0": 67,
+    "R1": 62,
+    "R2": 65,
+    "R3": 64,
+    "R4": 65,
+    "R5": 68,
+    "R6": 65
+  },
+  "candidate_order_salt": "MCR_CONTROLLED_SCI_PROTOCOL_V2_CANDIDATE_ORDER",
+  "candidate_position_counts": {
+    "audio": {
+      "0": 126,
+      "1": 129,
+      "2": 137,
+      "3": 127,
+      "4": 134,
+      "5": 130,
+      "6": 126
+    },
+    "text": {
+      "0": 123,
+      "1": 130,
+      "2": 131,
+      "3": 136,
+      "4": 135,
+      "5": 130,
+      "6": 124
+    }
+  },
+  "candidate_sequence_count": 14,
+  "candidate_sequence_ids_used": [
+    "C0",
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "R0",
+    "R1",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6"
+  ],
+  "deterministic_regeneration_hash_equal": true,
+  "directional_strata": {
+    "angry->disgusted": {
+      "audio_before_text": 6,
+      "n": 12,
+      "text_before_audio": 6,
+      "ties": 0
+    },
+    "angry->fearful": {
+      "audio_before_text": 14,
+      "n": 28,
+      "text_before_audio": 14,
+      "ties": 0
+    },
+    "angry->happy": {
+      "audio_before_text": 9,
+      "n": 17,
+      "text_before_audio": 8,
+      "ties": 0
+    },
+    "angry->neutral": {
+      "audio_before_text": 9,
+      "n": 19,
+      "text_before_audio": 10,
+      "ties": 0
+    },
+    "angry->sad": {
+      "audio_before_text": 6,
+      "n": 12,
+      "text_before_audio": 6,
+      "ties": 0
+    },
+    "angry->surprised": {
+      "audio_before_text": 11,
+      "n": 22,
+      "text_before_audio": 11,
+      "ties": 0
+    },
+    "disgusted->angry": {
+      "audio_before_text": 2,
+      "n": 4,
+      "text_before_audio": 2,
+      "ties": 0
+    },
+    "disgusted->fearful": {
+      "audio_before_text": 1,
+      "n": 3,
+      "text_before_audio": 2,
+      "ties": 0
+    },
+    "disgusted->happy": {
+      "audio_before_text": 1,
+      "n": 2,
+      "text_before_audio": 1,
+      "ties": 0
+    },
+    "disgusted->neutral": {
+      "audio_before_text": 1,
+      "n": 3,
+      "text_before_audio": 2,
+      "ties": 0
+    },
+    "disgusted->sad": {
+      "audio_before_text": 3,
+      "n": 5,
+      "text_before_audio": 2,
+      "ties": 0
+    },
+    "disgusted->surprised": {
+      "audio_before_text": 2,
+      "n": 3,
+      "text_before_audio": 1,
+      "ties": 0
+    },
+    "fearful->angry": {
+      "audio_before_text": 1,
+      "n": 1,
+      "text_before_audio": 0,
+      "ties": 0
+    },
+    "fearful->disgusted": {
+      "audio_before_text": 1,
+      "n": 1,
+      "text_before_audio": 0,
+      "ties": 0
+    },
+    "fearful->happy": {
+      "audio_before_text": 1,
+      "n": 2,
+      "text_before_audio": 1,
+      "ties": 0
+    },
+    "fearful->neutral": {
+      "audio_before_text": 1,
+      "n": 2,
+      "text_before_audio": 1,
+      "ties": 0
+    },
+    "fearful->sad": {
+      "audio_before_text": 2,
+      "n": 3,
+      "text_before_audio": 1,
+      "ties": 0
+    },
+    "fearful->surprised": {
+      "audio_before_text": 3,
+      "n": 6,
+      "text_before_audio": 3,
+      "ties": 0
+    },
+    "happy->angry": {
+      "audio_before_text": 10,
+      "n": 20,
+      "text_before_audio": 10,
+      "ties": 0
+    },
+    "happy->disgusted": {
+      "audio_before_text": 12,
+      "n": 24,
+      "text_before_audio": 12,
+      "ties": 0
+    },
+    "happy->fearful": {
+      "audio_before_text": 11,
+      "n": 23,
+      "text_before_audio": 12,
+      "ties": 0
+    },
+    "happy->neutral": {
+      "audio_before_text": 15,
+      "n": 31,
+      "text_before_audio": 16,
+      "ties": 0
+    },
+    "happy->sad": {
+      "audio_before_text": 8,
+      "n": 16,
+      "text_before_audio": 8,
+      "ties": 0
+    },
+    "happy->surprised": {
+      "audio_before_text": 14,
+      "n": 29,
+      "text_before_audio": 15,
+      "ties": 0
+    },
+    "neutral->angry": {
+      "audio_before_text": 36,
+      "n": 72,
+      "text_before_audio": 36,
+      "ties": 0
+    },
+    "neutral->disgusted": {
+      "audio_before_text": 35,
+      "n": 69,
+      "text_before_audio": 34,
+      "ties": 0
+    },
+    "neutral->fearful": {
+      "audio_before_text": 35,
+      "n": 69,
+      "text_before_audio": 34,
+      "ties": 0
+    },
+    "neutral->happy": {
+      "audio_before_text": 36,
+      "n": 72,
+      "text_before_audio": 36,
+      "ties": 0
+    },
+    "neutral->sad": {
+      "audio_before_text": 36,
+      "n": 71,
+      "text_before_audio": 35,
+      "ties": 0
+    },
+    "neutral->surprised": {
+      "audio_before_text": 41,
+      "n": 82,
+      "text_before_audio": 41,
+      "ties": 0
+    },
+    "sad->angry": {
+      "audio_before_text": 8,
+      "n": 16,
+      "text_before_audio": 8,
+      "ties": 0
+    },
+    "sad->disgusted": {
+      "audio_before_text": 6,
+      "n": 12,
+      "text_before_audio": 6,
+      "ties": 0
+    },
+    "sad->fearful": {
+      "audio_before_text": 5,
+      "n": 9,
+      "text_before_audio": 4,
+      "ties": 0
+    },
+    "sad->happy": {
+      "audio_before_text": 7,
+      "n": 13,
+      "text_before_audio": 6,
+      "ties": 0
+    },
+    "sad->neutral": {
+      "audio_before_text": 5,
+      "n": 10,
+      "text_before_audio": 5,
+      "ties": 0
+    },
+    "sad->surprised": {
+      "audio_before_text": 7,
+      "n": 14,
+      "text_before_audio": 7,
+      "ties": 0
+    },
+    "surprised->angry": {
+      "audio_before_text": 10,
+      "n": 20,
+      "text_before_audio": 10,
+      "ties": 0
+    },
+    "surprised->disgusted": {
+      "audio_before_text": 9,
+      "n": 18,
+      "text_before_audio": 9,
+      "ties": 0
+    },
+    "surprised->fearful": {
+      "audio_before_text": 6,
+      "n": 12,
+      "text_before_audio": 6,
+      "ties": 0
+    },
+    "surprised->happy": {
+      "audio_before_text": 12,
+      "n": 24,
+      "text_before_audio": 12,
+      "ties": 0
+    },
+    "surprised->neutral": {
+      "audio_before_text": 10,
+      "n": 20,
+      "text_before_audio": 10,
+      "ties": 0
+    },
+    "surprised->sad": {
+      "audio_before_text": 9,
+      "n": 18,
+      "text_before_audio": 9,
+      "ties": 0
+    }
+  },
+  "gpu_gate": {
+    "full_3636_run_executed": false,
+    "record_count": 12,
+    "sample_group_count": 3
+  },
+  "manifest_record_count": 3636,
+  "metadata_leakage_static_check": {
+    "arm_names_in_model_content": false,
+    "audio_path_is_model_visible_text": false,
+    "candidate_sequence_ids_in_model_content": false,
+    "gold_labels_in_model_content": false,
+    "sample_identifiers_in_model_content": false
+  },
+  "model_outputs_used_for_assignment_or_selection": false,
+  "old_frozen_artifacts_unchanged": true,
+  "old_frozen_hashes": {
+    "audit/QWEN25_MCR_CONTROLLED_V1/mcr_controlled_text_evidence_v1.jsonl": {
+      "actual_sha256": "28bdf75ce211dfb7af7677dabcd25c629e4ec8226ebdb991ee366d9e6ef949e4",
+      "expected_sha256": "28bdf75ce211dfb7af7677dabcd25c629e4ec8226ebdb991ee366d9e6ef949e4",
+      "unchanged": true
+    },
+    "audit/QWEN25_MCR_CONTROLLED_V2/technical_gate/qwen25_mcr_controlled_gate_v2.jsonl": {
+      "actual_sha256": "5a369d78492a09cf1ee3717b7607cd8029bd6723830b5a4feba331dafb7e477c",
+      "expected_sha256": "5a369d78492a09cf1ee3717b7607cd8029bd6723830b5a4feba331dafb7e477c",
+      "unchanged": true
+    },
+    "audit/mcr_ser_arbitration_pool_909.csv": {
+      "actual_sha256": "c81079ad56ef3957fb978b753d98ee31d0e0cafbe6876eb7489125fd805e0716",
+      "expected_sha256": "c81079ad56ef3957fb978b753d98ee31d0e0cafbe6876eb7489125fd805e0716",
+      "unchanged": true
+    },
+    "code/benchmarks/mcr_ser_parser_v1.py": {
+      "actual_sha256": "f72e825f686528b038dbb6c26b15574e78fddbab8cb3777e04e0680544d4580e",
+      "expected_sha256": "f72e825f686528b038dbb6c26b15574e78fddbab8cb3777e04e0680544d4580e",
+      "unchanged": true
+    },
+    "code/prompts/mcr_ser_ontology_v1.json": {
+      "actual_sha256": "06ab9bbe3af6d27f05c39103e68d39bd681605e7ee1d31e69f8ddfccb9b3695c",
+      "expected_sha256": "06ab9bbe3af6d27f05c39103e68d39bd681605e7ee1d31e69f8ddfccb9b3695c",
+      "unchanged": true
+    },
+    "code/run_qwen25_mcr_controlled_v2.py": {
+      "actual_sha256": "dba339b31731c0b8e6d80a9e509251051e5e48d303b7af0ea86c93dae441a2c8",
+      "expected_sha256": "dba339b31731c0b8e6d80a9e509251051e5e48d303b7af0ea86c93dae441a2c8",
+      "unchanged": true
+    }
+  },
+  "processor_order_probe": {
+    "error": null,
+    "expected_content_order": {
+      "A_ONLY": [
+        "audio",
+        "text_instruction"
+      ],
+      "A_THEN_T": [
+        "audio",
+        "text_evidence",
+        "text_instruction"
+      ],
+      "T_ONLY": [
+        "text_evidence",
+        "text_instruction"
+      ],
+      "T_THEN_A": [
+        "text_evidence",
+        "audio",
+        "text_instruction"
+      ]
+    },
+    "modality_placeholder_token_order_verified": true,
+    "post_processor_exact_reconstruction": true,
+    "rendered_chat_template_verified": true,
+    "structured_message_order_verified": true
+  },
+  "protocol_version": "MCR_CONTROLLED_PROTOCOL_V2",
+  "runner_version": "QWEN25_MCR_CONTROLLED_RUNNER_V3",
+  "sample_count": 909,
+  "source_order_used_for_assignment": false,
+  "status": "PASS"
+}

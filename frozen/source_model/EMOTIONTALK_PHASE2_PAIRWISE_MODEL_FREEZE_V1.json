@@ -1,0 +1,61 @@
+{
+  "attempt_002_rerun_required": false,
+  "composition_rule_frozen": false,
+  "consistent_control_results_frozen": true,
+  "created_utc": "2026-09-28T06:30:24Z",
+  "delta_sign_convention": {
+    "AT": "A-T",
+    "AV": "A-V",
+    "VT": "V-T"
+  },
+  "descriptive_results_frozen": true,
+  "explicit_exclusions": {
+    "NO_FEATURE_SELECTION": true,
+    "NO_MODEL_SELECTION_AFTER_PHASE3_OUTPUT": true,
+    "NO_NEW_PAIR_INTERACTIONS": true,
+    "NO_RAW_EMOTION_FEATURES": true,
+    "NO_REFIT_AFTER_PHASE3_INSPECTION": true
+  },
+  "frozen_pairwise_model": {
+    "FIRST_IS_MODALITY1_coding": {
+      "0": "canonical modality2 presented first",
+      "1": "canonical modality1 presented first"
+    },
+    "formula": "logit P(modality1 selected) = pair-specific intercept + beta_sourceprob * delta_source_label_probability + beta_entropy * delta_normalized_entropy + pair-specific beta_order * FIRST_IS_MODALITY1",
+    "outcome": {
+      "Y=0": "canonical modality2 selected",
+      "Y=1": "canonical modality1 selected"
+    },
+    "population": "conflict + resolved SIDE outcomes only",
+    "predictors": {
+      "FIRST_IS_MODALITY1": "pair-specific effect",
+      "delta_normalized_entropy": "shared",
+      "delta_source_label_probability": "shared",
+      "intercept": "pair-specific"
+    },
+    "statistical_unit": "utterance_id"
+  },
+  "heterogeneity_audit_status": "PASS",
+  "implementation_bug_found": false,
+  "pair_dependence": {
+    "normalized_entropy": "NOT_DETECTED",
+    "presentation_order": "DETECTED",
+    "source_label_probability": "NOT_DETECTED"
+  },
+  "paired_order_results_frozen": true,
+  "pairwise_model_frozen": true,
+  "phase2_authoritative_jsonl_path": "/root/autodl-tmp/affective-conflict/audit/EMOTIONTALK_CONTROLLED_V1/phase2_pairwise_full_v1_attempt_002/emotiontalk_phase2_pairwise_full_v1_attempt_002.jsonl",
+  "phase2_authoritative_jsonl_sha256": "677f96d9cd8650c08486bedde14457d62a2e930d3c0b7560983d6d1c456b1381",
+  "phase2_primary_M0_M3_results_frozen_unchanged": true,
+  "phase3_authorized": false,
+  "prior_analysis_status": "COMPLETE_PENDING_PAIRWISE_MODEL_AND_COMPOSITION_FREEZE",
+  "sensitivity_model": {
+    "feature_substitution": "replace delta_source_label_probability with delta_top1_top2_margin",
+    "predictors": {
+      "FIRST_IS_MODALITY1": "pair-specific effect",
+      "delta_normalized_entropy": "shared",
+      "delta_top1_top2_margin": "shared",
+      "intercept": "pair-specific"
+    }
+  }
+}
