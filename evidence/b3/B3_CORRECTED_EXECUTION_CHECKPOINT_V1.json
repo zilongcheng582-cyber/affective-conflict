@@ -1,0 +1,12 @@
+{
+  "execution_manifest_sha256": "5a50bea4c8815cf293134fcf74afd0e87c9922cdddced76cb1ee1b5c7de430f7",
+  "forward_tasks_completed": 5515,
+  "forward_tasks_expected": 5515,
+  "old_B3_cache_reused": false,
+  "runner_pid": 9802,
+  "sequence_aware_cache_only": true,
+  "status": "EXITED",
+  "technical_failure_attempts": 0,
+  "transfer_metrics_computed": false,
+  "updated_utc": "2026-10-06T15:39:52.505975+00:00"
+}

@@ -1,0 +1,83 @@
+{
+  "analysis_name": "EMOTIONTALK_PHASE2_SCIENTIFIC_ANALYSIS_V1",
+  "analysis_timestamp_utc": "2026-09-28T02:44:31.457328+00:00",
+  "authoritative_phase2_jsonl_path": "/root/autodl-tmp/affective-conflict/audit/EMOTIONTALK_CONTROLLED_V1/phase2_pairwise_full_v1_attempt_002/emotiontalk_phase2_pairwise_full_v1_attempt_002.jsonl",
+  "authoritative_phase2_jsonl_sha256": "677f96d9cd8650c08486bedde14457d62a2e930d3c0b7560983d6d1c456b1381",
+  "phase1_inputs": [
+    {
+      "path": "/root/autodl-tmp/affective-conflict/audit/EMOTIONTALK_CONTROLLED_V1/phase1_competence_full_v1_2/EMOTIONTALK_PHASE1_SAMPLE_TABLE_V1_2.csv",
+      "sha256": "3cc270054de466387e874be0dcb180dad12250e348c332a98fffba7d1c647042",
+      "role": "frozen V1.2 measurement sample table"
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/audit/EMOTIONTALK_CONTROLLED_V1/phase1_competence_full_v1_2/EMOTIONTALK_PHASE1_COMPETENCE_FULL_V1_2_PROVENANCE.json",
+      "sha256": "552396cdf4a18f6825141e522928b562a1f269f68c7cc3ed8df5503b5be16e76",
+      "role": "frozen provenance reference"
+    }
+  ],
+  "analysis_script_path": "/root/autodl-tmp/affective-conflict/audit/EMOTIONTALK_CONTROLLED_V1/phase2_scientific_analysis_v1/run_emotiontalk_phase2_scientific_analysis_v1.py",
+  "analysis_script_sha256": "9e17702a2106a8872218d6fdecb9170cc22b4643784f07c9cb917417213af4e6",
+  "python_version": "3.12.3",
+  "package_versions": {
+    "numpy": "2.3.2",
+    "scipy": "1.18.1"
+  },
+  "random_seed": 20260928,
+  "bootstrap_B": 2000,
+  "speaker_bootstrap_B": 2000,
+  "delta_feature_sign_conventions": {
+    "AT": "A-T",
+    "AV": "A-V",
+    "VT": "V-T",
+    "all": "modality1 minus modality2"
+  },
+  "primary_statistical_unit": "utterance_id",
+  "speaker_clustering": "secondary sensitivity by speaker_id",
+  "balanced_mechanism_panel_warning": "ALL_SAME=300; T=A!=V=300; T=V!=A=300; A=V!=T=300; ALL_DIFFERENT=300; conditional panel, not natural prevalence.",
+  "attempt_001_excluded": true,
+  "attempt_001_scientific_use": "FORBIDDEN",
+  "legacy_directory_wide_glob_used": false,
+  "phase3_used": false,
+  "phase3_authorization": "NOT_AUTHORIZED",
+  "analysis_status": "COMPLETE_PENDING_PAIRWISE_MODEL_AND_COMPOSITION_FREEZE",
+  "model_convergence": {
+    "M0": true,
+    "M1a": true,
+    "M1b": true,
+    "M2a": true,
+    "M2b": true,
+    "M3a": true,
+    "M3b": true
+  },
+  "grouped_cv_successful_folds": {
+    "M0": 5,
+    "M1a": 5,
+    "M1b": 5,
+    "M2a": 5,
+    "M2b": 5,
+    "M3a": 5,
+    "M3b": 5
+  },
+  "output_directory": "/root/autodl-tmp/affective-conflict/audit/EMOTIONTALK_CONTROLLED_V1/phase2_scientific_analysis_v1",
+  "output_artifact_sha256": {
+    "01_population_integrity.csv": "1deac0a644652906d3b62ffe1f181fd48d08bd8915ad7f385fafa84a479ce9de",
+    "02_conflict_descriptive_by_order.csv": "642a97d69ac9b3bc80aa72d6aab9f791e4c3fde4e4321d8024131f11e074a21f",
+    "03_conflict_coverage.csv": "45d6729351833258e2c6e8b022b13491f0d9db0cc36f5bc0a03d3a131b227f40",
+    "04_paired_order_behavior.csv": "08e4726dd06935734d60278476739822a3c0b915301e9584ddb5d759a35d2352",
+    "05_consistent_controls.csv": "e02eb6a4a9edd6efd67829f1bd707a0f77643f6281baf5b3892871af733ae612",
+    "06_phase1_merged_analysis_table.csv": "12564ec77c869036324e8a9824af90e92130286576ad52af0c3cd321bd33f5c6",
+    "07_feature_diagnostics.csv": "e994d0c90fdd4f6da917753ded2c93afccb4f11463d0e7d3a02ef310f7e089b9",
+    "08_M0_M3_model_results.csv": "bd576a092eda349cccc34965468fd6d003de1da61118eef337ab6cd94e701426",
+    "09_model_comparison.csv": "a0ea7976bb184aa8ca2eb0741e78c4515a03888df1c5355bf9adbbe35e241202",
+    "10_cluster_bootstrap_results.csv": "4c685b78306276019d8b8cfd4eb8032053b0711b29a8de4709142cc647521e4b",
+    "11_pair_heterogeneity_diagnostics.csv": "e9cc1b4c6eb25aaeb43fe2d4e4e4d7b35fa078c1f91cdcfe6c32f9247837b028",
+    "EMOTIONTALK_PHASE2_SCIENTIFIC_ANALYSIS_V1_REPORT.md": "7f836774691ee45aeecd39be889311fa30f68f45d838ecf6688e7dfe4e2e2f2e",
+    "EMOTIONTALK_PHASE2_SCIENTIFIC_ANALYSIS_V1_SUMMARY.json": "e2d58be3cdfcf0089bf18edf6c080ad997c98405843b045cbbe94926dcaf1be9"
+  },
+  "heterogeneity_implementation_consistency_audit": {
+    "ORIGINAL_CV_PREPROCESSING_LEAKAGE": "PRESENT",
+    "CORRECTED_FOLD_LOCAL_CV": "VERIFIED",
+    "NUMERICAL_IMPACT": "NONE_WITHIN_FLOAT_PRECISION",
+    "SCIENTIFIC_IMPACT": "NONE"
+  }
+}

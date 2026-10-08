@@ -1,0 +1,33 @@
+{
+  "M0": {
+    "analysis_origin": "POST_AUDIT_REANALYSIS",
+    "fit_identity": "HISTORICAL_FROZEN_COEFFICIENTS_NOT_REFITTED",
+    "fit_population": "EMOTIONTALK_SOURCE_RESOLVED_CONFLICT_663",
+    "parameters": {
+      "intercept_AT": -0.034486176071169515,
+      "pair_AV": -0.20610428884676107,
+      "pair_VT": 0.04209077545638878
+    },
+    "role": "EARLIER_DECLARED_SOURCE_FIXED_CONSTANT_PREFERENCE",
+    "source_records_sha256": "8fb93aadd79eac9597677bd3409666ec2a31311762e0c6850673fb50f4129a13",
+    "target_fit": false,
+    "threshold": 0.5
+  },
+  "M0_PLUS_ORDER": {
+    "algorithm": "Historical unpenalized Newton/IRLS design [AT intercept, AV/VT offsets, FIRST_IS_MODALITY1]",
+    "analysis_origin": "POST_AUDIT_REANALYSIS",
+    "fit_identity": "POST_AUDIT_SOURCE_ONLY_FIT",
+    "fit_population": "EMOTIONTALK_SOURCE_RESOLVED_CONFLICT_663",
+    "iterations": 4,
+    "parameters": {
+      "FIRST_IS_MODALITY1": -0.6220566258185027,
+      "intercept_AT": 0.2648040212822552,
+      "pair_AV": -0.20464884024674596,
+      "pair_VT": 0.040794790587748125
+    },
+    "role": "POST_AUDIT_DIAGNOSTIC_SOURCE_ONLY_BASELINE",
+    "source_records_sha256": "8fb93aadd79eac9597677bd3409666ec2a31311762e0c6850673fb50f4129a13",
+    "target_fit": false,
+    "threshold": 0.5
+  }
+}

@@ -1,8 +1,7 @@
 # Current state
 
-QWEN_MAINLINE_SCIENCE = CLOSED; B3_FINAL_SCIENTIFIC_RULING = SURVIVES_WITH_CORRECTION.
-The four canonical data boundaries passed the frozen data-layer audit. Corrected B3 completed 6354 measurements and 5515 forwards without failed or missing rows.
+2026-10-08 — POST_AUDIT_GITHUB_CLOSURE_V1, branch fix/post-audit-mainline-closure-v1, baseline e597e6de0a488f803709498cc9905289d9768c6c. Current technical row replay passes; scientific interpretation remains REQUIRES_INTERPRETATION. Immutable historical SURVIVES_WITH_CORRECTION is author interpretation rather than a code-certified decision.
 
-Release v1.0.0 uses current scientific kernels, frozen identities and portable orchestration. CPU clean checkout, regression tests, source path checks, secrets scan and payload exclusions pass; see RELEASE_VERIFICATION.json. Two CPU evaluation replays reproduce the exact frozen corrected analysis metrics and roles, including a projection from unchanged acquisition rows. Packaging does not execute GPU inference, refit source/target parameters or add supplementary experiments.
+Recovered formal corrected B3 vectors/measurements, observed Phase2/Phase3 responses and actual MCR audio-hash trace. CPU replay reconstructs 663 source records, all corrected historical metrics, 402 trimodal joins/294 resolved/268 correct/108 unresolved, LISTEN condition-specific metrics, source-fixed baselines and separate duplicate sensitivity. All new analyses are POST_AUDIT_REANALYSIS. See post-audit receipt for actual clean-checkout/test results.
 
-MIT was selected by the user. Git main/tag and the matching ZIP are the release deliverables. Raw media, weights and bulk inference records remain external, with explicit frozen identity/catalog boundaries.
+No historical frozen artifact, main, tag, old ZIP, remote project, assignment, outcome, source coefficient/scaler or threshold changes. Only new M0+order diagnostic parameters are fitted, on source rows alone. No GPU, Qwen, target fitting or new scientific trial. MIT remains code license. Repository remains private; authorized CPU replay closure does not imply public/raw-media reproducibility.

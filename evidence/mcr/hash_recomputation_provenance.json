@@ -1,0 +1,11 @@
+{
+  "raw_SER_SHA256": "58aff644175739b142f46ea9f47c32f9230f3cf7fc033dfdd4e8750ee3e6b880",
+  "native_rows": 1000,
+  "canonical_rows": 909,
+  "raw_media_published": false,
+  "hash_basis": "RECOMPUTED_REMOTE_WAV_BYTES",
+  "canonical_stored_hash_agreement": "909/909",
+  "duplicate_groups": 3,
+  "duplicate_records": 7,
+  "GPU_execution": false
+}

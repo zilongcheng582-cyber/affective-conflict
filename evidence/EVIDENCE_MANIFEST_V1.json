@@ -1,0 +1,197 @@
+{
+  "role": "RECOVERED_EXISTING_SCIENTIFIC_EVIDENCE",
+  "files": [
+    {
+      "path": "evidence/b3/B3_CORRECTED_FORWARD_RESULTS_V1.jsonl",
+      "sha256": "09724eb7ea4e114cb9ca8addaab618435bbf8537f07a80172a3c0fe72d687a44",
+      "original_path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/outputs/B3_CORRECTED_FORWARD_RESULTS_V1.jsonl",
+      "original_sha256": "09724eb7ea4e114cb9ca8addaab618435bbf8537f07a80172a3c0fe72d687a44",
+      "original_rows": 5515,
+      "role": "CORRECTED_B3_ROW_LEVEL_OR_EXECUTION_EVIDENCE",
+      "transformation": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "evidence/b3/B3_CORRECTED_MEASUREMENTS_V1.csv",
+      "sha256": "7ce3d51d3670e0f8c7f7bb377cd2313b11e6931ff42ba44b0883ad4270fc81b4",
+      "original_path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/outputs/B3_CORRECTED_MEASUREMENTS_V1.csv",
+      "original_sha256": "7ce3d51d3670e0f8c7f7bb377cd2313b11e6931ff42ba44b0883ad4270fc81b4",
+      "original_rows": 6354,
+      "role": "CORRECTED_B3_ROW_LEVEL_OR_EXECUTION_EVIDENCE",
+      "transformation": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "evidence/b3/B3_MEASUREMENTS_V1.jsonl",
+      "sha256": "0ad7785530a52923dabdf3ec6b3c5afe27e68d87be61e1b5f4465fde79fad450",
+      "original_path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/outputs/B3_MEASUREMENTS_V1.jsonl",
+      "original_sha256": "0ad7785530a52923dabdf3ec6b3c5afe27e68d87be61e1b5f4465fde79fad450",
+      "original_rows": 6354,
+      "role": "CORRECTED_B3_ROW_LEVEL_OR_EXECUTION_EVIDENCE",
+      "transformation": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "evidence/b3/B3_CORRECTED_EXECUTION_COMPLETENESS_V1.json",
+      "sha256": "624339cb9176736e4ee6cb5019f1db8c0850d885ebb0d917fc3a0fc345833d6e",
+      "original_path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/outputs/B3_CORRECTED_EXECUTION_COMPLETENESS_V1.json",
+      "original_sha256": "624339cb9176736e4ee6cb5019f1db8c0850d885ebb0d917fc3a0fc345833d6e",
+      "original_rows": null,
+      "role": "CORRECTED_B3_ROW_LEVEL_OR_EXECUTION_EVIDENCE",
+      "transformation": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "evidence/b3/B3_CORRECTED_EXECUTION_PROVENANCE_V1.json",
+      "sha256": "edf3b513b95120b82b677b84959259ba4aecd15f1ff06775860630cd6adb0eaf",
+      "original_path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/outputs/B3_CORRECTED_EXECUTION_PROVENANCE_V1.json",
+      "original_sha256": "edf3b513b95120b82b677b84959259ba4aecd15f1ff06775860630cd6adb0eaf",
+      "original_rows": null,
+      "role": "CORRECTED_B3_ROW_LEVEL_OR_EXECUTION_EVIDENCE",
+      "transformation": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "evidence/b3/B3_CORRECTED_EXECUTION_CHECKPOINT_V1.json",
+      "sha256": "4458584cb5f3d79072199765bf8b52f71b6cf3046d4e49a625ef60fcff9489cd",
+      "original_path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/outputs/B3_CORRECTED_EXECUTION_CHECKPOINT_V1.json",
+      "original_sha256": "4458584cb5f3d79072199765bf8b52f71b6cf3046d4e49a625ef60fcff9489cd",
+      "original_rows": null,
+      "role": "CORRECTED_B3_ROW_LEVEL_OR_EXECUTION_EVIDENCE",
+      "transformation": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "evidence/b3/B3_ACQUISITION_COMPLETENESS_V1.json",
+      "sha256": "85971bc7bc76483d6cee64646209ce06c17d4b3f189ad0910be473c67dcf74a2",
+      "original_path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/outputs/B3_ACQUISITION_COMPLETENESS_V1.json",
+      "original_sha256": "85971bc7bc76483d6cee64646209ce06c17d4b3f189ad0910be473c67dcf74a2",
+      "original_rows": null,
+      "role": "CORRECTED_B3_ROW_LEVEL_OR_EXECUTION_EVIDENCE",
+      "transformation": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "evidence/b3/B3_EXECUTION_IDENTITY_RECORDS_V1.json",
+      "sha256": "3266f0dfd6824767f1a4bdafe47cebfb2a9bc92ead518377c1ef7da527f1888c",
+      "original_path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/outputs/B3_EXECUTION_IDENTITY_RECORDS_V1.json",
+      "original_sha256": "3266f0dfd6824767f1a4bdafe47cebfb2a9bc92ead518377c1ef7da527f1888c",
+      "original_rows": null,
+      "role": "CORRECTED_B3_ROW_LEVEL_OR_EXECUTION_EVIDENCE",
+      "transformation": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "evidence/b3/B3_CORRECTED_EXECUTION_SHA256SUMS.txt",
+      "sha256": "c8f5c0ff740d8ba177879d41cf44542786dab753d297bfd762629478b6afeeea",
+      "original_path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/outputs/B3_CORRECTED_EXECUTION_SHA256SUMS.txt",
+      "original_sha256": "c8f5c0ff740d8ba177879d41cf44542786dab753d297bfd762629478b6afeeea",
+      "original_rows": null,
+      "role": "CORRECTED_B3_ROW_LEVEL_OR_EXECUTION_EVIDENCE",
+      "transformation": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "evidence/emotiontalk/phase2_observed_responses.jsonl",
+      "sha256": "4fc584c9a9af341f2db4bbdbe84437587187fa870dda9b6cb0417ba7a1782b87",
+      "original_path": "/root/autodl-tmp/affective-conflict/audit/EMOTIONTALK_CONTROLLED_V1/phase2_pairwise_full_v1_attempt_002/emotiontalk_phase2_pairwise_full_v1_attempt_002.jsonl",
+      "original_sha256": "677f96d9cd8650c08486bedde14457d62a2e930d3c0b7560983d6d1c456b1381",
+      "original_rows": 2132,
+      "role": "PHASE2_OBSERVED_RESPONSE_EVIDENCE",
+      "transformation": "SEMANTIC_PROJECTION_PRIVATE_MEDIA_PATHS_OMITTED"
+    },
+    {
+      "path": "evidence/emotiontalk/phase3_observed_outputs.jsonl",
+      "sha256": "4c8c3bc7d68c30fccc0777abc1c1aee6a0745185faf5973618976f4629fab907",
+      "original_path": "/root/autodl-tmp/affective-conflict/audit/EMOTIONTALK_CONTROLLED_V1/phase3_trimodal_v1/emotiontalk_phase3_full_v1.jsonl",
+      "original_sha256": "4d47052a8de4625b3e25f105f2c3be94eea943752a58accf5683e520cf0fbbc1",
+      "original_rows": 402,
+      "role": "PHASE3_OBSERVED_RESPONSE_EVIDENCE",
+      "transformation": "SEMANTIC_PROJECTION_PRIVATE_MEDIA_PATHS_OMITTED"
+    },
+    {
+      "path": "evidence/provenance/CROSS_REGIME_ZERO_REFIT_SPEC_V1.json",
+      "sha256": "aa603f9258bde8c0ef7dd38fd69178876e2d8aa5ea748939a2a0589545847178",
+      "original_path": "/root/autodl-tmp/affective-conflict/audit/CROSS_REGIME_TRANSFER_V1/CROSS_REGIME_ZERO_REFIT_SPEC_V1.json",
+      "original_sha256": "aa603f9258bde8c0ef7dd38fd69178876e2d8aa5ea748939a2a0589545847178",
+      "original_rows": null,
+      "role": "HISTORICAL_PROTOCOL_OR_PROVENANCE",
+      "transformation": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "evidence/provenance/EMOTIONTALK_PHASE2_SCIENTIFIC_ANALYSIS_V1_PROVENANCE.json",
+      "sha256": "71c011c29cb39501e20375ee8ecb2b824c3b2e5224d85bb39b4476270e04e008",
+      "original_path": "/root/autodl-tmp/affective-conflict/audit/EMOTIONTALK_CONTROLLED_V1/phase2_scientific_analysis_v1/EMOTIONTALK_PHASE2_SCIENTIFIC_ANALYSIS_V1_PROVENANCE.json",
+      "original_sha256": "71c011c29cb39501e20375ee8ecb2b824c3b2e5224d85bb39b4476270e04e008",
+      "original_rows": null,
+      "role": "HISTORICAL_PROTOCOL_OR_PROVENANCE",
+      "transformation": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "evidence/emotiontalk/phase3_original_merged_analysis.csv",
+      "sha256": "2ea12d5b455daa2f5cbbce59290a95624abf52889ff09ecc8faaee1f7816d2ba",
+      "original_path": "/root/autodl-tmp/affective-conflict/audit/EMOTIONTALK_CONTROLLED_V1/phase3_trimodal_v1/phase3_scientific_analysis_v1/01_merged_primary_analysis.csv",
+      "original_sha256": "2ea12d5b455daa2f5cbbce59290a95624abf52889ff09ecc8faaee1f7816d2ba",
+      "original_rows": 402,
+      "role": "HISTORICAL_PHASE3_JOIN_REFERENCE",
+      "transformation": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "manifests/emotiontalk/source_measurements.csv",
+      "sha256": "3cc270054de466387e874be0dcb180dad12250e348c332a98fffba7d1c647042",
+      "original_path": "/root/autodl-tmp/affective-conflict/audit/EMOTIONTALK_CONTROLLED_V1/phase1_competence_full_v1_2/EMOTIONTALK_PHASE1_SAMPLE_TABLE_V1_2.csv",
+      "original_sha256": "3cc270054de466387e874be0dcb180dad12250e348c332a98fffba7d1c647042",
+      "original_rows": 1500,
+      "role": "FROZEN_INPUT_OR_SOURCE_PARAMETERS",
+      "transformation": "ALREADY_SHIPPED_BYTE_IDENTICAL"
+    },
+    {
+      "path": "frozen/source_model/08_M0_M3_model_results.csv",
+      "sha256": "bd576a092eda349cccc34965468fd6d003de1da61118eef337ab6cd94e701426",
+      "original_path": "/root/autodl-tmp/affective-conflict/audit/EMOTIONTALK_CONTROLLED_V1/phase2_scientific_analysis_v1/08_M0_M3_model_results.csv",
+      "original_sha256": "bd576a092eda349cccc34965468fd6d003de1da61118eef337ab6cd94e701426",
+      "original_rows": 33,
+      "role": "FROZEN_INPUT_OR_SOURCE_PARAMETERS",
+      "transformation": "ALREADY_SHIPPED_BYTE_IDENTICAL"
+    },
+    {
+      "path": "manifests/emotiontalk/trimodal_plan.csv",
+      "sha256": "14fdc30700bbdebdf97f9bc21e15a98f07e48a00038c8976579431d5163e00ab",
+      "original_path": "/root/autodl-tmp/affective-conflict/audit/EMOTIONTALK_CONTROLLED_V1/phase3_trimodal_v1/EMOTIONTALK_PHASE3_PRIMARY_PLAN_V1.csv",
+      "original_sha256": "14fdc30700bbdebdf97f9bc21e15a98f07e48a00038c8976579431d5163e00ab",
+      "original_rows": 402,
+      "role": "FROZEN_INPUT_OR_SOURCE_PARAMETERS",
+      "transformation": "ALREADY_SHIPPED_BYTE_IDENTICAL"
+    },
+    {
+      "path": "protocols/emotiontalk/EMOTIONTALK_PHASE3_FULL_V1_FREEZE.json",
+      "sha256": "e2e9e0dbf54d91c1471bee473439a7e6970bc3890598562c39438f4cc1ccf783",
+      "original_path": "/root/autodl-tmp/affective-conflict/audit/EMOTIONTALK_CONTROLLED_V1/phase3_trimodal_v1/EMOTIONTALK_PHASE3_FULL_V1_FREEZE.json",
+      "original_sha256": "e2e9e0dbf54d91c1471bee473439a7e6970bc3890598562c39438f4cc1ccf783",
+      "role": "FROZEN_PROVENANCE",
+      "transformation": "ALREADY_SHIPPED_BYTE_IDENTICAL"
+    },
+    {
+      "path": "results/mainline_summary/phase3/EMOTIONTALK_PHASE3_SCIENTIFIC_FREEZE_V1.json",
+      "sha256": "d18eeaa9994bdbd65e4d6edc1a3d5f081dd4c7bdc48d1459d3932e4c51bde99f",
+      "original_path": "/root/autodl-tmp/affective-conflict/audit/EMOTIONTALK_CONTROLLED_V1/phase3_trimodal_v1/phase3_scientific_analysis_v1/EMOTIONTALK_PHASE3_SCIENTIFIC_FREEZE_V1.json",
+      "original_sha256": "d18eeaa9994bdbd65e4d6edc1a3d5f081dd4c7bdc48d1459d3932e4c51bde99f",
+      "role": "FROZEN_PROVENANCE",
+      "transformation": "ALREADY_SHIPPED_BYTE_IDENTICAL"
+    },
+    {
+      "path": "evidence/mcr/recomputed_audio_identities.csv",
+      "sha256": "18bbb6f243bb63455ecd7be6b0fbf6404ae6eab3ee4eb4d9162797d8b980cfeb",
+      "original_path": "/root/autodl-tmp/affective-conflict/data/MCR-Bench/MCR-Bench/SER",
+      "role": "REMOTE_RAW_WAV_CONTENT_HASH_RECOMPUTATION",
+      "transformation": "CPU_SHA256_WAV_BYTES_ONLY",
+      "original_rows": 1000
+    },
+    {
+      "path": "evidence/b3/historical_corrected_zero_refit_predictions.csv",
+      "sha256": "c497629d50291005f2bc7936c23e154c4f194dad22c65e5ad1714e54d79c7e9a",
+      "original_path": "B3_ZERO_REFIT_FINAL_EVALUATION_V1/B3_CORRECTED_ZERO_REFIT_PREDICTIONS_V1.csv",
+      "original_sha256": "c497629d50291005f2bc7936c23e154c4f194dad22c65e5ad1714e54d79c7e9a",
+      "original_rows": 9219,
+      "role": "HISTORICAL_CORRECTED_CPU_PREDICTIONS_COMPARISON_ONLY",
+      "transformation": "BYTE_IDENTICAL_LOCAL_FROZEN_CPU_EVALUATION_RECEIPT"
+    }
+  ],
+  "official_archive_sha256": "0e9f61604349ef716f5855f921e03dca7af34b94c3f04c844bd71e0b06557659",
+  "failed_preflight_zip_excluded": true,
+  "GPU_execution": false,
+  "source_or_target_transfer_model_refitted": false,
+  "personal_media_paths_removed_from_response_projections": true,
+  "public_independent_reproducibility_claimed": false
+}

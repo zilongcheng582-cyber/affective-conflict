@@ -1,0 +1,46 @@
+{
+  "GPU_execution": false,
+  "checkout_kind": "NEW_DETACHED_GIT_WORKTREE_FROM_STAGED_VERIFICATION_TREE",
+  "checks": [
+    {
+      "check": "requirements-install",
+      "exit_code": 0,
+      "log_sha256": "aecd3534c3f0cfe1ac17bf0d07b59723093059d7ed58792cbf8860fcb636b6ab"
+    },
+    {
+      "check": "pip-check",
+      "exit_code": 0,
+      "log_sha256": "f224655f1ff1d95e2b2a3014fe5560b31fa92ad15dac4fd90897e156ebeac2fd"
+    },
+    {
+      "check": "pytest",
+      "exit_code": 0,
+      "log_sha256": "f1981e21f0d5ead4362886bf2b7e3e28afac95d8139009b4f38934660aa692de"
+    },
+    {
+      "check": "imports-and-bindings",
+      "exit_code": 0,
+      "log_sha256": "e547abd253a860ef8c544a1624e9a24f97d8a04257b1c536eb3e2a5c4919bd05"
+    },
+    {
+      "check": "phase3-report",
+      "exit_code": 0,
+      "log_sha256": "821b63e1f7e23ba1f2a772e413fad254c8f477ee8e661efe86c1e0c13bf786f0"
+    },
+    {
+      "check": "cpu-replay",
+      "exit_code": 0,
+      "log_sha256": "b44a48a03783770fac191ca6d694d5220cdc17e053c9fd68c747081ed045cbab"
+    }
+  ],
+  "every_replay_output_matches_sealed_post_audit_results": "BYTE_IDENTICAL",
+  "final_sealing_changes": "Only verification receipts and current payload manifest/checksum are added after this clean run; executable/evidence/result files match the verified snapshot",
+  "local_snapshot_role": "Local detached Git verification snapshot; not an independently published commit or invented archive URL",
+  "scope_definition": "Sorted path/SHA256 of analyses, src, tests, evidence, frozen, protocols, manifests, configs, results, requirements and recovery matrix; exclude caches",
+  "snapshot_commit": "b4483e4a31d2e8038b23d09f1f80f7640742e25f",
+  "status": "PASS",
+  "target_fit": false,
+  "tracked_checkout_status": "CLEAN",
+  "verification_scope_files": 226,
+  "verification_scope_sha256": "4d42cab6d2cb45efacee35a89c0995037395bc4b56a0989bffa307718f1221e4"
+}
