@@ -1,0 +1,43 @@
+{
+  "analysis_origin": "POST_AUDIT_SCIENTIFIC_ANALYSIS_V1",
+  "seed": 20261008,
+  "bootstraps": 2000,
+  "match_accounting": [
+    {
+      "comparison": "3B->3C",
+      "items_with_both_conditions": 381,
+      "exact_identity_matched": 381,
+      "identity_mismatch_not_joined": 0,
+      "matched_both_conflict": 378,
+      "matched_not_both_conflict": 3,
+      "unmatched_3B_only": 0,
+      "unmatched_3C_only": 0
+    },
+    {
+      "comparison": "3A->3C",
+      "items_with_both_conditions": 244,
+      "exact_identity_matched": 244,
+      "identity_mismatch_not_joined": 0,
+      "matched_both_conflict": 242,
+      "matched_not_both_conflict": 2,
+      "unmatched_3A_only": 143,
+      "unmatched_3C_only": 137
+    },
+    {
+      "comparison": "3A->3B",
+      "items_with_both_conditions": 244,
+      "exact_identity_matched": 244,
+      "identity_mismatch_not_joined": 0,
+      "matched_both_conflict": 242,
+      "matched_not_both_conflict": 2,
+      "unmatched_3A_only": 143,
+      "unmatched_3B_only": 137
+    }
+  ],
+  "three_way_matched_conflict_items": 242,
+  "inputs": [
+    "manifests/listen/frozen_joint_outcomes.csv",
+    "results/post_audit/closure_v1/LISTEN_JOINT_ONLY_REPORT.csv (cited, not recomputed)",
+    "results/post_audit/closure_v1/LISTEN_CONDITION_DIAGNOSTICS.csv (cited, not recomputed)"
+  ]
+}

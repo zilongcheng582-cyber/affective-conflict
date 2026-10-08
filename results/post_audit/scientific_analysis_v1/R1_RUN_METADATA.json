@@ -1,0 +1,31 @@
+{
+  "analysis_origin": "POST_AUDIT_SCIENTIFIC_ANALYSIS_V1",
+  "python_seed": 20261008,
+  "bootstraps": 2000,
+  "N_records": 663,
+  "N_utterances": 274,
+  "N_speakers": 19,
+  "pair_counts": {
+    "AT": 116,
+    "AV": 284,
+    "VT": 263
+  },
+  "publication_cv_M3a_metrics_seed20260928": {
+    "log_loss": 0.5344227084314558,
+    "balanced_accuracy": 0.7242439727702443,
+    "AUROC": 0.8018177504425748,
+    "Brier_score": 0.18141417566379012
+  },
+  "R1_M3a_aligned_unpenalized_seed20260928": {
+    "AUROC": 0.8017994999361232,
+    "log_loss": 0.5344237817199942,
+    "Brier": 0.18141289685516648,
+    "accuracy_at_0.5": 0.7254901960784313
+  },
+  "inputs": [
+    "manifests/emotiontalk/source_measurements.csv",
+    "evidence/emotiontalk/phase2_observed_responses.jsonl",
+    "frozen/source_model/publication_cv_records.json (identity check)",
+    "frozen/source_model/binding.json (scaler identity check only)"
+  ]
+}
