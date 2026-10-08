@@ -4,11 +4,13 @@ Run with python -m analyses.post_audit.replay --output NEW_DIRECTORY.
 No inference, target fitting, calibration, selection, or threshold optimization.
 """
 import argparse
+import ast
 import contextlib
 import csv
 import hashlib
 import io
 import json
+import subprocess
 from collections import Counter
 from pathlib import Path
 
@@ -24,6 +26,29 @@ ORIGIN = 'POST_AUDIT_REANALYSIS'
 SEED = 20261008
 BOOTSTRAPS = 2000
 METRICS = ('log_loss', 'Brier_score', 'AUROC', 'balanced_accuracy')
+
+# Pre-existing anchors: byte SHA256 of files committed in the v1.0.0 baseline
+# (tag v1.0.0), before any post-audit evidence was added. They are independent
+# of evidence/EVIDENCE_MANIFEST_V1.json and of the post-audit payload manifest.
+BASELINE_COMMIT = 'e597e6de0a488f803709498cc9905289d9768c6c'
+B3_CATALOG = 'frozen/identity/corrected_output_catalog.json'
+PHASE3_AUDIT = 'results/mainline_summary/phase3/EMOTIONTALK_PHASE3_LIMITED_INFERENTIAL_AUDIT_V1.json'
+PREEXISTING_ANCHORS = {
+    B3_CATALOG: 'b696fb1dfc7d32250e27b7e389953010c4749797005d9719ac76bbd474b8e34c',
+    PHASE3_AUDIT: '0ed5acb299926a07c662ee5915c53e6832b09d11aa0cad9acfb623e916898961',
+}
+B3_RECOVERED = (
+    'B3_ACQUISITION_COMPLETENESS_V1.json', 'B3_CORRECTED_EXECUTION_CHECKPOINT_V1.json',
+    'B3_CORRECTED_EXECUTION_COMPLETENESS_V1.json', 'B3_CORRECTED_EXECUTION_PROVENANCE_V1.json',
+    'B3_CORRECTED_EXECUTION_SHA256SUMS.txt', 'B3_CORRECTED_FORWARD_RESULTS_V1.jsonl',
+    'B3_CORRECTED_MEASUREMENTS_V1.csv', 'B3_EXECUTION_IDENTITY_RECORDS_V1.json', 'B3_MEASUREMENTS_V1.jsonl')
+B3_POST_AUDIT_SUPPLIED = ('B3_RELEASE_EVIDENCE_SHA256SUMS.txt', 'historical_corrected_zero_refit_predictions.csv')
+PHASE3_PROJECTION = 'evidence/emotiontalk/phase3_observed_outputs.jsonl'
+PHASE3_MERGED = 'evidence/emotiontalk/phase3_original_merged_analysis.csv'
+PHASE3_TEXT_FIELDS = ('utterance_id', 'speaker_id', 'trimodal_pattern', 'y_A', 'y_T', 'y_V',
+                      'majority_label', 'minority_label', 'candidate_sequence_id', 'candidate_sequence',
+                      'tri_order', 'parser_status', 'parsed_label', 'raw_generation', 'observed_outcome_class')
+PHASE3_BOOL_FIELDS = ('generation_attempted', 'generation_success', 'parser_execution')
 
 def read(path):
     return json.loads(Path(path).read_text(encoding='utf-8-sig'))
@@ -57,6 +82,142 @@ def verify_evidence(root=REPO):
         if not path.is_file() or digest(path) != item['sha256']:
             raise ValueError('Missing or hash-mismatched evidence: '+item['path'])
     return len(manifest['files'])
+
+def baseline_git_bytes(root, relative):
+    """Bytes of `relative` at the v1.0.0 baseline commit, or None without that Git history."""
+    try:
+        top = subprocess.run(['git', '-C', str(root), 'rev-parse', '--show-toplevel'],
+                             capture_output=True, text=True, check=False)
+        if top.returncode or Path(top.stdout.strip()).resolve() != Path(root).resolve():
+            return None
+        blob = subprocess.run(['git', '-C', str(root), 'show', BASELINE_COMMIT+':'+relative],
+                              capture_output=True, check=False)
+    except OSError:
+        return None
+    return blob.stdout if blob.returncode == 0 else None
+
+def verify_preexisting_anchor(root, relative):
+    """Pinned v1.0.0 byte identity; also checked against the v1.0.0 release receipt and baseline Git blob."""
+    path = Path(root)/relative
+    if not path.is_file():
+        raise ValueError('Missing pre-existing anchor: '+relative)
+    expected = PREEXISTING_ANCHORS[relative]
+    if digest(path) != expected:
+        raise ValueError('Pre-existing anchor changed since v1.0.0: '+relative)
+    release = {r['relative_path']: r['SHA256'] for r in read(Path(root)/'RELEASE_MANIFEST_V1.json')['files']}
+    if release.get(relative) != expected:
+        raise ValueError('v1.0.0 release receipt disagrees with pinned anchor: '+relative)
+    blob = baseline_git_bytes(root, relative)
+    if blob is not None and hashlib.sha256(blob).hexdigest() != expected:
+        raise ValueError('Baseline Git blob disagrees with pinned anchor: '+relative)
+    return {'path': relative, 'sha256': expected, 'baseline_commit': BASELINE_COMMIT,
+            'release_v1_0_0_receipt': 'MATCH',
+            'baseline_git_blob': 'MATCH' if blob is not None else 'GIT_HISTORY_UNAVAILABLE'}
+
+def verify_b3_preexisting_anchor(root=REPO):
+    """B3 inputs must equal the v1.0.0 corrected-output catalog, independent of the post-audit evidence manifest."""
+    try:
+        anchor = verify_preexisting_anchor(root, B3_CATALOG)
+        catalog = {}
+        for row in read(Path(root)/B3_CATALOG)['outputs']:
+            if row['filename'] in catalog:
+                raise ValueError('Duplicate catalog identity '+row['filename'])
+            catalog[row['filename']] = row['SHA256']
+        folder = Path(root)/'evidence/b3'
+        present = sorted(p.name for p in folder.iterdir() if p.is_file()) if folder.is_dir() else []
+        unexpected = [n for n in present if n not in catalog and n not in B3_POST_AUDIT_SUPPLIED]
+        if unexpected:
+            raise ValueError('Uncatalogued B3 evidence file: '+', '.join(unexpected))
+        files = []
+        for name in B3_RECOVERED:
+            if name not in catalog:
+                raise ValueError('Recovered B3 file absent from v1.0.0 catalog: '+name)
+            if name not in present:
+                raise ValueError('Catalogued recovered B3 file missing: '+name)
+            actual = digest(folder/name)
+            if actual != catalog[name]:
+                raise ValueError('B3 file differs from v1.0.0 catalog: '+name)
+            files.append({'filename': name, 'sha256': actual, 'identity': 'EXACT_BYTES_MATCH_V1_0_0_CATALOG'})
+        extra = [n for n in present if n in catalog and n not in B3_RECOVERED]
+        if extra:
+            raise ValueError('Catalogued B3 file shipped but not declared recovered: '+', '.join(extra))
+        for line in (folder/'B3_RELEASE_EVIDENCE_SHA256SUMS.txt').read_text(encoding='utf-8').splitlines():
+            value, name = line.split('  ', 1)
+            if catalog.get(name) != value:
+                raise ValueError('Release-subset checksum line disagrees with v1.0.0 catalog: '+name)
+        for line in (folder/'B3_CORRECTED_EXECUTION_SHA256SUMS.txt').read_text(encoding='utf-8').splitlines():
+            value, name = line.split('  ', 1)
+            if catalog.get(name) != value:
+                raise ValueError('Original execution checksum disagrees with v1.0.0 catalog: '+name)
+    except (ValueError, OSError, KeyError) as error:
+        raise ValueError('B3_PREEXISTING_ANCHOR_CHECK = FAIL: '+str(error)) from error
+    return {'B3_PREEXISTING_ANCHOR_CHECK': 'PASS', 'catalog_anchor': anchor,
+            'recovered_files_verified': files,
+            'catalogued_not_released': sorted(set(catalog)-set(B3_RECOVERED)),
+            'post_audit_supplied_not_anchored': [n for n in B3_POST_AUDIT_SUPPLIED if n in present]}
+
+def verify_phase3_preexisting_anchor(root=REPO):
+    """The merged Phase3 table must match the input hash recorded by the v1.0.0 limited inferential audit."""
+    try:
+        anchor = verify_preexisting_anchor(root, PHASE3_AUDIT)
+        recorded = read(Path(root)/PHASE3_AUDIT)['authoritative_analysis_input_sha256']
+        path = Path(root)/PHASE3_MERGED
+        if not path.is_file():
+            raise ValueError('Original merged Phase3 evidence missing: '+PHASE3_MERGED)
+        if digest(path) != recorded:
+            raise ValueError('Original merged Phase3 evidence differs from v1.0.0 recorded SHA256')
+    except (ValueError, OSError, KeyError) as error:
+        raise ValueError('PHASE3_PREEXISTING_ANCHOR = FAIL: '+str(error)) from error
+    return {'PHASE3_PREEXISTING_ANCHOR': 'PASS', 'merged_evidence': PHASE3_MERGED,
+            'merged_sha256': recorded, 'recording_anchor': anchor,
+            'recorded_field': 'authoritative_analysis_input_sha256'}
+
+def project_phase3_original(row):
+    """Deterministic projection of one original merged row into the observed-output schema."""
+    projected = {field: row[field] for field in PHASE3_TEXT_FIELDS}
+    for field in PHASE3_BOOL_FIELDS:
+        if row[field] not in ('True', 'False'):
+            raise ValueError('Non-boolean original Phase3 field '+field)
+        projected[field] = row[field] == 'True'
+    projected['failure_type'] = row['failure_type'] or None
+    projected['primary_key'] = ast.literal_eval(row['primary_key'])
+    projected['actual_evidence_order'] = ast.literal_eval(row['actual_evidence_order'])
+    if projected['primary_key'] != {'utterance_id': row['utterance_id'], 'tri_order': row['tri_order']}:
+        raise ValueError('Original Phase3 primary key inconsistent')
+    if projected['actual_evidence_order'] != row['tri_order'].split('_THEN_'):
+        raise ValueError('Original Phase3 execution order inconsistent')
+    return projected
+
+def verify_phase3_original_evidence_binding(projection_rows, original_rows):
+    """Every projected observed row must equal the deterministic projection of its original merged row.
+
+    Joined by (utterance_id, tri_order); row order is irrelevant. Historical
+    correctness fields in the merged table are never read.
+    """
+    keys = ['utterance_id', 'tri_order']
+    projected = unique(projection_rows, keys)
+    original = unique(original_rows, keys)
+    if set(projected) != set(original) or len(original) != 402:
+        raise ValueError('PHASE3_PROJECTION_BINDING = FAIL: Phase3 projection/original identity sets differ')
+    for key, row in original.items():
+        if project_phase3_original(row) != projected[key]:
+            raise ValueError('PHASE3_PROJECTION_BINDING = FAIL: observed row differs from original evidence '+str(key))
+    return len(original)
+
+def verify_evidence_anchors(root=REPO):
+    """Mandatory precondition: pre-existing B3/Phase3 anchors and row-level Phase3 binding."""
+    b3 = verify_b3_preexisting_anchor(root)
+    phase3 = verify_phase3_preexisting_anchor(root)
+    rows = verify_phase3_original_evidence_binding(jsonrows(Path(root)/PHASE3_PROJECTION),
+                                                   csvrows(Path(root)/PHASE3_MERGED))
+    return {'B3_PREEXISTING_ANCHOR_CHECK': 'PASS', 'PHASE3_PROJECTION_BINDING': 'PASS',
+            'PHASE3_PREEXISTING_ANCHOR': 'PASS', 'phase3_rows_bound': rows,
+            'b3': b3, 'phase3_anchor': phase3,
+            'verification_levels': {
+                'exact_byte_identity': 'Nine recovered B3 files and the original merged Phase3 table equal SHA256 values committed in v1.0.0',
+                'semantic_identity': 'Phase3 observed-output projection equals the deterministic projection of the original merged table, row by row',
+                'historical_anchor': 'Anchors are v1.0.0 committed files pinned by SHA256, cross-checked with RELEASE_MANIFEST_V1.json and, when Git history is present, the baseline commit blob',
+                'not_established': 'Anchors prove no change since v1.0.0; they do not independently authenticate the GPU run beyond that release'}}
 
 def unique(rows, fields):
     result = {}
@@ -394,8 +555,10 @@ def run(output, bootstraps=BOOTSTRAPS):
     if output.exists():
         raise ValueError('Use a new output directory; frozen evidence is immutable')
     verify_release()
+    anchors=verify_evidence_anchors()
     evidence_count=verify_evidence()
     output.mkdir(parents=True)
+    write_json(output/'EVIDENCE_ANCHOR_VERIFICATION_V1.json',{**anchors,'analysis_origin':ORIGIN})
     source,phase2=reconstruct_source()
     baselines=source_baselines(source)
     write_json(output/'SOURCE_BASELINE_BINDING_V1.json',baselines)
@@ -464,6 +627,9 @@ def run(output, bootstraps=BOOTSTRAPS):
                             'historical_population_modified':False} for r in reports)
     write_csv(output/'MCR_CONTENT_DUPLICATE_SENSITIVITY_V1.csv',sensitivity)
     summary={'analysis_origin':ORIGIN,'evidence_files_verified':evidence_count,
+             'B3_PREEXISTING_ANCHOR_CHECK':anchors['B3_PREEXISTING_ANCHOR_CHECK'],
+             'PHASE3_PROJECTION_BINDING':anchors['PHASE3_PROJECTION_BINDING'],
+             'PHASE3_PREEXISTING_ANCHOR':anchors['PHASE3_PREEXISTING_ANCHOR'],
              'B3_CORRECTED_PREDICTION_ROWS_VERIFIED':prediction_count,'numeric_replay_tolerance':1e-12,
              'B3_CORRECTED_ROW_LEVEL_REPLAY':'PASS','PHASE2_EVIDENCE_RECOVERED':'PASS',
              'PHASE2_SOURCE_RECORDS':len(source),'PHASE3_ROW_LEVEL_REPLAY':'PASS',

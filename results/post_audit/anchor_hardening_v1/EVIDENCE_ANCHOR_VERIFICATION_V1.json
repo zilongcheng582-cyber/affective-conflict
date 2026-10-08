@@ -1,0 +1,95 @@
+{
+  "B3_PREEXISTING_ANCHOR_CHECK": "PASS",
+  "PHASE3_PREEXISTING_ANCHOR": "PASS",
+  "PHASE3_PROJECTION_BINDING": "PASS",
+  "analysis_origin": "POST_AUDIT_REANALYSIS",
+  "b3": {
+    "B3_PREEXISTING_ANCHOR_CHECK": "PASS",
+    "catalog_anchor": {
+      "baseline_commit": "e597e6de0a488f803709498cc9905289d9768c6c",
+      "baseline_git_blob": "MATCH",
+      "path": "frozen/identity/corrected_output_catalog.json",
+      "release_v1_0_0_receipt": "MATCH",
+      "sha256": "b696fb1dfc7d32250e27b7e389953010c4749797005d9719ac76bbd474b8e34c"
+    },
+    "catalogued_not_released": [
+      "B3_CORRECTED_EXECUTION_LOG.txt",
+      "B3_EXECUTION_RUNNER_PID.txt",
+      "B3_EXECUTION_TECHNICAL_AMENDMENT_001.json",
+      "B3_EXECUTION_VERIFIER_TECHNICAL_AMENDMENT_001.json",
+      "B3_FORWARD_RESULTS_V1.jsonl",
+      "B3_REMOTE_EXECUTION_MINIMAL_PREFLIGHT_V1.json"
+    ],
+    "post_audit_supplied_not_anchored": [
+      "B3_RELEASE_EVIDENCE_SHA256SUMS.txt",
+      "historical_corrected_zero_refit_predictions.csv"
+    ],
+    "recovered_files_verified": [
+      {
+        "filename": "B3_ACQUISITION_COMPLETENESS_V1.json",
+        "identity": "EXACT_BYTES_MATCH_V1_0_0_CATALOG",
+        "sha256": "85971bc7bc76483d6cee64646209ce06c17d4b3f189ad0910be473c67dcf74a2"
+      },
+      {
+        "filename": "B3_CORRECTED_EXECUTION_CHECKPOINT_V1.json",
+        "identity": "EXACT_BYTES_MATCH_V1_0_0_CATALOG",
+        "sha256": "4458584cb5f3d79072199765bf8b52f71b6cf3046d4e49a625ef60fcff9489cd"
+      },
+      {
+        "filename": "B3_CORRECTED_EXECUTION_COMPLETENESS_V1.json",
+        "identity": "EXACT_BYTES_MATCH_V1_0_0_CATALOG",
+        "sha256": "624339cb9176736e4ee6cb5019f1db8c0850d885ebb0d917fc3a0fc345833d6e"
+      },
+      {
+        "filename": "B3_CORRECTED_EXECUTION_PROVENANCE_V1.json",
+        "identity": "EXACT_BYTES_MATCH_V1_0_0_CATALOG",
+        "sha256": "edf3b513b95120b82b677b84959259ba4aecd15f1ff06775860630cd6adb0eaf"
+      },
+      {
+        "filename": "B3_CORRECTED_EXECUTION_SHA256SUMS.txt",
+        "identity": "EXACT_BYTES_MATCH_V1_0_0_CATALOG",
+        "sha256": "c8f5c0ff740d8ba177879d41cf44542786dab753d297bfd762629478b6afeeea"
+      },
+      {
+        "filename": "B3_CORRECTED_FORWARD_RESULTS_V1.jsonl",
+        "identity": "EXACT_BYTES_MATCH_V1_0_0_CATALOG",
+        "sha256": "09724eb7ea4e114cb9ca8addaab618435bbf8537f07a80172a3c0fe72d687a44"
+      },
+      {
+        "filename": "B3_CORRECTED_MEASUREMENTS_V1.csv",
+        "identity": "EXACT_BYTES_MATCH_V1_0_0_CATALOG",
+        "sha256": "7ce3d51d3670e0f8c7f7bb377cd2313b11e6931ff42ba44b0883ad4270fc81b4"
+      },
+      {
+        "filename": "B3_EXECUTION_IDENTITY_RECORDS_V1.json",
+        "identity": "EXACT_BYTES_MATCH_V1_0_0_CATALOG",
+        "sha256": "3266f0dfd6824767f1a4bdafe47cebfb2a9bc92ead518377c1ef7da527f1888c"
+      },
+      {
+        "filename": "B3_MEASUREMENTS_V1.jsonl",
+        "identity": "EXACT_BYTES_MATCH_V1_0_0_CATALOG",
+        "sha256": "0ad7785530a52923dabdf3ec6b3c5afe27e68d87be61e1b5f4465fde79fad450"
+      }
+    ]
+  },
+  "phase3_anchor": {
+    "PHASE3_PREEXISTING_ANCHOR": "PASS",
+    "merged_evidence": "evidence/emotiontalk/phase3_original_merged_analysis.csv",
+    "merged_sha256": "2ea12d5b455daa2f5cbbce59290a95624abf52889ff09ecc8faaee1f7816d2ba",
+    "recorded_field": "authoritative_analysis_input_sha256",
+    "recording_anchor": {
+      "baseline_commit": "e597e6de0a488f803709498cc9905289d9768c6c",
+      "baseline_git_blob": "MATCH",
+      "path": "results/mainline_summary/phase3/EMOTIONTALK_PHASE3_LIMITED_INFERENTIAL_AUDIT_V1.json",
+      "release_v1_0_0_receipt": "MATCH",
+      "sha256": "0ed5acb299926a07c662ee5915c53e6832b09d11aa0cad9acfb623e916898961"
+    }
+  },
+  "phase3_rows_bound": 402,
+  "verification_levels": {
+    "exact_byte_identity": "Nine recovered B3 files and the original merged Phase3 table equal SHA256 values committed in v1.0.0",
+    "historical_anchor": "Anchors are v1.0.0 committed files pinned by SHA256, cross-checked with RELEASE_MANIFEST_V1.json and, when Git history is present, the baseline commit blob",
+    "not_established": "Anchors prove no change since v1.0.0; they do not independently authenticate the GPU run beyond that release",
+    "semantic_identity": "Phase3 observed-output projection equals the deterministic projection of the original merged table, row by row"
+  }
+}

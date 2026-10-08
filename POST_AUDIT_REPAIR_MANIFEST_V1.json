@@ -1,5 +1,11 @@
 {
   "GPU_execution": false,
+  "amendments": [
+    {
+      "scope": "verifier, tests and documentation; no scientific data, metric or frozen-artifact change",
+      "task": "PR1_EVIDENCE_ANCHOR_HARDENING_V1"
+    }
+  ],
   "baseline_commit": "e597e6de0a488f803709498cc9905289d9768c6c",
   "branch": "fix/post-audit-mainline-closure-v1",
   "files": [
@@ -52,10 +58,10 @@
       "size": 0
     },
     {
-      "SHA256": "c1d4c98b81b48049f233f15ac5a547c9a4137d27bcc67f5e452e7a7e134bf200",
+      "SHA256": "3ebc1b6bd9b4a5e65917f7bd52e2c5578b1f5809d2c5e5c173b6f93da56113c3",
       "relative_path": "analyses/phase3/report.py",
       "role": "CURRENT_EXECUTABLE_OR_DOCUMENTATION",
-      "size": 1216
+      "size": 1424
     },
     {
       "SHA256": "de90532889b2d5ff05ef0794f9999e0e8f60875d49353c0dda1909a2c9b2bcce",
@@ -64,10 +70,10 @@
       "size": 62
     },
     {
-      "SHA256": "b36622ce75d8ae36da0feb2ae79d03ae049e83814d2fd64fb62781f14d6bcfb1",
+      "SHA256": "0f5088d84a129171b5b04bba1fe8925ce533a6d265887640ab3ae9aecba84f39",
       "relative_path": "analyses/post_audit/replay.py",
       "role": "CURRENT_EXECUTABLE_OR_DOCUMENTATION",
-      "size": 28926
+      "size": 39595
     },
     {
       "SHA256": "604048c4d942c78172367158b79a35794e2321133c3a2e73cdc4a926c8dfae5c",
@@ -154,16 +160,16 @@
       "size": 2601
     },
     {
-      "SHA256": "96e5a4d8fef1d4e526f7d4535e74a42ceeae58a9b9d6ba69a6f69fb068102703",
+      "SHA256": "e98b26164823a4f022ec022650a16c13ec7751fc4523a18fa4feda956ba93084",
       "relative_path": "docs/EVIDENCE_AVAILABILITY_V1.md",
       "role": "CURRENT_EXECUTABLE_OR_DOCUMENTATION",
-      "size": 3651
+      "size": 4234
     },
     {
-      "SHA256": "30922f428447a04e63cc390a5abdc5f5fdede162f46040d2cf3c941b9d38c14b",
+      "SHA256": "6163bf26bc6884f8651ddb1c98e9c33cc830a2c6a3633f630acc9b394c7aedf8",
       "relative_path": "docs/FILE_MAP.md",
       "role": "CURRENT_EXECUTABLE_OR_DOCUMENTATION",
-      "size": 2177
+      "size": 2531
     },
     {
       "SHA256": "0e4f780cfe8ecd8f0d396f9f85a0a519e62add26cb5fc80b2e96589f7158527a",
@@ -1502,6 +1508,36 @@
       "relative_path": "tests/test_release_source_inputs.py",
       "role": "CURRENT_EXECUTABLE_OR_DOCUMENTATION",
       "size": 1644
+    },
+    {
+      "SHA256": "45da2e05a037a8dbdb748703df4431146bd82ada417cf49f0132ad7ebed083a8",
+      "relative_path": "tests/test_evidence_anchors.py",
+      "role": "CURRENT_EXECUTABLE_OR_DOCUMENTATION",
+      "size": 8485
+    },
+    {
+      "SHA256": "67abc4e35d4da0c51e0016c809e207092b5434e06ffba13fa3883da3e8d0c1f8",
+      "relative_path": "docs/EVIDENCE_ANCHOR_HARDENING_V1.md",
+      "role": "CURRENT_EXECUTABLE_OR_DOCUMENTATION",
+      "size": 5062
+    },
+    {
+      "SHA256": "8dca48456e026973b4413c0b848e3308cb7ca604826fcbcc4fff76559db1b4f9",
+      "relative_path": "results/post_audit/anchor_hardening_v1/ANCHOR_HARDENING_VERIFICATION_V1.json",
+      "role": "POST_AUDIT_REANALYSIS",
+      "size": 6159
+    },
+    {
+      "SHA256": "829e4358d03ca48b9bd7f588bf10829ffda33d78ac317d21a892201d26a84cd1",
+      "relative_path": "results/post_audit/anchor_hardening_v1/EVIDENCE_ANCHOR_VERIFICATION_V1.json",
+      "role": "POST_AUDIT_REANALYSIS",
+      "size": 4332
+    },
+    {
+      "SHA256": "d7e18210fc1ed6acd6b3ec35965c8368c90ead41fb3fca43be1335d58d6f55e3",
+      "relative_path": "results/post_audit/anchor_hardening_v1/POST_AUDIT_CPU_REPLAY_V1.json",
+      "role": "POST_AUDIT_REANALYSIS",
+      "size": 1026
     }
   ],
   "historical_artifacts_modified": false,

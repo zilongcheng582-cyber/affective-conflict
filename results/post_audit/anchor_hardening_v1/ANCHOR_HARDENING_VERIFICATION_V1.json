@@ -1,0 +1,160 @@
+{
+  "B3_CORRECTED_METRICS": "UNCHANGED",
+  "B3_PREEXISTING_ANCHOR_CHECK": "PASS",
+  "FROZEN_MAINLINE": "UNCHANGED",
+  "GPU_execution": false,
+  "LISTEN_3C_METRICS": "UNCHANGED",
+  "PHASE3_PREEXISTING_ANCHOR": "PASS",
+  "PHASE3_PROJECTION_BINDING": "PASS",
+  "PHASE3_RESULT_268_294": "UNCHANGED",
+  "SOURCE_M0_BASELINE": "UNCHANGED",
+  "analysis_origin": "POST_AUDIT_REANALYSIS",
+  "environment": {
+    "numpy": "2.4.3",
+    "platform": "Linux-6.18.44-fc-v80-x86_64-with-glibc2.39",
+    "python": "3.12.13",
+    "scipy": "1.17.1"
+  },
+  "evidence_or_closure_v1_changed_since_pr_head": "NONE",
+  "phase3_anchor_note": "Merged Phase3 table SHA256 2ea12d5b... is recorded in a file committed in v1.0.0 (e597e6d, tag v1.0.0) before PR #1; this proves no change since v1.0.0, not authenticity of the GPU run beyond that release",
+  "scientific_outputs_vs_closure_v1": {
+    "byte_identical_files": [
+      "MCR_CONTENT_DUPLICATE_AUDIT_V1.csv",
+      "MCR_CONTENT_DUPLICATE_SENSITIVITY_V1.csv",
+      "PHASE2_RECONSTRUCTED_SOURCE_RECORDS_V1.csv",
+      "PHASE3_ROW_LEVEL_VERIFICATION_V1.csv",
+      "corrected_replay/B3_CORRECTED_DATASET_METRICS_V1.csv",
+      "corrected_replay/B3_OLD_VS_CORRECTED_COMPARISON_V1.csv",
+      "corrected_replay/B3_ZERO_REFIT_PROVENANCE_V1.json"
+    ],
+    "comparison": "Linux LF replay vs Windows-sealed CRLF closure_v1; equality is numerical within 1e-12, not byte identity",
+    "non_numeric_differences": 0,
+    "numerically_equal_files_max_abs_difference": 2.220446049250313e-16,
+    "per_file": [
+      {
+        "byte_identical": false,
+        "file": "LISTEN_CONDITION_DIAGNOSTICS.csv",
+        "max_abs_numeric_difference": 2.220446049250313e-16,
+        "n_non_numeric_differences": 0,
+        "non_numeric_differences": []
+      },
+      {
+        "byte_identical": false,
+        "file": "LISTEN_JOINT_ONLY_REPORT.csv",
+        "max_abs_numeric_difference": 2.220446049250313e-16,
+        "n_non_numeric_differences": 0,
+        "non_numeric_differences": []
+      },
+      {
+        "byte_identical": true,
+        "file": "MCR_CONTENT_DUPLICATE_AUDIT_V1.csv",
+        "max_abs_numeric_difference": 0.0,
+        "n_non_numeric_differences": 0,
+        "non_numeric_differences": []
+      },
+      {
+        "byte_identical": true,
+        "file": "MCR_CONTENT_DUPLICATE_SENSITIVITY_V1.csv",
+        "max_abs_numeric_difference": 0.0,
+        "n_non_numeric_differences": 0,
+        "non_numeric_differences": []
+      },
+      {
+        "byte_identical": true,
+        "file": "PHASE2_RECONSTRUCTED_SOURCE_RECORDS_V1.csv",
+        "max_abs_numeric_difference": 0.0,
+        "n_non_numeric_differences": 0,
+        "non_numeric_differences": []
+      },
+      {
+        "byte_identical": true,
+        "file": "PHASE3_ROW_LEVEL_VERIFICATION_V1.csv",
+        "max_abs_numeric_difference": 0.0,
+        "n_non_numeric_differences": 0,
+        "non_numeric_differences": []
+      },
+      {
+        "byte_identical": false,
+        "file": "POST_AUDIT_CPU_REPLAY_V1.json",
+        "keywise_equal_except_added_anchor_keys": true,
+        "max_abs_numeric_difference": 0.0,
+        "n_non_numeric_differences": 0,
+        "non_numeric_differences": [],
+        "note": "Positional comparison shifts after three added anchor keys; key-wise, every pre-existing summary field is equal and only B3_PREEXISTING_ANCHOR_CHECK, PHASE3_PROJECTION_BINDING, PHASE3_PREEXISTING_ANCHOR are added"
+      },
+      {
+        "byte_identical": false,
+        "file": "SOURCE_BASELINE_BINDING_V1.json",
+        "max_abs_numeric_difference": 0.0,
+        "n_non_numeric_differences": 0,
+        "non_numeric_differences": []
+      },
+      {
+        "byte_identical": false,
+        "file": "ZERO_REFIT_BASELINE_COMPARISON_V1.csv",
+        "max_abs_numeric_difference": 2.220446049250313e-16,
+        "n_non_numeric_differences": 0,
+        "non_numeric_differences": []
+      },
+      {
+        "byte_identical": true,
+        "file": "corrected_replay/B3_CORRECTED_DATASET_METRICS_V1.csv",
+        "max_abs_numeric_difference": 0.0,
+        "n_non_numeric_differences": 0,
+        "non_numeric_differences": []
+      },
+      {
+        "byte_identical": false,
+        "file": "corrected_replay/B3_CORRECTED_MEASUREMENT_CLOSEOUT_V1.json",
+        "max_abs_numeric_difference": 1.1102230246251565e-16,
+        "n_non_numeric_differences": 0,
+        "non_numeric_differences": []
+      },
+      {
+        "byte_identical": false,
+        "file": "corrected_replay/B3_CORRECTED_ZERO_REFIT_PREDICTIONS_V1.csv",
+        "max_abs_numeric_difference": 1.1102230246251565e-16,
+        "n_non_numeric_differences": 0,
+        "non_numeric_differences": []
+      },
+      {
+        "byte_identical": false,
+        "file": "corrected_replay/B3_FINAL_HASHES_V1.txt",
+        "max_abs_numeric_difference": 0.0,
+        "n_non_numeric_differences": 0,
+        "non_numeric_differences": [],
+        "note": "Hash list of replay outputs; differs only because output bytes differ (LF line endings, <=2.2e-16 float formatting)"
+      },
+      {
+        "byte_identical": true,
+        "file": "corrected_replay/B3_OLD_VS_CORRECTED_COMPARISON_V1.csv",
+        "max_abs_numeric_difference": 0.0,
+        "n_non_numeric_differences": 0,
+        "non_numeric_differences": []
+      },
+      {
+        "byte_identical": false,
+        "file": "corrected_replay/B3_ZERO_REFIT_FINAL_EVALUATION_V1.json",
+        "max_abs_numeric_difference": 1.1102230246251565e-16,
+        "n_non_numeric_differences": 0,
+        "non_numeric_differences": []
+      },
+      {
+        "byte_identical": false,
+        "file": "corrected_replay/B3_ZERO_REFIT_FINAL_EVALUATION_V1.md",
+        "max_abs_numeric_difference": 0.0,
+        "n_non_numeric_differences": 0,
+        "non_numeric_differences": []
+      },
+      {
+        "byte_identical": true,
+        "file": "corrected_replay/B3_ZERO_REFIT_PROVENANCE_V1.json",
+        "max_abs_numeric_difference": 0.0,
+        "n_non_numeric_differences": 0,
+        "non_numeric_differences": []
+      }
+    ]
+  },
+  "task": "PR1_EVIDENCE_ANCHOR_HARDENING_V1",
+  "v1_0_0_manifest_entries_not_intentionally_modified_mismatching": []
+}
