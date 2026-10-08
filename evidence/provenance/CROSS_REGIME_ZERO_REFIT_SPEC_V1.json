@@ -1,0 +1,130 @@
+{
+  "artifact": "CROSS_REGIME_ZERO_REFIT_SPEC_V1",
+  "authoritative_target_input_hashes": {
+    "EmotionTalk AT -> LISTEN AT": {
+      "audit/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/LISTEN_V4_FINAL_REPORT.md": "e10e289d656fffadce86de5f255a78dc8c20fdd2b7570762793dffaccaee1b0c",
+      "audit/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/listen_native_manifest_source_aligned_v4.csv": "567c9cc2f1758d703031c4eb772bd0e35fc003561f769866f1b6e9559251aa28",
+      "audit/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/listen_v4_execution_manifest.json": "080372caa1938e4100e9780f04161b6da28fdf96d13c031e1ba0b1dce74ff4c0",
+      "audit/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/listen_v4_failure_accounting.json": "3e4244f269f8de670c6d5b63ec7bb9ff148e4653eaf67772e06b5be899b7ff1e",
+      "audit/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/v4_metrics_fine.json": "0bb409f0157a514faa4e4545555564c48809c49de96e3e3984344394b7635d2b",
+      "results/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/listen_native_raw_outputs_source_aligned_v4.jsonl": "efb604ffcdd4f746cda961da0fa17f8fae995e34aa02779bf2334917c19e74ea"
+    },
+    "EmotionTalk AT -> MCR AT": {
+      "audit/QWEN25_MCR_CONTROLLED_V3/full_run/MCR_CONTROLLED_FULL_V2_COMPLETENESS.json": "639e7a118b1fea4539626546d3345a880f507a7efa2f01ce716a6907524f1fa3",
+      "audit/QWEN25_MCR_CONTROLLED_V3/full_run/MCR_CONTROLLED_FULL_V2_PROVENANCE.json": "47509ee5d0fa0823d3ed0e6e914c0609ebb99d283a1ba6e58e532c42791b07e0",
+      "audit/QWEN25_MCR_CONTROLLED_V3/full_run/qwen25_mcr_controlled_full_v2.jsonl": "2772bd2d536caa4e55f1305300b4e9a523a5315afd37992c098d6724e4c25775",
+      "audit/QWEN25_MCR_CONTROLLED_V3/mcr_controlled_arbitration_manifest_v2.jsonl": "fee4d04a5ffdac73930e943ae168a6f73e908d17c158a4f953c9c7d830ee48a6",
+      "audit/QWEN25_MCR_CONTROLLED_V3/scientific_analysis_v2/MCR_CONTROLLED_SAMPLE_LEVEL_ANALYSIS_V2.csv": "e7c9f6ec9f65f87ba7f84a37275702e05c6695a9726cb045f846731046c21000",
+      "audit/QWEN25_MCR_CONTROLLED_V3/scientific_analysis_v2/MCR_CONTROLLED_SCIENTIFIC_RESULTS_V2.json": "009d2fadfe128ea2e7e512f972a112db8d7bd0949064bb6c7b12dc7315b874a6"
+    },
+    "EmotionTalk AV -> CA-MER AV": {
+      "audit/QWEN25_CAMER_CONTROLLED_V1/CAMER_CONTROLLED_PROTOCOL_V1.json": "efbe18fefcd3964e1ccbb48df671cad7279d543a021f90bbd6c11dfbef83306f",
+      "audit/QWEN25_CAMER_CONTROLLED_V1/camer_controlled_manifest_v1.jsonl": "929a9734a5099c60f83890544401c09d703e32b728e0b9f4d6afd98b46c7869b",
+      "audit/QWEN25_CAMER_CONTROLLED_V1/full_run_v1/CAMER_CONTROLLED_FULL_RUN_V1.json": "020156687b4ce9de1cc356994c0b9aa55ad5206032183a0f9846444614ae7dab",
+      "audit/QWEN25_CAMER_CONTROLLED_V1/full_run_v1/qwen25_camer_controlled_full_v1.jsonl": "2d7d6b85eb9dc7efff9689d910cf0bcf2ebc3894131958ca9431e6dc7116c9be",
+      "audit/QWEN25_CAMER_CONTROLLED_V1/technical_gate_v4/CAMER_CONTROLLED_TECHNICAL_GATE_V4.json": "aedd8bb84562ade08e0be1b59837b56198228e360d9488cf4ba15bcaf92f99af",
+      "code/run_qwen25_camer_controlled_v4.py": "8d8f80ddd6577a91e2606374fda493b19675cc01caf25d31aba6a8af8ad69c20"
+    }
+  },
+  "created_utc": "2026-09-29T16:00:05.367641+00:00",
+  "eligibility": {
+    "OTHER_and_PARSE_FAIL": "excluded from scorable predictor replay; retained in audit",
+    "cluster_unit": "utterance/sample ID",
+    "repeated_order_is_not_independent_cluster": true,
+    "source": "conflict + resolved SIDE outcomes only"
+  },
+  "gate_protocol": {
+    "full_run_forbidden": true,
+    "routes": [
+      "EmotionTalk AT -> MCR AT",
+      "EmotionTalk AT -> LISTEN AT",
+      "EmotionTalk AV -> CA-MER AV"
+    ],
+    "seed": 20260929,
+    "selection_before_prediction_correctness": true,
+    "selection_method": "deterministic SHA256(seed|route|sample|order) ordering; no correctness-adaptive selection"
+  },
+  "metrics_planned": [
+    "log_loss",
+    "brier",
+    "accuracy",
+    "balanced_accuracy_if_defined",
+    "AUROC_if_both_classes_present",
+    "calibration_descriptive"
+  ],
+  "no_refit_rules": {
+    "target_calibration": false,
+    "target_feature_addition": false,
+    "target_inclusion_rule_change": false,
+    "target_refit": false,
+    "target_scaling": false,
+    "target_threshold_tuning": false
+  },
+  "outcome_coding": {
+    "Y=0": "canonical modality2 selected",
+    "Y=1": "canonical modality1 selected",
+    "target_labels_are": "source-side evidence/conflict-side labels, not objective human ground truth"
+  },
+  "pair_mapping": {
+    "EmotionTalk_AT_to_LISTEN_AT": {
+      "modality1": "A",
+      "modality2": "T",
+      "source_pair": "AT",
+      "target_fields": {
+        "normalized_entropy": "A-T",
+        "order": "modality1=A",
+        "source_probability": "A-T"
+      }
+    },
+    "EmotionTalk_AT_to_MCR_AT": {
+      "modality1": "A",
+      "modality2": "T",
+      "source_pair": "AT",
+      "target_fields": {
+        "normalized_entropy": "A-T",
+        "order": "modality1=A",
+        "source_probability": "A-T"
+      }
+    },
+    "EmotionTalk_AV_to_CAMER_AV": {
+      "modality1": "A",
+      "modality2": "V",
+      "source_pair": "AV",
+      "target_fields": {
+        "normalized_entropy": "A-V",
+        "order": "modality1=A",
+        "source_probability": "A-V"
+      }
+    }
+  },
+  "source_model": {
+    "artifact": "audit/EMOTIONTALK_CONTROLLED_V1/phase2_scientific_analysis_v1/EMOTIONTALK_PHASE2_PAIRWISE_MODEL_FREEZE_V1.json",
+    "coefficients": {
+      "FIRST_IS_MODALITY1": -0.8560767556273149,
+      "delta_normalized_entropy_per_SD": -1.6501776858506354,
+      "delta_source_label_probability_per_SD": -0.10768566922804151,
+      "intercept_AT": 0.4957299419812353,
+      "pair_AV": -0.3002756093311054,
+      "pair_VT": -0.3184049210301859
+    },
+    "formula": "logit(p_modality1)=intercept+pair_effects+beta_src*z_delta_source_probability+beta_entropy*z_delta_entropy+beta_order*FIRST_IS_MODALITY1",
+    "scaling": {
+      "delta_normalized_entropy": {
+        "mean": 0.010677101290381895,
+        "sd": 0.2372161619046711
+      },
+      "delta_source_label_probability": {
+        "mean": -0.020756470381645534,
+        "sd": 0.24967130446121275
+      }
+    },
+    "sha256": "2f5e5e639ce22d79452aa54ca599fd0e14bc525cf874042b04065edadeed5019"
+  },
+  "source_sign_conventions": {
+    "AT": "A-T",
+    "AV": "A-V",
+    "VT": "V-T"
+  },
+  "static_audit_status": "PASS",
+  "status": "FROZEN_STATIC_AUDIT_BLOCKED_BEFORE_REPLAY"
+}

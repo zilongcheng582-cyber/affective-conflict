@@ -96,5 +96,8 @@ def main():
     else:
         with args.output.open('x',encoding='utf-8') as f:
             for row in rows:f.write(json.dumps(row,ensure_ascii=False,sort_keys=True)+'\n')
+    from src.reconstruction.mcr.content_duplicates import audit_audio_files,write_audit
+    audit=audit_audio_files(raw,args.root/Path(RAW_REL).parent)
+    write_audit(args.output.with_name(args.output.stem+'_content_duplicates.csv'),audit)
     print(json.dumps({'gap_id':args.gap,'rows':len(rows),'SHA256':sha(args.output),'status':'GENERATED'}))
 if __name__=='__main__':main()

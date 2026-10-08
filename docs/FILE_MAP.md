@@ -1,3 +1,12 @@
 # File map
 
  src/reconstruction: unique current raw/canonical producers. src/emotiontalk: current execution kernels and portable entry points. src/cross_regime/target_scoring: byte-identical frozen scoring kernels plus portable orchestration. src/cross_regime/zero_refit: corrected-only closeout/evaluation and unchanged pure metric equations. frozen/protocols/manifests/configs: scientific definitions and bounded required derived records. analyses: current publication CV and frozen report readers. results/mainline_summary: corrected summaries and comparison-only references. tests: CPU regression and identity negative cases. docs: reproducibility, provenance, limitations and release verification.
+
+
+Post-audit: evidence/b3 is the exact minimal formal completed corrected acquisition plus comparison-only prior CPU predictions; evidence/emotiontalk contains scientific projections of original responses and exact reference analysis table; evidence/mcr contains actual recomputed hash identities without audio; evidence/provenance records source specification chronology. EVIDENCE_MANIFEST_V1.json and root ARTIFACT_RECOVERY_MATRIX_V1.csv distinguish original/projection identities.
+
+analyses/post_audit/replay.py independently verifies source records, metrics, baselines, Phase3 joins and duplicate sensitivity on CPU. analyses/phase3/report.py now reads actual observations instead of certifying summary counts. src/reconstruction/mcr/content_duplicates.py adds byte-content validation without changing historical selection. results/post_audit/closure_v1 contains new separately labeled diagnostic reports and source baseline binding. tests/test_post_audit_closure.py contains negative and row-identity regression tests.
+
+POST_AUDIT_REPAIR_MANIFEST_V1.json and POST_AUDIT_REPAIR_SHA256SUMS.txt bind current payload; POST_AUDIT_REPAIR_TEST_RESULTS.txt records actual verification; summary and docs/POST_AUDIT_REPAIR_V1.md classify findings. SCIENTIFIC_CLAIM_STATUS_V1.md bounds claims; EVIDENCE_AVAILABILITY_V1.md describes private authorized access and lawful raw-source boundaries. Original results/mainline_summary and old release manifests remain historical evidence.
+
+Evidence anchors: analyses/post_audit/replay.py verify_evidence_anchors() checks B3 and Phase3 evidence against v1.0.0 committed anchors before replay; tests/test_evidence_anchors.py holds the negative cases; results/post_audit/anchor_hardening_v1 holds the anchor verification report; docs/EVIDENCE_ANCHOR_HARDENING_V1.md explains verification levels.

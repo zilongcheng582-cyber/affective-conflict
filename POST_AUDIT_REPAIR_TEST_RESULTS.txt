@@ -1,0 +1,136 @@
+POST_AUDIT_REPAIR_TEST_RESULTS_V1
+BASELINE_COMMIT = e597e6de0a488f803709498cc9905289d9768c6c
+BRANCH = fix/post-audit-mainline-closure-v1
+DATE = 2026-10-08
+CLEAN_CHECKOUT = PASS (new detached Git checkout of staged candidate)
+REQUIREMENTS_INSTALL = PASS (fresh isolated venv; install repeated from clean checkout requirements.txt)
+PIP_CHECK = PASS
+PYTHON_IMPORTS = PASS
+FROZEN_MANIFESTS_SOURCE_BINDING_SCALERS = PASS
+RECOVERED_EVIDENCE_HASHES = PASS (21 files)
+TARGETED_AND_EXISTING_REGRESSIONS = PASS
+SCIENTIFIC_KERNEL_AST_PARITY = PASS (22 unchanged kernels; frozen metric-helper AST registry also matched)
+FROZEN_HISTORICAL_ARTIFACTS_MODIFIED = NO (112 files byte-identical to baseline)
+GPU_EXECUTION = NO (torch CPU build; no inference)
+SOURCE_FROZEN_M3_REFIT = NO
+SOURCE_M0_PLUS_ORDER_FIT = SOURCE_ONLY_POST_AUDIT_DIAGNOSTIC_663_RECORDS_HISTORICAL_NEWTON_IRLS
+TARGET_REFIT_CALIBRATION_SCALER_FIT_THRESHOLD_TUNING = NO
+FROZEN_SCIENTIFIC_POPULATION_OR_ASSIGNMENT_CHANGED = NO
+CLEAN_CHECKOUT_REPLAY = PASS
+GENERATED_OUTPUT_COMPARISON = ALL_SEALED_POST_AUDIT_OUTPUTS_BYTE_IDENTICAL
+FULL_PUBLIC_INDEPENDENT_REPRODUCIBILITY = NOT_CLAIMED (private repo; restricted raw-media/model acquisition remains external)
+
+Actual pytest output:
+................................................          [100%]
+48 passed, 15 subtests passed in 17.56s
+
+Actual CPU environment:
+{
+  "PyYAML": "6.0.3",
+  "Python": "3.12.10",
+  "evidence_files": 21,
+  "isolated_venv": true,
+  "numpy": "2.4.3",
+  "observed_phase2_responses": 2132,
+  "pyarrow": "23.0.1",
+  "pytest": "9.0.3",
+  "release": {
+    "RELEASE_HASH_RECHECK": "PASS",
+    "files": 248
+  },
+  "scipy": "1.17.1",
+  "source_binding_loaded": "BOUND_HISTORICAL_SOURCE_ONLY",
+  "source_records": 663,
+  "torch": "2.8.0+cpu",
+  "torch_cuda_build": null
+}
+
+Actual completed CPU replay:
+{
+  "B3_CORRECTED_PREDICTION_ROWS_VERIFIED": 9219,
+  "B3_CORRECTED_ROW_LEVEL_REPLAY": "PASS",
+  "GPU_EXECUTION": false,
+  "HISTORICAL_ARTIFACTS_MODIFIED": false,
+  "LISTEN_3C_EVALUATION": "PASS",
+  "MCR_CONTENT_DUPLICATE_GROUPS": 3,
+  "MCR_CONTENT_DUPLICATE_ROWS": 7,
+  "MCR_DUPLICATE_VALIDATION": "PASS",
+  "PHASE2_EVIDENCE_RECOVERED": "PASS",
+  "PHASE2_SOURCE_RECORDS": 663,
+  "PHASE3_CORRECT": 268,
+  "PHASE3_FRACTION": 0.9115646258503401,
+  "PHASE3_PLANNED": 402,
+  "PHASE3_RESOLVED": 294,
+  "PHASE3_ROLE": "TWO_VS_ONE_PAIRWISE_TO_TRIMODAL_CONSISTENCY",
+  "PHASE3_ROW_LEVEL_REPLAY": "PASS",
+  "PHASE3_UNRESOLVED": 108,
+  "SCIENTIFIC_RULING": "REQUIRES_INTERPRETATION",
+  "SOURCE_M0_BASELINE": "PASS",
+  "analysis_origin": "POST_AUDIT_REANALYSIS",
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 20261008,
+  "evidence_files_verified": 21,
+  "numeric_replay_tolerance": 1e-12,
+  "target_fit": false
+}
+
+Actual payload review:
+{
+  "FROZEN_HISTORICAL_ARTIFACTS_MODIFIED": "NO",
+  "NEW_PRIVATE_PATHS_OR_CREDENTIALS": "NONE",
+  "RAW_MEDIA_OR_WEIGHTS_ADDED": "NO",
+  "REQUIRED_ASSET_RECOVERY": "PASS",
+  "historical_byte_identical_files": 112,
+  "largest_new_file_bytes": 18648598,
+  "new_files_scanned": 45,
+  "recovered_matrix_entries": 21,
+  "restricted_raw_media_entries": 1
+}
+
+Clean checkout checks and stdout/stderr receipt hashes:
+{
+  "GPU_execution": false,
+  "checkout_kind": "NEW_DETACHED_GIT_WORKTREE_FROM_STAGED_VERIFICATION_TREE",
+  "checks": [
+    {
+      "check": "requirements-install",
+      "exit_code": 0,
+      "log_sha256": "aecd3534c3f0cfe1ac17bf0d07b59723093059d7ed58792cbf8860fcb636b6ab"
+    },
+    {
+      "check": "pip-check",
+      "exit_code": 0,
+      "log_sha256": "f224655f1ff1d95e2b2a3014fe5560b31fa92ad15dac4fd90897e156ebeac2fd"
+    },
+    {
+      "check": "pytest",
+      "exit_code": 0,
+      "log_sha256": "f1981e21f0d5ead4362886bf2b7e3e28afac95d8139009b4f38934660aa692de"
+    },
+    {
+      "check": "imports-and-bindings",
+      "exit_code": 0,
+      "log_sha256": "e547abd253a860ef8c544a1624e9a24f97d8a04257b1c536eb3e2a5c4919bd05"
+    },
+    {
+      "check": "phase3-report",
+      "exit_code": 0,
+      "log_sha256": "821b63e1f7e23ba1f2a772e413fad254c8f477ee8e661efe86c1e0c13bf786f0"
+    },
+    {
+      "check": "cpu-replay",
+      "exit_code": 0,
+      "log_sha256": "b44a48a03783770fac191ca6d694d5220cdc17e053c9fd68c747081ed045cbab"
+    }
+  ],
+  "every_replay_output_matches_sealed_post_audit_results": "BYTE_IDENTICAL",
+  "final_sealing_changes": "Only verification receipts and current payload manifest/checksum are added after this clean run; executable/evidence/result files match the verified snapshot",
+  "local_snapshot_role": "Local detached Git verification snapshot; not an independently published commit or invented archive URL",
+  "scope_definition": "Sorted path/SHA256 of analyses, src, tests, evidence, frozen, protocols, manifests, configs, results, requirements and recovery matrix; exclude caches",
+  "snapshot_commit": "b4483e4a31d2e8038b23d09f1f80f7640742e25f",
+  "status": "PASS",
+  "target_fit": false,
+  "tracked_checkout_status": "CLEAN",
+  "verification_scope_files": 226,
+  "verification_scope_sha256": "4d42cab6d2cb45efacee35a89c0995037395bc4b56a0989bffa307718f1221e4"
+}

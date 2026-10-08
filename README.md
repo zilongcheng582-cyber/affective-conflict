@@ -6,11 +6,11 @@
 
  ## Repository status
 
- Current authoritative Qwen mainline, version `v1.0.0-mainline`. Only current implementations and required frozen scientific definitions are included. Raw media, model weights, historical executables, failed packages and bulk inference outputs are external. Packaging/CPU checks do not rerun GPU experiments.
+ Current authoritative Qwen mainline, version `v1.0.0-mainline`. Only current implementations and required frozen scientific definitions are included. Recovered corrected B3 probability vectors and EmotionTalk observed responses are now tracked under `evidence/`. Raw media, model weights, historical executables and failed packages remain external. Packaging/CPU checks do not rerun GPU experiments.
 
  ## Mainline freeze status
 
- `QWEN_MAINLINE_SCIENCE = CLOSED`; `B3_FINAL_SCIENTIFIC_RULING = SURVIVES_WITH_CORRECTION`. All 6354 corrected measurement rows and 5515 sequence-aware forwards completed, with zero failed or missing. Closure means the frozen experiment completed, independent of agreement with a hypothesis. See [MAINLINE_FREEZE](docs/MAINLINE_FREEZE.md).
+ `TECHNICAL_METRIC_REPLAY = PASS`; `SCIENTIFIC_RULING = REQUIRES_INTERPRETATION`. The immutable v1.0.0 author judgment `SURVIVES_WITH_CORRECTION` is retained as `HISTORICAL_AUTHOR_INTERPRETATION`. All 6354 corrected measurement rows and 5515 sequence-aware forwards completed, with zero failed or missing. Closure means the frozen experiment completed, independent of agreement with a hypothesis. See [MAINLINE_FREEZE](docs/MAINLINE_FREEZE.md).
 
  ## Datasets
 
@@ -49,7 +49,7 @@
 
  ## Phase3
 
- `python -m src.emotiontalk.phase3.run --output-dir ./workspace/phase3` verifies the frozen 402-slot plan on CPU; `--execute-gpu` uses the current trimodal executor. The 67 utterances have six orders each. The primary frozen compositionality result is 268/294 = 0.911564626 on resolved predictions; coverage 294/402. `python -m analyses.phase3.report --verify` verifies and reads the preserved report. The original primary-plan and complete main-analysis writers were not recovered; use the frozen plan and inference summary as authoritative artifacts, rather than claiming their historical producer has been reconstructed.
+ `python -m src.emotiontalk.phase3.run --output-dir ./workspace/phase3` verifies the frozen 402-slot plan on CPU; `--execute-gpu` uses the current trimodal executor. The 67 utterances have six orders each. The verified result is **TWO_VS_ONE_PAIRWISE_TO_TRIMODAL_CONSISTENCY**: 268/294 matches on resolved predictions; coverage 294/402. All 402 observed outputs are recovered. `python -m analyses.phase3.report --verify` independently reconstructs composition predictions from the observed Phase2 edges and joins actual trimodal labels. The 108 unresolved predictions comprise 93 edge disagreements and 15 OTHER-involved rows; they are not failed executions. Original historical writers remain unrecovered; this new verifier does not claim historical producer identity or general ALL_DIFFERENT compositionality.
 
  ## Corrected Cross-Regime B3
 
@@ -63,7 +63,7 @@
  ## Zero-refit evaluation
 
  ```bash
- python -m src.cross_regime.zero_refit.evaluate --gpu-outputs /path/to/B3_CORRECTED_GPU_OUTPUTS_V1 --output ./workspace/zero_refit
+ python -m src.cross_regime.zero_refit.evaluate --gpu-outputs evidence/b3 --output ./workspace/zero_refit
  python -m analyses.cross_regime.report
  ```
 
@@ -73,12 +73,12 @@
 
  | Frozen role | AUROC | Balanced accuracy @0.5 | Coverage |
  |---|---:|---:|---:|
- | MCR primary | 0.727558892 | 0.500000000 | 1734/1818 = 0.953795380 |
- | LISTEN margin sensitivity; primary unsupported | 0.522637549 | 0.489190375 | 518/1139 = 0.454784899 |
+ | MCR historical primary; later-added exploratory regime | 0.727558892 | 0.500000000 | 1734/1818 = 0.953795380 |
+ | LISTEN historical mixed 3A/3B/3C margin; primary unsupported | 0.522637549 | 0.489190375 | 518/1139 = 0.454784899 |
  | CA-MER supported supplementary; full primary undefined | 0.686393597 | 0.595715631 | 416/672 = 0.619047619 |
  | CA-MER full margin sensitivity | 0.573999074 | 0.539941342 | 1350/2000 = 0.675000000 |
 
- Historical log loss remains the primary evaluation metric; AUROC/BA/Brier are prespecified secondary metrics. Full metric and comparison tables are in `results/mainline_summary/cross_regime/`. MCR strongest transfer refers to ranking; frozen-threshold BA remains 0.5. LISTEN's margin AUROC now crosses slightly above 0.5, with BA still below 0.5. Corrected numbers and correction disclosure are required in the paper.
+ Historical log loss remains the primary evaluation metric; AUROC/BA/Brier are prespecified secondary metrics. Full metric and comparison tables are in `results/mainline_summary/cross_regime/`. MCR frozen-threshold BA remains 0.5. Dataset AUROC rankings do not identify relative strength of a common mechanism. The LISTEN 518-row result mixes text-only (182), audio-only (169) and joint (167) responses; it is a historical diagnostic, not a joint arbitration estimand. Corrected numbers and correction disclosure remain required.
 
  ## Reproducibility boundaries
 
@@ -95,3 +95,22 @@
 Frozen full-source model evidence can contain historical CV diagnostics. These are provenance only; obsolete CV result tables/reports are excluded from the current result directory. Corrected publication CV uses the shared-fold implementation and the included minimal prepared source records; packaging does not refit or replace any full-source or target model.
 
 CA-MER media preparation reads `--data-root` and writes a new `--output-root` outside acquired inputs. Use `python -m src.reconstruction.camer.prepare_media --mapping /path/to/CAMER_MEDIA_MAPPING_V1.csv --data-root "$AF_DATA_ROOT" --output-root /path/to/new/camer-work`. The joint replay is `python -m src.cross_regime.run_camer_joint --output-dir ../large_outputs/camer` for CPU plan validation; append `--execute-gpu` only for a separately authorized execution with the frozen derived media in `AF_DATA_ROOT`. All portable orchestration changes are recorded in `docs/portable_orchestration.json`.
+
+
+## Independent post-audit CPU replay
+
+```bash
+python -m pip install -r requirements.txt
+python -m pytest --basetemp ../new-pytest-temp
+python -m analyses.post_audit.replay --output ../new-post-audit-replay
+```
+
+Use a new output directory. No raw media, model snapshot, AutoDL instance or GPU is required for this historical metric replay. Recovered evidence is hashed before use; missing or altered evidence fails closed. All new results are `POST_AUDIT_REANALYSIS`; the historical result directory is unchanged.
+
+LISTEN 3C alone: 381 planned, 378 conflict denominator, 167 evaluated (102 SIDE_A, 65 SIDE_T); corrected frozen M3b AUROC 0.605732, BA 0.515460, log loss 0.981644, Brier 0.352787, coverage 0.441799. Source-fixed M0 log loss is 0.697116. The transferred-model minus M0 log-loss difference is +0.284528 (paired cluster percentile 95% CI +0.168351 to +0.402273). All 3C trials use A_THEN_T, so this condition cannot identify a counterbalanced order effect. See the complete [joint report](results/post_audit/closure_v1/LISTEN_JOINT_ONLY_REPORT.csv), [condition diagnostics](results/post_audit/closure_v1/LISTEN_CONDITION_DIAGNOSTICS.csv) and [baseline comparison](results/post_audit/closure_v1/ZERO_REFIT_BASELINE_COMPARISON_V1.csv).
+
+M0 uses the frozen source-only constant preference per pair. M0+order is explicitly a **post-audit diagnostic**, fitted only to the independently reconstructed 663 source resolved-conflict records using the historical unpenalized Newton/IRLS algorithm. Target labels never fit parameters. Frozen M3a/M3b have pair-specific intercepts, shared strength/entropy slopes and a shared FIRST_IS_MODALITY1 coefficient; routing to AT does not make their slopes AT-specific. Early transfer specification names LISTEN AT and CA-MER AV; MCR appears in the later zero-refit specification and is labeled **LATER_ADDED / EXPLORATORY LABEL_ASSERTION_REGIME**.
+
+MCR's 909 frozen samples remain intact. Recomputed hashes of all 1000 original SER WAVs confirm three content-duplicate groups containing seven frozen samples, including one group with conflicting GT. The separate duplicate-exclusion sensitivity removes all seven affected identities only in its new diagnostic; it does not replace historical metrics. No WAV files were copied.
+
+This repository is private. Authorized reviewers can independently replay the supplied predicted probabilities and observed responses. MIT licenses software, not datasets or models; lawful provider acquisition is required for raw-data or inference reproduction. This is not a claim of fully public-independent reproducibility. See [repair findings](docs/POST_AUDIT_REPAIR_V1.md), [claim status](docs/SCIENTIFIC_CLAIM_STATUS_V1.md) and [evidence availability](docs/EVIDENCE_AVAILABILITY_V1.md).

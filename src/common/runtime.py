@@ -35,7 +35,9 @@ def remap_namespace(ns):
         if not key.startswith('__'):ns[key]=mapone(v)
     if 'MODEL_DIR' in ns:ns['MODEL_DIR']=Path(os.environ.get('AF_MODEL_DIR',str(data_root()/'models/Qwen2.5-Omni-7B')))
 def verify_release():
-    manifest=json.loads((REPO/'RELEASE_MANIFEST_V1.json').read_text(encoding='utf-8'))
+    path=REPO/'POST_AUDIT_REPAIR_MANIFEST_V1.json'
+    if not path.exists():path=REPO/'RELEASE_MANIFEST_V1.json'
+    manifest=json.loads(path.read_text(encoding='utf-8'))
     for r in manifest['files']:
         p=REPO/r['relative_path']
         if hashlib.sha256(p.read_bytes()).hexdigest()!=r['SHA256']:raise ValueError('Release file changed: '+str(p))

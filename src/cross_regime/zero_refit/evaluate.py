@@ -35,13 +35,15 @@ def writecsv(name,rows):
 
 def output_hashes():
     result={}
-    for line in (G/'B3_CORRECTED_EXECUTION_SHA256SUMS.txt').read_text().splitlines():
+    checksum=G/'B3_RELEASE_EVIDENCE_SHA256SUMS.txt'
+    if not checksum.exists():checksum=G/'B3_CORRECTED_EXECUTION_SHA256SUMS.txt'
+    for line in checksum.read_text().splitlines():
         expected,name=line.split('  ',1);p=G/name
         if G.resolve() not in p.resolve().parents:raise ValueError('Unsafe output checksum path')
         actual=sha(p)
         if actual!=expected:raise ValueError('Corrected GPU output hash mismatch: '+name)
         result[name]=actual
-    result['B3_CORRECTED_EXECUTION_SHA256SUMS.txt']=sha(G/'B3_CORRECTED_EXECUTION_SHA256SUMS.txt')
+    result[checksum.name]=sha(checksum)
     return result
 
 def closeout():
@@ -121,7 +123,8 @@ def helpers(binding):
     return vars(frozen_metrics),path
 
 def main():
-    OUT.mkdir(exist_ok=True)
+    if OUT.exists():raise ValueError('Evaluation output must be new; historical artifacts cannot be overwritten')
+    OUT.mkdir(parents=True,exist_ok=False)
     verify_release()
     lookup,closed,input_hashes=closeout()
     binding=read(P/'B3_SOURCE_MODEL_BINDING_V1.json');evalplan=read(P/'B3_EVALUATION_PLAN_V1.json')
@@ -143,7 +146,7 @@ def main():
     data={};joint_hashes={}
     for ds,path in paths.items():
         if sha(path)!=evalplan['routes'][ds]['historical_joint_source_sha256']:raise ValueError('Frozen joint outcomes/accounting changed')
-        joint_hashes[str(path)]=sha(path);rows=csvrows(path)
+        joint_hashes[path.relative_to(REPO).as_posix()]=sha(path);rows=csvrows(path)
         if len({r['target_record_id'] for r in rows})!=len(rows):raise ValueError('Duplicate joint identity')
         if [r['target_record_id'] for r in rows if r['source_relation']=='CONFLICT']!=evalplan['routes'][ds]['prespecified_conflict_ids']:raise ValueError('Frozen conflict population changed')
         for r in rows:
@@ -198,7 +201,7 @@ def main():
                 'old_N_evaluated':prior.get('evaluable_binary_N'),'corrected_N_evaluated':new.get('N_evaluated'),
                 'population_identity':'FROZEN_UNCHANGED','direction_change_at_chance':ov is not None and nv is not None and metric in ['AUROC','balanced_accuracy'] and (ov-.5)*(nv-.5)<0,
                 'old_role_metadata_preserved':prior['analysis_role'],'corrected_role':new['analysis_role']})
-    result={'status':'EVALUATION_COMPLETE_RULING_PENDING','measurement_closeout':closed,'analyses':analyses,
+    result={'status':'EVALUATION_COMPLETE_RULING_PENDING','analysis_origin':'POST_AUDIT_REANALYSIS','measurement_closeout':closed,'analyses':analyses,
             'full_historical_outcome_accounting':{ds:ns['full_accounting'](rows,'AV' if ds=='CA-MER' else 'AT') for ds,rows in data.items()},
             'target_refit':False,'target_threshold_tuning':False,'target_calibration':False,'GPU_executed_this_task':False}
     write('B3_ZERO_REFIT_FINAL_EVALUATION_V1.json',result)
@@ -206,14 +209,14 @@ def main():
     writecsv('B3_OLD_VS_CORRECTED_COMPARISON_V1.csv',comparisons)
     writecsv('B3_CORRECTED_ZERO_REFIT_PREDICTIONS_V1.csv',prediction_rows)
     if output_hashes()!=input_hashes or sha(historical_path)!=oldhash:raise ValueError('Raw corrected/historical input modified')
-    provenance={'corrected_GPU_input_hashes':input_hashes,'source_model_binding_sha256':sha(P/'B3_SOURCE_MODEL_BINDING_V1.json'),
+    provenance={'analysis_origin':'POST_AUDIT_REANALYSIS','corrected_GPU_input_hashes':input_hashes,'source_model_binding_sha256':sha(P/'B3_SOURCE_MODEL_BINDING_V1.json'),
         'evaluation_plan_sha256':sha(P/'B3_EVALUATION_PLAN_V1.json'),'protocol_implementation_sha256':sha(P/'b3_protocol.py'),
         'measurement_manifest_sha256':sha(P/'B3_TARGET_MEASUREMENT_MANIFEST_V1.json'),
         'source_artifact_hashes':{r['artifact_path']:r['SHA256'] for r in binding['artifacts']},
         'official_corrected_archive_sha256':read(REPO/'frozen/identity/corrected_output_catalog.json')['archive_SHA256'],
         'protocol_sha256':sha(P/'B3_CORRECTED_MEASUREMENT_FREEZE_V1.md'),'assignment_sha256':sha(P/'B3_TARGET_SEQUENCE_ASSIGNMENT_V1.json'),
         'analysis_script_sha256':sha(__file__),'historical_helper_script_sha256':sha(helper_path),'frozen_joint_input_hashes':joint_hashes,
-        'historical_Attempt002_path':str(historical_path),'historical_Attempt002_sha256':oldhash,
+        'historical_Attempt002_path':historical_path.relative_to(REPO).as_posix(),'historical_Attempt002_sha256':oldhash,
         'target_refit':False,'target_scaling_fit':False,'target_threshold_tuning':False,'target_calibration':False,
         'historical_Attempt002_modified':False,'corrected_raw_GPU_outputs_modified':False,'GPU_execution':False,
         'equation_metric_accounting_helpers':'AST-extracted unchanged historical functions, applied only to corrected features; no historical metrics recomputed',
@@ -223,52 +226,36 @@ def main():
     finalize(result,comparisons)
     print(json.dumps({'closeout':'PASS','analyses':analyses},ensure_ascii=False,indent=2))
 
+def scientific_report(result,comparisons,historical_interpretation):
+    """Numerical evidence is returned as supplied, never certified as scientific success."""
+    return {**result,'status':'COMPLETE',
+            'SCIENTIFIC_RULING':'REQUIRES_INTERPRETATION',
+            'B3_FINAL_SCIENTIFIC_RULING':'REQUIRES_INTERPRETATION',
+            'HISTORICAL_AUTHOR_INTERPRETATION':historical_interpretation,
+            'scientific_decision_rule':None,
+            'metric_comparison':comparisons,
+            'closure_meaning':'Technical metric replay completed; no executable scientific acceptance rule was declared.',
+            'primary_metric':'frozen log_loss','target_refit':False,
+            'target_threshold_tuning':False,'target_calibration':False}
+
 def finalize(result,comparisons):
-    ruling='SURVIVES_WITH_CORRECTION'
-    effects={
-        'MCR':{'numerical_shift':'MINOR','direction_reversal':False,'support_or_coverage_change':False,
-               'interpretation':'Primary AUROC remains about 0.728 and sensitivity AUROC about 0.739; frozen-threshold balanced accuracy remains 0.5. Strongest ranking transfer among these frozen routes persists, without claiming improved threshold classification.'},
-        'LISTEN':{'numerical_shift':'MATERIAL','direction_reversal':'Margin AUROC crosses 0.5 from 0.47849 to 0.52264; balanced accuracy remains below 0.5.',
-                  'support_or_coverage_change':False,'interpretation':'Source-probability primary remains structurally unsupported. Margin sensitivity is now slightly above chance in AUROC, with balanced accuracy 0.48919 and coverage 518/1139. Weak transfer interpretation persists; the old below-chance AUROC wording must change.'},
-        'CA-MER':{'numerical_shift':'MATERIAL_IN_SUPPORTED_SUPPLEMENTARY_ROUTE','direction_reversal':False,'support_or_coverage_change':False,
-                  'interpretation':'Supported supplementary AUROC rises from 0.65880 to 0.68639; balanced accuracy from 0.57335 to 0.59572. Full-population margin sensitivity remains weaker (AUROC 0.57400). Full-population source-probability primary remains undefined; partial/support-limited interpretation persists.'}}
-    rationale=('LISTEN margin AUROC changes by +0.04415 and supported CA-MER AUROC by +0.02759; their log losses improve by about 0.051. These changes warrant corrected numbers and explicit correction disclosure. MCR remains strongest in ranking, CA-MER remains partial/support-limited, and LISTEN remains weak with structurally unsupported primary. The descriptive LISTEN AUROC crossing is acknowledged, but does not establish a new strong-transfer result. No post-hoc numerical materiality cutoff, significance test, or new analysis was introduced.')
-    result.update(status='COMPLETE',B3_FINAL_SCIENTIFIC_RULING=ruling,QWEN_MAINLINE_SCIENCE='CLOSED',
-                  primary_metric='historical log_loss',dataset_correction_effects=effects,ruling_rationale=rationale,
-                  historical_metrics_recomputed=False,corrected_numbers_required_in_paper=True,
-                  correction_disclosure_required=True,closure_meaning='Frozen corrected experiment completed, independent of agreement with the original hypothesis.')
-    write('B3_ZERO_REFIT_FINAL_EVALUATION_V1.json',result)
-    lines=['# B3_ZERO_REFIT_FINAL_EVALUATION_V1','',f'Final ruling: **{ruling}**. QWEN_MAINLINE_SCIENCE = CLOSED.','',
-           'Corrected measurement closeout PASS: 6354/6354 measurements and 5515/5515 sequence-aware forwards; zero failed or missing. Assignment and paired-modality sequence identity, seven-candidate probability integrity, scalar CPU recomputation, cache identity and official hashes all PASS. No GPU was executed in this evaluation.','',
-           'The frozen historical source M3a/M3b coefficients, source scaler and threshold 0.5 were applied unchanged. Historical log loss is the primary metric; AUROC, balanced accuracy and Brier are prespecified secondary metrics. Only corrected feature deltas replaced historical measurement features; joint outcomes, record identities, presentation order, support membership and accounting remain frozen. Source-probability is null outside the seven-label ontology. Historical Attempt002 metrics were read, never recomputed.','',
-           '| Frozen role | Evaluated / prespecified conflict N | Coverage | Log loss | AUROC | Balanced accuracy @0.5 | Brier |',
-           '|---|---:|---:|---:|---:|---:|---:|']
-    for role,a in result['analyses'].items():
-        m=a['metrics']
-        if m:
-            lines.append(f"| {role} | {a['N_evaluated']} / {a['N_prespecified']} | {a['coverage']:.9f} | {m['log_loss']:.9f} | {m['AUROC']:.9f} | {m['balanced_accuracy']:.9f} | {m['Brier_score']:.9f} |")
-        else:lines.append(f"| {role} ({a['status']}) | Undefined / {a['N_prespecified']} | Undefined | Undefined | Undefined | Undefined | Undefined |")
-    lines += ['', 'CA-MER supported source-probability is supplementary: 1434 planned supported joint slots, 672 supported conflict slots and 416 evaluable binary outcomes. Its coverage 416/672 is conditional on frozen support, not full-population primary coverage. Full-population margin coverage is 1350/2000. LISTEN margin coverage is 518/1139; 10 same-label rows are excluded from the 1149 planned slots. Coverage reflects frozen joint outcomes and is not the GPU acquisition completion rate. All populations and coverage are unchanged by correction.', '',
-              '| Role | Metric | Historical | Corrected | Signed delta | Absolute delta |', '|---|---|---:|---:|---:|---:|']
-    for r in comparisons:
-        if r['corrected_metric'] is not None:
-            lines.append(f"| {r['role']} | {r['metric']} | {r['old_metric']:.9f} | {r['corrected_metric']:.9f} | {r['signed_delta']:+.9f} | {r['absolute_delta']:.9f} |")
-    lines += ['',rationale,'']
-    for ds,effect in effects.items():lines += [f"**{ds}: {effect['numerical_shift']}.** {effect['interpretation']}",'']
-    lines += ['Interpretation limits: these are descriptive frozen-route comparisons. Raw log losses across datasets have different outcome prevalence and do not alone measure relative transfer strength. MCR strongest transfer refers to the retained ranking result, not superior balanced accuracy at the frozen threshold. LISTEN AUROC crossing is numerical and no statistical significance claim is made. No causal separation of ordering from other frozen measurement differences was attempted. Historical CA-MER support-only role metadata is preserved in the comparison file while its corrected scientific role is explicitly supplementary.','',
-              'No target refit, target scaler fit, threshold tuning, calibration, new subgroup, order robustness, prompt robustness, second model or supplementary experiment was performed. The row-level prediction CSV records the prespecified evaluation only. Original GPU outputs and historical Attempt002 remain unchanged.','',
-              'Provenance and closeout JSON files contain input hashes, source bindings, analysis script hash and no-refit flags. B3_FINAL_HASHES_V1.txt covers all final artifacts except itself. The analysis source is included for review; docs record final state and decisions.','']
-    (OUT/'B3_ZERO_REFIT_FINAL_EVALUATION_V1.md').write_text('\n'.join(lines),encoding='utf-8')
-    (OUT/Path(__file__).name).write_bytes(Path(__file__).read_bytes())
-    docs=OUT/'docs';docs.mkdir(exist_ok=True)
-    (docs/'PROJECT_STATE.md').write_text(f'# Project state\n\nTask B3_ZERO_REFIT_FINAL_EVALUATION_V1 complete. Measurement closeout PASS. Ruling {ruling}. QWEN_MAINLINE_SCIENCE=CLOSED. No further experiment authorized or started.\n',encoding='utf-8')
-    (docs/'DECISIONS.md').write_text('# Decisions\n\n'+rationale+'\n\nLISTEN sourceprob primary unsupported; CA-MER full primary undefined and supported subgroup supplementary. Preserve historical files and formal corrected raw outputs. Apply only frozen source model/scalers/threshold and historical outcome accounting.\n',encoding='utf-8')
-    (docs/'FILE_MAP.md').write_text('# File map\n\nFinal report: B3_ZERO_REFIT_FINAL_EVALUATION_V1.md/json. Measurements: B3_CORRECTED_MEASUREMENT_CLOSEOUT_V1.json. Prespecified metrics and historical comparison: B3_CORRECTED_DATASET_METRICS_V1.csv and B3_OLD_VS_CORRECTED_COMPARISON_V1.csv. Row-level audit: B3_CORRECTED_ZERO_REFIT_PREDICTIONS_V1.csv. Input identities and flags: B3_ZERO_REFIT_PROVENANCE_V1.json. Reproducible analysis: b3_zero_refit_final_evaluation_v1.py. Integrity: B3_FINAL_HASHES_V1.txt.\n',encoding='utf-8')
+    historical=read(REPO/'results/mainline_summary/cross_regime/B3_ZERO_REFIT_FINAL_EVALUATION_V1.json')
+    report=scientific_report(result,comparisons,historical.get('B3_FINAL_SCIENTIFIC_RULING'))
+    write('B3_ZERO_REFIT_FINAL_EVALUATION_V1.json',report)
+    lines=['# Corrected CPU metric replay','',
+           'SCIENTIFIC_RULING = REQUIRES_INTERPRETATION',
+           'Historical author interpretation: '+str(report['HISTORICAL_AUTHOR_INTERPRETATION']),
+           '', 'Historical metrics/populations are preserved. LISTEN pooled results below are mixed-condition historical diagnostics; the post-audit entry point separately evaluates 3C joint arbitration.',
+           '', '| Role | N evaluated | N conflict denominator | Coverage | Log loss | AUROC | Balanced accuracy | Brier |',
+           '|---|---:|---:|---:|---:|---:|---:|---:|']
+    for role,a in report['analyses'].items():
+        m=a.get('metrics') or {}
+        lines.append('| '+role+' | '+' | '.join(str(x) for x in
+            [a.get('N_evaluated'),a.get('N_prespecified'),a.get('coverage'),
+             m.get('log_loss'),m.get('AUROC'),m.get('balanced_accuracy'),m.get('Brier_score')])+' |')
+    (OUT/'B3_ZERO_REFIT_FINAL_EVALUATION_V1.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
     payloads=sorted(p for p in OUT.rglob('*') if p.is_file() and p.name!='B3_FINAL_HASHES_V1.txt')
     (OUT/'B3_FINAL_HASHES_V1.txt').write_text(''.join(f'{sha(p)}  {p.relative_to(OUT).as_posix()}\n' for p in payloads),encoding='utf-8')
-    for line in (OUT/'B3_FINAL_HASHES_V1.txt').read_text().splitlines():
-        digest,name=line.split('  ',1)
-        if sha(OUT/name)!=digest:raise ValueError('Final artifact hash mismatch')
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__)
@@ -277,4 +264,3 @@ if __name__=='__main__':
     args=parser.parse_args();G=args.gpu_outputs.resolve();OUT=args.output.resolve()
     if OUT==G or G in OUT.parents:raise ValueError('Evaluation output must be separate from immutable GPU inputs')
     main()
-
