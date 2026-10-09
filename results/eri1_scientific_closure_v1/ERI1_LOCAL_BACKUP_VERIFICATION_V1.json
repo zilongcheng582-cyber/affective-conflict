@@ -1,0 +1,12 @@
+{
+  "archive_name": "ERI1_SCIENTIFIC_CLOSURE_V1.tar.gz",
+  "server_archive_sha256": "a56c2a086b80d269183d8ed92bbb78fe9603d46f596fd79c86620253a1cb8dc7",
+  "local_archive_sha256": "a56c2a086b80d269183d8ed92bbb78fe9603d46f596fd79c86620253a1cb8dc7",
+  "archive_hash_match": true,
+  "extracted_files_checked": 124,
+  "extracted_files_failed": 0,
+  "verification_status": "PASS",
+  "verification_time": "2026-10-09T09:24:24.823427+00:00",
+  "local_destination": "USER_WINDOWS_PRIVATE_RESEARCH_BACKUP",
+  "original_local_verification_receipt_sha256": "459a32b7aa2beeb160dd51d80ff22e5d38b02aa1b569a03f6fb399a9f157c80b"
+}

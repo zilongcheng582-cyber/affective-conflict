@@ -1,0 +1,87 @@
+{
+ "amendments": [
+  {
+   "changed_or_added_files": [
+    "experiments/emotiontalk_reliability_v1/ANALYSIS_PLAN_V1.md",
+    "experiments/emotiontalk_reliability_v1/PRE_EXECUTION_AMENDMENT_001.md",
+    "experiments/emotiontalk_reliability_v1/README.md",
+    "src/emotiontalk/reliability_v1/analyze.py",
+    "src/emotiontalk/reliability_v1/design.py",
+    "tests/test_reliability_v1.py"
+   ],
+   "design_inputs_unchanged": true,
+   "document": "experiments/emotiontalk_reliability_v1/PRE_EXECUTION_AMENDMENT_001.md",
+   "document_sha256": "b7052862c4756fe23f5f46b9c52b266eee4904255c3a533616044152108e62b4",
+   "eligibility_unchanged": true,
+   "id": "PRE_EXECUTION_AMENDMENT_001",
+   "made_before_any_gpu_execution": true,
+   "manifest_unchanged": true,
+   "supersedes_record_commit": "2419be327931be11d66cc7e124198f05873c05a3",
+   "supersedes_record_sha256": "2215b0c566c052f370441ca1753e7f66b4e793cc718724afcee76496ce5fd3a7"
+  }
+ ],
+ "design_seed": 20261009,
+ "experiment_id": "EMOTIONTALK_RELIABILITY_INTERVENTION_V1",
+ "files": {
+  "experiments/emotiontalk_reliability_v1/ANALYSIS_PLAN_V1.md": "faee180ac85f27fb6fd73b3c32fb2e4e274ca77855ffe8dbb10c7428d8af4201",
+  "experiments/emotiontalk_reliability_v1/ELIGIBILITY_AND_SAMPLING_V1.csv": "948d2ee17d71f7d0f6b9d87b4f056eb558c6fdcb9ae659a3136dbf0e34532a66",
+  "experiments/emotiontalk_reliability_v1/FROZEN_TRIAL_MANIFEST_V1.csv": "09a755ac00b5cc8a31ed94612c0d5eb6cf43f79eaba2edf2788cb7ae010afae4",
+  "experiments/emotiontalk_reliability_v1/GPU_EXECUTION_PLAN_V1.md": "4567c95bec6d70e10b3a0fb90598d3905810bea3a71813cb5c8a333a1f30c025",
+  "experiments/emotiontalk_reliability_v1/PILOT_PLAN_V1.md": "a5a5933cf2104d073b9bfe862678fac5d12e7df3487af6f6dfbe3fa9eb5f303f",
+  "experiments/emotiontalk_reliability_v1/PRE_EXECUTION_AMENDMENT_001.md": "b7052862c4756fe23f5f46b9c52b266eee4904255c3a533616044152108e62b4",
+  "experiments/emotiontalk_reliability_v1/PROTOCOL_V1.md": "ea248260980a144d72bdd5ee23b6261b35a30e13016c2b535385e5570c701b85",
+  "experiments/emotiontalk_reliability_v1/README.md": "fe7d6286d10f709ee3e51de4d138e49b3cc0f0f3ea5bab03d3f059fbbf286d38",
+  "src/emotiontalk/reliability_v1/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "src/emotiontalk/reliability_v1/analyze.py": "35a9fefe2e758062104ff4d72a2e0c707db74d6f51acc176297e96b2858a07d4",
+  "src/emotiontalk/reliability_v1/audio.py": "b306fb45db21e53ff66cb3d35d8a1b2783870860e7c06fc8ff906af572e2dbb8",
+  "src/emotiontalk/reliability_v1/bind_media.py": "456f21672bda342f545bc7f6e66457d1e78c2101da96ac787d3deafeac6eac7d",
+  "src/emotiontalk/reliability_v1/design.py": "bac631b1f3722da1cf01a8fda9310ec0212671be4404b4811460eadbd7508037",
+  "src/emotiontalk/reliability_v1/pilot_check.py": "4d6647aef611320bcd56b52fa9db4252d7375a072f25249b31324da15ecd70f4",
+  "src/emotiontalk/reliability_v1/run.py": "80335b8389f5fa40fb4957152107a090de46b4e3c2fa44b65f9fe7920f367d3d",
+  "tests/test_reliability_v1.py": "9c44fd83c007ad2c4abcfbd2ceff15cd6000ae894e0ce7102d04bdd1c529e797"
+ },
+ "inputs": {
+  "evidence/emotiontalk/phase2_observed_responses.jsonl": "4fc584c9a9af341f2db4bbdbe84437587187fa870dda9b6cb0417ba7a1782b87",
+  "manifests/emotiontalk/EMOTIONTALK_MASTER_PANEL_V1.csv": "1ca8b79d8c146c6d807dd97a7bcd6cda519d5655e4cd0300afe7a92d159f406b",
+  "manifests/emotiontalk/EMOTIONTALK_MEDIA_MANIFEST_V1.csv": "c0343ac1cf79038dc5b9cfaf2cdebe9da3fbf13a18c24960656e2fabbd438c9d",
+  "manifests/emotiontalk/source_measurements.csv": "3cc270054de466387e874be0dcb180dad12250e348c332a98fffba7d1c647042",
+  "protocols/emotiontalk/EMOTIONTALK_CANDIDATE_SEQUENCES_V1.json": "b249c68e92fa16ec7c41f617baffd1d293db8807b01b9c0f5d8490d41b790750"
+ },
+ "status": "DESIGN_FROZEN_BEFORE_ANY_GPU_EXECUTION_WITH_PRE_EXECUTION_AMENDMENTS",
+ "summary": {
+  "eligible_by_pattern": {
+   "ALL_DIFFERENT": 37,
+   "T=A!=V": 58,
+   "T=V!=A": 51
+  },
+  "eligible_items": 146,
+  "eligible_speakers": 19,
+  "exclusion_counts": {
+   "AV_SOURCE_LABELS_CONSISTENT": 225,
+   "AV_SOURCE_LABELS_CONSISTENT;PHASE1_A_NOT_READABLE": 130,
+   "AV_SOURCE_LABELS_CONSISTENT;PHASE1_A_NOT_READABLE;PHASE1_V_NOT_READABLE": 59,
+   "AV_SOURCE_LABELS_CONSISTENT;PHASE1_V_NOT_READABLE": 186,
+   "PHASE1_A_NOT_READABLE": 171,
+   "PHASE1_A_NOT_READABLE;PHASE1_V_NOT_READABLE": 322,
+   "PHASE1_V_NOT_READABLE": 261
+  },
+  "panel_items": 1500,
+  "pilot_items": 6,
+  "trials_by_arm": {
+   "A_ONLY": 730,
+   "A_THEN_V": 730,
+   "V_ONLY": 146,
+   "V_THEN_A": 730
+  },
+  "trials_by_condition": {
+   "CLEAN": 584,
+   "RECODE": 438,
+   "SNR00": 438,
+   "SNR10": 438,
+   "SNR20": 438
+  },
+  "trials_full": 2336,
+  "trials_per_item": 16,
+  "trials_pilot": 96
+ }
+}

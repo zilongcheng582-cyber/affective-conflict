@@ -1,0 +1,178 @@
+{
+ "PRIMARY_dSIDE_A_SNR00_minus_RECODE": {
+  "estimate": -0.1095890410958904,
+  "CI_low": -0.17465753424657535,
+  "CI_high": -0.04452054794520548,
+  "N_items": 146,
+  "p_two_sided_signflip": 0.0017199828001719982,
+  "missing_data_rule": "CONSERVATIVE_DIRECTIONAL_vs_H1"
+ },
+ "SENS_primary_complete_case": {
+  "estimate": -0.1095890410958904,
+  "CI_low": -0.17465753424657535,
+  "CI_high": -0.04452054794520548,
+  "N_items": 146
+ },
+ "SENS_primary_FAVORABLE_bound_for_H1": {
+  "estimate": -0.1095890410958904,
+  "CI_low": -0.17465753424657535,
+  "CI_high": -0.04452054794520548,
+  "N_items": 146
+ },
+ "SENS_primary_PARSE_FAIL_as_SIDE_A": {
+  "estimate": -0.1095890410958904,
+  "CI_low": -0.17465753424657535,
+  "CI_high": -0.04452054794520548,
+  "N_items": 146
+ },
+ "SENS_primary_missing_data_bounds_point": [
+  -0.1095890410958904,
+  -0.1095890410958904
+ ],
+ "S1_dEntropyA_SNR00_minus_RECODE": {
+  "estimate": 0.06077184521518339,
+  "CI_low": 0.03922922787366694,
+  "CI_high": 0.08380295654748428,
+  "N_items": 146,
+  "p_two_sided_signflip": 9.99990000099999e-06,
+  "missing_data_rule": "ITEM_DELTA_ZERO_IF_EITHER_MISSING"
+ },
+ "SENS_S1_complete_case": {
+  "estimate": 0.06077184521518339,
+  "CI_low": 0.0384797171643215,
+  "CI_high": 0.08403464137007685,
+  "N_items": 146
+ },
+ "DESC_audio_only_accuracy_by_condition": {
+  "CLEAN": 1.0,
+  "RECODE": 0.9041095890410958,
+  "SNR20": 0.8287671232876712,
+  "SNR10": 0.7534246575342466,
+  "SNR00": 0.6095890410958904
+ },
+ "S2_dose_response_GEE": {
+  "level_coef": -0.1278208565717896,
+  "level_CI": [
+   -0.23572078909997596,
+   -0.01992092404360324
+  ],
+  "level_p": 0.02024260291076576,
+  "order_coef": -0.2639751453392841,
+  "level_x_order_coef": -0.042376096883698165,
+  "level_x_order_p": 0.47787172215323526,
+  "N_rows": 1168
+ },
+ "SENS_S2_complete_case": {
+  "level_coef": -0.1278208565717896,
+  "level_CI": [
+   -0.23572078909997596,
+   -0.01992092404360324
+  ],
+  "level_p": 0.02024260291076576,
+  "order_coef": -0.2639751453392841,
+  "level_x_order_coef": -0.042376096883698165,
+  "level_x_order_p": 0.47787172215323526,
+  "N_rows": 1168
+ },
+ "S3_dSIDE_V_SNR00_minus_RECODE": {
+  "estimate": 0.05821917808219178,
+  "CI_low": 0.0,
+  "CI_high": 0.11986301369863013,
+  "N_items": 146,
+  "p_two_sided_signflip": 0.07428925710742892,
+  "missing_data_rule": "CONSERVATIVE_DIRECTIONAL_vs_S3"
+ },
+ "S4_dOTHER_SNR00_minus_RECODE": {
+  "estimate": 0.05136986301369863,
+  "CI_low": 0.0136986301369863,
+  "CI_high": 0.09246575342465753,
+  "N_items": 146,
+  "p_two_sided_signflip": 0.015289847101528985,
+  "missing_data_rule": "COMPLETE_CASE_TWO_SIDED",
+  "bounds_point": [
+   0.05136986301369863,
+   0.05136986301369863
+  ]
+ },
+ "S5_order_interaction_dA_THEN_V_minus_dV_THEN_A": {
+  "estimate": -0.0273972602739726,
+  "CI_low": -0.1095890410958904,
+  "CI_high": 0.0547945205479452,
+  "N_items": 146,
+  "p_two_sided_signflip": 0.6199438005619944,
+  "dSIDE_A_A_THEN_V": -0.1232876712328767,
+  "dSIDE_A_V_THEN_A": -0.0958904109589041,
+  "missing_data_rule": "COMPLETE_CASE_TWO_SIDED"
+ },
+ "HOLM_ADJUSTED_P_S1_S5": {
+  "S1": 4.9999500004999955e-05,
+  "S4": 0.06115938840611594,
+  "S2": 0.06115938840611594,
+  "S3": 0.14857851421485785,
+  "S5": 0.6199438005619944
+ },
+ "S6_pipeline_dSIDE_A_RECODE_minus_CLEAN": {
+  "estimate": -0.02054794520547945,
+  "CI_low": -0.05136986301369863,
+  "CI_high": 0.010273972602739725,
+  "N_items": 146
+ },
+ "S6_pipeline_dEntropyA_RECODE_minus_CLEAN": {
+  "estimate": 0.0006057318441121612,
+  "CI_low": -0.005440572731856085,
+  "CI_high": 0.007068294809134031,
+  "N_items": 146
+ },
+ "S7_EXPLORATORY_CONDITIONAL_R1_REFERENCE": {
+  "status": "EXPLORATORY_CONDITIONAL_REFERENCE_NOT_A_TEST_NOT_MEDIATION",
+  "R1_predicted_change_P_SIDE_A_given_SIDE": {
+   "estimate": -0.0699647202318626,
+   "CI_low": -0.09843541266765919,
+   "CI_high": -0.042644286546480885,
+   "N_items": 146
+  },
+  "observed_change_conditional_binary_share_SIDE_A_among_SIDE": {
+   "estimate": -0.09641987531105345,
+   "CI_low": -0.16059976260464356,
+   "CI_high": -0.033436399799201134
+  },
+  "scale": "CONDITIONAL_BINARY_P(SIDE_A|SIDE)_NOT_ITT",
+  "caveats": [
+   "R1 coefficients come from binary-resolvable source records only",
+   "conditioning on SIDE outcomes is post-intervention selection",
+   "not comparable to the ITT primary endpoint",
+   "no mediation inference"
+  ]
+ },
+ "S8_EXPLORATORY_spearman_dEntropy_vs_dSIDE_A": {
+  "rho": -0.35315235248822974,
+  "N_items": 146,
+  "interpretation": "ASSOCIATIONAL_ONLY_NOT_MEDIATION"
+ },
+ "SEC_joint_teacher_forced_p_audio_label_SNR00_minus_RECODE": {
+  "estimate": -0.07601073169973335,
+  "CI_low": -0.10021999575758145,
+  "CI_high": -0.052595706892365056,
+  "N_items": 146
+ },
+ "SEC_CONDITIONAL_BINARY_share_SIDE_A_among_SIDE": {
+  "CLEAN": 0.44014084507042256,
+  "RECODE": 0.4234875444839858,
+  "SNR20": 0.4187725631768953,
+  "SNR10": 0.40875912408759124,
+  "SNR00": 0.32706766917293234
+ },
+ "TECHNICAL_FAILURES_joint": 0,
+ "TECHNICAL_FAILURES_joint_RECODE_SNR00": 0,
+ "TECHNICAL_RISK_FLAG": false,
+ "decision": {
+  "manipulation_check": "PASS",
+  "primary": "H1_SUPPORTED_AUDIO_DEGRADATION_REDUCES_AUDIO_SIDE_CHOICE",
+  "primary_missing_data_rule": "CONSERVATIVE_DIRECTIONAL_vs_H1",
+  "complete_case_agrees_with_primary_direction": true,
+  "entropy_up_but_choice_not_in_predicted_direction": false,
+  "S7_role": "EXPLORATORY_CONDITIONAL_REFERENCE_EXCLUDED_FROM_DECISION",
+  "mediation_claim": "NOT_IDENTIFIED_BY_DESIGN"
+ },
+ "data_label": "FULL_EXPERIMENT"
+}
