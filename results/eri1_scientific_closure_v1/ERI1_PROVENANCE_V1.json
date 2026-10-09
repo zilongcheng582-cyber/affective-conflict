@@ -1,0 +1,29 @@
+{
+  "experiment_id": "EMOTIONTALK_RELIABILITY_INTERVENTION_V1",
+  "binding_code_commit": "34aa1b0340d906e5d625db7cb4a3def9199fa06e",
+  "experiment_branch": "experiment/emotiontalk-reliability-intervention-v1",
+  "manifest_sha256": "09a755ac00b5cc8a31ed94612c0d5eb6cf43f79eaba2edf2788cb7ae010afae4",
+  "binding_sha256": "3afa4c2531c917fb679ad914cee278ddf17fb143c978f2c50ce2a95f177e4190",
+  "trial_source_sha256": "cdcef4a7ae8be49d9da47040d6aa2504384c9bc6cade83765e3611c4777a0eba",
+  "run_fingerprint": "fb651865fc3595a690fdce73504c123813bc2134b0d9b499a1a01ee5787b4acf",
+  "formal_trials": 2336,
+  "items": 146,
+  "technical_failures": 0,
+  "retries": 0,
+  "pilot_pooled": false,
+  "frozen_cpu_replay": "BYTE_IDENTICAL",
+  "independent_recomputation_tolerance": 1e-12,
+  "post_hoc_label": "POST_HOC_ROBUSTNESS_V1",
+  "dialogue_metadata_source": "EmotionTalk upstream dataset/mm-process/mm.csv",
+  "dialogue_metadata_sha256": "ad791bd276b2fdd519ffb4a27d215f9e2ffa06f4acbe36445eecb77206543a03",
+  "dialogue_semantics_source": "https://aclanthology.org/2026.findings-acl.440.pdf Appendix A.1",
+  "dependency_inventory": {
+    "numpy": "2.3.2",
+    "scipy": "1.18.1",
+    "pandas": "3.0.5",
+    "statsmodels": "0.15.0",
+    "patsy": "1.0.2"
+  },
+  "data_access": "Derived scientific metadata only; no raw media, transcripts, model generation logs, weights or credentials. Dataset remains subject to its own academic-use/access conditions. No blanket redistribution license asserted.",
+  "CPU_only_this_round": true
+}
