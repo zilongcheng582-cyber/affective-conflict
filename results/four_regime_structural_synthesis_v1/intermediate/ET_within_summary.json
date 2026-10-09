@@ -1,0 +1,42 @@
+{
+ "AV_consistent_DualReadable_n": 225,
+ "AV_consistent_DualReadable_silent_video_PASS": 225,
+ "AV_consistent_DualReadable_tech_complete": 225,
+ "AV_consistent_DualReadable_by_pattern": {
+  "ALL_SAME": 127,
+  "A=V!=T": 98
+ },
+ "AV_consistent_DualReadable_by_shared_label": {
+  "neutral": 115,
+  "happy": 59,
+  "sad": 25,
+  "angry": 23,
+  "surprised": 3
+ },
+ "AV_consistent_DualReadable_n_dialogue_clusters": 177,
+ "AV_consistent_DualReadable_with_historical_phase2_arms": 225,
+ "AV_conflict_DualReadable_n": 146,
+ "AV_conflict_eligible_ERI1": 146,
+ "AV_conflict_DualReadable_by_pattern": {
+  "T=A!=V": 58,
+  "T=V!=A": 51,
+  "ALL_DIFFERENT": 37
+ },
+ "ERI1_item_trajectory": {
+  "n": 146,
+  "monotone_nonincreasing": 112,
+  "strictly_any_decrease_overall": 35,
+  "increase_overall": 14,
+  "unchanged_overall": 97
+ },
+ "ERI1_CLEAN_vs_Phase2_AV_conflict": {
+  "n_trials": 292,
+  "identical_outcome": 292
+ },
+ "ERI1_topology_counts_146": {
+  "T=A!=V": 58,
+  "T=V!=A": 51,
+  "ALL_DIFFERENT": 37
+ },
+ "ERI1_distinct_dialogue_clusters": 134
+}

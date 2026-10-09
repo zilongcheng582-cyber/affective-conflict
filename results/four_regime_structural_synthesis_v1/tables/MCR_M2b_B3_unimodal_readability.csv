@@ -1,0 +1,4 @@
+measure,n,rate
+B3 top-1 == audio_vs_GT,909,0.408141
+B3 top-1 == text_vs_assertion,909,1
+B3 both-readable (audio==GT & text==assertion),371,0.408141

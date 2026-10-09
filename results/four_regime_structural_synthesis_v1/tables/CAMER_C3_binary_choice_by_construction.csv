@@ -1,0 +1,3 @@
+construction,n_binary_trials,n_items,P_SIDE_AUDIO_given_binary,ci_lo,ci_hi,binary_coverage,coverage_lo,coverage_hi
+audio-aligned,695,379,0.738129,0.694521,0.77858,0.695,0.657,0.731
+video-aligned,655,364,0.367939,0.321976,0.416289,0.655,0.617,0.693

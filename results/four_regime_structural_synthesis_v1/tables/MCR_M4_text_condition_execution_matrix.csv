@@ -1,0 +1,5 @@
+text_condition,status,evidence
+Adversarial (text asserts a competitor label != GT),EXECUTED,"modality2_source_label == competitor_emotion for 1818/1818 joint rows; 0 equal GT; arms A_ONLY,T_ONLY,A_THEN_T,T_THEN_A (3636 calls)"
+Faithful (text asserts GT),NOT_EXECUTED_IN_CONTROLLED_V2,text present in canonical_arbitration.csv but no arm uses it (arm_counts only 4 arms x 909)
+Neutral (no description),NOT_EXECUTED_IN_CONTROLLED_V2,same
+Irrelevant (unrelated sound description),NOT_EXECUTED_IN_CONTROLLED_V2,same

@@ -1,0 +1,5 @@
+pair,n_trials,n_items,P_choose_side_supported_by_noninput_modality_label,ci_lo,ci_hi,note
+ALL_THREE_PAIRS,523,205,0.567878,0.509842,0.627119,binary-resolved conflict trials where non-input modality label equals exactly one side; reference 0.5; ASSOCIATION (item content confounds)
+AT,89,46,0.629213,0.51087,0.743902,binary-resolved conflict trials where non-input modality label equals exactly one side; reference 0.5; ASSOCIATION (item content confounds)
+AV,212,109,0.570755,0.490474,0.655986,binary-resolved conflict trials where non-input modality label equals exactly one side; reference 0.5; ASSOCIATION (item content confounds)
+VT,222,116,0.540541,0.470301,0.612161,binary-resolved conflict trials where non-input modality label equals exactly one side; reference 0.5; ASSOCIATION (item content confounds)

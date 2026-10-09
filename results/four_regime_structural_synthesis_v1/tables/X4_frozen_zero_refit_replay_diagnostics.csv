@@ -1,0 +1,5 @@
+analysis_role,dataset,n_evaluated,prevalence_SIDE_AUDIO,AUROC_frozen,AUROC_within_audio_first,AUROC_within_audio_last,AUROC_of_order_indicator_alone,log_loss_frozen,log_loss_oracle_target_prevalence_constant,log_loss_frozen_minus_oracle_constant,log_loss_oracle_order_specific_constant,log_loss_frozen_minus_oracle_order_specific_constant,ll_minus_oracle_const_ci_lo,ll_minus_oracle_const_ci_hi
+MCR_AT_PRIMARY,MCR,1734,0.061707,0.727559,0.699045,0.655706,0.666403,0.245884,0.231639,0.0142453,0.218086,0.0277979,-0.00147349,0.0310137
+CAMER_AV_SUPPORT_LIMITED_SOURCEPROB,CA-MER,416,0.567308,0.686394,0.676268,0.695985,0.530838,0.768851,0.684059,0.0847925,0.68219,0.0866613,-0.00600715,0.182606
+CAMER_AV_MARGIN_SENSITIVITY,CA-MER,1350,0.558519,0.573999,0.578811,0.572714,0.507822,0.800208,0.686283,0.113926,0.686162,0.114046,0.0707539,0.16097
+LISTEN_AT_MARGIN_SENSITIVITY,LISTEN,167,0.610778,0.605732,0.605732,,0.5,0.981644,0.668399,0.313246,,,0.18051,0.460665

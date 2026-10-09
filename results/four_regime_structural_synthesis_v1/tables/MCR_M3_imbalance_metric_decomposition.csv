@@ -1,0 +1,21 @@
+metric,value,n,n_pos,lo,hi
+N_resolved,1734,,,,
+SIDE_AUDIO_prevalence,0.06170703575547866,,,,
+AUROC_frozen_M3a,0.7275588922907249,,,,
+log_loss_frozen_M3a,0.2458841608321584,,,,
+"log_loss_target_prevalence_constant(oracle,in-sample,NOT a valid model)",0.2316388847148825,,,,
+log_loss_M3a_minus_oracle_constant,0.014245276117275885,,,,
+BA_at_source_threshold_0.5,0.5,,,,
+BA_at_prevalence_matched_threshold(post-hoc),0.5866424644865557,,,,
+fraction_predicted_SIDE_AUDIO_at_0.5,0.0,,,,
+AUROC_order_indicator_alone(A_THEN_T=audio first),0.3335966086312174,,,,
+AUROC_M3a_within_order=A_THEN_T,0.6990452469904525,,,,
+AUROC_M3a_within_order=T_THEN_A,0.6557061173337511,,,,
+AUROC_M3a_within_GT=neutral,0.6825598004305229,852,63,,
+AUROC_M3a_within_GT!=neutral,0.8217075287481015,882,44,,
+SIDE_AUDIO_prevalence_GT=neutral,0.07394366197183098,,,,
+SIDE_AUDIO_prevalence_GT!=neutral,0.049886621315192746,,,,
+AUROC_M3a_ci95,0.7275588922907249,,,0.684427,0.772121
+log_loss_M3a_ci95,0.2458841608321584,,,0.198754,0.299117
+log_loss_M3a_minus_oracle_constant_ci95,0.014245276117275885,,,-0.000485767,0.0330118
+"M3a_score_quantiles_[5,25,50,75,95]","[0.0037, 0.007, 0.012, 0.0218, 0.0604]",,,,

@@ -1,0 +1,6 @@
+trimodal_pattern,n_panel,AV,AT,VT,Readable_T,Readable_A,Readable_V,DualReadable_AT,DualReadable_AV,DualReadable_VT,TripleReadable,DualReadable_AV_coverage
+A=V!=T,300,consistent,conflict,conflict,81,174,186,28,98,57,16,0.326667
+ALL_DIFFERENT,300,conflict,conflict,conflict,75,121,91,16,37,23,3,0.123333
+ALL_SAME,300,consistent,consistent,consistent,225,237,169,206,127,123,110,0.423333
+T=A!=V,300,conflict,consistent,conflict,166,163,108,129,58,60,43,0.193333
+T=V!=A,300,conflict,conflict,consistent,108,123,118,18,51,35,8,0.17

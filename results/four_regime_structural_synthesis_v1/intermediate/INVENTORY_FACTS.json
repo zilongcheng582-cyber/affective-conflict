@@ -1,0 +1,74 @@
+{
+ "B3_rows": 6354,
+ "B3_by_dataset_modality": [
+  {
+   "dataset": "CA-MER",
+   "modality": "A",
+   "n": 1500
+  },
+  {
+   "dataset": "CA-MER",
+   "modality": "V",
+   "n": 1500
+  },
+  {
+   "dataset": "LISTEN",
+   "modality": "A",
+   "n": 768
+  },
+  {
+   "dataset": "LISTEN",
+   "modality": "T",
+   "n": 768
+  },
+  {
+   "dataset": "MCR",
+   "modality": "A",
+   "n": 909
+  },
+  {
+   "dataset": "MCR",
+   "modality": "T",
+   "n": 909
+  }
+ ],
+ "PANEL_n": 1500,
+ "phase2_trials": 2132,
+ "phase3_trials": 402,
+ "phase3_utterances": 67,
+ "phase3_patterns": {
+  "T=A!=V": 43,
+  "A=V!=T": 16,
+  "T=V!=A": 8
+ },
+ "long_table_rows": 9559,
+ "staleness": [
+  {
+   "dataset": "MCR",
+   "n_rows": 1818,
+   "manifest_feature_col": "delta_normalized_entropy_raw",
+   "frac_rows_differ_gt_1e6": 0.928493,
+   "max_abs_diff": 0.283488,
+   "median_abs_diff": 0.0382256,
+   "corrected_matches_corrected_zero_refit_predictions_to_1e12": true
+  },
+  {
+   "dataset": "LISTEN",
+   "n_rows": 1149,
+   "manifest_feature_col": "delta_normalized_entropy_raw",
+   "frac_rows_differ_gt_1e6": 0.931245,
+   "max_abs_diff": 0.258585,
+   "median_abs_diff": 0.0471798,
+   "corrected_matches_corrected_zero_refit_predictions_to_1e12": true
+  },
+  {
+   "dataset": "CA-MER",
+   "n_rows": 3000,
+   "manifest_feature_col": "delta_normalized_entropy_raw",
+   "frac_rows_differ_gt_1e6": 0.928,
+   "max_abs_diff": 0.419299,
+   "median_abs_diff": 0.0449837,
+   "corrected_matches_corrected_zero_refit_predictions_to_1e12": true
+  }
+ ]
+}

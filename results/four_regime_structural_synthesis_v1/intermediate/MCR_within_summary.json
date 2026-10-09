@@ -1,0 +1,41 @@
+{
+ "n_items": 909,
+ "n_dialogue_clusters_inferred": 255,
+ "share_diff_T_THEN_A_minus_A_THEN_T_SIDE_1": [
+  0.06930693069306931,
+  0.05192985749789913,
+  0.0884047285407026
+ ],
+ "share_diff_T_THEN_A_minus_A_THEN_T_SIDE_2": [
+  -0.13751375137513752,
+  -0.16415503864953962,
+  -0.11303818776452484
+ ],
+ "share_diff_T_THEN_A_minus_A_THEN_T_OTHER": [
+  0.06820682068206821,
+  0.05269174642144562,
+  0.08559125487043104
+ ],
+ "SIDE_AUDIO_discordant_pairs_(A_first_only, T_first_only)": [
+  5,
+  68
+ ],
+ "order_stability": {
+  "both_SIDE_AUDIO": 17,
+  "both_SIDE_TEXT": 747,
+  "audio_choice_only_when_text_first_recency": 68,
+  "text_choice_only_when_audio_first_primacy": 4,
+  "any_OTHER": 73
+ },
+ "OTHER_label_identity": "NOT_AVAILABLE: row-level MCR generations (audit/QWEN25_MCR_CONTROLLED_V3/full_run/*.jsonl) are not in the repository; only outcome class",
+ "content_dup_items": [
+  "MCR_SER_199",
+  "MCR_SER_204",
+  "MCR_SER_138",
+  "MCR_SER_537",
+  "MCR_SER_692",
+  "MCR_SER_752",
+  "MCR_SER_838"
+ ],
+ "dialogue_cluster_note": "cluster = dia{N} token from MCR audio filename (inferred, not an official ID)"
+}

@@ -1,0 +1,5 @@
+contrast,n_items,within_item_spearman_dEntropyA_vs_dSIDE_A,ci_lo,ci_hi,mean_dEntropyA,frac_items_entropy_up,frac_items_SIDE_A_down,note
+SNR00-RECODE,146,-0.353152,-0.491221,-0.20052,0.0607718,0.712329,0.239726,ASSOCIATION of within-item changes; noise acts through multiple paths so mediation is NOT identified
+SNR10-RECODE,146,-0.311342,-0.444376,-0.161985,0.032496,0.623288,0.157534,ASSOCIATION of within-item changes; noise acts through multiple paths so mediation is NOT identified
+SNR20-RECODE,146,-0.216436,-0.368628,-0.0425688,0.0180737,0.561644,0.0821918,ASSOCIATION of within-item changes; noise acts through multiple paths so mediation is NOT identified
+CROSS_SECTIONAL_RECODE_unfitted_lower_entropy_rule_AUROC(SIDE_A vs SIDE_V; clean-audio Phase1 entropy),144,0.774484,0.704109,0.840684,,,,unfitted sign-fixed score H_V-H_A; binary-resolved trials only
