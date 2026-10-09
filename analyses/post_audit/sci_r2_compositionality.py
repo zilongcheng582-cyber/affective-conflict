@@ -259,6 +259,8 @@ def main():
                 'n_common_support_with_B1': int(common.sum()),
                 'accuracy_common_support': cor[common].mean() if common.any() else np.nan,
                 'B1_accuracy_common_support': np.mean([rows[i]['B1_label'] == obs_lab[i] for i in np.flatnonzero(common)]) if common.any() else np.nan,
+                'B0_n_correct_on_own_resolved': int(sum(rows[i]['majority_label'] == obs_lab[i] for i in np.flatnonzero(res))),
+                'B0_accuracy_on_own_resolved': np.mean([rows[i]['majority_label'] == obs_lab[i] for i in np.flatnonzero(res)]) if res.any() else np.nan,
                 'n_pred_majority': int(pmaj.sum()), 'n_pred_majority_correct': int((pmaj & cor).sum()),
                 'n_pred_minority': int(pmin.sum()), 'n_pred_minority_correct': int((pmin & cor).sum()),
                 'minority_recall_on_frozen294': (pmin & cor & frozen294).sum() / max(1, (is_min_obs & frozen294).sum()),
@@ -351,6 +353,19 @@ def main():
                 'prop_bootstrap_diff_le_0': float(np.mean(bs['diff'] <= 0)),
                 'bootstrap_replicates': BOOTSTRAPS, 'bootstrap_seed': SEED, 'CI_method': 'UTTERANCE_CLUSTER_PERCENTILE_95',
                 'analysis_origin': ORIGIN})
+    # Each partial-coverage rule vs always-majority on that rule's OWN resolved rows (paired, same support).
+    for n in ('B5_CROSSFIT_M3a_SPEC_PREDICTED_EDGE_COMPOSITION', 'B1_FROZEN_MATCHED_PAIRWISE', 'B3a_ITEM_PREF_PHASE2_ORDER_POOLED_VOTE',
+              'B3b_ORDER_MISMATCHED_PAIRWISE_COMPOSITION', 'B2c_SOURCE_ORDER_ONLY_PAIRWISE_COMPOSITION'):
+        s = resd[n]
+        a, b_, cl = cor[n][s].astype(float), cor['B0_ALWAYS_MAJORITY'][s].astype(float), utt[s]
+        bs = cluster_bootstrap(cl, lambda idx, a=a, b_=b_: {'diff': a[idx].mean() - b_[idx].mean()})
+        lo, hi, _ = ci(bs['diff'])
+        unc.append({'comparison': n + ' minus B0_ALWAYS_MAJORITY', 'support': 'OWN_RESOLVED_ROWS_OF_' + n, 'N_rows': int(s.sum()),
+                    'N_utterances': len(set(cl)), 'rule_n_correct': int(a.sum()), 'B0_n_correct': int(b_.sum()),
+                    'rule_accuracy': a.mean(), 'baseline_accuracy': b_.mean(), 'accuracy_difference': a.mean() - b_.mean(),
+                    'diff_CI_low': lo, 'diff_CI_high': hi, 'prop_bootstrap_diff_le_0': float(np.mean(bs['diff'] <= 0)),
+                    'bootstrap_replicates': BOOTSTRAPS, 'bootstrap_seed': SEED, 'CI_method': 'UTTERANCE_CLUSTER_PERCENTILE_95',
+                    'analysis_origin': ORIGIN})
     # B1 within-class accuracy uncertainty
     for cls in ('MAJORITY', 'MINORITY'):
         s = np.array([r['B1_class'] == cls for r in rows])

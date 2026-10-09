@@ -75,11 +75,13 @@ Pair-specific fitting (M6) gives a small extra gain over pooled M3 (+0.012 AUROC
    Label identity and position help only modestly (M2 − M1: +0.06 AUROC, no log-loss gain). Adding them to the evidence model does not help: M4 is not better than M3.
 2. **Is entropy alone sufficient?** Yes. M5 (pair + order + Δentropy) matches the full three-feature model
    (ΔAUROC −0.002 [−0.006, +0.001]). In the pooled full-data diagnostic GLM, Δentropy has a coefficient of −7.57 per unit, with an utterance-cluster 95% CI of −10.9 to −4.3.
-   Source-probability and margin are not distinguishable from 0 given entropy, and their fold-wise signs flip. **Practically all incremental information is in the normalized-entropy difference:**
+   In the current sample, model specification and evaluation precision, source-label probability and top1–top2 margin show no confirmable
+   additional predictive gain beyond normalized entropy. Their coefficients given entropy have CIs spanning 0, and their fold-wise signs flip.
+   This is not evidence that they carry no information. **Practically all *confirmable* incremental information is in the normalized-entropy difference:**
    the model tends to choose the modality whose own unimodal output was less uncertain.
 3. **Is A–T weaker?** Yes. Pair-specific M3 − M1 AUROC gains are A–T +0.234 [+0.107, +0.348], A–V +0.270 and V–T +0.228. But A–T's
    log-loss gain is not established (−0.056 [−0.165, +0.069]). Absolute out-of-fold AUROC for M3 is A–T 0.69, A–V 0.79 and V–T 0.85.
-   A–T has only 116 rows from 58 utterance pairs.
+   A–T has only 116 rows from 61 utterances.
 4. **Are coefficient signs stable across pairs?** The entropy direction is negative in all three pairs when entropy is fitted alone
    (A–T −5.5 [−9.1, −1.9]; A–V −6.3 [−8.2, −4.4]; V–T −7.5 [−9.3, −5.7]).
    With all three collinear evidence features in A–T, the entropy sign becomes unstable: 3/5 positive folds, and the full-fit CI spans 0. Source-probability and margin
@@ -94,8 +96,17 @@ Pair-specific fitting (M6) gives a small extra gain over pooled M3 (+0.012 AUROC
 - The entropy feature is a **model-internal** uncertainty from the same Qwen model's unimodal pass. It is not an objective
   measure of emotional evidence strength, and the analysis is associational. It shows that the model's bimodal arbitration
   is predictable from its own unimodal confidence asymmetry. It does not show a causal mechanism.
+- The predictive association does not demonstrate that entropy causally mediates arbitration.
 - All R1 models are post-audit diagnostics on a source population already used to build the frozen models. The CV estimate
   is an honest out-of-sample estimate *within EmotionTalk*, not a transfer claim.
 
 **R1 verdict: SUPPORTED.** Within the EmotionTalk source, there is stable, incremental predictive information beyond
-pair, order, label and position, and it is carried almost entirely by the normalized-entropy difference. Two qualifications apply: A–T is weaker, and the order effect is pair-specific.
+pair, order, label and position. Practically all confirmable increment is carried by the normalized-entropy difference: entropy-only AUROC ≈ 0.803,
+and M4 − M2 ΔAUROC ≈ +0.156. Two qualifications apply: A–T is weaker, and the order effect is pair-specific.
+
+## Revision note (Stage A, 2026-10-09)
+
+- The wording on source probability and margin was softened. They show "no confirmable additional predictive gain beyond normalized entropy
+  under the current sample, specification and precision", not "no effect".
+- The A–T utterance count was corrected from 58 to 61; the 116-row figure was already correct.
+- No numbers or conclusions changed.

@@ -45,7 +45,7 @@ Accuracy on the frozen 294 rows counts abstentions as errors. "Common" is the su
 | B3b order-mismatched edges | 0.731 | 230 | 0.690 | 238: 0.853 vs 0.937 | common: +0.084 [+0.024, +0.158] |
 | B3c Phase1 lowest-entropy modality | 1.000 | 285 | 0.762 | 294 | +0.150 [+0.047, +0.258] |
 | B3d global label preference | 1.000 | 255 | 0.673 | 294 | +0.238 [+0.119, +0.360] |
-| B5 cross-fit predicted-edge composition | 0.711 | 200 | 0.568 | 218: 0.766 vs 0.899 | common: +0.133 [+0.043, +0.233] |
+| B5 cross-fit predicted-edge composition | 0.711 (286 rows) | 200 | 0.568 | 218: 0.766 vs 0.899 | common: +0.133 [+0.043, +0.233] |
 | B4 shuffled pairwise (mean of 2,000) | 0.731 | 166.1 (SD 12.5, max 209) | 0.419 (SD 0.043, max 0.561) | — | permutation p = 1/2001 ≈ 0.0005 |
 | DIAG within-item oracle-like | 0.993 | 339 | 0.888 | 293: 0.891 vs 0.915 | +0.024 [−0.043, +0.085] |
 
@@ -80,10 +80,20 @@ The B4 shuffle keeps exactly 294 resolved rows and 95 minority predictions in ev
 5. **Compositional prediction or within-item consistency?** The evidence supports **within-item consistency**. Pairwise responses on the
    *same item* predict that item's TWO_VS_ONE trimodal responses well. Order matching adds a modest, real signal: B1 beats the
    order-mismatched edges by +8.4 pts on common support and wins the tie subset. But the order-pooled item preference already captures everything else.
-   When the edges must be *predicted* from unimodal evidence for unseen items (B5, a genuine compositional forecast), accuracy on resolved rows
-   (0.699) does not exceed the always-majority base rate (0.716). The phenomenon is therefore best described as stable item-level label
+   When the edges must be *predicted* from unimodal evidence for unseen items (B5, a genuine compositional forecast), B5 resolves 286 rows.
+   On those same 286 rows it is correct on 200/286 = 0.6993, against always-majority's 207/286 = 0.7238. The paired difference is
+   −0.024 [−0.135, +0.077] (utterance-cluster bootstrap, 59 utterances). So B5 does not beat the base rate on its own support. The phenomenon is therefore best described as stable item-level label
    preference that pairwise probes reveal. It is not evidence that trimodal behaviour is composed from separately predictable pairwise arbitration rules.
 
 **R2 verdict: NOT_ESTABLISHED** for compositionality beyond item-level preference. The narrower claim, *TWO_VS_ONE
 within-item pairwise-to-trimodal consistency (non-shuffled, partially order-specific)*, is **SUPPORTED** within this
 67-utterance set. Neither statement extends to ALL_DIFFERENT trimodal conflict.
+
+## Revision note (Stage A, 2026-10-09)
+
+The earlier text compared B5's accuracy on its own 286 resolved rows (0.699) with always-majority's accuracy on all 402 rows (0.716).
+That was an unpaired comparison across different supports. It has been replaced by the paired same-support comparison
+(B5 200/286 = 0.6993 vs always-majority 207/286 = 0.7238; −0.024 [−0.135, +0.077]); see the `OWN_RESOLVED_ROWS_OF_*` rows in
+`R2_CLUSTERED_UNCERTAINTY.csv` and the `B0_*_on_own_resolved` columns in `R2_BASELINE_COMPARISON.csv`. The same analysis on own support
+gives B1 268/294 vs 216/294 (+0.177 [+0.072, +0.285]) and B3a 277/336 vs 244/336 (+0.098 [+0.006, +0.202]). The conclusion is unchanged:
+general compositionality beyond item preference remains NOT_ESTABLISHED, and TWO_VS_ONE within-item consistency remains SUPPORTED.

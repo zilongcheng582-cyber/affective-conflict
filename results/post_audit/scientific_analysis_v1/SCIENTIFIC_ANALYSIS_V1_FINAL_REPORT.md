@@ -15,7 +15,8 @@ well beyond pair, presentation order, emotion-label identity and candidate-list 
 - Evidence over the label/position baseline (M4 − M2): ΔAUROC +0.156 [+0.110, +0.210], Δlog loss −0.127 [−0.179, −0.077].
   The speaker-grouped CV, the unpenalized fits and 20 alternative fold splits all agree.
 - **Entropy alone carries essentially all of the gain** (M3 − M5: ΔAUROC −0.002 [−0.006, +0.001]). The model tends to choose the modality whose
-  own unimodal output was less uncertain. Source-label probability and margin add nothing once entropy is in the model.
+  own unimodal output was less uncertain. In the current sample, model specification and evaluation precision, source-label probability and
+  margin show no confirmable additional predictive gain beyond normalized entropy. This is not proof that they carry no information.
 - Qualifications: A–T is weaker (out-of-fold AUROC 0.69 vs 0.79/0.85, and its log-loss gain is not established). The order effect is pair-specific
   (A–T none, A–V moderate recency, V–T strong recency; pair×order Wald p = 1.4e-4). The direction of the entropy effect is consistent across pairs
   when entropy is fitted alone. The historical publication-CV M3a AUROC (0.8018) reproduces exactly.
@@ -33,8 +34,8 @@ The narrower claim, TWO_VS_ONE within-item pairwise→trimodal consistency, is S
 - Against item-level label preference (vote over both orders of the same informative edges): **the predictions are identical on all 272 rows where
   the vote is decisive.** Matched-order edges help only on 22 tie rows (6 utterances) and against the opposite-order edges (+8.4 pts [+2.4, +15.8]).
   The full-coverage item preference beats B1 coverage-aware (0.799 vs 0.667).
-- A genuine unseen-item composition fails. When the edges are predicted from unimodal evidence by a cross-fitted source model, accuracy on resolved rows is 0.699,
-  which does not exceed the always-majority base rate.
+- A genuine unseen-item composition fails. When the edges are predicted from unimodal evidence by a cross-fitted source model (B5), it resolves 286 rows.
+  On those same rows it gets 200/286 = 0.6993, against always-majority's 207/286 = 0.7238 (paired −0.024 [−0.135, +0.077]).
 - So Phase3 shows that **pairwise probes reveal stable item-level label preferences that recur in TWO_VS_ONE trimodal responses**,
   with a modest order-specific component. It does not show trimodal behaviour composed from separately predictable pairwise rules. Nothing here concerns ALL_DIFFERENT.
 
@@ -102,3 +103,9 @@ This stage has not been executed.
   `results/post_audit/closure_v1/PHASE3_ROW_LEVEL_VERIFICATION_V1.csv`, `manifests/listen/frozen_joint_outcomes.csv`,
   `results/post_audit/closure_v1/LISTEN_JOINT_ONLY_REPORT.csv`, `LISTEN_CONDITION_DIAGNOSTICS.csv`, `ZERO_REFIT_BASELINE_COMPARISON_V1.csv` (cited).
 - Per-analysis metadata: `R1_RUN_METADATA.json`, `R2_RUN_METADATA.json`, `R3_RUN_METADATA.json`.
+
+## Revision note (Stage A, 2026-10-09)
+
+Two wording corrections were made: the R1 claim about source probability and margin, and the R2 B5 comparison, which is now paired on the same 286 rows.
+A–T is now reported as 61 utterances. No other numbers, verdicts or recommendations changed. The R1–R3 scripts were replayed in an isolated environment and reproduced
+the committed tables exactly. The R2 script now also writes same-support comparisons against always-majority, without changing any existing value.
