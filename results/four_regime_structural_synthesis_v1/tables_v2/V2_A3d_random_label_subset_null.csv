@@ -1,0 +1,2 @@
+observed_in7_minus_out_AUROC_all_constructions,n_random_7subsets_valid,null_mean,null_sd,null_q95,null_q99,frac_random_subsets_with_difference_ge_observed,note
+0.197346,2245,-0.0116033,0.1226,0.192646,0.208168,0.0320713,trial-level reference distribution over arbitrary 7-label sets of the 16 CA-MER labels; asks whether a label-identity partition of this size routinely yields such a gap

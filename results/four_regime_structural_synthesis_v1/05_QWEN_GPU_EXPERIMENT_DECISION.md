@@ -1,3 +1,5 @@
+> **已被取代（Revision V2）**：`ONE_FINAL_QWEN_EXPERIMENT_REQUIRED` 与"CA-MER 16 类单模态测量为唯一首选"的结论**撤回**，见 `08_QWEN_GPU_EXPERIMENT_DECISION_V2.md`。原因：运行器不保存候选评分（16 类熵无法由已规划臂的输出恢复）、7 类内子集结果被混杂、归档未核实。原文保留以便追溯。
+
 # 05 Qwen 是否还需要新的 GPU 实验
 
 **唯一优先决策：`ONE_FINAL_QWEN_EXPERIMENT_REQUIRED`**

@@ -1,0 +1,71 @@
+{
+ "controlled_manifest_rows": 1500,
+ "unique_sample_ids": 1500,
+ "keys_in_manifest": [
+  "audio_path",
+  "audio_sha256",
+  "candidate_direction",
+  "candidate_interface",
+  "candidate_labels",
+  "candidate_order",
+  "candidate_order_sha256",
+  "candidate_rotation",
+  "candidate_schedule_rank",
+  "conflict_pool",
+  "dual_readable",
+  "dual_readable_status",
+  "official_annotation_commit",
+  "official_annotation_file",
+  "official_annotation_row",
+  "official_annotation_sha256",
+  "planned_arms",
+  "protocol_id",
+  "protocol_version",
+  "sample_id",
+  "sample_role",
+  "science_status",
+  "silent_video_path",
+  "silent_video_sha256",
+  "subset",
+  "y_A",
+  "y_A_semantics",
+  "y_V",
+  "y_V_semantics"
+ ],
+ "final_label_or_alignment_fields_present": [],
+ "subset_conflict_pool_crosstab": {
+  "false": {
+   "audio-aligned": 0,
+   "consistent": 500,
+   "video-aligned": 0
+  },
+  "true": {
+   "audio-aligned": 500,
+   "consistent": 0,
+   "video-aligned": 500
+  }
+ },
+ "y_A_ne_y_V_matches_conflict_pool": true,
+ "candidate_order_sha_recomputed_matches": 1500,
+ "candidate_set_identical_all_rows": true,
+ "candidate_order_is_permutation_of_set": true,
+ "n_distinct_candidate_orders": 32,
+ "joint_samples_equal_manifest": true,
+ "joint_rows_per_sample_counts": {
+  "2": 1500
+ },
+ "joint_source_labels_match_manifest": true,
+ "B3_audio_evidence_hash_equals_manifest_audio_sha256": 1500,
+ "B3_video_evidence_hash_equals_manifest_silent_video_sha256": 1500,
+ "B3_video_evidence_hash_note": "if <1500, B3 V evidence hash is bound to a different video artefact than the controlled silent video",
+ "joint_modality1_evidence_sha_equals_audio_sha": 3000,
+ "joint_modality2_evidence_sha_equals_video_sha": 3000,
+ "technical_missing_by_subset_order": "{('audio-aligned', 'A_THEN_V'): 10, ('audio-aligned', 'V_THEN_A'): 10, ('consistent', 'A_THEN_V'): 27, ('consistent', 'V_THEN_A'): 27, ('video-aligned', 'A_THEN_V'): 21, ('video-aligned', 'V_THEN_A'): 21}",
+ "technical_missing_both_orders_same_sample": 58,
+ "technical_missing_samples": 58,
+ "technical_missing_reason_counts": {
+  "CUDA_OOM": 116
+ },
+ "planned_runner_arms": "A_ONLY,V_ONLY,A_THEN_V,V_THEN_A x 1500 = 6000 records (src/cross_regime/run_camer_joint.py: ARMS, full_counts_valid)",
+ "runner_output_fields": "raw_model_output, parse_status, parsed_label (greedy generate, thinker_do_sample=False); NO candidate scores/logits saved"
+}

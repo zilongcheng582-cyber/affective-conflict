@@ -1,0 +1,10 @@
+construction,subset,n_binary,n_samples,P_SIDE_AUDIO,AUROC_crude,AUROC_within_label_pair,pos_neg_pairs_label_pair,AUROC_within_label_pair_order_construction
+audio-aligned,both_in_7,160,90,0.81875,0.637668,0.582599,454,0.588496
+audio-aligned,not_both_in_7,535,289,0.714019,0.490196,0.489149,6589,0.486858
+audio-aligned,both_B3_readable(top1==own label),15,,,,,,
+video-aligned,both_in_7,256,143,0.410156,0.706623,0.79278,6551,0.794761
+video-aligned,not_both_in_7,399,221,0.340852,0.517138,0.492999,3714,0.489142
+video-aligned,both_B3_readable(top1==own label),39,22,0.461538,0.693122,0.790123,162,0.807692
+ALL,both_in_7,416,233,0.567308,0.718197,0.765652,11500,0.781331
+ALL,not_both_in_7,934,510,0.554604,0.52085,0.478354,16793,0.487681
+ALL,both_B3_readable(top1==own label),54,30,0.444444,0.6375,0.821053,190,0.814815

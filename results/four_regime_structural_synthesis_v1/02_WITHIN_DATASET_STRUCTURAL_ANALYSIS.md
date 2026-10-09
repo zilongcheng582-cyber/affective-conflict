@@ -1,3 +1,5 @@
+> **修订提示（Revision V2，见 `07_REVISION_V2_VERIFICATION_AND_ERRATA.md`）**：(1) 2.1 E3 中"'可读'对重编码不稳健、~10% 回归"收窄为：14/146（9.6%）在 RECODE 下读不出源标签，混合了选择回归与真实再编码敏感性；(2) 2.2 MCR 末段"概率层面没有迁移收益"改为：MCR 相对 M0 的改善可由流行率水平差完全解释，但经目标侧重校准后分数含弱排序信息；(3) 2.4 CA-MER 中关于"7 类内"的解释以 07 A3 为准。原文保留以便追溯。
+
 # 02 数据集内部结构分析
 
 全部为 `POST_HOC_EXPLORATORY`。置信区间是按"簇"重抽样的 percentile bootstrap（2000 次，种子 20261009，除非表中另注）；Wilson 区间只用于单个比例。**没有任何子组是根据已观察的干预效应挑选的**：凡按拓扑/标签/构造分层的表，都把全部层展示出来。复算：`python -m analyses.four_regime_synthesis_v1.run_all`；表格在 `tables/`。

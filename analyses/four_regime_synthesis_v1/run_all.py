@@ -20,7 +20,7 @@ CITED = ['results/post_audit/scientific_analysis_v1/SCIENTIFIC_ANALYSIS_V1_FINAL
          'protocols/mcr/MCR_CONTROLLED_DUAL_READABLE_DIAGNOSTICS_V2.csv', 'protocols/camer/CAMER_CONTROLLED_PROTOCOL_V1.md', 'configs/mainline/camer_controlled_arbitration_prompt_v1.json',
          'configs/mainline/mcr_controlled_arbitration_prompt_v2.json', 'src/common/benchmarks/listen_adapter.py', 'experiments/emotiontalk_reliability_v1/PROTOCOL_V1.md',
          'manifests/emotiontalk/EMOTIONTALK_MASTER_PANEL_V1.csv', 'manifests/emotiontalk/trimodal_plan.csv']
-STEPS = ['a01_build_tables', 'a02_emotiontalk', 'a02_mcr', 'a02_listen', 'a02_camer', 'a03_cross_regime', 'a04_inventory']
+STEPS = ['a01_build_tables', 'a02_emotiontalk', 'a02_mcr', 'a02_listen', 'a02_camer', 'a03_cross_regime', 'a04_inventory', 'a05_revision_v2']
 
 
 def last_commit(rel):
@@ -38,6 +38,8 @@ def main():
             common.write(t, 'JOINT_LONG_V1.csv', 'intermediate'); common.write(m.staleness_audit(), 'MANIFEST_FEATURE_STALENESS_AUDIT.csv', 'intermediate'); common.save_registry('a01')
         elif s == 'a02_emotiontalk':
             m.run(); m.extras()
+        elif s == 'a05_revision_v2':
+            m.eri1_readability(); m.eri1_posttreatment_strata(); m.oracle_audit(); m.camer_confound(); m.camer_identity(); common.save_registry('a05')
         else:
             m.run()
         print('done', s, round(time.time() - t0, 1), 's')
@@ -49,7 +51,7 @@ def main():
     cited = {c: dict(sha256=sha256(REPO / c), last_commit=last_commit(c)) for c in CITED}
     used_full = {k: dict(sha256=v, last_commit=last_commit(k)) for k, v in used.items()}
     scripts = {str(p.relative_to(REPO)): sha256(p) for p in sorted((REPO / 'analyses/four_regime_synthesis_v1').glob('*.py'))}
-    outs = {str(p.relative_to(REPO)): sha256(p) for p in sorted(OUT.rglob('*')) if p.is_file() and p.name not in ('RUN_PROVENANCE.json', 'OUTPUT_MANIFEST.json') and not p.name.startswith('INPUTS_USED_')}
+    outs = {str(p.relative_to(REPO)): sha256(p) for p in sorted(OUT.rglob('*')) if p.is_file() and p.name not in ('RUN_PROVENANCE.json', 'OUTPUT_MANIFEST.json', 'RUN_PROVENANCE_V2.json', 'OUTPUT_MANIFEST_V2.json') and p.name != 'RUN_PROVENANCE_ADDENDUM_V2.json' and not p.name.startswith('INPUTS_USED_')}
     prov = dict(task='FOUR_REGIME_STRUCTURAL_SYNTHESIS_V1', origin=common.ORIGIN, script_version=common.SCRIPT_VERSION, base_commit_main=common.git_head(),
                 branch=subprocess.run(['git', '-C', str(REPO), 'rev-parse', '--abbrev-ref', 'HEAD'], capture_output=True, text=True).stdout.strip(),
                 eri1_scientific_seal_commit='544ca0efae158df369a7b25dd110dc4254f67a7d', seed=common.SEED, bootstrap_replicates_default=common.B,
@@ -57,8 +59,8 @@ def main():
                 gpu_used=False, model_loaded=False, frozen_models_refit=False, frozen_files_modified=False,
                 statistical_units='see 02_WITHIN_DATASET_STRUCTURAL_ANALYSIS.md section 0 (cluster = dialogue / audio-dialogue token / LISTEN base item / CA-MER sample)',
                 input_files_read_by_code=used_full, cited_files_not_read_by_code=cited, analysis_scripts_sha256=scripts, runtime_seconds=round(time.time() - t0, 1))
-    (OUT / 'RUN_PROVENANCE.json').write_text(json.dumps(prov, indent=1))
-    (OUT / 'OUTPUT_MANIFEST.json').write_text(json.dumps(dict(n_files=len(outs), files=outs), indent=1))
+    (OUT / 'RUN_PROVENANCE_V2.json').write_text(json.dumps(prov, indent=1))
+    (OUT / 'OUTPUT_MANIFEST_V2.json').write_text(json.dumps(dict(n_files=len(outs), files=outs), indent=1))
     print('inputs', len(used), 'outputs', len(outs))
 
 

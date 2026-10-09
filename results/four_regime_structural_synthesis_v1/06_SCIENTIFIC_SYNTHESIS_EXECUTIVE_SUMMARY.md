@@ -1,3 +1,5 @@
+> **修订提示（Revision V2）**："一句话结论"与"最建议的 Qwen 下一步"以 `08_QWEN_GPU_EXPERIMENT_DECISION_V2.md` 为准（`CPU_ANALYSIS_INCOMPLETE`，不批准 GPU，不建议运行 CA-MER 16 类测量）。第 2、3、8 条新确认结果的措辞按 `07_REVISION_V2_VERIFICATION_AND_ERRATA.md` 收窄。
+
 # 06 Four-Regime 科学综合：执行摘要
 
 `POST_HOC_EXPLORATORY_FOUR_REGIME_SYNTHESIS_V1` · 基线 `main` = `544ca0efae158df369a7b25dd110dc4254f67a7d` · 纯 CPU · 未启动 GPU / 未加载模型 / 未重拟合任何冻结模型 / 未改动 ERI1 封版与任何历史文件。

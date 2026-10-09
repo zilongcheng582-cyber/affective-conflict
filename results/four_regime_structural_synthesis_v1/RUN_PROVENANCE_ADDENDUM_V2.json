@@ -1,0 +1,62 @@
+{
+ "purpose": "Correct and extend provenance of FOUR_REGIME_STRUCTURAL_SYNTHESIS_V1 without rewriting the original commit or RUN_PROVENANCE.json",
+ "original_commit": {
+  "sha": "8679809a184408423f346f3d24d22c7f652ff09a",
+  "message_first_line": "Four-regime structural synthesis v1: CPU post-hoc exploratory synthesis and Qwen GPU decision",
+  "parent": "544ca0efae158df369a7b25dd110dc4254f67a7d"
+ },
+ "published_ref": {
+  "remote": "origin",
+  "branch": "claude/funny-brahmagupta-i7mdam",
+  "sha_at_check": "8679809a184408423f346f3d24d22c7f652ff09a",
+  "note": "the only remote ref carrying the report commit"
+ },
+ "local_analysis_branch": {
+  "name": "analysis/four-regime-structural-synthesis-v1",
+  "tip_before_revision_v2": "8679809a184408423f346f3d24d22c7f652ff09a",
+  "upstream_configured": "refs/heads/main",
+  "pushed_under_own_name": false,
+  "note": "created from origin/main (544ca0e); never pushed under this name; commit 8679809 was pushed to claude/funny-brahmagupta-i7mdam via refspec analysis/...:claude/..."
+ },
+ "stale_local_branch": {
+  "name": "claude/funny-brahmagupta-i7mdam",
+  "local_sha": "544ca0efae158df369a7b25dd110dc4254f67a7d",
+  "note": "local ref was left at 544ca0e while remote advanced to 8679809; not force-modified"
+ },
+ "original_RUN_PROVENANCE": {
+  "path": "results/four_regime_structural_synthesis_v1/RUN_PROVENANCE.json",
+  "sha256_in_8679809": "9355f8d6d9f9f0c4c27e2c07883d73af36d65fab19d9fa1572e07fc29db34b1b",
+  "known_inaccuracy": "base_commit_main/branch recorded the runtime HEAD (544ca0e) and local branch name before the commit existed; they are not the published commit/ref. File preserved unchanged."
+ },
+ "revision_v2": {
+  "new_files": [
+   "07_REVISION_V2_VERIFICATION_AND_ERRATA.md",
+   "08_QWEN_GPU_EXPERIMENT_DECISION_V2.md",
+   "RUN_PROVENANCE_V2.json",
+   "OUTPUT_MANIFEST_V2.json",
+   "tables_v2/",
+   "intermediate/V2_CAMER_identity_checks.json",
+   "analyses/four_regime_synthesis_v1/a05_revision_v2.py",
+   "analyses/four_regime_synthesis_v1/step0_camer_archive_audit.py"
+  ],
+  "edited_files": [
+   "02,03b,04,05,06 .md: revision banner prepended only (bodies unchanged)",
+   "analyses/four_regime_synthesis_v1/run_all.py: adds step a05, writes *_V2.json instead of overwriting the originals"
+  ],
+  "base_for_revision": "8679809a184408423f346f3d24d22c7f652ff09a",
+  "uses_archive": false,
+  "gpu_used": false,
+  "model_loaded": false,
+  "frozen_files_modified": false,
+  "new_analyses_label": "POST_HOC_EXPLORATORY"
+ },
+ "archive_access": {
+  "audit_QWEN25_CAMER_CONTROLLED_V1": "NOT_ACCESSIBLE_ON_THIS_MACHINE",
+  "searched": [
+   "filesystem-wide directory search",
+   "/mnt/attach",
+   "/mnt/user-data/uploads",
+   "environment variables"
+  ]
+ }
+}

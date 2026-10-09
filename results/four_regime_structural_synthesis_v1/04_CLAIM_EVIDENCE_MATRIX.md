@@ -1,3 +1,5 @@
+> **修订提示（Revision V2）**：E3 行中"21/146"是笔误，正确为 14/146（9.6%，132/146=0.904）；该条应表述为选择回归与再编码敏感性的混合。B2 行改为：关联集中在 B3 能表示且读对双方标签的试次，不可归因于标签空间不兼容（`EXPLORATORY_SIGNAL`，收窄）。B4 行："MCR log loss 优势=校准"成立，但不能推出"冻结分数无信息"（重校准后有弱排序信息）；CA-MER/LISTEN 不存在相对 M0 的改善。见 07。
+
 # 04 Claim–Evidence Matrix
 
 状态：`ALREADY_SUPPORTED` / `EXPLORATORY_SIGNAL` / `NOT_ESTABLISHED` / `MEASUREMENT_INCOMPATIBLE` / `NOT_TESTABLE_WITH_CURRENT_DATA`。
