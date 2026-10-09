@@ -193,6 +193,8 @@ def main():
     g.add_argument('--write', action='store_true')
     g.add_argument('--verify', action='store_true')
     g.add_argument('--freeze', action='store_true', help='write DESIGN_FREEZE_RECORD_V1.json (design author only)')
+    g.add_argument('--amend', metavar='AMENDMENT_DOC', help='re-issue the freeze record for a documented pre-execution amendment')
+    ap.add_argument('--original-commit', help='commit of the record being amended (with --amend)')
     a = ap.parse_args()
     elig, trials = build()
     eb, mb = to_csv_bytes(elig), to_csv_bytes(trials)
@@ -216,6 +218,32 @@ def main():
                                              'design_seed': DESIGN_SEED, 'inputs': {p: sha256_file(REPO / p) for p in INPUTS.values()},
                                              'files': frozen, 'summary': summary(elig, trials)}, indent=1, sort_keys=True) + '\n')
         print('FREEZE_RECORD_WRITTEN', sha256_file(FREEZE_RECORD))
+        return
+    if a.amend:
+        old_bytes = FREEZE_RECORD.read_bytes()
+        old_rec = json.loads(old_bytes)
+        doc = EXP / a.amend
+        if not doc.is_file() or not a.original_commit:
+            raise SystemExit('Amendment document and --original-commit are required')
+        # An analysis-plan amendment may never touch the population, manifest or design inputs.
+        for path, h in ((ELIGIBILITY_CSV, sha256_bytes(eb)), (MANIFEST_CSV, sha256_bytes(mb))):
+            if old_rec['files'][str(path.relative_to(REPO))] != h:
+                raise SystemExit('Amendment refused: frozen trial assets changed: ' + path.name)
+        if any(sha256_file(REPO / p) != old_rec['inputs'][p] for p in INPUTS.values()):
+            raise SystemExit('Amendment refused: design inputs changed')
+        frozen = {str(p.relative_to(REPO)): sha256_file(p) for p in sorted(EXP.glob('*')) if p.is_file() and p != FREEZE_RECORD}
+        frozen.update({str(p.relative_to(REPO)): sha256_file(p) for p in sorted((REPO / 'src/emotiontalk/reliability_v1').glob('*.py'))})
+        frozen['tests/test_reliability_v1.py'] = sha256_file(REPO / 'tests/test_reliability_v1.py')
+        changed = sorted(k for k in frozen if old_rec['files'].get(k) != frozen[k])
+        amendments = old_rec.get('amendments', []) + [{
+            'id': doc.stem, 'document': str(doc.relative_to(REPO)), 'document_sha256': sha256_file(doc),
+            'supersedes_record_sha256': sha256_bytes(old_bytes), 'supersedes_record_commit': a.original_commit,
+            'changed_or_added_files': changed, 'manifest_unchanged': True, 'eligibility_unchanged': True,
+            'design_inputs_unchanged': True, 'made_before_any_gpu_execution': True}]
+        new = {**old_rec, 'status': 'DESIGN_FROZEN_BEFORE_ANY_GPU_EXECUTION_WITH_PRE_EXECUTION_AMENDMENTS',
+               'files': frozen, 'amendments': amendments}
+        FREEZE_RECORD.write_text(json.dumps(new, indent=1, sort_keys=True) + '\n')
+        print(json.dumps({'AMENDED_FREEZE_RECORD_SHA256': sha256_file(FREEZE_RECORD), 'changed_or_added_files': changed}, indent=1))
         return
     rec = json.loads(FREEZE_RECORD.read_text(encoding='utf-8'))
     checks = {'eligibility_regenerates_identically': ELIGIBILITY_CSV.read_bytes() == eb,

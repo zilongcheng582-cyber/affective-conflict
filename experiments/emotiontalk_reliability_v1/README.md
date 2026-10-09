@@ -11,6 +11,7 @@ It is separate from the exploratory R1–R3 analyses and does not change them.
 | `GPU_EXECUTION_PLAN_V1.md` | Environment, workload, memory, checkpoint/resume |
 | `ELIGIBILITY_AND_SAMPLING_V1.csv` | All 1,500 panel items with eligibility, exclusion reasons, pilot flag |
 | `FROZEN_TRIAL_MANIFEST_V1.csv` | 2,336 trials: ID, item, condition, arm/order, candidate sequence, noise seed, planned audio path, execution ranks |
+| `PRE_EXECUTION_AMENDMENT_001.md` | Pre-execution amendment: directional missing-data bounds; S7 restricted to an exploratory conditional reference |
 | `DESIGN_FREEZE_RECORD_V1.json` | SHA256 of design inputs, assets, protocol docs, code and tests |
 
 Code: `src/emotiontalk/reliability_v1/` (`design`, `audio`, `bind_media`, `run`, `pilot_check`, `analyze`). Tests: `tests/test_reliability_v1.py`.

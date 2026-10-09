@@ -175,3 +175,78 @@ def test_frozen_kernels_accept_runner_contracts(tmp_path, monkeypatch):
         assert 0 <= r['candidate_entropy_primary']['normalized_by_log7'] <= 1
         r.update(role='UNIMODAL_MEASUREMENT')
         assert run.technical_failure(r) is False
+
+
+# ---- Pre-execution amendment 001: directional conservative imputation and S7 scope ----
+
+def _records(trials, joint_outcome_by_cond, fail_conds=(), entropy=0.6):
+    out = []
+    for t in trials:
+        r = {'trial_id': t['trial_id'], 'attempt': 1, 'technical_failure': False}
+        if t['role'] == 'UNIMODAL_MEASUREMENT':
+            r.update({'candidate_entropy_primary': {'normalized_by_log7': entropy}, 'parsed_label': t['y_A']})
+        elif t['condition'] in fail_conds:
+            r['technical_failure'] = True
+        else:
+            r.update({'joint_outcome': joint_outcome_by_cond[t['condition']], 'joint_scoring_status': 'NOT_RUN'})
+        out.append(r)
+    return out
+
+
+def _run_analysis(records):
+    from src.emotiontalk.reliability_v1 import analyze
+    _, trials = design.build()
+    trials = [{k: str(v) for k, v in t.items()} for t in trials]
+    T = analyze.tables(trials, analyze.latest(records))
+    return analyze.summarize(T, design.DESIGN_SEED), T
+
+
+def _small_boot(monkeypatch):
+    from src.emotiontalk.reliability_v1 import analyze
+    monkeypatch.setattr(analyze, 'N_BOOT', 200)
+    monkeypatch.setattr(analyze, 'N_PERM', 2000)
+    monkeypatch.setattr(analyze.boot_ci, '__defaults__', (200,))
+    monkeypatch.setattr(analyze.signflip_p, '__defaults__', (2000,))
+
+
+@pytest.mark.parametrize('failing', ['RECODE', 'SNR00'])
+def test_reference_or_degraded_failures_cannot_manufacture_h1(monkeypatch, failing):
+    """No true effect (always SIDE_V); every joint trial of one contrast condition fails. Old rule (fail -> SIDE_A=1)
+    produced D = -1 when RECODE failed; the directional rule must never yield support for H1."""
+    _small_boot(monkeypatch)
+    _, trials = design.build()
+    trials = [{k: str(v) for k, v in t.items()} for t in trials]
+    recs = _records(trials, {c: 'SIDE_MODALITY_2' for c in design.CONDITIONS}, fail_conds=(failing,))
+    res, _ = _run_analysis(recs)
+    p = res['PRIMARY_dSIDE_A_SNR00_minus_RECODE']
+    assert p['estimate'] >= 0 and not res['decision']['primary'].startswith('H1_SUPPORTED')
+    # failures alone must not produce a contradiction or disconfirmation verdict either (favourable bound used)
+    assert res['decision']['primary'] not in ('H1_CONTRADICTED_OPPOSITE_DIRECTION',)
+    assert np.isnan(res['SENS_primary_complete_case']['estimate'])  # no complete item survives
+    s3 = res['S3_dSIDE_V_SNR00_minus_RECODE']
+    assert s3['estimate'] <= 0  # S3 fill is directional against its expected increase
+
+
+def test_primary_imputation_bounds_and_true_effect(monkeypatch):
+    _small_boot(monkeypatch)
+    _, trials = design.build()
+    trials = [{k: str(v) for k, v in t.items()} for t in trials]
+    outs = {c: 'SIDE_MODALITY_1' for c in design.CONDITIONS}
+    outs['SNR00'] = 'SIDE_MODALITY_2'
+    res, _ = _run_analysis(_records(trials, outs))
+    assert res['PRIMARY_dSIDE_A_SNR00_minus_RECODE']['estimate'] == -1.0
+    assert res['SENS_primary_complete_case']['estimate'] == -1.0
+    cons, fav = res['SENS_primary_missing_data_bounds_point']
+    assert cons == fav == -1.0  # no failures -> bounds coincide
+
+
+def test_s7_is_exploratory_conditional_and_outside_decision(monkeypatch):
+    _small_boot(monkeypatch)
+    _, trials = design.build()
+    trials = [{k: str(v) for k, v in t.items()} for t in trials]
+    res, _ = _run_analysis(_records(trials, {c: 'OTHER' for c in design.CONDITIONS}))
+    s7 = res['S7_EXPLORATORY_CONDITIONAL_R1_REFERENCE']
+    assert s7['status'].startswith('EXPLORATORY') and s7['scale'] == 'CONDITIONAL_BINARY_P(SIDE_A|SIDE)_NOT_ITT'
+    assert np.isnan(s7['observed_change_conditional_binary_share_SIDE_A_among_SIDE']['estimate'])  # no SIDE outcomes
+    assert 'magnitude_consistent_with_R1' not in res['decision']
+    assert res['decision']['S7_role'] == 'EXPLORATORY_CONDITIONAL_REFERENCE_EXCLUDED_FROM_DECISION'

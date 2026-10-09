@@ -1,5 +1,8 @@
 # ANALYSIS PLAN V1 — EMOTIONTALK_RELIABILITY_INTERVENTION_V1
 
+> **Amended before execution: Pre-execution Amendment 001** (`PRE_EXECUTION_AMENDMENT_001.md`). It changes §4 S7 scope, §5 missing-data rules and §6 verdict bounds.
+> Population, SNR levels, hypotheses, endpoints and the trial manifest are unchanged.
+
 Locked before any GPU execution. Implementation: `src/emotiontalk/reliability_v1/analyze.py`, which is SHA256-frozen in `DESIGN_FREEZE_RECORD_V1.json`.
 The script has been exercised only on clearly labelled SYNTHETIC data (`--synthetic-dry-run`). Pilot records are refused by the script.
 
@@ -46,9 +49,13 @@ Confirmatory secondary family S1–S5 is Holm-adjusted together.
 
 Further secondary or descriptive endpoints (not in the Holm family):
 - **S6**, pipeline control. RECODE − CLEAN differences in SIDE_A rate and in audio-only entropy, with CIs. Expected near 0, reported descriptively.
-- **S7**, magnitude check. A frozen external prediction from R1 (AV pair-specific diagnostic fit: intercept 0.14389, A-first −0.58096, Δentropy(A−V) −6.31217)
-  is evaluated at the measured H_A(RECODE), H_A(SNR00) and H_V for each item and order. The predicted mean ΔP(SIDE_A) is compared with the primary CI.
-  "Predicted value outside the observed CI" means the observational coefficient does not transport to the intervention.
+- **S7, an exploratory conditional reference** (scope restricted by Amendment 001). The R1 coefficients (AV pair-specific diagnostic fit:
+  intercept 0.14389, A-first −0.58096, Δentropy(A−V) −6.31217) were estimated **only on binary-resolvable source records**. They therefore
+  describe P(audio side | a side was chosen). They are evaluated at the measured H_A(RECODE), H_A(SNR00) and H_V. The resulting predicted change is shown
+  **only next to the observed change in the conditional binary share** P(SIDE_A | SIDE_A or SIDE_V), complete case, with item bootstrap.
+  S7 is **not** compared with the ITT primary, which also counts OTHER and PARSE_FAIL. S7 has no pass/fail criterion and does not enter
+  the decision rules. Its conditioning set is itself affected by the intervention, so it is a descriptive reference, not a quantitative validation,
+  and **never evidence of entropy mediation**.
 - **S8**, exploratory. Spearman correlation between item ΔH_A and D_i. This is **associational only, not mediation**.
 - **SEC-joint-continuous.** The teacher-forced joint probability of the audio-side label, SNR00 − RECODE, with item bootstrap.
 - **SEC-conditional-binary.** The share of SIDE_A among SIDE_A + SIDE_V per condition. This is **conditional, explicitly labelled, and never the primary**.
@@ -57,9 +64,24 @@ Further secondary or descriptive endpoints (not in the Holm family):
 ## 5. Missingness and technical-failure policy
 
 - One identical re-execution is allowed for technically failed trials. The latest attempt is analysed, and all attempts are reported.
-- **Residual joint technical failures:** in the primary analysis they are imputed as Y_A = 1, which counts against H1. A complete-case sensitivity analysis is also reported.
-- **Residual audio-only failures:** H_A(c) is imputed equal to H_A(RECODE), making ΔH = 0 and counting against S1. Complete-case sensitivity is reported.
-- PARSE_FAIL and OTHER are outcomes. Sensitivity: the primary is recomputed with PARSE_FAIL counted as SIDE_A, the conservative direction.
+- **Residual joint technical failures (Amendment 001).** The fill is *condition-directional*, so a failure can only move an estimate **against** the hypothesis being tested.
+  This holds whether the reference or the degraded condition failed.
+
+  | Endpoint (expected sign) | RECODE | SNR20 | SNR10 | SNR00 | CLEAN |
+  |---|---|---|---|---|---|
+  | Primary Y_A and S2 dose–response (negative) | 0 | 0 | 1 | 1 | complete case |
+  | S3 Y_V (positive) | 1 | 1 | 0 | 0 | complete case |
+  | S4 OTHER (two-sided), S5 order interaction (two-sided), S6, S8, SEC | complete case | | | | |
+
+  The earlier rule, which imputed Y_A = 1 for every failure, was not conservative. A failed RECODE cell filled with 1 lowers D_i and could manufacture support for H1.
+  Reported alongside the primary: complete case, the H1-**favourable** mirror bound (RECODE/SNR20 → 1, SNR10/SNR00 → 0), and the bound interval
+  for the point estimate. S4 also reports both of its imputation bounds.
+- **Verdict-specific bounds.** Support for H1 is judged on the conservative bound (the primary). A contradiction (opposite direction) or a disconfirmation
+  additionally requires the same condition to hold on the H1-favourable bound. So no verdict can be produced by failure imputation alone.
+- **Residual audio-only failures:** if either H_A(SNR00) or H_A(RECODE) is missing, the item's ΔH is set to 0, which is toward the null and never in S1's favour.
+  The previous rule could impute RECODE from the cross-item mean. Complete-case sensitivity is reported.
+- PARSE_FAIL and OTHER are outcomes. Sensitivity: the primary is recomputed with PARSE_FAIL counted as SIDE_A, the conservative direction, on top of the conservative fill.
+- If every item drops out of a complete-case set, the result is NaN and labelled not evaluable. It is never coerced to 0.
 - If residual technical failures exceed 5% of joint trials, the primary result is reported with a TECHNICAL_RISK flag and the analysis is not re-run.
 
 ## 6. Decision and falsification rules
@@ -69,16 +91,17 @@ These rules are applied mechanically by `analyze.decide`:
 | Result | Condition |
 |---|---|
 | **H1_SUPPORTED** | primary CI upper < 0 and p < 0.05 |
-| **H1_CONTRADICTED_OPPOSITE_DIRECTION** | primary CI lower > 0 |
-| **H1_DISCONFIRMED** | S1 CI lower > 0 (entropy rose) **and** primary CI lower > −0.05 (any reduction in audio-side choice is bounded to under 5 points) |
+| **H1_CONTRADICTED_OPPOSITE_DIRECTION** | CI lower > 0 on both the primary (conservative) and the H1-favourable bound |
+| **H1_DISCONFIRMED** | S1 CI lower > 0 (entropy rose) **and** CI lower > −0.05 on both the primary and the H1-favourable bound (any reduction in audio-side choice is bounded to under 5 points) |
 | **H1_NOT_SUPPORTED** | otherwise |
 | Manipulation failure | S1 CI lower ≤ 0. The entropy link is uninterpretable, but the behavioural result is still reported as is. |
 | **Entropy up, choice not in predicted direction** | S1 CI lower > 0 and primary CI upper ≥ 0. This is explicitly counted as **evidence against the core hypothesis**. |
-| Magnitude inconsistency | S7 predicted value outside the primary CI. Reported as evidence that the observational relation does not transport quantitatively. |
+| Missing-data robustness | `complete_case_agrees_with_primary_direction` is reported. A disagreement is disclosed with the result. |
+| S7 | Not a decision criterion (Amendment 001). It is reported only as an exploratory conditional reference. |
 
 No result of this experiment will be described as showing that entropy **mediates** arbitration. Entropy, choice and other input properties change
 together under one intervention. A positive H1 shows that **input reliability causally affects arbitration**. S1/S7/S8 then describe whether that
-effect is *consistent with* the R1 entropy relation.
+effect is *consistent with* the R1 entropy relation. S7 can only be read on the conditional binary scale, as an exploratory reference.
 
 ## 7. Multiple comparisons
 
