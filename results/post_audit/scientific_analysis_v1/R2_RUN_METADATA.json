@@ -1,0 +1,40 @@
+{
+  "analysis_origin": "POST_AUDIT_SCIENTIFIC_ANALYSIS_V1",
+  "seed": 20261008,
+  "bootstraps": 2000,
+  "shuffles": 2000,
+  "planned": 402,
+  "frozen_resolved": 294,
+  "frozen_correct": 268,
+  "utterances": 67,
+  "observed_class_counts_402": {
+    "MAJORITY": 288,
+    "MINORITY": 99,
+    "OTHER": 15
+  },
+  "observed_class_counts_294": {
+    "MAJORITY": 216,
+    "MINORITY": 74,
+    "OTHER": 4
+  },
+  "strata_utterances": {
+    "T": 16,
+    "V": 43,
+    "A": 8
+  },
+  "B2c_leave_out_edge_rates_example": {
+    "AT|A_THEN_T": 0.4909090909090909,
+    "VT|T_THEN_V": 0.6323529411764706,
+    "VT|V_THEN_T": 0.36,
+    "AT|T_THEN_A": 0.4745762711864407,
+    "AV|A_THEN_V": 0.38848920863309355,
+    "AV|V_THEN_A": 0.4965034965034965
+  },
+  "inputs": [
+    "manifests/emotiontalk/trimodal_plan.csv",
+    "evidence/emotiontalk/phase3_observed_outputs.jsonl",
+    "evidence/emotiontalk/phase2_observed_responses.jsonl",
+    "manifests/emotiontalk/source_measurements.csv",
+    "results/post_audit/closure_v1/PHASE3_ROW_LEVEL_VERIFICATION_V1.csv"
+  ]
+}
