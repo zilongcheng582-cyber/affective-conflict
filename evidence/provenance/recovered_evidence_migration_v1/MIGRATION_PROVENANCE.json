@@ -14,7 +14,7 @@
     "PRESENT_DIFFERENT_HASH": 0
   },
   "payload_file_count": 222,
-  "payload_bytes": 16372023,
+  "payload_bytes": 16358604,
   "package_counts": {
     "expanded": 11,
     "reconciliation": 36,
@@ -169,7 +169,7 @@
   "local_fixed_metric_replay_status": "PASS",
   "maximum_metric_abs_error": 2.220446049250313e-16,
   "content_safety_review": "PASS_WITH_EXCLUDED_RAW_ASSETS",
-  "clean_checkout_status": "PENDING",
+  "clean_checkout_status": "PASS",
   "CPU_module_imports_passed": 6,
   "frozen_evidence_tests": {
     "passed": 36,
@@ -178,7 +178,7 @@
     "initial_setup_issue": "System Temp access denied; rerun with --basetemp passed"
   },
   "local_dependency_versions": {
-    "python": "3.11",
+    "python": "3.12.10",
     "numpy": "2.4.3",
     "scipy": "1.17.1",
     "pandas": "3.0.0",
@@ -189,5 +189,10 @@
     "changed_science_files": 0,
     "changed_navigation_files": 0,
     "eri1_worktree_clean": true
-  }
+  },
+  "byte_identical_payload_files": 209,
+  "sanitized_derivative_payload_files": 13,
+  "clean_checkout_scope": "IDENTITIES_TABLES_STATIC_PARSE_MODULE_IMPORTS_AND_18_FIXED_METRIC_GROUPS; full archive/bootstrap extraction requires AutoDL",
+  "clean_checkout_tests_passed": 36,
+  "clean_checkout_module_imports_passed": 6
 }

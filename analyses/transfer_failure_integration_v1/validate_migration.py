@@ -32,6 +32,13 @@ def validate():
         assert p.is_file() and hashlib.sha256(p.read_bytes()).hexdigest()==digest,name
         checks.append(name)
     out['tests']['sha256_files']=len(checks)
+    allow=table('evidence/provenance/recovered_evidence_migration_v1/MIGRATION_ALLOWLIST.csv')
+    for row in allow:
+        digest=hashlib.sha256((ROOT/row['target_path']).read_bytes()).hexdigest()
+        assert digest==row['target_sha256'],('lineage target hash',row['target_path'])
+        if row['byte_identical'].lower()=='true':assert digest==row['source_sha256']
+        else:assert row['transformation_rule'] and row['redacted'].lower()=='true'
+    out['tests']['migration_lineage_files']=len(allow)
     base=json.loads((PROV/'MIGRATION_PROVENANCE.json').read_text())['base_main']
     changed=subprocess.check_output(['git','-C',str(ROOT),'diff','--name-status',base,'HEAD'],text=True).splitlines()
     assert all(line.startswith('A\t') for line in changed),changed
