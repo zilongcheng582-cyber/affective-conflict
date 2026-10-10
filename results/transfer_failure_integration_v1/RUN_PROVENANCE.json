@@ -1,0 +1,341 @@
+{
+  "task": "RECOVERED_SCIENCE_V1",
+  "classification": "POST_HOC_EXPLORATORY",
+  "status": "COMPLETE",
+  "completed_utc": "2026-10-10T09:31:05.841032+00:00",
+  "workdir": "/root/autodl-tmp/affective-conflict-recovered-science-v1",
+  "historical_git": "not a git repository; no reset/checkout/fetch",
+  "actual_code_sha256": {
+    "/root/autodl-tmp/affective-conflict-recovered-science-v1/analysis.py": "3a50cc5dc466da524ce7bf31c16eb0e0b82b36ba34364a4643dab61cfd3b01b5",
+    "/root/autodl-tmp/affective-conflict-recovered-science-v1/diagnostics.py": "dc4c73cca6f1762a49f7c9c24cbe5548a654e84c5b4e6c3d9f3a5a7196d1a4a4",
+    "/root/autodl-tmp/affective-conflict-recovered-science-v1/contract_focus.py": "09444c9aba799713029fb13886a57ad9bddf577b893afa4d3f9e9590571d129f",
+    "/root/autodl-tmp/affective-conflict-recovered-science-v1/contract_focus_fixed.py": "81d872f9f724ac0362593a1e03a6f8682ecf2a6f418b8b28cb6c4f581a362aea",
+    "/root/autodl-tmp/affective-conflict-recovered-science-v1/contract_focus_stream.py": "c8d6899391281836273d4095b336d86ee6acb8d8737b16454787c4a48fa7f607",
+    "/root/autodl-tmp/affective-conflict-recovered-science-v1/finalize.py": "dd54c10dd8ed7b5cfcfb74d5613c53471cc1401266ec921e3637e6752650963c",
+    "/root/autodl-tmp/affective-conflict-recovered-science-v1/verify.py": "1f9cfc7515704d3d84485bf43ab49be97d00531313fbba1a1826f6618e635151",
+    "/root/autodl-tmp/affective-conflict-recovered-science-v1/replay.py": "7b47672f698e28b97bb3140367c7aae02847fdf4c899728356085c096446efe1",
+    "/root/autodl-tmp/affective-conflict-recovered-science-v1/replay_closure.py": "287e24a2950dd6ee6beb5e20e021f755b4ac215c6e0f36b4e6cf32e7b32eaab0"
+  },
+  "environment": {
+    "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+    "numpy": "2.3.2",
+    "scipy": "1.18.1",
+    "platform": "Linux-5.15.0-122-generic-x86_64-with-glibc2.35",
+    "git_stdout": "",
+    "git_stderr": "fatal: not a git repository (or any parent up to mount point /root)\nStopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).\n",
+    "source_script_sha256": "3a50cc5dc466da524ce7bf31c16eb0e0b82b36ba34364a4643dab61cfd3b01b5"
+  },
+  "statistical_plan": {
+    "status": "POST_HOC_EXPLORATORY",
+    "registered_utc": "2026-10-10T09:10:13.514927+00:00",
+    "before_new_numeric_results": true,
+    "seed": 20261010,
+    "bootstrap": 5000,
+    "sign_flip_draws": 19999,
+    "MCR": {
+      "denominator": 1000,
+      "unit": "released sample ID; audio-SHA cluster CI and paired sign flip",
+      "contrasts": "six condition pairs: source-label match, second minus first; Holm family 6",
+      "rates": "four full-denominator audio-source match; explicit emotion assertion only faithful/adversarial; OTHER means valid label neither audio nor defined text; neutral/irrelevant OTHER means valid non-source label",
+      "secondary": "all-four invariance, pair transitions, seven source-label strata descriptively; equal-SHA weighting and exclusion of entire conflicting-GT hash groups; complete-case irrelevant parse sensitivity; controlled909 protocol kept separate"
+    },
+    "CAMER": {
+      "denominator": "1500 planned items,1000 conflict,500consistent",
+      "groups": "dual source-label match / A-only / V-only / neither when both scientifically observable; unobservable separately, never call technical missing neither",
+      "family": "paired order effects on SIDE_A,SIDE_V,OTHER in full conflict and conflict dual group; Holm 6",
+      "construct": "audio-aligned/video-aligned/consistent full and dual; label-pair/candidate-position support; item bootstrap only, no unverified speaker/video cluster",
+      "additional": "persistent OTHER, source-label strata, fixed exact label-pair standardization of construct contrasts when common support exists; descriptive 95CI not simultaneous"
+    },
+    "LISTEN": {
+      "no_repeat": "read and cite frozen R3 full findings, no target refit",
+      "new": "common-input/conflict support, posthoc observed dual match, full outcome and label subgroups; recovered OTHER choices and raw responses",
+      "family": "dual vs nondual on common support: SIDE_A,SIDE_T,OTHER; Holm3 Fisher exact, selection association only",
+      "intervals": "Wilson item-proportion CIs, bootstrap ratio for conditional choices where possible; limited source dependence unknown; tiny subgroups explicitly insufficient"
+    },
+    "cross_study": "no pooled rates or unified causal mechanism; no invented labels or official dialogue groups",
+    "failures": "full planned denominators; parse and technical missing explicit; missing media limits support",
+    "replay": "same script/sources/seed to alternate output dir, compare deterministic numeric hashes",
+    "prohibited": "GPU,weight loading,new generation,history changes,refit frozen transfer,push/merge"
+  },
+  "replay": {
+    "seed": 20261010,
+    "primary_numeric_files_compared": 18,
+    "all_match": true,
+    "files": [
+      {
+        "path": "numeric/MCR_RESULTS.json",
+        "first_sha256": "0d2d729391f49359047223f14c534c8417525e7f5d2a83dd0e1ae4367a1925bd",
+        "replay_sha256": "0d2d729391f49359047223f14c534c8417525e7f5d2a83dd0e1ae4367a1925bd",
+        "match": true
+      },
+      {
+        "path": "numeric/CAMER_RESULTS.json",
+        "first_sha256": "675de252be8f61e24af33b9d3fb52eddebd4badd52a491844a61e33e7477f49a",
+        "replay_sha256": "675de252be8f61e24af33b9d3fb52eddebd4badd52a491844a61e33e7477f49a",
+        "match": true
+      },
+      {
+        "path": "numeric/LISTEN_RESULTS.json",
+        "first_sha256": "f15872542487e6a96e4c6dbf2954034cc9fc796df2220c50c6da254127df59b6",
+        "replay_sha256": "f15872542487e6a96e4c6dbf2954034cc9fc796df2220c50c6da254127df59b6",
+        "match": true
+      },
+      {
+        "path": "intermediate/MCR_ITEM_IDENTITY_OUTCOMES.csv",
+        "first_sha256": "22fab7057d67edc5df02d0ba20be042f86dda426e74c8cd916e6704f285de299",
+        "replay_sha256": "22fab7057d67edc5df02d0ba20be042f86dda426e74c8cd916e6704f285de299",
+        "match": true
+      },
+      {
+        "path": "intermediate/MCR_NATIVE_CONTROLLED_PER_ITEM_JOIN.csv",
+        "first_sha256": "77f7525fec4a43ab028a082b46223df3ce38ccc389837ef6e423e95679c35d16",
+        "replay_sha256": "77f7525fec4a43ab028a082b46223df3ce38ccc389837ef6e423e95679c35d16",
+        "match": true
+      },
+      {
+        "path": "intermediate/MCR_DUPLICATE_DIAGNOSTICS.json",
+        "first_sha256": "77a87a2bd3a2eae68b5d01cde18fca3fade79c4d1e57da656214cded758109ec",
+        "replay_sha256": "77a87a2bd3a2eae68b5d01cde18fca3fade79c4d1e57da656214cded758109ec",
+        "match": true
+      },
+      {
+        "path": "intermediate/CAMER_ITEM_ELIGIBILITY_IDENTITY.csv",
+        "first_sha256": "28b5d70b996633adf00a476be926f31c976112f46d975a52595dd3ab0abe79dc",
+        "replay_sha256": "28b5d70b996633adf00a476be926f31c976112f46d975a52595dd3ab0abe79dc",
+        "match": true
+      },
+      {
+        "path": "intermediate/CAMER_LABEL_PAIR_CONSTRUCT_SUPPORT.csv",
+        "first_sha256": "b386d05be5e253f7bb01ee6cae2930241c72bd54283245bd7d70f9af2ad732bd",
+        "replay_sha256": "b386d05be5e253f7bb01ee6cae2930241c72bd54283245bd7d70f9af2ad732bd",
+        "match": true
+      },
+      {
+        "path": "intermediate/CAMER_LABEL_PAIR_STANDARDIZATION.csv",
+        "first_sha256": "ce00ab60efa6a4af77a0496649e63cca73e84b22e0cddee10ca240a79beb9e24",
+        "replay_sha256": "ce00ab60efa6a4af77a0496649e63cca73e84b22e0cddee10ca240a79beb9e24",
+        "match": true
+      },
+      {
+        "path": "intermediate/CAMER_CANDIDATE_LABEL_CONFOUNDING.csv",
+        "first_sha256": "7bd33986860d4b9d0dc24d7377650f3ce3f51caf5d3f74ad17445a4803475fff",
+        "replay_sha256": "7bd33986860d4b9d0dc24d7377650f3ce3f51caf5d3f74ad17445a4803475fff",
+        "match": true
+      },
+      {
+        "path": "intermediate/LISTEN_OTHER_LABEL_DECOMPOSITION.csv",
+        "first_sha256": "11212fc63299025d8d0b81ad8210d84b4d6b753fb1ac0528bec9299c57967806",
+        "replay_sha256": "11212fc63299025d8d0b81ad8210d84b4d6b753fb1ac0528bec9299c57967806",
+        "match": true
+      },
+      {
+        "path": "intermediate/LISTEN_ELIGIBILITY_BY_NATIVE_LABEL.csv",
+        "first_sha256": "5f97be6e5cd90a15d70141693703d58ebc42fe0121f46306a3af170ddb54a997",
+        "replay_sha256": "5f97be6e5cd90a15d70141693703d58ebc42fe0121f46306a3af170ddb54a997",
+        "match": true
+      },
+      {
+        "path": "intermediate/LISTEN_CORRECTED_B3_ONTOLOGY_SUPPORT.csv",
+        "first_sha256": "f2dace98cd5f9bd943053dcfaf3b98f41ac08aaed8ab96709a4a4585bfb6655d",
+        "replay_sha256": "f2dace98cd5f9bd943053dcfaf3b98f41ac08aaed8ab96709a4a4585bfb6655d",
+        "match": true
+      },
+      {
+        "path": "01_MCR_PAIRED_TRANSITIONS.csv",
+        "first_sha256": "b600e62d5c277eec29efd17961e5607a1ea4f8a21f76dca45e205f9a718e7d3a",
+        "replay_sha256": "b600e62d5c277eec29efd17961e5607a1ea4f8a21f76dca45e205f9a718e7d3a",
+        "match": true
+      },
+      {
+        "path": "01_MCR_LABEL_CONDITION_ASSOCIATIONS.csv",
+        "first_sha256": "70b83ed35ece18fbc6b9c575b337135195091dd742f36d63b48b5b14c7e0e0b9",
+        "replay_sha256": "70b83ed35ece18fbc6b9c575b337135195091dd742f36d63b48b5b14c7e0e0b9",
+        "match": true
+      },
+      {
+        "path": "02_CAMER_ELIGIBILITY_AND_COVERAGE.csv",
+        "first_sha256": "56bed18c12f515b4a23cad40d36a16bfaa9d1c638c8db5637eeba54ee63cab20",
+        "replay_sha256": "56bed18c12f515b4a23cad40d36a16bfaa9d1c638c8db5637eeba54ee63cab20",
+        "match": true
+      },
+      {
+        "path": "02_CAMER_MATCHED_TRANSITIONS.csv",
+        "first_sha256": "2e9960519168d0383822541f7dea8a926194af152384539ceac7df1077d6f86e",
+        "replay_sha256": "2e9960519168d0383822541f7dea8a926194af152384539ceac7df1077d6f86e",
+        "match": true
+      },
+      {
+        "path": "03_LISTEN_MATCHED_SOURCE_LABEL_DIAGNOSTICS.csv",
+        "first_sha256": "9f911d474023821af25a9fb651192ac1aa14a1b7c0813df5dc9c4100e2b4aea7",
+        "replay_sha256": "9f911d474023821af25a9fb651192ac1aa14a1b7c0813df5dc9c4100e2b4aea7",
+        "match": true
+      }
+    ]
+  },
+  "secondary_replay": {
+    "all_match": true,
+    "files": {
+      "numeric/MCR_SECONDARY_DIAGNOSTICS.json": "9472733cdbb04170f6b9bc257de841cd64ad3dd25e77dda4d1c5c92f4227d22a",
+      "intermediate/MCR_LABEL_PAIRED_CONTRASTS.csv": "f7fb96bb773ab47d68df7bc5db069855c24fadc7dfa054270e6107ee07b85f52"
+    },
+    "seed": 20261010
+  },
+  "source_hash_locks": [
+    "SOURCE_INPUT_LOCK.json",
+    "ADDITIONAL_INPUT_LOCK.json",
+    "CONSTRUCT_INPUT_LOCK.json",
+    "PRIOR_REPORT_READBACK_LOCK.json"
+  ],
+  "source_unchanged_checks": [
+    "SOURCE_FINAL_READ_ONLY_VERIFICATION.json",
+    "CLOSURE_INPUT_VERIFICATION.json"
+  ],
+  "historical_scientific_files_modified": false,
+  "navigation_docs_appended": [
+    {
+      "path": "/root/autodl-tmp/affective-conflict/docs/PROJECT_STATE.md",
+      "before_sha256": "8457eed0847c5645d0a23d423e48e38d56440094aaec49ff3ea184892c5597aa",
+      "after_sha256": "fe0d5df5a1d03f3661b9cbb5b5ed7f22b7b3c81628c2dede809e28692429de38",
+      "operation": "append navigation only; automatically authorized by AGENTS.md",
+      "backup_path": "/root/autodl-tmp/affective-conflict-recovered-science-v1/navigation_before_update/PROJECT_STATE.md"
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/docs/FILE_MAP.md",
+      "before_sha256": "8e317ad42f4521c6022e610aa4ee373a8a287fd60bfb2719c7a1d73cb5a9ebb4",
+      "after_sha256": "0f23c77b857b125776ed2b62b62474acb1fb9799fb7dd715a15b8faab9a10b6d",
+      "operation": "append navigation only; automatically authorized by AGENTS.md",
+      "backup_path": "/root/autodl-tmp/affective-conflict-recovered-science-v1/navigation_before_update/FILE_MAP.md"
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/docs/DECISIONS.md",
+      "before_sha256": "f90a567b623ceffb766de167c6f4e1380fb8c4853c716238fbacd8e7de47bc5a",
+      "after_sha256": "269628105fa1228eea57f7460620831e6093a4b9f3db0f91ad8e5e10fa319792",
+      "operation": "append navigation only; automatically authorized by AGENTS.md",
+      "backup_path": "/root/autodl-tmp/affective-conflict-recovered-science-v1/navigation_before_update/DECISIONS.md"
+    }
+  ],
+  "frozen_results_modified": false,
+  "ERI1_freeze_modified": false,
+  "old_B3_features_used": false,
+  "frozen_transfer_refit": false,
+  "GPU_used": false,
+  "model_loaded": false,
+  "new_generation": false,
+  "directory_rescan": false,
+  "github_push_or_merge": false,
+  "native_controlled_pooled": false,
+  "pilot_pooled": false,
+  "NEXT_STEP": "CPU_DESIGN_FREEZE_FOR_TRANSFER_MEASUREMENT_VALIDATION",
+  "STOP": true,
+  "required_artifacts": [
+    "00_SOURCE_EVIDENCE_LOCK.md",
+    "00_ANALYSIS_POPULATION_REGISTER.csv",
+    "01_MCR_NATIVE_FOUR_CONDITION_REPORT.md",
+    "01_MCR_PAIRED_TRANSITIONS.csv",
+    "01_MCR_LABEL_CONDITION_ASSOCIATIONS.csv",
+    "01_MCR_NATIVE_VS_CONTROLLED_COMPARABILITY.md",
+    "01_MCR_DUPLICATE_SENSITIVITY.md",
+    "02_CAMER_UNIMODAL_JOINT_STRUCTURE.md",
+    "02_CAMER_ELIGIBILITY_AND_COVERAGE.csv",
+    "02_CAMER_MATCHED_TRANSITIONS.csv",
+    "02_CAMER_CONSTRUCT_COMPARISON.md",
+    "03_LISTEN_ELIGIBILITY_SENSITIVITY.md",
+    "03_LISTEN_MATCHED_SOURCE_LABEL_DIAGNOSTICS.csv",
+    "03_LISTEN_OTHER_REINTERPRETATION.md",
+    "04_RECOVERED_EVIDENCE_CROSS_STUDY_SYNTHESIS.md",
+    "05_CLAIM_EVIDENCE_MATRIX.md",
+    "06_QWEN_NEXT_EXPERIMENT_DECISION.md",
+    "07_FINAL_SCIENTIFIC_EXECUTIVE_SUMMARY.md",
+    "RUN_PROVENANCE.json",
+    "SHA256SUMS.txt"
+  ],
+  "closure_verification": "FINAL_VERIFICATION.json",
+  "final_report_manifest_policy": "finalize_run.log checksummed after writer completion; bundle and manifest itself excluded",
+  "replay_after_navigation_validation": {
+    "passed": true,
+    "byte_identical_references": [
+      {
+        "original_path": "/root/autodl-tmp/affective-conflict/docs/PROJECT_STATE.md",
+        "replay_path": "/root/autodl-tmp/affective-conflict-recovered-science-v1/navigation_before_update/PROJECT_STATE.md",
+        "same_original_sha256": "8457eed0847c5645d0a23d423e48e38d56440094aaec49ff3ea184892c5597aa"
+      },
+      {
+        "original_path": "/root/autodl-tmp/affective-conflict/docs/FILE_MAP.md",
+        "replay_path": "/root/autodl-tmp/affective-conflict-recovered-science-v1/navigation_before_update/FILE_MAP.md",
+        "same_original_sha256": "8e317ad42f4521c6022e610aa4ee373a8a287fd60bfb2719c7a1d73cb5a9ebb4"
+      },
+      {
+        "original_path": "/root/autodl-tmp/affective-conflict/docs/DECISIONS.md",
+        "replay_path": "/root/autodl-tmp/affective-conflict-recovered-science-v1/navigation_before_update/DECISIONS.md",
+        "same_original_sha256": "f90a567b623ceffb766de167c6f4e1380fb8c4853c716238fbacd8e7de47bc5a"
+      }
+    ],
+    "statistical_code_modified": false,
+    "numeric_definitions_or_outputs_modified": false
+  },
+  "phase4": {
+    "status": "COMPLETE",
+    "analysis_origin": "POST_HOC_EXPLORATORY",
+    "source_commit": "34aa1b0340d906e5d625db7cb4a3def9199fa06e",
+    "measurements": 6354,
+    "predictions": 9219,
+    "route_baseline_reports": 18,
+    "strict_links": 5199,
+    "repeat": {
+      "status": "PASS",
+      "CPU_only": true,
+      "files": [
+        {
+          "path": "04_TRANSFER_ROUTE_LEVEL_REPLAY_CHECK.csv",
+          "first_sha256": "6e52affc718a27696ca2b109513fa1c4e4a360586f50c122daefa291b6b18ce9",
+          "replay_sha256": "6e52affc718a27696ca2b109513fa1c4e4a360586f50c122daefa291b6b18ce9",
+          "match": true
+        },
+        {
+          "path": "phase4_numeric/TRANSFER_RESULTS.json",
+          "first_sha256": "53d524b8c77c88c715d6b76e8aa5c87d1311aa56aa02fab5fb6f66edc0d19a3b",
+          "replay_sha256": "53d524b8c77c88c715d6b76e8aa5c87d1311aa56aa02fab5fb6f66edc0d19a3b",
+          "match": true
+        },
+        {
+          "path": "phase4_numeric/TRANSFER_FAILURE_SUBGROUPS.csv",
+          "first_sha256": "da76b13104a2696a638691f1f70b34e4721c4407c918be240364a6376eb991f9",
+          "replay_sha256": "da76b13104a2696a638691f1f70b34e4721c4407c918be240364a6376eb991f9",
+          "match": true
+        },
+        {
+          "path": "phase4_numeric/TRANSFER_RECOVERED_ROW_LINKAGE.csv",
+          "first_sha256": "e60977ce8e199d9380e5ed389002e2ea26b48be434d62118fb60e8ed837a11e9",
+          "replay_sha256": "e60977ce8e199d9380e5ed389002e2ea26b48be434d62118fb60e8ed837a11e9",
+          "match": true
+        },
+        {
+          "path": "phase4_numeric/TRANSFER_FROZEN_LOGIT_DECOMPOSITION.csv",
+          "first_sha256": "f1a68298b78b7c5c48a168f7c01da77e4b567b56dbc0d11c8384db6e02348e88",
+          "replay_sha256": "f1a68298b78b7c5c48a168f7c01da77e4b567b56dbc0d11c8384db6e02348e88",
+          "match": true
+        },
+        {
+          "path": "phase4_numeric/LISTEN_NATIVE_LABEL_SUPPORT_AND_OTHER.csv",
+          "first_sha256": "a25a5dbe23af355dac97368ddf16bb5dfed8b14daed85f4767496aa66f1bb029",
+          "replay_sha256": "a25a5dbe23af355dac97368ddf16bb5dfed8b14daed85f4767496aa66f1bb029",
+          "match": true
+        }
+      ]
+    },
+    "NEXT_STEP": "CPU_DESIGN_FREEZE_FOR_TRANSFER_MEASUREMENT_VALIDATION",
+    "bounded_manuscript_alternative": "SECOND_MODEL_WITHOUT_ADDITIONAL_QWEN",
+    "GPU": false,
+    "refit": false,
+    "code_sha256": {
+      "phase4_transfer.py": "839e02d38200b7d3189d9c474342789634ece0d5cbaee5c3b9e0dbc1d7763cfe",
+      "phase4_supplement.py": "6fbd9c52533947b169eb4ca955b515f347af0a0ae7f04e319853ee97f5819ad9",
+      "phase4_replay.py": "73a579a21c113d3e09b292979998195feaf4c89d57b33b2067e68c4e9f77bbe0",
+      "phase4_finalize.py": "ce293efb7b70a83ba2106b29c86edd9ef20fca9a480546aa6c9dae15c5d27fef",
+      "phase4_seal.py": "ca626f1d4d5dae9c3a9c8b1b2d612aadacb5801a705bac5169d904719b7c4c70"
+    },
+    "completed_utc": "2026-10-10T10:04:47.377890+00:00",
+    "final_verification": "PHASE4_FINAL_VERIFICATION.json"
+  },
+  "mandatory_phase4_complete": true
+}

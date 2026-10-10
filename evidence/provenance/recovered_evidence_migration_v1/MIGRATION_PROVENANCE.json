@@ -1,0 +1,193 @@
+{
+  "task": "AUTODL_GITHUB_SCIENTIFIC_EVIDENCE_MIGRATION_V1",
+  "base_main": "544ca0efae158df369a7b25dd110dc4254f67a7d",
+  "branch": "evidence/recovered-science-transfer-phase4-v1",
+  "source_code_commit": "34aa1b0340d906e5d625db7cb4a3def9199fa06e",
+  "existing_commits_reused": [
+    "8679809a184408423f346f3d24d22c7f652ff09a",
+    "566e41c8f32ccf8090bc1c2ba20e366913434054"
+  ],
+  "counts": {
+    "MISSING_FROM_GITHUB": 135,
+    "ALREADY_PRESENT_IDENTICAL_MAIN": 86,
+    "ALREADY_PRESENT_IDENTICAL_OTHER_BRANCH": 87,
+    "PRESENT_DIFFERENT_HASH": 0
+  },
+  "payload_file_count": 222,
+  "payload_bytes": 16372023,
+  "package_counts": {
+    "expanded": 11,
+    "reconciliation": 36,
+    "science": 87,
+    "four_regime_synthesis_v1": 87,
+    "migration_v1": 1
+  },
+  "source_manifest_entries_checked": 177,
+  "source_manifest_failures": [],
+  "GPU_usage": 0,
+  "historical_directories_modified": false,
+  "frozen_artifacts_modified": false,
+  "existing_claude_revision": "V2 errata and independent verification retained",
+  "reproducibility_scope": "AUTODL_LOCAL_REPLAY_PASS; clean checkout verifies identities, tables and frozen prediction metrics; full historical extraction requires restricted local assets",
+  "host_status": {
+    "historical": {
+      "rc": 128,
+      "out": "",
+      "err": "fatal: not a git repository (or any parent up to mount point /root)\nStopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).\n"
+    },
+    "eri1": {
+      "rc": 0,
+      "out": "34aa1b0340d906e5d625db7cb4a3def9199fa06e",
+      "err": ""
+    },
+    "eri1_status": {
+      "rc": 0,
+      "out": "",
+      "err": ""
+    },
+    "science_manifest_sha256": "3cc3cc1e4ba594dd3e50ad9512378b64c6db7b9516c05b84a4dcbafc27874c0a",
+    "science_directories": {
+      "reference": [
+        "R1_SOURCE_STRUCTURE_REPORT.md",
+        "R2_COMPOSITIONALITY_REPORT.md",
+        "R3_LISTEN_BEHAVIOR_REPORT.md",
+        "SCIENTIFIC_ANALYSIS_V1_FINAL_REPORT.md",
+        "B3_ZERO_REFIT_FINAL_EVALUATION_V1.md",
+        "03_conflict_coverage.csv",
+        "02_conflict_descriptive_by_order.csv",
+        "ERI1_ARCHIVE_REPORT_V1.md",
+        "ERI1_DIALOGUE_ROBUSTNESS_REPORT_V1.md",
+        "ERI1_REPRODUCIBILITY_REPORT_V1.md",
+        "ERI1_SELECTION_BOUNDARY_REPORT_V1.md",
+        "ERI1_TRANSITION_REPORT_V1.md",
+        "SCIENTIFIC_CLOSURE_FINAL_REPORT.md",
+        "07_REVISION_V2_VERIFICATION_AND_ERRATA.md",
+        "08_QWEN_GPU_EXPERIMENT_DECISION_V2.md",
+        "LOCAL_REFERENCE_ORIGINS.json"
+      ],
+      "intermediate": [
+        "MCR_ITEM_IDENTITY_OUTCOMES.csv",
+        "MCR_NATIVE_CONTROLLED_PER_ITEM_JOIN.csv",
+        "MCR_DUPLICATE_DIAGNOSTICS.json",
+        "CAMER_ITEM_ELIGIBILITY_IDENTITY.csv",
+        "CAMER_LABEL_PAIR_CONSTRUCT_SUPPORT.csv",
+        "CAMER_LABEL_PAIR_STANDARDIZATION.csv",
+        "CAMER_CANDIDATE_LABEL_CONFOUNDING.csv",
+        "LISTEN_OTHER_LABEL_DECOMPOSITION.csv",
+        "LISTEN_ELIGIBILITY_BY_NATIVE_LABEL.csv",
+        "LISTEN_CORRECTED_B3_ONTOLOGY_SUPPORT.csv",
+        "MCR_LABEL_PAIRED_CONTRASTS.csv"
+      ],
+      "numeric": [
+        "MCR_RESULTS.json",
+        "CAMER_RESULTS.json",
+        "LISTEN_RESULTS.json",
+        "MCR_SECONDARY_DIAGNOSTICS.json"
+      ],
+      "replay_same_seed": [
+        "SOURCE_INPUT_LOCK.json",
+        "01_MCR_PAIRED_TRANSITIONS.csv",
+        "01_MCR_LABEL_CONDITION_ASSOCIATIONS.csv",
+        "02_CAMER_ELIGIBILITY_AND_COVERAGE.csv",
+        "02_CAMER_MATCHED_TRANSITIONS.csv",
+        "03_LISTEN_MATCHED_SOURCE_LABEL_DIAGNOSTICS.csv",
+        "ANALYSIS_COMPLETE.json"
+      ],
+      "__pycache__": [
+        "analysis.cpython-312.pyc",
+        "diagnostics.cpython-312.pyc",
+        "replay.cpython-312.pyc",
+        "phase4_transfer.cpython-312.pyc",
+        "phase4_supplement.cpython-312.pyc"
+      ],
+      "navigation_before_update": [
+        "PROJECT_STATE.md",
+        "FILE_MAP.md",
+        "DECISIONS.md"
+      ],
+      "replay_after_navigation_validation": [
+        "SOURCE_INPUT_LOCK.json",
+        "REPLAY_REFERENCE_MAPPING.json"
+      ],
+      "phase4_numeric": [
+        "TRANSFER_RECOVERED_ROW_LINKAGE.csv",
+        "TRANSFER_FAILURE_SUBGROUPS.csv",
+        "TRANSFER_RESULTS.json",
+        "TRANSFER_FROZEN_LOGIT_DECOMPOSITION.csv",
+        "LISTEN_NATIVE_LABEL_SUPPORT_AND_OTHER.csv"
+      ],
+      "phase4_before_partition_check": [
+        "phase4_transfer.py",
+        "TRANSFER_RESULTS.json",
+        "TRANSFER_FAILURE_SUBGROUPS.csv"
+      ],
+      "phase4_replay_same_seed": [
+        "PHASE4_SOURCE_LOCK.json",
+        "03_LISTEN_MATCHED_SOURCE_LABEL_DIAGNOSTICS.csv",
+        "04_TRANSFER_ROUTE_LEVEL_REPLAY_CHECK.csv",
+        "PHASE4_READ_ONLY_VERIFICATION.json",
+        "PHASE4_ADDITIONAL_PROTOCOL_LOCK.json",
+        "PHASE4_PROTOCOL_READBACK.json",
+        "PHASE4_REPLAY_CHECK.json"
+      ],
+      "phase4_before_update": [
+        "04_RECOVERED_EVIDENCE_CROSS_STUDY_SYNTHESIS.md",
+        "05_CLAIM_EVIDENCE_MATRIX.md",
+        "CLAIM_EVIDENCE_MATRIX.csv",
+        "06_QWEN_NEXT_EXPERIMENT_DECISION.md",
+        "07_FINAL_SCIENTIFIC_EXECUTIVE_SUMMARY.md",
+        "RUN_PROVENANCE.json",
+        "REPLAY_INSTRUCTIONS.md",
+        "NAVIGATION_MEMORY_UPDATE.json",
+        "SHA256SUMS.txt",
+        "FINAL_VERIFICATION.json"
+      ],
+      "phase4_original_replay_prepare": [
+        "SOURCE_INPUT_LOCK.json",
+        "REPLAY_REFERENCE_MAPPING.json"
+      ]
+    }
+  },
+  "navigation_source_hashes": {
+    "AGENTS.md": "e6b53ecaff35bf98e7bc63d1cae2d5c60006907167b6b3e5a93446c9ccf623f3",
+    "docs/PROJECT_STATE.md": "5bb4dc18227dd2d2b7cf398fb6de902deb4632327f04562b200ce322e0c2c250",
+    "docs/FILE_MAP.md": "9668ec8ecdd1f76e4f3b13a54201ddd61bba234be180d8b43315c73e92d4023a",
+    "docs/DECISIONS.md": "86c2ec176835520434a5cb662c706de25d3b3f586634139266eb2b8a7c6d7a55"
+  },
+  "authorization": "User explicitly authorizes reviewed independent branch push and unmerged PR; raw third-party content not assumed licensed.",
+  "payload_file_count_added_to_main": 222,
+  "payload_file_count_missing_from_github": 135,
+  "clean_checkout_config": "git clone -c core.autocrlf=false; scoped .gitattributes preserves new scientific file bytes",
+  "gap_status_counts": {
+    "MISSING_FROM_GITHUB": 135,
+    "ALREADY_PRESENT_IDENTICAL": 173,
+    "LARGE_OR_RESTRICTED": 10,
+    "SUPERSEDED_HISTORICAL": 45,
+    "UNSAFE_TO_UPLOAD": 3
+  },
+  "held_back_source_assets": 58,
+  "local_fixed_metric_replay_status": "PASS",
+  "maximum_metric_abs_error": 2.220446049250313e-16,
+  "content_safety_review": "PASS_WITH_EXCLUDED_RAW_ASSETS",
+  "clean_checkout_status": "PENDING",
+  "CPU_module_imports_passed": 6,
+  "frozen_evidence_tests": {
+    "passed": 36,
+    "failed": 0,
+    "temporary_directory": "explicit workspace-owned pytest temp",
+    "initial_setup_issue": "System Temp access denied; rerun with --basetemp passed"
+  },
+  "local_dependency_versions": {
+    "python": "3.11",
+    "numpy": "2.4.3",
+    "scipy": "1.17.1",
+    "pandas": "3.0.0",
+    "portable_validation": "stdlib only"
+  },
+  "post_replay_source_recheck": {
+    "science_manifest_entries": 177,
+    "changed_science_files": 0,
+    "changed_navigation_files": 0,
+    "eri1_worktree_clean": true
+  }
+}

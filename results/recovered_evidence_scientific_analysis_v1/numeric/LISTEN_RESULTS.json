@@ -1,0 +1,739 @@
+{
+  "joint_rows": 381,
+  "conflict_rows": 378,
+  "common_conflict_n": 242,
+  "dual_conflict_n": 22,
+  "strict_content_dual_n": 22,
+  "groups": {
+    "COMMON_CONFLICT": {
+      "n": 242,
+      "counts": {
+        "SIDE_A": 71,
+        "SIDE_V": 0,
+        "OTHER": 129,
+        "PARSE_FAIL": 0,
+        "TECH_MISSING": 0,
+        "SAME_LABEL_MATCH": 0,
+        "SIDE_T": 42
+      },
+      "binary_n": 113,
+      "binary_coverage": 0.4669421487603306,
+      "binary_audio_share": 0.6283185840707964,
+      "binary_audio_wilson95": [
+        0.5363738997369067,
+        0.711825671654132
+      ],
+      "other_rate": 0.5330578512396694,
+      "other_wilson95": [
+        0.47017440032655816,
+        0.5949081942722221
+      ]
+    },
+    "DUAL_MATCH_CONFLICT": {
+      "n": 22,
+      "counts": {
+        "SIDE_A": 12,
+        "SIDE_V": 0,
+        "OTHER": 1,
+        "PARSE_FAIL": 0,
+        "TECH_MISSING": 0,
+        "SAME_LABEL_MATCH": 0,
+        "SIDE_T": 9
+      },
+      "binary_n": 21,
+      "binary_coverage": 0.9545454545454546,
+      "binary_audio_share": 0.5714285714285714,
+      "binary_audio_wilson95": [
+        0.3654655436930671,
+        0.7553003107462404
+      ],
+      "other_rate": 0.045454545454545456,
+      "other_wilson95": [
+        0.00806942762126385,
+        0.21798045838657332
+      ]
+    },
+    "COMMON_NON_DUAL": {
+      "n": 220,
+      "counts": {
+        "SIDE_A": 59,
+        "SIDE_V": 0,
+        "OTHER": 128,
+        "PARSE_FAIL": 0,
+        "TECH_MISSING": 0,
+        "SAME_LABEL_MATCH": 0,
+        "SIDE_T": 33
+      },
+      "binary_n": 92,
+      "binary_coverage": 0.41818181818181815,
+      "binary_audio_share": 0.6413043478260869,
+      "binary_audio_wilson95": [
+        0.5394527182418936,
+        0.7318286282643436
+      ],
+      "other_rate": 0.5818181818181818,
+      "other_wilson95": [
+        0.5157807247547083,
+        0.6450473907769968
+      ]
+    },
+    "NO_TEXT_IDENTITY": {
+      "n": 136,
+      "counts": {
+        "SIDE_A": 31,
+        "SIDE_V": 0,
+        "OTHER": 82,
+        "PARSE_FAIL": 0,
+        "TECH_MISSING": 0,
+        "SAME_LABEL_MATCH": 0,
+        "SIDE_T": 23
+      },
+      "binary_n": 54,
+      "binary_coverage": 0.39705882352941174,
+      "binary_audio_share": 0.5740740740740741,
+      "binary_audio_wilson95": [
+        0.4416273382599005,
+        0.6966817598007073
+      ],
+      "other_rate": 0.6029411764705882,
+      "other_wilson95": [
+        0.5189689089302262,
+        0.6812578352422715
+      ]
+    },
+    "A_ONLY_MATCH": {
+      "n": 71,
+      "counts": {
+        "SIDE_A": 55,
+        "SIDE_V": 0,
+        "OTHER": 13,
+        "PARSE_FAIL": 0,
+        "TECH_MISSING": 0,
+        "SAME_LABEL_MATCH": 0,
+        "SIDE_T": 3
+      },
+      "binary_n": 58,
+      "binary_coverage": 0.8169014084507042,
+      "binary_audio_share": 0.9482758620689655,
+      "binary_audio_wilson95": [
+        0.8586059880915734,
+        0.9822538653405896
+      ],
+      "other_rate": 0.18309859154929578,
+      "other_wilson95": [
+        0.11024726104284899,
+        0.2884817227439125
+      ]
+    },
+    "T_ONLY_MATCH": {
+      "n": 46,
+      "counts": {
+        "SIDE_A": 0,
+        "SIDE_V": 0,
+        "OTHER": 22,
+        "PARSE_FAIL": 0,
+        "TECH_MISSING": 0,
+        "SAME_LABEL_MATCH": 0,
+        "SIDE_T": 24
+      },
+      "binary_n": 24,
+      "binary_coverage": 0.5217391304347826,
+      "binary_audio_share": 0.0,
+      "binary_audio_wilson95": [
+        1.3877787807814457e-17,
+        0.13797620467498017
+      ],
+      "other_rate": 0.4782608695652174,
+      "other_wilson95": [
+        0.34124689434045685,
+        0.6186258692719597
+      ]
+    },
+    "NEITHER_MATCH": {
+      "n": 103,
+      "counts": {
+        "SIDE_A": 4,
+        "SIDE_V": 0,
+        "OTHER": 93,
+        "PARSE_FAIL": 0,
+        "TECH_MISSING": 0,
+        "SAME_LABEL_MATCH": 0,
+        "SIDE_T": 6
+      },
+      "binary_n": 10,
+      "binary_coverage": 0.0970873786407767,
+      "binary_audio_share": 0.4,
+      "binary_audio_wilson95": [
+        0.16818032970623614,
+        0.6873262302663417
+      ],
+      "other_rate": 0.9029126213592233,
+      "other_wilson95": [
+        0.8304457619814031,
+        0.9464062289605603
+      ]
+    },
+    "COMMON_CONFLICT_RIDICULE": {
+      "n": 92,
+      "counts": {
+        "SIDE_A": 59,
+        "SIDE_V": 0,
+        "OTHER": 16,
+        "PARSE_FAIL": 0,
+        "TECH_MISSING": 0,
+        "SAME_LABEL_MATCH": 0,
+        "SIDE_T": 17
+      },
+      "binary_n": 76,
+      "binary_coverage": 0.8260869565217391,
+      "binary_audio_share": 0.7763157894736842,
+      "binary_audio_wilson95": [
+        0.6706543206862645,
+        0.8553881717777385
+      ],
+      "other_rate": 0.17391304347826086,
+      "other_wilson95": [
+        0.10998169662501704,
+        0.26398442682212747
+      ]
+    },
+    "COMMON_CONFLICT_NON_RIDICULE": {
+      "n": 150,
+      "counts": {
+        "SIDE_A": 12,
+        "SIDE_V": 0,
+        "OTHER": 113,
+        "PARSE_FAIL": 0,
+        "TECH_MISSING": 0,
+        "SAME_LABEL_MATCH": 0,
+        "SIDE_T": 25
+      },
+      "binary_n": 37,
+      "binary_coverage": 0.24666666666666667,
+      "binary_audio_share": 0.32432432432432434,
+      "binary_audio_wilson95": [
+        0.19633266528144183,
+        0.48536332758027806
+      ],
+      "other_rate": 0.7533333333333333,
+      "other_wilson95": [
+        0.6785967057397266,
+        0.8154183704471145
+      ]
+    },
+    "DUAL_MATCH_CONFLICT_RIDICULE": {
+      "n": 22,
+      "counts": {
+        "SIDE_A": 12,
+        "SIDE_V": 0,
+        "OTHER": 1,
+        "PARSE_FAIL": 0,
+        "TECH_MISSING": 0,
+        "SAME_LABEL_MATCH": 0,
+        "SIDE_T": 9
+      },
+      "binary_n": 21,
+      "binary_coverage": 0.9545454545454546,
+      "binary_audio_share": 0.5714285714285714,
+      "binary_audio_wilson95": [
+        0.3654655436930671,
+        0.7553003107462404
+      ],
+      "other_rate": 0.045454545454545456,
+      "other_wilson95": [
+        0.00806942762126385,
+        0.21798045838657332
+      ]
+    },
+    "DUAL_MATCH_CONFLICT_NON_RIDICULE": {
+      "n": 0,
+      "counts": {
+        "SIDE_A": 0,
+        "SIDE_V": 0,
+        "OTHER": 0,
+        "PARSE_FAIL": 0,
+        "TECH_MISSING": 0,
+        "SAME_LABEL_MATCH": 0,
+        "SIDE_T": 0
+      },
+      "binary_n": 0,
+      "binary_coverage": null,
+      "binary_audio_share": null,
+      "binary_audio_wilson95": [
+        null,
+        null
+      ],
+      "other_rate": null,
+      "other_wilson95": [
+        null,
+        null
+      ]
+    }
+  },
+  "selection_tests": [
+    {
+      "outcome": "SIDE_A",
+      "contrast": "posthoc dual minus common nondual",
+      "estimate": 0.2772727272727272,
+      "ci95": [
+        0.05909090909090908,
+        0.4954545454545454
+      ],
+      "p_value": 0.01205603994778163,
+      "test": "Fisher exact selection association, not causal",
+      "dual_n": 22,
+      "nondual_n": 220,
+      "p_holm": 0.01205603994778163
+    },
+    {
+      "outcome": "SIDE_T",
+      "contrast": "posthoc dual minus common nondual",
+      "estimate": 0.25909090909090915,
+      "ci95": [
+        0.054545454545454536,
+        0.4772727272727273
+      ],
+      "p_value": 0.005443923250945377,
+      "test": "Fisher exact selection association, not causal",
+      "dual_n": 22,
+      "nondual_n": 220,
+      "p_holm": 0.010887846501890754
+    },
+    {
+      "outcome": "OTHER",
+      "contrast": "posthoc dual minus common nondual",
+      "estimate": -0.5363636363636364,
+      "ci95": [
+        -0.6318181818181818,
+        -0.4181818181818182
+      ],
+      "p_value": 8.963809252325823e-07,
+      "test": "Fisher exact selection association, not causal",
+      "dual_n": 22,
+      "nondual_n": 220,
+      "p_holm": 2.689142775697747e-06
+    }
+  ],
+  "by_label": [
+    {
+      "group": "common",
+      "audio_source_label": "anger",
+      "n": 39,
+      "counts": {
+        "SIDE_A": 1,
+        "SIDE_V": 0,
+        "OTHER": 31,
+        "PARSE_FAIL": 0,
+        "TECH_MISSING": 0,
+        "SAME_LABEL_MATCH": 0,
+        "SIDE_T": 7
+      },
+      "binary_n": 8,
+      "binary_coverage": 0.20512820512820512,
+      "binary_audio_share": 0.125,
+      "binary_audio_wilson95": [
+        0.02241749145005667,
+        0.4708881822128535
+      ],
+      "other_rate": 0.7948717948717948,
+      "other_wilson95": [
+        0.644660319864177,
+        0.8922028176928961
+      ]
+    },
+    {
+      "group": "dual",
+      "audio_source_label": "anger",
+      "n": 0,
+      "counts": {
+        "SIDE_A": 0,
+        "SIDE_V": 0,
+        "OTHER": 0,
+        "PARSE_FAIL": 0,
+        "TECH_MISSING": 0,
+        "SAME_LABEL_MATCH": 0,
+        "SIDE_T": 0
+      },
+      "binary_n": 0,
+      "binary_coverage": null,
+      "binary_audio_share": null,
+      "binary_audio_wilson95": [
+        null,
+        null
+      ],
+      "other_rate": null,
+      "other_wilson95": [
+        null,
+        null
+      ]
+    },
+    {
+      "group": "common",
+      "audio_source_label": "disgust",
+      "n": 49,
+      "counts": {
+        "SIDE_A": 1,
+        "SIDE_V": 0,
+        "OTHER": 39,
+        "PARSE_FAIL": 0,
+        "TECH_MISSING": 0,
+        "SAME_LABEL_MATCH": 0,
+        "SIDE_T": 9
+      },
+      "binary_n": 10,
+      "binary_coverage": 0.20408163265306123,
+      "binary_audio_share": 0.1,
+      "binary_audio_wilson95": [
+        0.017876213095072896,
+        0.4041500267952385
+      ],
+      "other_rate": 0.7959183673469388,
+      "other_wilson95": [
+        0.6636299908048744,
+        0.8851815039421786
+      ]
+    },
+    {
+      "group": "dual",
+      "audio_source_label": "disgust",
+      "n": 0,
+      "counts": {
+        "SIDE_A": 0,
+        "SIDE_V": 0,
+        "OTHER": 0,
+        "PARSE_FAIL": 0,
+        "TECH_MISSING": 0,
+        "SAME_LABEL_MATCH": 0,
+        "SIDE_T": 0
+      },
+      "binary_n": 0,
+      "binary_coverage": null,
+      "binary_audio_share": null,
+      "binary_audio_wilson95": [
+        null,
+        null
+      ],
+      "other_rate": null,
+      "other_wilson95": [
+        null,
+        null
+      ]
+    },
+    {
+      "group": "common",
+      "audio_source_label": "frustration",
+      "n": 54,
+      "counts": {
+        "SIDE_A": 10,
+        "SIDE_V": 0,
+        "OTHER": 35,
+        "PARSE_FAIL": 0,
+        "TECH_MISSING": 0,
+        "SAME_LABEL_MATCH": 0,
+        "SIDE_T": 9
+      },
+      "binary_n": 19,
+      "binary_coverage": 0.35185185185185186,
+      "binary_audio_share": 0.5263157894736842,
+      "binary_audio_wilson95": [
+        0.3170780924511316,
+        0.7267019483882042
+      ],
+      "other_rate": 0.6481481481481481,
+      "other_wilson95": [
+        0.5148483072023632,
+        0.7617698889188528
+      ]
+    },
+    {
+      "group": "dual",
+      "audio_source_label": "frustration",
+      "n": 0,
+      "counts": {
+        "SIDE_A": 0,
+        "SIDE_V": 0,
+        "OTHER": 0,
+        "PARSE_FAIL": 0,
+        "TECH_MISSING": 0,
+        "SAME_LABEL_MATCH": 0,
+        "SIDE_T": 0
+      },
+      "binary_n": 0,
+      "binary_coverage": null,
+      "binary_audio_share": null,
+      "binary_audio_wilson95": [
+        null,
+        null
+      ],
+      "other_rate": null,
+      "other_wilson95": [
+        null,
+        null
+      ]
+    },
+    {
+      "group": "common",
+      "audio_source_label": "ridicule",
+      "n": 92,
+      "counts": {
+        "SIDE_A": 59,
+        "SIDE_V": 0,
+        "OTHER": 16,
+        "PARSE_FAIL": 0,
+        "TECH_MISSING": 0,
+        "SAME_LABEL_MATCH": 0,
+        "SIDE_T": 17
+      },
+      "binary_n": 76,
+      "binary_coverage": 0.8260869565217391,
+      "binary_audio_share": 0.7763157894736842,
+      "binary_audio_wilson95": [
+        0.6706543206862645,
+        0.8553881717777385
+      ],
+      "other_rate": 0.17391304347826086,
+      "other_wilson95": [
+        0.10998169662501704,
+        0.26398442682212747
+      ]
+    },
+    {
+      "group": "dual",
+      "audio_source_label": "ridicule",
+      "n": 22,
+      "counts": {
+        "SIDE_A": 12,
+        "SIDE_V": 0,
+        "OTHER": 1,
+        "PARSE_FAIL": 0,
+        "TECH_MISSING": 0,
+        "SAME_LABEL_MATCH": 0,
+        "SIDE_T": 9
+      },
+      "binary_n": 21,
+      "binary_coverage": 0.9545454545454546,
+      "binary_audio_share": 0.5714285714285714,
+      "binary_audio_wilson95": [
+        0.3654655436930671,
+        0.7553003107462404
+      ],
+      "other_rate": 0.045454545454545456,
+      "other_wilson95": [
+        0.00806942762126385,
+        0.21798045838657332
+      ]
+    },
+    {
+      "group": "common",
+      "audio_source_label": "sadness",
+      "n": 8,
+      "counts": {
+        "SIDE_A": 0,
+        "SIDE_V": 0,
+        "OTHER": 8,
+        "PARSE_FAIL": 0,
+        "TECH_MISSING": 0,
+        "SAME_LABEL_MATCH": 0,
+        "SIDE_T": 0
+      },
+      "binary_n": 0,
+      "binary_coverage": 0.0,
+      "binary_audio_share": null,
+      "binary_audio_wilson95": [
+        null,
+        null
+      ],
+      "other_rate": 1.0,
+      "other_wilson95": [
+        0.6755924351161198,
+        1.0
+      ]
+    },
+    {
+      "group": "dual",
+      "audio_source_label": "sadness",
+      "n": 0,
+      "counts": {
+        "SIDE_A": 0,
+        "SIDE_V": 0,
+        "OTHER": 0,
+        "PARSE_FAIL": 0,
+        "TECH_MISSING": 0,
+        "SAME_LABEL_MATCH": 0,
+        "SIDE_T": 0
+      },
+      "binary_n": 0,
+      "binary_coverage": null,
+      "binary_audio_share": null,
+      "binary_audio_wilson95": [
+        null,
+        null
+      ],
+      "other_rate": null,
+      "other_wilson95": [
+        null,
+        null
+      ]
+    }
+  ],
+  "OTHER_selected_labels": [
+    {
+      "population": "ALL_3C_CONFLICT",
+      "OTHER_selected_label": "anger",
+      "count": 2,
+      "population_n": 378,
+      "other_n": 211,
+      "interpretation": "valid offered native emotion label outside both source labels"
+    },
+    {
+      "population": "ALL_3C_CONFLICT",
+      "OTHER_selected_label": "disgust",
+      "count": 6,
+      "population_n": 378,
+      "other_n": 211,
+      "interpretation": "valid offered native emotion label outside both source labels"
+    },
+    {
+      "population": "ALL_3C_CONFLICT",
+      "OTHER_selected_label": "excitement",
+      "count": 11,
+      "population_n": 378,
+      "other_n": 211,
+      "interpretation": "valid offered native emotion label outside both source labels"
+    },
+    {
+      "population": "ALL_3C_CONFLICT",
+      "OTHER_selected_label": "frustration",
+      "count": 25,
+      "population_n": 378,
+      "other_n": 211,
+      "interpretation": "valid offered native emotion label outside both source labels"
+    },
+    {
+      "population": "ALL_3C_CONFLICT",
+      "OTHER_selected_label": "happiness",
+      "count": 9,
+      "population_n": 378,
+      "other_n": 211,
+      "interpretation": "valid offered native emotion label outside both source labels"
+    },
+    {
+      "population": "ALL_3C_CONFLICT",
+      "OTHER_selected_label": "neutral",
+      "count": 20,
+      "population_n": 378,
+      "other_n": 211,
+      "interpretation": "valid offered native emotion label outside both source labels"
+    },
+    {
+      "population": "ALL_3C_CONFLICT",
+      "OTHER_selected_label": "ridicule",
+      "count": 124,
+      "population_n": 378,
+      "other_n": 211,
+      "interpretation": "valid offered native emotion label outside both source labels"
+    },
+    {
+      "population": "ALL_3C_CONFLICT",
+      "OTHER_selected_label": "sadness",
+      "count": 2,
+      "population_n": 378,
+      "other_n": 211,
+      "interpretation": "valid offered native emotion label outside both source labels"
+    },
+    {
+      "population": "ALL_3C_CONFLICT",
+      "OTHER_selected_label": "surprise",
+      "count": 12,
+      "population_n": 378,
+      "other_n": 211,
+      "interpretation": "valid offered native emotion label outside both source labels"
+    },
+    {
+      "population": "COMMON_CONFLICT",
+      "OTHER_selected_label": "anger",
+      "count": 2,
+      "population_n": 242,
+      "other_n": 129,
+      "interpretation": "valid offered native emotion label outside both source labels"
+    },
+    {
+      "population": "COMMON_CONFLICT",
+      "OTHER_selected_label": "disgust",
+      "count": 4,
+      "population_n": 242,
+      "other_n": 129,
+      "interpretation": "valid offered native emotion label outside both source labels"
+    },
+    {
+      "population": "COMMON_CONFLICT",
+      "OTHER_selected_label": "excitement",
+      "count": 7,
+      "population_n": 242,
+      "other_n": 129,
+      "interpretation": "valid offered native emotion label outside both source labels"
+    },
+    {
+      "population": "COMMON_CONFLICT",
+      "OTHER_selected_label": "frustration",
+      "count": 15,
+      "population_n": 242,
+      "other_n": 129,
+      "interpretation": "valid offered native emotion label outside both source labels"
+    },
+    {
+      "population": "COMMON_CONFLICT",
+      "OTHER_selected_label": "happiness",
+      "count": 5,
+      "population_n": 242,
+      "other_n": 129,
+      "interpretation": "valid offered native emotion label outside both source labels"
+    },
+    {
+      "population": "COMMON_CONFLICT",
+      "OTHER_selected_label": "neutral",
+      "count": 12,
+      "population_n": 242,
+      "other_n": 129,
+      "interpretation": "valid offered native emotion label outside both source labels"
+    },
+    {
+      "population": "COMMON_CONFLICT",
+      "OTHER_selected_label": "ridicule",
+      "count": 75,
+      "population_n": 242,
+      "other_n": 129,
+      "interpretation": "valid offered native emotion label outside both source labels"
+    },
+    {
+      "population": "COMMON_CONFLICT",
+      "OTHER_selected_label": "sadness",
+      "count": 2,
+      "population_n": 242,
+      "other_n": 129,
+      "interpretation": "valid offered native emotion label outside both source labels"
+    },
+    {
+      "population": "COMMON_CONFLICT",
+      "OTHER_selected_label": "surprise",
+      "count": 7,
+      "population_n": 242,
+      "other_n": 129,
+      "interpretation": "valid offered native emotion label outside both source labels"
+    },
+    {
+      "population": "DUAL_MATCH_CONFLICT",
+      "OTHER_selected_label": "happiness",
+      "count": 1,
+      "population_n": 22,
+      "other_n": 1,
+      "interpretation": "valid offered native emotion label outside both source labels"
+    }
+  ],
+  "all_source_labels_in_candidate_options": true,
+  "dual_ridicule_n": 22,
+  "dual_audio_choices_ridicule_n": 12,
+  "b3_literal_joint_support_n": 0,
+  "reverse_executed": "NOT_FOUND_IN_RECOVERED_EVIDENCE",
+  "pool_V3_V4": false
+}

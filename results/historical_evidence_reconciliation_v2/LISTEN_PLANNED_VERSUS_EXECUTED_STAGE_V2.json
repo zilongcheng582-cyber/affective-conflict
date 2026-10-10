@@ -1,0 +1,72 @@
+[
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_LISTEN_NATIVE_V1/listen_native_manifest.csv",
+    "sha256": "3d8b465b00b811dda4f905fcf6624acde4e5b1a94ea10b478d7617b6fe1ebc6c",
+    "physical_csv_rows": 1,
+    "records": 0,
+    "stage": "BLOCKED_PLACEHOLDER_NOT_TRIAL",
+    "conditions": {
+      "": 1
+    },
+    "placeholder_example": {
+      "manifest_status": "BLOCKED_SOURCE_UNIVERSE_UNRESOLVED",
+      "underlying_id": "",
+      "condition": "",
+      "input_mode": "",
+      "choices_before_shuffle": "",
+      "choices_after_shuffle": "",
+      "expected_label": "",
+      "expected_letter": "",
+      "transcription_hash": "",
+      "audio_identifier_hash": "",
+      "prompt_hash": "",
+      "authority_status": "NOT_AUTHORITATIVE",
+      "execution_eligible": "false"
+    }
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_LISTEN_NATIVE_V2_CURRENT_RELEASE/listen_current_release_manifest_v2.csv",
+    "sha256": "648604f09ea436fab2fcbaf5ddd1dafc4349d4c5a44ed7bd9e5105c90b88ce81",
+    "physical_csv_rows": 1,
+    "records": 0,
+    "stage": "BLOCKED_PLACEHOLDER_NOT_TRIAL",
+    "conditions": {
+      "": 1
+    },
+    "placeholder_example": {
+      "manifest_row_id": "BLOCKED_PREFLIGHT",
+      "condition": "",
+      "official_dataset_row_index": "",
+      "original_sample_id": "",
+      "input_mode": "",
+      "audio_identifier": "",
+      "audio_hash": "",
+      "transcription_hash": "",
+      "native_answer": "",
+      "explicit_emotion": "",
+      "original_choices": "",
+      "expanded_choices": "",
+      "final_randomized_choices": "",
+      "expected_letter": "",
+      "prompt_text": "",
+      "prompt_hash": "",
+      "system_prompt_hash": "",
+      "dataset_revision": "f6397b5bfedd85ae41b80dac13e95bb55adf0a35",
+      "repo_commit": "32966584488bd3b3c67a150bd55f1f18ca09ef76",
+      "PYTHONHASHSEED": "42",
+      "python_random_seed": "42",
+      "manifest_status": "NO_1447_ROW_MANIFEST_CREATED"
+    }
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/listen_pilot_100.csv",
+    "sha256": "f3862e15fac026b8b55e1a345e9627575714e924cc954efa547a500a390a4846",
+    "physical_csv_rows": 100,
+    "records": 100,
+    "stage": "PLANNED_NOT_EXECUTION_EVIDENCE",
+    "conditions": {
+      "null": 100
+    },
+    "placeholder_example": null
+  }
+]

@@ -1,0 +1,136 @@
+{
+  "paths_verified": 54,
+  "reverse_records_by_file": [
+    {
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_MCR_CONTROLLED_V3/technical_gate/mcr_controlled_technical_gate_v2.jsonl",
+      "sha256": "7c798816ed48c197be57c288182b4825f57deda3aa74cf2edbb0540525413e50",
+      "rows": 12,
+      "reverse_rows": 3,
+      "reverse_executed": 0,
+      "LISTEN": false
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_MCR_CONTROLLED_V3/technical_gate/qwen25_mcr_controlled_protocol_v2_gpu_gate.jsonl",
+      "sha256": "93998a0be73b81bfb894367082b8e5362e18fa794f9c734c7141777125a6e9d4",
+      "rows": 12,
+      "reverse_rows": 3,
+      "reverse_executed": 3,
+      "LISTEN": false
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_MCR_CONTROLLED_V3/full_run/qwen25_mcr_controlled_full_v2.jsonl",
+      "sha256": "2772bd2d536caa4e55f1305300b4e9a523a5315afd37992c098d6724e4c25775",
+      "rows": 3636,
+      "reverse_rows": 909,
+      "reverse_executed": 909,
+      "LISTEN": false
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/audit/EMOTIONTALK_CONTROLLED_V1/phase2_pairwise_gate_v1/emotiontalk_phase2_pairwise_gate_v1.jsonl",
+      "sha256": "5e88c8f1d99bb256d9d49f698574271a15ddb50769ac3559d545c06cb1a04ee6",
+      "rows": 12,
+      "reverse_rows": 2,
+      "reverse_executed": 2,
+      "LISTEN": false
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/audit/EMOTIONTALK_CONTROLLED_V1/phase2_pairwise_full_v1/emotiontalk_phase2_pairwise_full_v1.jsonl",
+      "sha256": "9d01f66e3d03d873bb866c31b6fd9a82a9bdcbad4901dfb3e74907767ea09000",
+      "rows": 2132,
+      "reverse_rows": 397,
+      "reverse_executed": 0,
+      "LISTEN": false
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/audit/EMOTIONTALK_CONTROLLED_V1/phase2_pairwise_gate_v1_1/emotiontalk_phase2_pairwise_gate_v1.jsonl",
+      "sha256": "bee027d452ca511f68943da14df3349011be6257b469869d3254169ff6a48d0e",
+      "rows": 12,
+      "reverse_rows": 2,
+      "reverse_executed": 2,
+      "LISTEN": false
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/audit/EMOTIONTALK_CONTROLLED_V1/phase2_pairwise_gate_v1_2/emotiontalk_phase2_pairwise_gate_v1_2.jsonl",
+      "sha256": "1f2d6b2ba5290ca66322b372c037b789ba97830157f063b796b8c2a7135c6f3e",
+      "rows": 12,
+      "reverse_rows": 2,
+      "reverse_executed": 2,
+      "LISTEN": false
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/audit/EMOTIONTALK_CONTROLLED_V1/phase2_pairwise_full_v1_attempt_002/emotiontalk_phase2_pairwise_full_v1_attempt_002.jsonl",
+      "sha256": "677f96d9cd8650c08486bedde14457d62a2e930d3c0b7560983d6d1c456b1381",
+      "rows": 2132,
+      "reverse_rows": 397,
+      "reverse_executed": 397,
+      "LISTEN": false
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_ARTIFACT_RECOVERY_V4/recovered_candidates/audit/EMOTIONTALK_CONTROLLED_V1/phase2_pairwise_full_v1_attempt_002/emotiontalk_phase2_pairwise_full_v1_attempt_002.jsonl",
+      "sha256": "677f96d9cd8650c08486bedde14457d62a2e930d3c0b7560983d6d1c456b1381",
+      "rows": 2132,
+      "reverse_rows": 397,
+      "reverse_executed": 397,
+      "LISTEN": false
+    }
+  ],
+  "listen_run_status": [
+    {
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_LISTEN_NATIVE_V3/technical_gate_outputs_local_v3.jsonl",
+      "sha256": "b388962c39e4de0871124b314922d1eeb623f2688774465177a112e8c89b94e4",
+      "records": 6,
+      "execution_stage": "PILOT_TECHNICAL_GATE",
+      "scientific_role": "SUPERSEDED_DIAGNOSTIC",
+      "reverse_executed": 0
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_LISTEN_NATIVE_V3/listen_native_raw_outputs_local_v3.jsonl",
+      "sha256": "effdf7f070d99e38d127a3d9a9ecc2909dbe388d8985289ed4e6621cbc3f2993",
+      "records": 1149,
+      "execution_stage": "FULL",
+      "scientific_role": "SUPERSEDED_DIAGNOSTIC",
+      "reverse_executed": 0
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_ARTIFACT_RECOVERY_V4/recovered_candidates/audit/QWEN25_LISTEN_NATIVE_V3/listen_native_raw_outputs_local_v3.jsonl",
+      "sha256": "effdf7f070d99e38d127a3d9a9ecc2909dbe388d8985289ed4e6621cbc3f2993",
+      "records": 1149,
+      "execution_stage": "FULL",
+      "scientific_role": "SUPERSEDED_DIAGNOSTIC",
+      "reverse_executed": 0
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_ARTIFACT_RECOVERY_V4/recovered_candidates/results/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/listen_native_raw_outputs_source_aligned_v4.jsonl",
+      "sha256": "efb604ffcdd4f746cda961da0fa17f8fae995e34aa02779bf2334917c19e74ea",
+      "records": 1149,
+      "execution_stage": "FULL",
+      "scientific_role": "SOURCE_ALIGNED_V4",
+      "reverse_executed": 0
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/results/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/v4_raw_outputs.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "records": 0,
+      "execution_stage": "PLANNED_OR_EMPTY",
+      "scientific_role": "SOURCE_ALIGNED_V4",
+      "reverse_executed": 0
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/results/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/technical_gate_outputs_source_aligned_v4.jsonl",
+      "sha256": "cc8888eae43e37730d7fbcfc994297d308a174b5266330bd4a7bdfabeb8345d9",
+      "records": 6,
+      "execution_stage": "PILOT_TECHNICAL_GATE",
+      "scientific_role": "SOURCE_ALIGNED_V4",
+      "reverse_executed": 0
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/results/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/listen_native_raw_outputs_source_aligned_v4.jsonl",
+      "sha256": "efb604ffcdd4f746cda961da0fa17f8fae995e34aa02779bf2334917c19e74ea",
+      "records": 1149,
+      "execution_stage": "FULL",
+      "scientific_role": "SOURCE_ALIGNED_V4",
+      "reverse_executed": 0
+    }
+  ],
+  "listen_executed_reverse_rows": 0
+}

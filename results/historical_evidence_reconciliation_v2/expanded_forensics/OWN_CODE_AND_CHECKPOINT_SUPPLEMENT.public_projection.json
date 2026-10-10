@@ -1,0 +1,62 @@
+{
+  "roots": [
+    "/root/autodl-tmp/affective-conflict/.ipynb_checkpoints",
+    "/root/autodl-tmp/affective-conflict/code/data",
+    "/root/autodl-tmp/affective-conflict/code/.ipynb_checkpoints",
+    "/root/autodl-tmp/affective-conflict/audit/PAPER_CORE_ASSET_GITHUB_SNAPSHOT_V1/candidate_snapshot/code/data",
+    "/root/autodl-tmp/affective-conflict/docs/.ipynb_checkpoints"
+  ],
+  "files": [
+    {
+      "path": "/root/autodl-tmp/affective-conflict/.ipynb_checkpoints/AGENTS-checkpoint.md",
+      "size": 4341,
+      "sha256": "083e8e82499c9b35d67604e78f15a67452a44c9e959f51c99fa1db796d518829"
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/code/data/prepare_camer_controlled_media_v1.py",
+      "size": 24343,
+      "sha256": "b6d3e61726116e2bd9bc2e1bfe096f87df9de8614597e97baba069ec97a112c9"
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/code/data/__pycache__/prepare_camer_controlled_media_v1.cpython-312.pyc",
+      "size": 52570
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/code/.ipynb_checkpoints/run_qwen25_camer_controlled_resource_sweep_v1-checkpoint.py",
+      "size": 64195,
+      "sha256": "c9b193329cedade1aef262cbbe5de9e88c23b533bc9f1aa4256a72f1ee3b2a45"
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/code/.ipynb_checkpoints/run_qwen25_emotiontalk_trimodal_v1_2-checkpoint.py",
+      "size": 15322,
+      "sha256": "a474c102c6dea042c155991284f148f6b2404889e52af9972a2ec0fe2019263e"
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/code/.ipynb_checkpoints/audit_camer_mer2023_release-checkpoint.py",
+      "size": 7254,
+      "sha256": "586c2aab74b4898093301e97f00b2330c48323e9f52a933e499a5ddec67b5b1a"
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/audit/PAPER_CORE_ASSET_GITHUB_SNAPSHOT_V1/candidate_snapshot/code/data/prepare_camer_controlled_media_v1.py",
+      "size": 24343,
+      "sha256": "b6d3e61726116e2bd9bc2e1bfe096f87df9de8614597e97baba069ec97a112c9"
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/docs/.ipynb_checkpoints/DECISIONS-checkpoint.md",
+      "size": 3342,
+      "sha256": "a620a03c53ff0b2e2080cbacfb2234c6dafc52c8aee4636f595c55896a0e8527"
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/docs/.ipynb_checkpoints/FILE_MAP-checkpoint.md",
+      "size": 4823,
+      "sha256": "c0a265de79f851ef2ac01146e728f9387606eb4d153e32a74cbf7f14c1729070"
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/docs/.ipynb_checkpoints/PROJECT_STATE-checkpoint.md",
+      "size": 4154,
+      "sha256": "bf633b6de1b4610a994d4e59311b0bc658b55d1c0705f2ed4343300591453a57"
+    }
+  ],
+  "raw_datasets_scanned": false,
+  "note": "Own code/data and notebook checkpoints explicitly supplemented; they are not raw dataset/upstream folders."
+}

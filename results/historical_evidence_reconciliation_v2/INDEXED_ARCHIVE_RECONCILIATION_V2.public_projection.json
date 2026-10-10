@@ -1,0 +1,1081 @@
+{
+  "method": "existing expanded archive paths; selected dataset-named members only; no extraction into historical dirs",
+  "archives": [
+    {
+      "path": "/root/autodl-tmp/affective-conflict/audit/LOCAL_CORE_ASSET_EXPORT_20261003/affective-conflict_core_assets_20261003.zip",
+      "sha256": "32f8dab4d44116e65303ea0b2dd625f419e202aada54b5d8921a0f7204c5374b",
+      "all_members": 243,
+      "reviewed_members": [
+        {
+          "name": "candidate_snapshot/audit/QWEN25_CAMER_CONTROLLED_V1/CAMER_CONTROLLED_ANALYSIS_SPEC_V1.md",
+          "bytes": 3074,
+          "sha256": "2004bb748024231212a992f6346369ee2d203080e0d4db7b6ce50877d06d149f",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_CAMER_CONTROLLED_V1/CAMER_CONTROLLED_ONTOLOGY_AUDIT_V1.json",
+          "bytes": 12393,
+          "sha256": "62534b269c76b2ba91f39c0b56e7d121304f025fcfc776738004f417b156e4d8",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_CAMER_CONTROLLED_V1/CAMER_CONTROLLED_PARSER_CONTRACT_AUDIT_V1.json",
+          "bytes": 13817,
+          "sha256": "37da7b305f536cea7c2822d902a549650682289171c501c2b79d5df2500f5d17",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_CAMER_CONTROLLED_V1/CAMER_CONTROLLED_PROTOCOL_V1.json",
+          "bytes": 3387,
+          "sha256": "efbe18fefcd3964e1ccbb48df671cad7279d543a021f90bbd6c11dfbef83306f",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_CAMER_CONTROLLED_V1/CAMER_CONTROLLED_PROTOCOL_V1.md",
+          "bytes": 5749,
+          "sha256": "7b3a72dbd8e85a9ae80f8556b8e0465862c6f7e6ce5ed4b602647669b3fca6af",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_CAMER_CONTROLLED_V1/CAMER_CONTROLLED_PROVENANCE_V1.json",
+          "bytes": 3484,
+          "sha256": "5d670d124b29c463eeb6239a9fc92e17da48b27ea2cdcd5f8048a972b03b374f",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_CAMER_CONTROLLED_V1/CAMER_CONTROLLED_STATIC_VALIDATION_V1.json",
+          "bytes": 679,
+          "sha256": "e2e945a6a49f6be2612c5ce510675fcc53fb08e336667dbbb8c3f2a89e12d5f0",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_CAMER_CONTROLLED_V1/resource_sweep_v1/CAMER_CONTROLLED_RESOURCE_SWEEP_V1.json",
+          "bytes": 3230,
+          "sha256": "c89e81e62e87c543df863587375783cc050d381e009f86a3defea36f3fb7fc45",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_CAMER_CONTROLLED_V1/resource_sweep_v1/CAMER_CONTROLLED_RESOURCE_SWEEP_V1.md",
+          "bytes": 2298,
+          "sha256": "11138f689d615e0896c073f921c83442d92afc251ce66bd3caab53752835bef4",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_CAMER_CONTROLLED_V1/resource_sweep_v1/CAMER_CONTROLLED_RESOURCE_SWEEP_V1_PROVENANCE.json",
+          "bytes": 13860,
+          "sha256": "c7791f07b78a3c7b5ea02dd499c2867bc3b572d989c68d4794e5086ceb6d3487",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_CAMER_CONTROLLED_V1/scientific_equivalence_v1/CAMER_RESOURCE_SWEEP_SCIENTIFIC_EQUIVALENCE_V1.json",
+          "bytes": 5806,
+          "sha256": "1e4e3fca5ab1534cf5ba4ec897a0e916d8938f61146ae3807624cc60e62782c7",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_CAMER_CONTROLLED_V1/scientific_equivalence_v1/CAMER_RESOURCE_SWEEP_SCIENTIFIC_EQUIVALENCE_V1.md",
+          "bytes": 2174,
+          "sha256": "eda92aa50d99b42356be963a00d3481d1dce6036b785c53787faefa44d6ad4a9",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/LISTEN_V4_CANONICAL_AT_JOIN_PROVENANCE_V1.json",
+          "bytes": 4290,
+          "sha256": "ed71908e0543394b1feaa05f901be69f98d0abc5ef7b23f4b5f1016d5ddc3209",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/LISTEN_V4_CANONICAL_AT_JOIN_PROVENANCE_V1.md",
+          "bytes": 1622,
+          "sha256": "291810acaeb50bcc97b93420129c167ab5f67bbbef446ca356332364d6b4d5fd",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/LISTEN_V4_FINAL_REPORT.md",
+          "bytes": 4558,
+          "sha256": "e10e289d656fffadce86de5f255a78dc8c20fdd2b7570762793dffaccaee1b0c",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/build_listen_v4_canonical_at_join_v1.py",
+          "bytes": 12396,
+          "sha256": "ef5d241dcc22b19b9abb67b27b1ae007b7a72b69513dfc4afcddea599563e8b0",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/listen_v4_execution_manifest.json",
+          "bytes": 541,
+          "sha256": "080372caa1938e4100e9780f04161b6da28fdf96d13c031e1ba0b1dce74ff4c0",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/listen_v4_failure_accounting.json",
+          "bytes": 1072,
+          "sha256": "3e4244f269f8de670c6d5b63ec7bb9ff148e4653eaf67772e06b5be899b7ff1e",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/run_listen_source_aligned_v4.py",
+          "bytes": 8614,
+          "sha256": "9c3b102ff7986e91753324ad1ed38260772b2c2487947ccea65ffac2f55f1682",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/v4_metrics_coarse.json",
+          "bytes": 7755,
+          "sha256": "b3101aaf434faecd6f9dd76a997254eabfd49046b973d6417436f4c160f28d07",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/v4_metrics_fine.json",
+          "bytes": 13059,
+          "sha256": "0bb409f0157a514faa4e4545555564c48809c49de96e3e3984344394b7635d2b",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/v4_runtime_environment.json",
+          "bytes": 991,
+          "sha256": "814d19d9f9e1fb6b87d5548c4f7df5d7deb5bfdfbec243140b9982633e473403",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_MCR_CONTROLLED_V3/MCR_CONTROLLED_ARBITRATION_ANALYSIS_SPEC_V2.md",
+          "bytes": 6171,
+          "sha256": "17230d00a0ce07305658b5de4cdeaf14cf830bd5c70e87a74bca6195ed6b04b7",
+          "duplicate_registered_path": null,
+          "reverse_text_lines": [
+            {
+              "line": 7
+            },
+            {
+              "line": 20
+            },
+            {
+              "line": 49
+            },
+            {
+              "line": 57
+            },
+            {
+              "line": 58
+            }
+          ]
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_MCR_CONTROLLED_V3/MCR_CONTROLLED_PROTOCOL_V2_PROVENANCE.json",
+          "bytes": 4497,
+          "sha256": "bf1a4d60c8b3e5cb57e3e099edec862864d8a2ef353d26a3a5f027d8fca9aaf3",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_MCR_CONTROLLED_V3/MCR_CONTROLLED_PROTOCOL_V2_STATIC_AUDIT.json",
+          "bytes": 9181,
+          "sha256": "f43b320b2b897189ec32580becb95218ec0573b67764da6eb0eef8bcbf9b1201",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0,
+          "reverse_text_lines": [
+            {
+              "line": 6
+            },
+            {
+              "line": 380
+            }
+          ]
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_MCR_CONTROLLED_V3/MCR_CONTROLLED_PROTOCOL_V2_STATIC_AUDIT.md",
+          "bytes": 377,
+          "sha256": "a20c6f5b452c774c119ac33df7324bce76b29f952ae1ba1fa76ed59d31ad0cbb",
+          "duplicate_registered_path": null,
+          "reverse_text_lines": [
+            {
+              "line": 6
+            }
+          ]
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_MCR_CONTROLLED_V3/full_run/MCR_CONTROLLED_FULL_V2_COMPLETENESS.json",
+          "bytes": 1217,
+          "sha256": "639e7a118b1fea4539626546d3345a880f507a7efa2f01ce716a6907524f1fa3",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0,
+          "reverse_text_lines": [
+            {
+              "line": 6
+            }
+          ]
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_MCR_CONTROLLED_V3/full_run/MCR_CONTROLLED_FULL_V2_PROVENANCE.json",
+          "bytes": 4209,
+          "sha256": "47509ee5d0fa0823d3ed0e6e914c0609ebb99d283a1ba6e58e532c42791b07e0",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_MCR_CONTROLLED_V3/scientific_analysis_v2/MCR_CONTROLLED_DIRECTIONAL_PAIR_RESULTS_V2.csv",
+          "bytes": 16233,
+          "sha256": "8895bff4acee8361e46ded60a1bea372d55bf860eac38855e3f30c5a22550464",
+          "duplicate_registered_path": null,
+          "reverse_text_lines": [
+            {
+              "line": 1
+            }
+          ]
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_MCR_CONTROLLED_V3/scientific_analysis_v2/MCR_CONTROLLED_DUAL_READABLE_DIAGNOSTICS_V2.csv",
+          "bytes": 25535,
+          "sha256": "d96f982a3d1e43bc17b29dc67dc3b9b606325a7147e949d65c07aa7e9c081b3f",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_MCR_CONTROLLED_V3/scientific_analysis_v2/MCR_CONTROLLED_SCIENTIFIC_ANALYSIS_V2_PROVENANCE.json",
+          "bytes": 3671,
+          "sha256": "faf47d744a61fdde19a690b169752fe1d57a86af35847943d4970b2562dbb75e",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0,
+          "reverse_text_lines": [
+            {
+              "line": 23
+            }
+          ]
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_MCR_CONTROLLED_V3/scientific_analysis_v2/MCR_CONTROLLED_SCIENTIFIC_RESULTS_V2.json",
+          "bytes": 265522,
+          "sha256": "009d2fadfe128ea2e7e512f972a112db8d7bd0949064bb6c7b12dc7315b874a6",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0,
+          "reverse_text_lines": [
+            {
+              "line": 21
+            },
+            {
+              "line": 72
+            },
+            {
+              "line": 101
+            },
+            {
+              "line": 167
+            },
+            {
+              "line": 196
+            },
+            {
+              "line": 265
+            },
+            {
+              "line": 294
+            },
+            {
+              "line": 360
+            },
+            {
+              "line": 389
+            },
+            {
+              "line": 458
+            },
+            {
+              "line": 487
+            },
+            {
+              "line": 553
+            },
+            {
+              "line": 582
+            },
+            {
+              "line": 651
+            },
+            {
+              "line": 680
+            },
+            {
+              "line": 746
+            },
+            {
+              "line": 775
+            },
+            {
+              "line": 844
+            },
+            {
+              "line": 873
+            },
+            {
+              "line": 939
+            }
+          ]
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_MCR_CONTROLLED_V3/scientific_analysis_v2/MCR_CONTROLLED_SCIENTIFIC_RESULTS_V2.md",
+          "bytes": 2486,
+          "sha256": "36d05f18632e190aa11c6efb85c121ea0567c3bbc69605600dc7534a01d0d2a2",
+          "duplicate_registered_path": null,
+          "reverse_text_lines": [
+            {
+              "line": 21
+            },
+            {
+              "line": 22
+            },
+            {
+              "line": 23
+            },
+            {
+              "line": 24
+            },
+            {
+              "line": 55
+            },
+            {
+              "line": 56
+            },
+            {
+              "line": 57
+            },
+            {
+              "line": 58
+            }
+          ]
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_MCR_CONTROLLED_V3/scientific_analysis_v2_1/MCR_CONTROLLED_BOOTSTRAP_RESULTS_V2_1.json",
+          "bytes": 8658,
+          "sha256": "e80297894dfe1adc4a3c507f76b1118b1cbc47902224affdaad0296b2fcb850d",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0,
+          "reverse_text_lines": [
+            {
+              "line": 78
+            },
+            {
+              "line": 215
+            }
+          ]
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_MCR_CONTROLLED_V3/scientific_analysis_v2_1/MCR_CONTROLLED_BOOTSTRAP_RESULTS_V2_1.md",
+          "bytes": 1820,
+          "sha256": "a307cf86b0ad7bd04b3313b4c6e91c84c14583251f19b0dce14fa79de8e4c105",
+          "duplicate_registered_path": null,
+          "reverse_text_lines": [
+            {
+              "line": 30
+            },
+            {
+              "line": 31
+            }
+          ]
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_MCR_CONTROLLED_V3/scientific_analysis_v2_1/MCR_CONTROLLED_STATISTICAL_EXECUTION_ADDENDUM_V2_1.md",
+          "bytes": 1468,
+          "sha256": "c222559a5188ca7bc8a20224324e17456ea7ebf1045dadb3d1e69b4fefd04762",
+          "duplicate_registered_path": null,
+          "reverse_text_lines": [
+            {
+              "line": 13
+            }
+          ]
+        },
+        {
+          "name": "candidate_snapshot/audit/QWEN25_MCR_CONTROLLED_V3/scientific_analysis_v2_1/MCR_CONTROLLED_STATISTICAL_EXECUTION_ADDENDUM_V2_1_PROVENANCE.json",
+          "bytes": 2633,
+          "sha256": "3c08618f36698ddc13de3cbaee1e084ba97cb1f94e7917b9c9c5f894f0a53064",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0
+        },
+        {
+          "name": "candidate_snapshot/code/analyze_mcr_controlled_scientific_v2.py",
+          "bytes": 29034,
+          "sha256": "a982612164c589e4101e45a7c13f4da7a483b96c84a4300e28bfb5c6fbe79333",
+          "duplicate_registered_path": null,
+          "reverse_text_lines": [
+            {
+              "line": 31
+            },
+            {
+              "line": 32
+            },
+            {
+              "line": 108
+            },
+            {
+              "line": 303
+            }
+          ]
+        },
+        {
+          "name": "candidate_snapshot/code/benchmarks/camer_adapter.py",
+          "bytes": 12752,
+          "sha256": "67e8a85b1454fc6e2044fbac75dabc64e7a4110ee7cef75ede3138edc73548dc",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "candidate_snapshot/code/benchmarks/camer_controlled_parser_v1.py",
+          "bytes": 2520,
+          "sha256": "95de335c625f3071d66e317e3ecf99ae7742b201952f1c41bb3bd70084c1a233",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "candidate_snapshot/code/benchmarks/listen_adapter.py",
+          "bytes": 12577,
+          "sha256": "4088b0c6aa4cc59c0d0d67b5a01774de92bf06ee13a245fad15db09c0a6efc9e",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "candidate_snapshot/code/benchmarks/listen_native_parser_v1.py",
+          "bytes": 1168,
+          "sha256": "5165b586e7c08370b5d6d73bb72a4a5317baec57d0cb1695697943646665f14b",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "candidate_snapshot/code/benchmarks/mcr_adapter.py",
+          "bytes": 4068,
+          "sha256": "d9e643a46e605a80d56cbb15b55dce0022e9f8af0bce0ffee37903acf9f390d6",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "candidate_snapshot/code/benchmarks/mcr_controlled_manifest_v1.py",
+          "bytes": 4539,
+          "sha256": "22d435dde7a141dd82a2b3caf6db89e6c168641e5cb91ee400ae624f592ad83f",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "candidate_snapshot/code/benchmarks/mcr_controlled_text_extractor_v1.py",
+          "bytes": 5227,
+          "sha256": "5530af1f47812de8ae6f0c8ae00a466f57294e8f00aa3833a7dcec0013daf02c",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "candidate_snapshot/code/benchmarks/mcr_ser_parser_v1.py",
+          "bytes": 2256,
+          "sha256": "f72e825f686528b038dbb6c26b15574e78fddbab8cb3777e04e0680544d4580e",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "candidate_snapshot/code/bootstrap_mcr_controlled_v2_1.py",
+          "bytes": 22710,
+          "sha256": "0aa030de6d088e7d7995dd4c51f3016b4cdfa7b67f363606a96f5abe7e241825",
+          "duplicate_registered_path": null,
+          "reverse_text_lines": [
+            {
+              "line": 32
+            },
+            {
+              "line": 64
+            },
+            {
+              "line": 74
+            },
+            {
+              "line": 289
+            }
+          ]
+        },
+        {
+          "name": "candidate_snapshot/code/data/prepare_camer_controlled_media_v1.py",
+          "bytes": 24343,
+          "sha256": "b6d3e61726116e2bd9bc2e1bfe096f87df9de8614597e97baba069ec97a112c9",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "candidate_snapshot/code/prompts/camer_controlled_arbitration_prompt_v1.json",
+          "bytes": 2348,
+          "sha256": "4f80f8d451ed9397d32860dd2df7ab5d29b2720f0d86223ad00d4e8b20bdd0f5",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0
+        },
+        {
+          "name": "candidate_snapshot/code/prompts/mcr_controlled_arbitration_prompt_v2.json",
+          "bytes": 3026,
+          "sha256": "f48431f666fc84987c9e4d17acab31fd80998bac098611fed7016c92abd37082",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0,
+          "reverse_text_lines": [
+            {
+              "line": 22
+            }
+          ]
+        },
+        {
+          "name": "candidate_snapshot/code/prompts/mcr_controlled_output_schema_v2.json",
+          "bytes": 2634,
+          "sha256": "bcea2b7af9401a03ddecce7ae327059978bd3a823f2c350ffe0356c95aad2b40",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0,
+          "reverse_text_lines": [
+            {
+              "line": 10
+            }
+          ]
+        },
+        {
+          "name": "candidate_snapshot/code/prompts/mcr_ser_ontology_v1.json",
+          "bytes": 918,
+          "sha256": "06ab9bbe3af6d27f05c39103e68d39bd681605e7ee1d31e69f8ddfccb9b3695c",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0
+        },
+        {
+          "name": "candidate_snapshot/code/prompts/qwen25_mcr_controlled_execution_v1.json",
+          "bytes": 696,
+          "sha256": "6e7f6921427d18a05a88de30be6c01066432dc1d1e783ed7546bf3fe963f7ba4",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0
+        },
+        {
+          "name": "candidate_snapshot/code/run_qwen25_camer_controlled_resource_sweep_v1.py",
+          "bytes": 64195,
+          "sha256": "c9b193329cedade1aef262cbbe5de9e88c23b533bc9f1aa4256a72f1ee3b2a45",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "candidate_snapshot/code/run_qwen25_camer_controlled_v4.py",
+          "bytes": 93870,
+          "sha256": "8d8f80ddd6577a91e2606374fda493b19675cc01caf25d31aba6a8af8ad69c20",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "candidate_snapshot/code/run_qwen25_mcr_controlled_v3.py",
+          "bytes": 6827,
+          "sha256": "c111d4dfd314b25088afff7e5ec7ad46c7869e0a692d2bca1d8e760c4fc25273",
+          "duplicate_registered_path": null,
+          "reverse_text_lines": [
+            {
+              "line": 31
+            }
+          ]
+        },
+        {
+          "name": "audit_reports/RECONSTRUCTION_FORENSICS_V2/MCR_RECONSTRUCTION_DAG_V2.md",
+          "bytes": 6236,
+          "sha256": "799651ffe2643814033c8ce5abe86d056cd1a7b0a018efbd8016326ababbb6e0",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "audit_reports/RECONSTRUCTION_FORENSICS_V2/LISTEN_RECONSTRUCTION_DAG_V2.md",
+          "bytes": 5111,
+          "sha256": "4a7ffa530a7e866cb79484397742ee16fd87057758bb855f6b2211e276d45f93",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "audit_reports/RECONSTRUCTION_FORENSICS_V2/CAMER_RECONSTRUCTION_DAG_V2.md",
+          "bytes": 6456,
+          "sha256": "183e52c315c205806491a06b0085c45f89b74e4ce0115af2b6512c41099f2920",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "historical_recovery/RECONSTRUCTION_FORENSICS_V2/project/build_camer_audit.py",
+          "bytes": 20041,
+          "sha256": "8db209b99b95a05fd3218d3d92ec78453a72ac540375c319738638283b0186a3",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "historical_recovery/RECONSTRUCTION_FORENSICS_V2/project/build_camer_native_protocol.py",
+          "bytes": 8975,
+          "sha256": "f45f9045d7ab66dc89da7a8075b165de6cc38803ef4e98ab4b41be706dca46c9",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "historical_recovery/RECONSTRUCTION_FORENSICS_V2/project/code/audit_camer_mer2023_release.py",
+          "bytes": 7254,
+          "sha256": "586c2aab74b4898093301e97f00b2330c48323e9f52a933e499a5ddec67b5b1a",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "historical_recovery/RECONSTRUCTION_FORENSICS_V2/project/audit/QWEN25_LISTEN_NATIVE_V3/build_listen_manifest_local_v3.py",
+          "bytes": 7068,
+          "sha256": "f2f74c6705860a70bf14cc24382d5d177d75b04eeb9cc2bcc7722a81fa64cef3",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "historical_recovery/RECONSTRUCTION_FORENSICS_V2/project/audit/QWEN25_LISTEN_NATIVE_V3/analyze_listen_results.py",
+          "bytes": 13547,
+          "sha256": "e5964c06d4b6b5edc14c0c7a8fa1d0ba1442be96e1ffd56c470c9b6a80baac8f",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "historical_recovery/RECONSTRUCTION_FORENSICS_V2/project/audit/QWEN25_LISTEN_NATIVE_V3/metric_granularity_correction_v1.py",
+          "bytes": 16891,
+          "sha256": "87305f1d97b7c9fcd8a8ff67f07192f6919a789b55ced534ee354a204b006288",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "historical_recovery/RECONSTRUCTION_FORENSICS_V2/project/audit/QWEN25_LISTEN_NATIVE_V3/final_denominator_provenance_v1.py",
+          "bytes": 21069,
+          "sha256": "136c702da907883eeda80617c7cf87e4571a3e5b8a778a7a8093f02d9f98b357",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "historical_recovery/RECONSTRUCTION_FORENSICS_V2/project/code/benchmarks/mcr_ser_scoring_v1.py",
+          "bytes": 17360,
+          "sha256": "b520d0383c83daeee1f61e1545fea91c6ed8dc3bd2fea82ab9c028c07ced36e1",
+          "duplicate_registered_path": null
+        }
+      ]
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_ARTIFACT_RECOVERY_V4/RECOVERED_ROW_EVIDENCE_V4.zip",
+      "sha256": "b617ef46a3557b32cf5bc738beb590e69dedbd0cddba4608632d5d6b2d5398b1",
+      "all_members": 21,
+      "reviewed_members": [
+        {
+          "name": "recovered_candidates/audit/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/LISTEN_V4_CANONICAL_AT_JOIN_V1.csv",
+          "bytes": 1124973,
+          "sha256": "f11685ced0edcc9eb40700da3492eff7e6b43ec58569c3ab7fe8662722d610d6",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "recovered_candidates/audit/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/LISTEN_V4_CANONICAL_AT_JOIN_PROVENANCE_V1.json",
+          "bytes": 4290,
+          "sha256": "ed71908e0543394b1feaa05f901be69f98d0abc5ef7b23f4b5f1016d5ddc3209",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0
+        },
+        {
+          "name": "recovered_candidates/audit/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/listen_native_manifest_source_aligned_v4.csv",
+          "bytes": 1651394,
+          "sha256": "567c9cc2f1758d703031c4eb772bd0e35fc003561f769866f1b6e9559251aa28",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "recovered_candidates/audit/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/listen_v4_execution_manifest.json",
+          "bytes": 541,
+          "sha256": "080372caa1938e4100e9780f04161b6da28fdf96d13c031e1ba0b1dce74ff4c0",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0
+        },
+        {
+          "name": "recovered_candidates/audit/QWEN25_LISTEN_NATIVE_V3/listen_native_raw_outputs_local_v3.jsonl",
+          "bytes": 2236709,
+          "sha256": "effdf7f070d99e38d127a3d9a9ecc2909dbe388d8985289ed4e6621cbc3f2993",
+          "duplicate_registered_path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_ARTIFACT_RECOVERY_V4/recovered_candidates/audit/QWEN25_LISTEN_NATIVE_V3/listen_native_raw_outputs_local_v3.jsonl",
+          "records": 1149,
+          "raw_execution_records": 1149,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0
+        },
+        {
+          "name": "recovered_candidates/audit/CROSS_REGIME_TRANSFER_V1/attempt002_gate_v1/LISTEN_AT_ZERO_REFIT_TRANSFER_V1.csv",
+          "bytes": 1153137,
+          "sha256": "3bc546fd843231a5a3412c282c0dfa18b506d3e7ec8eb9f7f99bf8ccef111936",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "recovered_candidates/audit/CROSS_REGIME_TRANSFER_V1/attempt002_gate_preparation_v2/LISTEN_AT_ATTEMPT002_GATE_INPUT_V2.csv",
+          "bytes": 1045827,
+          "sha256": "cc145efa4b187deab567b547ab8b71b6456da6484820d96ec49810742b77aced",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "recovered_candidates/results/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/listen_native_raw_outputs_source_aligned_v4.jsonl",
+          "bytes": 2225306,
+          "sha256": "efb604ffcdd4f746cda961da0fa17f8fae995e34aa02779bf2334917c19e74ea",
+          "duplicate_registered_path": "/root/autodl-tmp/affective-conflict/results/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/listen_native_raw_outputs_source_aligned_v4.jsonl",
+          "records": 1149,
+          "raw_execution_records": 1149,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0
+        }
+      ]
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/audit/HISTORICAL_ARTIFACT_RECOVERY_V4/RECOVERY_REPORTS_V4.zip",
+      "sha256": "497e8f162688a9ff21926d0654cb1727fc137e35c1c0ad9f1af6dbc3ed9d6865",
+      "all_members": 33,
+      "reviewed_members": [
+        {
+          "name": "LISTEN_A002_ROWCOUNT_CANDIDATES_V4.csv",
+          "bytes": 2092,
+          "sha256": "0db8ed6fc24d9209084fea7b5acfc81696fbe57d09e5751d57ebba7f2c7bd92d",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "LISTEN_A001_OUTPUT_CANDIDATES_V4.csv",
+          "bytes": 10614,
+          "sha256": "ee504e32722be07386c2c2c0d70abca2773fbd7f6d06929eae34a9492e602a3e",
+          "duplicate_registered_path": null
+        }
+      ]
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/audit/RAW_TO_CANONICAL_LINEAGE_RECOVERY_V1/RAW_TO_CANONICAL_LINEAGE_RECOVERY_V1_REPORTS.zip",
+      "sha256": "009de8173f2677dad4152c72905f425f49cbd7e344cb46430e177563b6f1822d",
+      "all_members": 9,
+      "reviewed_members": [
+        {
+          "name": "MCR_LINEAGE_V1.json",
+          "bytes": 44294,
+          "sha256": "8ce4bb6a12e1272628469e47fb03a69bbc8a04bd221d07445673e891bee6474a",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0,
+          "reverse_text_lines": [
+            {
+              "line": 278
+            },
+            {
+              "line": 336
+            }
+          ]
+        },
+        {
+          "name": "LISTEN_LINEAGE_V1.json",
+          "bytes": 26238,
+          "sha256": "f3c303e99ff7b46d1266d85826cc339663333e4a0f785c5c958a28fb633c5faf",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0
+        },
+        {
+          "name": "CAMER_LINEAGE_V1.json",
+          "bytes": 61715,
+          "sha256": "803a0271b809bb0c8b9387ea2d65e7df6b729a7a843574f578ba3c6b21031bd4",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0
+        }
+      ]
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/reconstruction/RAW_TO_CANONICAL_RECONSTRUCTION_V1/outputs/RAW_TO_CANONICAL_RECONSTRUCTION_V1_CORE.zip",
+      "sha256": "60a6389342a383a2a26ecd1a1db1767719464f1e32ff6567d49f10ccb9f8bb75",
+      "all_members": 113,
+      "reviewed_members": [
+        {
+          "name": "RAW_TO_CANONICAL_RECONSTRUCTION_V1/listen/reconstruct_listen.py",
+          "bytes": 7256,
+          "sha256": "3e66a396e2e4a5474abcfcb5a57693d5591e49f6607dc12fa209976984c73727",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "RAW_TO_CANONICAL_RECONSTRUCTION_V1/mcr/reconstruct_mcr.py",
+          "bytes": 9227,
+          "sha256": "ae976ec90ecdd14cd73636379d05fb43848aae00a5562571abb75c9b471bac51",
+          "duplicate_registered_path": null,
+          "reverse_text_lines": [
+            {
+              "line": 92
+            }
+          ]
+        },
+        {
+          "name": "RAW_TO_CANONICAL_RECONSTRUCTION_V1/provenance/LISTEN_OFFICIAL_SOURCE_CONTROL_FLOW.json",
+          "bytes": 2699,
+          "sha256": "395fdc68f759f286dfbfde591b31d580316d5b83c4e31792e7189ea3c5c594b8",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0
+        },
+        {
+          "name": "RAW_TO_CANONICAL_RECONSTRUCTION_V1/provenance/LISTEN_RAW_MEDIA_CACHE_BINDING.json",
+          "bytes": 201743,
+          "sha256": "fd59cd36cb0c760c838acd4c6c22b60f6e8955d7d6bb81d7088e6511c0fb50f6",
+          "duplicate_registered_path": null,
+          "records": 524,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0
+        },
+        {
+          "name": "RAW_TO_CANONICAL_RECONSTRUCTION_V1/provenance/MCR_RAW_MEDIA_BINDING.json",
+          "bytes": 291788,
+          "sha256": "ef80c955865f6d5971d70449c4e56cb333064d1674a8baaecbaa66fc11ba6e6d",
+          "duplicate_registered_path": null,
+          "records": 947,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0
+        }
+      ]
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/reconstruction/RAW_TO_CANONICAL_GAP_RESOLUTION_V2/outputs/RAW_TO_CANONICAL_GAP_RESOLUTION_V2_CORE.zip",
+      "sha256": "f7060417e190729451a6238a599ee63db3dd7667d79c9690785a8cb6d3bd5530",
+      "all_members": 26,
+      "reviewed_members": [
+        {
+          "name": "RAW_TO_CANONICAL_GAP_RESOLUTION_V2/MCR_GAP_RESOLUTION_V2.json",
+          "bytes": 13202,
+          "sha256": "25d4976de83940e441b3454f58c065c279289dc32675383d048d9badb1240514",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0,
+          "reverse_text_lines": [
+            {
+              "line": 152
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/reconstruction/REPRODUCIBILITY_BOUNDARY_RESOLUTION_V3/outputs/REPRODUCIBILITY_BOUNDARY_RESOLUTION_V3_CORE.zip",
+      "sha256": "0f20afe6759213ee2eb69581bd05ae64ce24a99e77273ee2fe0325badeda0862",
+      "all_members": 14,
+      "reviewed_members": [
+        {
+          "name": "REPRODUCIBILITY_BOUNDARY_RESOLUTION_V3/MCR_SCIENTIFIC_FIELD_DIFF_V3.csv",
+          "bytes": 115285,
+          "sha256": "47b1cbddb6b4d16207eaea9672bac5d2bee9fadb10206ae5831e90faed9dfdff",
+          "duplicate_registered_path": null,
+          "reverse_text_lines": [
+            {
+              "line": 80
+            },
+            {
+              "line": 101
+            }
+          ]
+        },
+        {
+          "name": "REPRODUCIBILITY_BOUNDARY_RESOLUTION_V3/evidence/MCR_EXISTING_ARTIFACT_BINDINGS.json",
+          "bytes": 7968,
+          "sha256": "1d334c2977cbb5d75ed257d0f69b8f18a7bee28c05ca4333b2e8d0322e570c3e",
+          "duplicate_registered_path": null,
+          "records": 5,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0
+        },
+        {
+          "name": "REPRODUCIBILITY_BOUNDARY_RESOLUTION_V3/evidence/MCR_MISMATCH_SEVERITY_COUNTS.json",
+          "bytes": 1603,
+          "sha256": "11989f93ddf81d5701189dcf0fff6e06713febcdfbb03c68eda0fc246faeb308",
+          "duplicate_registered_path": null,
+          "records": 0,
+          "raw_execution_records": 0,
+          "executed_reverse": 0,
+          "numeric_16_candidate_vectors": 0
+        }
+      ]
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/source/LISTEN.zip",
+      "sha256": "cc8178e6f5782f3a99877de0cf31ca5a20c6e4645d0a1463d38dbfd534c15a61",
+      "all_members": 65,
+      "reviewed_members": [
+        {
+          "name": "LISTEN/README.md",
+          "bytes": 5629,
+          "sha256": "42f32ea4edba1ba8bc900d34752fbc68ded06fb418d2bd02fbb5dc70b8770092",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "LISTEN/README_TEST_YOUR_MODEL.md",
+          "bytes": 10214,
+          "sha256": "5af3a59a9c9493d41d688c5a96701e9a77e4ea51e2b5f4409758ecaf538da190",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "LISTEN/scripts/draw_heatmap_one_model.py",
+          "bytes": 10845,
+          "sha256": "3bd26ab846a19554e8113197c7720dd344f1780717fb3186d90b1ff17a74f39a",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "LISTEN/scripts/evaluation_utils.py",
+          "bytes": 11558,
+          "sha256": "395c7a2fed95bbd5a1b38e24c2e458c45d8aee91b4f9aa9de828454074df4c71",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "LISTEN/scripts/test_baichuan_omni_all.py",
+          "bytes": 52917,
+          "sha256": "3d142d529ad5ca74c444a74cb8617a4a4f50c9ee4993436b4b748edfb12a15ac",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "LISTEN/scripts/test_baichuan_omni_all.sh",
+          "bytes": 1959,
+          "sha256": "f73398e246875aa71be29a65556e95bb2ef411dc7b6ef523a626bb40c902dd29",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "LISTEN/scripts/test_gemini2_5_flash.sh",
+          "bytes": 1749,
+          "sha256": "7a18ed2ef600997540be033a4f8cdf644c505eff54dc9c418b454261309f7a38",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "LISTEN/scripts/test_gemini2_5_flash_all.py",
+          "bytes": 48850,
+          "sha256": "1145941e5cadd82d1f5316d189f926589c57f57f65e7e52f66c757ef3a04f721",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "LISTEN/scripts/test_gemini2_5_pro.py",
+          "bytes": 50188,
+          "sha256": "024ebbcd16711de0bede655a0d30bb939841c3654aba964ccd16da04763f289b",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "LISTEN/scripts/test_gemini2_5_pro.sh",
+          "bytes": 1600,
+          "sha256": "3014245f647903b3feff9f3e12ad9403e65e72ca1bf2b2e9c78f9e6baa43b5f2",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "LISTEN/scripts/test_qwen2_5_omni-cuda12.8.sh",
+          "bytes": 2389,
+          "sha256": "7ffbcda71856d706d35f6a6049badc54ddbf688df0b2d78e1ed32c81497beb76",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "LISTEN/scripts/test_qwen2_5_omni_all.py",
+          "bytes": 42569,
+          "sha256": "77c533d789fbc6443691e4b700473a512ed9c7aa3142ceabab53e40e837a845c",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "LISTEN/scripts/test_qwen3_instruct.py",
+          "bytes": 28019,
+          "sha256": "17f08b1338b50d79ee28a452d2d47d4c479350e363781e34c253c051ad9c66f0",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "LISTEN/scripts/test_qwen3_instruct.sh",
+          "bytes": 2373,
+          "sha256": "5b16640cb8d83f4960f0b18f7eb3525fcc19fb8184ede8ed23ace5169cfef4f9",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "LISTEN/scripts/test_qwen3_omni-cuda12.8.sh",
+          "bytes": 2544,
+          "sha256": "e246e07f8b4127832db4635a0f7bc7621e60a514bf62b6651304cdddb8f17047",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "LISTEN/scripts/test_qwen3_save.py",
+          "bytes": 42799,
+          "sha256": "ae27a4494daaefadb630d34a65079f868ba324ecc56be0c96b89afb4eedc7cdc",
+          "duplicate_registered_path": null
+        },
+        {
+          "name": "LISTEN/scripts/test_your_model.py",
+          "bytes": 14290,
+          "sha256": "bd4115949be03351898aea5c5d94c0183714f39cff9d20260c4d8c9b3cc7c856",
+          "duplicate_registered_path": null
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

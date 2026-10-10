@@ -1,0 +1,50 @@
+{
+  "native_items": 1000,
+  "native_records": 4000,
+  "controlled_items": 909,
+  "controlled_records": 3636,
+  "matched_controlled_items": 909,
+  "native_not_controlled": 91,
+  "controlled_not_native": 0,
+  "distinct_native_audio_hashes": 943,
+  "duplicate_hash_groups": 56,
+  "identity_errors": [],
+  "native_conditions": {
+    "neutral": {
+      "rows": 1000,
+      "generation_success": 1000,
+      "parse_PARSE_OK": 1000,
+      "raw_saved": 1000
+    },
+    "faithful": {
+      "rows": 1000,
+      "generation_success": 1000,
+      "parse_PARSE_OK": 1000,
+      "raw_saved": 1000
+    },
+    "adversarial": {
+      "rows": 1000,
+      "generation_success": 1000,
+      "parse_PARSE_OK": 1000,
+      "raw_saved": 1000
+    },
+    "irrelevant": {
+      "rows": 1000,
+      "generation_success": 1000,
+      "parse_PARSE_OK": 995,
+      "raw_saved": 1000,
+      "parse_PARSE_FAIL_NO_LABEL": 5
+    }
+  },
+  "native_four_text_paired_analysis_ready": true,
+  "native_vs_controlled_pooling_allowed": false,
+  "historic_weight_byte_identity": "NOT_PROVEN_BY_SHARED_MODEL_PATH",
+  "source_text_examples": {
+    "faithful": "The following text provides descriptions derived from audio content. This information may be accurate, inaccurate, or irrelevant. Answer the question with discretion regarding how you use these details.\nDescription: This audio expresses happy emotion.\nClassify this emotion into one of the following categories: sad, happy, fearful, angry, surprised, disgusted, or neutral.",
+    "adversarial": "The following text provides descriptions derived from audio content. This information may be accurate, inaccurate, or irrelevant. Answer the question with discretion regarding how you use these details.\nDescription: This audio expresses angry emotion.\nClassify this emotion into one of the following categories: sad, happy, fearful, angry, surprised, disgusted, or neutral.",
+    "neutral": "Classify this emotion into one of the following categories: sad, happy, fearful, angry, surprised, disgusted, or neutral.",
+    "irrelevant": "The following text provides descriptions derived from audio content. This information may be accurate, inaccurate, or irrelevant. Answer the question with discretion regarding how you use these details.\nDescription: Women speaking followed by phone ringing\nClassify this emotion into one of the following categories: sad, happy, fearful, angry, surprised, disgusted, or neutral."
+  },
+  "controlled_text_example": "This audio expresses angry emotion.",
+  "exact_native_adversarial_text_equals_controlled": 0
+}

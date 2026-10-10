@@ -1,0 +1,32 @@
+[
+  {
+    "old_claim": "CA-MER A_ONLY/V_ONLY execution unavailable",
+    "revised_status": "EXECUTED_LABEL_OUTPUTS_RECOVERED_CPU_ANALYSIS_READY",
+    "basis": "6000-key index and raw resource sweep; A=1500 raw, V=1442 raw",
+    "frozen_science_modified": false
+  },
+  {
+    "old_claim": "CA-MER generation can provide 16-class entropy",
+    "revised_status": "NO_FULL_16_VECTOR_CPU_NOT_IDENTIFIABLE",
+    "basis": "13 recovered JSONL +8 indexed archives; separate B3 seven-class scoring verified",
+    "frozen_science_modified": false
+  },
+  {
+    "old_claim": "MCR four native text conditions unrun",
+    "revised_status": "FULL_4000_NATIVE_EXISTS_NOT_CONTROLLED_PROJECTION",
+    "basis": "native1000x4; controlled909x4arms distinct",
+    "frozen_science_modified": false
+  },
+  {
+    "old_claim": "909 unique audio paths implies909 independent audio bytes",
+    "revised_status": "909_PATHS_905_HASHES_WITH_ONE_THREE_ITEM_GT_CONFLICT",
+    "basis": "frozen pool SHA matches actual original audio bytes909/909",
+    "frozen_science_modified": false
+  },
+  {
+    "old_claim": "LISTEN same count permits V3 pooling with V4",
+    "revised_status": "STRICT_SOURCE_IDENTITY_PASSES_PROMPT_AND_CANDIDATES_DIFFER",
+    "basis": "1149 identity matched;0 candidate/prompt matches",
+    "frozen_science_modified": false
+  }
+]

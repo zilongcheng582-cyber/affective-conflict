@@ -1,0 +1,115 @@
+{
+  "seed": 20261010,
+  "primary_numeric_files_compared": 18,
+  "all_match": true,
+  "files": [
+    {
+      "path": "numeric/MCR_RESULTS.json",
+      "first_sha256": "0d2d729391f49359047223f14c534c8417525e7f5d2a83dd0e1ae4367a1925bd",
+      "replay_sha256": "0d2d729391f49359047223f14c534c8417525e7f5d2a83dd0e1ae4367a1925bd",
+      "match": true
+    },
+    {
+      "path": "numeric/CAMER_RESULTS.json",
+      "first_sha256": "675de252be8f61e24af33b9d3fb52eddebd4badd52a491844a61e33e7477f49a",
+      "replay_sha256": "675de252be8f61e24af33b9d3fb52eddebd4badd52a491844a61e33e7477f49a",
+      "match": true
+    },
+    {
+      "path": "numeric/LISTEN_RESULTS.json",
+      "first_sha256": "f15872542487e6a96e4c6dbf2954034cc9fc796df2220c50c6da254127df59b6",
+      "replay_sha256": "f15872542487e6a96e4c6dbf2954034cc9fc796df2220c50c6da254127df59b6",
+      "match": true
+    },
+    {
+      "path": "intermediate/MCR_ITEM_IDENTITY_OUTCOMES.csv",
+      "first_sha256": "22fab7057d67edc5df02d0ba20be042f86dda426e74c8cd916e6704f285de299",
+      "replay_sha256": "22fab7057d67edc5df02d0ba20be042f86dda426e74c8cd916e6704f285de299",
+      "match": true
+    },
+    {
+      "path": "intermediate/MCR_NATIVE_CONTROLLED_PER_ITEM_JOIN.csv",
+      "first_sha256": "77f7525fec4a43ab028a082b46223df3ce38ccc389837ef6e423e95679c35d16",
+      "replay_sha256": "77f7525fec4a43ab028a082b46223df3ce38ccc389837ef6e423e95679c35d16",
+      "match": true
+    },
+    {
+      "path": "intermediate/MCR_DUPLICATE_DIAGNOSTICS.json",
+      "first_sha256": "77a87a2bd3a2eae68b5d01cde18fca3fade79c4d1e57da656214cded758109ec",
+      "replay_sha256": "77a87a2bd3a2eae68b5d01cde18fca3fade79c4d1e57da656214cded758109ec",
+      "match": true
+    },
+    {
+      "path": "intermediate/CAMER_ITEM_ELIGIBILITY_IDENTITY.csv",
+      "first_sha256": "28b5d70b996633adf00a476be926f31c976112f46d975a52595dd3ab0abe79dc",
+      "replay_sha256": "28b5d70b996633adf00a476be926f31c976112f46d975a52595dd3ab0abe79dc",
+      "match": true
+    },
+    {
+      "path": "intermediate/CAMER_LABEL_PAIR_CONSTRUCT_SUPPORT.csv",
+      "first_sha256": "b386d05be5e253f7bb01ee6cae2930241c72bd54283245bd7d70f9af2ad732bd",
+      "replay_sha256": "b386d05be5e253f7bb01ee6cae2930241c72bd54283245bd7d70f9af2ad732bd",
+      "match": true
+    },
+    {
+      "path": "intermediate/CAMER_LABEL_PAIR_STANDARDIZATION.csv",
+      "first_sha256": "ce00ab60efa6a4af77a0496649e63cca73e84b22e0cddee10ca240a79beb9e24",
+      "replay_sha256": "ce00ab60efa6a4af77a0496649e63cca73e84b22e0cddee10ca240a79beb9e24",
+      "match": true
+    },
+    {
+      "path": "intermediate/CAMER_CANDIDATE_LABEL_CONFOUNDING.csv",
+      "first_sha256": "7bd33986860d4b9d0dc24d7377650f3ce3f51caf5d3f74ad17445a4803475fff",
+      "replay_sha256": "7bd33986860d4b9d0dc24d7377650f3ce3f51caf5d3f74ad17445a4803475fff",
+      "match": true
+    },
+    {
+      "path": "intermediate/LISTEN_OTHER_LABEL_DECOMPOSITION.csv",
+      "first_sha256": "11212fc63299025d8d0b81ad8210d84b4d6b753fb1ac0528bec9299c57967806",
+      "replay_sha256": "11212fc63299025d8d0b81ad8210d84b4d6b753fb1ac0528bec9299c57967806",
+      "match": true
+    },
+    {
+      "path": "intermediate/LISTEN_ELIGIBILITY_BY_NATIVE_LABEL.csv",
+      "first_sha256": "5f97be6e5cd90a15d70141693703d58ebc42fe0121f46306a3af170ddb54a997",
+      "replay_sha256": "5f97be6e5cd90a15d70141693703d58ebc42fe0121f46306a3af170ddb54a997",
+      "match": true
+    },
+    {
+      "path": "intermediate/LISTEN_CORRECTED_B3_ONTOLOGY_SUPPORT.csv",
+      "first_sha256": "f2dace98cd5f9bd943053dcfaf3b98f41ac08aaed8ab96709a4a4585bfb6655d",
+      "replay_sha256": "f2dace98cd5f9bd943053dcfaf3b98f41ac08aaed8ab96709a4a4585bfb6655d",
+      "match": true
+    },
+    {
+      "path": "01_MCR_PAIRED_TRANSITIONS.csv",
+      "first_sha256": "b600e62d5c277eec29efd17961e5607a1ea4f8a21f76dca45e205f9a718e7d3a",
+      "replay_sha256": "b600e62d5c277eec29efd17961e5607a1ea4f8a21f76dca45e205f9a718e7d3a",
+      "match": true
+    },
+    {
+      "path": "01_MCR_LABEL_CONDITION_ASSOCIATIONS.csv",
+      "first_sha256": "70b83ed35ece18fbc6b9c575b337135195091dd742f36d63b48b5b14c7e0e0b9",
+      "replay_sha256": "70b83ed35ece18fbc6b9c575b337135195091dd742f36d63b48b5b14c7e0e0b9",
+      "match": true
+    },
+    {
+      "path": "02_CAMER_ELIGIBILITY_AND_COVERAGE.csv",
+      "first_sha256": "56bed18c12f515b4a23cad40d36a16bfaa9d1c638c8db5637eeba54ee63cab20",
+      "replay_sha256": "56bed18c12f515b4a23cad40d36a16bfaa9d1c638c8db5637eeba54ee63cab20",
+      "match": true
+    },
+    {
+      "path": "02_CAMER_MATCHED_TRANSITIONS.csv",
+      "first_sha256": "2e9960519168d0383822541f7dea8a926194af152384539ceac7df1077d6f86e",
+      "replay_sha256": "2e9960519168d0383822541f7dea8a926194af152384539ceac7df1077d6f86e",
+      "match": true
+    },
+    {
+      "path": "03_LISTEN_MATCHED_SOURCE_LABEL_DIAGNOSTICS.csv",
+      "first_sha256": "9f911d474023821af25a9fb651192ac1aa14a1b7c0813df5dc9c4100e2b4aea7",
+      "replay_sha256": "9f911d474023821af25a9fb651192ac1aa14a1b7c0813df5dc9c4100e2b4aea7",
+      "match": true
+    }
+  ]
+}

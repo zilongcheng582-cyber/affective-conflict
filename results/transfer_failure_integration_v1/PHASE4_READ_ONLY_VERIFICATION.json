@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "locked_sources": 96,
+  "all_sha_unchanged": true,
+  "source_commit": "34aa1b0340d906e5d625db7cb4a3def9199fa06e",
+  "prediction_tolerance": 1e-12,
+  "metric_tolerance": 1e-12,
+  "GPU": false,
+  "refit": false
+}

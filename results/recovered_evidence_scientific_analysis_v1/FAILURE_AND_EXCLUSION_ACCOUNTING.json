@@ -1,0 +1,40 @@
+{
+  "historical_MCR": {
+    "planned": 4000,
+    "generated": 4000,
+    "parsed": 3995,
+    "parse_failed": 5,
+    "technical_failed": 0,
+    "all_retained": true,
+    "sensitivity_removed_conflicting_hash_items": 79,
+    "sensitivity_only": true
+  },
+  "historical_CAMER": {
+    "planned_keys": 6000,
+    "scientific_available": 5825,
+    "oom_slots": 174,
+    "oom_items": 58,
+    "A_parse_fail": 1,
+    "conflict_unobservable": 32,
+    "conflict_joint_missing_per_order": 31,
+    "all_planned_retained": true
+  },
+  "historical_LISTEN": {
+    "joint381": 381,
+    "conflict378": 378,
+    "same_label3": 3,
+    "common_observable242": 242,
+    "unobservable_conflict136": 136,
+    "dual22_all_ridicule": 22,
+    "dual_non_ridicule0": 0,
+    "parsefail0": 0,
+    "technicalmissing0": 0,
+    "no_imputation": true
+  },
+  "new_CPU_extraction_incidents": [
+    "first contract_focus UTF8 decode error; no scientific source modified",
+    "unbounded supplement accumulated texts and was system-terminated; primary numeric results unaffected",
+    "final bounded <=2MB/streaming extractor succeeded; warnings preserved"
+  ],
+  "retries": "No historical/model retries; CPU extraction optimized and repeated, records preserved"
+}

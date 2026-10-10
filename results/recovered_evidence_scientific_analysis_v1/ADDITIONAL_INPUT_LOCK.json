@@ -1,0 +1,68 @@
+[
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/CAMER_CONTROLLED_PROTOCOL_V1.json",
+    "sha256": "efbe18fefcd3964e1ccbb48df671cad7279d543a021f90bbd6c11dfbef83306f",
+    "bytes": 3387,
+    "role": "additional read-only contract/identity source; no support-set change"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/CAMER_CONTROLLED_PROTOCOL_V1.md",
+    "sha256": "7b3a72dbd8e85a9ae80f8556b8e0465862c6f7e6ce5ed4b602647669b3fca6af",
+    "bytes": 5749,
+    "role": "additional read-only contract/identity source; no support-set change"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/code/prompts/qwen25_mcr_native_execution_v1.json",
+    "sha256": "f33a9a8ce67f21af4acb3bf22ee3cdb05c2ac00de49a865a932be80fa2f447c2",
+    "bytes": 3929,
+    "role": "additional read-only contract/identity source; no support-set change"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/code/prompts/qwen25_mcr_controlled_execution_v1.json",
+    "sha256": "6e7f6921427d18a05a88de30be6c01066432dc1d1e783ed7546bf3fe963f7ba4",
+    "bytes": 696,
+    "role": "additional read-only contract/identity source; no support-set change"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/code/prompts/mcr_controlled_arbitration_prompt_v2.json",
+    "sha256": "f48431f666fc84987c9e4d17acab31fd80998bac098611fed7016c92abd37082",
+    "bytes": 3026,
+    "role": "additional read-only contract/identity source; no support-set change"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_LISTEN_NATIVE_V3/LISTEN_V3_VS_SOURCE_LAUNCH_AUDIT.md",
+    "sha256": "2449efd96e4e4cbd391a8ed60d0304cd529594064fb03febb5ba9a8ca174a980",
+    "bytes": 3692,
+    "role": "additional read-only contract/identity source; no support-set change"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/LISTEN_PHASE1_POOL.md",
+    "sha256": "0660e3e3d902c2fad9f35abe9f19e4cec6dd3863af97dbf4cd1899c002fcfc64",
+    "bytes": 4702,
+    "role": "additional read-only contract/identity source; no support-set change"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_LISTEN_NATIVE_V1/LISTEN_NATIVE_PROTOCOL_V1.json",
+    "sha256": "fc7d233b4788ea97318c7ed48a21126678b8a9ff680240bfc2d1509ad65809f1",
+    "bytes": 12356,
+    "role": "additional read-only contract/identity source; no support-set change"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_LISTEN_NATIVE_V3/run_listen_local_v3.py",
+    "sha256": "a5dfa8c882c2eca5771ee182eba50572f08bb61da822793f9834f2dd61e7d3a5",
+    "bytes": 8432,
+    "role": "additional read-only contract/identity source; no support-set change"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/run_listen_source_aligned_v4.py",
+    "sha256": "9c3b102ff7986e91753324ad1ed38260772b2c2487947ccea65ffac2f55f1682",
+    "bytes": 8614,
+    "role": "additional read-only contract/identity source; no support-set change"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/PAPER_CORE_ASSET_GITHUB_SNAPSHOT_V1/candidate_snapshot/audit/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/run_listen_source_aligned_v4.py",
+    "sha256": "9c3b102ff7986e91753324ad1ed38260772b2c2487947ccea65ffac2f55f1682",
+    "bytes": 8614,
+    "role": "additional read-only contract/identity source; no support-set change"
+  }
+]

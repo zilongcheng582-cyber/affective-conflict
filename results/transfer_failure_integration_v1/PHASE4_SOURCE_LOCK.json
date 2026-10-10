@@ -1,0 +1,674 @@
+[
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/frozen/source_model/08_M0_M3_model_results.csv",
+    "sha256": "bd576a092eda349cccc34965468fd6d003de1da61118eef337ab6cd94e701426",
+    "bytes": 11639,
+    "records": 33,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/frozen/source_model/B3_MODEL_PROCESSOR_IDENTITY.json",
+    "sha256": "f911d829077ec32bc0633f97ab52010c85ecc5d6fea4912cc328af71a38888f7",
+    "bytes": 2198,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/frozen/source_model/B3_SOURCE_MODEL_BINDING_ORIGINAL.json",
+    "sha256": "2774b1dab0e93912a3795ca3d1994c087213a01f04b9e4280981cd4430e2a887",
+    "bytes": 3111,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/frozen/source_model/EMOTIONTALK_PHASE2_PAIRWISE_MODEL_FREEZE_V1.json",
+    "sha256": "2f5e5e639ce22d79452aa54ca599fd0e14bc525cf874042b04065edadeed5019",
+    "bytes": 2440,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/frozen/source_model/EMOTIONTALK_PHASE2_SCALER_PROVENANCE_RESOLUTION_V1.json",
+    "sha256": "cd90c4238cb59096418d57eedc3da83f25e98be0ec4870e9662e8ce289410bb4",
+    "bytes": 5907,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/frozen/source_model/EMOTIONTALK_PHASE2_SCIENTIFIC_ANALYSIS_V1_SUMMARY.json",
+    "sha256": "e2d58be3cdfcf0089bf18edf6c080ad997c98405843b045cbbe94926dcaf1be9",
+    "bytes": 28199,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/frozen/source_model/HF_COMMIT_CONTENT_VERIFICATION.json",
+    "sha256": "8bbb419343bbf7cacf6d3444f5f382b229bee75db1ebd8ceee578215b9af874e",
+    "bytes": 1152,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/frozen/source_model/HF_LOCAL_METADATA_IDENTITY.json",
+    "sha256": "dd17b8464534b4d9542f94daa0d790098db42c4745b53cf3c4a46ec7f0275451",
+    "bytes": 10067,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/frozen/source_model/HISTORICAL_B3_FORWARD_IDENTITY.csv",
+    "sha256": "1834d4929aa6dab46c39dc7a455ebae7b64e319c10081d64282ee85c2ec2f5f1",
+    "bytes": 3063356,
+    "records": 4959,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/frozen/source_model/HISTORICAL_B3_MEASUREMENT_IDENTITY.csv",
+    "sha256": "a93f3bb76dbc02f65c168fca740147f466aad902b20b8a66a4cb4cf9e5740e1b",
+    "bytes": 3838213,
+    "records": 4961,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/frozen/source_model/PROCESSOR_LOADING_PROVENANCE.json",
+    "sha256": "54063c8a8494f91cf3bf4586df4f1d2d3d333bdb1954b2b3e04146ca043791bd",
+    "bytes": 57303,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/frozen/source_model/REPRODUCIBILITY_BOUNDARY_STATEMENT_V1.md",
+    "sha256": "771bf1fd1243e2bc5db2a2e31af087bac3ecd0e1f7ac388a7e6ca4df4158450a",
+    "bytes": 3449,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/frozen/source_model/binding.json",
+    "sha256": "642c2ed7b023aea8c6bd762891ff436f0f3eff6a95a58e56bf6f8c4b5d41dd20",
+    "bytes": 2758,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/frozen/source_model/publication_cv_input_provenance.json",
+    "sha256": "20668a2def6787c8e5069304bbec6c89058e2aa9d2c91df2adb6540714c7b613",
+    "bytes": 1074,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/frozen/source_model/publication_cv_records.json",
+    "sha256": "8fb93aadd79eac9597677bd3409666ec2a31311762e0c6850673fb50f4129a13",
+    "bytes": 130527,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/closure_v1/LISTEN_CONDITION_DIAGNOSTICS.csv",
+    "sha256": "9a7e88bfb6e1e966339d779d6cb6430b73f064fd60885a369f149fd9a0380e27",
+    "bytes": 13531,
+    "records": 12,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/closure_v1/LISTEN_JOINT_ONLY_REPORT.csv",
+    "sha256": "00f02c5af41e538544e144df6a8fd5a11f5880675376b3ec4f8516e13099f3b8",
+    "bytes": 4688,
+    "records": 3,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/closure_v1/MCR_CONTENT_DUPLICATE_AUDIT_V1.csv",
+    "sha256": "692250f603e49eb46690f4a8f9e2e1e5b2ba8f3896a6933398b43dbf8caccf6a",
+    "bytes": 2479,
+    "records": 7,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/closure_v1/MCR_CONTENT_DUPLICATE_SENSITIVITY_V1.csv",
+    "sha256": "eb97118a2d5b6dd986a49a662607fb4be8620f824aab8abccc3ce4e8bc057f0b",
+    "bytes": 3911,
+    "records": 4,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/closure_v1/PHASE2_RECONSTRUCTED_SOURCE_RECORDS_V1.csv",
+    "sha256": "6ae60be040e169cb49f7456a1ab3f1e6599d881a5a6dd081a84648e0cb0146af",
+    "bytes": 69590,
+    "records": 663,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/closure_v1/PHASE3_ROW_LEVEL_VERIFICATION_V1.csv",
+    "sha256": "4ce59f29e4cdab91054a21e49af676d5e50813f7fb08d06a9cb803c5906cf17e",
+    "bytes": 98540,
+    "records": 402,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/closure_v1/POST_AUDIT_CPU_REPLAY_V1.json",
+    "sha256": "ac372573f817ede3e7996d551287b69c4c7410def85b922279906504b00961e2",
+    "bytes": 934,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/closure_v1/SOURCE_BASELINE_BINDING_V1.json",
+    "sha256": "98f21865e84da6031a80881db867306688d114d867de445cdcdbd8a73148b945",
+    "bytes": 1307,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/closure_v1/ZERO_REFIT_BASELINE_COMPARISON_V1.csv",
+    "sha256": "526014bb2c470e3a181b354b000cd9802751fdd28cf9280d8bcc2fb5c5df11fc",
+    "bytes": 25979,
+    "records": 24,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/closure_v1/corrected_replay/B3_CORRECTED_DATASET_METRICS_V1.csv",
+    "sha256": "b6f0892cb2ec799cdeaf5413ce31bad554ca3dfa7d7713a080b5e3c806788b6b",
+    "bytes": 2291,
+    "records": 7,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/closure_v1/corrected_replay/B3_CORRECTED_MEASUREMENT_CLOSEOUT_V1.json",
+    "sha256": "00af7cee140aa96438998d2533eba54283d4b8bc60614263b1cf0490696796db",
+    "bytes": 1855,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/closure_v1/corrected_replay/B3_CORRECTED_ZERO_REFIT_PREDICTIONS_V1.csv",
+    "sha256": "c497629d50291005f2bc7936c23e154c4f194dad22c65e5ad1714e54d79c7e9a",
+    "bytes": 1603365,
+    "records": 9219,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/closure_v1/corrected_replay/B3_FINAL_HASHES_V1.txt",
+    "sha256": "51f1835ee8a0f7b1b8202b50c588c96e15a3c497dcb3ee21af941c3900060d51",
+    "bytes": 737,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/closure_v1/corrected_replay/B3_OLD_VS_CORRECTED_COMPARISON_V1.csv",
+    "sha256": "e07cdd2d2a749e1fe39e57c587e6a15e47fb3c85e1e135f307a5b158c4fb0423",
+    "bytes": 5794,
+    "records": 28,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/closure_v1/corrected_replay/B3_ZERO_REFIT_FINAL_EVALUATION_V1.json",
+    "sha256": "d8bd54b07c277f04292a6ed69544ba4748acdaf9213af6dc584aae080121dced",
+    "bytes": 21507,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/closure_v1/corrected_replay/B3_ZERO_REFIT_FINAL_EVALUATION_V1.md",
+    "sha256": "04c0ddbf442f2e457cd79e502cb48a5f4814e2cee860dd4fad7f818cb9730a5e",
+    "bytes": 1339,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/closure_v1/corrected_replay/B3_ZERO_REFIT_PROVENANCE_V1.json",
+    "sha256": "c9abde277e77d4f114c9e3e05c4a66c101d29f1df06568f8808f0956ad0e4c24",
+    "bytes": 4611,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/scientific_analysis_v1/R1_MODEL_COMPARISON.csv",
+    "sha256": "4919a4eade576c889a95ce977bc1aed0a0943d94b5d1217197a5b815ed1e10ba",
+    "bytes": 44845,
+    "records": 176,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/scientific_analysis_v1/R1_OUT_OF_FOLD_PREDICTIONS.csv",
+    "sha256": "e3ad37422ef40975670f01c7e1c96d2d0159432d67c14559723e3ed7f71263a8",
+    "bytes": 642976,
+    "records": 663,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/scientific_analysis_v1/R1_PAIRED_UNCERTAINTY.csv",
+    "sha256": "fcef1081ec83a0575e863d1a46de9b1ec8c641cff055727467b15bacfd0d3feb",
+    "bytes": 73596,
+    "records": 176,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/scientific_analysis_v1/R1_PAIR_HETEROGENEITY.csv",
+    "sha256": "54ad053d9c1ef75cd38e41279cf10c8af627414115ca35c2d31890629fcb298e",
+    "bytes": 19013,
+    "records": 97,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/scientific_analysis_v1/R1_RUN_METADATA.json",
+    "sha256": "8e99a9016e1aada589bbc7d373b9aa45591ce636cc2572ce1e78031b16501b8b",
+    "bytes": 914,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/scientific_analysis_v1/R1_SOURCE_STRUCTURE_REPORT.md",
+    "sha256": "80f803b4e0faf1abb1280a592b92ae00d5ed35a2a3a67950039a7ded9394c904",
+    "bytes": 8620,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/scientific_analysis_v1/R2_BASELINE_COMPARISON.csv",
+    "sha256": "4157c63a1b04d3789a7e88a8fe18b2a5740b46a91bafb782e901655204df4715",
+    "bytes": 4975,
+    "records": 15,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/scientific_analysis_v1/R2_CLUSTERED_UNCERTAINTY.csv",
+    "sha256": "ab469263e1ec0d1a789cb4863b0535129ba08a1ac7c383f8a272727ed4087fc4",
+    "bytes": 16690,
+    "records": 47,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/scientific_analysis_v1/R2_COMPOSITIONALITY_REPORT.md",
+    "sha256": "6288bed1bc3929142772be3eb8ec3bd20c8d03572d99636d1a1dfec7daa74a96",
+    "bytes": 9064,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/scientific_analysis_v1/R2_PAIRWISE_VS_BASELINES.csv",
+    "sha256": "0209837b02a0a8e7cfe50d2821c64d81fab0ed46e8accbc248c333cde9501c2f",
+    "bytes": 83005,
+    "records": 402,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/scientific_analysis_v1/R2_PER_UTTERANCE.csv",
+    "sha256": "472f7022265d5cd1aff8f2f9beec0f1e158fb8bf86a18f6fc9c1d92ed36d5bab",
+    "bytes": 3620,
+    "records": 67,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/scientific_analysis_v1/R2_RUN_METADATA.json",
+    "sha256": "e7df41486d420db146203509b8d32aff7b3590b8a24baf5eb9e2041b861eb542",
+    "bytes": 1042,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/scientific_analysis_v1/R2_SHUFFLE_DISTRIBUTION.csv",
+    "sha256": "3cc6a3b667e16bc6fbc5f2288c863e7e10786cb0a3be69d7e083b4398b37f70a",
+    "bytes": 217295,
+    "records": 2000,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/scientific_analysis_v1/R3_LISTEN_BEHAVIOR_REPORT.md",
+    "sha256": "54adc57f4a6f8d4d71f991bb5500147c136806a66780cc1e7637a43c5d1be108",
+    "bytes": 8595,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/scientific_analysis_v1/R3_MATCHED_CONDITION_TRANSITIONS.csv",
+    "sha256": "ffb1b6f474a0acddcd36d0fb6ca37b5b6a374eec6cc3cc8ec8719a91f198a8eb",
+    "bytes": 12569,
+    "records": 80,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/scientific_analysis_v1/R3_OTHER_ASSOCIATIONS.csv",
+    "sha256": "2f4a7339c763cc2d01d53e02ac3719d3723642f74631f29cbf8172adcfdc0b6e",
+    "bytes": 31858,
+    "records": 155,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/scientific_analysis_v1/R3_OUTCOME_ACCOUNTING.csv",
+    "sha256": "e58ccc254a47084f37344e580ad743dc0d4fcf0f3bd2e32d3b42f59f3040587c",
+    "bytes": 3438,
+    "records": 7,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/scientific_analysis_v1/R3_RUN_METADATA.json",
+    "sha256": "b1107e3e4d13649db63c64970bbd28bf7f850733507c4e2bd2957ea35a006ccb",
+    "bytes": 1318,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/scientific_analysis_v1/SCIENTIFIC_ANALYSIS_V1_FINAL_REPORT.md",
+    "sha256": "593da3df9abcd966b2af9d4eab9fcac47d64cfaf696399817e35e65e1ef4508c",
+    "bytes": 10627,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/results/post_audit/scientific_analysis_v1/STAGE_A_ACCEPTANCE_V1.md",
+    "sha256": "fe41c025311e7c8b5cfe555f5ab69f92b4de6eb60242937df1915f17fe9c4999",
+    "bytes": 1821,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/protocols/emotiontalk/CROSS_REGIME_TRANSFER_SPEC_V1.json",
+    "sha256": "73495ba69b346db05323179683e16cf7abdf88be86d26e9224d79050c50e0714",
+    "bytes": 1005,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/protocols/emotiontalk/CROSS_REGIME_TRANSFER_SPEC_V1.md",
+    "sha256": "17a1e2fb8d8265289ec82704756c9844e98a47157def74b8b1fd3252c98866b9",
+    "bytes": 708,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/protocols/emotiontalk/EMOTIONTALK_CANDIDATE_ORDER_AUDIT_V1.csv",
+    "sha256": "6f886a747835d5326180f89ae3f0b0650eb20a8134653d16ce3d6eab84528d4f",
+    "bytes": 273392,
+    "records": 5047,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/protocols/emotiontalk/EMOTIONTALK_CANDIDATE_SEQUENCES_V1.json",
+    "sha256": "b249c68e92fa16ec7c41f617baffd1d293db8807b01b9c0f5d8490d41b790750",
+    "bytes": 6476,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/protocols/emotiontalk/EMOTIONTALK_COMPOSITIONALITY_SPEC_V1_1.json",
+    "sha256": "91de88c803eb91280f4d25852ffb4fe7e70f89ea1c5abdbacef863f2919ef2dc",
+    "bytes": 2063,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/protocols/emotiontalk/EMOTIONTALK_COMPOSITIONALITY_SPEC_V1_1.md",
+    "sha256": "6afd7395345eda4c3be8dc9e3b295561d9a2ef9e628cb7b85ef330845cf4eceb",
+    "bytes": 1774,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/protocols/emotiontalk/EMOTIONTALK_CONTROLLED_PROTOCOL_V1.json",
+    "sha256": "3c66b0a379fac6ce7aef8e27d589b9901825ec3c8db54dcda3e3b16772e60837",
+    "bytes": 11241,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/protocols/emotiontalk/EMOTIONTALK_CONTROLLED_PROTOCOL_V1.md",
+    "sha256": "949c51d55144e7b0df43dc59b0e696512d294ba7c06db3879f758a978eeae2d3",
+    "bytes": 3945,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/protocols/emotiontalk/EMOTIONTALK_MEASUREMENT_SPEC_V1_2.json",
+    "sha256": "e65eb6aa3fc1f7aafef4c7390dcf78443fa9dc8f7791e76af311e7734f117c18",
+    "bytes": 8005,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/protocols/emotiontalk/EMOTIONTALK_MEASUREMENT_SPEC_V1_2.md",
+    "sha256": "03ade2a4a6763f0736cb3a54161c3cc1c27ecddacdb06be2af199e7659afecc6",
+    "bytes": 4699,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/protocols/emotiontalk/EMOTIONTALK_MEDIA_FREEZE_V1.json",
+    "sha256": "02e8127e80e87a529ac713a006d04971b63d13b943e103efcf1d24f305725883",
+    "bytes": 4556,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/protocols/emotiontalk/EMOTIONTALK_MEDIA_FREEZE_V1_PROVENANCE.json",
+    "sha256": "2d0ad33483ba955c9c13d4c699c2ee1e387b07411f09ba2b767279c840a7f6ad",
+    "bytes": 507699,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/protocols/emotiontalk/EMOTIONTALK_PHASE1_COMPETENCE_FULL_V1_2.json",
+    "sha256": "4890dc0b1c96cb7cc638ce8ed3483548d0aaf02c2de3b929e03b06f8a6be7b85",
+    "bytes": 50552,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/protocols/emotiontalk/EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2.json",
+    "sha256": "5823abd732a60d5f0f9ed90ad6ef2e53463e4d159758ca12e7cdf94ec0e60d7a",
+    "bytes": 7240,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/protocols/emotiontalk/EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2.md",
+    "sha256": "a7ed5050fa7c48c9921c580d088706bb52cf119f8daed8688504bc98ffcab5ab",
+    "bytes": 1728,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/protocols/emotiontalk/EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2_PROVENANCE.json",
+    "sha256": "fdd8b75a8803ad52f6a72b15e4799066d27afe29a6109fa8524b58962d478ed1",
+    "bytes": 13838,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/protocols/emotiontalk/EMOTIONTALK_PHASE1_MEASUREMENT_GATE_V1_2_SHA256SUMS.txt",
+    "sha256": "e8e550a9587fd891fd94cac6cfef5210befa4e203accbe1d01352b5472f469fe",
+    "bytes": 8134,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/protocols/emotiontalk/EMOTIONTALK_PHASE3_COMPOSITION_RULE_FREEZE_V1.json",
+    "sha256": "fe1623e42402d32f2ebebda8c5d8b1feaad69a852a0391e7ad2c2030dfd4d3b6",
+    "bytes": 2696,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/protocols/emotiontalk/EMOTIONTALK_PHASE3_FULL_V1_FREEZE.json",
+    "sha256": "e2e9e0dbf54d91c1471bee473439a7e6970bc3890598562c39438f4cc1ccf783",
+    "bytes": 1216,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/protocols/emotiontalk/EMOTIONTALK_POPULATION_TUPLE_SUPPORT_V1_2.csv",
+    "sha256": "c78c0ac57866a663d05895a83649de354826d8bf21140b13101a167d81362662",
+    "bytes": 16249,
+    "records": 316,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/protocols/emotiontalk/EMOTIONTALK_POPULATION_WEIGHTING_SPEC_V1.json",
+    "sha256": "423c872dd9052f0d099db45d8564e96a565d0bb3dcd7bd2e1a0b9ee6fd105387",
+    "bytes": 84240,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/protocols/emotiontalk/EMOTIONTALK_PREAUDIT_STATIC_V1_2.json",
+    "sha256": "9654727cd6164f52e5d1e4efacf3dc46c5337cf175a4c50d5626ed4f50096765",
+    "bytes": 4365,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/protocols/emotiontalk/EMOTIONTALK_V1_1_V1_2_GATE_REPEAT_COMPARISON_V1_2.csv",
+    "sha256": "5d5f01c22993ce04a0ba093f27ed62b4ba1982d57f23b653cdb83582b7dfd1a9",
+    "bytes": 1795,
+    "records": 18,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/docs/SCIENTIFIC_CLAIM_STATUS_V1.md",
+    "sha256": "e62da9dfb5913395ea84a7ac50cda739193cad4fb53189a1244cd8e9ea7924fb",
+    "bytes": 2654,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/evidence/provenance/CROSS_REGIME_ZERO_REFIT_SPEC_V1.json",
+    "sha256": "aa603f9258bde8c0ef7dd38fd69178876e2d8aa5ea748939a2a0589545847178",
+    "bytes": 6296,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/analyses/post_audit/replay.py",
+    "sha256": "0f5088d84a129171b5b04bba1fe8925ce533a6d265887640ab3ae9aecba84f39",
+    "bytes": 39595,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/src/cross_regime/zero_refit/metrics.py",
+    "sha256": "374618ae7d3045adf712f4c798f4fd372f335e89a767115aaaff2fe2eba1ef1c",
+    "bytes": 7224,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/src/cross_regime/zero_refit/evaluate.py",
+    "sha256": "bccd20d5e6bbac0969aa333096f9c33b96279463614419ab73beb2e4a5f54c23",
+    "bytes": 21957,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/RELEASE_MANIFEST_V1.json",
+    "sha256": "c249cc1e8825fbb86ef4c5c598d8c6664ca68080d59b2992c7f02feb3deea9c8",
+    "bytes": 45996,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/POST_AUDIT_REPAIR_MANIFEST_V1.json",
+    "sha256": "570f7e84f34f4eb32f8131ffbc76d293d12c4db3676010dacd190c33c273fad3",
+    "bytes": 64103,
+    "records": null,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/manifests/mcr/frozen_joint_outcomes.csv",
+    "sha256": "789261e4fce394e6466bb67c0e55a3e0dce49c3d8b37ed76308c075660329266",
+    "bytes": 1895410,
+    "records": 1818,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/manifests/listen/frozen_joint_outcomes.csv",
+    "sha256": "cc145efa4b187deab567b547ab8b71b6456da6484820d96ec49810742b77aced",
+    "bytes": 1045827,
+    "records": 1149,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/manifests/camer/frozen_joint_outcomes.csv",
+    "sha256": "57ed776d5009ba50b3e07bcb7b78c4323a66b08e960e65bee20ecbfef82abd13",
+    "bytes": 3192677,
+    "records": 3000,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-eri1/repo/evidence/b3/B3_MEASUREMENTS_V1.jsonl",
+    "sha256": "0ad7785530a52923dabdf3ec6b3c5afe27e68d87be61e1b5f4465fde79fad450",
+    "bytes": 13674896,
+    "records": 6354,
+    "git_blob_check": "MATCH_BINDING_COMMIT"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/outputs/B3_MEASUREMENTS_V1.jsonl",
+    "sha256": "0ad7785530a52923dabdf3ec6b3c5afe27e68d87be61e1b5f4465fde79fad450",
+    "bytes": 13674896,
+    "records": 6354,
+    "git_blob_check": "NOT_GIT_ASSET"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-recovered-science-v1/03_LISTEN_MATCHED_SOURCE_LABEL_DIAGNOSTICS.csv",
+    "sha256": "9f911d474023821af25a9fb651192ac1aa14a1b7c0813df5dc9c4100e2b4aea7",
+    "bytes": 154418,
+    "records": 381,
+    "git_blob_check": "NOT_GIT_ASSET"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-recovered-science-v1/intermediate/CAMER_ITEM_ELIGIBILITY_IDENTITY.csv",
+    "sha256": "28b5d70b996633adf00a476be926f31c976112f46d975a52595dd3ab0abe79dc",
+    "bytes": 703447,
+    "records": 1500,
+    "git_blob_check": "NOT_GIT_ASSET"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-recovered-science-v1/intermediate/MCR_NATIVE_CONTROLLED_PER_ITEM_JOIN.csv",
+    "sha256": "77f7525fec4a43ab028a082b46223df3ce38ccc389837ef6e423e95679c35d16",
+    "bytes": 281692,
+    "records": 909,
+    "git_blob_check": "NOT_GIT_ASSET"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-recovered-science-v1/numeric/MCR_RESULTS.json",
+    "sha256": "0d2d729391f49359047223f14c534c8417525e7f5d2a83dd0e1ae4367a1925bd",
+    "bytes": 27149,
+    "records": null,
+    "git_blob_check": "NOT_GIT_ASSET"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-recovered-science-v1/numeric/CAMER_RESULTS.json",
+    "sha256": "675de252be8f61e24af33b9d3fb52eddebd4badd52a491844a61e33e7477f49a",
+    "bytes": 35910,
+    "records": null,
+    "git_blob_check": "NOT_GIT_ASSET"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict-recovered-science-v1/numeric/LISTEN_RESULTS.json",
+    "sha256": "f15872542487e6a96e4c6dbf2954034cc9fc796df2220c50c6da254127df59b6",
+    "bytes": 18501,
+    "records": null,
+    "git_blob_check": "NOT_GIT_ASSET"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/docs/PROJECT_STATE.md",
+    "sha256": "fe0d5df5a1d03f3661b9cbb5b5ed7f22b7b3c81628c2dede809e28692429de38",
+    "bytes": 52878,
+    "records": null,
+    "git_blob_check": "NOT_GIT_ASSET"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/docs/FILE_MAP.md",
+    "sha256": "0f23c77b857b125776ed2b62b62474acb1fb9799fb7dd715a15b8faab9a10b6d",
+    "bytes": 49359,
+    "records": null,
+    "git_blob_check": "NOT_GIT_ASSET"
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/docs/DECISIONS.md",
+    "sha256": "269628105fa1228eea57f7460620831e6093a4b9f3db0f91ad8e5e10fa319792",
+    "bytes": 52023,
+    "records": null,
+    "git_blob_check": "NOT_GIT_ASSET"
+  }
+]

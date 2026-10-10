@@ -1,0 +1,12 @@
+{
+  "bounded_initial_drift": [
+    {
+      "path": "finalize_run.log",
+      "previous_sha256": "712f968b1c899d1f506005b8ee54c6e9db1bf7ea4da1e17fcac1faa5e23c29b5",
+      "final_sha256": "06e0ddc7b7002c49781a0fde661cd377e433d4de7f3624296516f6b4d3bde73b",
+      "reason": "finalization log appended after initial checksum creation"
+    }
+  ],
+  "numerical_or_scientific_drift": false,
+  "remedy": "regenerate manifest after writer completion"
+}

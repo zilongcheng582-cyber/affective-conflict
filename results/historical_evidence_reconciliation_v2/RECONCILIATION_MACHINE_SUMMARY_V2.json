@@ -1,0 +1,272 @@
+{
+  "label": "RETROSPECTIVE_EVIDENCE_RECOVERY",
+  "LISTEN": {
+    "V3": {
+      "by_condition": {
+        "3A": {
+          "rows": 387,
+          "correct": 108,
+          "SIDE_A": 69,
+          "raw_present": 387,
+          "OTHER": 210,
+          "SIDE_T": 108
+        },
+        "3B": {
+          "rows": 381,
+          "correct": 136,
+          "OTHER": 219,
+          "raw_present": 381,
+          "SIDE_A": 136,
+          "SIDE_T": 26
+        },
+        "3C": {
+          "rows": 381,
+          "correct": 110,
+          "OTHER": 213,
+          "raw_present": 381,
+          "SIDE_A": 110,
+          "SIDE_T": 58
+        }
+      },
+      "raw_path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_LISTEN_NATIVE_V3/listen_native_raw_outputs_local_v3.jsonl",
+      "raw_sha256": "effdf7f070d99e38d127a3d9a9ecc2909dbe388d8985289ed4e6621cbc3f2993",
+      "manifest_path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_LISTEN_NATIVE_V3/listen_native_manifest_local_v3.csv",
+      "manifest_sha256": "645b28640fa8fc060ff5b965c969c85ed3004c08fa8121b06e8dc4bfc4e3b88b",
+      "model_revision_values": [
+        "/root/autodl-tmp/affective-conflict/models/Qwen2.5-Omni-7B"
+      ]
+    },
+    "V4": {
+      "by_condition": {
+        "3A": {
+          "rows": 387,
+          "correct": 107,
+          "SIDE_A": 75,
+          "raw_present": 387,
+          "SIDE_T": 107,
+          "OTHER": 205
+        },
+        "3B": {
+          "rows": 381,
+          "correct": 139,
+          "OTHER": 212,
+          "raw_present": 381,
+          "SIDE_A": 139,
+          "SIDE_T": 30
+        },
+        "3C": {
+          "rows": 381,
+          "correct": 102,
+          "OTHER": 214,
+          "raw_present": 381,
+          "SIDE_A": 102,
+          "SIDE_T": 65
+        }
+      },
+      "raw_path": "/root/autodl-tmp/affective-conflict/results/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/listen_native_raw_outputs_source_aligned_v4.jsonl",
+      "raw_sha256": "efb604ffcdd4f746cda961da0fa17f8fae995e34aa02779bf2334917c19e74ea",
+      "manifest_path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/listen_native_manifest_source_aligned_v4.csv",
+      "manifest_sha256": "567c9cc2f1758d703031c4eb772bd0e35fc003561f769866f1b6e9559251aa28",
+      "model_revision_values": [
+        "/root/autodl-tmp/affective-conflict/models/Qwen2.5-Omni-7B"
+      ]
+    },
+    "strict_v3_v4_join": {
+      "rows": 1149,
+      "identity_matched": 1149,
+      "candidate_sequence_equal": 0,
+      "prompt_hash_equal": 0,
+      "pooling_allowed": false
+    },
+    "gating": {
+      "V3": {
+        "joint_rows": 381,
+        "audio_unique": 381,
+        "text_full_content_unique": 244,
+        "text_actual_input_unique": 244,
+        "dual_correct_full_content": 22,
+        "dual_correct_actual_input": 22
+      },
+      "V4": {
+        "joint_rows": 381,
+        "audio_unique": 381,
+        "text_full_content_unique": 244,
+        "text_actual_input_unique": 244,
+        "dual_correct_full_content": 22,
+        "dual_correct_actual_input": 22
+      }
+    }
+  },
+  "CA-MER": {
+    "scientific_index_path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/scientific_equivalence_v1/CAMER_CONTROLLED_AVAILABLE_SCIENTIFIC_OUTCOMES_V1.csv",
+    "unique_keys": 6000,
+    "arms": {
+      "A_ONLY": {
+        "planned_keys": 1500,
+        "generation_success": 1500,
+        "raw_saved": 1500,
+        "scientific_available": 1499,
+        "parser_OK": 1499,
+        "accounting_SCIENTIFIC_AVAILABLE": 1499,
+        "parser_PARSE_FAIL": 1,
+        "accounting_PARSE_UNSCORABLE": 1
+      },
+      "V_ONLY": {
+        "planned_keys": 1500,
+        "generation_success": 1442,
+        "raw_saved": 1442,
+        "scientific_available": 1442,
+        "parser_OK": 1442,
+        "accounting_SCIENTIFIC_AVAILABLE": 1442,
+        "parser_": 58,
+        "accounting_OOM_SKIPPED": 58
+      },
+      "A_THEN_V": {
+        "planned_keys": 1500,
+        "generation_success": 1442,
+        "raw_saved": 1442,
+        "scientific_available": 1442,
+        "parser_OK": 1442,
+        "accounting_SCIENTIFIC_AVAILABLE": 1442,
+        "parser_": 58,
+        "accounting_OOM_SKIPPED": 58
+      },
+      "V_THEN_A": {
+        "planned_keys": 1500,
+        "generation_success": 1442,
+        "raw_saved": 1442,
+        "scientific_available": 1442,
+        "parser_OK": 1442,
+        "accounting_SCIENTIFIC_AVAILABLE": 1442,
+        "parser_": 58,
+        "accounting_OOM_SKIPPED": 58
+      }
+    },
+    "identity_mismatches": {
+      "candidate_sequence": 0
+    },
+    "label_readable_A": 702,
+    "label_readable_V": 639,
+    "dual_readable": 316,
+    "oom_by_arm": {
+      "V_ONLY": 58,
+      "A_THEN_V": 58,
+      "V_THEN_A": 58
+    },
+    "same_58_video_joint_oom": true,
+    "generation_score_fields": [],
+    "corrected_B3": {
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/outputs/B3_MEASUREMENTS_V1.jsonl",
+      "sha256": "0ad7785530a52923dabdf3ec6b3c5afe27e68d87be61e1b5f4465fde79fad450",
+      "all_dataset_rows": 6354,
+      "arms": {
+        "A": {
+          "rows": 1500,
+          "seven_candidates": 1500,
+          "sixteen_candidates": 0
+        },
+        "V": {
+          "rows": 1500,
+          "seven_candidates": 1500,
+          "sixteen_candidates": 0
+        }
+      },
+      "errors": []
+    },
+    "sixteen_class_entropy_cpu_recoverable": false,
+    "reason": "No complete 16-candidate numeric scores/probabilities in recovered generation artifacts; seven-class B3 cannot identify missing candidate mass."
+  },
+  "MCR": {
+    "native_items": 1000,
+    "native_records": 4000,
+    "controlled_items": 909,
+    "controlled_records": 3636,
+    "matched_controlled_items": 909,
+    "native_not_controlled": 91,
+    "controlled_not_native": 0,
+    "distinct_native_audio_hashes": 943,
+    "duplicate_hash_groups": 56,
+    "identity_errors": [],
+    "native_conditions": {
+      "neutral": {
+        "rows": 1000,
+        "generation_success": 1000,
+        "parse_PARSE_OK": 1000,
+        "raw_saved": 1000
+      },
+      "faithful": {
+        "rows": 1000,
+        "generation_success": 1000,
+        "parse_PARSE_OK": 1000,
+        "raw_saved": 1000
+      },
+      "adversarial": {
+        "rows": 1000,
+        "generation_success": 1000,
+        "parse_PARSE_OK": 1000,
+        "raw_saved": 1000
+      },
+      "irrelevant": {
+        "rows": 1000,
+        "generation_success": 1000,
+        "parse_PARSE_OK": 995,
+        "raw_saved": 1000,
+        "parse_PARSE_FAIL_NO_LABEL": 5
+      }
+    },
+    "native_four_text_paired_analysis_ready": true,
+    "native_vs_controlled_pooling_allowed": false,
+    "historic_weight_byte_identity": "NOT_PROVEN_BY_SHARED_MODEL_PATH",
+    "source_text_examples": {
+      "faithful": "The following text provides descriptions derived from audio content. This information may be accurate, inaccurate, or irrelevant. Answer the question with discretion regarding how you use these details.\nDescription: This audio expresses happy emotion.\nClassify this emotion into one of the following categories: sad, happy, fearful, angry, surprised, disgusted, or neutral.",
+      "adversarial": "The following text provides descriptions derived from audio content. This information may be accurate, inaccurate, or irrelevant. Answer the question with discretion regarding how you use these details.\nDescription: This audio expresses angry emotion.\nClassify this emotion into one of the following categories: sad, happy, fearful, angry, surprised, disgusted, or neutral.",
+      "neutral": "Classify this emotion into one of the following categories: sad, happy, fearful, angry, surprised, disgusted, or neutral.",
+      "irrelevant": "The following text provides descriptions derived from audio content. This information may be accurate, inaccurate, or irrelevant. Answer the question with discretion regarding how you use these details.\nDescription: Women speaking followed by phone ringing\nClassify this emotion into one of the following categories: sad, happy, fearful, angry, surprised, disgusted, or neutral."
+    },
+    "controlled_text_example": "This audio expresses angry emotion.",
+    "exact_native_adversarial_text_equals_controlled": 0,
+    "pool_scope": {
+      "native_distinct_audio_paths": 947,
+      "controlled_distinct_audio_paths": 909,
+      "controlled_distinct_audio_hashes": 905,
+      "controlled_byte_conflicting_gt_groups": 1,
+      "controlled_byte_conflicting_gt_items": 3,
+      "frozen_exclusion_reason_counts": {
+        "CONFLICTING_GT_AUDIO_GROUP_EXCLUDED": 76,
+        "SAME_GT_DUPLICATE_REPRESENTATIVE_REMOVED": 15
+      },
+      "frozen_pool_hash_checks": {
+        "mcr_ser_native_pool_1000.csv": {
+          "rows": 1000,
+          "stored_distinct_audio_hashes": 943,
+          "stored_hash_matches_current": 1000
+        },
+        "mcr_ser_arbitration_pool_909.csv": {
+          "rows": 909,
+          "stored_distinct_audio_hashes": 905,
+          "stored_hash_matches_current": 909
+        },
+        "mcr_ser_sensitivity_pool_924.csv": {
+          "rows": 924,
+          "stored_distinct_audio_hashes": 905,
+          "stored_hash_matches_current": 924
+        }
+      }
+    }
+  },
+  "errors": [],
+  "gpu_model_loaded": false,
+  "historical_files_modified": false,
+  "directory_rescan": false,
+  "read_only_validation": {
+    "input_files_rehashed_unchanged": 1091,
+    "recovered_jsonl_verified": 54,
+    "project_docs_unchanged": true,
+    "gpu_inference": false,
+    "old_runners_executed": false,
+    "historical_archives_modified": false,
+    "github_write": false,
+    "frozen_protocol_modified": false,
+    "stop": true
+  }
+}

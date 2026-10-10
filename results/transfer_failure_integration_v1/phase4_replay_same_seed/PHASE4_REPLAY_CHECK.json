@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "CPU_only": true,
+  "files": [
+    {
+      "path": "04_TRANSFER_ROUTE_LEVEL_REPLAY_CHECK.csv",
+      "first_sha256": "6e52affc718a27696ca2b109513fa1c4e4a360586f50c122daefa291b6b18ce9",
+      "replay_sha256": "6e52affc718a27696ca2b109513fa1c4e4a360586f50c122daefa291b6b18ce9",
+      "match": true
+    },
+    {
+      "path": "phase4_numeric/TRANSFER_RESULTS.json",
+      "first_sha256": "53d524b8c77c88c715d6b76e8aa5c87d1311aa56aa02fab5fb6f66edc0d19a3b",
+      "replay_sha256": "53d524b8c77c88c715d6b76e8aa5c87d1311aa56aa02fab5fb6f66edc0d19a3b",
+      "match": true
+    },
+    {
+      "path": "phase4_numeric/TRANSFER_FAILURE_SUBGROUPS.csv",
+      "first_sha256": "da76b13104a2696a638691f1f70b34e4721c4407c918be240364a6376eb991f9",
+      "replay_sha256": "da76b13104a2696a638691f1f70b34e4721c4407c918be240364a6376eb991f9",
+      "match": true
+    },
+    {
+      "path": "phase4_numeric/TRANSFER_RECOVERED_ROW_LINKAGE.csv",
+      "first_sha256": "e60977ce8e199d9380e5ed389002e2ea26b48be434d62118fb60e8ed837a11e9",
+      "replay_sha256": "e60977ce8e199d9380e5ed389002e2ea26b48be434d62118fb60e8ed837a11e9",
+      "match": true
+    },
+    {
+      "path": "phase4_numeric/TRANSFER_FROZEN_LOGIT_DECOMPOSITION.csv",
+      "first_sha256": "f1a68298b78b7c5c48a168f7c01da77e4b567b56dbc0d11c8384db6e02348e88",
+      "replay_sha256": "f1a68298b78b7c5c48a168f7c01da77e4b567b56dbc0d11c8384db6e02348e88",
+      "match": true
+    },
+    {
+      "path": "phase4_numeric/LISTEN_NATIVE_LABEL_SUPPORT_AND_OTHER.csv",
+      "first_sha256": "a25a5dbe23af355dac97368ddf16bb5dfed8b14daed85f4767496aa66f1bb029",
+      "replay_sha256": "a25a5dbe23af355dac97368ddf16bb5dfed8b14daed85f4767496aa66f1bb029",
+      "match": true
+    }
+  ]
+}

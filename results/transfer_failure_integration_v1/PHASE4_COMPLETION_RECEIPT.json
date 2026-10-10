@@ -1,0 +1,39 @@
+{
+  "status": "COMPLETE",
+  "all_claim_categories_present": [
+    "ERI1 Causal Intervention",
+    "Frozen Transfer",
+    "R1 Source Prediction",
+    "R2 Compositionality",
+    "Recovered Native Experiments",
+    "Transfer Failure Explanation"
+  ],
+  "claim_count": 25,
+  "GPU": false,
+  "frozen_results_modified": false,
+  "historical_archive_modified": false,
+  "navigation_only_history_changes": [
+    {
+      "path": "/root/autodl-tmp/affective-conflict/docs/PROJECT_STATE.md",
+      "backup_path": "/root/autodl-tmp/affective-conflict-recovered-science-v1/phase4_before_update/docs/PROJECT_STATE.md",
+      "before_sha256": "fe0d5df5a1d03f3661b9cbb5b5ed7f22b7b3c81628c2dede809e28692429de38",
+      "after_sha256": "5bb4dc18227dd2d2b7cf398fb6de902deb4632327f04562b200ce322e0c2c250"
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/docs/FILE_MAP.md",
+      "backup_path": "/root/autodl-tmp/affective-conflict-recovered-science-v1/phase4_before_update/docs/FILE_MAP.md",
+      "before_sha256": "0f23c77b857b125776ed2b62b62474acb1fb9799fb7dd715a15b8faab9a10b6d",
+      "after_sha256": "9668ec8ecdd1f76e4f3b13a54201ddd61bba234be180d8b43315c73e92d4023a"
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/docs/DECISIONS.md",
+      "backup_path": "/root/autodl-tmp/affective-conflict-recovered-science-v1/phase4_before_update/docs/DECISIONS.md",
+      "before_sha256": "269628105fa1228eea57f7460620831e6093a4b9f3db0f91ad8e5e10fa319792",
+      "after_sha256": "86c2ec176835520434a5cb662c706de25d3b3f586634139266eb2b8a7c6d7a55"
+    }
+  ],
+  "target_fit": false,
+  "pilot_pooled": false,
+  "source_commit": "34aa1b0340d906e5d625db7cb4a3def9199fa06e",
+  "NEXT_STEP": "CPU_DESIGN_FREEZE_FOR_TRANSFER_MEASUREMENT_VALIDATION"
+}

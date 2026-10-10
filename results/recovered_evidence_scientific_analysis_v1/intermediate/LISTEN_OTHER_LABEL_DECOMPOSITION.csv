@@ -1,0 +1,20 @@
+population,OTHER_selected_label,count,population_n,other_n,interpretation
+ALL_3C_CONFLICT,anger,2,378,211,valid offered native emotion label outside both source labels
+ALL_3C_CONFLICT,disgust,6,378,211,valid offered native emotion label outside both source labels
+ALL_3C_CONFLICT,excitement,11,378,211,valid offered native emotion label outside both source labels
+ALL_3C_CONFLICT,frustration,25,378,211,valid offered native emotion label outside both source labels
+ALL_3C_CONFLICT,happiness,9,378,211,valid offered native emotion label outside both source labels
+ALL_3C_CONFLICT,neutral,20,378,211,valid offered native emotion label outside both source labels
+ALL_3C_CONFLICT,ridicule,124,378,211,valid offered native emotion label outside both source labels
+ALL_3C_CONFLICT,sadness,2,378,211,valid offered native emotion label outside both source labels
+ALL_3C_CONFLICT,surprise,12,378,211,valid offered native emotion label outside both source labels
+COMMON_CONFLICT,anger,2,242,129,valid offered native emotion label outside both source labels
+COMMON_CONFLICT,disgust,4,242,129,valid offered native emotion label outside both source labels
+COMMON_CONFLICT,excitement,7,242,129,valid offered native emotion label outside both source labels
+COMMON_CONFLICT,frustration,15,242,129,valid offered native emotion label outside both source labels
+COMMON_CONFLICT,happiness,5,242,129,valid offered native emotion label outside both source labels
+COMMON_CONFLICT,neutral,12,242,129,valid offered native emotion label outside both source labels
+COMMON_CONFLICT,ridicule,75,242,129,valid offered native emotion label outside both source labels
+COMMON_CONFLICT,sadness,2,242,129,valid offered native emotion label outside both source labels
+COMMON_CONFLICT,surprise,7,242,129,valid offered native emotion label outside both source labels
+DUAL_MATCH_CONFLICT,happiness,1,22,1,valid offered native emotion label outside both source labels

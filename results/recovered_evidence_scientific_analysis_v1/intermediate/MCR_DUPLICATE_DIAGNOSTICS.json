@@ -1,0 +1,699 @@
+[
+  {
+    "audio_sha256": "01054e78a45066af8d233de1a47b8aeb5acc79506eeb3a825a2e6771af66e9cf",
+    "items": [
+      "mcr_ser_000133",
+      "mcr_ser_000432"
+    ],
+    "labels": [
+      "fearful",
+      "happy"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "0378c06b4d664fb4cf0bc96ae377ac137cf141a56dcee616c908209947e70016",
+    "items": [
+      "mcr_ser_000074",
+      "mcr_ser_000144"
+    ],
+    "labels": [
+      "angry",
+      "neutral"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "0c24616d5ae798d225f44391afe9763e04bff868341ef7ba004a712fc08b325a",
+    "items": [
+      "mcr_ser_000202",
+      "mcr_ser_000423"
+    ],
+    "labels": [
+      "happy",
+      "neutral"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "0fd5e93ef92e4930609affb453dadfc86f6eea1c2815d2b00dbff409565b60da",
+    "items": [
+      "mcr_ser_000905",
+      "mcr_ser_000916"
+    ],
+    "labels": [
+      "happy",
+      "surprised"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "103df323f7c4d4f4df893583d1b38f2898edad4c51c09af91b4bacff704a238b",
+    "items": [
+      "mcr_ser_000392",
+      "mcr_ser_000450"
+    ],
+    "labels": [
+      "neutral"
+    ],
+    "controlled_items": [
+      "mcr_ser_000392"
+    ]
+  },
+  {
+    "audio_sha256": "15d04c31fd0b60c6cfc0ddeddcdbc565c4806c56f89fb7970a17f51a51df2013",
+    "items": [
+      "mcr_ser_000224",
+      "mcr_ser_000959"
+    ],
+    "labels": [
+      "sad",
+      "surprised"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "179bf8654fad42b9f27fb3b8a3465a84441d5566ba76dfbe750d60a3d6cecb94",
+    "items": [
+      "mcr_ser_000153",
+      "mcr_ser_000415"
+    ],
+    "labels": [
+      "neutral"
+    ],
+    "controlled_items": [
+      "mcr_ser_000153"
+    ]
+  },
+  {
+    "audio_sha256": "1fa9c0704fc450c19ea5e7f842b70bacc6238f118a95621129b91d63219f9457",
+    "items": [
+      "mcr_ser_000313",
+      "mcr_ser_000591"
+    ],
+    "labels": [
+      "happy",
+      "neutral"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "24db669ef33fe9ac306578f181bdd917332d56b61d707cee3c2dbabaa9f4b444",
+    "items": [
+      "mcr_ser_000443",
+      "mcr_ser_000587"
+    ],
+    "labels": [
+      "surprised"
+    ],
+    "controlled_items": [
+      "mcr_ser_000443"
+    ]
+  },
+  {
+    "audio_sha256": "37dacca21b85f3f36ef449e8617b6b868db26dad0a870aef32f0ab2c87a9249d",
+    "items": [
+      "mcr_ser_000077",
+      "mcr_ser_000542"
+    ],
+    "labels": [
+      "fearful",
+      "neutral"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "3b799b48f36d4d52e981254418e0522a410bd58830d9153ffd93873104654129",
+    "items": [
+      "mcr_ser_000199",
+      "mcr_ser_000204"
+    ],
+    "labels": [
+      "happy"
+    ],
+    "controlled_items": [
+      "mcr_ser_000199",
+      "mcr_ser_000204"
+    ]
+  },
+  {
+    "audio_sha256": "3c1f6f45fa7f0921bfa36ebcffe4acffb0cabefcfc0d1d7894e8c39adf73cec6",
+    "items": [
+      "mcr_ser_000252",
+      "mcr_ser_000315"
+    ],
+    "labels": [
+      "disgusted",
+      "neutral"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "44560e712f37b74542121fb257384ba87c3c32fceb2956668230ce13e74993e3",
+    "items": [
+      "mcr_ser_000673",
+      "mcr_ser_000920"
+    ],
+    "labels": [
+      "neutral",
+      "surprised"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "45db3e6a4ae171bdf4cef4d1efdd13feabbc0e0ddd4440d7c55b46799370dd6e",
+    "items": [
+      "mcr_ser_000026",
+      "mcr_ser_000340"
+    ],
+    "labels": [
+      "neutral",
+      "sad"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "48d9ef0aea1bd1ea115a495ca15fdf85674fa50e7dd1b5456e28484c9042c2e0",
+    "items": [
+      "mcr_ser_000219",
+      "mcr_ser_000382"
+    ],
+    "labels": [
+      "angry",
+      "happy"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "4b989742918f4043d012e00012cd5f643594057b92807bb7740aea1199a75227",
+    "items": [
+      "mcr_ser_000107",
+      "mcr_ser_000629"
+    ],
+    "labels": [
+      "happy",
+      "neutral"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "4f7337489538a3ed53462dd1ae22965b1f713b32cf9b515f214e3054b44f9e53",
+    "items": [
+      "mcr_ser_000653",
+      "mcr_ser_000964"
+    ],
+    "labels": [
+      "angry",
+      "neutral"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "500011f692cfbe2389ebcca85ca24c3960c238b081e6c1c3b8d326c7f213a41a",
+    "items": [
+      "mcr_ser_000467",
+      "mcr_ser_000668"
+    ],
+    "labels": [
+      "angry",
+      "neutral"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "50b33c364f4afd803be055bf6785855fc79cfef90c669a8b04b06c77ae29b779",
+    "items": [
+      "mcr_ser_000274",
+      "mcr_ser_000687"
+    ],
+    "labels": [
+      "sad",
+      "surprised"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "517232de6a33df0384b7903d311e9eb13f9ea4a1fb85ab82b3d7eb1745b04651",
+    "items": [
+      "mcr_ser_000041",
+      "mcr_ser_000496"
+    ],
+    "labels": [
+      "happy",
+      "neutral"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "5f909d0e0f46d32666b980e07bbf203f7bd711395a889b33229237563d8e87bc",
+    "items": [
+      "mcr_ser_000361",
+      "mcr_ser_000583"
+    ],
+    "labels": [
+      "happy",
+      "neutral"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "6152cc41aa4f48ff651a4b53ad4f699899606af00499c3eb045969dc02913b3c",
+    "items": [
+      "mcr_ser_000449",
+      "mcr_ser_000497"
+    ],
+    "labels": [
+      "happy"
+    ],
+    "controlled_items": [
+      "mcr_ser_000449"
+    ]
+  },
+  {
+    "audio_sha256": "69b1ff68ed3fb66939bfba2daa1b168a43fa1a6bfd5ca7161b84d5de9d7d1d3e",
+    "items": [
+      "mcr_ser_000043",
+      "mcr_ser_000312"
+    ],
+    "labels": [
+      "happy",
+      "surprised"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "6eadf09cc7877dc53322ed4f5417d80408f258836bcf8b1f5e41b12031868dc1",
+    "items": [
+      "mcr_ser_000293",
+      "mcr_ser_000584"
+    ],
+    "labels": [
+      "neutral"
+    ],
+    "controlled_items": [
+      "mcr_ser_000293"
+    ]
+  },
+  {
+    "audio_sha256": "70a89fa81616174a0d8f321d915679404815f382d542e067e3c19064924a049f",
+    "items": [
+      "mcr_ser_000236",
+      "mcr_ser_000765"
+    ],
+    "labels": [
+      "angry",
+      "disgusted"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "71377c7e5458ee69db63a618a42e9554564b20719b1a468bc07ceaa419c24df8",
+    "items": [
+      "mcr_ser_000267",
+      "mcr_ser_000763"
+    ],
+    "labels": [
+      "angry",
+      "happy"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "73ee61e24d8b2771416803f3b4a0fbaa95d9d5a5cddfb42c0968a5bf988f0c5f",
+    "items": [
+      "mcr_ser_000332",
+      "mcr_ser_000599"
+    ],
+    "labels": [
+      "neutral"
+    ],
+    "controlled_items": [
+      "mcr_ser_000332"
+    ]
+  },
+  {
+    "audio_sha256": "75bcc2575a59e7890ce521e91e566e4975301f9d290649815378d77816f029ad",
+    "items": [
+      "mcr_ser_000024",
+      "mcr_ser_000911"
+    ],
+    "labels": [
+      "disgusted",
+      "surprised"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "7bbede890a616a782649cfc11045763b83ac83d5960ca365c568f3b1c0ddb5de",
+    "items": [
+      "mcr_ser_000362",
+      "mcr_ser_000498"
+    ],
+    "labels": [
+      "happy",
+      "neutral"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "7f1d05774e980246b0cc0b4f565be700b62785647c72604b3fd31260a72b557f",
+    "items": [
+      "mcr_ser_000439",
+      "mcr_ser_000744"
+    ],
+    "labels": [
+      "happy",
+      "neutral"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "8545910d371388c6a17c08040ff667864c80da2725fc2536b04ecc8241c0db2e",
+    "items": [
+      "mcr_ser_000383",
+      "mcr_ser_000644"
+    ],
+    "labels": [
+      "happy"
+    ],
+    "controlled_items": [
+      "mcr_ser_000383"
+    ]
+  },
+  {
+    "audio_sha256": "8b4a1cf11de05cfec61c32a43b53ce959e7ee34dad6e536a2a67b407741f6721",
+    "items": [
+      "mcr_ser_000638",
+      "mcr_ser_000942"
+    ],
+    "labels": [
+      "happy",
+      "sad"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "8b534c05595cdb89e49d74b7069e3963f0b2a670fca896df81b7c5fb3198d181",
+    "items": [
+      "mcr_ser_000637",
+      "mcr_ser_000682"
+    ],
+    "labels": [
+      "neutral",
+      "surprised"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "8d762f5af99b899149b6382bd19811ba58ddeb42356710728d3d75523df66d10",
+    "items": [
+      "mcr_ser_000317",
+      "mcr_ser_000355"
+    ],
+    "labels": [
+      "angry",
+      "disgusted"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "8f5e2db804175f1ad0432b2d5641ecd8734e138853654622b66c0f676a87639b",
+    "items": [
+      "mcr_ser_000125",
+      "mcr_ser_000757"
+    ],
+    "labels": [
+      "happy",
+      "surprised"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "91c7114e2d10756b776fa963176c662a51b357911fdab1ea21cd812040c88ba7",
+    "items": [
+      "mcr_ser_000566",
+      "mcr_ser_000648"
+    ],
+    "labels": [
+      "happy",
+      "neutral"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "98c7f56b8d834cc9f249501ea64d39ea4ef1580c39ca6a23c7ef8f569d241c72",
+    "items": [
+      "mcr_ser_000464",
+      "mcr_ser_000604"
+    ],
+    "labels": [
+      "happy",
+      "surprised"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "9c3948264903623aa43cac05b938761d3555a71d4838b6172ee1587e06b7d8f0",
+    "items": [
+      "mcr_ser_000217",
+      "mcr_ser_000957"
+    ],
+    "labels": [
+      "neutral",
+      "sad"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "a1915c2f6aa5f4dc60505bbcbc96a9cf36bad536ccd53b2ff223da82a12d3a50",
+    "items": [
+      "mcr_ser_000232",
+      "mcr_ser_000817"
+    ],
+    "labels": [
+      "happy",
+      "neutral"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "a3983546a57a0460ee8db7e71d2f4257b9ccd3e4a7e26624afac08a3e5a30cca",
+    "items": [
+      "mcr_ser_000084",
+      "mcr_ser_000216"
+    ],
+    "labels": [
+      "neutral"
+    ],
+    "controlled_items": [
+      "mcr_ser_000084"
+    ]
+  },
+  {
+    "audio_sha256": "a6d658013f0240f3a7e34cb4c9dd3d7fb4a18a724d88518811186c8c14552838",
+    "items": [
+      "mcr_ser_000206",
+      "mcr_ser_000301"
+    ],
+    "labels": [
+      "happy"
+    ],
+    "controlled_items": [
+      "mcr_ser_000206"
+    ]
+  },
+  {
+    "audio_sha256": "ab2a0ca19d1c220c21ac8dd9825904312638c3e6ce86ec116e5fc8b8aae9d2a1",
+    "items": [
+      "mcr_ser_000172",
+      "mcr_ser_000479"
+    ],
+    "labels": [
+      "neutral"
+    ],
+    "controlled_items": [
+      "mcr_ser_000172"
+    ]
+  },
+  {
+    "audio_sha256": "aedd3c426cdc4bd98f187ecb7f3aa4ce79953590ccd10ed1e551227e8883220a",
+    "items": [
+      "mcr_ser_000138",
+      "mcr_ser_000537"
+    ],
+    "labels": [
+      "angry"
+    ],
+    "controlled_items": [
+      "mcr_ser_000138",
+      "mcr_ser_000537"
+    ]
+  },
+  {
+    "audio_sha256": "af208e91ec063435c9859467b1df937d2f130f251549eb700681237097d88f88",
+    "items": [
+      "mcr_ser_000577",
+      "mcr_ser_000921"
+    ],
+    "labels": [
+      "happy",
+      "neutral"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "b0fbb3643baccc90b8c0e52f87a482d2539443cca2b60d454e13c7b2d95af88f",
+    "items": [
+      "mcr_ser_000256",
+      "mcr_ser_000354"
+    ],
+    "labels": [
+      "fearful",
+      "surprised"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "b534f773e8c2d67ce72223c69e2cfffb5411e9cd35024e78e5aa8afd3a670241",
+    "items": [
+      "mcr_ser_000089",
+      "mcr_ser_000822"
+    ],
+    "labels": [
+      "neutral",
+      "sad"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "cc908e5143a8d9707cc1d78ede567f4bc22a1b1ec39c45f7d78ddb8db024cf42",
+    "items": [
+      "mcr_ser_000807",
+      "mcr_ser_000891"
+    ],
+    "labels": [
+      "neutral"
+    ],
+    "controlled_items": [
+      "mcr_ser_000807"
+    ]
+  },
+  {
+    "audio_sha256": "d6a4044bfffbe760e2f2a0812b8fa45f846fa4f0318b2b8846202de12a1412a7",
+    "items": [
+      "mcr_ser_000692",
+      "mcr_ser_000752",
+      "mcr_ser_000838"
+    ],
+    "labels": [
+      "angry",
+      "happy",
+      "neutral"
+    ],
+    "controlled_items": [
+      "mcr_ser_000692",
+      "mcr_ser_000752",
+      "mcr_ser_000838"
+    ]
+  },
+  {
+    "audio_sha256": "de865ca58c1c12f8d08667ab2a7ad6a05ffb18740adf4aeb74f3e830e400b3d5",
+    "items": [
+      "mcr_ser_000457",
+      "mcr_ser_000835"
+    ],
+    "labels": [
+      "neutral",
+      "surprised"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "e224554643ce8f66ca06d553c6bc86188d0e5d9780f2ae0354df1a17491c5054",
+    "items": [
+      "mcr_ser_000906",
+      "mcr_ser_000931"
+    ],
+    "labels": [
+      "disgusted",
+      "surprised"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "e565917f693b87f3781c04735659b72005ac94ca43b75ff1dabc33c633c6ab81",
+    "items": [
+      "mcr_ser_000264",
+      "mcr_ser_000612"
+    ],
+    "labels": [
+      "neutral"
+    ],
+    "controlled_items": [
+      "mcr_ser_000264"
+    ]
+  },
+  {
+    "audio_sha256": "e7d1d168b505bac9b50190f137fb14f3834cc1f1327d83c7b58c27f5b22ccc64",
+    "items": [
+      "mcr_ser_000028",
+      "mcr_ser_000304"
+    ],
+    "labels": [
+      "neutral"
+    ],
+    "controlled_items": [
+      "mcr_ser_000028"
+    ]
+  },
+  {
+    "audio_sha256": "e822607062be87beb135bc916c47e0e08780336e0b758d1f803b00f64f0d10e8",
+    "items": [
+      "mcr_ser_000052",
+      "mcr_ser_000060"
+    ],
+    "labels": [
+      "angry"
+    ],
+    "controlled_items": [
+      "mcr_ser_000052"
+    ]
+  },
+  {
+    "audio_sha256": "ee9bb7ec772e7b9e16433c2f392a6a01759d87d1581ab3c8383eb580302d8eea",
+    "items": [
+      "mcr_ser_000210",
+      "mcr_ser_000834"
+    ],
+    "labels": [
+      "fearful",
+      "neutral"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "f483da9b428e5406e03a3f0349ca1e51e749648e0629d57320ca4f651ae4267f",
+    "items": [
+      "mcr_ser_000040",
+      "mcr_ser_000294"
+    ],
+    "labels": [
+      "happy",
+      "neutral"
+    ],
+    "controlled_items": []
+  },
+  {
+    "audio_sha256": "f8a6ba2229f3f8052e906fcc208337854252a842c89e633a11b4115314ed2078",
+    "items": [
+      "mcr_ser_000106",
+      "mcr_ser_000973"
+    ],
+    "labels": [
+      "neutral"
+    ],
+    "controlled_items": [
+      "mcr_ser_000106"
+    ]
+  }
+]

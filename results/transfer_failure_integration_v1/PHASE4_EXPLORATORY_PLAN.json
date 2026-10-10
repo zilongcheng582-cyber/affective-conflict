@@ -1,0 +1,25 @@
+{
+  "status": "POST_HOC_EXPLORATORY",
+  "registered_utc": "2026-10-10T09:51:42.221095+00:00",
+  "before_new_phase4_numeric_results": true,
+  "prior_route_metrics_already_known": true,
+  "numeric_tolerance": 1e-12,
+  "probability_sum_tolerance": 1e-06,
+  "threshold": 0.5,
+  "seed": 20261010,
+  "new_subgroup_CI": "2000 item-cluster percentile bootstraps; descriptive, not confirmatory; missing one-class replicates disclosed",
+  "frozen_CIs": "cite exact POST_AUDIT 2000 paired cluster percentile, seed20261008; do not replace",
+  "routes": "MCR primary and margin; LISTEN pooled distinct from3C; CA ontology-supported distinct from fullmargin",
+  "decomposition": "outcome/ontology/observed dual-vs-single-vs-neither/unobservable/source-label/order/probability range and threshold confusion; source-only M0+ORDER read frozen existing diagnostic, target oracle diagnostic only",
+  "strict_join": "source_item_id and both actual evidence SHA and source labels; include failures in denominator; LISTEN dual requires actual-input and full-content support",
+  "native_link": "MCR same909 strict audio identity; native outcomes only interpretation, never transfer replacements",
+  "prohibited": "GPU, model loading, source or target refit, scaler/threshold changes, overwriting frozen inputs, push/merge",
+  "final_categories": [
+    "R1 Source Prediction",
+    "R2 Compositionality",
+    "Frozen Transfer",
+    "ERI1 Causal Intervention",
+    "Recovered Native Experiments",
+    "Transfer Failure Explanation"
+  ]
+}

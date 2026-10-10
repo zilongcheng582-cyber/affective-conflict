@@ -1,0 +1,116 @@
+[
+  {
+    "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/B3_AUTODL_EXECUTION_PACKAGE_V1/B3_SOURCE_MODEL_BINDING_V1.json",
+    "sha256": "642c2ed7b023aea8c6bd762891ff436f0f3eff6a95a58e56bf6f8c4b5d41dd20",
+    "bytes": 2758,
+    "content_read": true
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/B3_AUTODL_EXECUTION_PACKAGE_V1/B3_EVALUATION_PLAN_V1.json",
+    "sha256": "6b52298a6d0bc1c62b837e170226be67b91b3153e47812e5df4ee10683724266",
+    "bytes": 179641,
+    "content_read": true
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/B3_AUTODL_EXECUTION_PACKAGE_V1/B3_CORRECTED_MEASUREMENT_FREEZE_V1.md",
+    "sha256": "9cc035d639333a7478ebfc60ff3d5662ba30d7c8873d776349fa01aebbb89f9b",
+    "bytes": 10924,
+    "content_read": true
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/B3_AUTODL_EXECUTION_PACKAGE_V1/B3_TARGET_SEQUENCE_ASSIGNMENT_V1.json",
+    "sha256": "65069110f64ba2e518c411b784c8b9aa581d2dd8154d7dcb0e23111d436dde35",
+    "bytes": 755744,
+    "content_read": true
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/B3_AUTODL_EXECUTION_PACKAGE_V1/EXECUTION_PACKAGE_MANIFEST.json",
+    "sha256": "5a50bea4c8815cf293134fcf74afd0e87c9922cdddced76cb1ee1b5c7de430f7",
+    "bytes": 8523,
+    "content_read": true
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/B3_AUTODL_EXECUTION_PACKAGE_V1/b3_protocol.py",
+    "sha256": "5f0ad0066088f870a47bbbaa3f20994b3597cc4f98843db5e0601c51d3f8552a",
+    "bytes": 9775,
+    "content_read": true
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/B3_AUTODL_EXECUTION_PACKAGE_V1/run_b3_corrected_measurement.py",
+    "sha256": "151efafa88992aa2200a04fcd3093a016cc4d71ed9191c110034575539600c2a",
+    "bytes": 6053,
+    "content_read": true
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/verify_b3_execution_environment_v1_1.py",
+    "sha256": "ba9149060692e3e17146c87d118b148517baf38ba03d5b210d2626a05e97c963",
+    "bytes": 5127,
+    "content_read": true
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/run_b3_corrected_execution_v1_1.py",
+    "sha256": "5b12e92d89c96c1809f7a044be3c61bdfc46a70a6fd4a2f039a68c50915f233c",
+    "bytes": 504,
+    "content_read": true
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/B3_EXECUTION_TECHNICAL_AMENDMENT_001.json",
+    "sha256": "5e6b984b2a3e2511bd02a6faf6df3d8e2e320522b74d40aa6436b038da49e701",
+    "bytes": 4940,
+    "content_read": true
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/B3_EXECUTION_VERIFIER_TECHNICAL_AMENDMENT_001.json",
+    "sha256": "5e6b984b2a3e2511bd02a6faf6df3d8e2e320522b74d40aa6436b038da49e701",
+    "bytes": 4940,
+    "content_read": true
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/B3_MINIMAL_PREFLIGHT_LOG.txt",
+    "sha256": "2be232fb2efee1315ef2eb27f1e9f169e980b55b1d1ae8a3dd4cddb592843e7b",
+    "bytes": 372,
+    "content_read": false
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/B3_REMOTE_EXECUTION_MINIMAL_PREFLIGHT_V1.json",
+    "sha256": "73bcfb27a323fb08bcdf5f9cce58f8c8707eec3415df805e83ca39eddb86e867",
+    "bytes": 385,
+    "content_read": true
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/b3_execution_amendment_monitor_v1.py",
+    "sha256": "b9d89d6a35e0ddb2e53b4e6ddd16a6036d499b381e65abe1569beaf2c1166be6",
+    "bytes": 3484,
+    "content_read": true
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/B3_MONITOR_LOG.txt",
+    "sha256": "01d0ea1cff5c662b3bba001ced019beab5e9a4435005d4ba60b19b5b4d54fd25",
+    "bytes": 75,
+    "content_read": false
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/B3_MONITOR_PID.txt",
+    "sha256": "5d1b67c4f5ebfbc63dd15285fa79e490cbc37c4c479a44f8e6646e0f7d65b5da",
+    "bytes": 4,
+    "content_read": false
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/b3_shutdown_on_completion_v1.py",
+    "sha256": "7569df3c90f7f961d30786d333b8be299c25e5f7051ab8a3c11b5a2ef7466461",
+    "bytes": 3509,
+    "content_read": true
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/b3_amendment_output_finalize_v1.py",
+    "sha256": "6d104fd4da5d54aac7b76750d492e6268c1bbc0388cd0c978f63f69e5cab95fd",
+    "bytes": 8851,
+    "content_read": true
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/B3_OUTPUT_HASH_RECHECK_V1.json",
+    "sha256": "208f29ebb4f940d1d0ac323930ace0562f0be9bdc004e88d611fc93f5fd412cf",
+    "bytes": 407,
+    "content_read": true
+  }
+]

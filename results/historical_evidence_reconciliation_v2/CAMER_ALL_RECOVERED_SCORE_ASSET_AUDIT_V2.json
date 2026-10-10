@@ -1,0 +1,106 @@
+[
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_NATIVE_V1/technical_gate/CAMER_NATIVE_GATE_PROCESSOR_AUDIT_V1.jsonl",
+    "sha256": "97baee127f8dacbc7b6001bb7ce517d10aebe27a357eec4ab510c8be8c0195e5",
+    "records": 6,
+    "raw_model_outputs": 0,
+    "score_field_names": [],
+    "numeric_16_element_vectors_any_field": 0
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_NATIVE_V1/technical_gate/qwen25_camer_native_gate_v1.jsonl",
+    "sha256": "b26d397f7e26d2ea4298ba1a6b3ea0c2b2e44197d94f448b741bea2c65efcba3",
+    "records": 6,
+    "raw_model_outputs": 6,
+    "score_field_names": [],
+    "numeric_16_element_vectors_any_field": 0
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/technical_gate/qwen25_camer_controlled_gate_v1.jsonl",
+    "sha256": "eae0acdc6e92098095868915103bbd4382d007e1f13fd70976c27d60d64e520e",
+    "records": 2,
+    "raw_model_outputs": 0,
+    "score_field_names": [],
+    "numeric_16_element_vectors_any_field": 0
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/technical_gate/CAMER_CONTROLLED_GATE_PROCESSOR_AUDIT_V1.jsonl",
+    "sha256": "af76e9f569009988d2f205503c903ff33256cca5d960b868bd5b73b0f8ccd712",
+    "records": 1,
+    "raw_model_outputs": 0,
+    "score_field_names": [],
+    "numeric_16_element_vectors_any_field": 0
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/technical_gate_v2/qwen25_camer_controlled_gate_v2.jsonl",
+    "sha256": "4513c54e85a53dfb74a978768abf2d4dccaf9790efe15966fce677d5c5c61795",
+    "records": 2,
+    "raw_model_outputs": 0,
+    "score_field_names": [],
+    "numeric_16_element_vectors_any_field": 0
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/technical_gate_v2/CAMER_CONTROLLED_GATE_V2_PROCESSOR_AUDIT.jsonl",
+    "sha256": "af76e9f569009988d2f205503c903ff33256cca5d960b868bd5b73b0f8ccd712",
+    "records": 1,
+    "raw_model_outputs": 0,
+    "score_field_names": [],
+    "numeric_16_element_vectors_any_field": 0
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/technical_gate_v3/qwen25_camer_controlled_gate_v3.jsonl",
+    "sha256": "e64b420ae8fe3d5f2d6d473e44008829bce98e7b784f1cd4067a0f8b43ea97b9",
+    "records": 1,
+    "raw_model_outputs": 1,
+    "score_field_names": [],
+    "numeric_16_element_vectors_any_field": 0
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/technical_gate_v3/CAMER_CONTROLLED_GATE_V3_PROCESSOR_AUDIT.jsonl",
+    "sha256": "3be520a6507793098ad1c057dac487cf3a19eb89621b6aa91bb596ecd43bcc76",
+    "records": 1,
+    "raw_model_outputs": 0,
+    "score_field_names": [],
+    "numeric_16_element_vectors_any_field": 0
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/technical_gate_v4/qwen25_camer_controlled_gate_v4.jsonl",
+    "sha256": "fd8642368e2ca5b47dfd4a9a503c48e56276f361eded88c3a516a938a3af1b37",
+    "records": 12,
+    "raw_model_outputs": 12,
+    "score_field_names": [],
+    "numeric_16_element_vectors_any_field": 0
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/technical_gate_v4/CAMER_CONTROLLED_GATE_V4_PROCESSOR_AUDIT.jsonl",
+    "sha256": "9f990381a5ea49f674175837fd60b5e88623f1329e78bf35e24c06a09ea8f814",
+    "records": 12,
+    "raw_model_outputs": 0,
+    "score_field_names": [],
+    "numeric_16_element_vectors_any_field": 0
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/full_run_v1/qwen25_camer_controlled_full_v1.jsonl",
+    "sha256": "2d7d6b85eb9dc7efff9689d910cf0bcf2ebc3894131958ca9431e6dc7116c9be",
+    "records": 58,
+    "raw_model_outputs": 57,
+    "score_field_names": [],
+    "numeric_16_element_vectors_any_field": 0
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/full_run_v1/CAMER_CONTROLLED_FULL_RUN_PROCESSOR_AUDIT_V1.jsonl",
+    "sha256": "e5e551c57d0927e839f63a1bba26ec24651baecec9b6419d4ef58f0e32c59a9f",
+    "records": 58,
+    "raw_model_outputs": 0,
+    "score_field_names": [],
+    "numeric_16_element_vectors_any_field": 0
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/resource_sweep_v1/qwen25_camer_controlled_resource_sweep_v1.jsonl",
+    "sha256": "28194bdc880c375809228808e91a18c509573ff22acfaeaa416165446d4b905e",
+    "records": 6000,
+    "raw_model_outputs": 5826,
+    "score_field_names": [],
+    "numeric_16_element_vectors_any_field": 0
+  }
+]

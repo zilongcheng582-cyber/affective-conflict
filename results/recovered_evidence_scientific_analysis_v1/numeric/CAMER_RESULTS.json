@@ -1,0 +1,1387 @@
+{
+  "arm_accounting": [
+    {
+      "arm": "A_ONLY",
+      "planned": 1500,
+      "generation_success": 1500,
+      "scientific_available": 1499,
+      "technical_missing": 0,
+      "parse_failed": 1
+    },
+    {
+      "arm": "V_ONLY",
+      "planned": 1500,
+      "generation_success": 1442,
+      "scientific_available": 1442,
+      "technical_missing": 58,
+      "parse_failed": 0
+    },
+    {
+      "arm": "A_THEN_V",
+      "planned": 1500,
+      "generation_success": 1442,
+      "scientific_available": 1442,
+      "technical_missing": 58,
+      "parse_failed": 0
+    },
+    {
+      "arm": "V_THEN_A",
+      "planned": 1500,
+      "generation_success": 1442,
+      "scientific_available": 1442,
+      "technical_missing": 58,
+      "parse_failed": 0
+    }
+  ],
+  "groups": {
+    "FULL_CONFLICT": {
+      "n_items": 1000,
+      "source_match_A_n": 394,
+      "source_match_V_n": 352,
+      "dual_n": 108,
+      "A_THEN_V": {
+        "n": 1000,
+        "counts": {
+          "SIDE_A": 369,
+          "SIDE_V": 301,
+          "OTHER": 299,
+          "PARSE_FAIL": 0,
+          "TECH_MISSING": 31,
+          "SAME_LABEL_MATCH": 0
+        },
+        "binary_n": 670,
+        "binary_coverage": 0.67,
+        "binary_audio_share": 0.5507462686567164,
+        "binary_audio_wilson95": [
+          0.5128988617418835,
+          0.5880150833855184
+        ],
+        "other_rate": 0.299,
+        "other_wilson95": [
+          0.27143763442230356,
+          0.3281007224888896
+        ],
+        "binary_audio_item_bootstrap95": [
+          0.513039849574454,
+          0.587521771877795
+        ],
+        "zero_binary_bootstrap_draws": 0
+      },
+      "V_THEN_A": {
+        "n": 1000,
+        "counts": {
+          "SIDE_A": 385,
+          "SIDE_V": 295,
+          "OTHER": 289,
+          "PARSE_FAIL": 0,
+          "TECH_MISSING": 31,
+          "SAME_LABEL_MATCH": 0
+        },
+        "binary_n": 680,
+        "binary_coverage": 0.68,
+        "binary_audio_share": 0.5661764705882353,
+        "binary_audio_wilson95": [
+          0.5286576544411461,
+          0.6029517980702706
+        ],
+        "other_rate": 0.289,
+        "other_wilson95": [
+          0.26175445197633085,
+          0.31786044010457337
+        ],
+        "binary_audio_item_bootstrap95": [
+          0.5288184438040345,
+          0.6039780390742892
+        ],
+        "zero_binary_bootstrap_draws": 0
+      }
+    },
+    "FULL_CONSISTENT": {
+      "n_items": 500,
+      "source_match_A_n": 308,
+      "source_match_V_n": 287,
+      "dual_n": 208,
+      "A_THEN_V": {
+        "n": 500,
+        "counts": {
+          "SIDE_A": 0,
+          "SIDE_V": 0,
+          "OTHER": 144,
+          "PARSE_FAIL": 0,
+          "TECH_MISSING": 27,
+          "SAME_LABEL_MATCH": 329
+        },
+        "binary_n": 0,
+        "binary_coverage": 0.0,
+        "binary_audio_share": null,
+        "binary_audio_wilson95": [
+          null,
+          null
+        ],
+        "other_rate": 0.288,
+        "other_wilson95": [
+          0.250043271115854,
+          0.32918944923984417
+        ]
+      },
+      "V_THEN_A": {
+        "n": 500,
+        "counts": {
+          "SIDE_A": 0,
+          "SIDE_V": 0,
+          "OTHER": 132,
+          "PARSE_FAIL": 0,
+          "TECH_MISSING": 27,
+          "SAME_LABEL_MATCH": 341
+        },
+        "binary_n": 0,
+        "binary_coverage": 0.0,
+        "binary_audio_share": null,
+        "binary_audio_wilson95": [
+          null,
+          null
+        ],
+        "other_rate": 0.264,
+        "other_wilson95": [
+          0.22726783141305193,
+          0.3043308572848008
+        ]
+      }
+    },
+    "CONFLICT_DUAL_MATCH": {
+      "n_items": 108,
+      "source_match_A_n": 108,
+      "source_match_V_n": 108,
+      "dual_n": 108,
+      "A_THEN_V": {
+        "n": 108,
+        "counts": {
+          "SIDE_A": 53,
+          "SIDE_V": 49,
+          "OTHER": 6,
+          "PARSE_FAIL": 0,
+          "TECH_MISSING": 0,
+          "SAME_LABEL_MATCH": 0
+        },
+        "binary_n": 102,
+        "binary_coverage": 0.9444444444444444,
+        "binary_audio_share": 0.5196078431372549,
+        "binary_audio_wilson95": [
+          0.42371127251096535,
+          0.6140811015225066
+        ],
+        "other_rate": 0.05555555555555555,
+        "other_wilson95": [
+          0.02570772960918387,
+          0.11593436794331126
+        ],
+        "binary_audio_item_bootstrap95": [
+          0.42424242424242425,
+          0.6176470588235294
+        ],
+        "zero_binary_bootstrap_draws": 0
+      },
+      "V_THEN_A": {
+        "n": 108,
+        "counts": {
+          "SIDE_A": 55,
+          "SIDE_V": 49,
+          "OTHER": 4,
+          "PARSE_FAIL": 0,
+          "TECH_MISSING": 0,
+          "SAME_LABEL_MATCH": 0
+        },
+        "binary_n": 104,
+        "binary_coverage": 0.9629629629629629,
+        "binary_audio_share": 0.5288461538461539,
+        "binary_audio_wilson95": [
+          0.43360208820409,
+          0.6220351413513454
+        ],
+        "other_rate": 0.037037037037037035,
+        "other_wilson95": [
+          0.014495541339902766,
+          0.09138164361061299
+        ],
+        "binary_audio_item_bootstrap95": [
+          0.4326593137254902,
+          0.6226415094339622
+        ],
+        "zero_binary_bootstrap_draws": 0
+      }
+    },
+    "CONFLICT_A_ONLY_MATCH": {
+      "n_items": 273,
+      "source_match_A_n": 273,
+      "source_match_V_n": 0,
+      "dual_n": 0,
+      "A_THEN_V": {
+        "n": 273,
+        "counts": {
+          "SIDE_A": 222,
+          "SIDE_V": 10,
+          "OTHER": 41,
+          "PARSE_FAIL": 0,
+          "TECH_MISSING": 0,
+          "SAME_LABEL_MATCH": 0
+        },
+        "binary_n": 232,
+        "binary_coverage": 0.8498168498168498,
+        "binary_audio_share": 0.9568965517241379,
+        "binary_audio_wilson95": [
+          0.9224877474596159,
+          0.976421210533133
+        ],
+        "other_rate": 0.15018315018315018,
+        "other_wilson95": [
+          0.11267528176308078,
+          0.1973991528478577
+        ],
+        "binary_audio_item_bootstrap95": [
+          0.9282505846761216,
+          0.9823028341974971
+        ],
+        "zero_binary_bootstrap_draws": 0
+      },
+      "V_THEN_A": {
+        "n": 273,
+        "counts": {
+          "SIDE_A": 213,
+          "SIDE_V": 5,
+          "OTHER": 55,
+          "PARSE_FAIL": 0,
+          "TECH_MISSING": 0,
+          "SAME_LABEL_MATCH": 0
+        },
+        "binary_n": 218,
+        "binary_coverage": 0.7985347985347986,
+        "binary_audio_share": 0.9770642201834863,
+        "binary_audio_wilson95": [
+          0.9474421886575263,
+          0.9901643394717282
+        ],
+        "other_rate": 0.20146520146520147,
+        "other_wilson95": [
+          0.15817885812682575,
+          0.25303649706470815
+        ],
+        "binary_audio_item_bootstrap95": [
+          0.9541284403669725,
+          0.9953703703703703
+        ],
+        "zero_binary_bootstrap_draws": 0
+      }
+    },
+    "CONFLICT_V_ONLY_MATCH": {
+      "n_items": 244,
+      "source_match_A_n": 0,
+      "source_match_V_n": 244,
+      "dual_n": 0,
+      "A_THEN_V": {
+        "n": 244,
+        "counts": {
+          "SIDE_A": 11,
+          "SIDE_V": 192,
+          "OTHER": 41,
+          "PARSE_FAIL": 0,
+          "TECH_MISSING": 0,
+          "SAME_LABEL_MATCH": 0
+        },
+        "binary_n": 203,
+        "binary_coverage": 0.8319672131147541,
+        "binary_audio_share": 0.054187192118226604,
+        "binary_audio_wilson95": [
+          0.030523366321528404,
+          0.09441028560700235
+        ],
+        "other_rate": 0.1680327868852459,
+        "other_wilson95": [
+          0.12634555929373692,
+          0.22001077361825522
+        ],
+        "binary_audio_item_bootstrap95": [
+          0.024752475247524754,
+          0.08780487804878048
+        ],
+        "zero_binary_bootstrap_draws": 0
+      },
+      "V_THEN_A": {
+        "n": 244,
+        "counts": {
+          "SIDE_A": 23,
+          "SIDE_V": 193,
+          "OTHER": 28,
+          "PARSE_FAIL": 0,
+          "TECH_MISSING": 0,
+          "SAME_LABEL_MATCH": 0
+        },
+        "binary_n": 216,
+        "binary_coverage": 0.8852459016393442,
+        "binary_audio_share": 0.10648148148148148,
+        "binary_audio_wilson95": [
+          0.07200809357536724,
+          0.15470737259766953
+        ],
+        "other_rate": 0.11475409836065574,
+        "other_wilson95": [
+          0.08059801470043099,
+          0.16085254448138706
+        ],
+        "binary_audio_item_bootstrap95": [
+          0.06698564593301436,
+          0.15
+        ],
+        "zero_binary_bootstrap_draws": 0
+      }
+    },
+    "CONFLICT_NEITHER_MATCH": {
+      "n_items": 343,
+      "source_match_A_n": 0,
+      "source_match_V_n": 0,
+      "dual_n": 0,
+      "A_THEN_V": {
+        "n": 343,
+        "counts": {
+          "SIDE_A": 82,
+          "SIDE_V": 50,
+          "OTHER": 211,
+          "PARSE_FAIL": 0,
+          "TECH_MISSING": 0,
+          "SAME_LABEL_MATCH": 0
+        },
+        "binary_n": 132,
+        "binary_coverage": 0.3848396501457726,
+        "binary_audio_share": 0.6212121212121212,
+        "binary_audio_wilson95": [
+          0.5361387245820451,
+          0.6994300058910196
+        ],
+        "other_rate": 0.6151603498542274,
+        "other_wilson95": [
+          0.5626634973756741,
+          0.6651062746366172
+        ],
+        "binary_audio_item_bootstrap95": [
+          0.5350826193390453,
+          0.7022900763358778
+        ],
+        "zero_binary_bootstrap_draws": 0
+      },
+      "V_THEN_A": {
+        "n": 343,
+        "counts": {
+          "SIDE_A": 93,
+          "SIDE_V": 48,
+          "OTHER": 202,
+          "PARSE_FAIL": 0,
+          "TECH_MISSING": 0,
+          "SAME_LABEL_MATCH": 0
+        },
+        "binary_n": 141,
+        "binary_coverage": 0.4110787172011662,
+        "binary_audio_share": 0.6595744680851063,
+        "binary_audio_wilson95": [
+          0.5780569849495958,
+          0.7326275411963854
+        ],
+        "other_rate": 0.5889212827988338,
+        "other_wilson95": [
+          0.5361456754882604,
+          0.6397271864452808
+        ],
+        "binary_audio_item_bootstrap95": [
+          0.5789473684210527,
+          0.7380992329817833
+        ],
+        "zero_binary_bootstrap_draws": 0
+      }
+    },
+    "CONFLICT_UNOBSERVABLE": {
+      "n_items": 32,
+      "source_match_A_n": 13,
+      "source_match_V_n": 0,
+      "dual_n": 0,
+      "A_THEN_V": {
+        "n": 32,
+        "counts": {
+          "SIDE_A": 1,
+          "SIDE_V": 0,
+          "OTHER": 0,
+          "PARSE_FAIL": 0,
+          "TECH_MISSING": 31,
+          "SAME_LABEL_MATCH": 0
+        },
+        "binary_n": 1,
+        "binary_coverage": 0.03125,
+        "binary_audio_share": 1.0,
+        "binary_audio_wilson95": [
+          0.20654931437723745,
+          1.0
+        ],
+        "other_rate": 0.0,
+        "other_wilson95": [
+          0.0,
+          0.1071791982550706
+        ],
+        "binary_audio_item_bootstrap95": [
+          1.0,
+          1.0
+        ],
+        "zero_binary_bootstrap_draws": 1898
+      },
+      "V_THEN_A": {
+        "n": 32,
+        "counts": {
+          "SIDE_A": 1,
+          "SIDE_V": 0,
+          "OTHER": 0,
+          "PARSE_FAIL": 0,
+          "TECH_MISSING": 31,
+          "SAME_LABEL_MATCH": 0
+        },
+        "binary_n": 1,
+        "binary_coverage": 0.03125,
+        "binary_audio_share": 1.0,
+        "binary_audio_wilson95": [
+          0.20654931437723745,
+          1.0
+        ],
+        "other_rate": 0.0,
+        "other_wilson95": [
+          0.0,
+          0.1071791982550706
+        ],
+        "binary_audio_item_bootstrap95": [
+          1.0,
+          1.0
+        ],
+        "zero_binary_bootstrap_draws": 1821
+      }
+    },
+    "CONSTRUCT_audio-aligned": {
+      "n_items": 500,
+      "source_match_A_n": 258,
+      "source_match_V_n": 130,
+      "dual_n": 60,
+      "A_THEN_V": {
+        "n": 500,
+        "counts": {
+          "SIDE_A": 254,
+          "SIDE_V": 95,
+          "OTHER": 141,
+          "PARSE_FAIL": 0,
+          "TECH_MISSING": 10,
+          "SAME_LABEL_MATCH": 0
+        },
+        "binary_n": 349,
+        "binary_coverage": 0.698,
+        "binary_audio_share": 0.7277936962750716,
+        "binary_audio_wilson95": [
+          0.6788054230723056,
+          0.7718218941693457
+        ],
+        "other_rate": 0.282,
+        "other_wilson95": [
+          0.2443364332272433,
+          0.32298777921399346
+        ],
+        "binary_audio_item_bootstrap95": [
+          0.6793002915451894,
+          0.7731129079538792
+        ],
+        "zero_binary_bootstrap_draws": 0
+      },
+      "V_THEN_A": {
+        "n": 500,
+        "counts": {
+          "SIDE_A": 259,
+          "SIDE_V": 87,
+          "OTHER": 144,
+          "PARSE_FAIL": 0,
+          "TECH_MISSING": 10,
+          "SAME_LABEL_MATCH": 0
+        },
+        "binary_n": 346,
+        "binary_coverage": 0.692,
+        "binary_audio_share": 0.7485549132947977,
+        "binary_audio_wilson95": [
+          0.7002820667905753,
+          0.7913692102759201
+        ],
+        "other_rate": 0.288,
+        "other_wilson95": [
+          0.250043271115854,
+          0.32918944923984417
+        ],
+        "binary_audio_item_bootstrap95": [
+          0.7023105150353964,
+          0.7938571428571427
+        ],
+        "zero_binary_bootstrap_draws": 0
+      }
+    },
+    "CONSTRUCT_audio-aligned_DUAL": {
+      "n_items": 60,
+      "source_match_A_n": 60,
+      "source_match_V_n": 60,
+      "dual_n": 60,
+      "A_THEN_V": {
+        "n": 60,
+        "counts": {
+          "SIDE_A": 33,
+          "SIDE_V": 22,
+          "OTHER": 5,
+          "PARSE_FAIL": 0,
+          "TECH_MISSING": 0,
+          "SAME_LABEL_MATCH": 0
+        },
+        "binary_n": 55,
+        "binary_coverage": 0.9166666666666666,
+        "binary_audio_share": 0.6,
+        "binary_audio_wilson95": [
+          0.46812799210121386,
+          0.7188150276753689
+        ],
+        "other_rate": 0.08333333333333333,
+        "other_wilson95": [
+          0.03612045660173077,
+          0.1806894201833441
+        ],
+        "binary_audio_item_bootstrap95": [
+          0.4716981132075472,
+          0.7272727272727273
+        ],
+        "zero_binary_bootstrap_draws": 0
+      },
+      "V_THEN_A": {
+        "n": 60,
+        "counts": {
+          "SIDE_A": 36,
+          "SIDE_V": 20,
+          "OTHER": 4,
+          "PARSE_FAIL": 0,
+          "TECH_MISSING": 0,
+          "SAME_LABEL_MATCH": 0
+        },
+        "binary_n": 56,
+        "binary_coverage": 0.9333333333333333,
+        "binary_audio_share": 0.6428571428571429,
+        "binary_audio_wilson95": [
+          0.5119388780139953,
+          0.755434282923501
+        ],
+        "other_rate": 0.06666666666666667,
+        "other_wilson95": [
+          0.026228698724506214,
+          0.1592535731319717
+        ],
+        "binary_audio_item_bootstrap95": [
+          0.5172413793103449,
+          0.7678571428571429
+        ],
+        "zero_binary_bootstrap_draws": 0
+      }
+    },
+    "CONSTRUCT_consistent": {
+      "n_items": 500,
+      "source_match_A_n": 308,
+      "source_match_V_n": 287,
+      "dual_n": 208,
+      "A_THEN_V": {
+        "n": 500,
+        "counts": {
+          "SIDE_A": 0,
+          "SIDE_V": 0,
+          "OTHER": 144,
+          "PARSE_FAIL": 0,
+          "TECH_MISSING": 27,
+          "SAME_LABEL_MATCH": 329
+        },
+        "binary_n": 0,
+        "binary_coverage": 0.0,
+        "binary_audio_share": null,
+        "binary_audio_wilson95": [
+          null,
+          null
+        ],
+        "other_rate": 0.288,
+        "other_wilson95": [
+          0.250043271115854,
+          0.32918944923984417
+        ]
+      },
+      "V_THEN_A": {
+        "n": 500,
+        "counts": {
+          "SIDE_A": 0,
+          "SIDE_V": 0,
+          "OTHER": 132,
+          "PARSE_FAIL": 0,
+          "TECH_MISSING": 27,
+          "SAME_LABEL_MATCH": 341
+        },
+        "binary_n": 0,
+        "binary_coverage": 0.0,
+        "binary_audio_share": null,
+        "binary_audio_wilson95": [
+          null,
+          null
+        ],
+        "other_rate": 0.264,
+        "other_wilson95": [
+          0.22726783141305193,
+          0.3043308572848008
+        ]
+      }
+    },
+    "CONSTRUCT_consistent_DUAL": {
+      "n_items": 208,
+      "source_match_A_n": 208,
+      "source_match_V_n": 208,
+      "dual_n": 208,
+      "A_THEN_V": {
+        "n": 208,
+        "counts": {
+          "SIDE_A": 0,
+          "SIDE_V": 0,
+          "OTHER": 4,
+          "PARSE_FAIL": 0,
+          "TECH_MISSING": 0,
+          "SAME_LABEL_MATCH": 204
+        },
+        "binary_n": 0,
+        "binary_coverage": 0.0,
+        "binary_audio_share": null,
+        "binary_audio_wilson95": [
+          null,
+          null
+        ],
+        "other_rate": 0.019230769230769232,
+        "other_wilson95": [
+          0.007503257225900263,
+          0.04839448293608059
+        ]
+      },
+      "V_THEN_A": {
+        "n": 208,
+        "counts": {
+          "SIDE_A": 0,
+          "SIDE_V": 0,
+          "OTHER": 5,
+          "PARSE_FAIL": 0,
+          "TECH_MISSING": 0,
+          "SAME_LABEL_MATCH": 203
+        },
+        "binary_n": 0,
+        "binary_coverage": 0.0,
+        "binary_audio_share": null,
+        "binary_audio_wilson95": [
+          null,
+          null
+        ],
+        "other_rate": 0.02403846153846154,
+        "other_wilson95": [
+          0.01031050544183303,
+          0.05502825731852802
+        ]
+      }
+    },
+    "CONSTRUCT_video-aligned": {
+      "n_items": 500,
+      "source_match_A_n": 136,
+      "source_match_V_n": 222,
+      "dual_n": 48,
+      "A_THEN_V": {
+        "n": 500,
+        "counts": {
+          "SIDE_A": 115,
+          "SIDE_V": 206,
+          "OTHER": 158,
+          "PARSE_FAIL": 0,
+          "TECH_MISSING": 21,
+          "SAME_LABEL_MATCH": 0
+        },
+        "binary_n": 321,
+        "binary_coverage": 0.642,
+        "binary_audio_share": 0.3582554517133956,
+        "binary_audio_wilson95": [
+          0.3077624747433638,
+          0.4121008692695377
+        ],
+        "other_rate": 0.316,
+        "other_wilson95": [
+          0.27678362811990814,
+          0.3580221291699432
+        ],
+        "binary_audio_item_bootstrap95": [
+          0.306961242010277,
+          0.4115898493543758
+        ],
+        "zero_binary_bootstrap_draws": 0
+      },
+      "V_THEN_A": {
+        "n": 500,
+        "counts": {
+          "SIDE_A": 126,
+          "SIDE_V": 208,
+          "OTHER": 145,
+          "PARSE_FAIL": 0,
+          "TECH_MISSING": 21,
+          "SAME_LABEL_MATCH": 0
+        },
+        "binary_n": 334,
+        "binary_coverage": 0.668,
+        "binary_audio_share": 0.3772455089820359,
+        "binary_audio_wilson95": [
+          0.3269377458501786,
+          0.43034485562141683
+        ],
+        "other_rate": 0.29,
+        "other_wilson95": [
+          0.2519474198773656,
+          0.33125480311648636
+        ],
+        "binary_audio_item_bootstrap95": [
+          0.3264705882352941,
+          0.43077844311377234
+        ],
+        "zero_binary_bootstrap_draws": 0
+      }
+    },
+    "CONSTRUCT_video-aligned_DUAL": {
+      "n_items": 48,
+      "source_match_A_n": 48,
+      "source_match_V_n": 48,
+      "dual_n": 48,
+      "A_THEN_V": {
+        "n": 48,
+        "counts": {
+          "SIDE_A": 20,
+          "SIDE_V": 27,
+          "OTHER": 1,
+          "PARSE_FAIL": 0,
+          "TECH_MISSING": 0,
+          "SAME_LABEL_MATCH": 0
+        },
+        "binary_n": 47,
+        "binary_coverage": 0.9791666666666666,
+        "binary_audio_share": 0.425531914893617,
+        "binary_audio_wilson95": [
+          0.2951362834367996,
+          0.5671808065450721
+        ],
+        "other_rate": 0.020833333333333332,
+        "other_wilson95": [
+          0.003687110977510649,
+          0.10899217995251861
+        ],
+        "binary_audio_item_bootstrap95": [
+          0.2916666666666667,
+          0.5625
+        ],
+        "zero_binary_bootstrap_draws": 0
+      },
+      "V_THEN_A": {
+        "n": 48,
+        "counts": {
+          "SIDE_A": 19,
+          "SIDE_V": 29,
+          "OTHER": 0,
+          "PARSE_FAIL": 0,
+          "TECH_MISSING": 0,
+          "SAME_LABEL_MATCH": 0
+        },
+        "binary_n": 48,
+        "binary_coverage": 1.0,
+        "binary_audio_share": 0.3958333333333333,
+        "binary_audio_wilson95": [
+          0.2702082786059137,
+          0.5368959150745274
+        ],
+        "other_rate": 0.0,
+        "other_wilson95": [
+          6.938893903907228e-18,
+          0.07410012966611748
+        ],
+        "binary_audio_item_bootstrap95": [
+          0.2708333333333333,
+          0.5416666666666666
+        ],
+        "zero_binary_bootstrap_draws": 0
+      }
+    }
+  },
+  "paired_order_contrasts": [
+    {
+      "estimate": 0.016,
+      "ci95": [
+        -0.007,
+        0.038
+      ],
+      "n_items": 1000,
+      "n_clusters": 1000,
+      "unit": "item",
+      "p_value": 0.17773167761166414,
+      "test": "exact paired discordance test",
+      "discordant_plus": 70,
+      "discordant_minus": 54,
+      "population": "FULL_CONFLICT",
+      "outcome": "SIDE_A",
+      "contrast": "V_THEN_A minus A_THEN_V",
+      "planned_missing_in_denominator": true,
+      "p_holm": 1
+    },
+    {
+      "estimate": -0.006,
+      "ci95": [
+        -0.027,
+        0.015
+      ],
+      "n_items": 1000,
+      "n_clusters": 1000,
+      "unit": "item",
+      "p_value": 0.6482600518210055,
+      "test": "exact paired discordance test",
+      "discordant_plus": 57,
+      "discordant_minus": 63,
+      "population": "FULL_CONFLICT",
+      "outcome": "SIDE_V",
+      "contrast": "V_THEN_A minus A_THEN_V",
+      "planned_missing_in_denominator": true,
+      "p_holm": 1
+    },
+    {
+      "estimate": -0.01,
+      "ci95": [
+        -0.033,
+        0.013
+      ],
+      "n_items": 1000,
+      "n_clusters": 1000,
+      "unit": "item",
+      "p_value": 0.4403825433795313,
+      "test": "exact paired discordance test",
+      "discordant_plus": 63,
+      "discordant_minus": 73,
+      "population": "FULL_CONFLICT",
+      "outcome": "OTHER",
+      "contrast": "V_THEN_A minus A_THEN_V",
+      "planned_missing_in_denominator": true,
+      "p_holm": 1
+    },
+    {
+      "estimate": 0.018518518518518517,
+      "ci95": [
+        -0.06481481481481481,
+        0.1111111111111111
+      ],
+      "n_items": 108,
+      "n_clusters": 108,
+      "unit": "item",
+      "p_value": 0.8388197422027588,
+      "test": "exact paired discordance test",
+      "discordant_plus": 13,
+      "discordant_minus": 11,
+      "population": "CONFLICT_DUAL_MATCH",
+      "outcome": "SIDE_A",
+      "contrast": "V_THEN_A minus A_THEN_V",
+      "planned_missing_in_denominator": true,
+      "p_holm": 1
+    },
+    {
+      "estimate": 0.0,
+      "ci95": [
+        -0.08333333333333333,
+        0.09259259259259259
+      ],
+      "n_items": 108,
+      "n_clusters": 108,
+      "unit": "item",
+      "p_value": 1.0,
+      "test": "exact paired discordance test",
+      "discordant_plus": 12,
+      "discordant_minus": 12,
+      "population": "CONFLICT_DUAL_MATCH",
+      "outcome": "SIDE_V",
+      "contrast": "V_THEN_A minus A_THEN_V",
+      "planned_missing_in_denominator": true,
+      "p_holm": 1
+    },
+    {
+      "estimate": -0.018518518518518517,
+      "ci95": [
+        -0.07407407407407407,
+        0.027777777777777776
+      ],
+      "n_items": 108,
+      "n_clusters": 108,
+      "unit": "item",
+      "p_value": 0.7265625,
+      "test": "exact paired discordance test",
+      "discordant_plus": 3,
+      "discordant_minus": 5,
+      "population": "CONFLICT_DUAL_MATCH",
+      "outcome": "OTHER",
+      "contrast": "V_THEN_A minus A_THEN_V",
+      "planned_missing_in_denominator": true,
+      "p_holm": 1
+    }
+  ],
+  "other_persistence": {
+    "FULL_CONFLICT": {
+      "first_order_other": 299,
+      "both_order_other": 226,
+      "persistence_given_first_other": 0.7558528428093646,
+      "wilson95": [
+        0.7041165745821604,
+        0.8010982681801314
+      ]
+    },
+    "FULL_CONSISTENT": {
+      "first_order_other": 144,
+      "both_order_other": 112,
+      "persistence_given_first_other": 0.7777777777777778,
+      "wilson95": [
+        0.7031576240332872,
+        0.8379625775539147
+      ]
+    },
+    "CONFLICT_DUAL_MATCH": {
+      "first_order_other": 6,
+      "both_order_other": 1,
+      "persistence_given_first_other": 0.16666666666666666,
+      "wilson95": [
+        0.030053369748306635,
+        0.5635028221864702
+      ]
+    },
+    "CONFLICT_A_ONLY_MATCH": {
+      "first_order_other": 41,
+      "both_order_other": 30,
+      "persistence_given_first_other": 0.7317073170731707,
+      "wilson95": [
+        0.5806646689292336,
+        0.8430503595218832
+      ]
+    },
+    "CONFLICT_V_ONLY_MATCH": {
+      "first_order_other": 41,
+      "both_order_other": 18,
+      "persistence_given_first_other": 0.43902439024390244,
+      "wilson95": [
+        0.2989013173655036,
+        0.5895947277789392
+      ]
+    },
+    "CONFLICT_NEITHER_MATCH": {
+      "first_order_other": 211,
+      "both_order_other": 177,
+      "persistence_given_first_other": 0.8388625592417062,
+      "wilson95": [
+        0.7832692299234204,
+        0.8823378683757365
+      ]
+    },
+    "CONFLICT_UNOBSERVABLE": {
+      "first_order_other": 0,
+      "both_order_other": 0,
+      "persistence_given_first_other": null,
+      "wilson95": [
+        null,
+        null
+      ]
+    },
+    "CONSTRUCT_audio-aligned": {
+      "first_order_other": 141,
+      "both_order_other": 111,
+      "persistence_given_first_other": 0.7872340425531915,
+      "wilson95": [
+        0.7125314409183947,
+        0.8467007061443714
+      ]
+    },
+    "CONSTRUCT_audio-aligned_DUAL": {
+      "first_order_other": 5,
+      "both_order_other": 1,
+      "persistence_given_first_other": 0.2,
+      "wilson95": [
+        0.03622410863243014,
+        0.6244653702374747
+      ]
+    },
+    "CONSTRUCT_consistent": {
+      "first_order_other": 144,
+      "both_order_other": 112,
+      "persistence_given_first_other": 0.7777777777777778,
+      "wilson95": [
+        0.7031576240332872,
+        0.8379625775539147
+      ]
+    },
+    "CONSTRUCT_consistent_DUAL": {
+      "first_order_other": 4,
+      "both_order_other": 3,
+      "persistence_given_first_other": 0.75,
+      "wilson95": [
+        0.30064184258240184,
+        0.9544127391902995
+      ]
+    },
+    "CONSTRUCT_video-aligned": {
+      "first_order_other": 158,
+      "both_order_other": 115,
+      "persistence_given_first_other": 0.7278481012658228,
+      "wilson95": [
+        0.6536577383845629,
+        0.7912220873699097
+      ]
+    },
+    "CONSTRUCT_video-aligned_DUAL": {
+      "first_order_other": 1,
+      "both_order_other": 0,
+      "persistence_given_first_other": 0.0,
+      "wilson95": [
+        0.0,
+        0.7934506856227626
+      ]
+    }
+  },
+  "label_pair_standardization": [
+    {
+      "dual_only": false,
+      "arm": "A_THEN_V",
+      "outcome": "SIDE_A",
+      "contrast": "video-aligned minus audio-aligned",
+      "estimate": -0.23924234722278115,
+      "ci95": [
+        -0.3283807549715147,
+        -0.15197349665053683
+      ],
+      "common_label_pairs": 21,
+      "support_by_construct": {
+        "audio-aligned": 386,
+        "video-aligned": 373
+      },
+      "status": "DESCRIPTIVE_COMMON_LABEL_PAIR_STANDARDIZATION_NOT_CAUSAL"
+    },
+    {
+      "dual_only": false,
+      "arm": "A_THEN_V",
+      "outcome": "SIDE_V",
+      "contrast": "video-aligned minus audio-aligned",
+      "estimate": 0.22825225110238753,
+      "ci95": [
+        0.1505552848012828,
+        0.3080385680324168
+      ],
+      "common_label_pairs": 21,
+      "support_by_construct": {
+        "audio-aligned": 386,
+        "video-aligned": 373
+      },
+      "status": "DESCRIPTIVE_COMMON_LABEL_PAIR_STANDARDIZATION_NOT_CAUSAL"
+    },
+    {
+      "dual_only": false,
+      "arm": "A_THEN_V",
+      "outcome": "OTHER",
+      "contrast": "video-aligned minus audio-aligned",
+      "estimate": 0.002529828458850053,
+      "ci95": [
+        -0.062013779462452054,
+        0.06457584496017331
+      ],
+      "common_label_pairs": 21,
+      "support_by_construct": {
+        "audio-aligned": 386,
+        "video-aligned": 373
+      },
+      "status": "DESCRIPTIVE_COMMON_LABEL_PAIR_STANDARDIZATION_NOT_CAUSAL"
+    },
+    {
+      "dual_only": false,
+      "arm": "V_THEN_A",
+      "outcome": "SIDE_A",
+      "contrast": "video-aligned minus audio-aligned",
+      "estimate": -0.28890415237140543,
+      "ci95": [
+        -0.3741871335990272,
+        -0.20559749730420926
+      ],
+      "common_label_pairs": 21,
+      "support_by_construct": {
+        "audio-aligned": 386,
+        "video-aligned": 373
+      },
+      "status": "DESCRIPTIVE_COMMON_LABEL_PAIR_STANDARDIZATION_NOT_CAUSAL"
+    },
+    {
+      "dual_only": false,
+      "arm": "V_THEN_A",
+      "outcome": "SIDE_V",
+      "contrast": "video-aligned minus audio-aligned",
+      "estimate": 0.277022887471157,
+      "ci95": [
+        0.19642037749887223,
+        0.3577546735783487
+      ],
+      "common_label_pairs": 21,
+      "support_by_construct": {
+        "audio-aligned": 386,
+        "video-aligned": 373
+      },
+      "status": "DESCRIPTIVE_COMMON_LABEL_PAIR_STANDARDIZATION_NOT_CAUSAL"
+    },
+    {
+      "dual_only": false,
+      "arm": "V_THEN_A",
+      "outcome": "OTHER",
+      "contrast": "video-aligned minus audio-aligned",
+      "estimate": 0.0034209972387049536,
+      "ci95": [
+        -0.060075384289373056,
+        0.06738885483978514
+      ],
+      "common_label_pairs": 21,
+      "support_by_construct": {
+        "audio-aligned": 386,
+        "video-aligned": 373
+      },
+      "status": "DESCRIPTIVE_COMMON_LABEL_PAIR_STANDARDIZATION_NOT_CAUSAL"
+    },
+    {
+      "dual_only": true,
+      "arm": "A_THEN_V",
+      "outcome": "SIDE_A",
+      "contrast": "video-aligned minus audio-aligned",
+      "estimate": -0.15227272727272723,
+      "ci95": [
+        -0.33847892992424233,
+        0.04300426136363617
+      ],
+      "common_label_pairs": 9,
+      "support_by_construct": {
+        "audio-aligned": 50,
+        "video-aligned": 14
+      },
+      "status": "DESCRIPTIVE_COMMON_LABEL_PAIR_STANDARDIZATION_NOT_CAUSAL"
+    },
+    {
+      "dual_only": true,
+      "arm": "A_THEN_V",
+      "outcome": "SIDE_V",
+      "contrast": "video-aligned minus audio-aligned",
+      "estimate": 0.16055871212121214,
+      "ci95": [
+        -0.018300781249999957,
+        0.3357546164772726
+      ],
+      "common_label_pairs": 9,
+      "support_by_construct": {
+        "audio-aligned": 50,
+        "video-aligned": 14
+      },
+      "status": "DESCRIPTIVE_COMMON_LABEL_PAIR_STANDARDIZATION_NOT_CAUSAL"
+    },
+    {
+      "dual_only": true,
+      "arm": "A_THEN_V",
+      "outcome": "OTHER",
+      "contrast": "video-aligned minus audio-aligned",
+      "estimate": -0.008285984848484848,
+      "ci95": [
+        -0.10511363636363637,
+        0.08806818181818182
+      ],
+      "common_label_pairs": 9,
+      "support_by_construct": {
+        "audio-aligned": 50,
+        "video-aligned": 14
+      },
+      "status": "DESCRIPTIVE_COMMON_LABEL_PAIR_STANDARDIZATION_NOT_CAUSAL"
+    },
+    {
+      "dual_only": true,
+      "arm": "V_THEN_A",
+      "outcome": "SIDE_A",
+      "contrast": "video-aligned minus audio-aligned",
+      "estimate": -0.31489109848484853,
+      "ci95": [
+        -0.48011422821969696,
+        -0.1463251657196971
+      ],
+      "common_label_pairs": 9,
+      "support_by_construct": {
+        "audio-aligned": 50,
+        "video-aligned": 14
+      },
+      "status": "DESCRIPTIVE_COMMON_LABEL_PAIR_STANDARDIZATION_NOT_CAUSAL"
+    },
+    {
+      "dual_only": true,
+      "arm": "V_THEN_A",
+      "outcome": "SIDE_V",
+      "contrast": "video-aligned minus audio-aligned",
+      "estimate": 0.37999526515151516,
+      "ci95": [
+        0.2200668797348485,
+        0.5379107481060604
+      ],
+      "common_label_pairs": 9,
+      "support_by_construct": {
+        "audio-aligned": 50,
+        "video-aligned": 14
+      },
+      "status": "DESCRIPTIVE_COMMON_LABEL_PAIR_STANDARDIZATION_NOT_CAUSAL"
+    },
+    {
+      "dual_only": true,
+      "arm": "V_THEN_A",
+      "outcome": "OTHER",
+      "contrast": "video-aligned minus audio-aligned",
+      "estimate": -0.06510416666666666,
+      "ci95": [
+        -0.13020833333333331,
+        -0.020833333333333332
+      ],
+      "common_label_pairs": 9,
+      "support_by_construct": {
+        "audio-aligned": 50,
+        "video-aligned": 14
+      },
+      "status": "DESCRIPTIVE_COMMON_LABEL_PAIR_STANDARDIZATION_NOT_CAUSAL"
+    }
+  ],
+  "candidate_confounding": [
+    {
+      "group": "ALL",
+      "subset": "audio-aligned",
+      "n": 500,
+      "audio_position_mean": 7.444,
+      "video_position_mean": 7.324,
+      "y_A_distribution": {
+        "angry": 144,
+        "sad": 80,
+        "neutral": 143,
+        "worried": 91,
+        "happy": 31,
+        "fearful": 2,
+        "doubtful": 9
+      },
+      "y_V_distribution": {
+        "worried": 178,
+        "doubtful": 93,
+        "happy": 43,
+        "surprised": 24,
+        "sad": 26,
+        "determined": 1,
+        "fearful": 10,
+        "neutral": 105,
+        "contemptuous": 13,
+        "angry": 6,
+        "curious": 1
+      }
+    },
+    {
+      "group": "ALL",
+      "subset": "video-aligned",
+      "n": 500,
+      "audio_position_mean": 7.524,
+      "video_position_mean": 7.472,
+      "y_A_distribution": {
+        "neutral": 205,
+        "doubtful": 108,
+        "angry": 23,
+        "surprised": 12,
+        "worried": 25,
+        "sad": 12,
+        "contemptuous": 57,
+        "confident": 14,
+        "fearful": 6,
+        "happy": 25,
+        "assertive": 1,
+        "grateful": 1,
+        "jealous": 1,
+        "determined": 7,
+        "calm": 2,
+        "curious": 1
+      },
+      "y_V_distribution": {
+        "worried": 141,
+        "sad": 64,
+        "angry": 29,
+        "happy": 145,
+        "neutral": 119,
+        "doubtful": 2
+      }
+    },
+    {
+      "group": "DUAL_MATCH",
+      "subset": "audio-aligned",
+      "n": 60,
+      "audio_position_mean": 7.166666666666667,
+      "video_position_mean": 6.583333333333333,
+      "y_A_distribution": {
+        "sad": 17,
+        "neutral": 12,
+        "angry": 17,
+        "fearful": 2,
+        "worried": 7,
+        "happy": 5
+      },
+      "y_V_distribution": {
+        "worried": 35,
+        "neutral": 15,
+        "sad": 3,
+        "doubtful": 3,
+        "happy": 1,
+        "surprised": 1,
+        "angry": 2
+      }
+    },
+    {
+      "group": "DUAL_MATCH",
+      "subset": "video-aligned",
+      "n": 48,
+      "audio_position_mean": 7.395833333333333,
+      "video_position_mean": 7.375,
+      "y_A_distribution": {
+        "neutral": 16,
+        "doubtful": 19,
+        "angry": 2,
+        "contemptuous": 3,
+        "happy": 2,
+        "sad": 2,
+        "grateful": 1,
+        "determined": 1,
+        "worried": 2
+      },
+      "y_V_distribution": {
+        "worried": 17,
+        "sad": 4,
+        "neutral": 11,
+        "happy": 12,
+        "angry": 4
+      }
+    }
+  ],
+  "source_subset_semantics": {
+    "audio-aligned": {
+      "y_A_semantics": "official audio_pseudo_label; source-provided evidence-side label, not ground truth",
+      "y_V_semantics": "official video_pseudo_label; source-provided evidence-side label, not ground truth"
+    },
+    "consistent": {
+      "y_A_semantics": "official audio_pseudo_label; source-provided evidence-side label, not ground truth",
+      "y_V_semantics": "official video_pseudo_label; source-provided evidence-side label, not ground truth"
+    },
+    "video-aligned": {
+      "y_A_semantics": "official audio_pseudo_label; source-provided evidence-side label, not ground truth",
+      "y_V_semantics": "official video_pseudo_label; source-provided evidence-side label, not ground truth"
+    }
+  },
+  "audio_hashes": 1500,
+  "video_hashes": 1500,
+  "source_cluster": "NOT_VERIFIED; item-bootstrap not robust to latent source dependencies",
+  "entropy16": "NOT_MEASURED",
+  "new_forward_required_for_discrete_analysis": false
+}

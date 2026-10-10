@@ -1,0 +1,79 @@
+{
+  "scientific_index_path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/scientific_equivalence_v1/CAMER_CONTROLLED_AVAILABLE_SCIENTIFIC_OUTCOMES_V1.csv",
+  "unique_keys": 6000,
+  "arms": {
+    "A_ONLY": {
+      "planned_keys": 1500,
+      "generation_success": 1500,
+      "raw_saved": 1500,
+      "scientific_available": 1499,
+      "parser_OK": 1499,
+      "accounting_SCIENTIFIC_AVAILABLE": 1499,
+      "parser_PARSE_FAIL": 1,
+      "accounting_PARSE_UNSCORABLE": 1
+    },
+    "V_ONLY": {
+      "planned_keys": 1500,
+      "generation_success": 1442,
+      "raw_saved": 1442,
+      "scientific_available": 1442,
+      "parser_OK": 1442,
+      "accounting_SCIENTIFIC_AVAILABLE": 1442,
+      "parser_": 58,
+      "accounting_OOM_SKIPPED": 58
+    },
+    "A_THEN_V": {
+      "planned_keys": 1500,
+      "generation_success": 1442,
+      "raw_saved": 1442,
+      "scientific_available": 1442,
+      "parser_OK": 1442,
+      "accounting_SCIENTIFIC_AVAILABLE": 1442,
+      "parser_": 58,
+      "accounting_OOM_SKIPPED": 58
+    },
+    "V_THEN_A": {
+      "planned_keys": 1500,
+      "generation_success": 1442,
+      "raw_saved": 1442,
+      "scientific_available": 1442,
+      "parser_OK": 1442,
+      "accounting_SCIENTIFIC_AVAILABLE": 1442,
+      "parser_": 58,
+      "accounting_OOM_SKIPPED": 58
+    }
+  },
+  "identity_mismatches": {
+    "candidate_sequence": 0
+  },
+  "label_readable_A": 702,
+  "label_readable_V": 639,
+  "dual_readable": 316,
+  "oom_by_arm": {
+    "V_ONLY": 58,
+    "A_THEN_V": 58,
+    "V_THEN_A": 58
+  },
+  "same_58_video_joint_oom": true,
+  "generation_score_fields": [],
+  "corrected_B3": {
+    "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/outputs/B3_MEASUREMENTS_V1.jsonl",
+    "sha256": "0ad7785530a52923dabdf3ec6b3c5afe27e68d87be61e1b5f4465fde79fad450",
+    "all_dataset_rows": 6354,
+    "arms": {
+      "A": {
+        "rows": 1500,
+        "seven_candidates": 1500,
+        "sixteen_candidates": 0
+      },
+      "V": {
+        "rows": 1500,
+        "seven_candidates": 1500,
+        "sixteen_candidates": 0
+      }
+    },
+    "errors": []
+  },
+  "sixteen_class_entropy_cpu_recoverable": false,
+  "reason": "No complete 16-candidate numeric scores/probabilities in recovered generation artifacts; seven-class B3 cannot identify missing candidate mass."
+}
