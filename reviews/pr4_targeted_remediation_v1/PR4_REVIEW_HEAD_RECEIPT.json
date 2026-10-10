@@ -1,0 +1,51 @@
+{
+ "receipt": "PR4_REVIEW_HEAD_RECEIPT_V1",
+ "bound_commit": "f53d245dd5408fb97e9459a7ca13c80afc772f01",
+ "binding_method": "Generated after push from an independent clone of https://github.com/zilongcheng582-cyber/affective-conflict (refs/pull/4/head); stored outside the validated commit to avoid self-referencing hashes",
+ "github_reread": {
+  "pr_state": "open",
+  "merged": false,
+  "head_sha": "f53d245dd5408fb97e9459a7ca13c80afc772f01",
+  "base_sha": "544ca0efae158df369a7b25dd110dc4254f67a7d",
+  "commits": 6,
+  "changed_files": 265,
+  "check_runs": 0,
+  "commit_statuses": 0,
+  "reviews": 0
+ },
+ "previous_reviewed_head": "18b99caa5c11c3719e67ccbd3a0c71a0d70a77d7",
+ "push": "fast-forward, no force; main untouched",
+ "remote_clone_validation": {
+  "status": "PASS",
+  "failures": 0,
+  "sha256_files": 264,
+  "manifest_coverage_files": 264,
+  "existing_main_files_blob_unchanged": 324,
+  "payload_bytes": 16358604,
+  "exclusion_rows_consistent": 58,
+  "status_index_documents": 18,
+  "sanitization_retained_values": 30,
+  "route_baseline_checks": 18,
+  "max_metric_abs_error": 2.220446049250313e-16,
+  "max_prediction_abs_error": 1.6653345369377348e-16
+ },
+ "remote_clone_validation_python_O": {
+  "status": "PASS",
+  "failures": 0
+ },
+ "autocrlf_true_validation": {
+  "status": "PASS",
+  "migration_sha256_files": 264,
+  "main_blob_unchanged": 324,
+  "main_checkout_byte_drift_informational": 231
+ },
+ "tests_on_remote_clone": "52 passed (16 regression + 36 evidence)",
+ "migration_sha256sums_file_sha256": "49131321b4dc1197eb99c8085a019cb8a44a4aee2a78f761b869977be72b8fa5",
+ "binary_diff_vs_main_sha256": "5b7722c18ff6ed0e2a898c4b7b2d9cbb8055aea6f14e3de2f6be40e3ad97715a",
+ "environment": {
+  "host": "Claude Code cloud container (not AutoDL)",
+  "python": "3.13.16",
+  "gpu": false
+ },
+ "generated_utc": "2026-10-10T13:05Z"
+}

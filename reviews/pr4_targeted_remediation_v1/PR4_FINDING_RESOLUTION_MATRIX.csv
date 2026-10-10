@@ -1,0 +1,21 @@
+finding,severity,resolution,change,regression_evidence,note
+F01,P2,FIXED,"Validation report corrected to 16,358,604; snapshot history 245/254/256/259 registered; validator checks recorded==allowlist==actual",test_payload_bytes_recorded_equals_allowlist_equals_actual; test_validation_report_has_no_stale_payload_value; validator payload_bytes_recorded_allowlist_actual,Final-commit receipt is kept outside the commit (PR4_REVIEW_HEAD_RECEIPT.json) to avoid self-referencing hashes
+F02,P2,FIXED,"STATUS_AND_SUPERSESSION.{md,json} plus docs link; the validator requires every decision-bearing document to be indexed and allows one CURRENT NEXT_STEP",test_status_index_single_current_next_step_and_full_coverage; validator check_status_index,Historical reports not edited; 06/08 still carry their original banners
+F03,P2,FIXED,"-text for .gitattributes, migration doc and new test; the validator checks main files on Git objects",test_windows_autocrlf_true_clone_passes; manual autocrlf=true clone: 264/264 hashes PASS,"DOCUMENTED_LIMITATION: under autocrlf=true, 231 pre-existing main files differ at checkout-byte level (reported as informational drift)"
+F04,P2,FIXED,"Explicit checks, ValidationError, named failures, exit code 1; 0 assert statements",test_tampered_file_fails_even_under_python_O[-O]; test_validator_has_no_assert_statements; review test test_validator_fails_on_corruption_under_python_O,
+F05,P2,FIXED,status regenerated from gap_status; upload_decision=NOT_UPLOADED; original status preserved; 58 rows,test_exclusion_status_matches_gap_analysis_row_by_row; validator check_exclusions (also checks that no excluded hash is present in the tree),
+F06,P3,FIXED,"Retained-field register (30 values, verified verbatim in main); transformation_rule updated",test_retained_text_register_matches_files_and_main; validator check_sanitization,No content removed or added; no new disclosure
+F07,P3,STILL_OPEN,Not changed (would require regenerating archived CIs),review test test_bootstrap_seed_depends_on_tag_same_population_gets_different_ci (documents current behaviour),Follow-up
+F08,P3,STILL_OPEN,Identical lineage twins and generic READMEs kept; the validator now checks the twins stay identical,validator lineage_twin_differs,Follow-up
+F09a,P3,FIXED,Manifest coverage check for in-scope added files,test_unlisted_committed_file_fails; review test test_validator_detects_unlisted_new_files,
+F09b,P3,FIXED,Single-class AUROC/BA return None,test_single_class_metrics_are_undefined_not_crash; review test test_single_class_validate_migration_reports_undefined,
+F09c,P3,DOCUMENTED_LIMITATION,Validator documents that after merge it must be run on the PR4 merge commit,argparse description,Later main commits are outside the migration record
+F10,P3,FIXED,Companion CLAIM_EVIDENCE_MATRIX_EVIDENCE_STATUS_V1.csv; matrix unchanged,test_claim_companion_preserves_statuses_and_only_eri1_confirmatory; validator check_claims,"Upstream classes taken from main records (ERI1 CLAIM_REGISTER_V1, R1/R2 report headers, SCIENTIFIC_CLAIM_STATUS_V1)"
+F11,P3,STILL_OPEN,Not changed (would require rewriting archived prose),—,Follow-up
+F12,P3,STILL_OPEN,Not changed; rename map remains in the allowlist,—,Follow-up
+F14,P3,STILL_OPEN,Not changed (archived analysis code),review test test_truth_helpers_disagree_on_numeric_strings,Not triggered by current data
+F15,P3,DOCUMENTED_LIMITATION,Absolute AutoDL paths kept as provenance; documented in README,—,
+F16,P3,STILL_OPEN,Archived scripts unchanged; README warning only,—,Follow-up
+F17,P3,DOCUMENTED_LIMITATION,AutoDL-only verifications remain out of public scope,—,Requires AutoDL
+F18,P3,STILL_OPEN,run_all.py field name unchanged (archived code),—,Follow-up
+N01,P3,STILL_OPEN,New: the PR description still states 260 files / 259 SHA256 entries; actual is now 265 / 264. The PR body is outside the repository and was not edited,—,Update PR description (owner decision)
