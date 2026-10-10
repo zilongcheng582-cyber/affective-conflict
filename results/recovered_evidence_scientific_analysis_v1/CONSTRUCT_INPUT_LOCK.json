@@ -1,0 +1,162 @@
+[
+  {
+    "path": "/root/autodl-tmp/affective-conflict/build_camer_native_protocol.py",
+    "sha256": "f45f9045d7ab66dc89da7a8075b165de6cc38803ef4e98ab4b41be706dca46c9",
+    "bytes": 8975
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_camer_native_v1.py",
+    "sha256": "b60d3c38f57cf7fde66152f65288c0aeb417c220c4bb5fc53e743057fbd9416e",
+    "bytes": 39266
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_camer_controlled_v1.py",
+    "sha256": "83275a8902f957f8d5f214fd00a0ae80d1f86a4ac079f1fdd5568e625d0e67a2",
+    "bytes": 46065
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_camer_controlled_v2.py",
+    "sha256": "fc5f8bf93d4cb98d5fc6493d958199a2c5758de63e1025faf61ce23e01f93add",
+    "bytes": 48555
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_camer_controlled_v3.py",
+    "sha256": "0ce3e1b509f538e17b4df379282798bb5ab3d565455a6646d9f69bfb2aca5c0b",
+    "bytes": 81323
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_camer_controlled_v4.py",
+    "sha256": "8d8f80ddd6577a91e2606374fda493b19675cc01caf25d31aba6a8af8ad69c20",
+    "bytes": 93870
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/code/prompts/camer_controlled_arbitration_prompt_v1.json",
+    "sha256": "4f80f8d451ed9397d32860dd2df7ab5d29b2720f0d86223ad00d4e8b20bdd0f5",
+    "bytes": 2348
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_NATIVE_V1/CAMER_ANNOTATION_INVENTORY_V1.json",
+    "sha256": "9ade03f06525324a160f95c2b4756043ce75735b7ee599e5bedb9276f8b2d8c1",
+    "bytes": 3331
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_NATIVE_V1/CAMER_OFFICIAL_SOURCE_PROVENANCE_V1.json",
+    "sha256": "086cf044e8fb682e4b3a33204f336e115f6d375e3dcc0d18408e1087c4ca7fe0",
+    "bytes": 5635
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_NATIVE_V1/CAMER_OFFICIAL_SOURCE_AUDIT_V1.md",
+    "sha256": "2dbf592a2cfe3f1cdddf407037b8159a3e30ecc16c40c7cb011ed95bd5ea10fe",
+    "bytes": 3688
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_NATIVE_V1/CAMER_NATIVE_SCIENTIFIC_OUTPUT_ADDENDUM_V1_2.json",
+    "sha256": "768d0334ae316f25b9578ce960dfd5d471e56b8c249e4904727cc284282c0a21",
+    "bytes": 10226
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_NATIVE_V1/CAMER_NATIVE_SCIENTIFIC_OUTPUT_ADDENDUM_V1_2.md",
+    "sha256": "c962ca24ca7c205e8d2675e4e45394d96aad94a48b130220d71eabeb075ad325",
+    "bytes": 11423
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_NATIVE_V1/official_code/README.md",
+    "sha256": "6eed23b362741efe4a186f6d9a96b19077a00305fdac17d87bc6c39b7592f5b5",
+    "bytes": 9397
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_NATIVE_V1/technical_gate/CAMER_NATIVE_TECHNICAL_GATE_V1.json",
+    "sha256": "0f8e18f3131543b61ee348921d35fd90eb27e69f27f1f8ccb2dc7b3defe3c22b",
+    "bytes": 2997
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_NATIVE_V1/technical_gate/CAMER_NATIVE_TECHNICAL_GATE_V1.md",
+    "sha256": "421b32ae7a8f63ef861094858228f8efa3cfac4cc06436003401de2b5eb9de4f",
+    "bytes": 834
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_NATIVE_V1/technical_gate/CAMER_NATIVE_TECHNICAL_GATE_V1_PROVENANCE.json",
+    "sha256": "62215411069e877e48fee8864719bd963ba8c694cefd9f63894413a00058e194",
+    "bytes": 5632
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/CAMER_CONTROLLED_ANALYSIS_SPEC_V1.md",
+    "sha256": "2004bb748024231212a992f6346369ee2d203080e0d4db7b6ce50877d06d149f",
+    "bytes": 3074
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/CAMER_CONTROLLED_MEDIA_AUDIT_V1.json",
+    "sha256": "3f985b5fde8503af486b9cfa6efe25d70702c26dd5b20a73ba75d2b7a8dd0086",
+    "bytes": 843
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/CAMER_CONTROLLED_ONTOLOGY_AUDIT_V1.json",
+    "sha256": "62534b269c76b2ba91f39c0b56e7d121304f025fcfc776738004f417b156e4d8",
+    "bytes": 12393
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/CAMER_CONTROLLED_PROTOCOL_V1.json",
+    "sha256": "efbe18fefcd3964e1ccbb48df671cad7279d543a021f90bbd6c11dfbef83306f",
+    "bytes": 3387
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/CAMER_CONTROLLED_PROTOCOL_V1.md",
+    "sha256": "7b3a72dbd8e85a9ae80f8556b8e0465862c6f7e6ce5ed4b602647669b3fca6af",
+    "bytes": 5749
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/CAMER_CONTROLLED_PROVENANCE_V1.json",
+    "sha256": "5d670d124b29c463eeb6239a9fc92e17da48b27ea2cdcd5f8048a972b03b374f",
+    "bytes": 3484
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/CAMER_CONTROLLED_SOURCE_AUDIT_V1.json",
+    "sha256": "43151c6c695abecd8acc1a500d3df762c12f2bc86189e7e4ad28084e07385c51",
+    "bytes": 2166
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/CAMER_CONTROLLED_SOURCE_AUDIT_V1.md",
+    "sha256": "aafd022f79e8dac53fadac8412065497efaf46268d6c043cb9cb203e664e0b65",
+    "bytes": 983
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/technical_gate/CAMER_CONTROLLED_TECHNICAL_GATE_V1.json",
+    "sha256": "04a0b9b34f8ac24abd27e0926d68e38437ff6a2752f82b5dd1d4723b377e4a0f",
+    "bytes": 7577
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/technical_gate_v2/CAMER_CONTROLLED_TECHNICAL_GATE_V2.json",
+    "sha256": "d495ebc390fd90f8acd6833bb0aede4a368fcd265596d7e4b89cf7ef5219924c",
+    "bytes": 7726
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/technical_gate_v2/CAMER_CONTROLLED_TECHNICAL_GATE_V2_PROVENANCE.json",
+    "sha256": "6ebf9dedb92f2422e41658bfb833a1df818104e736ded3f124a147978a7240eb",
+    "bytes": 12541
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/adapter_compatibility_v3/CAMER_CONTROLLED_QWEN_ADAPTER_COMPATIBILITY_AUDIT_V3.md",
+    "sha256": "c24876ba0eac9f9dece47e1af57b8c10687a36b47591df49562a8baf1ba7e9e7",
+    "bytes": 21331
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/technical_gate_v3/CAMER_CONTROLLED_TECHNICAL_GATE_V3.json",
+    "sha256": "6aeda96e71e124bd158fab647bf884dec4b0cac110cd0e8a55cadc485e1808a8",
+    "bytes": 14474
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/technical_gate_v4/CAMER_CONTROLLED_TECHNICAL_GATE_V4.json",
+    "sha256": "aedd8bb84562ade08e0be1b59837b56198228e360d9488cf4ba15bcaf92f99af",
+    "bytes": 17860
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/full_run_v1/CAMER_CONTROLLED_FULL_RUN_V1.json",
+    "sha256": "020156687b4ce9de1cc356994c0b9aa55ad5206032183a0f9846444614ae7dab",
+    "bytes": 22422
+  },
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/scientific_equivalence_v1/CAMER_RESOURCE_SWEEP_SCIENTIFIC_EQUIVALENCE_V1.json",
+    "sha256": "1e4e3fca5ab1534cf5ba4ec897a0e916d8938f61146ae3807624cc60e62782c7",
+    "bytes": 5806
+  }
+]

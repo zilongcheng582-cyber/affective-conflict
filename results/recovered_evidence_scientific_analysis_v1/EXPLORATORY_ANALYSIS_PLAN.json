@@ -1,0 +1,32 @@
+{
+  "status": "POST_HOC_EXPLORATORY",
+  "registered_utc": "2026-10-10T09:10:13.514927+00:00",
+  "before_new_numeric_results": true,
+  "seed": 20261010,
+  "bootstrap": 5000,
+  "sign_flip_draws": 19999,
+  "MCR": {
+    "denominator": 1000,
+    "unit": "released sample ID; audio-SHA cluster CI and paired sign flip",
+    "contrasts": "six condition pairs: source-label match, second minus first; Holm family 6",
+    "rates": "four full-denominator audio-source match; explicit emotion assertion only faithful/adversarial; OTHER means valid label neither audio nor defined text; neutral/irrelevant OTHER means valid non-source label",
+    "secondary": "all-four invariance, pair transitions, seven source-label strata descriptively; equal-SHA weighting and exclusion of entire conflicting-GT hash groups; complete-case irrelevant parse sensitivity; controlled909 protocol kept separate"
+  },
+  "CAMER": {
+    "denominator": "1500 planned items,1000 conflict,500consistent",
+    "groups": "dual source-label match / A-only / V-only / neither when both scientifically observable; unobservable separately, never call technical missing neither",
+    "family": "paired order effects on SIDE_A,SIDE_V,OTHER in full conflict and conflict dual group; Holm 6",
+    "construct": "audio-aligned/video-aligned/consistent full and dual; label-pair/candidate-position support; item bootstrap only, no unverified speaker/video cluster",
+    "additional": "persistent OTHER, source-label strata, fixed exact label-pair standardization of construct contrasts when common support exists; descriptive 95CI not simultaneous"
+  },
+  "LISTEN": {
+    "no_repeat": "read and cite frozen R3 full findings, no target refit",
+    "new": "common-input/conflict support, posthoc observed dual match, full outcome and label subgroups; recovered OTHER choices and raw responses",
+    "family": "dual vs nondual on common support: SIDE_A,SIDE_T,OTHER; Holm3 Fisher exact, selection association only",
+    "intervals": "Wilson item-proportion CIs, bootstrap ratio for conditional choices where possible; limited source dependence unknown; tiny subgroups explicitly insufficient"
+  },
+  "cross_study": "no pooled rates or unified causal mechanism; no invented labels or official dialogue groups",
+  "failures": "full planned denominators; parse and technical missing explicit; missing media limits support",
+  "replay": "same script/sources/seed to alternate output dir, compare deterministic numeric hashes",
+  "prohibited": "GPU,weight loading,new generation,history changes,refit frozen transfer,push/merge"
+}

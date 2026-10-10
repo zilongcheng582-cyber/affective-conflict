@@ -1,0 +1,14 @@
+variable,label,share_in_all_3C_conflicts,share_in_binary_resolvable,ratio,n_all,n_binary
+audio_label,ridicule,0.37037,0.646707,1.74611,140,108
+audio_label,frustration,0.230159,0.185629,0.806525,87,31
+audio_label,disgust,0.21164,0.107784,0.509281,80,18
+audio_label,anger,0.153439,0.0598802,0.390254,58,10
+audio_label,sadness,0.0343915,0,0,13,0
+text_label,neutral,0.457672,0.508982,1.11211,173,85
+text_label,happiness,0.203704,0.131737,0.646707,77,22
+text_label,surprise,0.116402,0.173653,1.49183,44,29
+text_label,sadness,0.108466,0.0898204,0.8281,41,15
+text_label,excitement,0.100529,0.0778443,0.774346,38,13
+text_label,anger,0.00529101,0.011976,2.26347,2,2
+text_label,frustration,0.00529101,0,0,2,0
+text_label,fear,0.0026455,0.00598802,2.26347,1,1

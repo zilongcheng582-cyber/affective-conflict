@@ -1,0 +1,129 @@
+{
+  "status": "PASS",
+  "amendment_path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/B3_EXECUTION_TECHNICAL_AMENDMENT_001.json",
+  "amendment_sha256": "5e6b984b2a3e2511bd02a6faf6df3d8e2e320522b74d40aa6436b038da49e701",
+  "amendment_kind": "D = VERIFICATION_SCRIPT_BUG",
+  "amendment_bug": "sorted(Path) is case-folded on Windows and case-sensitive on Linux; manifest list order was compared byte-for-byte",
+  "scientific_fields_affected": [],
+  "model_content_sha256": "8240abe64f8df444e7a4ebbcb636f51e6ef7e6833b62cf60adec0b2d14125a09",
+  "processor_content_sha256": "e471b7e2830ec4f53ee249b2a6707480858e357b30b4dc1616e718ef6fe18d41",
+  "model_revision": [
+    "ae9e1690543ffd5c0221dc27f79834d0294cba00"
+  ],
+  "processor_revision": [
+    "ae9e1690543ffd5c0221dc27f79834d0294cba00"
+  ],
+  "scoring_implementation_sha256": [
+    "3246b9ee0fea14948c0ac894181cf513322df7d969b87d6b8af92b17ce120e17"
+  ],
+  "additional_frozen_assets": [
+    {
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/B3_AUTODL_EXECUTION_PACKAGE_V1/B3_CORRECTED_MEASUREMENT_FREEZE_V1.md",
+      "sha256": "9cc035d639333a7478ebfc60ff3d5662ba30d7c8873d776349fa01aebbb89f9b",
+      "records": "not row data",
+      "identity_check": "EXACT_AMENDMENT_UNCHANGED_SCIENTIFIC_HASH"
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/B3_AUTODL_EXECUTION_PACKAGE_V1/B3_EXECUTION_CONFIG_V1.json",
+      "sha256": "3fce0635937e51c6833d3755c8fe250feffda323cd5db3e2c244cad3d2e3ca05",
+      "records": "JSON object",
+      "identity_check": "EXACT_AMENDMENT_UNCHANGED_SCIENTIFIC_HASH"
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/B3_AUTODL_EXECUTION_PACKAGE_V1/B3_MODEL_IDENTITY_BINDING_V1.json",
+      "sha256": "a8b1c73a04896d0be47936abef2f0d66678b752ff66278bb07b3575f2049673f",
+      "records": "JSON object",
+      "identity_check": "EXACT_AMENDMENT_UNCHANGED_SCIENTIFIC_HASH"
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/B3_AUTODL_EXECUTION_PACKAGE_V1/B3_PROCESSOR_IDENTITY_BINDING_V1.json",
+      "sha256": "9af99deaaf6ec18adfb2b71129d05f9cc2ec00dcb634f4be05b611ddb574a102",
+      "records": "JSON object",
+      "identity_check": "EXACT_AMENDMENT_UNCHANGED_SCIENTIFIC_HASH"
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/B3_AUTODL_EXECUTION_PACKAGE_V1/B3_SOURCE_MODEL_BINDING_V1.json",
+      "sha256": "642c2ed7b023aea8c6bd762891ff436f0f3eff6a95a58e56bf6f8c4b5d41dd20",
+      "records": "JSON object",
+      "identity_check": "EXACT_AMENDMENT_UNCHANGED_SCIENTIFIC_HASH"
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/B3_AUTODL_EXECUTION_PACKAGE_V1/B3_TARGET_MEASUREMENT_MANIFEST_V1.json",
+      "sha256": "82798a27d5f55707ed1f1b0a76f07f65241989d0acbda1da3af7841011189fef",
+      "records": "JSON object",
+      "identity_check": "EXACT_AMENDMENT_UNCHANGED_SCIENTIFIC_HASH"
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/B3_AUTODL_EXECUTION_PACKAGE_V1/B3_TARGET_SEQUENCE_ASSIGNMENT_V1.json",
+      "sha256": "65069110f64ba2e518c411b784c8b9aa581d2dd8154d7dcb0e23111d436dde35",
+      "records": "JSON object",
+      "identity_check": "EXACT_AMENDMENT_UNCHANGED_SCIENTIFIC_HASH"
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/B3_AUTODL_EXECUTION_PACKAGE_V1/MODEL_FILE_HASH_MANIFEST.csv",
+      "sha256": "8240abe64f8df444e7a4ebbcb636f51e6ef7e6833b62cf60adec0b2d14125a09",
+      "records": 17,
+      "identity_check": "EXACT_AMENDMENT_UNCHANGED_SCIENTIFIC_HASH"
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/B3_AUTODL_EXECUTION_PACKAGE_V1/PROCESSOR_FILE_HASH_MANIFEST.csv",
+      "sha256": "e471b7e2830ec4f53ee249b2a6707480858e357b30b4dc1616e718ef6fe18d41",
+      "records": 9,
+      "identity_check": "EXACT_AMENDMENT_UNCHANGED_SCIENTIFIC_HASH"
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/B3_AUTODL_EXECUTION_PACKAGE_V1/b3_protocol.py",
+      "sha256": "5f0ad0066088f870a47bbbaa3f20994b3597cc4f98843db5e0601c51d3f8552a",
+      "records": "not row data",
+      "identity_check": "EXACT_AMENDMENT_UNCHANGED_SCIENTIFIC_HASH"
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/B3_AUTODL_EXECUTION_PACKAGE_V1/b3_scorer.py",
+      "sha256": "82d7b0b59487147291477987643980476f79a4e8b7c723cbe010fec7963e18ab",
+      "records": "not row data",
+      "identity_check": "EXACT_AMENDMENT_UNCHANGED_SCIENTIFIC_HASH"
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/B3_AUTODL_EXECUTION_PACKAGE_V1/canonical/CAMER_POPULATION.jsonl",
+      "sha256": "929a9734a5099c60f83890544401c09d703e32b728e0b9f4d6afd98b46c7869b",
+      "records": 1500,
+      "identity_check": "EXACT_AMENDMENT_UNCHANGED_SCIENTIFIC_HASH"
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/B3_AUTODL_EXECUTION_PACKAGE_V1/canonical/LISTEN_CANONICAL.csv",
+      "sha256": "f11685ced0edcc9eb40700da3492eff7e6b43ec58569c3ab7fe8662722d610d6",
+      "records": 1149,
+      "identity_check": "EXACT_AMENDMENT_UNCHANGED_SCIENTIFIC_HASH"
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/B3_AUTODL_EXECUTION_PACKAGE_V1/canonical/MCR_POPULATION.csv",
+      "sha256": "c81079ad56ef3957fb978b753d98ee31d0e0cafbe6876eb7489125fd805e0716",
+      "records": 909,
+      "identity_check": "EXACT_AMENDMENT_UNCHANGED_SCIENTIFIC_HASH"
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/B3_AUTODL_EXECUTION_PACKAGE_V1/canonical/MCR_TEXT.jsonl",
+      "sha256": "28bdf75ce211dfb7af7677dabcd25c629e4ec8226ebdb991ee366d9e6ef949e4",
+      "records": 909,
+      "identity_check": "EXACT_AMENDMENT_UNCHANGED_SCIENTIFIC_HASH"
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/B3_AUTODL_EXECUTION_PACKAGE_V1/emotiontalk_controlled_prompt_v1.json",
+      "sha256": "ba6b71f080ea186a1494a54a0990a5740fc0aea69f008622618102f39efe55f8",
+      "records": "JSON object",
+      "identity_check": "EXACT_AMENDMENT_UNCHANGED_SCIENTIFIC_HASH"
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/B3_AUTODL_EXECUTION_PACKAGE_V1/run_b3_corrected_measurement.py",
+      "sha256": "151efafa88992aa2200a04fcd3093a016cc4d71ed9191c110034575539600c2a",
+      "records": "not row data",
+      "identity_check": "EXACT_AMENDMENT_UNCHANGED_SCIENTIFIC_HASH"
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/B3_AUTODL_EXECUTION_PACKAGE_V1/source_teacher_forcing.py",
+      "sha256": "62d50ec5972341f3a33651c3ef30dde39291176e5f0188eb44012c42cc0b4c1b",
+      "records": "not row data",
+      "identity_check": "EXACT_AMENDMENT_UNCHANGED_SCIENTIFIC_HASH"
+    }
+  ]
+}

@@ -1,0 +1,1054 @@
+{
+  "status": "PASS",
+  "files_reviewed": 259,
+  "secret_findings": [],
+  "restricted_content": "Raw source text/generated sequences excluded by explicit column rules; JSON examples/excerpts and personal source locations removed; metadata/labels/identities retained.",
+  "maximum_new_file_bytes": 3827448,
+  "historical_files_modified": false,
+  "GPU": false,
+  "held_back_source_assets": 58,
+  "policy_exclusions": [
+    "RAW_AUDIO_VIDEO",
+    "RAW_DATASET_PARQUET_NPZ_ARCHIVES",
+    "MODEL_WEIGHTS_CHECKPOINTS_CACHES",
+    "ENVIRONMENTS_SYSTEM_CACHES",
+    "FULL_RUNTIME_LOGS",
+    "CREDENTIALS_TOKENS_PRIVATE_KEYS_ENV",
+    "UNAUTHORIZED_THIRD_PARTY_TEXT"
+  ],
+  "sizes": [
+    {
+      "path": ".gitattributes",
+      "bytes": 568
+    },
+    {
+      "path": "analyses/four_regime_synthesis_v1/README.md",
+      "bytes": 2894
+    },
+    {
+      "path": "analyses/four_regime_synthesis_v1/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "analyses/four_regime_synthesis_v1/a01_build_tables.py",
+      "bytes": 9607
+    },
+    {
+      "path": "analyses/four_regime_synthesis_v1/a02_camer.py",
+      "bytes": 7886
+    },
+    {
+      "path": "analyses/four_regime_synthesis_v1/a02_emotiontalk.py",
+      "bytes": 14979
+    },
+    {
+      "path": "analyses/four_regime_synthesis_v1/a02_listen.py",
+      "bytes": 8507
+    },
+    {
+      "path": "analyses/four_regime_synthesis_v1/a02_mcr.py",
+      "bytes": 8586
+    },
+    {
+      "path": "analyses/four_regime_synthesis_v1/a03_cross_regime.py",
+      "bytes": 11847
+    },
+    {
+      "path": "analyses/four_regime_synthesis_v1/a04_inventory.py",
+      "bytes": 13260
+    },
+    {
+      "path": "analyses/four_regime_synthesis_v1/a05_revision_v2.py",
+      "bytes": 17447
+    },
+    {
+      "path": "analyses/four_regime_synthesis_v1/common.py",
+      "bytes": 4359
+    },
+    {
+      "path": "analyses/four_regime_synthesis_v1/requirements.txt",
+      "bytes": 79
+    },
+    {
+      "path": "analyses/four_regime_synthesis_v1/run_all.py",
+      "bytes": 5220
+    },
+    {
+      "path": "analyses/four_regime_synthesis_v1/step0_camer_archive_audit.py",
+      "bytes": 3790
+    },
+    {
+      "path": "analyses/historical_evidence_reconciliation_v2/README.md",
+      "bytes": 2894
+    },
+    {
+      "path": "analyses/historical_evidence_reconciliation_v2/expanded_original/README.md",
+      "bytes": 2894
+    },
+    {
+      "path": "analyses/historical_evidence_reconciliation_v2/expanded_original/code_data_supplement.py",
+      "bytes": 1436
+    },
+    {
+      "path": "analyses/historical_evidence_reconciliation_v2/expanded_original/experiment_index.py",
+      "bytes": 3918
+    },
+    {
+      "path": "analyses/historical_evidence_reconciliation_v2/expanded_original/finalize_expanded.py",
+      "bytes": 13144
+    },
+    {
+      "path": "analyses/historical_evidence_reconciliation_v2/expanded_original/full_experiment_scan.py",
+      "bytes": 4715
+    },
+    {
+      "path": "analyses/historical_evidence_reconciliation_v2/expanded_original/mcr_native_recovery.py",
+      "bytes": 1367
+    },
+    {
+      "path": "analyses/historical_evidence_reconciliation_v2/reconciliation_original/README.md",
+      "bytes": 2894
+    },
+    {
+      "path": "analyses/historical_evidence_reconciliation_v2/reconciliation_original/archive_audit.py",
+      "bytes": 5169
+    },
+    {
+      "path": "analyses/historical_evidence_reconciliation_v2/reconciliation_original/finalize_reports.py",
+      "bytes": 25600
+    },
+    {
+      "path": "analyses/historical_evidence_reconciliation_v2/reconciliation_original/pool_audit.py",
+      "bytes": 3187
+    },
+    {
+      "path": "analyses/historical_evidence_reconciliation_v2/reconciliation_original/reconciliation_worker.py",
+      "bytes": 21039
+    },
+    {
+      "path": "analyses/historical_evidence_reconciliation_v2/reconciliation_original/report_scorer_binding_verified.py",
+      "bytes": 25799
+    },
+    {
+      "path": "analyses/historical_evidence_reconciliation_v2/reconciliation_original/scope_finish.py",
+      "bytes": 1974
+    },
+    {
+      "path": "analyses/historical_evidence_reconciliation_v2/reconciliation_original/scope_schema_verified.py",
+      "bytes": 3213
+    },
+    {
+      "path": "analyses/historical_evidence_reconciliation_v2/reconciliation_original/source_read.py",
+      "bytes": 1432
+    },
+    {
+      "path": "analyses/recovered_evidence_scientific_analysis_v1/README.md",
+      "bytes": 2894
+    },
+    {
+      "path": "analyses/recovered_evidence_scientific_analysis_v1/analysis.py",
+      "bytes": 34374
+    },
+    {
+      "path": "analyses/recovered_evidence_scientific_analysis_v1/contract_focus_stream.py",
+      "bytes": 1934
+    },
+    {
+      "path": "analyses/recovered_evidence_scientific_analysis_v1/diagnostics.py",
+      "bytes": 3869
+    },
+    {
+      "path": "analyses/recovered_evidence_scientific_analysis_v1/finalize.py",
+      "bytes": 71525
+    },
+    {
+      "path": "analyses/recovered_evidence_scientific_analysis_v1/replay.py",
+      "bytes": 1284
+    },
+    {
+      "path": "analyses/recovered_evidence_scientific_analysis_v1/replay_closure.py",
+      "bytes": 3353
+    },
+    {
+      "path": "analyses/recovered_evidence_scientific_analysis_v1/requirements.txt",
+      "bytes": 83
+    },
+    {
+      "path": "analyses/recovered_evidence_scientific_analysis_v1/verify.py",
+      "bytes": 6132
+    },
+    {
+      "path": "analyses/transfer_failure_integration_v1/README.md",
+      "bytes": 2894
+    },
+    {
+      "path": "analyses/transfer_failure_integration_v1/phase4_finalize.py",
+      "bytes": 38203
+    },
+    {
+      "path": "analyses/transfer_failure_integration_v1/phase4_replay.py",
+      "bytes": 1738
+    },
+    {
+      "path": "analyses/transfer_failure_integration_v1/phase4_seal.py",
+      "bytes": 7610
+    },
+    {
+      "path": "analyses/transfer_failure_integration_v1/phase4_supplement.py",
+      "bytes": 4597
+    },
+    {
+      "path": "analyses/transfer_failure_integration_v1/phase4_transfer.py",
+      "bytes": 21878
+    },
+    {
+      "path": "analyses/transfer_failure_integration_v1/requirements.txt",
+      "bytes": 99
+    },
+    {
+      "path": "analyses/transfer_failure_integration_v1/validate_migration.py",
+      "bytes": 8582
+    },
+    {
+      "path": "docs/RECOVERED_EVIDENCE_MIGRATION_V1.md",
+      "bytes": 1243
+    },
+    {
+      "path": "evidence/provenance/recovered_evidence_migration_v1/AUTODL_PHASE4_REPLAY_CHECK.json",
+      "bytes": 1731
+    },
+    {
+      "path": "evidence/provenance/recovered_evidence_migration_v1/CLEAN_CHECKOUT_VALIDATION_V1.json",
+      "bytes": 8040
+    },
+    {
+      "path": "evidence/provenance/recovered_evidence_migration_v1/GITHUB_GAP_ANALYSIS.csv",
+      "bytes": 176056
+    },
+    {
+      "path": "evidence/provenance/recovered_evidence_migration_v1/LOCAL_FIXED_METRIC_REPLAY_CHECK.json",
+      "bytes": 8306
+    },
+    {
+      "path": "evidence/provenance/recovered_evidence_migration_v1/MIGRATION_ALLOWLIST.csv",
+      "bytes": 121141
+    },
+    {
+      "path": "evidence/provenance/recovered_evidence_migration_v1/MIGRATION_EXCLUSIONS.csv",
+      "bytes": 14353
+    },
+    {
+      "path": "evidence/provenance/recovered_evidence_migration_v1/MIGRATION_FILE_SHA256.csv",
+      "bytes": 121141
+    },
+    {
+      "path": "evidence/provenance/recovered_evidence_migration_v1/MIGRATION_LINEAGE_MAP.csv",
+      "bytes": 121141
+    },
+    {
+      "path": "evidence/provenance/recovered_evidence_migration_v1/MIGRATION_PROVENANCE.json",
+      "bytes": 7648
+    },
+    {
+      "path": "evidence/provenance/recovered_evidence_migration_v1/MIGRATION_SOURCE_INVENTORY.csv",
+      "bytes": 96585
+    },
+    {
+      "path": "evidence/provenance/recovered_evidence_migration_v1/MIGRATION_VALIDATION_REPORT.md",
+      "bytes": 4280
+    },
+    {
+      "path": "evidence/provenance/recovered_evidence_migration_v1/README.md",
+      "bytes": 2894
+    },
+    {
+      "path": "evidence/provenance/recovered_evidence_migration_v1/STAGED_REVIEW_V1.json",
+      "bytes": 340
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/01_DATASET_CONDITION_MATRIX.csv",
+      "bytes": 18840
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/01_FOUR_DATASET_EVIDENCE_INVENTORY.md",
+      "bytes": 7988
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/02_WITHIN_DATASET_STRUCTURAL_ANALYSIS.md",
+      "bytes": 18452
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/03_CROSS_REGIME_COMPARABILITY.md",
+      "bytes": 5127
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/03_CROSS_REGIME_STRUCTURE_REPORT.md",
+      "bytes": 9644
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/04_CLAIM_EVIDENCE_MATRIX.md",
+      "bytes": 10830
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/05_QWEN_GPU_EXPERIMENT_DECISION.md",
+      "bytes": 9516
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/06_SCIENTIFIC_SYNTHESIS_EXECUTIVE_SUMMARY.md",
+      "bytes": 7268
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/07_REVISION_V2_VERIFICATION_AND_ERRATA.md",
+      "bytes": 14269
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/08_QWEN_GPU_EXPERIMENT_DECISION_V2.md",
+      "bytes": 10081
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/OUTPUT_MANIFEST.json",
+      "bytes": 8119
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/OUTPUT_MANIFEST_V2.json",
+      "bytes": 9973
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/README.md",
+      "bytes": 2894
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/RUN_PROVENANCE.json",
+      "bytes": 9805
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/RUN_PROVENANCE_ADDENDUM_V2.json",
+      "bytes": 2718
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/RUN_PROVENANCE_V2.json",
+      "bytes": 10067
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/intermediate/CAMER_within_summary.json",
+      "bytes": 1651
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/intermediate/ET_within_summary.json",
+      "bytes": 1034
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/intermediate/INPUTS_USED_a01.json",
+      "bytes": 1347
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/intermediate/INPUTS_USED_a02_camer.json",
+      "bytes": 1656
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/intermediate/INPUTS_USED_a02_et.json",
+      "bytes": 1494
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/intermediate/INPUTS_USED_a02_et_extras.json",
+      "bytes": 1494
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/intermediate/INPUTS_USED_a02_listen.json",
+      "bytes": 1656
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/intermediate/INPUTS_USED_a02_mcr.json",
+      "bytes": 1656
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/intermediate/INPUTS_USED_a03.json",
+      "bytes": 1796
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/intermediate/INPUTS_USED_a04.json",
+      "bytes": 2085
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/intermediate/INPUTS_USED_a05.json",
+      "bytes": 2085
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/intermediate/INVENTORY_FACTS.json",
+      "bytes": 1489
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/intermediate/JOINT_LONG_V1.csv",
+      "bytes": 2188316
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/intermediate/LISTEN_within_summary.json",
+      "bytes": 1443
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/intermediate/MANIFEST_FEATURE_STALENESS_AUDIT.csv",
+      "bytes": 364
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/intermediate/MCR_within_summary.json",
+      "bytes": 1108
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/intermediate/V2_CAMER_identity_checks.json",
+      "bytes": 2386
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/CAMER_C1_outcomes_by_construction_order.csv",
+      "bytes": 1751
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/CAMER_C2_order_transition_matrix.csv",
+      "bytes": 1262
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/CAMER_C2b_order_effect_summary.csv",
+      "bytes": 309
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/CAMER_C3_binary_choice_by_construction.csv",
+      "bytes": 248
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/CAMER_C4_consistent_label_retention_by_label.csv",
+      "bytes": 150
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/CAMER_C5_OTHER_label_identity.csv",
+      "bytes": 456
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/CAMER_C6_entropy_rule_by_construction.csv",
+      "bytes": 375
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/ET_E1_dualreadable_coverage_by_pair_relation.csv",
+      "bytes": 224
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/ET_E1_topology_readability.csv",
+      "bytes": 527
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/ET_E2_ERI1_contrasts_by_topology.csv",
+      "bytes": 5391
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/ET_E2_ERI1_topology_by_condition_order.csv",
+      "bytes": 7793
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/ET_E3_ERI1_full_trajectory.csv",
+      "bytes": 655
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/ET_E4_entropy_vs_joint_output.csv",
+      "bytes": 864
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/ET_E6_phase2_conflict_by_third_modality_topology.csv",
+      "bytes": 2125
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/ET_E6_phase2_conflict_outcome_by_pair_order.csv",
+      "bytes": 1402
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/ET_E7_noninput_label_support_effect.csv",
+      "bytes": 812
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/ET_E_OTHER_identity_permutation.csv",
+      "bytes": 415
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/ET_E_OTHER_identity_vs_noninput_label.csv",
+      "bytes": 900
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/LISTEN_L1_label_composition_by_condition.csv",
+      "bytes": 1374
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/LISTEN_L2_outcome_by_source_label_and_condition.csv",
+      "bytes": 3243
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/LISTEN_L2b_B3_unimodal_alignment_vs_native_label_match.csv",
+      "bytes": 648
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/LISTEN_L2c_B3_audio_top1_distribution_by_listen_audio_label.csv",
+      "bytes": 861
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/LISTEN_L3_binary_subset_composition_3C.csv",
+      "bytes": 748
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/MCR_M1_order_transition_matrix.csv",
+      "bytes": 281
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/MCR_M2_outcome_by_label_strata.csv",
+      "bytes": 6305
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/MCR_M2b_B3_unimodal_readability.csv",
+      "bytes": 148
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/MCR_M3_imbalance_metric_decomposition.csv",
+      "bytes": 1173
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/MCR_M4_text_condition_execution_matrix.csv",
+      "bytes": 512
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/X1_cross_regime_outcome_distribution.csv",
+      "bytes": 1858
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/X2_order_sensitivity_paired.csv",
+      "bytes": 1372
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/X3_unfitted_entropy_rule_by_regime.csv",
+      "bytes": 3317
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/X4_frozen_zero_refit_replay_diagnostics.csv",
+      "bytes": 958
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/X4b_cited_frozen_metrics.csv",
+      "bytes": 3269
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/X5_label_space_overlap_vs_coverage.csv",
+      "bytes": 823
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables/X6_OTHER_item_persistence.csv",
+      "bytes": 1023
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables_v2/V2_A1_ERI1_A_ONLY_readability_accounting.csv",
+      "bytes": 422
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables_v2/V2_A1b_ERI1_effect_by_posttreatment_A_ONLY_readability.csv",
+      "bytes": 659
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables_v2/V2_A2_calibration_vs_evidence_decomposition.csv",
+      "bytes": 1675
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables_v2/V2_A3a_camer_subset_composition.csv",
+      "bytes": 763
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables_v2/V2_A3b_camer_subset_AUROC_confound_controls.csv",
+      "bytes": 816
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables_v2/V2_A3c_camer_in7_minus_out_AUROC_difference.csv",
+      "bytes": 406
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables_v2/V2_A3d_random_label_subset_null.csv",
+      "bytes": 389
+    },
+    {
+      "path": "results/four_regime_structural_synthesis_v1/tables_v2/V2_B_camer_candidate_position_vs_choice.csv",
+      "bytes": 342
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/AUTODL_ORIGINAL_OUTPUT_SHA256SUMS_V2.txt",
+      "bytes": 3810
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/CAMER_6000_KEY_RECONCILIATION_V2.public_projection.csv",
+      "bytes": 3827448
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/CAMER_ALL_RECOVERED_SCORE_ASSET_AUDIT_V2.json",
+      "bytes": 4618
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/CAMER_B3_SEVEN_CLASS_CPU_VERIFICATION_V2.csv",
+      "bytes": 960164
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/CAMER_RECONCILIATION_V2.json",
+      "bytes": 2367
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/CAMER_UNIMODAL_READABILITY_JOIN_V2.csv",
+      "bytes": 61534
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/FOUR_REGIME_SYNTHESIS_ERRATA_V2.json",
+      "bytes": 1315
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/HISTORICAL_EVIDENCE_RECONCILIATION_V2.md",
+      "bytes": 15940
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/INDEXED_ARCHIVE_RECONCILIATION_V2.public_projection.json",
+      "bytes": 42191
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/INPUT_SHA256_RECORD_COUNTS_V2.json",
+      "bytes": 319804
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/LISTEN_CODE_CHECKPOINT_AUDIT_V2.public_projection.json",
+      "bytes": 336
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/LISTEN_PLANNED_VERSUS_EXECUTED_STAGE_V2.json",
+      "bytes": 2315
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/LISTEN_RECONCILIATION_V2.json",
+      "bytes": 2816
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/LISTEN_UNIMODAL_CORRECTNESS_JOIN_V2.csv",
+      "bytes": 183544
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/LISTEN_V3_ANSWER_OPTION_RECOVERY_V2.public_projection.csv",
+      "bytes": 910566
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/LISTEN_V3_V4_STRICT_IDENTITY_JOIN_V2.csv",
+      "bytes": 222557
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/LISTEN_V4_ANSWER_OPTION_RECOVERY_V2.public_projection.csv",
+      "bytes": 940434
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/MCR_1000_NATIVE_TO_909_CONTROLLED_IDENTITY_V2.public_projection.csv",
+      "bytes": 451700
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/MCR_NATIVE_FOUR_CONDITION_PAIRED_PROJECTION_V2.public_projection.csv",
+      "bytes": 1531509
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/MCR_POOL_AND_DUPLICATE_AUDIO_AUDIT_V2.public_projection.json",
+      "bytes": 99960
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/MCR_RECONCILIATION_V2.json",
+      "bytes": 2562
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/MCR_TEXT_AND_MODEL_CONTRACT_AUDIT_V2.public_projection.json",
+      "bytes": 23284
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/OUTPUT_RECORD_COUNTS_V2.json",
+      "bytes": 8670
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/QWEN_GPU_PRIORITY_REVISED_V2.md",
+      "bytes": 2099
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/README.md",
+      "bytes": 2894
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/READ_ONLY_COMPLETION_RECEIPT_V2.json",
+      "bytes": 290
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/RECONCILIATION_MACHINE_SUMMARY_V2.json",
+      "bytes": 9702
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/RECOVERED_54_RUN_RECONCILIATION.json",
+      "bytes": 5993
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/SHA256SUMS.txt",
+      "bytes": 8146
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/THREE_DATASET_HISTORICAL_EVIDENCE_MATRIX_V2.csv",
+      "bytes": 7713
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/expanded_forensics/DOC_REFERENCE_RECONCILIATION.csv",
+      "bytes": 155956
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/expanded_forensics/FULL_EXPERIMENT_RECOVERY_REPORT.md",
+      "bytes": 4799
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/expanded_forensics/FULL_EXPERIMENT_SCAN_SUMMARY.json",
+      "bytes": 1531
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/expanded_forensics/MCR_NATIVE_FOUR_CONDITION_RECOVERY.public_projection.json",
+      "bytes": 990
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/expanded_forensics/OWN_CODE_AND_CHECKPOINT_SUPPLEMENT.public_projection.json",
+      "bytes": 2803
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/expanded_forensics/README.md",
+      "bytes": 2894
+    },
+    {
+      "path": "results/historical_evidence_reconciliation_v2/expanded_forensics/RECOVERED_EXPERIMENT_EXECUTION_REGISTER.csv",
+      "bytes": 29903
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/00_ANALYSIS_POPULATION_REGISTER.csv",
+      "bytes": 19044
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/00_SOURCE_EVIDENCE_LOCK.md",
+      "bytes": 28549
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/01_MCR_DUPLICATE_SENSITIVITY.md",
+      "bytes": 3572
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/01_MCR_LABEL_CONDITION_ASSOCIATIONS.csv",
+      "bytes": 2915
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/01_MCR_NATIVE_FOUR_CONDITION_REPORT.md",
+      "bytes": 6048
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/01_MCR_NATIVE_VS_CONTROLLED_COMPARABILITY.md",
+      "bytes": 2023
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/01_MCR_PAIRED_TRANSITIONS.csv",
+      "bytes": 17015
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/02_CAMER_CONSTRUCT_COMPARISON.md",
+      "bytes": 5316
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/02_CAMER_ELIGIBILITY_AND_COVERAGE.csv",
+      "bytes": 5623
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/02_CAMER_MATCHED_TRANSITIONS.csv",
+      "bytes": 31809
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/02_CAMER_UNIMODAL_JOINT_STRUCTURE.md",
+      "bytes": 6283
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/03_LISTEN_ELIGIBILITY_SENSITIVITY.md",
+      "bytes": 5176
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/03_LISTEN_MATCHED_SOURCE_LABEL_DIAGNOSTICS.public_projection.csv",
+      "bytes": 150479
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/03_LISTEN_OTHER_REINTERPRETATION.md",
+      "bytes": 2678
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/04_RECOVERED_EVIDENCE_CROSS_STUDY_SYNTHESIS.md",
+      "bytes": 4491
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/05_CLAIM_EVIDENCE_MATRIX.md",
+      "bytes": 9278
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/06_QWEN_NEXT_EXPERIMENT_DECISION.md",
+      "bytes": 3453
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/07_FINAL_SCIENTIFIC_EXECUTIVE_SUMMARY.md",
+      "bytes": 2538
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/ADDITIONAL_INPUT_LOCK.json",
+      "bytes": 3398
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/ANALYSIS_COMPLETE.json",
+      "bytes": 133
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/AUTODL_ORIGINAL_SHA256SUMS.txt",
+      "bytes": 18910
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/CLAIM_EVIDENCE_MATRIX.csv",
+      "bytes": 14935
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/CLOSURE_INPUT_VERIFICATION.json",
+      "bytes": 39865
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/CONSTRUCT_INPUT_LOCK.json",
+      "bytes": 7387
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/CONTRACT_TEXT_WARNINGS.json",
+      "bytes": 412
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/ENVIRONMENT.json",
+      "bytes": 482
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/EXPLORATORY_ANALYSIS_PLAN.json",
+      "bytes": 2574
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/FAILURE_AND_EXCLUSION_ACCOUNTING.json",
+      "bytes": 1223
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/FINAL_VERIFICATION.json",
+      "bytes": 1371
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/NAVIGATION_MEMORY_UPDATE.json",
+      "bytes": 1839
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/PRE_FINAL_MANIFEST_VALIDATION.json",
+      "bytes": 442
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/PRIOR_REPORT_READBACK_LOCK.json",
+      "bytes": 306
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/README.md",
+      "bytes": 2894
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/REFERENCE_SOURCE_RELATIONSHIPS.public_projection.json",
+      "bytes": 5552
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/REPLAY_INSTRUCTIONS.md",
+      "bytes": 2644
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/REPRODUCIBILITY_VERIFICATION.json",
+      "bytes": 5025
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/SECONDARY_REPLAY_VERIFICATION.json",
+      "bytes": 293
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/SHA256SUMS.txt",
+      "bytes": 9957
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/SOURCE_FINAL_READ_ONLY_VERIFICATION.json",
+      "bytes": 104
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/SOURCE_INPUT_LOCK.csv",
+      "bytes": 11997
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/SOURCE_INPUT_LOCK.json",
+      "bytes": 18914
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/intermediate/CAMER_CANDIDATE_LABEL_CONFOUNDING.csv",
+      "bytes": 1395
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/intermediate/CAMER_ITEM_ELIGIBILITY_IDENTITY.csv",
+      "bytes": 703447
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/intermediate/CAMER_LABEL_PAIR_CONSTRUCT_SUPPORT.csv",
+      "bytes": 3455
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/intermediate/CAMER_LABEL_PAIR_STANDARDIZATION.csv",
+      "bytes": 2877
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/intermediate/LISTEN_CORRECTED_B3_ONTOLOGY_SUPPORT.csv",
+      "bytes": 72590
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/intermediate/LISTEN_ELIGIBILITY_BY_NATIVE_LABEL.csv",
+      "bytes": 2493
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/intermediate/LISTEN_OTHER_LABEL_DECOMPOSITION.csv",
+      "bytes": 1948
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/intermediate/MCR_DUPLICATE_DIAGNOSTICS.json",
+      "bytes": 14242
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/intermediate/MCR_ITEM_IDENTITY_OUTCOMES.csv",
+      "bytes": 145848
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/intermediate/MCR_LABEL_PAIRED_CONTRASTS.csv",
+      "bytes": 1542
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/intermediate/MCR_NATIVE_CONTROLLED_PER_ITEM_JOIN.csv",
+      "bytes": 281692
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/intermediate/README.md",
+      "bytes": 2894
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/numeric/CAMER_RESULTS.json",
+      "bytes": 35910
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/numeric/LISTEN_RESULTS.json",
+      "bytes": 18501
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/numeric/MCR_RESULTS.json",
+      "bytes": 27149
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/numeric/MCR_SECONDARY_DIAGNOSTICS.json",
+      "bytes": 6921
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/numeric/README.md",
+      "bytes": 2894
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/numeric_readback.json",
+      "bytes": 77151
+    },
+    {
+      "path": "results/transfer_failure_integration_v1/04_TRANSFER_CLAIM_BOUNDARY_MATRIX.md",
+      "bytes": 5145
+    },
+    {
+      "path": "results/transfer_failure_integration_v1/04_TRANSFER_FAILURE_DECOMPOSITION.md",
+      "bytes": 13825
+    },
+    {
+      "path": "results/transfer_failure_integration_v1/04_TRANSFER_FROZEN_EVIDENCE_REGISTER.md",
+      "bytes": 37511
+    },
+    {
+      "path": "results/transfer_failure_integration_v1/04_TRANSFER_RECOVERED_EVIDENCE_LINKAGE.md",
+      "bytes": 2998
+    },
+    {
+      "path": "results/transfer_failure_integration_v1/04_TRANSFER_ROUTE_LEVEL_REPLAY_CHECK.csv",
+      "bytes": 14802
+    },
+    {
+      "path": "results/transfer_failure_integration_v1/PHASE4_ADDITIONAL_PROTOCOL_LOCK.json",
+      "bytes": 5444
+    },
+    {
+      "path": "results/transfer_failure_integration_v1/PHASE4_COMPLETION_RECEIPT.json",
+      "bytes": 1746
+    },
+    {
+      "path": "results/transfer_failure_integration_v1/PHASE4_EXPLORATORY_PLAN.json",
+      "bytes": 1512
+    },
+    {
+      "path": "results/transfer_failure_integration_v1/PHASE4_FINAL_VERIFICATION.json",
+      "bytes": 38639
+    },
+    {
+      "path": "results/transfer_failure_integration_v1/PHASE4_NAVIGATION_MEMORY_UPDATE.json",
+      "bytes": 1226
+    },
+    {
+      "path": "results/transfer_failure_integration_v1/PHASE4_READ_ONLY_VERIFICATION.json",
+      "bytes": 235
+    },
+    {
+      "path": "results/transfer_failure_integration_v1/PHASE4_SOURCE_LOCK.json",
+      "bytes": 28527
+    },
+    {
+      "path": "results/transfer_failure_integration_v1/PHASE4_SUPPLEMENTAL_EXECUTION_IDENTITY_CHECK.json",
+      "bytes": 7391
+    },
+    {
+      "path": "results/transfer_failure_integration_v1/README.md",
+      "bytes": 2894
+    },
+    {
+      "path": "results/transfer_failure_integration_v1/RUN_PROVENANCE.json",
+      "bytes": 17875
+    },
+    {
+      "path": "results/transfer_failure_integration_v1/SHA256SUMS.txt",
+      "bytes": 4288
+    },
+    {
+      "path": "results/transfer_failure_integration_v1/phase4_numeric/LISTEN_NATIVE_LABEL_SUPPORT_AND_OTHER.csv",
+      "bytes": 1070
+    },
+    {
+      "path": "results/transfer_failure_integration_v1/phase4_numeric/README.md",
+      "bytes": 2894
+    },
+    {
+      "path": "results/transfer_failure_integration_v1/phase4_numeric/TRANSFER_FAILURE_SUBGROUPS.csv",
+      "bytes": 91039
+    },
+    {
+      "path": "results/transfer_failure_integration_v1/phase4_numeric/TRANSFER_FROZEN_LOGIT_DECOMPOSITION.csv",
+      "bytes": 23505
+    },
+    {
+      "path": "results/transfer_failure_integration_v1/phase4_numeric/TRANSFER_RECOVERED_ROW_LINKAGE.csv",
+      "bytes": 1271830
+    },
+    {
+      "path": "results/transfer_failure_integration_v1/phase4_numeric/TRANSFER_RESULTS.json",
+      "bytes": 269563
+    },
+    {
+      "path": "results/transfer_failure_integration_v1/phase4_replay_same_seed/PHASE4_REPLAY_CHECK.json",
+      "bytes": 1731
+    },
+    {
+      "path": "results/transfer_failure_integration_v1/phase4_replay_same_seed/README.md",
+      "bytes": 2894
+    }
+  ],
+  "final_scope": "ALL_FINAL_NEW_FILE_BYTES_EXCEPT_MANIFEST_SELF"
+}

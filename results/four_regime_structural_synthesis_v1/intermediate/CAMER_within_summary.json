@@ -1,0 +1,70 @@
+{
+ "construction_item_counts": {
+  "consistent": 500,
+  "audio-aligned": 500,
+  "video-aligned": 500
+ },
+ "multimodal_ground_truth_available": "NO: final_label deliberately excluded from controlled manifest; y_A/y_V are single-modality pseudo labels",
+ "planned_arms_in_manifest": [
+  "['A_ONLY', 'V_ONLY', 'A_THEN_V', 'V_THEN_A']"
+ ],
+ "executed_joint_arms": [
+  "A_THEN_V",
+  "V_THEN_A"
+ ],
+ "unimodal_A_ONLY_V_ONLY_arm_outputs": "NOT_IN_REPOSITORY (controlled A_ONLY/V_ONLY NOT_RUN per manifest dual_readable_status); B3 unimodal 7-label measurements exist",
+ "consistent": {
+  "n_planned": 1000,
+  "n_available": 946,
+  "retention": 0.7082452431289641,
+  "retention_wilson": [
+   0.6784824154657927,
+   0.7363236517109815
+  ],
+  "B3_both_unimodal_top1_equal_shared_label_retention": 0.7748815165876777,
+  "n_B3_both_readable": 422
+ },
+ "OTHER": {
+  "n": 588,
+  "share_of_available": 0.30340557275541796,
+  "n_distinct_labels": 15,
+  "other_equals_label_of_other_construction_side_not_applicable": true
+ },
+ "label_space": {
+  "n_candidates": 16,
+  "n_source_labels_used": 16,
+  "candidates_never_a_source_label": [],
+  "candidates_output_at_least_once": [
+   "angry",
+   "assertive",
+   "calm",
+   "confident",
+   "contemptuous",
+   "curious",
+   "determined",
+   "doubtful",
+   "fearful",
+   "grateful",
+   "happy",
+   "jealous",
+   "neutral",
+   "sad",
+   "surprised",
+   "worried"
+  ],
+  "source_labels_outside_B3_7": [
+   "assertive",
+   "calm",
+   "confident",
+   "contemptuous",
+   "curious",
+   "determined",
+   "doubtful",
+   "grateful",
+   "jealous",
+   "worried"
+  ]
+ },
+ "y1_share_outside_B3_7": 0.317,
+ "y2_share_outside_B3_7": 0.429
+}

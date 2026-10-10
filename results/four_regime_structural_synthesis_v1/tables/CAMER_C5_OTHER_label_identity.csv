@@ -1,0 +1,16 @@
+output_label,n_OTHER,share_of_OTHER,in_B3_7label_space
+assertive,149,0.253401,False
+worried,145,0.246599,False
+doubtful,90,0.153061,False
+neutral,50,0.085034,True
+jealous,31,0.0527211,False
+determined,29,0.0493197,False
+calm,27,0.0459184,False
+grateful,17,0.0289116,False
+angry,16,0.0272109,True
+sad,14,0.0238095,True
+curious,7,0.0119048,False
+happy,5,0.0085034,True
+surprised,3,0.00510204,True
+contemptuous,3,0.00510204,False
+confident,2,0.00340136,False

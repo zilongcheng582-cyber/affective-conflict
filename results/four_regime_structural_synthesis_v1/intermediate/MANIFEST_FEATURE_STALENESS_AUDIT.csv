@@ -1,0 +1,4 @@
+dataset,n_rows,manifest_feature_col,frac_rows_differ_gt_1e6,max_abs_diff,median_abs_diff,corrected_matches_corrected_zero_refit_predictions_to_1e12
+MCR,1818,delta_normalized_entropy_raw,0.928493,0.283488,0.0382256,True
+LISTEN,1149,delta_normalized_entropy_raw,0.931245,0.258585,0.0471798,True
+CA-MER,3000,delta_normalized_entropy_raw,0.928,0.419299,0.0449837,True

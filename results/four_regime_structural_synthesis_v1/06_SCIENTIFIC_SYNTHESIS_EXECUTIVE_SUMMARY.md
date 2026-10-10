@@ -1,0 +1,49 @@
+> **修订提示（Revision V2）**："一句话结论"与"最建议的 Qwen 下一步"以 `08_QWEN_GPU_EXPERIMENT_DECISION_V2.md` 为准（`CPU_ANALYSIS_INCOMPLETE`，不批准 GPU，不建议运行 CA-MER 16 类测量）。第 2、3、8 条新确认结果的措辞按 `07_REVISION_V2_VERIFICATION_AND_ERRATA.md` 收窄。
+
+# 06 Four-Regime 科学综合：执行摘要
+
+`POST_HOC_EXPLORATORY_FOUR_REGIME_SYNTHESIS_V1` · 基线 `main` = `544ca0efae158df369a7b25dd110dc4254f67a7d` · 纯 CPU · 未启动 GPU / 未加载模型 / 未重拟合任何冻结模型 / 未改动 ERI1 封版与任何历史文件。
+复算：`python -m analyses.four_regime_synthesis_v1.run_all`（约 30 秒；两次运行输出哈希逐字节一致；输入哈希与最近修改提交见 `RUN_PROVENANCE.json`）。
+
+## 一句话结论
+**决策：`ONE_FINAL_QWEN_EXPERIMENT_REQUIRED`**——唯一首选是在 CA-MER 上运行已规划但仓库无输出的 `A_ONLY`/`V_ONLY`（16 类接口，取熵），并以免费的归档核对（Step 0）为前置；其余 GPU 候选均为 optional。
+
+## 各数据集尚未被充分利用的结构
+| 数据集 | 尚未用上的结构 |
+|---|---|
+| EmotionTalk | 确切可用的 **225** 条"AV 一致且 DualReadable"样本（历史共享标签保持率 99.6%）从未做过音频退化对照；ERI1 的 146 条在 3 种拓扑下的完整 RECODE→SNR00 轨迹此前只汇总过；OTHER 输出与未输入模态标签的关系；条目内音频熵变化与 SIDE_A 变化的关联 |
+| MCR | 配对顺序转移与 OTHER 的顺序驱动；只运行了对抗型文本，另三种文本关系条件从未运行；高 AUROC / BA=0.5 / 大 log loss 优势的分解 |
+| LISTEN | 3C 二元估计量的选择偏差定量；用 B3 自由 7 类空间对"隐含情绪能否被读出"的独立检查；OTHER 具体标签与选项表缺失 |
+| CA-MER | 构造间（audio-/video-aligned）选择异质性；16 类 OTHER 的内部结构；consistent 对照的标签依赖保持率；**受控 A_ONLY/V_ONLY 缺失导致单模态特征与标签体系不兼容** |
+
+## 从旧数据中新确认的结果（全部 `EXPLORATORY_SIGNAL` 或更弱，不是确认性）
+1. **MCR/LISTEN/CA-MER 的 manifest 特征列是过期的旧特征**（93–99% 的行与校正 B3 不同），正确做法是按 `dataset:source_item_id`+模态联接 `evidence/b3`；该联接与校正重放的预测在 2e-16 内一致。（过程性发现，不改历史结论。）
+2. **冻结迁移模型在四个目标集上都没有优于"只知道目标流行率的常数"**：MCR 的 log loss 差 +0.014 [−0.001, +0.031]（其相对 M0 的 −0.432 几乎全是流行率校准），CA-MER +0.085/+0.114，LISTEN +0.313；AUROC 的一半以上在 MCR 中来自顺序（0.666），但顺序内仍有 0.66–0.70 的弱排序信号。
+3. **熵不对称→选择的未拟合规则，点估计在 7 个总体都为正**（ET 0.74–0.82、MCR 0.67、LISTEN 0.60、CA-MER 0.51/0.57），但幅度差一个量级；在 CA-MER 里只要两源标签都落在 7 类 B3 空间内，AUROC 升到 0.64/0.71，之外是 0.49/0.52。→ **CA-MER 上的"失败"相当一部分是测量空间不兼容。**
+4. **OTHER 的结构按标签接口分层**：ET/MCR 零星且受顺序驱动（MCR 的 OTHER 几乎全发生在音频放最后时）；CA-MER（61–64%）和 LISTEN（49%）则是条目持久的（约为独立期望的 2.4–2.7 倍）。
+5. **顺序敏感性不是模态对的固有属性**：同为 A–V，ET 有 −11.6 pp 的 recency，CA-MER 近 0；同为 A–T，MCR −6.9 pp，ET 近 0。
+6. **LISTEN**：3C 的 0.61 二元 SIDE_A 份额在按音频标签事后分层后降到 0.45，Manski 界 [0.27, 0.83]；B3 自由空间里 anger/disgust/sadness 音频 top-1 命中对应标签仅 6–12%（多读成 surprised/happy）——隐含情绪"读不出"不能只归咎于字母选择题格式。
+7. **CA-MER 选择确实跟随构造标记**：P(音频\|二选一) 0.738（audio-aligned）vs 0.368（video-aligned），但 7 类熵几乎解释不了它。
+8. ERI1 内：条目内音频熵上升与 SIDE_A 下降相关（Spearman −0.35 [−0.49, −0.20]）；三种拓扑方向相同但 n=37–58，不能声称异质或不异质；**同一音频仅 RECODE 就有 9.6% 的条目读不出源标签**（"可读"是单次读取的性质，不稳健）；CLEAN 与历史 Phase2 的 292 个试次完全一致。
+
+## 看似有趣但没有得到证据的解释
+- "CA-MER 的 OTHER 是因为 7 类太窄"——被数据否定（两标签都在 7 类内时覆盖率并未更高；85% 的 OTHER 输出是 assertive/worried/doubtful 等语义相邻的非源标签）。
+- "OTHER 反映未输入模态的标签泄漏"——方向有（12/22 对洗牌基线约 7/22），但只来自 7 个簇、全在 ALL_DIFFERENT 里，且音频本身含语音词汇；`NOT_ESTABLISHED`。
+- "覆盖率/OTHER 差异由冲突构造类型造成"、"自然/断言/隐含冲突有不同机制"、"跨数据集 AUROC 排序反映机制强弱"——构造、标签接口、候选集、提示格式在数据集间完全共线，`NOT_ESTABLISHED`。
+- "ERI1 效应因拓扑而异"——n 太小，无法说有或没有。
+- "LISTEN 的 OTHER 是词汇偏好/识别失败/标签不兼容中的哪一种"——缺选项表与原始生成，`NOT_TESTABLE_WITH_CURRENT_DATA`。
+- "ALL_DIFFERENT 组合性"——现有总体里 TripleReadable 的 ALL_DIFFERENT 仅 3 条。
+
+## 是否发现真正值得新增实验的科学缺口
+**是，一个**：R1（论文第一核心发现）的外部效度缺口——熵不对称→仲裁的关联在另一个自然 A–V 数据集（CA-MER）上能否在**匹配的标签体系**下复现。它是 CPU 数据能生成假说（7 类内子集 0.64–0.71）但不能验证的缺口，且成本最低（约 3000 次单模态前向，联合结局已固定）。次要缺口（ERI1 机制精炼：AV 一致音频退化对照、视频反向）真实存在，但属于"精炼已封版结论的解释"，可由第二模型的对称设计承担。
+
+## 最建议的 Qwen 下一步
+1. **Step 0（免费）**：核对私有归档 `audit/QWEN25_CAMER_CONTROLLED_V1` 中是否已有 `A_ONLY`/`V_ONLY` 输出及 16 类概率向量。仅有标签没有概率向量时，熵特征仍需 GPU。
+2. 若需要：运行 CA-MER 16 类 `A_ONLY`/`V_ONLY`（1500×2，沿用既有候选序），预先冻结主估计量（未拟合规则簇 AUROC）与判读阈值；联合结局不重跑。
+3. 详见 `05_QWEN_GPU_EXPERIMENT_DECISION.md`。本轮没有创建正式 GPU manifest。
+
+## 预计何时停止 Qwen、转入第二模型
+Step 0 完成后，若归档不足则做上述**一次**实验（一次 GPU 会话级别）并完成 CPU 判读，之后 Qwen 冻结、转入第二模型。第二模型的设计直接纳入对称的音频/视频可靠性干预和 AV 一致对照。仅当第二模型在某个**预先命名且 Qwen 从未运行的**对照上与 Qwen 方向相反时，才重开 Qwen。
+
+## 局限
+所有新数字是事后探索；子集分析（尤其是 CA-MER 的 7 类内分层与 OTHER 标签身份检验）样本量小、CI 宽；MCR 的对话簇由文件名推断；LISTEN 的本体映射为作者自定的粗映射，仅用于 B3 对齐检查；没有任何数字被用来改写已封版结论。

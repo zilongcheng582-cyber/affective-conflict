@@ -1,0 +1,5 @@
+camer_subset,audio_label_earlier,mean,size,ALL_diff_earlier_minus_later,ALL_diff_lo,ALL_diff_hi
+audio-aligned,False,0.710145,345,0.0878555,0.0192861,0.159333
+audio-aligned,True,0.765714,350,0.0878555,0.0192861,0.159333
+video-aligned,False,0.305556,324,0.0878555,0.0192861,0.159333
+video-aligned,True,0.429003,331,0.0878555,0.0192861,0.159333

@@ -1,0 +1,14 @@
+modality,native_label,literal_B3_supported,conceptual_synonym_mapping,conflict_N,SIDE_A,SIDE_T,OTHER,OTHER_rate,dual_match_N
+y_A,anger,False,NOT_FROZEN; not introduced,58,1,9,48,0.8275862068965517,0
+y_A,disgust,False,NOT_FROZEN; not introduced,80,2,16,62,0.775,0
+y_A,frustration,False,NOT_FROZEN; not introduced,87,14,17,56,0.6436781609195402,0
+y_A,ridicule,False,NOT_FROZEN; not introduced,140,85,23,32,0.22857142857142856,22
+y_A,sadness,False,NOT_FROZEN; not introduced,13,0,0,13,1.0,0
+y_T,anger,False,NOT_FROZEN; not introduced,2,1,1,0,0.0,0
+y_T,excitement,False,NOT_FROZEN; not introduced,38,6,7,25,0.6578947368421053,0
+y_T,fear,False,NOT_FROZEN; not introduced,1,1,0,0,0.0,0
+y_T,frustration,False,NOT_FROZEN; not introduced,2,0,0,2,1.0,0
+y_T,happiness,False,NOT_FROZEN; not introduced,77,1,21,55,0.7142857142857143,0
+y_T,neutral,True,NOT_FROZEN; not introduced,173,60,25,88,0.5086705202312138,16
+y_T,sadness,False,NOT_FROZEN; not introduced,41,12,3,26,0.6341463414634146,2
+y_T,surprise,False,NOT_FROZEN; not introduced,44,21,8,15,0.3409090909090909,4

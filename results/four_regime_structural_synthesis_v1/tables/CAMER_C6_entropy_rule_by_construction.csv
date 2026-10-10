@@ -1,0 +1,7 @@
+construction,n_binary,AUROC_unfitted_lowerentropy_rule,ci_lo,ci_hi,concordance,binary_coverage
+audio-aligned,695,0.513693,0.448552,0.576532,0.533813,0.695
+audio-aligned|A_THEN_V,349,0.522213,,,,
+audio-aligned|V_THEN_A,346,0.504416,,,,
+video-aligned,655,0.567728,0.509677,0.626612,0.551145,0.655
+video-aligned|A_THEN_V,321,0.568088,,,,
+video-aligned|V_THEN_A,334,0.567689,,,,

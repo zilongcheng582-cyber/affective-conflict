@@ -1,0 +1,9 @@
+{
+  "staged_files": 168,
+  "all_staged_additions": true,
+  "all_manifest_hashes_match_staged_blobs": true,
+  "diff_check_rc": 0,
+  "diff_whitespace_findings": [],
+  "whitespace_rule": "Archived CSV CRLF and eight original report EOF blank lines retained; cr-at-eol,-blank-at-eof only; source bytes not reformatted",
+  "python": "3.12.10"
+}

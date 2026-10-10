@@ -1,0 +1,9 @@
+{
+  "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+  "numpy": "2.3.2",
+  "scipy": "1.18.1",
+  "platform": "Linux-5.15.0-122-generic-x86_64-with-glibc2.35",
+  "git_stdout": "",
+  "git_stderr": "fatal: not a git repository (or any parent up to mount point /root)\nStopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).\n",
+  "source_script_sha256": "3a50cc5dc466da524ce7bf31c16eb0e0b82b36ba34364a4643dab61cfd3b01b5"
+}

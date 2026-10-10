@@ -1,0 +1,32 @@
+regime,restriction,n_binary,n_clusters,P_SIDE_1,AUROC,ci_lo,ci_hi,mean_within_order_AUROC
+ET_AT_conflict,all binary-resolved,116,56,0.491379,0.740113,0.600042,0.861672,0.741756
+ET_AT_conflict,"both B3 unimodal top-1 == source label (dual-readable, B3 definition)",116,56,0.491379,0.740113,0.600042,0.861672,0.741756
+ET_AT_conflict,both source labels inside 7-label B3 space,116,56,0.491379,0.740113,0.600042,0.861672,0.741756
+ET_AT_conflict,at least one source label OUTSIDE 7-label space,0,,,,,,
+MCR_AT_adversarial_text,all binary-resolved,1734,254,0.061707,0.673529,0.62023,0.729889,0.689374
+MCR_AT_adversarial_text,"both B3 unimodal top-1 == source label (dual-readable, B3 definition)",719,193,0.107093,0.675466,0.611564,0.74121,0.68741
+MCR_AT_adversarial_text,both source labels inside 7-label B3 space,1734,254,0.061707,0.673529,0.62023,0.729889,0.689374
+MCR_AT_adversarial_text,at least one source label OUTSIDE 7-label space,0,,,,,,
+LISTEN_3C,all binary-resolved,167,167,0.610778,0.598341,0.505281,0.686585,0.598341
+LISTEN_3C,both source labels inside 7-label B3 space,0,,,,,,
+LISTEN_3C,at least one source label OUTSIDE 7-label space,167,167,0.610778,0.598341,0.505281,0.686585,0.598341
+ERI1_AV_CLEAN,all binary-resolved,284,134,0.440141,0.799497,0.729268,0.86059,0.802764
+ERI1_AV_CLEAN,"both B3 unimodal top-1 == source label (dual-readable, B3 definition)",284,134,0.440141,0.799497,0.729268,0.86059,0.802764
+ERI1_AV_CLEAN,both source labels inside 7-label B3 space,284,134,0.440141,0.799497,0.729268,0.86059,0.802764
+ERI1_AV_CLEAN,at least one source label OUTSIDE 7-label space,0,,,,,,
+ET_AV_conflict,all binary-resolved,284,134,0.440141,0.799497,0.729268,0.86059,0.802764
+ET_AV_conflict,"both B3 unimodal top-1 == source label (dual-readable, B3 definition)",284,134,0.440141,0.799497,0.729268,0.86059,0.802764
+ET_AV_conflict,both source labels inside 7-label B3 space,284,134,0.440141,0.799497,0.729268,0.86059,0.802764
+ET_AV_conflict,at least one source label OUTSIDE 7-label space,0,,,,,,
+CAMER_audio-aligned,all binary-resolved,695,379,0.738129,0.513693,0.445765,0.578692,0.513314
+CAMER_audio-aligned,"both B3 unimodal top-1 == source label (dual-readable, B3 definition)",15,,,,,,
+CAMER_audio-aligned,both source labels inside 7-label B3 space,160,90,0.81875,0.637668,0.484032,0.780242,0.631196
+CAMER_audio-aligned,at least one source label OUTSIDE 7-label space,535,289,0.714019,0.490196,0.419216,0.563745,0.489934
+CAMER_video-aligned,all binary-resolved,655,364,0.367939,0.567728,0.509742,0.623592,0.567889
+CAMER_video-aligned,"both B3 unimodal top-1 == source label (dual-readable, B3 definition)",39,22,0.461538,0.693122,0.496896,0.86448,0.701136
+CAMER_video-aligned,both source labels inside 7-label B3 space,256,143,0.410156,0.706623,0.625658,0.785555,0.706363
+CAMER_video-aligned,at least one source label OUTSIDE 7-label space,399,221,0.340852,0.517138,0.437878,0.598847,0.517314
+ET_VT_conflict,all binary-resolved,263,123,0.501901,0.816187,0.762016,0.863382,0.843066
+ET_VT_conflict,"both B3 unimodal top-1 == source label (dual-readable, B3 definition)",263,123,0.501901,0.816187,0.762016,0.863382,0.843066
+ET_VT_conflict,both source labels inside 7-label B3 space,263,123,0.501901,0.816187,0.762016,0.863382,0.843066
+ET_VT_conflict,at least one source label OUTSIDE 7-label space,0,,,,,,

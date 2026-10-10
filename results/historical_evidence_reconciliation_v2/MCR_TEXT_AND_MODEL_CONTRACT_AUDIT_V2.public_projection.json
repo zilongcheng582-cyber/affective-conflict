@@ -1,0 +1,1106 @@
+{
+  "adversarial_claims": {
+    "claim_extracted": 1000,
+    "claim_equals_audio_label": 0,
+    "claim_differs_audio_label": 1000
+  },
+  "faithful_claims": {
+    "claim_extracted": 1000,
+    "claim_matches_gt": 1000
+  },
+  "controlled_description_exact_matches": 909,
+  "excluded_native_items": [
+    {
+      "source_index": 24,
+      "audio_gt": "disgusted",
+      "adversarial_claim_label": "neutral",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 26,
+      "audio_gt": "sad",
+      "adversarial_claim_label": "happy",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 40,
+      "audio_gt": "neutral",
+      "adversarial_claim_label": "happy",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 41,
+      "audio_gt": "neutral",
+      "adversarial_claim_label": "disgusted",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 43,
+      "audio_gt": "happy",
+      "adversarial_claim_label": "fearful",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 60,
+      "audio_gt": "angry",
+      "adversarial_claim_label": "neutral",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 74,
+      "audio_gt": "angry",
+      "adversarial_claim_label": "happy",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 77,
+      "audio_gt": "neutral",
+      "adversarial_claim_label": "fearful",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 89,
+      "audio_gt": "sad",
+      "adversarial_claim_label": "neutral",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 107,
+      "audio_gt": "neutral",
+      "adversarial_claim_label": "surprised",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 125,
+      "audio_gt": "surprised",
+      "adversarial_claim_label": "sad",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 133,
+      "audio_gt": "happy",
+      "adversarial_claim_label": "neutral",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 144,
+      "audio_gt": "neutral",
+      "adversarial_claim_label": "fearful",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 202,
+      "audio_gt": "neutral",
+      "adversarial_claim_label": "angry",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 210,
+      "audio_gt": "neutral",
+      "adversarial_claim_label": "sad",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 216,
+      "audio_gt": "neutral",
+      "adversarial_claim_label": "fearful",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 217,
+      "audio_gt": "neutral",
+      "adversarial_claim_label": "sad",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 219,
+      "audio_gt": "angry",
+      "adversarial_claim_label": "disgusted",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 224,
+      "audio_gt": "sad",
+      "adversarial_claim_label": "happy",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 232,
+      "audio_gt": "happy",
+      "adversarial_claim_label": "fearful",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 236,
+      "audio_gt": "angry",
+      "adversarial_claim_label": "neutral",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 252,
+      "audio_gt": "neutral",
+      "adversarial_claim_label": "fearful",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 256,
+      "audio_gt": "surprised",
+      "adversarial_claim_label": "fearful",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 267,
+      "audio_gt": "angry",
+      "adversarial_claim_label": "disgusted",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 274,
+      "audio_gt": "sad",
+      "adversarial_claim_label": "fearful",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 294,
+      "audio_gt": "happy",
+      "adversarial_claim_label": "surprised",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 301,
+      "audio_gt": "happy",
+      "adversarial_claim_label": "surprised",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 304,
+      "audio_gt": "neutral",
+      "adversarial_claim_label": "disgusted",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 312,
+      "audio_gt": "surprised",
+      "adversarial_claim_label": "neutral",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 313,
+      "audio_gt": "happy",
+      "adversarial_claim_label": "surprised",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 315,
+      "audio_gt": "disgusted",
+      "adversarial_claim_label": "angry",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 317,
+      "audio_gt": "disgusted",
+      "adversarial_claim_label": "surprised",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 340,
+      "audio_gt": "neutral",
+      "adversarial_claim_label": "happy",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 354,
+      "audio_gt": "fearful",
+      "adversarial_claim_label": "sad",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 355,
+      "audio_gt": "angry",
+      "adversarial_claim_label": "fearful",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 361,
+      "audio_gt": "neutral",
+      "adversarial_claim_label": "disgusted",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 362,
+      "audio_gt": "happy",
+      "adversarial_claim_label": "angry",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 382,
+      "audio_gt": "happy",
+      "adversarial_claim_label": "surprised",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 415,
+      "audio_gt": "neutral",
+      "adversarial_claim_label": "fearful",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 423,
+      "audio_gt": "happy",
+      "adversarial_claim_label": "sad",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 432,
+      "audio_gt": "fearful",
+      "adversarial_claim_label": "neutral",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 439,
+      "audio_gt": "neutral",
+      "adversarial_claim_label": "sad",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 450,
+      "audio_gt": "neutral",
+      "adversarial_claim_label": "surprised",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 457,
+      "audio_gt": "neutral",
+      "adversarial_claim_label": "surprised",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 464,
+      "audio_gt": "surprised",
+      "adversarial_claim_label": "disgusted",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 467,
+      "audio_gt": "neutral",
+      "adversarial_claim_label": "happy",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 479,
+      "audio_gt": "neutral",
+      "adversarial_claim_label": "disgusted",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 496,
+      "audio_gt": "happy",
+      "adversarial_claim_label": "disgusted",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 497,
+      "audio_gt": "happy",
+      "adversarial_claim_label": "surprised",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 498,
+      "audio_gt": "neutral",
+      "adversarial_claim_label": "angry",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 542,
+      "audio_gt": "fearful",
+      "adversarial_claim_label": "disgusted",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 566,
+      "audio_gt": "happy",
+      "adversarial_claim_label": "angry",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 577,
+      "audio_gt": "neutral",
+      "adversarial_claim_label": "sad",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 583,
+      "audio_gt": "happy",
+      "adversarial_claim_label": "surprised",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 584,
+      "audio_gt": "neutral",
+      "adversarial_claim_label": "surprised",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 587,
+      "audio_gt": "surprised",
+      "adversarial_claim_label": "fearful",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 591,
+      "audio_gt": "neutral",
+      "adversarial_claim_label": "disgusted",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 599,
+      "audio_gt": "neutral",
+      "adversarial_claim_label": "fearful",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 604,
+      "audio_gt": "happy",
+      "adversarial_claim_label": "sad",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 612,
+      "audio_gt": "neutral",
+      "adversarial_claim_label": "happy",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 629,
+      "audio_gt": "happy",
+      "adversarial_claim_label": "sad",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 637,
+      "audio_gt": "neutral",
+      "adversarial_claim_label": "fearful",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 638,
+      "audio_gt": "sad",
+      "adversarial_claim_label": "fearful",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 644,
+      "audio_gt": "happy",
+      "adversarial_claim_label": "fearful",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 648,
+      "audio_gt": "neutral",
+      "adversarial_claim_label": "happy",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 653,
+      "audio_gt": "neutral",
+      "adversarial_claim_label": "surprised",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 668,
+      "audio_gt": "angry",
+      "adversarial_claim_label": "neutral",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 673,
+      "audio_gt": "neutral",
+      "adversarial_claim_label": "fearful",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 682,
+      "audio_gt": "surprised",
+      "adversarial_claim_label": "fearful",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 687,
+      "audio_gt": "surprised",
+      "adversarial_claim_label": "neutral",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 744,
+      "audio_gt": "happy",
+      "adversarial_claim_label": "disgusted",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 757,
+      "audio_gt": "happy",
+      "adversarial_claim_label": "fearful",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 763,
+      "audio_gt": "happy",
+      "adversarial_claim_label": "angry",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 765,
+      "audio_gt": "disgusted",
+      "adversarial_claim_label": "surprised",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 817,
+      "audio_gt": "neutral",
+      "adversarial_claim_label": "fearful",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 822,
+      "audio_gt": "neutral",
+      "adversarial_claim_label": "sad",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 834,
+      "audio_gt": "fearful",
+      "adversarial_claim_label": "neutral",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 835,
+      "audio_gt": "surprised",
+      "adversarial_claim_label": "disgusted",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 891,
+      "audio_gt": "neutral",
+      "adversarial_claim_label": "happy",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 905,
+      "audio_gt": "happy",
+      "adversarial_claim_label": "neutral",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 906,
+      "audio_gt": "surprised",
+      "adversarial_claim_label": "disgusted",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 911,
+      "audio_gt": "surprised",
+      "adversarial_claim_label": "disgusted",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 916,
+      "audio_gt": "surprised",
+      "adversarial_claim_label": "happy",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 920,
+      "audio_gt": "surprised",
+      "adversarial_claim_label": "fearful",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 921,
+      "audio_gt": "happy",
+      "adversarial_claim_label": "angry",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 931,
+      "audio_gt": "disgusted",
+      "adversarial_claim_label": "surprised",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 942,
+      "audio_gt": "happy",
+      "adversarial_claim_label": "disgusted",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 957,
+      "audio_gt": "sad",
+      "adversarial_claim_label": "fearful",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 959,
+      "audio_gt": "surprised",
+      "adversarial_claim_label": "sad",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 964,
+      "audio_gt": "angry",
+      "adversarial_claim_label": "surprised",
+      "reason": "UNRESOLVED"
+    },
+    {
+      "source_index": 973,
+      "audio_gt": "neutral",
+      "adversarial_claim_label": "happy",
+      "reason": "UNRESOLVED"
+    }
+  ],
+  "model_identity_sources": [
+    {
+      "path": "/root/autodl-tmp/affective-conflict/code/prompts/qwen25_mcr_native_execution_v1.json",
+      "sha256": "f33a9a8ce67f21af4acb3bf22ee3cdb05c2ac00de49a865a932be80fa2f447c2",
+      "identity_excerpts": [
+        {
+          "line": 2
+        },
+        {
+          "line": 10
+        },
+        {
+          "line": 14
+        },
+        {
+          "line": 17
+        },
+        {
+          "line": 21
+        },
+        {
+          "line": 23
+        },
+        {
+          "line": 25
+        },
+        {
+          "line": 32
+        },
+        {
+          "line": 43
+        },
+        {
+          "line": 56
+        },
+        {
+          "line": 61
+        },
+        {
+          "line": 62
+        },
+        {
+          "line": 63
+        },
+        {
+          "line": 64
+        },
+        {
+          "line": 71
+        }
+      ]
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/code/prompts/qwen25_mcr_controlled_execution_v1.json",
+      "sha256": "6e7f6921427d18a05a88de30be6c01066432dc1d1e783ed7546bf3fe963f7ba4",
+      "identity_excerpts": [
+        {
+          "line": 3
+        },
+        {
+          "line": 4
+        },
+        {
+          "line": 5
+        },
+        {
+          "line": 6
+        },
+        {
+          "line": 15
+        }
+      ]
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_MCR_NATIVE_V1/MCR_QWEN25_EXECUTION_AND_MANIFEST_V1.md",
+      "sha256": "0e5b3f9cddba0987937e1517bc21dd8e4b3985b753d22682cfc69d265bdae008",
+      "identity_excerpts": [
+        {
+          "line": 9
+        },
+        {
+          "line": 12
+        },
+        {
+          "line": 15
+        },
+        {
+          "line": 17
+        },
+        {
+          "line": 25
+        },
+        {
+          "line": 39
+        },
+        {
+          "line": 40
+        },
+        {
+          "line": 42
+        },
+        {
+          "line": 43
+        },
+        {
+          "line": 44
+        },
+        {
+          "line": 45
+        },
+        {
+          "line": 46
+        },
+        {
+          "line": 55
+        },
+        {
+          "line": 66
+        },
+        {
+          "line": 71
+        },
+        {
+          "line": 72
+        },
+        {
+          "line": 88
+        },
+        {
+          "line": 90
+        },
+        {
+          "line": 101
+        },
+        {
+          "line": 103
+        },
+        {
+          "line": 117
+        },
+        {
+          "line": 119
+        },
+        {
+          "line": 145
+        },
+        {
+          "line": 147
+        },
+        {
+          "line": 150
+        },
+        {
+          "line": 152
+        },
+        {
+          "line": 157
+        },
+        {
+          "line": 159
+        },
+        {
+          "line": 164
+        },
+        {
+          "line": 180
+        },
+        {
+          "line": 203
+        }
+      ]
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_MCR_NATIVE_V1/MCR_SOURCE_PROTOCOL_AUDIT.md.pre_execution_v1_revision_20260919.md",
+      "sha256": "93f588ca4833fa8e758f16f6e103c83251981db1757f0acfdb631f33dc504b22",
+      "identity_excerpts": [
+        {
+          "line": 3
+        },
+        {
+          "line": 4
+        },
+        {
+          "line": 23
+        },
+        {
+          "line": 25
+        },
+        {
+          "line": 42
+        },
+        {
+          "line": 70
+        },
+        {
+          "line": 76
+        },
+        {
+          "line": 102
+        },
+        {
+          "line": 119
+        },
+        {
+          "line": 120
+        },
+        {
+          "line": 121
+        },
+        {
+          "line": 124
+        }
+      ]
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_MCR_NATIVE_V1/full_run/MCR_QWEN25_NATIVE_FULL_RUN_V1_REPORT.md",
+      "sha256": "15d18bed43f5c41fe865c0c473c3561a61a2951d1aae67eca55df6b6afa11eb0",
+      "identity_excerpts": [
+        {
+          "line": 10
+        },
+        {
+          "line": 51
+        },
+        {
+          "line": 52
+        },
+        {
+          "line": 53
+        }
+      ]
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_MCR_CONTROLLED_V2/technical_gate/MCR_CONTROLLED_TECHNICAL_GATE_V2_PROVENANCE.json",
+      "sha256": "37aaa3fe9b08585f6cc4798886f70172d3a532da866e693d398528531a0be434",
+      "identity_excerpts": [
+        {
+          "line": 7
+        },
+        {
+          "line": 8
+        },
+        {
+          "line": 9
+        },
+        {
+          "line": 10
+        },
+        {
+          "line": 11
+        }
+      ]
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_MCR_CONTROLLED_V2/pre_full_audit/MCR_CONTROLLED_PRE_FULL_SCIENTIFIC_AUDIT_PROVENANCE.json",
+      "sha256": "5d648d51e0acd9d280b34ad83271b49dc1ff0213d8f76adb7f2f62b6e23a6392",
+      "identity_excerpts": [
+        {
+          "line": 2
+        },
+        {
+          "line": 3
+        },
+        {
+          "line": 5
+        },
+        {
+          "line": 6
+        },
+        {
+          "line": 7
+        },
+        {
+          "line": 8
+        },
+        {
+          "line": 9
+        },
+        {
+          "line": 10
+        },
+        {
+          "line": 11
+        },
+        {
+          "line": 14
+        },
+        {
+          "line": 15
+        }
+      ]
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_MCR_CONTROLLED_V3/MCR_CONTROLLED_PROTOCOL_V2_PROVENANCE.json",
+      "sha256": "bf1a4d60c8b3e5cb57e3e099edec862864d8a2ef353d26a3a5f027d8fca9aaf3",
+      "identity_excerpts": [
+        {
+          "line": 4
+        },
+        {
+          "line": 7
+        },
+        {
+          "line": 9
+        },
+        {
+          "line": 28
+        },
+        {
+          "line": 29
+        },
+        {
+          "line": 33
+        },
+        {
+          "line": 34
+        },
+        {
+          "line": 38
+        },
+        {
+          "line": 39
+        },
+        {
+          "line": 43
+        },
+        {
+          "line": 44
+        },
+        {
+          "line": 48
+        },
+        {
+          "line": 49
+        },
+        {
+          "line": 53
+        },
+        {
+          "line": 54
+        }
+      ]
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_MCR_CONTROLLED_V3/full_run/MCR_CONTROLLED_FULL_V2_PROVENANCE.json",
+      "sha256": "47509ee5d0fa0823d3ed0e6e914c0609ebb99d283a1ba6e58e532c42791b07e0",
+      "identity_excerpts": [
+        {
+          "line": 12
+        },
+        {
+          "line": 13
+        },
+        {
+          "line": 14
+        },
+        {
+          "line": 15
+        },
+        {
+          "line": 17
+        },
+        {
+          "line": 23
+        },
+        {
+          "line": 24
+        },
+        {
+          "line": 28
+        },
+        {
+          "line": 29
+        },
+        {
+          "line": 33
+        },
+        {
+          "line": 34
+        },
+        {
+          "line": 38
+        },
+        {
+          "line": 39
+        },
+        {
+          "line": 43
+        },
+        {
+          "line": 44
+        },
+        {
+          "line": 48
+        },
+        {
+          "line": 49
+        },
+        {
+          "line": 54
+        },
+        {
+          "line": 58
+        },
+        {
+          "line": 59
+        },
+        {
+          "line": 60
+        },
+        {
+          "line": 62
+        },
+        {
+          "line": 67
+        },
+        {
+          "line": 68
+        },
+        {
+          "line": 69
+        },
+        {
+          "line": 71
+        },
+        {
+          "line": 73
+        },
+        {
+          "line": 75
+        },
+        {
+          "line": 80
+        },
+        {
+          "line": 81
+        }
+      ]
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_MCR_CONTROLLED_V3/full_run/MCR_CONTROLLED_FULL_V2_COMPLETENESS.json",
+      "sha256": "639e7a118b1fea4539626546d3345a880f507a7efa2f01ce716a6907524f1fa3",
+      "identity_excerpts": [
+        {
+          "line": 24
+        },
+        {
+          "line": 25
+        }
+      ]
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_MCR_CONTROLLED_V3/scientific_analysis_v2/MCR_CONTROLLED_SCIENTIFIC_ANALYSIS_V2_PROVENANCE.json",
+      "sha256": "faf47d744a61fdde19a690b169752fe1d57a86af35847943d4970b2562dbb75e",
+      "identity_excerpts": [
+        {
+          "line": 3
+        },
+        {
+          "line": 5
+        },
+        {
+          "line": 7
+        },
+        {
+          "line": 26
+        },
+        {
+          "line": 34
+        },
+        {
+          "line": 36
+        },
+        {
+          "line": 37
+        },
+        {
+          "line": 39
+        },
+        {
+          "line": 42
+        },
+        {
+          "line": 44
+        }
+      ]
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_MCR_CONTROLLED_V3/scientific_analysis_v2_1/MCR_CONTROLLED_STATISTICAL_EXECUTION_ADDENDUM_V2_1.md",
+      "sha256": "c222559a5188ca7bc8a20224324e17456ea7ebf1045dadb3d1e69b4fefd04762",
+      "identity_excerpts": [
+        {
+          "line": 3
+        },
+        {
+          "line": 11
+        },
+        {
+          "line": 17
+        }
+      ]
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_MCR_CONTROLLED_V3/scientific_analysis_v2_1/MCR_CONTROLLED_STATISTICAL_EXECUTION_ADDENDUM_V2_1_PROVENANCE.json",
+      "sha256": "3c08618f36698ddc13de3cbaee1e084ba97cb1f94e7917b9c9c5f894f0a53064",
+      "identity_excerpts": [
+        {
+          "line": 2
+        },
+        {
+          "line": 4
+        },
+        {
+          "line": 5
+        },
+        {
+          "line": 11
+        },
+        {
+          "line": 12
+        },
+        {
+          "line": 14
+        },
+        {
+          "line": 21
+        },
+        {
+          "line": 34
+        },
+        {
+          "line": 39
+        },
+        {
+          "line": 40
+        },
+        {
+          "line": 41
+        },
+        {
+          "line": 42
+        }
+      ]
+    }
+  ],
+  "weight_byte_equivalence": "NOT_ESTABLISHED_BY_PATH_AND_CONFIG_ALONE"
+}

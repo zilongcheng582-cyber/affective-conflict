@@ -1,0 +1,998 @@
+{
+  "conditions": [
+    {
+      "condition": "neutral",
+      "n": 1000,
+      "audio_match_n": 445,
+      "audio_match": {
+        "estimate": 0.445,
+        "ci95": [
+          0.4147520912090973,
+          0.47485161469820925
+        ],
+        "n_items": 1000,
+        "n_clusters": 943,
+        "unit": "audio_sha256"
+      },
+      "text_match_n": null,
+      "text_match": "NOT_DEFINED",
+      "other_n": 555,
+      "other_rate": 0.555,
+      "parse_fail_n": 0,
+      "technical_failure_n": 0
+    },
+    {
+      "condition": "faithful",
+      "n": 1000,
+      "audio_match_n": 994,
+      "audio_match": {
+        "estimate": 0.994,
+        "ci95": [
+          0.9889669007021064,
+          0.9980119284294234
+        ],
+        "n_items": 1000,
+        "n_clusters": 943,
+        "unit": "audio_sha256"
+      },
+      "text_match_n": 994,
+      "text_match": {
+        "estimate": 0.994,
+        "ci95": [
+          0.988966623766883,
+          0.998015873015873
+        ],
+        "n_items": 1000,
+        "n_clusters": 943,
+        "unit": "audio_sha256"
+      },
+      "other_n": 6,
+      "other_rate": 0.006,
+      "parse_fail_n": 0,
+      "technical_failure_n": 0
+    },
+    {
+      "condition": "adversarial",
+      "n": 1000,
+      "audio_match_n": 6,
+      "audio_match": {
+        "estimate": 0.006,
+        "ci95": [
+          0.001984126984126984,
+          0.011111111111111112
+        ],
+        "n_items": 1000,
+        "n_clusters": 943,
+        "unit": "audio_sha256"
+      },
+      "text_match_n": 988,
+      "text_match": {
+        "estimate": 0.988,
+        "ci95": [
+          0.9809619238476954,
+          0.994024053041565
+        ],
+        "n_items": 1000,
+        "n_clusters": 943,
+        "unit": "audio_sha256"
+      },
+      "other_n": 6,
+      "other_rate": 0.006,
+      "parse_fail_n": 0,
+      "technical_failure_n": 0
+    },
+    {
+      "condition": "irrelevant",
+      "n": 1000,
+      "audio_match_n": 432,
+      "audio_match": {
+        "estimate": 0.432,
+        "ci95": [
+          0.4,
+          0.4641442805970869
+        ],
+        "n_items": 1000,
+        "n_clusters": 943,
+        "unit": "audio_sha256"
+      },
+      "text_match_n": null,
+      "text_match": "NOT_DEFINED",
+      "other_n": 563,
+      "other_rate": 0.563,
+      "parse_fail_n": 5,
+      "technical_failure_n": 0
+    }
+  ],
+  "paired_contrasts": [
+    {
+      "estimate": 0.549,
+      "ci95": [
+        0.5181433394869802,
+        0.5809740552287062
+      ],
+      "n_items": 1000,
+      "n_clusters": 943,
+      "unit": "audio_sha256",
+      "p_value": 5e-05,
+      "test": "audio-SHA cluster sign-flip Monte Carlo, exchangeability sensitivity",
+      "from": "neutral",
+      "to": "faithful",
+      "changed_labels_or_parse": 550,
+      "estimand": "audio-source-label match difference, to minus from",
+      "p_holm": 0.00030000000000000003
+    },
+    {
+      "estimate": -0.439,
+      "ci95": [
+        -0.4703571187871916,
+        -0.4078549848942598
+      ],
+      "n_items": 1000,
+      "n_clusters": 943,
+      "unit": "audio_sha256",
+      "p_value": 5e-05,
+      "test": "audio-SHA cluster sign-flip Monte Carlo, exchangeability sensitivity",
+      "from": "neutral",
+      "to": "adversarial",
+      "changed_labels_or_parse": 886,
+      "estimand": "audio-source-label match difference, to minus from",
+      "p_holm": 0.00030000000000000003
+    },
+    {
+      "estimate": -0.013,
+      "ci95": [
+        -0.05030307727533378,
+        0.025075225677031094
+      ],
+      "n_items": 1000,
+      "n_clusters": 943,
+      "unit": "audio_sha256",
+      "p_value": 0.54355,
+      "test": "audio-SHA cluster sign-flip Monte Carlo, exchangeability sensitivity",
+      "from": "neutral",
+      "to": "irrelevant",
+      "changed_labels_or_parse": 572,
+      "estimand": "audio-source-label match difference, to minus from",
+      "p_holm": 0.54355
+    },
+    {
+      "estimate": -0.988,
+      "ci95": [
+        -0.9949443882709808,
+        -0.9801980198019802
+      ],
+      "n_items": 1000,
+      "n_clusters": 943,
+      "unit": "audio_sha256",
+      "p_value": 5e-05,
+      "test": "audio-SHA cluster sign-flip Monte Carlo, exchangeability sensitivity",
+      "from": "faithful",
+      "to": "adversarial",
+      "changed_labels_or_parse": 992,
+      "estimand": "audio-source-label match difference, to minus from",
+      "p_holm": 0.00030000000000000003
+    },
+    {
+      "estimate": -0.562,
+      "ci95": [
+        -0.593813143326059,
+        -0.5291164658634538
+      ],
+      "n_items": 1000,
+      "n_clusters": 943,
+      "unit": "audio_sha256",
+      "p_value": 5e-05,
+      "test": "audio-SHA cluster sign-flip Monte Carlo, exchangeability sensitivity",
+      "from": "faithful",
+      "to": "irrelevant",
+      "changed_labels_or_parse": 563,
+      "estimand": "audio-source-label match difference, to minus from",
+      "p_holm": 0.00030000000000000003
+    },
+    {
+      "estimate": 0.426,
+      "ci95": [
+        0.39515787995506335,
+        0.4565434565434565
+      ],
+      "n_items": 1000,
+      "n_clusters": 943,
+      "unit": "audio_sha256",
+      "p_value": 5e-05,
+      "test": "audio-SHA cluster sign-flip Monte Carlo, exchangeability sensitivity",
+      "from": "adversarial",
+      "to": "irrelevant",
+      "changed_labels_or_parse": 889,
+      "estimand": "audio-source-label match difference, to minus from",
+      "p_holm": 0.00030000000000000003
+    }
+  ],
+  "invariance": {
+    "all_four_same_valid": 3,
+    "any_change_including_failure": 997,
+    "all_four_valid": 995,
+    "faithful_to_adv_changed": 992
+  },
+  "source_label_strata": [
+    {
+      "gt": "sad",
+      "condition": "neutral",
+      "n": 80,
+      "source_match_n": 27,
+      "source_match_rate": 0.3375,
+      "ci_low": 0.2375,
+      "ci_high": 0.4375,
+      "audio_hash_clusters": 80,
+      "text_assertion_match_n": null,
+      "hypothesis_test": "DESCRIPTIVE_NOT_MULTIPLICITY_ADJUSTED"
+    },
+    {
+      "gt": "sad",
+      "condition": "faithful",
+      "n": 80,
+      "source_match_n": 79,
+      "source_match_rate": 0.9875,
+      "ci_low": 0.9625,
+      "ci_high": 1.0,
+      "audio_hash_clusters": 80,
+      "text_assertion_match_n": 79,
+      "hypothesis_test": "DESCRIPTIVE_NOT_MULTIPLICITY_ADJUSTED"
+    },
+    {
+      "gt": "sad",
+      "condition": "adversarial",
+      "n": 80,
+      "source_match_n": 2,
+      "source_match_rate": 0.025,
+      "ci_low": 0.0,
+      "ci_high": 0.0625,
+      "audio_hash_clusters": 80,
+      "text_assertion_match_n": 77,
+      "hypothesis_test": "DESCRIPTIVE_NOT_MULTIPLICITY_ADJUSTED"
+    },
+    {
+      "gt": "sad",
+      "condition": "irrelevant",
+      "n": 80,
+      "source_match_n": 6,
+      "source_match_rate": 0.075,
+      "ci_low": 0.025,
+      "ci_high": 0.1375,
+      "audio_hash_clusters": 80,
+      "text_assertion_match_n": null,
+      "hypothesis_test": "DESCRIPTIVE_NOT_MULTIPLICITY_ADJUSTED"
+    },
+    {
+      "gt": "happy",
+      "condition": "neutral",
+      "n": 165,
+      "source_match_n": 87,
+      "source_match_rate": 0.5272727272727272,
+      "ci_low": 0.4491017964071856,
+      "ci_high": 0.6025111176448965,
+      "audio_hash_clusters": 161,
+      "text_assertion_match_n": null,
+      "hypothesis_test": "DESCRIPTIVE_NOT_MULTIPLICITY_ADJUSTED"
+    },
+    {
+      "gt": "happy",
+      "condition": "faithful",
+      "n": 165,
+      "source_match_n": 160,
+      "source_match_rate": 0.9696969696969697,
+      "ci_low": 0.9393939393939394,
+      "ci_high": 0.9939393939393939,
+      "audio_hash_clusters": 161,
+      "text_assertion_match_n": 160,
+      "hypothesis_test": "DESCRIPTIVE_NOT_MULTIPLICITY_ADJUSTED"
+    },
+    {
+      "gt": "happy",
+      "condition": "adversarial",
+      "n": 165,
+      "source_match_n": 0,
+      "source_match_rate": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "audio_hash_clusters": 161,
+      "text_assertion_match_n": 165,
+      "hypothesis_test": "DESCRIPTIVE_NOT_MULTIPLICITY_ADJUSTED"
+    },
+    {
+      "gt": "happy",
+      "condition": "irrelevant",
+      "n": 165,
+      "source_match_n": 26,
+      "source_match_rate": 0.15757575757575756,
+      "ci_low": 0.10365853658536585,
+      "ci_high": 0.21686746987951808,
+      "audio_hash_clusters": 161,
+      "text_assertion_match_n": null,
+      "hypothesis_test": "DESCRIPTIVE_NOT_MULTIPLICITY_ADJUSTED"
+    },
+    {
+      "gt": "fearful",
+      "condition": "neutral",
+      "n": 19,
+      "source_match_n": 4,
+      "source_match_rate": 0.21052631578947367,
+      "ci_low": 0.05263157894736842,
+      "ci_high": 0.42105263157894735,
+      "audio_hash_clusters": 19,
+      "text_assertion_match_n": null,
+      "hypothesis_test": "DESCRIPTIVE_NOT_MULTIPLICITY_ADJUSTED"
+    },
+    {
+      "gt": "fearful",
+      "condition": "faithful",
+      "n": 19,
+      "source_match_n": 19,
+      "source_match_rate": 1.0,
+      "ci_low": 1.0,
+      "ci_high": 1.0,
+      "audio_hash_clusters": 19,
+      "text_assertion_match_n": 19,
+      "hypothesis_test": "DESCRIPTIVE_NOT_MULTIPLICITY_ADJUSTED"
+    },
+    {
+      "gt": "fearful",
+      "condition": "adversarial",
+      "n": 19,
+      "source_match_n": 0,
+      "source_match_rate": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "audio_hash_clusters": 19,
+      "text_assertion_match_n": 19,
+      "hypothesis_test": "DESCRIPTIVE_NOT_MULTIPLICITY_ADJUSTED"
+    },
+    {
+      "gt": "fearful",
+      "condition": "irrelevant",
+      "n": 19,
+      "source_match_n": 5,
+      "source_match_rate": 0.2631578947368421,
+      "ci_low": 0.10526315789473684,
+      "ci_high": 0.47368421052631576,
+      "audio_hash_clusters": 19,
+      "text_assertion_match_n": null,
+      "hypothesis_test": "DESCRIPTIVE_NOT_MULTIPLICITY_ADJUSTED"
+    },
+    {
+      "gt": "angry",
+      "condition": "neutral",
+      "n": 118,
+      "source_match_n": 44,
+      "source_match_rate": 0.3728813559322034,
+      "ci_low": 0.28448275862068967,
+      "ci_high": 0.46218487394957986,
+      "audio_hash_clusters": 116,
+      "text_assertion_match_n": null,
+      "hypothesis_test": "DESCRIPTIVE_NOT_MULTIPLICITY_ADJUSTED"
+    },
+    {
+      "gt": "angry",
+      "condition": "faithful",
+      "n": 118,
+      "source_match_n": 118,
+      "source_match_rate": 1.0,
+      "ci_low": 1.0,
+      "ci_high": 1.0,
+      "audio_hash_clusters": 116,
+      "text_assertion_match_n": 118,
+      "hypothesis_test": "DESCRIPTIVE_NOT_MULTIPLICITY_ADJUSTED"
+    },
+    {
+      "gt": "angry",
+      "condition": "adversarial",
+      "n": 118,
+      "source_match_n": 0,
+      "source_match_rate": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "audio_hash_clusters": 116,
+      "text_assertion_match_n": 117,
+      "hypothesis_test": "DESCRIPTIVE_NOT_MULTIPLICITY_ADJUSTED"
+    },
+    {
+      "gt": "angry",
+      "condition": "irrelevant",
+      "n": 118,
+      "source_match_n": 16,
+      "source_match_rate": 0.13559322033898305,
+      "ci_low": 0.06896551724137931,
+      "ci_high": 0.20833333333333334,
+      "audio_hash_clusters": 116,
+      "text_assertion_match_n": null,
+      "hypothesis_test": "DESCRIPTIVE_NOT_MULTIPLICITY_ADJUSTED"
+    },
+    {
+      "gt": "surprised",
+      "condition": "neutral",
+      "n": 125,
+      "source_match_n": 44,
+      "source_match_rate": 0.352,
+      "ci_low": 0.2661290322580645,
+      "ci_high": 0.43548387096774194,
+      "audio_hash_clusters": 124,
+      "text_assertion_match_n": null,
+      "hypothesis_test": "DESCRIPTIVE_NOT_MULTIPLICITY_ADJUSTED"
+    },
+    {
+      "gt": "surprised",
+      "condition": "faithful",
+      "n": 125,
+      "source_match_n": 125,
+      "source_match_rate": 1.0,
+      "ci_low": 1.0,
+      "ci_high": 1.0,
+      "audio_hash_clusters": 124,
+      "text_assertion_match_n": 125,
+      "hypothesis_test": "DESCRIPTIVE_NOT_MULTIPLICITY_ADJUSTED"
+    },
+    {
+      "gt": "surprised",
+      "condition": "adversarial",
+      "n": 125,
+      "source_match_n": 0,
+      "source_match_rate": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "audio_hash_clusters": 124,
+      "text_assertion_match_n": 123,
+      "hypothesis_test": "DESCRIPTIVE_NOT_MULTIPLICITY_ADJUSTED"
+    },
+    {
+      "gt": "surprised",
+      "condition": "irrelevant",
+      "n": 125,
+      "source_match_n": 11,
+      "source_match_rate": 0.088,
+      "ci_low": 0.04,
+      "ci_high": 0.144,
+      "audio_hash_clusters": 124,
+      "text_assertion_match_n": null,
+      "hypothesis_test": "DESCRIPTIVE_NOT_MULTIPLICITY_ADJUSTED"
+    },
+    {
+      "gt": "disgusted",
+      "condition": "neutral",
+      "n": 25,
+      "source_match_n": 2,
+      "source_match_rate": 0.08,
+      "ci_low": 0.0,
+      "ci_high": 0.2,
+      "audio_hash_clusters": 25,
+      "text_assertion_match_n": null,
+      "hypothesis_test": "DESCRIPTIVE_NOT_MULTIPLICITY_ADJUSTED"
+    },
+    {
+      "gt": "disgusted",
+      "condition": "faithful",
+      "n": 25,
+      "source_match_n": 25,
+      "source_match_rate": 1.0,
+      "ci_low": 1.0,
+      "ci_high": 1.0,
+      "audio_hash_clusters": 25,
+      "text_assertion_match_n": 25,
+      "hypothesis_test": "DESCRIPTIVE_NOT_MULTIPLICITY_ADJUSTED"
+    },
+    {
+      "gt": "disgusted",
+      "condition": "adversarial",
+      "n": 25,
+      "source_match_n": 0,
+      "source_match_rate": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "audio_hash_clusters": 25,
+      "text_assertion_match_n": 25,
+      "hypothesis_test": "DESCRIPTIVE_NOT_MULTIPLICITY_ADJUSTED"
+    },
+    {
+      "gt": "disgusted",
+      "condition": "irrelevant",
+      "n": 25,
+      "source_match_n": 0,
+      "source_match_rate": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "audio_hash_clusters": 25,
+      "text_assertion_match_n": null,
+      "hypothesis_test": "DESCRIPTIVE_NOT_MULTIPLICITY_ADJUSTED"
+    },
+    {
+      "gt": "neutral",
+      "condition": "neutral",
+      "n": 468,
+      "source_match_n": 237,
+      "source_match_rate": 0.5064102564102564,
+      "ci_low": 0.4613733905579399,
+      "ci_high": 0.5529717363865848,
+      "audio_hash_clusters": 458,
+      "text_assertion_match_n": null,
+      "hypothesis_test": "DESCRIPTIVE_NOT_MULTIPLICITY_ADJUSTED"
+    },
+    {
+      "gt": "neutral",
+      "condition": "faithful",
+      "n": 468,
+      "source_match_n": 468,
+      "source_match_rate": 1.0,
+      "ci_low": 1.0,
+      "ci_high": 1.0,
+      "audio_hash_clusters": 458,
+      "text_assertion_match_n": 468,
+      "hypothesis_test": "DESCRIPTIVE_NOT_MULTIPLICITY_ADJUSTED"
+    },
+    {
+      "gt": "neutral",
+      "condition": "adversarial",
+      "n": 468,
+      "source_match_n": 4,
+      "source_match_rate": 0.008547008547008548,
+      "ci_low": 0.00211864406779661,
+      "ci_high": 0.017205228031145704,
+      "audio_hash_clusters": 458,
+      "text_assertion_match_n": 462,
+      "hypothesis_test": "DESCRIPTIVE_NOT_MULTIPLICITY_ADJUSTED"
+    },
+    {
+      "gt": "neutral",
+      "condition": "irrelevant",
+      "n": 468,
+      "source_match_n": 368,
+      "source_match_rate": 0.7863247863247863,
+      "ci_low": 0.7478809032304795,
+      "ci_high": 0.8240343347639485,
+      "audio_hash_clusters": 458,
+      "text_assertion_match_n": null,
+      "hypothesis_test": "DESCRIPTIVE_NOT_MULTIPLICITY_ADJUSTED"
+    }
+  ],
+  "duplicate": {
+    "native_items": 1000,
+    "native_hashes": 943,
+    "conflicting_hash_groups": 39,
+    "conflicting_items": 79,
+    "controlled_items": 909,
+    "controlled_hashes": 905,
+    "controlled_conflicting_hash_items": [
+      {
+        "audio_sha256": "d6a4044bfffbe760e2f2a0812b8fa45f846fa4f0318b2b8846202de12a1412a7",
+        "items": [
+          "mcr_ser_000692",
+          "mcr_ser_000752",
+          "mcr_ser_000838"
+        ],
+        "labels": [
+          "angry",
+          "happy",
+          "neutral"
+        ],
+        "controlled_items": [
+          "mcr_ser_000692",
+          "mcr_ser_000752",
+          "mcr_ser_000838"
+        ]
+      }
+    ]
+  },
+  "sensitivities": [
+    {
+      "population": "released1000",
+      "contrast": "adversarial-faithful",
+      "weighting": "released_item",
+      "n": 1000,
+      "estimate": -0.988,
+      "ci95": [
+        -0.9949497495112414,
+        -0.9807497467071935
+      ],
+      "n_items": 1000,
+      "n_clusters": 943,
+      "unit": "audio_sha256"
+    },
+    {
+      "population": "released1000",
+      "contrast": "adversarial-faithful",
+      "weighting": "equal_audio_hash",
+      "n": 1000,
+      "estimate": -0.9899257688229056,
+      "ci95": [
+        -0.9957582184517497,
+        -0.9835630965005302
+      ],
+      "n_items": 1000,
+      "n_clusters": 943,
+      "unit": "audio_sha256"
+    },
+    {
+      "population": "released1000",
+      "contrast": "irrelevant-neutral",
+      "weighting": "released_item",
+      "n": 1000,
+      "estimate": -0.013,
+      "ci95": [
+        -0.05051361068310221,
+        0.026946780764146024
+      ],
+      "n_items": 1000,
+      "n_clusters": 943,
+      "unit": "audio_sha256"
+    },
+    {
+      "population": "released1000",
+      "contrast": "irrelevant-neutral",
+      "weighting": "equal_audio_hash",
+      "n": 1000,
+      "estimate": -0.014669494521032165,
+      "ci95": [
+        -0.05355691056910569,
+        0.02368769883351001
+      ],
+      "n_items": 1000,
+      "n_clusters": 943,
+      "unit": "audio_sha256"
+    },
+    {
+      "population": "controlled_members909",
+      "contrast": "adversarial-faithful",
+      "weighting": "released_item",
+      "n": 909,
+      "estimate": -0.9922992299229924,
+      "ci95": [
+        -0.9977925553275846,
+        -0.9857612267250822
+      ],
+      "n_items": 909,
+      "n_clusters": 905,
+      "unit": "audio_sha256"
+    },
+    {
+      "population": "controlled_members909",
+      "contrast": "adversarial-faithful",
+      "weighting": "equal_audio_hash",
+      "n": 909,
+      "estimate": -0.9922651933701657,
+      "ci95": [
+        -0.9977900552486187,
+        -0.9856353591160221
+      ],
+      "n_items": 909,
+      "n_clusters": 905,
+      "unit": "audio_sha256"
+    },
+    {
+      "population": "controlled_members909",
+      "contrast": "irrelevant-neutral",
+      "weighting": "released_item",
+      "n": 909,
+      "estimate": -0.014301430143014302,
+      "ci95": [
+        -0.05378704720087816,
+        0.024256457622952206
+      ],
+      "n_items": 909,
+      "n_clusters": 905,
+      "unit": "audio_sha256"
+    },
+    {
+      "population": "controlled_members909",
+      "contrast": "irrelevant-neutral",
+      "weighting": "equal_audio_hash",
+      "n": 909,
+      "estimate": -0.013627992633517494,
+      "ci95": [
+        -0.05414364640883978,
+        0.02725598526703499
+      ],
+      "n_items": 909,
+      "n_clusters": 905,
+      "unit": "audio_sha256"
+    },
+    {
+      "population": "exclude_all_conflicting_GT_hashes",
+      "contrast": "adversarial-faithful",
+      "weighting": "released_item",
+      "n": 921,
+      "estimate": -0.992399565689468,
+      "ci95": [
+        -0.9978213507625272,
+        -0.9868565169769989
+      ],
+      "n_items": 921,
+      "n_clusters": 904,
+      "unit": "audio_sha256"
+    },
+    {
+      "population": "exclude_all_conflicting_GT_hashes",
+      "contrast": "adversarial-faithful",
+      "weighting": "equal_audio_hash",
+      "n": 921,
+      "estimate": -0.9922566371681416,
+      "ci95": [
+        -0.9977876106194691,
+        -0.9867256637168141
+      ],
+      "n_items": 921,
+      "n_clusters": 904,
+      "unit": "audio_sha256"
+    },
+    {
+      "population": "exclude_all_conflicting_GT_hashes",
+      "contrast": "irrelevant-neutral",
+      "weighting": "released_item",
+      "n": 921,
+      "estimate": -0.010857763300760043,
+      "ci95": [
+        -0.051949458991712515,
+        0.030501089324618737
+      ],
+      "n_items": 921,
+      "n_clusters": 904,
+      "unit": "audio_sha256"
+    },
+    {
+      "population": "exclude_all_conflicting_GT_hashes",
+      "contrast": "irrelevant-neutral",
+      "weighting": "equal_audio_hash",
+      "n": 921,
+      "estimate": -0.013827433628318585,
+      "ci95": [
+        -0.05420353982300885,
+        0.025995575221238937
+      ],
+      "n_items": 921,
+      "n_clusters": 904,
+      "unit": "audio_sha256"
+    },
+    {
+      "population": "irrelevant_parse_complete_case",
+      "contrast": "irrelevant-neutral",
+      "estimate": -0.011055276381909548,
+      "ci95": [
+        -0.04930075401906387,
+        0.027860696517412936
+      ],
+      "n_items": 995,
+      "n_clusters": 938,
+      "unit": "audio_sha256"
+    }
+  ],
+  "native_controlled_comparison": {
+    "A_ONLY": {
+      "same_label_n": 97,
+      "n": 909,
+      "native_audio_match_n": 4,
+      "controlled_audio_match_n": 466,
+      "controlled_text_match_n": 90
+    },
+    "T_ONLY": {
+      "same_label_n": 901,
+      "n": 909,
+      "native_audio_match_n": 4,
+      "controlled_audio_match_n": 0,
+      "controlled_text_match_n": 909
+    },
+    "A_THEN_T": {
+      "same_label_n": 875,
+      "n": 909,
+      "native_audio_match_n": 4,
+      "controlled_audio_match_n": 22,
+      "controlled_text_match_n": 876
+    },
+    "T_THEN_A": {
+      "same_label_n": 758,
+      "n": 909,
+      "native_audio_match_n": 4,
+      "controlled_audio_match_n": 85,
+      "controlled_text_match_n": 751
+    }
+  },
+  "model_bytes_cross_protocol": "NOT_PROVEN",
+  "official_dialogue_cluster": "NOT_VERIFIED; filename-derived cluster not treated as official",
+  "native_existing_metrics": {
+    "accuracy": {
+      "adversarial": {
+        "count": 6,
+        "n": 1000,
+        "value": 0.006,
+        "wilson_95_ci": [
+          0.0027526691418763745,
+          0.01302816824185209
+        ]
+      },
+      "faithful": {
+        "count": 994,
+        "n": 1000,
+        "value": 0.994,
+        "wilson_95_ci": [
+          0.9869718317581478,
+          0.9972473308581237
+        ]
+      },
+      "irrelevant": {
+        "count": 432,
+        "n": 1000,
+        "value": 0.432,
+        "wilson_95_ci": [
+          0.40161609445686075,
+          0.4629043446971748
+        ]
+      },
+      "neutral": {
+        "count": 445,
+        "n": 1000,
+        "value": 0.445,
+        "wilson_95_ci": [
+          0.41446705005753576,
+          0.4759538933758753
+        ]
+      }
+    },
+    "counts": {
+      "C_adversarial": 6,
+      "C_faithful": 994,
+      "C_irrelevant": 432,
+      "C_neutral": 445,
+      "N": 1000
+    },
+    "macro_accuracy": {
+      "conditions": [
+        "faithful",
+        "adversarial",
+        "irrelevant"
+      ],
+      "value": 0.47733333333333333
+    },
+    "mrs": {
+      "alpha": 0.8,
+      "definition": "0.8 * (Acc_adv / Acc_neu) + 0.2 * (Acc_irr / Acc_neu)",
+      "value": 0.20494382022471905
+    },
+    "normalized_accuracy": {
+      "adversarial": {
+        "value": 0.01348314606741573
+      },
+      "faithful": {
+        "value": 2.2337078651685394
+      },
+      "irrelevant": {
+        "value": 0.9707865168539326
+      },
+      "neutral": {
+        "definition": "neutral baseline by definition",
+        "value": 1.0
+      }
+    },
+    "parser_accounting": {
+      "by_condition": {
+        "adversarial": {
+          "PARSE_FAIL_EMPTY": 0,
+          "PARSE_FAIL_MALFORMED": 0,
+          "PARSE_FAIL_MULTIPLE_LABELS": 0,
+          "PARSE_FAIL_NO_LABEL": 0,
+          "PARSE_OK": 1000,
+          "parse_fail": 0,
+          "parse_failure_rate": 0.0,
+          "parse_ok": 1000
+        },
+        "faithful": {
+          "PARSE_FAIL_EMPTY": 0,
+          "PARSE_FAIL_MALFORMED": 0,
+          "PARSE_FAIL_MULTIPLE_LABELS": 0,
+          "PARSE_FAIL_NO_LABEL": 0,
+          "PARSE_OK": 1000,
+          "parse_fail": 0,
+          "parse_failure_rate": 0.0,
+          "parse_ok": 1000
+        },
+        "irrelevant": {
+          "PARSE_FAIL_EMPTY": 0,
+          "PARSE_FAIL_MALFORMED": 0,
+          "PARSE_FAIL_MULTIPLE_LABELS": 0,
+          "PARSE_FAIL_NO_LABEL": 5,
+          "PARSE_OK": 995,
+          "parse_fail": 5,
+          "parse_failure_rate": 0.005,
+          "parse_ok": 995
+        },
+        "neutral": {
+          "PARSE_FAIL_EMPTY": 0,
+          "PARSE_FAIL_MALFORMED": 0,
+          "PARSE_FAIL_MULTIPLE_LABELS": 0,
+          "PARSE_FAIL_NO_LABEL": 0,
+          "PARSE_OK": 1000,
+          "parse_fail": 0,
+          "parse_failure_rate": 0.0,
+          "parse_ok": 1000
+        }
+      },
+      "overall": {
+        "PARSE_FAIL_EMPTY": 0,
+        "PARSE_FAIL_MALFORMED": 0,
+        "PARSE_FAIL_MULTIPLE_LABELS": 0,
+        "PARSE_FAIL_NO_LABEL": 5,
+        "PARSE_OK": 3995,
+        "parse_fail": 5,
+        "parse_failure_rate": 0.00125,
+        "parse_ok": 3995
+      }
+    },
+    "provenance": {
+      "comparison_policy": "exact canonical string equality; no scoring-stage normalization or synonym recovery",
+      "confidence_interval": "95% Wilson interval; project reporting extension, not a paper-defined primary metric",
+      "inference_run": false,
+      "parse_failure_policy": "parse_status != PARSE_OK => correct=False; retain N=1000",
+      "parser_reinvocation": false,
+      "scoring_implementation": "/root/autodl-tmp/affective-conflict/code/benchmarks/mcr_ser_scoring_v1.py",
+      "scoring_implementation_sha256": "b520d0383c83daeee1f61e1545fea91c6ed8dc3bd2fea82ab9c028c07ced36e1"
+    },
+    "sample_accounting": {
+      "conditions_per_sample": 4,
+      "derived_rows": 1000,
+      "paired_samples": 1000
+    },
+    "scoring_version": "MCR_SER_SCORING_V1",
+    "tir": {
+      "adversarial": {
+        "delta_ci": 442,
+        "n": 1000,
+        "transition": "neutral correct -> adversarial incorrect",
+        "value": 0.442,
+        "wilson_95_ci": [
+          0.411499555136933,
+          0.4729443488473914
+        ]
+      },
+      "faithful": {
+        "delta_ic": 549,
+        "n": 1000,
+        "transition": "neutral incorrect -> faithful correct",
+        "value": 0.549,
+        "wilson_95_ci": [
+          0.5180304041955376,
+          0.5795945734728781
+        ]
+      },
+      "irrelevant": {
+        "delta_ci": 196,
+        "delta_ic": 183,
+        "n": 1000,
+        "transition": "neutral/irrelevant correctness state differs",
+        "value": 0.379,
+        "wilson_95_ci": [
+          0.34944843375830026,
+          0.4094776417952041
+        ]
+      }
+    },
+    "verification": {
+      "condition_counts": {
+        "adversarial": 1000,
+        "faithful": 1000,
+        "irrelevant": 1000,
+        "neutral": 1000
+      },
+      "duplicate_identities": 0,
+      "four_condition_groups": 1000,
+      "four_condition_groups_expected": 1000,
+      "hashes": {
+        "execution_config": "f33a9a8ce67f21af4acb3bf22ee3cdb05c2ac00de49a865a932be80fa2f447c2",
+        "manifest": "4583217d0dc3fa54af32c0561ba369c9833956518df4ca36238b070b8fb71f0f",
+        "ontology": "06ab9bbe3af6d27f05c39103e68d39bd681605e7ee1d31e69f8ddfccb9b3695c",
+        "parser": "f72e825f686528b038dbb6c26b15574e78fddbab8cb3777e04e0680544d4580e",
+        "raw_output": "e20ede77e563d4bb5ae29c4b6f57308bd06c736dd4344e318e7acf560b0c6b77",
+        "source_ser_json": "58aff644175739b142f46ea9f47c32f9230f3cf7fc033dfdd4e8750ee3e6b880"
+      },
+      "manifest_records": 4000,
+      "missing_identities": 0,
+      "raw_output_sha256": "e20ede77e563d4bb5ae29c4b6f57308bd06c736dd4344e318e7acf560b0c6b77",
+      "raw_records": 4000,
+      "unexpected_identities": 0,
+      "unique_identities": 4000
+    }
+  }
+}

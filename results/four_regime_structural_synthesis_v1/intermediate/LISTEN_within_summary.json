@@ -1,0 +1,63 @@
+{
+ "items_per_condition": {
+  "3A": 387,
+  "3B": 381,
+  "3C": 381
+ },
+ "rows_per_condition": {
+  "3A": 387,
+  "3B": 381,
+  "3C": 381
+ },
+ "base_overlap": {
+  "A_and_B": 244,
+  "A_and_C": 244,
+  "B_and_C": 381,
+  "all_three": 244,
+  "union": 524
+ },
+ "same_item_id_B_C": 381,
+ "label_identity_3A_3B": {
+  "n": 244,
+  "same_audio_label": 244,
+  "same_text_label": 244
+ },
+ "label_identity_3B_3C": {
+  "n": 381,
+  "same_audio_label": 381,
+  "same_text_label": 381
+ },
+ "label_identity_3A_3C": {
+  "n": 244,
+  "same_audio_label": 244,
+  "same_text_label": 244
+ },
+ "L3_3C": {
+  "n_conflict": 378,
+  "SIDE_A": 102,
+  "SIDE_T": 65,
+  "OTHER": 211,
+  "binary_share_A": 0.6107784431137725,
+  "binary_share_A_ci": [
+   0.5389221556886228,
+   0.6827844311377238
+  ],
+  "poststrat_audio_label_share_A": 0.449765470286902,
+  "manski_bounds_A_share_all_conflicts": [
+   0.2698412698412698,
+   0.828042328042328
+  ],
+  "manski_bounds_T_share_all_conflicts": [
+   0.17195767195767195,
+   0.7301587301587301
+  ],
+  "labels_with_zero_binary_rows": [
+   "sadness"
+  ]
+ },
+ "L3_binary_resolvable_AUROC_from_audio_label_alone(in-sample,descriptive)": 0.7880069245395465,
+ "L4_triple_matched_items": 242,
+ "L4_OTHER_all_three": 85,
+ "OTHER_label_identity": "NOT_AVAILABLE: raw LISTEN generations and randomized choice lists are not in the repository",
+ "order_identifiability": "3C has presentation_order A_THEN_T only (n=381); A/T order effect NOT_IDENTIFIABLE"
+}

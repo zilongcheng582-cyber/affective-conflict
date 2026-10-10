@@ -1,0 +1,184 @@
+{
+ "task": "FOUR_REGIME_STRUCTURAL_SYNTHESIS_V1",
+ "origin": "POST_HOC_EXPLORATORY_FOUR_REGIME_SYNTHESIS_V1",
+ "script_version": "v1.0",
+ "base_commit_main": "544ca0efae158df369a7b25dd110dc4254f67a7d",
+ "branch": "analysis/four-regime-structural-synthesis-v1",
+ "eri1_scientific_seal_commit": "544ca0efae158df369a7b25dd110dc4254f67a7d",
+ "seed": 20261009,
+ "bootstrap_replicates_default": 2000,
+ "python": "3.13.16",
+ "numpy": "2.5.3",
+ "pandas": "3.0.5",
+ "platform": "Linux-6.18.44-fc-v80-x86_64-with-glibc2.39",
+ "gpu_used": false,
+ "model_loaded": false,
+ "frozen_models_refit": false,
+ "frozen_files_modified": false,
+ "statistical_units": "see 02_WITHIN_DATASET_STRUCTURAL_ANALYSIS.md section 0 (cluster = dialogue / audio-dialogue token / LISTEN base item / CA-MER sample)",
+ "input_files_read_by_code": {
+  "evidence/b3/B3_CORRECTED_MEASUREMENTS_V1.csv": {
+   "sha256": "7ce3d51d3670e0f8c7f7bb377cd2313b11e6931ff42ba44b0883ad4270fc81b4",
+   "last_commit": "ea07a4be6d749ffe93a6d67a76e0ee234b296dd4"
+  },
+  "evidence/emotiontalk/phase2_observed_responses.jsonl": {
+   "sha256": "4fc584c9a9af341f2db4bbdbe84437587187fa870dda9b6cb0417ba7a1782b87",
+   "last_commit": "ea07a4be6d749ffe93a6d67a76e0ee234b296dd4"
+  },
+  "experiments/emotiontalk_reliability_v1/ELIGIBILITY_AND_SAMPLING_V1.csv": {
+   "sha256": "948d2ee17d71f7d0f6b9d87b4f056eb558c6fdcb9ae659a3136dbf0e34532a66",
+   "last_commit": "2419be327931be11d66cc7e124198f05873c05a3"
+  },
+  "manifests/camer/controlled.jsonl": {
+   "sha256": "929a9734a5099c60f83890544401c09d703e32b728e0b9f4d6afd98b46c7869b",
+   "last_commit": "e597e6de0a488f803709498cc9905289d9768c6c"
+  },
+  "manifests/camer/frozen_joint_outcomes.csv": {
+   "sha256": "57ed776d5009ba50b3e07bcb7b78c4323a66b08e960e65bee20ecbfef82abd13",
+   "last_commit": "e597e6de0a488f803709498cc9905289d9768c6c"
+  },
+  "manifests/emotiontalk/source_measurements.csv": {
+   "sha256": "3cc270054de466387e874be0dcb180dad12250e348c332a98fffba7d1c647042",
+   "last_commit": "e597e6de0a488f803709498cc9905289d9768c6c"
+  },
+  "manifests/listen/frozen_joint_outcomes.csv": {
+   "sha256": "cc145efa4b187deab567b547ab8b71b6456da6484820d96ec49810742b77aced",
+   "last_commit": "e597e6de0a488f803709498cc9905289d9768c6c"
+  },
+  "manifests/mcr/canonical_arbitration.csv": {
+   "sha256": "c81079ad56ef3957fb978b753d98ee31d0e0cafbe6876eb7489125fd805e0716",
+   "last_commit": "e597e6de0a488f803709498cc9905289d9768c6c"
+  },
+  "manifests/mcr/frozen_joint_outcomes.csv": {
+   "sha256": "789261e4fce394e6466bb67c0e55a3e0dce49c3d8b37ed76308c075660329266",
+   "last_commit": "e597e6de0a488f803709498cc9905289d9768c6c"
+  },
+  "results/eri1_scientific_closure_v1/ERI1_SCIENTIFIC_TRIAL_PROJECTION_V1.csv": {
+   "sha256": "f66b46e927b634bc03fe5a78c23da296c799f3e004ed4ccc33a92b7aebe9d97a",
+   "last_commit": "2c7ac91026700f211c30c0b3f46771b412e65cf4"
+  },
+  "results/post_audit/closure_v1/MCR_CONTENT_DUPLICATE_AUDIT_V1.csv": {
+   "sha256": "692250f603e49eb46690f4a8f9e2e1e5b2ba8f3896a6933398b43dbf8caccf6a",
+   "last_commit": "ea07a4be6d749ffe93a6d67a76e0ee234b296dd4"
+  },
+  "results/post_audit/closure_v1/corrected_replay/B3_CORRECTED_ZERO_REFIT_PREDICTIONS_V1.csv": {
+   "sha256": "c497629d50291005f2bc7936c23e154c4f194dad22c65e5ad1714e54d79c7e9a",
+   "last_commit": "ea07a4be6d749ffe93a6d67a76e0ee234b296dd4"
+  },
+  "results/post_audit/closure_v1/ZERO_REFIT_BASELINE_COMPARISON_V1.csv": {
+   "sha256": "526014bb2c470e3a181b354b000cd9802751fdd28cf9280d8bcc2fb5c5df11fc",
+   "last_commit": "ea07a4be6d749ffe93a6d67a76e0ee234b296dd4"
+  },
+  "evidence/emotiontalk/phase3_observed_outputs.jsonl": {
+   "sha256": "4c8c3bc7d68c30fccc0777abc1c1aee6a0745185faf5973618976f4629fab907",
+   "last_commit": "ea07a4be6d749ffe93a6d67a76e0ee234b296dd4"
+  }
+ },
+ "cited_files_not_read_by_code": {
+  "results/post_audit/scientific_analysis_v1/SCIENTIFIC_ANALYSIS_V1_FINAL_REPORT.md": {
+   "sha256": "593da3df9abcd966b2af9d4eab9fcac47d64cfaf696399817e35e65e1ef4508c",
+   "last_commit": "17c86225d7b3622cbf1bf0a3f52f19a54105638d"
+  },
+  "results/post_audit/scientific_analysis_v1/R1_SOURCE_STRUCTURE_REPORT.md": {
+   "sha256": "80f803b4e0faf1abb1280a592b92ae00d5ed35a2a3a67950039a7ded9394c904",
+   "last_commit": "17c86225d7b3622cbf1bf0a3f52f19a54105638d"
+  },
+  "results/post_audit/scientific_analysis_v1/R2_COMPOSITIONALITY_REPORT.md": {
+   "sha256": "6288bed1bc3929142772be3eb8ec3bd20c8d03572d99636d1a1dfec7daa74a96",
+   "last_commit": "17c86225d7b3622cbf1bf0a3f52f19a54105638d"
+  },
+  "results/post_audit/scientific_analysis_v1/R3_LISTEN_BEHAVIOR_REPORT.md": {
+   "sha256": "54adc57f4a6f8d4d71f991bb5500147c136806a66780cc1e7637a43c5d1be108",
+   "last_commit": "98033d761c9fc2f29271f91a1307d0b7154faa2d"
+  },
+  "results/eri1_scientific_closure_v1/SCIENTIFIC_CLOSURE_FINAL_REPORT.md": {
+   "sha256": "926e2de8d43f47f972b9b769480bb12dcbcdccf38a1659b1eabbad6a7ad1283f",
+   "last_commit": "2c7ac91026700f211c30c0b3f46771b412e65cf4"
+  },
+  "results/eri1_scientific_closure_v1/CLAIM_REGISTER_V1.md": {
+   "sha256": "eea4c3e239b353159014490e7832557a98199047a195d3abb8f730b06405b248",
+   "last_commit": "2c7ac91026700f211c30c0b3f46771b412e65cf4"
+  },
+  "results/eri1_scientific_closure_v1/ERI1_FROZEN_ANALYSIS_RESULTS_V1.json": {
+   "sha256": "857f64945de146cfd608b1b36e2cc210d9a2f43fea65c35550e3f6e6d1038806",
+   "last_commit": "2c7ac91026700f211c30c0b3f46771b412e65cf4"
+  },
+  "docs/SCIENTIFIC_CLAIM_STATUS_V1.md": {
+   "sha256": "e62da9dfb5913395ea84a7ac50cda739193cad4fb53189a1244cd8e9ea7924fb",
+   "last_commit": "ea07a4be6d749ffe93a6d67a76e0ee234b296dd4"
+  },
+  "docs/KNOWN_LIMITATIONS.md": {
+   "sha256": "0e4f780cfe8ecd8f0d396f9f85a0a519e62add26cb5fc80b2e96589f7158527a",
+   "last_commit": "ea07a4be6d749ffe93a6d67a76e0ee234b296dd4"
+  },
+  "docs/EVIDENCE_AVAILABILITY_V1.md": {
+   "sha256": "e98b26164823a4f022ec022650a16c13ec7751fc4523a18fa4feda956ba93084",
+   "last_commit": "581fdfecd62839cd1379aa4c61a23d0c42b68bdd"
+  },
+  "docs/PROJECT_STATE.md": {
+   "sha256": "f6beb2c418764c194c76c00d72e6597f4de02c5d20b7c3ecffd1392931c3f4da",
+   "last_commit": "ea07a4be6d749ffe93a6d67a76e0ee234b296dd4"
+  },
+  "docs/DATASETS.md": {
+   "sha256": "dec80bfd9f8df6da10ff93ae35db482fcff73a0e6e02ea29677a23847ad116dc",
+   "last_commit": "ea07a4be6d749ffe93a6d67a76e0ee234b296dd4"
+  },
+  "protocols/mcr/MCR_CONTROLLED_SCIENTIFIC_RESULTS_V2.md": {
+   "sha256": "36d05f18632e190aa11c6efb85c121ea0567c3bbc69605600dc7534a01d0d2a2",
+   "last_commit": "e597e6de0a488f803709498cc9905289d9768c6c"
+  },
+  "protocols/mcr/MCR_CONTROLLED_ARBITRATION_ANALYSIS_SPEC_V2.md": {
+   "sha256": "17230d00a0ce07305658b5de4cdeaf14cf830bd5c70e87a74bca6195ed6b04b7",
+   "last_commit": "e597e6de0a488f803709498cc9905289d9768c6c"
+  },
+  "protocols/mcr/MCR_CONTROLLED_FULL_V2_COMPLETENESS.json": {
+   "sha256": "639e7a118b1fea4539626546d3345a880f507a7efa2f01ce716a6907524f1fa3",
+   "last_commit": "e597e6de0a488f803709498cc9905289d9768c6c"
+  },
+  "protocols/mcr/MCR_CONTROLLED_DUAL_READABLE_DIAGNOSTICS_V2.csv": {
+   "sha256": "d96f982a3d1e43bc17b29dc67dc3b9b606325a7147e949d65c07aa7e9c081b3f",
+   "last_commit": "e597e6de0a488f803709498cc9905289d9768c6c"
+  },
+  "protocols/camer/CAMER_CONTROLLED_PROTOCOL_V1.md": {
+   "sha256": "7b3a72dbd8e85a9ae80f8556b8e0465862c6f7e6ce5ed4b602647669b3fca6af",
+   "last_commit": "e597e6de0a488f803709498cc9905289d9768c6c"
+  },
+  "configs/mainline/camer_controlled_arbitration_prompt_v1.json": {
+   "sha256": "4f80f8d451ed9397d32860dd2df7ab5d29b2720f0d86223ad00d4e8b20bdd0f5",
+   "last_commit": "e597e6de0a488f803709498cc9905289d9768c6c"
+  },
+  "configs/mainline/mcr_controlled_arbitration_prompt_v2.json": {
+   "sha256": "f48431f666fc84987c9e4d17acab31fd80998bac098611fed7016c92abd37082",
+   "last_commit": "e597e6de0a488f803709498cc9905289d9768c6c"
+  },
+  "src/common/benchmarks/listen_adapter.py": {
+   "sha256": "4088b0c6aa4cc59c0d0d67b5a01774de92bf06ee13a245fad15db09c0a6efc9e",
+   "last_commit": "e597e6de0a488f803709498cc9905289d9768c6c"
+  },
+  "experiments/emotiontalk_reliability_v1/PROTOCOL_V1.md": {
+   "sha256": "ea248260980a144d72bdd5ee23b6261b35a30e13016c2b535385e5570c701b85",
+   "last_commit": "2419be327931be11d66cc7e124198f05873c05a3"
+  },
+  "manifests/emotiontalk/EMOTIONTALK_MASTER_PANEL_V1.csv": {
+   "sha256": "1ca8b79d8c146c6d807dd97a7bcd6cda519d5655e4cd0300afe7a92d159f406b",
+   "last_commit": "e597e6de0a488f803709498cc9905289d9768c6c"
+  },
+  "manifests/emotiontalk/trimodal_plan.csv": {
+   "sha256": "14fdc30700bbdebdf97f9bc21e15a98f07e48a00038c8976579431d5163e00ab",
+   "last_commit": "e597e6de0a488f803709498cc9905289d9768c6c"
+  }
+ },
+ "analysis_scripts_sha256": {
+  "analyses/four_regime_synthesis_v1/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "analyses/four_regime_synthesis_v1/a01_build_tables.py": "67eb6dcec09ddf6742ffeb16128daba87ab048a21c2c9edb67a3ae27b54f987f",
+  "analyses/four_regime_synthesis_v1/a02_camer.py": "7036cfcfbeeda72b46e2042b3899b2c36f2eba0a4ee43b269e4d3c84e187dd18",
+  "analyses/four_regime_synthesis_v1/a02_emotiontalk.py": "e9a405282a769916baf893e11e520a783b6ab506aa9edb06ff16725decf89ca4",
+  "analyses/four_regime_synthesis_v1/a02_listen.py": "b4b1f00eb7c0d4332658c89bbd4883e0e13a3d236e7159c4de1f307c43195c03",
+  "analyses/four_regime_synthesis_v1/a02_mcr.py": "e038da860e66f33bdcf7a8e050038e3c1b635f937808a3c024dc3349a421c457",
+  "analyses/four_regime_synthesis_v1/a03_cross_regime.py": "bb2a184d5a41f05d8d1d07bddddd0aab392dd64e60ff4b144eeec7853ea81a2a",
+  "analyses/four_regime_synthesis_v1/a04_inventory.py": "c2308aa5c2d175022031f1f07e30122676e7a1aa591e7231ad7a0f4172839a02",
+  "analyses/four_regime_synthesis_v1/common.py": "ef5a7902245b0d061a86afcdca8c8768beb32c0e48a5ce983f54cd0c72f93af3",
+  "analyses/four_regime_synthesis_v1/run_all.py": "0eae0628e08fdef0cac8c15f66aff97d62b4421ef9a6d64c5e6ceba09fb2a192"
+ },
+ "runtime_seconds": 31.1
+}

@@ -1,0 +1,8 @@
+regime,n_items,items_OTHER_in_at_least_one_order,items_OTHER_in_both_orders,P_both_given_any,expected_both_if_independent_given_marginals,OTHER_label_identity_available,note
+ET_AT_conflict,62,7,1,0.142857,0.193548,True,independence expectation uses the two order-specific OTHER rates
+ET_AV_conflict,146,8,0,0,0.0821918,True,independence expectation uses the two order-specific OTHER rates
+ET_VT_conflict,140,16,1,0.0625,0.3,True,independence expectation uses the two order-specific OTHER rates
+MCR_AT_adversarial_text,909,73,11,0.150685,0.883388,False,independence expectation uses the two order-specific OTHER rates
+CAMER_audio-aligned,490,174,111,0.637931,41.4367,True,independence expectation uses the two order-specific OTHER rates
+CAMER_video-aligned,479,188,115,0.611702,47.8288,True,independence expectation uses the two order-specific OTHER rates
+LISTEN_3A/3B/3C_triple_matched,242,172,85,0.494186,35.5188,False,across CONDITIONS (not orders); independence expectation from the three condition-specific OTHER rates

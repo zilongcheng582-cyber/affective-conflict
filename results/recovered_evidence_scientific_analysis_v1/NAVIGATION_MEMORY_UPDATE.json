@@ -1,0 +1,30 @@
+{
+  "AGENTS_rule": "Automatic Durable-Memory Maintenance; already authorized",
+  "scientific_sources_changed": false,
+  "updates": [
+    {
+      "path": "/root/autodl-tmp/affective-conflict/docs/PROJECT_STATE.md",
+      "before_sha256": "8457eed0847c5645d0a23d423e48e38d56440094aaec49ff3ea184892c5597aa",
+      "after_sha256": "5bb4dc18227dd2d2b7cf398fb6de902deb4632327f04562b200ce322e0c2c250",
+      "operation": "append navigation only; automatically authorized by AGENTS.md",
+      "backup_path": "/root/autodl-tmp/affective-conflict-recovered-science-v1/navigation_before_update/PROJECT_STATE.md",
+      "phase4_before_sha256": "fe0d5df5a1d03f3661b9cbb5b5ed7f22b7b3c81628c2dede809e28692429de38"
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/docs/FILE_MAP.md",
+      "before_sha256": "8e317ad42f4521c6022e610aa4ee373a8a287fd60bfb2719c7a1d73cb5a9ebb4",
+      "after_sha256": "9668ec8ecdd1f76e4f3b13a54201ddd61bba234be180d8b43315c73e92d4023a",
+      "operation": "append navigation only; automatically authorized by AGENTS.md",
+      "backup_path": "/root/autodl-tmp/affective-conflict-recovered-science-v1/navigation_before_update/FILE_MAP.md",
+      "phase4_before_sha256": "0f23c77b857b125776ed2b62b62474acb1fb9799fb7dd715a15b8faab9a10b6d"
+    },
+    {
+      "path": "/root/autodl-tmp/affective-conflict/docs/DECISIONS.md",
+      "before_sha256": "f90a567b623ceffb766de167c6f4e1380fb8c4853c716238fbacd8e7de47bc5a",
+      "after_sha256": "86c2ec176835520434a5cb662c706de25d3b3f586634139266eb2b8a7c6d7a55",
+      "operation": "append navigation only; automatically authorized by AGENTS.md",
+      "backup_path": "/root/autodl-tmp/affective-conflict-recovered-science-v1/navigation_before_update/DECISIONS.md",
+      "phase4_before_sha256": "269628105fa1228eea57f7460620831e6093a4b9f3db0f91ad8e5e10fa319792"
+    }
+  ]
+}

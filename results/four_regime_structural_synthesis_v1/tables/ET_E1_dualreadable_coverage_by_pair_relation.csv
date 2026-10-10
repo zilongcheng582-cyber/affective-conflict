@@ -1,0 +1,7 @@
+pair,relation,panel_n,dual_readable_n,coverage
+AT,conflict,900,62,0.0688889
+AT,consistent,600,335,0.558333
+AV,conflict,900,146,0.162222
+AV,consistent,600,225,0.375
+VT,conflict,900,140,0.155556
+VT,consistent,600,158,0.263333

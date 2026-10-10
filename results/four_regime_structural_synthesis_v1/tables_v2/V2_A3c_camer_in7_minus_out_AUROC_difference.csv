@@ -1,0 +1,7 @@
+construction,adjustment,AUROC_in7_minus_not_in7,lo,hi,defined_boot
+audio-aligned,crude,0.147472,-0.00429299,0.307516,200
+audio-aligned,label_pair_stratified,0.0934505,-0.0754629,0.290812,200
+video-aligned,crude,0.189484,0.0565491,0.315234,200
+video-aligned,label_pair_stratified,0.29978,0.138864,0.460498,200
+ALL,crude,0.197346,0.106341,0.273637,200
+ALL,label_pair_stratified,0.287298,0.178706,0.37756,200

@@ -1,0 +1,266 @@
+{
+  "classification": "POST_HOC_EXPLORATORY",
+  "GPU": false,
+  "refit": false,
+  "tests": {
+    "sha256_files": 245,
+    "existing_main_files_byte_unchanged": true,
+    "python_static_parses": 38,
+    "claim_categories": [
+      "ERI1 Causal Intervention",
+      "Frozen Transfer",
+      "R1 Source Prediction",
+      "R2 Compositionality",
+      "Recovered Native Experiments",
+      "Transfer Failure Explanation"
+    ],
+    "public_projection_rows": {
+      "MCR_NATIVE_FOUR_CONDITION_PAIRED_PROJECTION_V2.public_projection.csv": 4000,
+      "CAMER_6000_KEY_RECONCILIATION_V2.public_projection.csv": 6000,
+      "LISTEN_V3_ANSWER_OPTION_RECOVERY_V2.public_projection.csv": 1149,
+      "LISTEN_V4_ANSWER_OPTION_RECOVERY_V2.public_projection.csv": 1149
+    },
+    "strict_linkage_rows": 5199,
+    "frozen_route_baseline_checks": [
+      {
+        "route": "MCR_AT_PRIMARY",
+        "model": "M0",
+        "N": 1734,
+        "identity": "PASS",
+        "metrics": {
+          "AUROC": 0.5,
+          "balanced_accuracy": 0.5,
+          "log_loss": 0.6781807869005386,
+          "Brier_score": 0.2425175410445356
+        },
+        "max_abs_error": 2.220446049250313e-16
+      },
+      {
+        "route": "MCR_AT_PRIMARY",
+        "model": "M0_PLUS_ORDER",
+        "N": 1734,
+        "identity": "PASS",
+        "metrics": {
+          "AUROC": 0.6664033913687827,
+          "balanced_accuracy": 0.6664033913687826,
+          "log_loss": 0.6684586499534563,
+          "Brier_score": 0.2378872982266021
+        },
+        "max_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "route": "MCR_AT_PRIMARY",
+        "model": "FROZEN_POOLED_M3a",
+        "N": 1734,
+        "identity": "PASS",
+        "metrics": {
+          "AUROC": 0.7275588922907249,
+          "balanced_accuracy": 0.5,
+          "log_loss": 0.24588416083215825,
+          "Brier_score": 0.05850601505608972
+        },
+        "max_abs_error": 0.0
+      },
+      {
+        "route": "MCR_AT_MARGIN_SENSITIVITY",
+        "model": "M0",
+        "N": 1734,
+        "identity": "PASS",
+        "metrics": {
+          "AUROC": 0.5,
+          "balanced_accuracy": 0.5,
+          "log_loss": 0.6781807869005386,
+          "Brier_score": 0.2425175410445356
+        },
+        "max_abs_error": 2.220446049250313e-16
+      },
+      {
+        "route": "MCR_AT_MARGIN_SENSITIVITY",
+        "model": "M0_PLUS_ORDER",
+        "N": 1734,
+        "identity": "PASS",
+        "metrics": {
+          "AUROC": 0.6664033913687827,
+          "balanced_accuracy": 0.6664033913687826,
+          "log_loss": 0.6684586499534563,
+          "Brier_score": 0.2378872982266021
+        },
+        "max_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "route": "MCR_AT_MARGIN_SENSITIVITY",
+        "model": "FROZEN_POOLED_M3b",
+        "N": 1734,
+        "identity": "PASS",
+        "metrics": {
+          "AUROC": 0.7393976644130301,
+          "balanced_accuracy": 0.5,
+          "log_loss": 0.24325252233750805,
+          "Brier_score": 0.05827937216953332
+        },
+        "max_abs_error": 5.551115123125783e-17
+      },
+      {
+        "route": "LISTEN_ALL_MIXED_HISTORICAL",
+        "model": "M0",
+        "N": 518,
+        "identity": "PASS",
+        "metrics": {
+          "AUROC": 0.5,
+          "balanced_accuracy": 0.5,
+          "log_loss": 0.6970906461166482,
+          "Brier_score": 0.2519715337045895
+        },
+        "max_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "route": "LISTEN_ALL_MIXED_HISTORICAL",
+        "model": "M0_PLUS_ORDER",
+        "N": 518,
+        "identity": "PASS",
+        "metrics": {
+          "AUROC": 0.3538194009274345,
+          "balanced_accuracy": 0.35381940092743447,
+          "log_loss": 0.7650373188914072,
+          "Brier_score": 0.2855628128445175
+        },
+        "max_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "route": "LISTEN_ALL_MIXED_HISTORICAL",
+        "model": "FROZEN_POOLED_M3b",
+        "N": 518,
+        "identity": "PASS",
+        "metrics": {
+          "AUROC": 0.5226375485649831,
+          "balanced_accuracy": 0.4891903747336759,
+          "log_loss": 0.9695929654724582,
+          "Brier_score": 0.35014965187409247
+        },
+        "max_abs_error": 0.0
+      },
+      {
+        "route": "LISTEN_3C_JOINT_ARBITRATION",
+        "model": "M0",
+        "N": 167,
+        "identity": "PASS",
+        "metrics": {
+          "AUROC": 0.5,
+          "balanced_accuracy": 0.5,
+          "log_loss": 0.6971161601303414,
+          "Brier_score": 0.25198428944726475
+        },
+        "max_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "route": "LISTEN_3C_JOINT_ARBITRATION",
+        "model": "M0_PLUS_ORDER",
+        "N": 167,
+        "identity": "PASS",
+        "metrics": {
+          "AUROC": 0.5,
+          "balanced_accuracy": 0.5,
+          "log_loss": 0.7485926208242482,
+          "Brier_score": 0.2773903120084105
+        },
+        "max_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "route": "LISTEN_3C_JOINT_ARBITRATION",
+        "model": "FROZEN_POOLED_M3b",
+        "N": 167,
+        "identity": "PASS",
+        "metrics": {
+          "AUROC": 0.6057315233785822,
+          "balanced_accuracy": 0.5154600301659126,
+          "log_loss": 0.9816444227467589,
+          "Brier_score": 0.35278696662028636
+        },
+        "max_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "route": "CAMER_AV_SUPPORT_LIMITED_SOURCEPROB",
+        "model": "M0",
+        "N": 416,
+        "identity": "PASS",
+        "metrics": {
+          "AUROC": 0.5,
+          "balanced_accuracy": 0.5,
+          "log_loss": 0.7165588573848004,
+          "Brier_score": 0.2616410815924801
+        },
+        "max_abs_error": 5.551115123125783e-17
+      },
+      {
+        "route": "CAMER_AV_SUPPORT_LIMITED_SOURCEPROB",
+        "model": "M0_PLUS_ORDER",
+        "N": 416,
+        "identity": "PASS",
+        "metrics": {
+          "AUROC": 0.5308380414312618,
+          "balanced_accuracy": 0.5308380414312618,
+          "log_loss": 0.7197407431144978,
+          "Brier_score": 0.2628035473730955
+        },
+        "max_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "route": "CAMER_AV_SUPPORT_LIMITED_SOURCEPROB",
+        "model": "FROZEN_POOLED_M3a",
+        "N": 416,
+        "identity": "PASS",
+        "metrics": {
+          "AUROC": 0.6863935969868173,
+          "balanced_accuracy": 0.5957156308851224,
+          "log_loss": 0.768851457607217,
+          "Brier_score": 0.26975873406127
+        },
+        "max_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "route": "CAMER_AV_MARGIN_SENSITIVITY",
+        "model": "M0",
+        "N": 1350,
+        "identity": "PASS",
+        "metrics": {
+          "AUROC": 0.5,
+          "balanced_accuracy": 0.5,
+          "log_loss": 0.7144442659766187,
+          "Brier_score": 0.26058885656138187
+        },
+        "max_abs_error": 5.551115123125783e-17
+      },
+      {
+        "route": "CAMER_AV_MARGIN_SENSITIVITY",
+        "model": "M0_PLUS_ORDER",
+        "N": 1350,
+        "identity": "PASS",
+        "metrics": {
+          "AUROC": 0.5078218183112884,
+          "balanced_accuracy": 0.5078218183112884,
+          "log_loss": 0.7248561777580372,
+          "Brier_score": 0.26530724430482094
+        },
+        "max_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "route": "CAMER_AV_MARGIN_SENSITIVITY",
+        "model": "FROZEN_POOLED_M3b",
+        "N": 1350,
+        "identity": "PASS",
+        "metrics": {
+          "AUROC": 0.5739990742883592,
+          "balanced_accuracy": 0.5399413419258363,
+          "log_loss": 0.8002082959646531,
+          "Brier_score": 0.28397170605528194
+        },
+        "max_abs_error": 2.220446049250313e-16
+      }
+    ],
+    "prediction_rows_available": 9219,
+    "max_prediction_abs_error": 1.6653345369377348e-16,
+    "max_metric_abs_error": 2.220446049250313e-16
+  },
+  "status": "PASS",
+  "scope": "GITHUB_CLEAN_CHECKOUT_IDENTITY_AND_FIXED_METRIC_REPLAY_PASS; full raw-archive extraction/bootstrap requires AUTODL_LOCAL_REPLAY"
+}

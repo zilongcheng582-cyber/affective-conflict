@@ -1,0 +1,14 @@
+# Preserve exact scientific archive bytes; do not change existing main artifacts.
+analyses/four_regime_synthesis_v1/** -text
+results/four_regime_structural_synthesis_v1/** -text
+analyses/historical_evidence_reconciliation_v2/** -text
+results/historical_evidence_reconciliation_v2/** -text
+analyses/recovered_evidence_scientific_analysis_v1/** -text
+results/recovered_evidence_scientific_analysis_v1/** -text
+analyses/transfer_failure_integration_v1/** -text
+results/transfer_failure_integration_v1/** -text
+evidence/provenance/recovered_evidence_migration_v1/** -text
+# Remediation V1 (F03): every migration file listed in the migration SHA256SUMS keeps exact bytes on any platform.
+.gitattributes -text
+docs/RECOVERED_EVIDENCE_MIGRATION_V1.md -text
+tests/test_pr4_migration_regressions.py -text

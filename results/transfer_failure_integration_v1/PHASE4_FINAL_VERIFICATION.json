@@ -1,0 +1,784 @@
+{
+  "status": "PASS",
+  "source_locks_checked": 124,
+  "source_inputs": [
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/AGENTS.md",
+      "expected_sha256": "e6b53ecaff35bf98e7bc63d1cae2d5c60006907167b6b3e5a93446c9ccf623f3",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/docs/PROJECT_STATE.md",
+      "expected_sha256": "8457eed0847c5645d0a23d423e48e38d56440094aaec49ff3ea184892c5597aa",
+      "status": "ORIGINAL_REFERENCE_BACKUP_MATCH_AND_AUTHORIZED_APPEND"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/docs/FILE_MAP.md",
+      "expected_sha256": "8e317ad42f4521c6022e610aa4ee373a8a287fd60bfb2719c7a1d73cb5a9ebb4",
+      "status": "ORIGINAL_REFERENCE_BACKUP_MATCH_AND_AUTHORIZED_APPEND"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/docs/DECISIONS.md",
+      "expected_sha256": "f90a567b623ceffb766de167c6f4e1380fb8c4853c716238fbacd8e7de47bc5a",
+      "status": "ORIGINAL_REFERENCE_BACKUP_MATCH_AND_AUTHORIZED_APPEND"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict-forensics-expanded-v1/RECOVERED_EXPERIMENT_EXECUTION_REGISTER.csv",
+      "expected_sha256": "c826c29ffa91fd98e129de946d5a1ea08fb67f02f058d790d957504d7bd3c113",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict-forensics-expanded-v1/FULL_EXPERIMENT_RECOVERY_REPORT.md",
+      "expected_sha256": "c09fafc3cb4c051afe8a0a8f88eb8bbc6b255176b2cf954258a1463518d115ac",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict-forensics-expanded-v1/MCR_NATIVE_FOUR_CONDITION_RECOVERY.json",
+      "expected_sha256": "2d0e058a473b8c2ea6dce4ec691e72ec4a9ca2b6fb35da24a1400bb1753990a2",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict-reconciliation-v2/HISTORICAL_EVIDENCE_RECONCILIATION_V2.md",
+      "expected_sha256": "026bbf0e43d57fb1cbc6bbd6f360ebf8401dfe7700a57f7dbda36c48f4411744",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict-reconciliation-v2/THREE_DATASET_HISTORICAL_EVIDENCE_MATRIX_V2.csv",
+      "expected_sha256": "909d362221acb05fd4b49c8cdf775a158fb1ddc3971ef48c9a08934e707e290a",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict-reconciliation-v2/INPUT_SHA256_RECORD_COUNTS_V2.json",
+      "expected_sha256": "1b22f8b7886e9e35707eed94bbdd3664da8da1eb3f97ef748fed10ea8eded09c",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict-reconciliation-v2/LISTEN_RECONCILIATION_V2.json",
+      "expected_sha256": "61c445b6425bbdcd18007890a527c830bb99082519ef24c3ae97131e7bd6ce02",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict-reconciliation-v2/MCR_RECONCILIATION_V2.json",
+      "expected_sha256": "b61d9f75701f2a808f77a39b073c5514b48842559eb3dc4304332af0461b5af1",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict-reconciliation-v2/CAMER_RECONCILIATION_V2.json",
+      "expected_sha256": "0e4cb119b4f29215434f447a1aebc385ed202bdd9c6c786d2077c4c55841d3c1",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict-reconciliation-v2/MCR_TEXT_AND_MODEL_CONTRACT_AUDIT_V2.json",
+      "expected_sha256": "b7e679335db8895e2bd4866494e391d9ece098ee1eea68c26ad1e27afdea892a",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict-reconciliation-v2/MCR_POOL_AND_DUPLICATE_AUDIO_AUDIT_V2.json",
+      "expected_sha256": "3463739de185c90c95ddecee409784e5b16ee9675363b06fb5665a9230041079",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict-reconciliation-v2/MCR_NATIVE_FOUR_CONDITION_PAIRED_PROJECTION_V2.csv",
+      "expected_sha256": "58e1ef5d07107a680b69d26fa16c17fd1a55ccf98dfc5019d6fffbee31e4562b",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict-reconciliation-v2/MCR_1000_NATIVE_TO_909_CONTROLLED_IDENTITY_V2.csv",
+      "expected_sha256": "11afd4750dabc220acd4374dd732d1e708e1406315b71623797a8c123ed6882e",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict-reconciliation-v2/CAMER_6000_KEY_RECONCILIATION_V2.csv",
+      "expected_sha256": "6d42c68603f092426eeeb0e14e5395932694b6406a49eb9e77df2b9f5a7c5d79",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict-reconciliation-v2/LISTEN_UNIMODAL_CORRECTNESS_JOIN_V2.csv",
+      "expected_sha256": "1c6fe73575549a97dc0cc8131632231fcff644612d25ba94c97d7772aba3c470",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict-reconciliation-v2/LISTEN_V4_ANSWER_OPTION_RECOVERY_V2.csv",
+      "expected_sha256": "a139d0984f36ac41b551583b2d128f581b869a572cfc4bf293259859a78ef259",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict-reconciliation-v2/LISTEN_V3_V4_STRICT_IDENTITY_JOIN_V2.csv",
+      "expected_sha256": "3ff75834280a173a32092d5883dee687f95c17348b73de8e4e2563f1c1f260ae",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict-reconciliation-v2/RECOVERED_54_RUN_RECONCILIATION.json",
+      "expected_sha256": "390c37075b4076365051b858e558c3ef30a79036ab3f86fe5fedffc84a3f72ce",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_MCR_NATIVE_V1/full_run/qwen25_mcr_native_full_v1.jsonl",
+      "expected_sha256": "e20ede77e563d4bb5ae29c4b6f57308bd06c736dd4344e318e7acf560b0c6b77",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_MCR_NATIVE_V1/mcr_ser_native_qwen25_manifest_v1.jsonl",
+      "expected_sha256": "4583217d0dc3fa54af32c0561ba369c9833956518df4ca36238b070b8fb71f0f",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_MCR_NATIVE_V1/scoring/mcr_qwen25_native_metrics_v1.json",
+      "expected_sha256": "36ce8f17f1f11e1e6609d597ef576f479b8bf036a9cfe1852777caecc4ca73bf",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_MCR_CONTROLLED_V3/full_run/qwen25_mcr_controlled_full_v2.jsonl",
+      "expected_sha256": "2772bd2d536caa4e55f1305300b4e9a523a5315afd37992c098d6724e4c25775",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_MCR_CONTROLLED_V3/mcr_controlled_arbitration_manifest_v2.jsonl",
+      "expected_sha256": "fee4d04a5ffdac73930e943ae168a6f73e908d17c158a4f953c9c7d830ee48a6",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/camer_controlled_manifest_v1.jsonl",
+      "expected_sha256": "929a9734a5099c60f83890544401c09d703e32b728e0b9f4d6afd98b46c7869b",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/resource_sweep_v1/qwen25_camer_controlled_resource_sweep_v1.jsonl",
+      "expected_sha256": "28194bdc880c375809228808e91a18c509573ff22acfaeaa416165446d4b905e",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/scientific_equivalence_v1/CAMER_CONTROLLED_AVAILABLE_SCIENTIFIC_OUTCOMES_V1.csv",
+      "expected_sha256": "1bbde3b79d09b7ccd265ae63931420a3e73738ed227e570bec5f2c16b52c67d8",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/scientific_equivalence_v1/CAMER_RESOURCE_SWEEP_SCIENTIFIC_EQUIVALENCE_V1.json",
+      "expected_sha256": "1e4e3fca5ab1534cf5ba4ec897a0e916d8938f61146ae3807624cc60e62782c7",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/results/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/listen_native_raw_outputs_source_aligned_v4.jsonl",
+      "expected_sha256": "efb604ffcdd4f746cda961da0fa17f8fae995e34aa02779bf2334917c19e74ea",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/LISTEN_V4_CANONICAL_AT_JOIN_V1.csv",
+      "expected_sha256": "f11685ced0edcc9eb40700da3492eff7e6b43ec58569c3ab7fe8662722d610d6",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/listen_native_manifest_source_aligned_v4.csv",
+      "expected_sha256": "567c9cc2f1758d703031c4eb772bd0e35fc003561f769866f1b6e9559251aa28",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/outputs/B3_MEASUREMENTS_V1.jsonl",
+      "expected_sha256": "0ad7785530a52923dabdf3ec6b3c5afe27e68d87be61e1b5f4465fde79fad450",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_mcr_native_v1.py",
+      "expected_sha256": "6848b469eb15e51b068262afb5d3c7899793d8910e08b842ce4c9e6c42a1ea7b",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_mcr_controlled_v3.py",
+      "expected_sha256": "c111d4dfd314b25088afff7e5ec7ad46c7869e0a692d2bca1d8e760c4fc25273",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_camer_controlled_resource_sweep_v1.py",
+      "expected_sha256": "c9b193329cedade1aef262cbbe5de9e88c23b533bc9f1aa4256a72f1ee3b2a45",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/code/prompts/qwen25_mcr_native_execution_v1.json",
+      "expected_sha256": "f33a9a8ce67f21af4acb3bf22ee3cdb05c2ac00de49a865a932be80fa2f447c2",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/code/prompts/mcr_controlled_arbitration_prompt_v1.json",
+      "expected_sha256": "89c2c463d728c3f9b30d63b9bc9064040460d6140da84cc0394ac15d5c3e771c",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/code/prompts/qwen25_mcr_controlled_execution_v1.json",
+      "expected_sha256": "6e7f6921427d18a05a88de30be6c01066432dc1d1e783ed7546bf3fe963f7ba4",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/code/prompts/mcr_controlled_arbitration_prompt_v2.json",
+      "expected_sha256": "f48431f666fc84987c9e4d17acab31fd80998bac098611fed7016c92abd37082",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_LISTEN_NATIVE_V3/LISTEN_V3_VS_SOURCE_LAUNCH_AUDIT.md",
+      "expected_sha256": "2449efd96e4e4cbd391a8ed60d0304cd529594064fb03febb5ba9a8ca174a980",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/run_listen_source_aligned_v4.py",
+      "expected_sha256": "9c3b102ff7986e91753324ad1ed38260772b2c2487947ccea65ffac2f55f1682",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/CAMER_CONTROLLED_PROTOCOL_V1.json",
+      "expected_sha256": "efbe18fefcd3964e1ccbb48df671cad7279d543a021f90bbd6c11dfbef83306f",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/CAMER_CONTROLLED_PROTOCOL_V1.md",
+      "expected_sha256": "7b3a72dbd8e85a9ae80f8556b8e0465862c6f7e6ce5ed4b602647669b3fca6af",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict-recovered-science-v1/reference/R1_SOURCE_STRUCTURE_REPORT.md",
+      "expected_sha256": "80f803b4e0faf1abb1280a592b92ae00d5ed35a2a3a67950039a7ded9394c904",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict-recovered-science-v1/reference/R2_COMPOSITIONALITY_REPORT.md",
+      "expected_sha256": "6288bed1bc3929142772be3eb8ec3bd20c8d03572d99636d1a1dfec7daa74a96",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict-recovered-science-v1/reference/R3_LISTEN_BEHAVIOR_REPORT.md",
+      "expected_sha256": "54adc57f4a6f8d4d71f991bb5500147c136806a66780cc1e7637a43c5d1be108",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict-recovered-science-v1/reference/SCIENTIFIC_ANALYSIS_V1_FINAL_REPORT.md",
+      "expected_sha256": "593da3df9abcd966b2af9d4eab9fcac47d64cfaf696399817e35e65e1ef4508c",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict-recovered-science-v1/reference/B3_ZERO_REFIT_FINAL_EVALUATION_V1.md",
+      "expected_sha256": "8a008993d5a2ce98b9c6b2440535c934fdbd193c26da1c671003b69c497890c3",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict-recovered-science-v1/reference/03_conflict_coverage.csv",
+      "expected_sha256": "45d6729351833258e2c6e8b022b13491f0d9db0cc36f5bc0a03d3a131b227f40",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict-recovered-science-v1/reference/02_conflict_descriptive_by_order.csv",
+      "expected_sha256": "642a97d69ac9b3bc80aa72d6aab9f791e4c3fde4e4321d8024131f11e074a21f",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict-recovered-science-v1/reference/ERI1_ARCHIVE_REPORT_V1.md",
+      "expected_sha256": "5bc589c35fc5b7364d36555f4be6a8c5255661ee32ddb57d986c3356b8b61b06",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict-recovered-science-v1/reference/ERI1_DIALOGUE_ROBUSTNESS_REPORT_V1.md",
+      "expected_sha256": "c6d61e3ad03a623ab00d15705b8bf872490f073417f796fd86c2bd31623b54d8",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict-recovered-science-v1/reference/ERI1_REPRODUCIBILITY_REPORT_V1.md",
+      "expected_sha256": "74b9a52816459e6be900f3a5fcca792d5e54d95f0e208ac4aed997979b957dad",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict-recovered-science-v1/reference/ERI1_SELECTION_BOUNDARY_REPORT_V1.md",
+      "expected_sha256": "a5d028828daf411d131d4f1683649ac6d2a959ac27dd5df8641ba65d7e21c03d",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict-recovered-science-v1/reference/ERI1_TRANSITION_REPORT_V1.md",
+      "expected_sha256": "7ef88bba59bca3b62c0339fa76b1306f8dc9471aad7ecae7bd74bd2b0dcec24e",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict-recovered-science-v1/reference/SCIENTIFIC_CLOSURE_FINAL_REPORT.md",
+      "expected_sha256": "926e2de8d43f47f972b9b769480bb12dcbcdccf38a1659b1eabbad6a7ad1283f",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict-recovered-science-v1/reference/07_REVISION_V2_VERIFICATION_AND_ERRATA.md",
+      "expected_sha256": "e22d919fe302b286d76e278754b1c5e103bd21b5c357c85a95902bd7df2a7ca1",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict-recovered-science-v1/reference/08_QWEN_GPU_EXPERIMENT_DECISION_V2.md",
+      "expected_sha256": "2c34793182175b01304816eb16b529544b64c86a532fafe2011d7001d91b021c",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "SOURCE_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict-recovered-science-v1/reference/LOCAL_REFERENCE_ORIGINS.json",
+      "expected_sha256": "08453b44a7452fab6f91a3436bcb04965aacad97de2c35a227830c032d3284ed",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "ADDITIONAL_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/CAMER_CONTROLLED_PROTOCOL_V1.json",
+      "expected_sha256": "efbe18fefcd3964e1ccbb48df671cad7279d543a021f90bbd6c11dfbef83306f",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "ADDITIONAL_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/CAMER_CONTROLLED_PROTOCOL_V1.md",
+      "expected_sha256": "7b3a72dbd8e85a9ae80f8556b8e0465862c6f7e6ce5ed4b602647669b3fca6af",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "ADDITIONAL_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/code/prompts/qwen25_mcr_native_execution_v1.json",
+      "expected_sha256": "f33a9a8ce67f21af4acb3bf22ee3cdb05c2ac00de49a865a932be80fa2f447c2",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "ADDITIONAL_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/code/prompts/qwen25_mcr_controlled_execution_v1.json",
+      "expected_sha256": "6e7f6921427d18a05a88de30be6c01066432dc1d1e783ed7546bf3fe963f7ba4",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "ADDITIONAL_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/code/prompts/mcr_controlled_arbitration_prompt_v2.json",
+      "expected_sha256": "f48431f666fc84987c9e4d17acab31fd80998bac098611fed7016c92abd37082",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "ADDITIONAL_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_LISTEN_NATIVE_V3/LISTEN_V3_VS_SOURCE_LAUNCH_AUDIT.md",
+      "expected_sha256": "2449efd96e4e4cbd391a8ed60d0304cd529594064fb03febb5ba9a8ca174a980",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "ADDITIONAL_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/LISTEN_PHASE1_POOL.md",
+      "expected_sha256": "0660e3e3d902c2fad9f35abe9f19e4cec6dd3863af97dbf4cd1899c002fcfc64",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "ADDITIONAL_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_LISTEN_NATIVE_V1/LISTEN_NATIVE_PROTOCOL_V1.json",
+      "expected_sha256": "fc7d233b4788ea97318c7ed48a21126678b8a9ff680240bfc2d1509ad65809f1",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "ADDITIONAL_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_LISTEN_NATIVE_V3/run_listen_local_v3.py",
+      "expected_sha256": "a5dfa8c882c2eca5771ee182eba50572f08bb61da822793f9834f2dd61e7d3a5",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "ADDITIONAL_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/run_listen_source_aligned_v4.py",
+      "expected_sha256": "9c3b102ff7986e91753324ad1ed38260772b2c2487947ccea65ffac2f55f1682",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "ADDITIONAL_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/PAPER_CORE_ASSET_GITHUB_SNAPSHOT_V1/candidate_snapshot/audit/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/run_listen_source_aligned_v4.py",
+      "expected_sha256": "9c3b102ff7986e91753324ad1ed38260772b2c2487947ccea65ffac2f55f1682",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "CONSTRUCT_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/build_camer_native_protocol.py",
+      "expected_sha256": "f45f9045d7ab66dc89da7a8075b165de6cc38803ef4e98ab4b41be706dca46c9",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "CONSTRUCT_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_camer_native_v1.py",
+      "expected_sha256": "b60d3c38f57cf7fde66152f65288c0aeb417c220c4bb5fc53e743057fbd9416e",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "CONSTRUCT_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_camer_controlled_v1.py",
+      "expected_sha256": "83275a8902f957f8d5f214fd00a0ae80d1f86a4ac079f1fdd5568e625d0e67a2",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "CONSTRUCT_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_camer_controlled_v2.py",
+      "expected_sha256": "fc5f8bf93d4cb98d5fc6493d958199a2c5758de63e1025faf61ce23e01f93add",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "CONSTRUCT_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_camer_controlled_v3.py",
+      "expected_sha256": "0ce3e1b509f538e17b4df379282798bb5ab3d565455a6646d9f69bfb2aca5c0b",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "CONSTRUCT_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_camer_controlled_v4.py",
+      "expected_sha256": "8d8f80ddd6577a91e2606374fda493b19675cc01caf25d31aba6a8af8ad69c20",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "CONSTRUCT_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/code/prompts/camer_controlled_arbitration_prompt_v1.json",
+      "expected_sha256": "4f80f8d451ed9397d32860dd2df7ab5d29b2720f0d86223ad00d4e8b20bdd0f5",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "CONSTRUCT_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_NATIVE_V1/CAMER_ANNOTATION_INVENTORY_V1.json",
+      "expected_sha256": "9ade03f06525324a160f95c2b4756043ce75735b7ee599e5bedb9276f8b2d8c1",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "CONSTRUCT_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_NATIVE_V1/CAMER_OFFICIAL_SOURCE_PROVENANCE_V1.json",
+      "expected_sha256": "086cf044e8fb682e4b3a33204f336e115f6d375e3dcc0d18408e1087c4ca7fe0",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "CONSTRUCT_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_NATIVE_V1/CAMER_OFFICIAL_SOURCE_AUDIT_V1.md",
+      "expected_sha256": "2dbf592a2cfe3f1cdddf407037b8159a3e30ecc16c40c7cb011ed95bd5ea10fe",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "CONSTRUCT_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_NATIVE_V1/CAMER_NATIVE_SCIENTIFIC_OUTPUT_ADDENDUM_V1_2.json",
+      "expected_sha256": "768d0334ae316f25b9578ce960dfd5d471e56b8c249e4904727cc284282c0a21",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "CONSTRUCT_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_NATIVE_V1/CAMER_NATIVE_SCIENTIFIC_OUTPUT_ADDENDUM_V1_2.md",
+      "expected_sha256": "c962ca24ca7c205e8d2675e4e45394d96aad94a48b130220d71eabeb075ad325",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "CONSTRUCT_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_NATIVE_V1/official_code/README.md",
+      "expected_sha256": "6eed23b362741efe4a186f6d9a96b19077a00305fdac17d87bc6c39b7592f5b5",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "CONSTRUCT_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_NATIVE_V1/technical_gate/CAMER_NATIVE_TECHNICAL_GATE_V1.json",
+      "expected_sha256": "0f8e18f3131543b61ee348921d35fd90eb27e69f27f1f8ccb2dc7b3defe3c22b",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "CONSTRUCT_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_NATIVE_V1/technical_gate/CAMER_NATIVE_TECHNICAL_GATE_V1.md",
+      "expected_sha256": "421b32ae7a8f63ef861094858228f8efa3cfac4cc06436003401de2b5eb9de4f",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "CONSTRUCT_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_NATIVE_V1/technical_gate/CAMER_NATIVE_TECHNICAL_GATE_V1_PROVENANCE.json",
+      "expected_sha256": "62215411069e877e48fee8864719bd963ba8c694cefd9f63894413a00058e194",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "CONSTRUCT_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/CAMER_CONTROLLED_ANALYSIS_SPEC_V1.md",
+      "expected_sha256": "2004bb748024231212a992f6346369ee2d203080e0d4db7b6ce50877d06d149f",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "CONSTRUCT_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/CAMER_CONTROLLED_MEDIA_AUDIT_V1.json",
+      "expected_sha256": "3f985b5fde8503af486b9cfa6efe25d70702c26dd5b20a73ba75d2b7a8dd0086",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "CONSTRUCT_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/CAMER_CONTROLLED_ONTOLOGY_AUDIT_V1.json",
+      "expected_sha256": "62534b269c76b2ba91f39c0b56e7d121304f025fcfc776738004f417b156e4d8",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "CONSTRUCT_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/CAMER_CONTROLLED_PROTOCOL_V1.json",
+      "expected_sha256": "efbe18fefcd3964e1ccbb48df671cad7279d543a021f90bbd6c11dfbef83306f",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "CONSTRUCT_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/CAMER_CONTROLLED_PROTOCOL_V1.md",
+      "expected_sha256": "7b3a72dbd8e85a9ae80f8556b8e0465862c6f7e6ce5ed4b602647669b3fca6af",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "CONSTRUCT_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/CAMER_CONTROLLED_PROVENANCE_V1.json",
+      "expected_sha256": "5d670d124b29c463eeb6239a9fc92e17da48b27ea2cdcd5f8048a972b03b374f",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "CONSTRUCT_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/CAMER_CONTROLLED_SOURCE_AUDIT_V1.json",
+      "expected_sha256": "43151c6c695abecd8acc1a500d3df762c12f2bc86189e7e4ad28084e07385c51",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "CONSTRUCT_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/CAMER_CONTROLLED_SOURCE_AUDIT_V1.md",
+      "expected_sha256": "aafd022f79e8dac53fadac8412065497efaf46268d6c043cb9cb203e664e0b65",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "CONSTRUCT_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/technical_gate/CAMER_CONTROLLED_TECHNICAL_GATE_V1.json",
+      "expected_sha256": "04a0b9b34f8ac24abd27e0926d68e38437ff6a2752f82b5dd1d4723b377e4a0f",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "CONSTRUCT_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/technical_gate_v2/CAMER_CONTROLLED_TECHNICAL_GATE_V2.json",
+      "expected_sha256": "d495ebc390fd90f8acd6833bb0aede4a368fcd265596d7e4b89cf7ef5219924c",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "CONSTRUCT_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/technical_gate_v2/CAMER_CONTROLLED_TECHNICAL_GATE_V2_PROVENANCE.json",
+      "expected_sha256": "6ebf9dedb92f2422e41658bfb833a1df818104e736ded3f124a147978a7240eb",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "CONSTRUCT_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/adapter_compatibility_v3/CAMER_CONTROLLED_QWEN_ADAPTER_COMPATIBILITY_AUDIT_V3.md",
+      "expected_sha256": "c24876ba0eac9f9dece47e1af57b8c10687a36b47591df49562a8baf1ba7e9e7",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "CONSTRUCT_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/technical_gate_v3/CAMER_CONTROLLED_TECHNICAL_GATE_V3.json",
+      "expected_sha256": "6aeda96e71e124bd158fab647bf884dec4b0cac110cd0e8a55cadc485e1808a8",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "CONSTRUCT_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/technical_gate_v4/CAMER_CONTROLLED_TECHNICAL_GATE_V4.json",
+      "expected_sha256": "aedd8bb84562ade08e0be1b59837b56198228e360d9488cf4ba15bcaf92f99af",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "CONSTRUCT_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/full_run_v1/CAMER_CONTROLLED_FULL_RUN_V1.json",
+      "expected_sha256": "020156687b4ce9de1cc356994c0b9aa55ad5206032183a0f9846444614ae7dab",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "CONSTRUCT_INPUT_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_CONTROLLED_V1/scientific_equivalence_v1/CAMER_RESOURCE_SWEEP_SCIENTIFIC_EQUIVALENCE_V1.json",
+      "expected_sha256": "1e4e3fca5ab1534cf5ba4ec897a0e916d8938f61146ae3807624cc60e62782c7",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "PHASE4_ADDITIONAL_PROTOCOL_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/B3_AUTODL_EXECUTION_PACKAGE_V1/B3_SOURCE_MODEL_BINDING_V1.json",
+      "expected_sha256": "642c2ed7b023aea8c6bd762891ff436f0f3eff6a95a58e56bf6f8c4b5d41dd20",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "PHASE4_ADDITIONAL_PROTOCOL_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/B3_AUTODL_EXECUTION_PACKAGE_V1/B3_EVALUATION_PLAN_V1.json",
+      "expected_sha256": "6b52298a6d0bc1c62b837e170226be67b91b3153e47812e5df4ee10683724266",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "PHASE4_ADDITIONAL_PROTOCOL_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/B3_AUTODL_EXECUTION_PACKAGE_V1/B3_CORRECTED_MEASUREMENT_FREEZE_V1.md",
+      "expected_sha256": "9cc035d639333a7478ebfc60ff3d5662ba30d7c8873d776349fa01aebbb89f9b",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "PHASE4_ADDITIONAL_PROTOCOL_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/B3_AUTODL_EXECUTION_PACKAGE_V1/B3_TARGET_SEQUENCE_ASSIGNMENT_V1.json",
+      "expected_sha256": "65069110f64ba2e518c411b784c8b9aa581d2dd8154d7dcb0e23111d436dde35",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "PHASE4_ADDITIONAL_PROTOCOL_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/B3_AUTODL_EXECUTION_PACKAGE_V1/EXECUTION_PACKAGE_MANIFEST.json",
+      "expected_sha256": "5a50bea4c8815cf293134fcf74afd0e87c9922cdddced76cb1ee1b5c7de430f7",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "PHASE4_ADDITIONAL_PROTOCOL_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/B3_AUTODL_EXECUTION_PACKAGE_V1/b3_protocol.py",
+      "expected_sha256": "5f0ad0066088f870a47bbbaa3f20994b3597cc4f98843db5e0601c51d3f8552a",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "PHASE4_ADDITIONAL_PROTOCOL_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/B3_AUTODL_EXECUTION_PACKAGE_V1/run_b3_corrected_measurement.py",
+      "expected_sha256": "151efafa88992aa2200a04fcd3093a016cc4d71ed9191c110034575539600c2a",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "PHASE4_ADDITIONAL_PROTOCOL_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/verify_b3_execution_environment_v1_1.py",
+      "expected_sha256": "ba9149060692e3e17146c87d118b148517baf38ba03d5b210d2626a05e97c963",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "PHASE4_ADDITIONAL_PROTOCOL_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/run_b3_corrected_execution_v1_1.py",
+      "expected_sha256": "5b12e92d89c96c1809f7a044be3c61bdfc46a70a6fd4a2f039a68c50915f233c",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "PHASE4_ADDITIONAL_PROTOCOL_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/B3_EXECUTION_TECHNICAL_AMENDMENT_001.json",
+      "expected_sha256": "5e6b984b2a3e2511bd02a6faf6df3d8e2e320522b74d40aa6436b038da49e701",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "PHASE4_ADDITIONAL_PROTOCOL_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/B3_EXECUTION_VERIFIER_TECHNICAL_AMENDMENT_001.json",
+      "expected_sha256": "5e6b984b2a3e2511bd02a6faf6df3d8e2e320522b74d40aa6436b038da49e701",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "PHASE4_ADDITIONAL_PROTOCOL_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/B3_MINIMAL_PREFLIGHT_LOG.txt",
+      "expected_sha256": "2be232fb2efee1315ef2eb27f1e9f169e980b55b1d1ae8a3dd4cddb592843e7b",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "PHASE4_ADDITIONAL_PROTOCOL_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/B3_REMOTE_EXECUTION_MINIMAL_PREFLIGHT_V1.json",
+      "expected_sha256": "73bcfb27a323fb08bcdf5f9cce58f8c8707eec3415df805e83ca39eddb86e867",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "PHASE4_ADDITIONAL_PROTOCOL_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/b3_execution_amendment_monitor_v1.py",
+      "expected_sha256": "b9d89d6a35e0ddb2e53b4e6ddd16a6036d499b381e65abe1569beaf2c1166be6",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "PHASE4_ADDITIONAL_PROTOCOL_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/B3_MONITOR_LOG.txt",
+      "expected_sha256": "01d0ea1cff5c662b3bba001ced019beab5e9a4435005d4ba60b19b5b4d54fd25",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "PHASE4_ADDITIONAL_PROTOCOL_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/B3_MONITOR_PID.txt",
+      "expected_sha256": "5d1b67c4f5ebfbc63dd15285fa79e490cbc37c4c479a44f8e6646e0f7d65b5da",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "PHASE4_ADDITIONAL_PROTOCOL_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/b3_shutdown_on_completion_v1.py",
+      "expected_sha256": "7569df3c90f7f961d30786d333b8be299c25e5f7051ab8a3c11b5a2ef7466461",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "PHASE4_ADDITIONAL_PROTOCOL_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/b3_amendment_output_finalize_v1.py",
+      "expected_sha256": "6d104fd4da5d54aac7b76750d492e6268c1bbc0388cd0c978f63f69e5cab95fd",
+      "status": "UNCHANGED"
+    },
+    {
+      "lock": "PHASE4_ADDITIONAL_PROTOCOL_LOCK.json",
+      "path": "/root/autodl-tmp/affective-conflict_execution/B3_CORRECTED_TARGET_GPU_EXECUTION_V1/amendment_001/B3_OUTPUT_HASH_RECHECK_V1.json",
+      "expected_sha256": "208f29ebb4f940d1d0ac323930ace0562f0be9bdc004e88d611fc93f5fd412cf",
+      "status": "UNCHANGED"
+    }
+  ],
+  "frozen_git_commit": "34aa1b0340d906e5d625db7cb4a3def9199fa06e",
+  "prediction_rows": 9219,
+  "measurement_rows": 6354,
+  "reports": 18,
+  "strict_linkage_rows": 5199,
+  "claim_rows": 25,
+  "categories": [
+    "ERI1 Causal Intervention",
+    "Frozen Transfer",
+    "R1 Source Prediction",
+    "R2 Compositionality",
+    "Recovered Native Experiments",
+    "Transfer Failure Explanation"
+  ],
+  "deterministic_repeat_files": 6,
+  "original_phase1_3_replay_prepare": "PASS",
+  "GPU_execution": false,
+  "model_loading": false,
+  "source_refit": false,
+  "target_refit": false,
+  "frozen_protocol_modified": false,
+  "historical_scientific_inputs_modified": false,
+  "navigation_append_only": true,
+  "required_files": [
+    "04_TRANSFER_FROZEN_EVIDENCE_REGISTER.md",
+    "04_TRANSFER_ROUTE_LEVEL_REPLAY_CHECK.csv",
+    "04_TRANSFER_FAILURE_DECOMPOSITION.md",
+    "04_TRANSFER_RECOVERED_EVIDENCE_LINKAGE.md",
+    "04_TRANSFER_CLAIM_BOUNDARY_MATRIX.md",
+    "04_RECOVERED_EVIDENCE_CROSS_STUDY_SYNTHESIS.md",
+    "05_CLAIM_EVIDENCE_MATRIX.md",
+    "06_QWEN_NEXT_EXPERIMENT_DECISION.md",
+    "07_FINAL_SCIENTIFIC_EXECUTIVE_SUMMARY.md"
+  ]
+}

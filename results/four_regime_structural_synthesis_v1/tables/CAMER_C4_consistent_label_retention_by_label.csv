@@ -1,0 +1,7 @@
+shared_label,retention_rate,n_trials
+angry,0.692308,182
+doubtful,0.625,8
+happy,0.711765,170
+neutral,0.594891,274
+sad,0.714286,98
+worried,0.864486,214

@@ -1,0 +1,262 @@
+{
+  "by_source_label_contrast": [
+    {
+      "source_label": "sad",
+      "contrast": "irrelevant minus neutral source match",
+      "estimate": -0.2625,
+      "ci95": [
+        -0.375,
+        -0.1625
+      ],
+      "n_items": 80,
+      "n_clusters": 80,
+      "unit": "audio_sha256",
+      "inference": "predeclared source-label descriptive family; pointwise CI, no confirmatory significance claim"
+    },
+    {
+      "source_label": "happy",
+      "contrast": "irrelevant minus neutral source match",
+      "estimate": -0.3696969696969697,
+      "ci95": [
+        -0.4573170731707317,
+        -0.281413392726742
+      ],
+      "n_items": 165,
+      "n_clusters": 161,
+      "unit": "audio_sha256",
+      "inference": "predeclared source-label descriptive family; pointwise CI, no confirmatory significance claim"
+    },
+    {
+      "source_label": "fearful",
+      "contrast": "irrelevant minus neutral source match",
+      "estimate": 0.05263157894736842,
+      "ci95": [
+        -0.21052631578947367,
+        0.3157894736842105
+      ],
+      "n_items": 19,
+      "n_clusters": 19,
+      "unit": "audio_sha256",
+      "inference": "predeclared source-label descriptive family; pointwise CI, no confirmatory significance claim"
+    },
+    {
+      "source_label": "angry",
+      "contrast": "irrelevant minus neutral source match",
+      "estimate": -0.23728813559322035,
+      "ci95": [
+        -0.3247863247863248,
+        -0.15254237288135594
+      ],
+      "n_items": 118,
+      "n_clusters": 116,
+      "unit": "audio_sha256",
+      "inference": "predeclared source-label descriptive family; pointwise CI, no confirmatory significance claim"
+    },
+    {
+      "source_label": "surprised",
+      "contrast": "irrelevant minus neutral source match",
+      "estimate": -0.264,
+      "ci95": [
+        -0.344,
+        -0.192
+      ],
+      "n_items": 125,
+      "n_clusters": 124,
+      "unit": "audio_sha256",
+      "inference": "predeclared source-label descriptive family; pointwise CI, no confirmatory significance claim"
+    },
+    {
+      "source_label": "disgusted",
+      "contrast": "irrelevant minus neutral source match",
+      "estimate": -0.08,
+      "ci95": [
+        -0.2,
+        0.0
+      ],
+      "n_items": 25,
+      "n_clusters": 25,
+      "unit": "audio_sha256",
+      "inference": "predeclared source-label descriptive family; pointwise CI, no confirmatory significance claim"
+    },
+    {
+      "source_label": "neutral",
+      "contrast": "irrelevant minus neutral source match",
+      "estimate": 0.2799145299145299,
+      "ci95": [
+        0.22413701975650652,
+        0.3333333333333333
+      ],
+      "n_items": 468,
+      "n_clusters": 458,
+      "unit": "audio_sha256",
+      "inference": "predeclared source-label descriptive family; pointwise CI, no confirmatory significance claim"
+    }
+  ],
+  "prediction_distributions": [
+    {
+      "condition": "neutral",
+      "predicted_label_distribution": {
+        "neutral": 387,
+        "angry": 146,
+        "sad": 82,
+        "happy": 239,
+        "surprised": 121,
+        "fearful": 19,
+        "disgusted": 6
+      },
+      "predicted_neutral": {
+        "estimate": 0.387,
+        "ci95": [
+          0.3558626632166798,
+          0.41884173346693376
+        ],
+        "n_items": 1000,
+        "n_clusters": 943,
+        "unit": "audio_sha256"
+      }
+    },
+    {
+      "condition": "faithful",
+      "predicted_label_distribution": {
+        "happy": 160,
+        "fearful": 19,
+        "neutral": 472,
+        "sad": 81,
+        "surprised": 125,
+        "disgusted": 25,
+        "angry": 118
+      },
+      "predicted_neutral": {
+        "estimate": 0.472,
+        "ci95": [
+          0.440320962888666,
+          0.5030365912245116
+        ],
+        "n_items": 1000,
+        "n_clusters": 943,
+        "unit": "audio_sha256"
+      }
+    },
+    {
+      "condition": "adversarial",
+      "predicted_label_distribution": {
+        "angry": 141,
+        "sad": 138,
+        "disgusted": 150,
+        "surprised": 171,
+        "happy": 134,
+        "fearful": 163,
+        "neutral": 103
+      },
+      "predicted_neutral": {
+        "estimate": 0.103,
+        "ci95": [
+          0.08467701773550956,
+          0.12188056399245911
+        ],
+        "n_items": 1000,
+        "n_clusters": 943,
+        "unit": "audio_sha256"
+      }
+    },
+    {
+      "condition": "irrelevant",
+      "predicted_label_distribution": {
+        "neutral": 746,
+        "sad": 34,
+        "happy": 88,
+        "angry": 51,
+        "fearful": 60,
+        "surprised": 15,
+        "PARSE_FAIL": 5,
+        "disgusted": 1
+      },
+      "predicted_neutral": {
+        "estimate": 0.746,
+        "ci95": [
+          0.7176938369781312,
+          0.773
+        ],
+        "n_items": 1000,
+        "n_clusters": 943,
+        "unit": "audio_sha256"
+      }
+    }
+  ],
+  "predicted_neutral_shift": {
+    "estimate": 0.359,
+    "ci95": [
+      0.32160536455094946,
+      0.3972055888223553
+    ],
+    "n_items": 1000,
+    "n_clusters": 943,
+    "unit": "audio_sha256"
+  },
+  "invariance_cluster_ci": {
+    "all_four_same_valid": {
+      "estimate": 0.003,
+      "ci95": [
+        0.0,
+        0.0069721115537848604
+      ],
+      "n_items": 1000,
+      "n_clusters": 943,
+      "unit": "audio_sha256"
+    },
+    "any_change_including_failure": {
+      "estimate": 0.997,
+      "ci95": [
+        0.9930417495029821,
+        1.0
+      ],
+      "n_items": 1000,
+      "n_clusters": 943,
+      "unit": "audio_sha256"
+    }
+  },
+  "controlled_same_audio_conflicting_GT": [
+    {
+      "source_index": "692",
+      "sample_id": "mcr_ser_000692",
+      "audio_sha256": "d6a4044bfffbe760e2f2a0812b8fa45f846fa4f0318b2b8846202de12a1412a7",
+      "gt": "happy",
+      "y_text_adversarial": "angry",
+      "controlled_member": "True",
+      "neutral": "angry",
+      "faithful": "happy",
+      "adversarial": "angry",
+      "irrelevant": "neutral",
+      "all_four_same_valid": "False",
+      "any_change_including_failure": "True"
+    },
+    {
+      "source_index": "752",
+      "sample_id": "mcr_ser_000752",
+      "audio_sha256": "d6a4044bfffbe760e2f2a0812b8fa45f846fa4f0318b2b8846202de12a1412a7",
+      "gt": "angry",
+      "y_text_adversarial": "neutral",
+      "controlled_member": "True",
+      "neutral": "angry",
+      "faithful": "angry",
+      "adversarial": "neutral",
+      "irrelevant": "fearful",
+      "all_four_same_valid": "False",
+      "any_change_including_failure": "True"
+    },
+    {
+      "source_index": "838",
+      "sample_id": "mcr_ser_000838",
+      "audio_sha256": "d6a4044bfffbe760e2f2a0812b8fa45f846fa4f0318b2b8846202de12a1412a7",
+      "gt": "neutral",
+      "y_text_adversarial": "angry",
+      "controlled_member": "True",
+      "neutral": "angry",
+      "faithful": "neutral",
+      "adversarial": "angry",
+      "irrelevant": "angry",
+      "all_four_same_valid": "False",
+      "any_change_including_failure": "True"
+    }
+  ]
+}

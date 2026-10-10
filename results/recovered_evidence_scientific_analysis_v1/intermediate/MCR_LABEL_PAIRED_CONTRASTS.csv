@@ -1,0 +1,8 @@
+source_label,contrast,estimate,ci95,n_items,n_clusters,unit,inference
+sad,irrelevant minus neutral source match,-0.2625,"[-0.375, -0.1625]",80,80,audio_sha256,"predeclared source-label descriptive family; pointwise CI, no confirmatory significance claim"
+happy,irrelevant minus neutral source match,-0.3696969696969697,"[-0.4573170731707317, -0.281413392726742]",165,161,audio_sha256,"predeclared source-label descriptive family; pointwise CI, no confirmatory significance claim"
+fearful,irrelevant minus neutral source match,0.05263157894736842,"[-0.21052631578947367, 0.3157894736842105]",19,19,audio_sha256,"predeclared source-label descriptive family; pointwise CI, no confirmatory significance claim"
+angry,irrelevant minus neutral source match,-0.23728813559322035,"[-0.3247863247863248, -0.15254237288135594]",118,116,audio_sha256,"predeclared source-label descriptive family; pointwise CI, no confirmatory significance claim"
+surprised,irrelevant minus neutral source match,-0.264,"[-0.344, -0.192]",125,124,audio_sha256,"predeclared source-label descriptive family; pointwise CI, no confirmatory significance claim"
+disgusted,irrelevant minus neutral source match,-0.08,"[-0.2, 0.0]",25,25,audio_sha256,"predeclared source-label descriptive family; pointwise CI, no confirmatory significance claim"
+neutral,irrelevant minus neutral source match,0.2799145299145299,"[0.22413701975650652, 0.3333333333333333]",468,458,audio_sha256,"predeclared source-label descriptive family; pointwise CI, no confirmatory significance claim"

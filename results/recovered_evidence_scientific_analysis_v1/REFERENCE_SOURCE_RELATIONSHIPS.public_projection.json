@@ -1,0 +1,103 @@
+{
+  "copies": [
+    {
+      "local_original": "LOCAL_REFERENCE_ARCHIVE/R1_SOURCE_STRUCTURE_REPORT.md",
+      "sha256": "80f803b4e0faf1abb1280a592b92ae00d5ed35a2a3a67950039a7ded9394c904",
+      "reference_name": "R1_SOURCE_STRUCTURE_REPORT.md"
+    },
+    {
+      "local_original": "LOCAL_REFERENCE_ARCHIVE/R2_COMPOSITIONALITY_REPORT.md",
+      "sha256": "6288bed1bc3929142772be3eb8ec3bd20c8d03572d99636d1a1dfec7daa74a96",
+      "reference_name": "R2_COMPOSITIONALITY_REPORT.md"
+    },
+    {
+      "local_original": "LOCAL_REFERENCE_ARCHIVE/R3_LISTEN_BEHAVIOR_REPORT.md",
+      "sha256": "54adc57f4a6f8d4d71f991bb5500147c136806a66780cc1e7637a43c5d1be108",
+      "reference_name": "R3_LISTEN_BEHAVIOR_REPORT.md"
+    },
+    {
+      "local_original": "LOCAL_REFERENCE_ARCHIVE/SCIENTIFIC_ANALYSIS_V1_FINAL_REPORT.md",
+      "sha256": "593da3df9abcd966b2af9d4eab9fcac47d64cfaf696399817e35e65e1ef4508c",
+      "reference_name": "SCIENTIFIC_ANALYSIS_V1_FINAL_REPORT.md"
+    },
+    {
+      "local_original": "LOCAL_REFERENCE_ARCHIVE/B3_ZERO_REFIT_FINAL_EVALUATION_V1.md",
+      "sha256": "8a008993d5a2ce98b9c6b2440535c934fdbd193c26da1c671003b69c497890c3",
+      "reference_name": "B3_ZERO_REFIT_FINAL_EVALUATION_V1.md"
+    },
+    {
+      "local_original": "LOCAL_REFERENCE_ARCHIVE/03_conflict_coverage.csv",
+      "sha256": "45d6729351833258e2c6e8b022b13491f0d9db0cc36f5bc0a03d3a131b227f40",
+      "reference_name": "03_conflict_coverage.csv"
+    },
+    {
+      "local_original": "LOCAL_REFERENCE_ARCHIVE/02_conflict_descriptive_by_order.csv",
+      "sha256": "642a97d69ac9b3bc80aa72d6aab9f791e4c3fde4e4321d8024131f11e074a21f",
+      "reference_name": "02_conflict_descriptive_by_order.csv"
+    },
+    {
+      "local_original": "LOCAL_REFERENCE_ARCHIVE/ERI1_ARCHIVE_REPORT_V1.md",
+      "sha256": "5bc589c35fc5b7364d36555f4be6a8c5255661ee32ddb57d986c3356b8b61b06",
+      "reference_name": "ERI1_ARCHIVE_REPORT_V1.md"
+    },
+    {
+      "local_original": "LOCAL_REFERENCE_ARCHIVE/ERI1_DIALOGUE_ROBUSTNESS_REPORT_V1.md",
+      "sha256": "c6d61e3ad03a623ab00d15705b8bf872490f073417f796fd86c2bd31623b54d8",
+      "reference_name": "ERI1_DIALOGUE_ROBUSTNESS_REPORT_V1.md"
+    },
+    {
+      "local_original": "LOCAL_REFERENCE_ARCHIVE/ERI1_REPRODUCIBILITY_REPORT_V1.md",
+      "sha256": "74b9a52816459e6be900f3a5fcca792d5e54d95f0e208ac4aed997979b957dad",
+      "reference_name": "ERI1_REPRODUCIBILITY_REPORT_V1.md"
+    },
+    {
+      "local_original": "LOCAL_REFERENCE_ARCHIVE/ERI1_SELECTION_BOUNDARY_REPORT_V1.md",
+      "sha256": "a5d028828daf411d131d4f1683649ac6d2a959ac27dd5df8641ba65d7e21c03d",
+      "reference_name": "ERI1_SELECTION_BOUNDARY_REPORT_V1.md"
+    },
+    {
+      "local_original": "LOCAL_REFERENCE_ARCHIVE/ERI1_TRANSITION_REPORT_V1.md",
+      "sha256": "7ef88bba59bca3b62c0339fa76b1306f8dc9471aad7ecae7bd74bd2b0dcec24e",
+      "reference_name": "ERI1_TRANSITION_REPORT_V1.md"
+    },
+    {
+      "local_original": "LOCAL_REFERENCE_ARCHIVE/SCIENTIFIC_CLOSURE_FINAL_REPORT.md",
+      "sha256": "926e2de8d43f47f972b9b769480bb12dcbcdccf38a1659b1eabbad6a7ad1283f",
+      "reference_name": "SCIENTIFIC_CLOSURE_FINAL_REPORT.md"
+    },
+    {
+      "local_original": "LOCAL_REFERENCE_ARCHIVE/07_REVISION_V2_VERIFICATION_AND_ERRATA.md",
+      "sha256": "e22d919fe302b286d76e278754b1c5e103bd21b5c357c85a95902bd7df2a7ca1",
+      "reference_name": "07_REVISION_V2_VERIFICATION_AND_ERRATA.md"
+    },
+    {
+      "local_original": "LOCAL_REFERENCE_ARCHIVE/08_QWEN_GPU_EXPERIMENT_DECISION_V2.md",
+      "sha256": "2c34793182175b01304816eb16b529544b64c86a532fafe2011d7001d91b021c",
+      "reference_name": "08_QWEN_GPU_EXPERIMENT_DECISION_V2.md"
+    }
+  ],
+  "role": "read-only exact-byte local copies of prior frozen/report outputs; original Windows paths retained; no fresh GitHub retrieval",
+  "snapshot_reconciliation_reference": [
+    {
+      "original_repository_path": "results/four_regime_structural_synthesis_v1/07_REVISION_V2_VERIFICATION_AND_ERRATA.md",
+      "previously_verified_revision": "566e41c8f32ccf8090bc1c2ba20e366913434054",
+      "local_reference_path": "LOCAL_REFERENCE_ARCHIVE/results/four_regime_structural_synthesis_v1/07_REVISION_V2_VERIFICATION_AND_ERRATA.md",
+      "reference_copy_remote_path": "/root/autodl-tmp/affective-conflict-reconciliation-v2/synthesis_reference/07_REVISION_V2_VERIFICATION_AND_ERRATA.md",
+      "sha256": "e22d919fe302b286d76e278754b1c5e103bd21b5c357c85a95902bd7df2a7ca1"
+    },
+    {
+      "original_repository_path": "results/four_regime_structural_synthesis_v1/08_QWEN_GPU_EXPERIMENT_DECISION_V2.md",
+      "previously_verified_revision": "566e41c8f32ccf8090bc1c2ba20e366913434054",
+      "local_reference_path": "LOCAL_REFERENCE_ARCHIVE/results/four_regime_structural_synthesis_v1/08_QWEN_GPU_EXPERIMENT_DECISION_V2.md",
+      "reference_copy_remote_path": "/root/autodl-tmp/affective-conflict-reconciliation-v2/synthesis_reference/08_QWEN_GPU_EXPERIMENT_DECISION_V2.md",
+      "sha256": "2c34793182175b01304816eb16b529544b64c86a532fafe2011d7001d91b021c"
+    },
+    {
+      "original_repository_path": "analyses/four_regime_synthesis_v1/step0_camer_archive_audit.py",
+      "previously_verified_revision": "566e41c8f32ccf8090bc1c2ba20e366913434054",
+      "local_reference_path": "LOCAL_REFERENCE_ARCHIVE/analyses/four_regime_synthesis_v1/step0_camer_archive_audit.py",
+      "reference_copy_remote_path": "/root/autodl-tmp/affective-conflict-reconciliation-v2/synthesis_reference/step0_camer_archive_audit.py",
+      "sha256": "34ef5fb73b7cd00113fddcb64ba6e4bd8b8970f7fa2e24d90d1a1c590e08eac0"
+    }
+  ]
+}

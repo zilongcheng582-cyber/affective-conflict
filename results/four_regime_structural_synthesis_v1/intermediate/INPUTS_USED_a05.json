@@ -1,0 +1,18 @@
+{
+ "evidence/b3/B3_CORRECTED_MEASUREMENTS_V1.csv": "7ce3d51d3670e0f8c7f7bb377cd2313b11e6931ff42ba44b0883ad4270fc81b4",
+ "evidence/emotiontalk/phase2_observed_responses.jsonl": "4fc584c9a9af341f2db4bbdbe84437587187fa870dda9b6cb0417ba7a1782b87",
+ "evidence/emotiontalk/phase3_observed_outputs.jsonl": "4c8c3bc7d68c30fccc0777abc1c1aee6a0745185faf5973618976f4629fab907",
+ "experiments/emotiontalk_reliability_v1/ELIGIBILITY_AND_SAMPLING_V1.csv": "948d2ee17d71f7d0f6b9d87b4f056eb558c6fdcb9ae659a3136dbf0e34532a66",
+ "manifests/camer/controlled.jsonl": "929a9734a5099c60f83890544401c09d703e32b728e0b9f4d6afd98b46c7869b",
+ "manifests/camer/frozen_joint_outcomes.csv": "57ed776d5009ba50b3e07bcb7b78c4323a66b08e960e65bee20ecbfef82abd13",
+ "manifests/emotiontalk/source_measurements.csv": "3cc270054de466387e874be0dcb180dad12250e348c332a98fffba7d1c647042",
+ "manifests/listen/frozen_joint_outcomes.csv": "cc145efa4b187deab567b547ab8b71b6456da6484820d96ec49810742b77aced",
+ "manifests/mcr/canonical_arbitration.csv": "c81079ad56ef3957fb978b753d98ee31d0e0cafbe6876eb7489125fd805e0716",
+ "manifests/mcr/frozen_joint_outcomes.csv": "789261e4fce394e6466bb67c0e55a3e0dce49c3d8b37ed76308c075660329266",
+ "results/eri1_scientific_closure_v1/ERI1_SCIENTIFIC_TRIAL_PROJECTION_V1.csv": "f66b46e927b634bc03fe5a78c23da296c799f3e004ed4ccc33a92b7aebe9d97a",
+ "results/four_regime_structural_synthesis_v1/intermediate/JOINT_LONG_V1.csv": "ec84a8cef1f60af4afe0110eaa417819b3f5b71f23141f784a2543f9f1a6e321",
+ "results/four_regime_structural_synthesis_v1/intermediate/MANIFEST_FEATURE_STALENESS_AUDIT.csv": "b5bbfad115d6a9b8e0a5ce8382f09d6a2b72115658a6cc54e8d2793788b197a7",
+ "results/post_audit/closure_v1/MCR_CONTENT_DUPLICATE_AUDIT_V1.csv": "692250f603e49eb46690f4a8f9e2e1e5b2ba8f3896a6933398b43dbf8caccf6a",
+ "results/post_audit/closure_v1/ZERO_REFIT_BASELINE_COMPARISON_V1.csv": "526014bb2c470e3a181b354b000cd9802751fdd28cf9280d8bcc2fb5c5df11fc",
+ "results/post_audit/closure_v1/corrected_replay/B3_CORRECTED_ZERO_REFIT_PREDICTIONS_V1.csv": "c497629d50291005f2bc7936c23e154c4f194dad22c65e5ad1714e54d79c7e9a"
+}

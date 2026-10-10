@@ -1,0 +1,8 @@
+[
+  {
+    "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_CAMER_NATIVE_V1/CAMER_NATIVE_SCIENTIFIC_OUTPUT_ADDENDUM_V1_2.md",
+    "sha256": "c962ca24ca7c205e8d2675e4e45394d96aad94a48b130220d71eabeb075ad325",
+    "issue": "historical contract text not UTF-8; replacement decoding for navigation excerpts only",
+    "error": "'utf-8' codec can't decode byte 0xba in position 4599: invalid start byte"
+  }
+]

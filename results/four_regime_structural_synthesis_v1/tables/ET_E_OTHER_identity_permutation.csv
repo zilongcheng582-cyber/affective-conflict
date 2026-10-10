@@ -1,0 +1,3 @@
+population,n_informative,observed_matches,perm_null_mean_matches,perm_p_one_sided,n_item_clusters,note
+PHASE2_CONFLICT,12,6,2.96948,0.0613939,9,EXPLORATORY; trial-level permutation; repeated trials of one item are not independent so p is anti-conservative
+ERI1_ALL_CONDITIONS,22,12,7.03029,0.00949905,7,EXPLORATORY; trial-level permutation; repeated trials of one item are not independent so p is anti-conservative

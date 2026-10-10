@@ -1,0 +1,97 @@
+{
+  "V3": {
+    "by_condition": {
+      "3A": {
+        "rows": 387,
+        "correct": 108,
+        "SIDE_A": 69,
+        "raw_present": 387,
+        "OTHER": 210,
+        "SIDE_T": 108
+      },
+      "3B": {
+        "rows": 381,
+        "correct": 136,
+        "OTHER": 219,
+        "raw_present": 381,
+        "SIDE_A": 136,
+        "SIDE_T": 26
+      },
+      "3C": {
+        "rows": 381,
+        "correct": 110,
+        "OTHER": 213,
+        "raw_present": 381,
+        "SIDE_A": 110,
+        "SIDE_T": 58
+      }
+    },
+    "raw_path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_LISTEN_NATIVE_V3/listen_native_raw_outputs_local_v3.jsonl",
+    "raw_sha256": "effdf7f070d99e38d127a3d9a9ecc2909dbe388d8985289ed4e6621cbc3f2993",
+    "manifest_path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_LISTEN_NATIVE_V3/listen_native_manifest_local_v3.csv",
+    "manifest_sha256": "645b28640fa8fc060ff5b965c969c85ed3004c08fa8121b06e8dc4bfc4e3b88b",
+    "model_revision_values": [
+      "/root/autodl-tmp/affective-conflict/models/Qwen2.5-Omni-7B"
+    ]
+  },
+  "V4": {
+    "by_condition": {
+      "3A": {
+        "rows": 387,
+        "correct": 107,
+        "SIDE_A": 75,
+        "raw_present": 387,
+        "SIDE_T": 107,
+        "OTHER": 205
+      },
+      "3B": {
+        "rows": 381,
+        "correct": 139,
+        "OTHER": 212,
+        "raw_present": 381,
+        "SIDE_A": 139,
+        "SIDE_T": 30
+      },
+      "3C": {
+        "rows": 381,
+        "correct": 102,
+        "OTHER": 214,
+        "raw_present": 381,
+        "SIDE_A": 102,
+        "SIDE_T": 65
+      }
+    },
+    "raw_path": "/root/autodl-tmp/affective-conflict/results/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/listen_native_raw_outputs_source_aligned_v4.jsonl",
+    "raw_sha256": "efb604ffcdd4f746cda961da0fa17f8fae995e34aa02779bf2334917c19e74ea",
+    "manifest_path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_LISTEN_NATIVE_V4_SOURCE_ALIGNED/listen_native_manifest_source_aligned_v4.csv",
+    "manifest_sha256": "567c9cc2f1758d703031c4eb772bd0e35fc003561f769866f1b6e9559251aa28",
+    "model_revision_values": [
+      "/root/autodl-tmp/affective-conflict/models/Qwen2.5-Omni-7B"
+    ]
+  },
+  "strict_v3_v4_join": {
+    "rows": 1149,
+    "identity_matched": 1149,
+    "candidate_sequence_equal": 0,
+    "prompt_hash_equal": 0,
+    "pooling_allowed": false
+  },
+  "gating": {
+    "V3": {
+      "joint_rows": 381,
+      "audio_unique": 381,
+      "text_full_content_unique": 244,
+      "text_actual_input_unique": 244,
+      "dual_correct_full_content": 22,
+      "dual_correct_actual_input": 22
+    },
+    "V4": {
+      "joint_rows": 381,
+      "audio_unique": 381,
+      "text_full_content_unique": 244,
+      "text_actual_input_unique": 244,
+      "dual_correct_full_content": 22,
+      "dual_correct_actual_input": 22
+    }
+  }
+}

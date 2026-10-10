@@ -1,0 +1,3 @@
+construction,n_complete,SIDE_AUDIO_when_audio_first,SIDE_AUDIO_when_video_first,audio_choice_only_when_audio_first_primacy,audio_choice_only_when_video_first_recency,identical_outcome_both_orders,mcnemar_exact_b_c
+audio-aligned,500,0.508,0.518,31,36,0.824,31/36
+video-aligned,500,0.23,0.252,23,34,0.796,23/34

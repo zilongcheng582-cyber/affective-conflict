@@ -1,0 +1,33 @@
+{
+  "label": "RETROSPECTIVE_EVIDENCE_RECOVERY",
+  "path": "/root/autodl-tmp/affective-conflict/audit/QWEN25_MCR_NATIVE_V1/full_run/qwen25_mcr_native_full_v1.jsonl",
+  "sha256": "e20ede77e563d4bb5ae29c4b6f57308bd06c736dd4344e318e7acf560b0c6b77",
+  "unique_items_by_condition": {
+    "neutral": 1000,
+    "faithful": 1000,
+    "adversarial": 1000,
+    "irrelevant": 1000
+  },
+  "same_items_across_four_conditions": 1000,
+  "fields": [
+    "audio_abspath",
+    "audio_relpath",
+    "condition",
+    "execution_config_version",
+    "generation_success",
+    "gt",
+    "manifest_version",
+    "output_schema_version",
+    "parse_status",
+    "parsed_label",
+    "parser_version",
+    "raw_model_output",
+    "record_key",
+    "sample_id",
+    "source_index",
+    "technical_error"
+  ],
+  "runner_path": "/root/autodl-tmp/affective-conflict/code/run_qwen25_mcr_native_v1.py",
+  "runner_sha256": "6848b469eb15e51b068262afb5d3c7899793d8910e08b842ce4c9e6c42a1ea7b",
+  "runner_executed_now": false
+}
