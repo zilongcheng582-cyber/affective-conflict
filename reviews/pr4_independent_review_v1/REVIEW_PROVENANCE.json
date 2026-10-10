@@ -1,0 +1,80 @@
+{
+ "task": "PR4_INDEPENDENT_PRE_MERGE_REVIEW_V1",
+ "mode": "READ_ONLY_REVIEW",
+ "pr": "https://github.com/zilongcheng582-cyber/affective-conflict/pull/4",
+ "head_sha": "18b99caa5c11c3719e67ccbd3a0c71a0d70a77d7",
+ "base_sha": "544ca0efae158df369a7b25dd110dc4254f67a7d",
+ "head_reverified_at_end": true,
+ "head_unchanged": true,
+ "pr_binary_diff_sha256": "8c17b3901439f5ba9ae04d9756e41dd58b5773fd65ffd3150f88d21793f10e2e",
+ "commits": [
+  "8679809a184408423f346f3d24d22c7f652ff09a",
+  "566e41c8f32ccf8090bc1c2ba20e366913434054",
+  "be83e5125903a7e6365a2124cfd5bd41e8666247",
+  "41f2681c3e8fe36771237e407546fef149376104",
+  "18b99caa5c11c3719e67ccbd3a0c71a0d70a77d7"
+ ],
+ "review_time_utc": "2026-10-10T12:30:15Z",
+ "environment": {
+  "host": "Claude Code cloud container (not AutoDL)",
+  "kernel": "Linux 6.18.44 x86_64",
+  "python": "3.13.16",
+  "numpy": "2.5.3",
+  "pandas": "3.0.5",
+  "scipy": "1.18.1 (review venv)",
+  "pytest": "9.0.3 (review venv)",
+  "torch": "absent",
+  "gpu": false,
+  "autodl_restricted_assets": false
+ },
+ "actions_not_taken": [
+  "merge",
+  "push to main",
+  "modify PR branch",
+  "model inference",
+  "GPU",
+  "refit",
+  "threshold/scaler change",
+  "large downloads"
+ ],
+ "review_checkout_tracked_files_clean": true,
+ "scripts": {
+  "review_scripts/make_findings_csv.py": "57bd65734ff02c033cc88ad7cb6aa48fb805ae8d394ae080e3fade5a3e074ee5",
+  "review_scripts/r01_integrity.py": "a5cba6aaa7b835b0ee107fecfd532d02f6a40b3e7f181a4cbb8503fc3f07f5c0",
+  "review_scripts/r03_mcr.py": "a8944f49ec5af75e4ece4c2ea625e74e43ff7f3859ddc716a51e7505a972bfd4",
+  "review_scripts/r04_listen.py": "6cad807285b747fb3abb243df947773d8a1b0ffe52fef609c5972c20571e9941",
+  "review_scripts/r05_camer.py": "adc59437acdb59c6d3c50db4e4f9f61c509f4065833183287729d7d13ed67192",
+  "review_scripts/r06_transfer_replay.py": "e46bafae010234efff927d6f4e8689a41eeb0e01751e8f2b8eb3cf72a129af02",
+  "review_scripts/r07_subgroup_replay.py": "58b89556021eae0af99f825b002ee06af8e19dbc8494ec438243ac53283fd97f",
+  "review_scripts/r08_decomposition_claims.py": "26e33d68fb2e34372c3e9f3d6a68314fedc53d34d27e959f33b37e566ae85cc7",
+  "review_tests/test_pr4_review_boundaries.py": "23c649ffb7e70f59c08e148567f0da4c47eafae3ab2aef10ab2e42b205834add"
+ },
+ "logs": {
+  "logs/crlf_sim_integrity.json": "64f092f30b91527c29b56989db59f7f6f763571a35d0451e7db745b0316d10e8",
+  "logs/four_regime_replay.stdout": "e2a9ab1fc99e25867cd3eede1918a9d058bad92c5e9580fbd53734587e283523",
+  "logs/r03_mcr.json": "a6cf5aa3ea22e2cdf71646f18584cb7433006eca617cf1ce7fff7e1cce7220a1",
+  "logs/r04_listen.json": "b6d7ef1cb89f29b08500475fa7ec6dfb4d130387b7088a46eb3101df7bd54212",
+  "logs/r05_camer.json": "135b7a15b1717f0946360be0e10a3de553f24a787fb367eca0f74d792fe3c552",
+  "logs/r06_transfer_replay.json": "1272c7223e33ce6ec2cf112c6c9c4f0ff60f2d47509e5833ad157b4e074a8b62",
+  "logs/r06_transfer_replay.stdout": "ba8c5ae44366cbfeeede49e6dbafb48b0b82463d7e83d66b7a9bd53efeff27d3",
+  "logs/r07_subgroup_replay.json": "6b4af2c166e25b0b5ff552a8a2e2f92d7f65607737e3c0aa7f1c1a3c92374aa1",
+  "logs/r08_decomposition_claims.json": "0ca64cea5e4b96e00734bccb8a06614e1e70ee4169519b3efcf667cacfa2c72b",
+  "logs/review_tests.txt": "55497992c1f6babd89edb6624ed8dc063a3b60bd5c9c3ad03df25b7be76ce990",
+  "logs/review_tests_detail.txt": "a1081d2f8beab8ad5fcfca388e7be1c43480037a6be7594d13420ef8807c8fe1",
+  "logs/validate_migration.stdout": "91ee2a5fd447935f584e5033b87bcb8d4b2a1b726aee73864a274f904ab79037",
+  "logs/validate_migration_report.json": "b859b47a653c93d196446ccdd15c3e907f0111657c8a8ed966bc02665e62bf31",
+  "logs_r01.json": "a0be003ed354b6ec18736fa17628eb6ede21b758071fe209c303c3e6d8199f39"
+ },
+ "decision": {
+  "MERGE_READINESS": "CHANGES_REQUIRED",
+  "P0": 0,
+  "P1": 0,
+  "P2": 5,
+  "P3": 12,
+  "FROZEN_ARTIFACT_INTEGRITY": "PASS",
+  "TRANSFER_REPLAY_STATUS": "GITHUB_CLEAN_CHECKOUT_REPLAY_PASS (point estimates); CIs not regenerated; AUTODL replay not verified",
+  "SCIENTIFIC_CLAIM_AUDIT": "CHANGES_REQUIRED",
+  "SECURITY_AUDIT": "PASS_WITH_NOTES",
+  "CLEAN_CHECKOUT_TEST_STATUS": "PASS"
+ }
+}

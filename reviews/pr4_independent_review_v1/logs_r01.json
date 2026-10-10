@@ -1,0 +1,178 @@
+{
+ "migration_sha256sums": {
+  "entries": 259,
+  "fail": []
+ },
+ "results/historical_evidence_reconciliation_v2/SHA256SUMS.txt": {
+  "entries": 52,
+  "missing": [],
+  "mismatch": []
+ },
+ "results/recovered_evidence_scientific_analysis_v1/SHA256SUMS.txt": {
+  "entries": 67,
+  "missing": [],
+  "mismatch": []
+ },
+ "results/transfer_failure_integration_v1/SHA256SUMS.txt": {
+  "entries": 31,
+  "missing": [],
+  "mismatch": []
+ },
+ "allowlist": {
+  "rows": 222,
+  "unique_targets": 222,
+  "sum_actual_target_bytes": 16358604,
+  "sum_bytes_column": 16358604,
+  "sha_mismatch": [],
+  "bytes_column_mismatch": [],
+  "not_in_pr_diff": [],
+  "redacted": [
+   [
+    "results/historical_evidence_reconciliation_v2/expanded_forensics/MCR_NATIVE_FOUR_CONDITION_RECOVERY.public_projection.json",
+    "2d0e058a473b",
+    "3481b99f53e7",
+    990,
+    990,
+    "Remove embedded raw examples/text/code excerpts only; retain identities, counts and conclusions. Fields: /examples,/source_snippets"
+   ],
+   [
+    "results/historical_evidence_reconciliation_v2/expanded_forensics/OWN_CODE_AND_CHECKPOINT_SUPPLEMENT.public_projection.json",
+    "0673db925399",
+    "1b5aa497b94f",
+    2803,
+    2803,
+    "Remove embedded raw examples/text/code excerpts only; retain identities, counts and conclusions. Fields: /content_hits"
+   ],
+   [
+    "results/historical_evidence_reconciliation_v2/LISTEN_CODE_CHECKPOINT_AUDIT_V2.public_projection.json",
+    "e0b918238703",
+    "7abecc8c5488",
+    336,
+    336,
+    "Remove embedded raw examples/text/code excerpts only; retain identities, counts and conclusions. Fields: /code_reverse_mentions/[]/lines/[]/text"
+   ],
+   [
+    "results/historical_evidence_reconciliation_v2/MCR_1000_NATIVE_TO_909_CONTROLLED_IDENTITY_V2.public_projection.csv",
+    "11afd4750dab",
+    "3ecf5b44a77e",
+    451700,
+    451700,
+    "Remove unreviewed raw text columns: native_adversarial_source_text,controlled_text_evidence. Preserve source text/audio hashes and every row."
+   ],
+   [
+    "results/historical_evidence_reconciliation_v2/INDEXED_ARCHIVE_RECONCILIATION_V2.public_projection.json",
+    "1a0f6922aa14",
+    "b46647a2f7f5",
+    42191,
+    42191,
+    "Remove embedded raw examples/text/code excerpts only; retain identities, counts and conclusions. Fields: /archives/[]/reviewed_members/[]/reverse_text_lines/[]/"
+   ],
+   [
+    "results/historical_evidence_reconciliation_v2/MCR_TEXT_AND_MODEL_CONTRACT_AUDIT_V2.public_projection.json",
+    "b7e679335db8",
+    "a05620e02472",
+    23284,
+    23284,
+    "Remove embedded raw examples/text/code excerpts only; retain identities, counts and conclusions. Fields: /model_identity_sources/[]/identity_excerpts/[]/text"
+   ],
+   [
+    "results/historical_evidence_reconciliation_v2/MCR_POOL_AND_DUPLICATE_AUDIO_AUDIT_V2.public_projection.json",
+    "3463739de185",
+    "2b61396deb4f",
+    99960,
+    99960,
+    "Remove embedded raw examples/text/code excerpts only; retain identities, counts and conclusions. Fields: /docs//root/autodl-tmp/affective-conflict/audit/MCR_SER"
+   ],
+   [
+    "results/recovered_evidence_scientific_analysis_v1/03_LISTEN_MATCHED_SOURCE_LABEL_DIAGNOSTICS.public_projection.csv",
+    "9f911d474023",
+    "e848d5725af7",
+    150479,
+    150479,
+    "Remove unreviewed raw text columns: raw_answer. Preserve source text/audio hashes and every row."
+   ],
+   [
+    "results/recovered_evidence_scientific_analysis_v1/REFERENCE_SOURCE_RELATIONSHIPS.public_projection.json",
+    "37331f99ce8d",
+    "c245272b14ce",
+    5552,
+    5552,
+    "Replace personal Windows source locations with LOCAL_REFERENCE_ARCHIVE/<reference_name>; preserve original file hashes. Also replace nested local_reference_path"
+   ],
+   [
+    "results/historical_evidence_reconciliation_v2/MCR_NATIVE_FOUR_CONDITION_PAIRED_PROJECTION_V2.public_projection.csv",
+    "58e1ef5d0710",
+    "897bc629fd7a",
+    1531509,
+    1531509,
+    "Remove columns source_text,raw_model_output; preserve all rows and original SHA256."
+   ],
+   [
+    "results/historical_evidence_reconciliation_v2/CAMER_6000_KEY_RECONCILIATION_V2.public_projection.csv",
+    "6d42c68603f0",
+    "133f1dc09e83",
+    3827448,
+    3827448,
+    "Remove columns raw_model_output; preserve all rows and original SHA256."
+   ],
+   [
+    "results/historical_evidence_reconciliation_v2/LISTEN_V3_ANSWER_OPTION_RECOVERY_V2.public_projection.csv",
+    "9320711048e5",
+    "4edc549394e4",
+    910566,
+    910566,
+    "Remove columns raw_model_output,raw_generated_sequence; preserve all rows and original SHA256."
+   ],
+   [
+    "results/historical_evidence_reconciliation_v2/LISTEN_V4_ANSWER_OPTION_RECOVERY_V2.public_projection.csv",
+    "a139d0984f36",
+    "dcf175cc283e",
+    940434,
+    940434,
+    "Remove columns raw_model_output,raw_generated_sequence; preserve all rows and original SHA256."
+   ]
+  ]
+ },
+ "non_payload_files": [
+  ".gitattributes",
+  "analyses/four_regime_synthesis_v1/README.md",
+  "analyses/four_regime_synthesis_v1/requirements.txt",
+  "analyses/historical_evidence_reconciliation_v2/README.md",
+  "analyses/historical_evidence_reconciliation_v2/expanded_original/README.md",
+  "analyses/historical_evidence_reconciliation_v2/reconciliation_original/README.md",
+  "analyses/recovered_evidence_scientific_analysis_v1/README.md",
+  "analyses/recovered_evidence_scientific_analysis_v1/requirements.txt",
+  "analyses/transfer_failure_integration_v1/README.md",
+  "analyses/transfer_failure_integration_v1/requirements.txt",
+  "analyses/transfer_failure_integration_v1/validate_migration.py",
+  "docs/RECOVERED_EVIDENCE_MIGRATION_V1.md",
+  "evidence/provenance/recovered_evidence_migration_v1/CLEAN_CHECKOUT_VALIDATION_V1.json",
+  "evidence/provenance/recovered_evidence_migration_v1/GITHUB_GAP_ANALYSIS.csv",
+  "evidence/provenance/recovered_evidence_migration_v1/LOCAL_FIXED_METRIC_REPLAY_CHECK.json",
+  "evidence/provenance/recovered_evidence_migration_v1/MIGRATION_ALLOWLIST.csv",
+  "evidence/provenance/recovered_evidence_migration_v1/MIGRATION_EXCLUSIONS.csv",
+  "evidence/provenance/recovered_evidence_migration_v1/MIGRATION_FILE_SHA256.csv",
+  "evidence/provenance/recovered_evidence_migration_v1/MIGRATION_LINEAGE_MAP.csv",
+  "evidence/provenance/recovered_evidence_migration_v1/MIGRATION_PROVENANCE.json",
+  "evidence/provenance/recovered_evidence_migration_v1/MIGRATION_SAFETY_REVIEW.json",
+  "evidence/provenance/recovered_evidence_migration_v1/MIGRATION_SOURCE_INVENTORY.csv",
+  "evidence/provenance/recovered_evidence_migration_v1/MIGRATION_VALIDATION_REPORT.md",
+  "evidence/provenance/recovered_evidence_migration_v1/README.md",
+  "evidence/provenance/recovered_evidence_migration_v1/SHA256SUMS.txt",
+  "evidence/provenance/recovered_evidence_migration_v1/STAGED_REVIEW_V1.json",
+  "results/four_regime_structural_synthesis_v1/README.md",
+  "results/historical_evidence_reconciliation_v2/README.md",
+  "results/historical_evidence_reconciliation_v2/SHA256SUMS.txt",
+  "results/historical_evidence_reconciliation_v2/expanded_forensics/README.md",
+  "results/recovered_evidence_scientific_analysis_v1/README.md",
+  "results/recovered_evidence_scientific_analysis_v1/SHA256SUMS.txt",
+  "results/recovered_evidence_scientific_analysis_v1/intermediate/README.md",
+  "results/recovered_evidence_scientific_analysis_v1/numeric/README.md",
+  "results/transfer_failure_integration_v1/README.md",
+  "results/transfer_failure_integration_v1/SHA256SUMS.txt",
+  "results/transfer_failure_integration_v1/phase4_numeric/README.md",
+  "results/transfer_failure_integration_v1/phase4_replay_same_seed/README.md"
+ ],
+ "non_payload_bytes": 831372,
+ "total_changed_bytes": 17189976
+}
