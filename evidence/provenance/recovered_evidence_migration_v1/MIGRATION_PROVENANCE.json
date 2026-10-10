@@ -194,5 +194,6 @@
   "sanitized_derivative_payload_files": 13,
   "clean_checkout_scope": "IDENTITIES_TABLES_STATIC_PARSE_MODULE_IMPORTS_AND_18_FIXED_METRIC_GROUPS; full archive/bootstrap extraction requires AutoDL",
   "clean_checkout_tests_passed": 36,
-  "clean_checkout_module_imports_passed": 6
+  "clean_checkout_module_imports_passed": 6,
+  "package_hash_manifests": "Three scoped manifests are generated from actual public package bytes; original AutoDL full manifests remain separately preserved."
 }

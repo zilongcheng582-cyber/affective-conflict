@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "files_reviewed": 245,
+  "files_reviewed": 259,
   "secret_findings": [],
   "restricted_content": "Raw source text/generated sequences excluded by explicit column rules; JSON examples/excerpts and personal source locations removed; metadata/labels/identities retained.",
   "maximum_new_file_bytes": 3827448,
@@ -82,6 +82,10 @@
       "bytes": 2894
     },
     {
+      "path": "analyses/historical_evidence_reconciliation_v2/expanded_original/README.md",
+      "bytes": 2894
+    },
+    {
       "path": "analyses/historical_evidence_reconciliation_v2/expanded_original/code_data_supplement.py",
       "bytes": 1436
     },
@@ -100,6 +104,10 @@
     {
       "path": "analyses/historical_evidence_reconciliation_v2/expanded_original/mcr_native_recovery.py",
       "bytes": 1367
+    },
+    {
+      "path": "analyses/historical_evidence_reconciliation_v2/reconciliation_original/README.md",
+      "bytes": 2894
     },
     {
       "path": "analyses/historical_evidence_reconciliation_v2/reconciliation_original/archive_audit.py",
@@ -199,19 +207,31 @@
     },
     {
       "path": "analyses/transfer_failure_integration_v1/validate_migration.py",
-      "bytes": 8073
+      "bytes": 8582
+    },
+    {
+      "path": "docs/RECOVERED_EVIDENCE_MIGRATION_V1.md",
+      "bytes": 1243
     },
     {
       "path": "evidence/provenance/recovered_evidence_migration_v1/AUTODL_PHASE4_REPLAY_CHECK.json",
       "bytes": 1731
     },
     {
+      "path": "evidence/provenance/recovered_evidence_migration_v1/CLEAN_CHECKOUT_VALIDATION_V1.json",
+      "bytes": 8040
+    },
+    {
       "path": "evidence/provenance/recovered_evidence_migration_v1/GITHUB_GAP_ANALYSIS.csv",
-      "bytes": 164710
+      "bytes": 176056
+    },
+    {
+      "path": "evidence/provenance/recovered_evidence_migration_v1/LOCAL_FIXED_METRIC_REPLAY_CHECK.json",
+      "bytes": 8306
     },
     {
       "path": "evidence/provenance/recovered_evidence_migration_v1/MIGRATION_ALLOWLIST.csv",
-      "bytes": 119852
+      "bytes": 121141
     },
     {
       "path": "evidence/provenance/recovered_evidence_migration_v1/MIGRATION_EXCLUSIONS.csv",
@@ -219,15 +239,15 @@
     },
     {
       "path": "evidence/provenance/recovered_evidence_migration_v1/MIGRATION_FILE_SHA256.csv",
-      "bytes": 119852
+      "bytes": 121141
     },
     {
       "path": "evidence/provenance/recovered_evidence_migration_v1/MIGRATION_LINEAGE_MAP.csv",
-      "bytes": 119852
+      "bytes": 121141
     },
     {
       "path": "evidence/provenance/recovered_evidence_migration_v1/MIGRATION_PROVENANCE.json",
-      "bytes": 6310
+      "bytes": 7648
     },
     {
       "path": "evidence/provenance/recovered_evidence_migration_v1/MIGRATION_SOURCE_INVENTORY.csv",
@@ -235,11 +255,15 @@
     },
     {
       "path": "evidence/provenance/recovered_evidence_migration_v1/MIGRATION_VALIDATION_REPORT.md",
-      "bytes": 307
+      "bytes": 4280
     },
     {
       "path": "evidence/provenance/recovered_evidence_migration_v1/README.md",
       "bytes": 2894
+    },
+    {
+      "path": "evidence/provenance/recovered_evidence_migration_v1/STAGED_REVIEW_V1.json",
+      "bytes": 340
     },
     {
       "path": "results/four_regime_structural_synthesis_v1/01_DATASET_CONDITION_MATRIX.csv",
@@ -658,6 +682,10 @@
       "bytes": 5993
     },
     {
+      "path": "results/historical_evidence_reconciliation_v2/SHA256SUMS.txt",
+      "bytes": 8146
+    },
+    {
       "path": "results/historical_evidence_reconciliation_v2/THREE_DATASET_HISTORICAL_EVIDENCE_MATRIX_V2.csv",
       "bytes": 7713
     },
@@ -838,6 +866,10 @@
       "bytes": 293
     },
     {
+      "path": "results/recovered_evidence_scientific_analysis_v1/SHA256SUMS.txt",
+      "bytes": 9957
+    },
+    {
       "path": "results/recovered_evidence_scientific_analysis_v1/SOURCE_FINAL_READ_ONLY_VERIFICATION.json",
       "bytes": 104
     },
@@ -894,6 +926,10 @@
       "bytes": 281692
     },
     {
+      "path": "results/recovered_evidence_scientific_analysis_v1/intermediate/README.md",
+      "bytes": 2894
+    },
+    {
       "path": "results/recovered_evidence_scientific_analysis_v1/numeric/CAMER_RESULTS.json",
       "bytes": 35910
     },
@@ -908,6 +944,10 @@
     {
       "path": "results/recovered_evidence_scientific_analysis_v1/numeric/MCR_SECONDARY_DIAGNOSTICS.json",
       "bytes": 6921
+    },
+    {
+      "path": "results/recovered_evidence_scientific_analysis_v1/numeric/README.md",
+      "bytes": 2894
     },
     {
       "path": "results/recovered_evidence_scientific_analysis_v1/numeric_readback.json",
@@ -974,8 +1014,16 @@
       "bytes": 17875
     },
     {
+      "path": "results/transfer_failure_integration_v1/SHA256SUMS.txt",
+      "bytes": 4288
+    },
+    {
       "path": "results/transfer_failure_integration_v1/phase4_numeric/LISTEN_NATIVE_LABEL_SUPPORT_AND_OTHER.csv",
       "bytes": 1070
+    },
+    {
+      "path": "results/transfer_failure_integration_v1/phase4_numeric/README.md",
+      "bytes": 2894
     },
     {
       "path": "results/transfer_failure_integration_v1/phase4_numeric/TRANSFER_FAILURE_SUBGROUPS.csv",
@@ -996,6 +1044,11 @@
     {
       "path": "results/transfer_failure_integration_v1/phase4_replay_same_seed/PHASE4_REPLAY_CHECK.json",
       "bytes": 1731
+    },
+    {
+      "path": "results/transfer_failure_integration_v1/phase4_replay_same_seed/README.md",
+      "bytes": 2894
     }
-  ]
+  ],
+  "final_scope": "ALL_FINAL_NEW_FILE_BYTES_EXCEPT_MANIFEST_SELF"
 }
