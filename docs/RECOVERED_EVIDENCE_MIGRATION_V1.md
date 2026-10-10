@@ -5,3 +5,7 @@ POST_HOC_EXPLORATORY. This incremental archive preserves frozen results and stor
 The four-regime original `8679809` and V2 `566e41c` are reused without rewriting their history. Later recovered/Transfer reports explicitly supersede their interpretation where historical executions were found. Native vs controlled MCR, incompatible LISTEN V3/V4, and seven vs sixteen-class scoring remain distinct. No GPU experiment, refitting or change of scientific conclusions is authorized by this migration.
 
 Public validation repeats 18 fixed route/baseline metric groups with identity checks. Complete extraction and some bootstrap diagnostics still require restricted original AutoDL archives; their hashes and hold decisions remain auditable. See the migration validation report for exact scope and exclusions.
+
+**Current research status:** see [STATUS_AND_SUPERSESSION.md](../results/four_regime_structural_synthesis_v1/STATUS_AND_SUPERSESSION.md) for the single current, conditional NEXT_STEP (`CPU_DESIGN_FREEZE_FOR_TRANSFER_MEASUREMENT_VALIDATION`, not a GPU authorization), the supersession chain of earlier Qwen/GPU decisions and the withdrawn historical premises.
+
+**Exact-byte clone:** migration hashes are defined on Git blob bytes. Use `git clone -c core.autocrlf=false` (or the default on Linux/macOS). Migration files carry `-text` and are stable under any setting; pre-existing main files without attributes may be newline-converted by `core.autocrlf=true` and are verified by the validator at the Git-object level.

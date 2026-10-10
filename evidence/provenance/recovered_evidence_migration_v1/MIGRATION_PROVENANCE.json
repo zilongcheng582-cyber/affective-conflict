@@ -195,5 +195,31 @@
   "clean_checkout_scope": "IDENTITIES_TABLES_STATIC_PARSE_MODULE_IMPORTS_AND_18_FIXED_METRIC_GROUPS; full archive/bootstrap extraction requires AutoDL",
   "clean_checkout_tests_passed": 36,
   "clean_checkout_module_imports_passed": 6,
-  "package_hash_manifests": "Three scoped manifests are generated from actual public package bytes; original AutoDL full manifests remain separately preserved."
+  "package_hash_manifests": "Three scoped manifests are generated from actual public package bytes; original AutoDL full manifests remain separately preserved.",
+  "remediation_v1": {
+    "source": "PR4 independent review (reviews/pr4_independent_review_v1 on claude/focused-mayer-p99eh8), findings F01-F06, F09, F10",
+    "payload_bytes_canonical": 16358604,
+    "payload_bytes_snapshot_history": {
+      "be83e51_crlf_converted_checkout_superseded": 16372023,
+      "41f2681": 16358604,
+      "18b99ca": 16358604
+    },
+    "erroneous_report_value_corrected": 16372203,
+    "manifest_entry_history": {
+      "pre_commit_local_replay": 245,
+      "be83e51": 254,
+      "41f2681": 256,
+      "18b99ca": 259
+    },
+    "payload_set_changed": false,
+    "scientific_files_changed": false,
+    "added_files": [
+      "results/four_regime_structural_synthesis_v1/STATUS_AND_SUPERSESSION.md",
+      "results/four_regime_structural_synthesis_v1/STATUS_AND_SUPERSESSION.json",
+      "results/recovered_evidence_scientific_analysis_v1/CLAIM_EVIDENCE_MATRIX_EVIDENCE_STATUS_V1.csv",
+      "evidence/provenance/recovered_evidence_migration_v1/SANITIZATION_RETAINED_FIELDS_REGISTER_V1.json",
+      "tests/test_pr4_migration_regressions.py"
+    ],
+    "final_commit_receipt": "Generated after push from an independent checkout and stored outside this commit (no self-referencing commit hash)."
+  }
 }

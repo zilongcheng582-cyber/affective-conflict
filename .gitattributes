@@ -8,3 +8,7 @@ results/recovered_evidence_scientific_analysis_v1/** -text
 analyses/transfer_failure_integration_v1/** -text
 results/transfer_failure_integration_v1/** -text
 evidence/provenance/recovered_evidence_migration_v1/** -text
+# Remediation V1 (F03): every migration file listed in the migration SHA256SUMS keeps exact bytes on any platform.
+.gitattributes -text
+docs/RECOVERED_EVIDENCE_MIGRATION_V1.md -text
+tests/test_pr4_migration_regressions.py -text
