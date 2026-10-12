@@ -36,3 +36,22 @@
 R1–R3 完成且 head 更新后，应在新 head 上重新运行 `review_scripts/independent_replay.py`。若仍全部通过，可以改判为 READY_FOR_HUMAN_MERGE_REVIEW。
 
 本审查没有修改 PR #6，没有把 Draft 转为 Ready，也没有合并。
+
+## 修订后状态（修订 V1，叠加 PR）
+
+修订以叠加 PR 的方式提交：head 为 `claude/affective-conflict-pr6-audit-b7ohnb`，base 为 PR #6 分支。修订只新增文件：
+
+- `results/emotiontalk_e1_e2_claim_revision_v1/`
+- `analyses/emotiontalk_e1_e2_claim_revision_v1/build_revision_tables.py`
+- 本审查目录
+
+PR #6 的 78 个原文件逐字节不变，SHA256SUMS 仍为 77/77 PASS。
+
+| P2 | 状态 |
+|---|---|
+| F01 V_ONLY 在 L2/L3 坍缩 | 已限定（修订 README 第 2 节，表 `E1_V_ONLY_OUTPUT_BY_SOURCE_LABEL.csv`） |
+| F02 终点修订未披露 | 已披露并正式限定：OTHER 标为依赖修订；公开层面为 PREDECLARATION_NOT_PUBLICLY_VERIFIED。冻结时间戳仍需从 AutoDL 私有归档补充 |
+| F03 音频 RECODE 非中性 | 已限定（修订 README 第 4 节） |
+| F04 标签偏移 | 已写入主张边界（不阻止合并） |
+
+修订后判定：**READY_FOR_HUMAN_MERGE_REVIEW**，条件是先把叠加 PR 合入 PR #6 分支。剩余的唯一非数值缺口是 F02 的私有时间戳证据，它已被正式限定，不再阻止合并。PR #6 的合并与 Draft 状态仍由人工决定。
