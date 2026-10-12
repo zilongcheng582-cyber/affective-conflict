@@ -1,0 +1,16 @@
+candidate_label_swap_same_token_count         PR6_REPLAY=MISS   AUDIT=MISS
+candidate_label_swap_diff_token_count         PR6_REPLAY=MISS   AUDIT=DETECT
+outcome_changed_label_not                     PR6_REPLAY=DETECT AUDIT=DETECT
+outcome_and_label_changed                     PR6_REPLAY=DETECT AUDIT=DETECT
+delete_condition                              PR6_REPLAY=DETECT AUDIT=DETECT
+duplicate_trial                               PR6_REPLAY=DETECT AUDIT=DETECT
+other_to_parse_fail                           PR6_REPLAY=DETECT AUDIT=DETECT
+swap_order_results                            PR6_REPLAY=DETECT AUDIT=DETECT
+dialogue_cluster_changed                      PR6_REPLAY=DETECT AUDIT=DETECT
+candidate_probability_shifted                 PR6_REPLAY=DETECT AUDIT=DETECT
+same_marginals_different_pairing              PR6_REPLAY=DETECT AUDIT=DETECT
+swap_yA_yV_columns_only                       PR6_REPLAY=DETECT AUDIT=DETECT
+swap_yA_yV_and_outcomes_consistently          PR6_REPLAY=DETECT AUDIT=DETECT
+visual_contract_frame_index_changed           PR6_REPLAY=MISS   AUDIT=DETECT
+E2_video_sha_changes_with_audio_condition     PR6_REPLAY=MISS   AUDIT=DETECT
+E2_other_to_parse_fail                        PR6_REPLAY=DETECT AUDIT=DETECT

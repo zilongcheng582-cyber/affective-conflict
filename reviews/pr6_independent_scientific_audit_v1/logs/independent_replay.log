@@ -1,0 +1,20 @@
+{
+ "layers": {
+  "SOURCE_RESULT_LINKAGE": {
+   "PASS": 18
+  },
+  "POINT_ESTIMATE_REPLAY": {
+   "PASS": 79
+  },
+  "INPUT_CONTRACT_AUDIT": {
+   "PASS": 22
+  },
+  "BOOTSTRAP_REPLAY": {
+   "PASS": 100
+  },
+  "SCORING_AUDIT": {
+   "PASS": 6
+  }
+ },
+ "n_fail": 0
+}
