@@ -1,0 +1,14 @@
+{
+  "status": "COMPLETE",
+  "experiment": "E2",
+  "logical_cells": 3375,
+  "completed_cells": 3375,
+  "successful_cells": 3375,
+  "technical_missing_cells": 0,
+  "technical_failure_attempts": 0,
+  "retries": 0,
+  "session_gpu_runtime_seconds": 5778.59694814682,
+  "model_revision": "ae9e1690543ffd5c0221dc27f79834d0294cba00",
+  "run_fingerprint": "90362b7c2e87fb6cc37f0f96a97ec706385ffa85ea6143f3d276b7dd2fb7a1a9",
+  "pilot_executed": false
+}

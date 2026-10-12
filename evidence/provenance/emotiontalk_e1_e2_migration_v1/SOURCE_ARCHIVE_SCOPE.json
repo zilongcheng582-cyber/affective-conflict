@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "source_files": 10066,
+  "selected_files": 10031,
+  "selected_bytes": 9832381343,
+  "excluded_files": 35,
+  "external_bound_inputs": 1113,
+  "source_roots": {
+    "E1": "/root/autodl-tmp/affective-conflict-e1-video-v2",
+    "E2": "/root/autodl-tmp/affective-conflict-e1-e2-full-v1"
+  },
+  "GPU_calls": 0
+}

@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "tested_remote_commit": "c837361398a729042e218bc107f6ffe20c3079fe",
+  "base_main": "0f902da6b0910d456010d5b1640b73bb30436923",
+  "checkout_from": "GitHub remote independent new clone",
+  "core_autocrlf": false,
+  "sha256_files": 76,
+  "source_projection_lineage_checks": 68,
+  "added_files": 77,
+  "modified_existing_main_files": 0,
+  "statistical_replay": {
+    "E1": {
+      "status": "PASS",
+      "checks": 2430,
+      "formal_trials": 2336,
+      "items": 146,
+      "dialogue_clusters": 134,
+      "max_abs_error": 1.1102230246251565e-16,
+      "CI_REPRODUCIBILITY": "PUBLIC_PROJECTION_REPLAY_PASS"
+    },
+    "E2": {
+      "status": "PASS",
+      "checks": 1179,
+      "formal_trials": 3375,
+      "items": 225,
+      "dialogue_clusters": 177,
+      "max_abs_error": 0.0,
+      "CI_REPRODUCIBILITY": "PUBLIC_PROJECTION_REPLAY_PASS"
+    }
+  },
+  "GPU_calls": 0,
+  "Windows_complete_private_backup": "WAIVED_NOT_PERFORMED",
+  "model_media_regeneration": "REQUIRES_PRIVATE_INPUTS_NOT_CLAIMED"
+}

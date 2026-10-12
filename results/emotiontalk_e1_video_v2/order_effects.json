@@ -1,0 +1,110 @@
+[
+  {
+    "arm": "A_THEN_V",
+    "category": "SIDE_V",
+    "effect": -0.4931506849315068,
+    "utterance_ci95": [
+      -0.5821917808219178,
+      -0.4041095890410959
+    ],
+    "dialogue_cluster_ci95": [
+      -0.5763888888888888,
+      -0.40939597315436244
+    ],
+    "p_two_sided": 9.99990000099999e-06,
+    "seed": 2026102003,
+    "items": 146,
+    "clusters": 134,
+    "role": "DESCRIPTIVE_ORDER_EFFECT"
+  },
+  {
+    "arm": "A_THEN_V",
+    "category": "SIDE_A",
+    "effect": 0.4931506849315068,
+    "utterance_ci95": [
+      0.4041095890410959,
+      0.5753424657534246
+    ],
+    "dialogue_cluster_ci95": [
+      0.4097222222222222,
+      0.5753424657534246
+    ],
+    "p_two_sided": 9.99990000099999e-06,
+    "seed": 2026102013,
+    "items": 146,
+    "clusters": 134,
+    "role": "DESCRIPTIVE_ORDER_EFFECT"
+  },
+  {
+    "arm": "A_THEN_V",
+    "category": "OTHER",
+    "effect": 0.0,
+    "utterance_ci95": [
+      -0.03424657534246575,
+      0.0410958904109589
+    ],
+    "dialogue_cluster_ci95": [
+      -0.035977739547492435,
+      0.035211267605633804
+    ],
+    "p_two_sided": 1.0,
+    "seed": 2026102023,
+    "items": 146,
+    "clusters": 134,
+    "role": "DESCRIPTIVE_ORDER_EFFECT"
+  },
+  {
+    "arm": "V_THEN_A",
+    "category": "SIDE_V",
+    "effect": -0.3219178082191781,
+    "utterance_ci95": [
+      -0.4041095890410959,
+      -0.23972602739726026
+    ],
+    "dialogue_cluster_ci95": [
+      -0.4066666666666667,
+      -0.2413793103448276
+    ],
+    "p_two_sided": 9.99990000099999e-06,
+    "seed": 2026102033,
+    "items": 146,
+    "clusters": 134,
+    "role": "DESCRIPTIVE_ORDER_EFFECT"
+  },
+  {
+    "arm": "V_THEN_A",
+    "category": "SIDE_A",
+    "effect": 0.2465753424657534,
+    "utterance_ci95": [
+      0.1643835616438356,
+      0.3287671232876712
+    ],
+    "dialogue_cluster_ci95": [
+      0.15999305555555557,
+      0.3333333333333333
+    ],
+    "p_two_sided": 9.99990000099999e-06,
+    "seed": 2026102043,
+    "items": 146,
+    "clusters": 134,
+    "role": "DESCRIPTIVE_ORDER_EFFECT"
+  },
+  {
+    "arm": "V_THEN_A",
+    "category": "OTHER",
+    "effect": 0.07534246575342465,
+    "utterance_ci95": [
+      0.0273972602739726,
+      0.1232876712328767
+    ],
+    "dialogue_cluster_ci95": [
+      0.03333333333333333,
+      0.125
+    ],
+    "p_two_sided": 0.0036499635003649964,
+    "seed": 2026102053,
+    "items": 146,
+    "clusters": 134,
+    "role": "DESCRIPTIVE_ORDER_EFFECT"
+  }
+]

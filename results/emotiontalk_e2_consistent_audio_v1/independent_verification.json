@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "checks": 13,
+  "population_items": 225,
+  "cells": 3375,
+  "CPU_only": true,
+  "independent_primary_implementation": true
+}
