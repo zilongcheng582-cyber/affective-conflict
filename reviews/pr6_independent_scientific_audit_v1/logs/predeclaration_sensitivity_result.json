@@ -1,0 +1,96 @@
+{
+ "V1_plan_on_V2_data": {
+  "primary_SIDE_V": {
+   "effect": -0.4075342465753425,
+   "p_exact": 1.111523948118131e-22
+  },
+  "secondary_family_size": 11,
+  "secondary": {
+   "SIDE_A_HIGH_MINUS_RECODE": {
+    "effect": 0.3698630136986301,
+    "p": 5.378880485878665e-19,
+    "p_holm": 4.303104388702932e-18
+   },
+   "OTHER_HIGH_MINUS_RECODE": {
+    "effect": 0.03767123287671233,
+    "p": 0.04229736328125,
+    "p_holm": 0.169189453125
+   },
+   "PARSE_FAIL_HIGH_MINUS_RECODE": {
+    "effect": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+   },
+   "TECHNICAL_FAILURE_HIGH_MINUS_RECODE": {
+    "effect": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+   },
+   "CLEAN_MINUS_RECODE_PIPELINE": {
+    "effect": 0.0,
+    "p": 1.0,
+    "p_holm": 1.0
+   },
+   "ORDER_INTERACTION": {
+    "effect": -0.17123287671232876,
+    "p": 0.0007421124953737035,
+    "p_holm": 0.0037105624768685175
+   },
+   "BLUR_L1_MINUS_RECODE": {
+    "effect": -0.17123287671232876,
+    "p": 5.02137354696508e-07,
+    "p_holm": 3.514961482875556e-06
+   },
+   "BLUR_L2_MINUS_RECODE": {
+    "effect": -0.3835616438356164,
+    "p": 2.845501307182415e-22,
+    "p_holm": 2.8455013071824152e-21
+   },
+   "ORDINAL_DOSE_RESPONSE": {
+    "effect": -0.14349315068493165,
+    "p": 4.545777518633699e-23,
+    "p_holm": 5.000355270497069e-22
+   },
+   "UNIMODAL_SOURCE_LABEL_MATCH": {
+    "effect": -0.4931506849315068,
+    "p": 4.235164736271502e-22,
+    "p_holm": 3.8116482626443515e-21
+   },
+   "UNIMODAL_ENTROPY(MC)": {
+    "effect": 0.07759423822477898,
+    "p": 9.99990000099999e-06,
+    "p_holm": 5.999940000599994e-05
+   }
+  },
+  "joint_E1_plus_ERI1_holm": {
+   "E1_SIDE_V_primary": 2.223047896236262e-22,
+   "ERI1_SIDE_A_primary": 0.0017199828001719982
+  },
+  "ERI1_primary_p_raw_from_main": 0.0017199828001719982
+ },
+ "V2_plan_exact": {
+  "p": {
+   "SIDE_V": 1.111523948118131e-22,
+   "SIDE_A": 5.378880485878665e-19,
+   "OTHER": 0.04229736328125
+  },
+  "p_holm": {
+   "SIDE_V": 3.334571844354393e-22,
+   "SIDE_A": 1.075776097175733e-18,
+   "OTHER": 0.04229736328125
+  }
+ },
+ "E1V2_CLEAN_vs_ERI1_CLEAN_item_label_agreement": {
+  "A_ONLY|True": 146,
+  "A_THEN_V|True": 146,
+  "V_ONLY|True": 146,
+  "V_THEN_A|True": 146
+ },
+ "mismatches": [],
+ "E1V2_RECODE(video recode, original audio)_vs_ERI1_RECODE(audio recode, original video)_joint_agreement": {
+  "A_THEN_V|False": 6,
+  "A_THEN_V|True": 140,
+  "V_THEN_A|False": 16,
+  "V_THEN_A|True": 130
+ }
+}

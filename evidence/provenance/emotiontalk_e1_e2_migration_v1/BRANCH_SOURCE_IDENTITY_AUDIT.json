@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "experiments": {
+    "E1": {
+      "items": 146,
+      "source_labels_candidate_order_and_preintervention_DualReadable": "PASS",
+      "same_as_ERI1_UID_set": true,
+      "source_patterns": {}
+    },
+    "E2": {
+      "items": 225,
+      "source_labels_candidate_order_and_preintervention_DualReadable": "PASS",
+      "same_as_ERI1_UID_set": false,
+      "source_patterns": {
+        "A_EQ_V_NE_T": 98,
+        "ALL_SAME": 127
+      }
+    }
+  },
+  "existing_main_source_tables_unchanged": true
+}

@@ -1,0 +1,6 @@
+condition,items,A_ONLY_source_label_match,joint_shared_label_slots,joint_slots,A_ONLY_output_angry,A_ONLY_output_disgusted,A_ONLY_output_fearful,A_ONLY_output_happy,A_ONLY_output_neutral,A_ONLY_output_sad,A_ONLY_output_surprised
+A_CLEAN,225,225,448,450,23,0,0,59,115,25,3
+A_RECODE,225,202,446,450,26,0,1,61,102,29,6
+A_SNR20,225,205,444,450,24,0,1,57,105,33,5
+A_SNR10,225,191,437,450,31,0,1,47,102,37,7
+A_SNR00,225,160,422,450,46,1,1,26,101,46,4

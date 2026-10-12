@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "fixed_pilot_ids": [
+    "G00001_02_02_020",
+    "G00001_02_02_023",
+    "G00001_15_02_012",
+    "G00001_17_01_001",
+    "G00001_21_01_030",
+    "G00001_21_02_005"
+  ],
+  "unique_slots": 96,
+  "all_generation_parser_candidate_scores": "PASS",
+  "actual_consumed_visual_frames": "PASS",
+  "checkpoint_resume_no_duplicates": "PASS",
+  "clean_historical_comparisons": 24,
+  "clean_exact_reproduction": "PASS",
+  "blur_strength_selected_using_outcomes": false,
+  "pilot_pooled_with_full": false,
+  "failure_policy": "any hard failure prevents Full"
+}

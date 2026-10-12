@@ -1,0 +1,253 @@
+# E1/E2 scientific closure
+
+{
+  "E1": {
+    "gate": "FAIL",
+    "full": "BLOCKED",
+    "scientific_ruling": "BLOCKED"
+  },
+  "E2": {
+    "gate": "PASS",
+    "full": "COMPLETE",
+    "scientific_ruling": "SUPPORTED"
+  },
+  "GPU_INFERENCE_COMPLETED": 3375,
+  "TECHNICAL_FAILURES": 0,
+  "INDEPENDENT_REPLAY": "PASS",
+  "FROZEN_ERI1_UNCHANGED": "YES",
+  "PILOT_EXECUTED": "NO",
+  "scientific_closure": "COMPLETE_WITH_E1_GATE_BLOCK",
+  "results": {
+    "E2": {
+      "primary": {
+        "estimate": -0.05333333333333334,
+        "item_ci95": [
+          -0.08,
+          -0.028888888888888888
+        ],
+        "dialogue_cluster_ci95": [
+          -0.08149897903234954,
+          -0.02843601895734597
+        ],
+        "two_sided_signflip_p": 2.999970000299997e-05,
+        "items": 225,
+        "dialogue_clusters": 177,
+        "seed": 2026101210,
+        "bootstrap_replicates": 10000,
+        "signflip_replicates": 100000,
+        "ITT_denominator_items": 225,
+        "joint_primary_cells": 900,
+        "technical_missing_ITT_rule": "NEGATIVE_H1_CONSERVATIVE_HIGH_SUCCESS_BASELINE_FAILURE",
+        "technical_failure_conservative_effect_bounds": [
+          -0.05333333333333334,
+          -0.05333333333333334
+        ],
+        "complete_case_items": 225,
+        "complete_case_effect": -0.05333333333333334,
+        "post_treatment_selection": false
+      },
+      "secondary": [
+        {
+          "endpoint": "OTHER_HIGH_MINUS_RECODE",
+          "estimate": 0.05333333333333334,
+          "item_ci95": [
+            0.028888888888888888,
+            0.08
+          ],
+          "dialogue_cluster_ci95": [
+            0.02850877192982456,
+            0.08139666421130168
+          ],
+          "two_sided_signflip_p": 1.999980000199998e-05,
+          "items": 225,
+          "dialogue_clusters": 177,
+          "seed": 2026101411,
+          "bootstrap_replicates": 10000,
+          "signflip_replicates": 100000,
+          "holm_p": 0.00015999840001599985
+        },
+        {
+          "endpoint": "PARSE_FAIL_HIGH_MINUS_RECODE",
+          "estimate": 0.0,
+          "item_ci95": [
+            0.0,
+            0.0
+          ],
+          "dialogue_cluster_ci95": [
+            0.0,
+            0.0
+          ],
+          "two_sided_signflip_p": 1.0,
+          "items": 225,
+          "dialogue_clusters": 177,
+          "seed": 2026101412,
+          "bootstrap_replicates": 10000,
+          "signflip_replicates": 100000,
+          "holm_p": 1
+        },
+        {
+          "endpoint": "TECH_FAILURE_HIGH_MINUS_RECODE",
+          "estimate": 0.0,
+          "item_ci95": [
+            0.0,
+            0.0
+          ],
+          "dialogue_cluster_ci95": [
+            0.0,
+            0.0
+          ],
+          "two_sided_signflip_p": 1.0,
+          "items": 225,
+          "dialogue_clusters": 177,
+          "seed": 2026101413,
+          "bootstrap_replicates": 10000,
+          "signflip_replicates": 100000,
+          "holm_p": 1
+        },
+        {
+          "endpoint": "CLEAN_MINUS_RECODE_PIPELINE",
+          "estimate": 0.0044444444444444444,
+          "item_ci95": [
+            -0.0044444444444444444,
+            0.013333333333333334
+          ],
+          "dialogue_cluster_ci95": [
+            -0.004329004329004329,
+            0.013574660633484163
+          ],
+          "two_sided_signflip_p": 0.6246837531624684,
+          "items": 225,
+          "dialogue_clusters": 177,
+          "seed": 2026101510,
+          "bootstrap_replicates": 10000,
+          "signflip_replicates": 100000,
+          "holm_p": 1
+        },
+        {
+          "endpoint": "ORDER_INTERACTION",
+          "estimate": 0.044444444444444446,
+          "item_ci95": [
+            0.013333333333333334,
+            0.08
+          ],
+          "dialogue_cluster_ci95": [
+            0.01327433628318584,
+            0.07623318385650224
+          ],
+          "two_sided_signflip_p": 0.012679873201267988,
+          "items": 225,
+          "dialogue_clusters": 177,
+          "seed": 2026101610,
+          "bootstrap_replicates": 10000,
+          "signflip_replicates": 100000,
+          "holm_p": 0.07607923920760792
+        },
+        {
+          "endpoint": "A_SNR10_MINUS_RECODE",
+          "estimate": -0.02,
+          "item_ci95": [
+            -0.03777777777777778,
+            -0.0044444444444444444
+          ],
+          "dialogue_cluster_ci95": [
+            -0.038288288288288286,
+            -0.004545454545454545
+          ],
+          "two_sided_signflip_p": 0.030549694503054968,
+          "items": 225,
+          "dialogue_clusters": 177,
+          "seed": 2026101710,
+          "bootstrap_replicates": 10000,
+          "signflip_replicates": 100000,
+          "holm_p": 0.15274847251527485
+        },
+        {
+          "endpoint": "A_SNR20_MINUS_RECODE",
+          "estimate": -0.0044444444444444444,
+          "item_ci95": [
+            -0.017777777777777778,
+            0.006666666666666667
+          ],
+          "dialogue_cluster_ci95": [
+            -0.017777777777777778,
+            0.006787330316742082
+          ],
+          "two_sided_signflip_p": 0.7468925310746892,
+          "items": 225,
+          "dialogue_clusters": 177,
+          "seed": 2026101711,
+          "bootstrap_replicates": 10000,
+          "signflip_replicates": 100000,
+          "holm_p": 1
+        },
+        {
+          "endpoint": "ORDINAL_DOSE_RESPONSE",
+          "estimate": -0.017555555555555553,
+          "item_ci95": [
+            -0.02666666666666667,
+            -0.009555555555555555
+          ],
+          "dialogue_cluster_ci95": [
+            -0.026623376623376625,
+            -0.00952354614412137
+          ],
+          "two_sided_signflip_p": 9.99990000099999e-06,
+          "items": 225,
+          "dialogue_clusters": 177,
+          "seed": 2026101810,
+          "bootstrap_replicates": 10000,
+          "signflip_replicates": 100000,
+          "holm_p": 9.999900000999991e-05
+        },
+        {
+          "endpoint": "UNIMODAL_SOURCE_LABEL_MATCH",
+          "estimate": -0.18666666666666668,
+          "item_ci95": [
+            -0.2577777777777778,
+            -0.11555555555555555
+          ],
+          "dialogue_cluster_ci95": [
+            -0.25,
+            -0.12217194570135746
+          ],
+          "two_sided_signflip_p": 9.99990000099999e-06,
+          "items": 225,
+          "dialogue_clusters": 177,
+          "seed": 2026101910,
+          "bootstrap_replicates": 10000,
+          "signflip_replicates": 100000,
+          "holm_p": 9.999900000999991e-05
+        },
+        {
+          "endpoint": "UNIMODAL_ENTROPY",
+          "estimate": 0.0355735842820063,
+          "item_ci95": [
+            0.018351436195132066,
+            0.05318683344668818
+          ],
+          "dialogue_cluster_ci95": [
+            0.01882770955185524,
+            0.051673040308989025
+          ],
+          "two_sided_signflip_p": 3.999960000399996e-05,
+          "items": 225,
+          "dialogue_clusters": 177,
+          "seed": 2026102010,
+          "bootstrap_replicates": 10000,
+          "signflip_replicates": 100000,
+          "holm_p": 0.00027999720002799973
+        }
+      ],
+      "scientific_ruling": "SUPPORTED",
+      "missing_entropies": 0,
+      "complete_population": 225,
+      "all_attempts": 3375,
+      "technical_failure_attempts": 0,
+      "retained_technical_missing": 0,
+      "retries": 0,
+      "scientific_scope": "E1 video arbitration response; E2 shared-label retention on a different fixed population; no entropy mediation or randomized cross-population interaction"
+    }
+  }
+}
+
+E1 cannot establish video response or symmetry when Gate FAIL. E2 answers only shared-label retention in the frozen consistent population. No causal entropy mediation, no claim that physical intensities are equivalent, no randomized cross-population comparison. ERI1 frozen SIDE_A -10.9589 pp, SIDE_V +5.8219 pp, OTHER +5.1370 pp remain unchanged. Negative results and positive results use the same rule. No additional model, dataset, optimization or GitHub publication initiated.

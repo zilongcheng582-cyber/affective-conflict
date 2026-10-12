@@ -1,0 +1,70 @@
+{
+  "review": "PR6_INDEPENDENT_SCIENTIFIC_AUDIT_V1",
+  "pr": "https://github.com/zilongcheng582-cyber/affective-conflict/pull/6",
+  "pr_head_sha": "5cebd143e5c2c5e31df260383a96b45ab780efee",
+  "pr_base_sha": "0f902da6b0910d456010d5b1640b73bb30436923",
+  "head_reconfirmed_from_remote": "2026-10-12 via GitHub API and git fetch",
+  "frozen_dependency_commit": "34aa1b0340d906e5d625db7cb4a3def9199fa06e (ancestor of main; 8 runtime files byte-identical on main)",
+  "review_branch": "claude/affective-conflict-pr6-audit-b7ohnb",
+  "pr6_checkout": "detached read-only git worktree (scratchpad)",
+  "pr6_modified": false,
+  "pr6_marked_ready": false,
+  "merged": false,
+  "gpu_calls": 0,
+  "model_inference": 0,
+  "refits": 0,
+  "autodl_access": "none (not available in this container)",
+  "source_media_inspected": false,
+  "environment": {
+    "python": "3.13.16",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "platform": "Linux-6.18.44-fc-v114-x86_64-with-glibc2.39"
+  },
+  "executed": [
+    {
+      "cmd": "python3 review_scripts/independent_replay.py <pr6> <main> logs/independent_replay_result.json",
+      "result": "225 checks, 0 FAIL"
+    },
+    {
+      "cmd": "python3 -B review_scripts/adversarial_fixtures.py <pr6> <main> logs/adversarial_fixtures_result.json",
+      "result": "16 fixtures + 2 controls; see 07"
+    },
+    {
+      "cmd": "python3 -B review_scripts/predeclaration_sensitivity.py <pr6> <main> logs/predeclaration_sensitivity_result.json",
+      "result": "see 06"
+    },
+    {
+      "cmd": "PR6=<pr6> MAIN=<main> python3 -B -m unittest -v test_source_logic (cwd review_tests)",
+      "result": "24/24 OK"
+    },
+    {
+      "cmd": "same with python3 -B -O",
+      "result": "24/24 OK (asserts gates bypassed as expected under -O)"
+    },
+    {
+      "cmd": "sha256sum -c evidence/provenance/emotiontalk_e1_e2_migration_v1/SHA256SUMS.txt (on PR head)",
+      "result": "77/77 OK"
+    }
+  ],
+  "main_files_used_read_only": [
+    "manifests/emotiontalk/source_measurements.csv",
+    "manifests/emotiontalk/EMOTIONTALK_PHASE2_POPULATION_PLAN_V1_2.json",
+    "protocols/emotiontalk/EMOTIONTALK_CANDIDATE_SEQUENCES_V1.json",
+    "results/eri1_scientific_closure_v1/DIALOGUE_CLUSTER_MAP_V1.csv",
+    "results/eri1_scientific_closure_v1/ERI1_PRIMARY_RESULTS_V1.csv",
+    "results/eri1_scientific_closure_v1/ERI1_SCIENTIFIC_TRIAL_PROJECTION_V1.csv",
+    "src/emotiontalk/reliability_v1/design.py",
+    "src/emotiontalk/phase1/execution.py",
+    "src/emotiontalk/phase2/core.py",
+    "src/common/benchmarks/emotiontalk_controlled_parser_v1.py",
+    "configs/mainline/emotiontalk_controlled_prompt_v1.json"
+  ],
+  "verdict": {
+    "P0": 0,
+    "P1": 0,
+    "P2": 4,
+    "P3": 12,
+    "MERGE_READINESS": "CHANGES_REQUIRED"
+  }
+}

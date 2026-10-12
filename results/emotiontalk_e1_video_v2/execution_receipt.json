@@ -1,0 +1,13 @@
+{
+  "phase": "full",
+  "planned_slots": 2336,
+  "completed_slots": 2336,
+  "all_attempts": 2336,
+  "technical_failure_attempts": 0,
+  "retries": 0,
+  "session_active_model_seconds": 15514.99361038208,
+  "candidate_scoring_forward_calls": 11680,
+  "generation_calls": 2336,
+  "run_fingerprint": "03d201f1b47d966c853da9270219eda6d4fb81f1026bd7b56ea01ae59ed598f6",
+  "status": "COMPLETE"
+}

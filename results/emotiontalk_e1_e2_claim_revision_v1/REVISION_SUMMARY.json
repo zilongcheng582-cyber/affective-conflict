@@ -1,0 +1,71 @@
+{
+  "E1_directional_choice_reallocation_L3": {
+    "paired_slots": 292,
+    "SIDE_V_gross_outflow": 123,
+    "SIDE_V_to_SIDE_A": 111,
+    "SIDE_V_to_OTHER": 12,
+    "SIDE_A_to_SIDE_V": 4,
+    "SIDE_A_to_OTHER": 4,
+    "OTHER_to_SIDE_A": 5,
+    "share_of_SIDE_V_outflow_going_to_SIDE_A": 0.9024390243902439
+  },
+  "E1_V_ONLY_neutral_outputs": {
+    "CLEAN": 77,
+    "RECODE": 77,
+    "BLUR_L1": 104,
+    "BLUR_L2": 141,
+    "BLUR_L3": 142
+  },
+  "E1_y_V_neutral_items": 77,
+  "E1_L3_V_ONLY_match_on_non_neutral_y_V": [
+    0,
+    69
+  ],
+  "E1_predeclaration": [
+    {
+      "endpoint": "SIDE_V_L3_MINUS_RECODE",
+      "effect": -0.4075342465753425,
+      "exact_p": 1.111523948118131e-22,
+      "V2_executed_plan_role": "CO_PRIMARY_HOLM_3",
+      "V2_holm_p": 3.334571844354393e-22,
+      "V1_original_plan_role": "SOLE_PRIMARY",
+      "V1_holm_p": 1.111523948118131e-22,
+      "significant_under_both_plans": true
+    },
+    {
+      "endpoint": "SIDE_A_L3_MINUS_RECODE",
+      "effect": 0.3698630136986301,
+      "exact_p": 5.378880485878665e-19,
+      "V2_executed_plan_role": "CO_PRIMARY_HOLM_3",
+      "V2_holm_p": 1.075776097175733e-18,
+      "V1_original_plan_role": "SECONDARY_HOLM_11",
+      "V1_holm_p": 4.303104388702932e-18,
+      "significant_under_both_plans": true
+    },
+    {
+      "endpoint": "OTHER_L3_MINUS_RECODE",
+      "effect": 0.03767123287671233,
+      "exact_p": 0.04229736328125,
+      "V2_executed_plan_role": "CO_PRIMARY_HOLM_3",
+      "V2_holm_p": 0.04229736328125,
+      "V1_original_plan_role": "SECONDARY_HOLM_11",
+      "V1_holm_p": 0.169189453125,
+      "significant_under_both_plans": false
+    }
+  ],
+  "E2_A_ONLY_match": {
+    "A_CLEAN": 225,
+    "A_RECODE": 202,
+    "A_SNR20": 205,
+    "A_SNR10": 191,
+    "A_SNR00": 160
+  },
+  "all_V_ONLY_labels": {
+    "neutral": 541,
+    "sad": 30,
+    "happy": 112,
+    "surprised": 27,
+    "angry": 17,
+    "disgusted": 3
+  }
+}

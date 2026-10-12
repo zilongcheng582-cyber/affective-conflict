@@ -1,0 +1,744 @@
+{
+  "status": "PASS",
+  "tests": [
+    {
+      "uid": "G00001_02_02_020",
+      "condition": "RECODE",
+      "command": [
+        "/root/autodl-tmp/affective-conflict-e1-video-v2/tools/ffmpeg",
+        "-nostdin",
+        "-v",
+        "error",
+        "-copyts",
+        "-i",
+        "/root/autodl-tmp/affective-conflict/data/derived/emotiontalk_controlled_v1/silent_video/G00001_02_02_020.mp4",
+        "-map",
+        "0:v:0",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "fast",
+        "-crf",
+        "0",
+        "-pix_fmt",
+        "yuv420p",
+        "-threads",
+        "1",
+        "-vsync",
+        "0",
+        "-enc_time_base",
+        "1/15360",
+        "-video_track_timescale",
+        "15360",
+        "-movie_timescale",
+        "15360",
+        "/root/autodl-tmp/affective-conflict-e1-video-v2/00_recovery/exact_clock_test/G00001_02_02_020/RECODE.mp4"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "FFmpeg_sha256": "e7e7fb30477f717e6f55f9180a70386c62677ef8a4d4d1a5d948f4098aa3eb99",
+      "selection_basis": "timestamp fidelity only; no model outputs available",
+      "frame_counts": [
+        223,
+        223
+      ],
+      "first_pts": [
+        [
+          0.0,
+          0.033333,
+          0.066667
+        ],
+        [
+          0.0,
+          0.033333,
+          0.066667
+        ]
+      ],
+      "max_pts_delta": 0.0,
+      "duration_delta": 0.0,
+      "same_geometry": true,
+      "output_sha256": "b05d4dd99ab0af4578aed328f7631ff4f0667e331d5d1d9bde84c4fbe2911e4e",
+      "pass": true
+    },
+    {
+      "uid": "G00001_02_02_020",
+      "condition": "BLUR_L1",
+      "command": [
+        "/root/autodl-tmp/affective-conflict-e1-video-v2/tools/ffmpeg",
+        "-nostdin",
+        "-v",
+        "error",
+        "-copyts",
+        "-i",
+        "/root/autodl-tmp/affective-conflict/data/derived/emotiontalk_controlled_v1/silent_video/G00001_02_02_020.mp4",
+        "-map",
+        "0:v:0",
+        "-an",
+        "-vf",
+        "gblur=sigma=10.8:sigmaV=10.8:steps=3:planes=15",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "fast",
+        "-crf",
+        "0",
+        "-pix_fmt",
+        "yuv420p",
+        "-threads",
+        "1",
+        "-vsync",
+        "0",
+        "-enc_time_base",
+        "1/15360",
+        "-video_track_timescale",
+        "15360",
+        "-movie_timescale",
+        "15360",
+        "/root/autodl-tmp/affective-conflict-e1-video-v2/00_recovery/exact_clock_test/G00001_02_02_020/BLUR_L1.mp4"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "FFmpeg_sha256": "e7e7fb30477f717e6f55f9180a70386c62677ef8a4d4d1a5d948f4098aa3eb99",
+      "selection_basis": "timestamp fidelity only; no model outputs available",
+      "frame_counts": [
+        223,
+        223
+      ],
+      "first_pts": [
+        [
+          0.0,
+          0.033333,
+          0.066667
+        ],
+        [
+          0.0,
+          0.033333,
+          0.066667
+        ]
+      ],
+      "max_pts_delta": 0.0,
+      "duration_delta": 0.0,
+      "same_geometry": true,
+      "output_sha256": "b27ab54e7a2e387ed56866c846ef9f366eb6dbf8f7fbe670b15cbff38f612e34",
+      "pass": true
+    },
+    {
+      "uid": "G00001_02_02_020",
+      "condition": "BLUR_L2",
+      "command": [
+        "/root/autodl-tmp/affective-conflict-e1-video-v2/tools/ffmpeg",
+        "-nostdin",
+        "-v",
+        "error",
+        "-copyts",
+        "-i",
+        "/root/autodl-tmp/affective-conflict/data/derived/emotiontalk_controlled_v1/silent_video/G00001_02_02_020.mp4",
+        "-map",
+        "0:v:0",
+        "-an",
+        "-vf",
+        "gblur=sigma=43.2:sigmaV=43.2:steps=3:planes=15",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "fast",
+        "-crf",
+        "0",
+        "-pix_fmt",
+        "yuv420p",
+        "-threads",
+        "1",
+        "-vsync",
+        "0",
+        "-enc_time_base",
+        "1/15360",
+        "-video_track_timescale",
+        "15360",
+        "-movie_timescale",
+        "15360",
+        "/root/autodl-tmp/affective-conflict-e1-video-v2/00_recovery/exact_clock_test/G00001_02_02_020/BLUR_L2.mp4"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "FFmpeg_sha256": "e7e7fb30477f717e6f55f9180a70386c62677ef8a4d4d1a5d948f4098aa3eb99",
+      "selection_basis": "timestamp fidelity only; no model outputs available",
+      "frame_counts": [
+        223,
+        223
+      ],
+      "first_pts": [
+        [
+          0.0,
+          0.033333,
+          0.066667
+        ],
+        [
+          0.0,
+          0.033333,
+          0.066667
+        ]
+      ],
+      "max_pts_delta": 0.0,
+      "duration_delta": 0.0,
+      "same_geometry": true,
+      "output_sha256": "0cafbea1ab0ef56f5180c8fb8a8b66197e59c4d77c8eb968efe1b7e4460f1872",
+      "pass": true
+    },
+    {
+      "uid": "G00001_02_02_020",
+      "condition": "BLUR_L3",
+      "command": [
+        "/root/autodl-tmp/affective-conflict-e1-video-v2/tools/ffmpeg",
+        "-nostdin",
+        "-v",
+        "error",
+        "-copyts",
+        "-i",
+        "/root/autodl-tmp/affective-conflict/data/derived/emotiontalk_controlled_v1/silent_video/G00001_02_02_020.mp4",
+        "-map",
+        "0:v:0",
+        "-an",
+        "-vf",
+        "gblur=sigma=129.6:sigmaV=129.6:steps=3:planes=15",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "fast",
+        "-crf",
+        "0",
+        "-pix_fmt",
+        "yuv420p",
+        "-threads",
+        "1",
+        "-vsync",
+        "0",
+        "-enc_time_base",
+        "1/15360",
+        "-video_track_timescale",
+        "15360",
+        "-movie_timescale",
+        "15360",
+        "/root/autodl-tmp/affective-conflict-e1-video-v2/00_recovery/exact_clock_test/G00001_02_02_020/BLUR_L3.mp4"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "FFmpeg_sha256": "e7e7fb30477f717e6f55f9180a70386c62677ef8a4d4d1a5d948f4098aa3eb99",
+      "selection_basis": "timestamp fidelity only; no model outputs available",
+      "frame_counts": [
+        223,
+        223
+      ],
+      "first_pts": [
+        [
+          0.0,
+          0.033333,
+          0.066667
+        ],
+        [
+          0.0,
+          0.033333,
+          0.066667
+        ]
+      ],
+      "max_pts_delta": 0.0,
+      "duration_delta": 0.0,
+      "same_geometry": true,
+      "output_sha256": "26543b479cb488fbaed25526091883a4fada8a837aad2d9592afc35c2da9fd8c",
+      "pass": true
+    },
+    {
+      "uid": "G00001_02_02_023",
+      "condition": "RECODE",
+      "command": [
+        "/root/autodl-tmp/affective-conflict-e1-video-v2/tools/ffmpeg",
+        "-nostdin",
+        "-v",
+        "error",
+        "-copyts",
+        "-i",
+        "/root/autodl-tmp/affective-conflict/data/derived/emotiontalk_controlled_v1/silent_video/G00001_02_02_023.mp4",
+        "-map",
+        "0:v:0",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "fast",
+        "-crf",
+        "0",
+        "-pix_fmt",
+        "yuv420p",
+        "-threads",
+        "1",
+        "-vsync",
+        "0",
+        "-enc_time_base",
+        "1/15360",
+        "-video_track_timescale",
+        "15360",
+        "-movie_timescale",
+        "15360",
+        "/root/autodl-tmp/affective-conflict-e1-video-v2/00_recovery/exact_clock_test/G00001_02_02_023/RECODE.mp4"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "FFmpeg_sha256": "e7e7fb30477f717e6f55f9180a70386c62677ef8a4d4d1a5d948f4098aa3eb99",
+      "selection_basis": "timestamp fidelity only; no model outputs available",
+      "frame_counts": [
+        126,
+        126
+      ],
+      "first_pts": [
+        [
+          0.027018,
+          0.060352,
+          0.093685
+        ],
+        [
+          0.027018,
+          0.060352,
+          0.093685
+        ]
+      ],
+      "max_pts_delta": 0.0,
+      "duration_delta": 0.0,
+      "same_geometry": true,
+      "output_sha256": "d75571aed9eba7e7e982f88008697b221ed909b5454f784bf7cd47cb680470a5",
+      "pass": true
+    },
+    {
+      "uid": "G00001_02_02_023",
+      "condition": "BLUR_L1",
+      "command": [
+        "/root/autodl-tmp/affective-conflict-e1-video-v2/tools/ffmpeg",
+        "-nostdin",
+        "-v",
+        "error",
+        "-copyts",
+        "-i",
+        "/root/autodl-tmp/affective-conflict/data/derived/emotiontalk_controlled_v1/silent_video/G00001_02_02_023.mp4",
+        "-map",
+        "0:v:0",
+        "-an",
+        "-vf",
+        "gblur=sigma=10.8:sigmaV=10.8:steps=3:planes=15",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "fast",
+        "-crf",
+        "0",
+        "-pix_fmt",
+        "yuv420p",
+        "-threads",
+        "1",
+        "-vsync",
+        "0",
+        "-enc_time_base",
+        "1/15360",
+        "-video_track_timescale",
+        "15360",
+        "-movie_timescale",
+        "15360",
+        "/root/autodl-tmp/affective-conflict-e1-video-v2/00_recovery/exact_clock_test/G00001_02_02_023/BLUR_L1.mp4"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "FFmpeg_sha256": "e7e7fb30477f717e6f55f9180a70386c62677ef8a4d4d1a5d948f4098aa3eb99",
+      "selection_basis": "timestamp fidelity only; no model outputs available",
+      "frame_counts": [
+        126,
+        126
+      ],
+      "first_pts": [
+        [
+          0.027018,
+          0.060352,
+          0.093685
+        ],
+        [
+          0.027018,
+          0.060352,
+          0.093685
+        ]
+      ],
+      "max_pts_delta": 0.0,
+      "duration_delta": 0.0,
+      "same_geometry": true,
+      "output_sha256": "1d58769fc030fcff33a012cfe6c9cbd618f1d7fe1633e4d444b600f92637a1db",
+      "pass": true
+    },
+    {
+      "uid": "G00001_02_02_023",
+      "condition": "BLUR_L2",
+      "command": [
+        "/root/autodl-tmp/affective-conflict-e1-video-v2/tools/ffmpeg",
+        "-nostdin",
+        "-v",
+        "error",
+        "-copyts",
+        "-i",
+        "/root/autodl-tmp/affective-conflict/data/derived/emotiontalk_controlled_v1/silent_video/G00001_02_02_023.mp4",
+        "-map",
+        "0:v:0",
+        "-an",
+        "-vf",
+        "gblur=sigma=43.2:sigmaV=43.2:steps=3:planes=15",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "fast",
+        "-crf",
+        "0",
+        "-pix_fmt",
+        "yuv420p",
+        "-threads",
+        "1",
+        "-vsync",
+        "0",
+        "-enc_time_base",
+        "1/15360",
+        "-video_track_timescale",
+        "15360",
+        "-movie_timescale",
+        "15360",
+        "/root/autodl-tmp/affective-conflict-e1-video-v2/00_recovery/exact_clock_test/G00001_02_02_023/BLUR_L2.mp4"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "FFmpeg_sha256": "e7e7fb30477f717e6f55f9180a70386c62677ef8a4d4d1a5d948f4098aa3eb99",
+      "selection_basis": "timestamp fidelity only; no model outputs available",
+      "frame_counts": [
+        126,
+        126
+      ],
+      "first_pts": [
+        [
+          0.027018,
+          0.060352,
+          0.093685
+        ],
+        [
+          0.027018,
+          0.060352,
+          0.093685
+        ]
+      ],
+      "max_pts_delta": 0.0,
+      "duration_delta": 0.0,
+      "same_geometry": true,
+      "output_sha256": "994c99859a1dc9d357f73ae7b40813d0d1bc010f12955327052ffc3abddfe652",
+      "pass": true
+    },
+    {
+      "uid": "G00001_02_02_023",
+      "condition": "BLUR_L3",
+      "command": [
+        "/root/autodl-tmp/affective-conflict-e1-video-v2/tools/ffmpeg",
+        "-nostdin",
+        "-v",
+        "error",
+        "-copyts",
+        "-i",
+        "/root/autodl-tmp/affective-conflict/data/derived/emotiontalk_controlled_v1/silent_video/G00001_02_02_023.mp4",
+        "-map",
+        "0:v:0",
+        "-an",
+        "-vf",
+        "gblur=sigma=129.6:sigmaV=129.6:steps=3:planes=15",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "fast",
+        "-crf",
+        "0",
+        "-pix_fmt",
+        "yuv420p",
+        "-threads",
+        "1",
+        "-vsync",
+        "0",
+        "-enc_time_base",
+        "1/15360",
+        "-video_track_timescale",
+        "15360",
+        "-movie_timescale",
+        "15360",
+        "/root/autodl-tmp/affective-conflict-e1-video-v2/00_recovery/exact_clock_test/G00001_02_02_023/BLUR_L3.mp4"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "FFmpeg_sha256": "e7e7fb30477f717e6f55f9180a70386c62677ef8a4d4d1a5d948f4098aa3eb99",
+      "selection_basis": "timestamp fidelity only; no model outputs available",
+      "frame_counts": [
+        126,
+        126
+      ],
+      "first_pts": [
+        [
+          0.027018,
+          0.060352,
+          0.093685
+        ],
+        [
+          0.027018,
+          0.060352,
+          0.093685
+        ]
+      ],
+      "max_pts_delta": 0.0,
+      "duration_delta": 0.0,
+      "same_geometry": true,
+      "output_sha256": "aa4b5c7f46714d750d96308ba55ed4c2580d75cfbe5f9627d20032c8b358b3ad",
+      "pass": true
+    },
+    {
+      "uid": "G00004_55_09_023",
+      "condition": "RECODE",
+      "command": [
+        "/root/autodl-tmp/affective-conflict-e1-video-v2/tools/ffmpeg",
+        "-nostdin",
+        "-v",
+        "error",
+        "-copyts",
+        "-i",
+        "/root/autodl-tmp/affective-conflict/data/derived/emotiontalk_controlled_v1/silent_video/G00004_55_09_023.mp4",
+        "-map",
+        "0:v:0",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "fast",
+        "-crf",
+        "0",
+        "-pix_fmt",
+        "yuv420p",
+        "-threads",
+        "1",
+        "-vsync",
+        "0",
+        "-enc_time_base",
+        "1/15360",
+        "-video_track_timescale",
+        "15360",
+        "-movie_timescale",
+        "15360",
+        "/root/autodl-tmp/affective-conflict-e1-video-v2/00_recovery/exact_clock_test/G00004_55_09_023/RECODE.mp4"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "FFmpeg_sha256": "e7e7fb30477f717e6f55f9180a70386c62677ef8a4d4d1a5d948f4098aa3eb99",
+      "selection_basis": "timestamp fidelity only; no model outputs available",
+      "frame_counts": [
+        330,
+        330
+      ],
+      "first_pts": [
+        [
+          0.03099,
+          0.064323,
+          0.097656
+        ],
+        [
+          0.03099,
+          0.064323,
+          0.097656
+        ]
+      ],
+      "max_pts_delta": 0.0,
+      "duration_delta": 0.0,
+      "same_geometry": true,
+      "output_sha256": "9ddd2c8aa9f5a1a00d38616dd35e368f7e1f93327fc9a73696e8838e7f9d2630",
+      "pass": true
+    },
+    {
+      "uid": "G00004_55_09_023",
+      "condition": "BLUR_L1",
+      "command": [
+        "/root/autodl-tmp/affective-conflict-e1-video-v2/tools/ffmpeg",
+        "-nostdin",
+        "-v",
+        "error",
+        "-copyts",
+        "-i",
+        "/root/autodl-tmp/affective-conflict/data/derived/emotiontalk_controlled_v1/silent_video/G00004_55_09_023.mp4",
+        "-map",
+        "0:v:0",
+        "-an",
+        "-vf",
+        "gblur=sigma=10.8:sigmaV=10.8:steps=3:planes=15",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "fast",
+        "-crf",
+        "0",
+        "-pix_fmt",
+        "yuv420p",
+        "-threads",
+        "1",
+        "-vsync",
+        "0",
+        "-enc_time_base",
+        "1/15360",
+        "-video_track_timescale",
+        "15360",
+        "-movie_timescale",
+        "15360",
+        "/root/autodl-tmp/affective-conflict-e1-video-v2/00_recovery/exact_clock_test/G00004_55_09_023/BLUR_L1.mp4"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "FFmpeg_sha256": "e7e7fb30477f717e6f55f9180a70386c62677ef8a4d4d1a5d948f4098aa3eb99",
+      "selection_basis": "timestamp fidelity only; no model outputs available",
+      "frame_counts": [
+        330,
+        330
+      ],
+      "first_pts": [
+        [
+          0.03099,
+          0.064323,
+          0.097656
+        ],
+        [
+          0.03099,
+          0.064323,
+          0.097656
+        ]
+      ],
+      "max_pts_delta": 0.0,
+      "duration_delta": 0.0,
+      "same_geometry": true,
+      "output_sha256": "e34d1a0d604b7fd720e3901b02f7a87b6c4812c93f36fbb32e737a340d37c551",
+      "pass": true
+    },
+    {
+      "uid": "G00004_55_09_023",
+      "condition": "BLUR_L2",
+      "command": [
+        "/root/autodl-tmp/affective-conflict-e1-video-v2/tools/ffmpeg",
+        "-nostdin",
+        "-v",
+        "error",
+        "-copyts",
+        "-i",
+        "/root/autodl-tmp/affective-conflict/data/derived/emotiontalk_controlled_v1/silent_video/G00004_55_09_023.mp4",
+        "-map",
+        "0:v:0",
+        "-an",
+        "-vf",
+        "gblur=sigma=43.2:sigmaV=43.2:steps=3:planes=15",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "fast",
+        "-crf",
+        "0",
+        "-pix_fmt",
+        "yuv420p",
+        "-threads",
+        "1",
+        "-vsync",
+        "0",
+        "-enc_time_base",
+        "1/15360",
+        "-video_track_timescale",
+        "15360",
+        "-movie_timescale",
+        "15360",
+        "/root/autodl-tmp/affective-conflict-e1-video-v2/00_recovery/exact_clock_test/G00004_55_09_023/BLUR_L2.mp4"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "FFmpeg_sha256": "e7e7fb30477f717e6f55f9180a70386c62677ef8a4d4d1a5d948f4098aa3eb99",
+      "selection_basis": "timestamp fidelity only; no model outputs available",
+      "frame_counts": [
+        330,
+        330
+      ],
+      "first_pts": [
+        [
+          0.03099,
+          0.064323,
+          0.097656
+        ],
+        [
+          0.03099,
+          0.064323,
+          0.097656
+        ]
+      ],
+      "max_pts_delta": 0.0,
+      "duration_delta": 0.0,
+      "same_geometry": true,
+      "output_sha256": "6d5f97769f6104e8aefff61f7fb13db8e6ef8e64499c6d78415e2468ac332cd4",
+      "pass": true
+    },
+    {
+      "uid": "G00004_55_09_023",
+      "condition": "BLUR_L3",
+      "command": [
+        "/root/autodl-tmp/affective-conflict-e1-video-v2/tools/ffmpeg",
+        "-nostdin",
+        "-v",
+        "error",
+        "-copyts",
+        "-i",
+        "/root/autodl-tmp/affective-conflict/data/derived/emotiontalk_controlled_v1/silent_video/G00004_55_09_023.mp4",
+        "-map",
+        "0:v:0",
+        "-an",
+        "-vf",
+        "gblur=sigma=129.6:sigmaV=129.6:steps=3:planes=15",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "fast",
+        "-crf",
+        "0",
+        "-pix_fmt",
+        "yuv420p",
+        "-threads",
+        "1",
+        "-vsync",
+        "0",
+        "-enc_time_base",
+        "1/15360",
+        "-video_track_timescale",
+        "15360",
+        "-movie_timescale",
+        "15360",
+        "/root/autodl-tmp/affective-conflict-e1-video-v2/00_recovery/exact_clock_test/G00004_55_09_023/BLUR_L3.mp4"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "FFmpeg_sha256": "e7e7fb30477f717e6f55f9180a70386c62677ef8a4d4d1a5d948f4098aa3eb99",
+      "selection_basis": "timestamp fidelity only; no model outputs available",
+      "frame_counts": [
+        330,
+        330
+      ],
+      "first_pts": [
+        [
+          0.03099,
+          0.064323,
+          0.097656
+        ],
+        [
+          0.03099,
+          0.064323,
+          0.097656
+        ]
+      ],
+      "max_pts_delta": 0.0,
+      "duration_delta": 0.0,
+      "same_geometry": true,
+      "output_sha256": "9052b8f5939dd6be1e7e84ee1b3abfa577e48a59e28615ffcd35251907509c25",
+      "pass": true
+    }
+  ],
+  "GPU_used": false
+}

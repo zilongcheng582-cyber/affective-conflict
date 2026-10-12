@@ -1,0 +1,388 @@
+{
+  "status": "PASS",
+  "numpy_version": "2.4.3",
+  "E1": {
+    "status": "PASS",
+    "experiment": "E1",
+    "formal_trials": 2336,
+    "items": 146,
+    "dialogue_clusters": 134,
+    "checks": 2430,
+    "max_abs_error": 1.1102230246251565e-16,
+    "bootstrap_replicates": 10000,
+    "signflip_replicates": 100000,
+    "CI_REPRODUCIBILITY": "PUBLIC_PROJECTION_REPLAY_PASS",
+    "GPU_calls": 0,
+    "refits": 0,
+    "post_treatment_filtering": false,
+    "estimates": [
+      {
+        "endpoint": "SIDE_V_L3_MINUS_RECODE",
+        "family": "primary",
+        "effect": -0.4075342465753425,
+        "item_ci": [
+          -0.476027397260274,
+          -0.339041095890411
+        ],
+        "cluster_ci": [
+          -0.47635135135135137,
+          -0.33793103448275863
+        ],
+        "p": 9.99990000099999e-06
+      },
+      {
+        "endpoint": "SIDE_A_L3_MINUS_RECODE",
+        "family": "primary",
+        "effect": 0.3698630136986301,
+        "item_ci": [
+          0.3013698630136986,
+          0.4383561643835616
+        ],
+        "cluster_ci": [
+          0.29859775641025643,
+          0.4433415492957746
+        ],
+        "p": 9.99990000099999e-06
+      },
+      {
+        "endpoint": "OTHER_L3_MINUS_RECODE",
+        "family": "primary",
+        "effect": 0.03767123287671233,
+        "item_ci": [
+          0.00684931506849315,
+          0.07191780821917808
+        ],
+        "cluster_ci": [
+          0.006711409395973154,
+          0.07191780821917808
+        ],
+        "p": 0.04167958320416796
+      },
+      {
+        "endpoint": "SIDE_V_CLEAN_MINUS_RECODE",
+        "family": "secondary",
+        "effect": 0.0,
+        "item_ci": [
+          0.0,
+          0.0
+        ],
+        "cluster_ci": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0
+      },
+      {
+        "endpoint": "SIDE_A_CLEAN_MINUS_RECODE",
+        "family": "secondary",
+        "effect": 0.0,
+        "item_ci": [
+          0.0,
+          0.0
+        ],
+        "cluster_ci": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0
+      },
+      {
+        "endpoint": "OTHER_CLEAN_MINUS_RECODE",
+        "family": "secondary",
+        "effect": 0.0,
+        "item_ci": [
+          0.0,
+          0.0
+        ],
+        "cluster_ci": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0
+      },
+      {
+        "endpoint": "SIDE_V_ORDINAL_DOSE_SLOPE",
+        "family": "secondary",
+        "effect": -0.14349315068493151,
+        "item_ci": [
+          -0.16815068493150684,
+          -0.11883561643835618
+        ],
+        "cluster_ci": [
+          -0.16870748299319727,
+          -0.11938721615406725
+        ],
+        "p": 9.99990000099999e-06
+      },
+      {
+        "endpoint": "SIDE_A_ORDINAL_DOSE_SLOPE",
+        "family": "secondary",
+        "effect": 0.1339041095890411,
+        "item_ci": [
+          0.10924657534246575,
+          0.1582191780821918
+        ],
+        "cluster_ci": [
+          0.10872372529828483,
+          0.1591549295774648
+        ],
+        "p": 9.99990000099999e-06
+      },
+      {
+        "endpoint": "OTHER_ORDINAL_DOSE_SLOPE",
+        "family": "secondary",
+        "effect": 0.00958904109589041,
+        "item_ci": [
+          -0.0010273972602739727,
+          0.02089041095890411
+        ],
+        "cluster_ci": [
+          -0.0007042253521126759,
+          0.02074829931972789
+        ],
+        "p": 0.1032089679103209
+      },
+      {
+        "endpoint": "SIDE_V_ORDER_INTERACTION",
+        "family": "secondary",
+        "effect": -0.17123287671232876,
+        "item_ci": [
+          -0.2671232876712329,
+          -0.0821917808219178
+        ],
+        "cluster_ci": [
+          -0.2638888888888889,
+          -0.07913669064748201
+        ],
+        "p": 0.0005899941000589994
+      },
+      {
+        "endpoint": "SIDE_A_ORDER_INTERACTION",
+        "family": "secondary",
+        "effect": 0.2465753424657534,
+        "item_ci": [
+          0.1506849315068493,
+          0.3424657534246575
+        ],
+        "cluster_ci": [
+          0.1527777777777778,
+          0.3422818791946309
+        ],
+        "p": 1.999980000199998e-05
+      },
+      {
+        "endpoint": "OTHER_ORDER_INTERACTION",
+        "family": "secondary",
+        "effect": -0.07534246575342465,
+        "item_ci": [
+          -0.13013698630136986,
+          -0.0273972602739726
+        ],
+        "cluster_ci": [
+          -0.13043478260869565,
+          -0.020833333333333332
+        ],
+        "p": 0.013059869401305987
+      },
+      {
+        "endpoint": "V_ONLY_CORRECTNESS_L3_MINUS_RECODE",
+        "family": "secondary",
+        "effect": -0.4931506849315068,
+        "item_ci": [
+          -0.5753424657534246,
+          -0.410958904109589
+        ],
+        "cluster_ci": [
+          -0.5763888888888888,
+          -0.4100631994404478
+        ],
+        "p": 9.99990000099999e-06
+      },
+      {
+        "endpoint": "V_ONLY_NORMALIZED_ENTROPY_L3_MINUS_RECODE",
+        "family": "secondary",
+        "effect": 0.07759423822477898,
+        "item_ci": [
+          0.054038502380239106,
+          0.10187356825315849
+        ],
+        "cluster_ci": [
+          0.0541114827252953,
+          0.10284238294278547
+        ],
+        "p": 9.99990000099999e-06
+      }
+    ]
+  },
+  "E2": {
+    "status": "PASS",
+    "experiment": "E2",
+    "formal_trials": 3375,
+    "items": 225,
+    "dialogue_clusters": 177,
+    "checks": 1179,
+    "max_abs_error": 0.0,
+    "bootstrap_replicates": 10000,
+    "signflip_replicates": 100000,
+    "CI_REPRODUCIBILITY": "PUBLIC_PROJECTION_REPLAY_PASS",
+    "GPU_calls": 0,
+    "refits": 0,
+    "post_treatment_filtering": false,
+    "estimates": [
+      {
+        "endpoint": "PRIMARY",
+        "family": "primary",
+        "effect": -0.05333333333333334,
+        "item_ci": [
+          -0.08,
+          -0.028888888888888888
+        ],
+        "cluster_ci": [
+          -0.08149897903234954,
+          -0.02843601895734597
+        ],
+        "p": 2.999970000299997e-05
+      },
+      {
+        "endpoint": "OTHER_HIGH_MINUS_RECODE",
+        "family": "secondary",
+        "effect": 0.05333333333333334,
+        "item_ci": [
+          0.028888888888888888,
+          0.08
+        ],
+        "cluster_ci": [
+          0.02850877192982456,
+          0.08139666421130168
+        ],
+        "p": 1.999980000199998e-05
+      },
+      {
+        "endpoint": "PARSE_FAIL_HIGH_MINUS_RECODE",
+        "family": "secondary",
+        "effect": 0.0,
+        "item_ci": [
+          0.0,
+          0.0
+        ],
+        "cluster_ci": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0
+      },
+      {
+        "endpoint": "TECH_FAILURE_HIGH_MINUS_RECODE",
+        "family": "secondary",
+        "effect": 0.0,
+        "item_ci": [
+          0.0,
+          0.0
+        ],
+        "cluster_ci": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0
+      },
+      {
+        "endpoint": "CLEAN_MINUS_RECODE_PIPELINE",
+        "family": "secondary",
+        "effect": 0.0044444444444444444,
+        "item_ci": [
+          -0.0044444444444444444,
+          0.013333333333333334
+        ],
+        "cluster_ci": [
+          -0.004329004329004329,
+          0.013574660633484163
+        ],
+        "p": 0.6246837531624684
+      },
+      {
+        "endpoint": "ORDER_INTERACTION",
+        "family": "secondary",
+        "effect": 0.044444444444444446,
+        "item_ci": [
+          0.013333333333333334,
+          0.08
+        ],
+        "cluster_ci": [
+          0.01327433628318584,
+          0.07623318385650224
+        ],
+        "p": 0.012679873201267988
+      },
+      {
+        "endpoint": "A_SNR10_MINUS_RECODE",
+        "family": "secondary",
+        "effect": -0.02,
+        "item_ci": [
+          -0.03777777777777778,
+          -0.0044444444444444444
+        ],
+        "cluster_ci": [
+          -0.038288288288288286,
+          -0.004545454545454545
+        ],
+        "p": 0.030549694503054968
+      },
+      {
+        "endpoint": "A_SNR20_MINUS_RECODE",
+        "family": "secondary",
+        "effect": -0.0044444444444444444,
+        "item_ci": [
+          -0.017777777777777778,
+          0.006666666666666667
+        ],
+        "cluster_ci": [
+          -0.017777777777777778,
+          0.006787330316742082
+        ],
+        "p": 0.7468925310746892
+      },
+      {
+        "endpoint": "ORDINAL_DOSE_RESPONSE",
+        "family": "secondary",
+        "effect": -0.017555555555555553,
+        "item_ci": [
+          -0.02666666666666667,
+          -0.009555555555555555
+        ],
+        "cluster_ci": [
+          -0.026623376623376625,
+          -0.00952354614412137
+        ],
+        "p": 9.99990000099999e-06
+      },
+      {
+        "endpoint": "UNIMODAL_SOURCE_LABEL_MATCH",
+        "family": "secondary",
+        "effect": -0.18666666666666668,
+        "item_ci": [
+          -0.2577777777777778,
+          -0.11555555555555555
+        ],
+        "cluster_ci": [
+          -0.25,
+          -0.12217194570135746
+        ],
+        "p": 9.99990000099999e-06
+      },
+      {
+        "endpoint": "UNIMODAL_ENTROPY",
+        "family": "secondary",
+        "effect": 0.0355735842820063,
+        "item_ci": [
+          0.018351436195132066,
+          0.05318683344668818
+        ],
+        "cluster_ci": [
+          0.01882770955185524,
+          0.051673040308989025
+        ],
+        "p": 3.999960000399996e-05
+      }
+    ]
+  }
+}

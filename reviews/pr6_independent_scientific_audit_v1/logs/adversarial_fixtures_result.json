@@ -1,0 +1,322 @@
+[
+ {
+  "fixture": "CONTROL_unmodified",
+  "experiment": "E1",
+  "note": "no change",
+  "PR6_REPLAY": {
+   "detected": false,
+   "message": ""
+  },
+  "AUDIT_REPLAY": {
+   "detected": false,
+   "failed_checks": []
+  }
+ },
+ {
+  "fixture": "CONTROL_unmodified",
+  "experiment": "E2",
+  "note": "no change",
+  "PR6_REPLAY": {
+   "detected": false,
+   "message": ""
+  },
+  "AUDIT_REPLAY": {
+   "detected": false,
+   "failed_checks": []
+  }
+ },
+ {
+  "fixture": "candidate_label_swap_same_token_count",
+  "experiment": "E1",
+  "note": "probabilities still sum to 1, entropy unchanged; label->score mapping wrong (happy<->sad)",
+  "PR6_REPLAY": {
+   "detected": false,
+   "message": ""
+  },
+  "AUDIT_REPLAY": {
+   "detected": false,
+   "failed_checks": []
+  }
+ },
+ {
+  "fixture": "candidate_label_swap_diff_token_count",
+  "experiment": "E1",
+  "note": "same as above but happy<->fearful (1 vs 3 tokens)",
+  "PR6_REPLAY": {
+   "detected": false,
+   "message": ""
+  },
+  "AUDIT_REPLAY": {
+   "detected": true,
+   "failed_checks": [
+    "E1:label_token_count_invariant_across_trials"
+   ]
+  }
+ },
+ {
+  "fixture": "outcome_changed_label_not",
+  "experiment": "E1",
+  "note": "one L3 SIDE_A outcome relabelled SIDE_V, parsed_label left",
+  "PR6_REPLAY": {
+   "detected": true,
+   "message": "ValueError: ('SIDE_V_L3_MINUS_RECODE:effect', 0.003424657534246589, -0.4041095890410959, -0.4075342465753425)"
+  },
+  "AUDIT_REPLAY": {
+   "detected": true,
+   "failed_checks": [
+    "E1:outcome_rederived_from_labels"
+   ]
+  }
+ },
+ {
+  "fixture": "outcome_and_label_changed",
+  "experiment": "E1",
+  "note": "self-consistent row tamper; frozen JSON statistics unchanged",
+  "PR6_REPLAY": {
+   "detected": true,
+   "message": "ValueError: ('SIDE_V_L3_MINUS_RECODE:effect', 0.003424657534246589, -0.4041095890410959, -0.4075342465753425)"
+  },
+  "AUDIT_REPLAY": {
+   "detected": true,
+   "failed_checks": [
+    "E1:SIDE_V_L3_MINUS_RECODE:effect",
+    "E1:SIDE_V_L3_MINUS_RECODE:item_ci_contract",
+    "E1:SIDE_V_L3_MINUS_RECODE:dialogue_ci_contract",
+    "E1:SIDE_A_L3_MINUS_RECODE:effect",
+    "E1:SIDE_A_L3_MINUS_RECODE:item_ci_contract",
+    "E1:SIDE_A_L3_MINUS_RECODE:dialogue_ci_contract",
+    "E1:SIDE_V_ORDINAL_DOSE_SLOPE:effect",
+    "E1:SIDE_V_ORDINAL_DOSE_SLOPE:item_ci_contract"
+   ]
+  }
+ },
+ {
+  "fixture": "delete_condition",
+  "experiment": "E1",
+  "note": "remove BLUR_L2 rows for one item",
+  "PR6_REPLAY": {
+   "detected": true,
+   "message": "ValueError: Incomplete/duplicate formal rows"
+  },
+  "AUDIT_REPLAY": {
+   "detected": true,
+   "failed_checks": [
+    "EXCEPTION: KeyError(('G00001_02_02_020', 'BLUR_L2', 'V_ONLY'))"
+   ]
+  }
+ },
+ {
+  "fixture": "duplicate_trial",
+  "experiment": "E1",
+  "note": "one formal trial duplicated",
+  "PR6_REPLAY": {
+   "detected": true,
+   "message": "ValueError: Incomplete/duplicate formal rows"
+  },
+  "AUDIT_REPLAY": {
+   "detected": true,
+   "failed_checks": [
+    "E1:2336_unique_slots"
+   ]
+  }
+ },
+ {
+  "fixture": "other_to_parse_fail",
+  "experiment": "E1",
+  "note": "one OTHER recoded as PARSE_FAIL",
+  "PR6_REPLAY": {
+   "detected": true,
+   "message": "ValueError: ('OTHER_L3_MINUS_RECODE:effect', 0.003424657534246575, 0.03424657534246575, 0.03767123287671233)"
+  },
+  "AUDIT_REPLAY": {
+   "detected": true,
+   "failed_checks": [
+    "E1:OTHER_L3_MINUS_RECODE:effect",
+    "E1:OTHER_L3_MINUS_RECODE:item_ci_contract",
+    "E1:OTHER_L3_MINUS_RECODE:dialogue_ci_contract",
+    "E1:OTHER_L3_MINUS_RECODE:signflip_p_contract",
+    "E1:OTHER_L3_MINUS_RECODE:holm",
+    "E1:OTHER_ORDINAL_DOSE_SLOPE:effect",
+    "E1:OTHER_ORDINAL_DOSE_SLOPE:item_ci_contract",
+    "E1:OTHER_ORDINAL_DOSE_SLOPE:dialogue_ci_contract"
+   ]
+  }
+ },
+ {
+  "fixture": "swap_order_results",
+  "experiment": "E1",
+  "note": "swap A_THEN_V and V_THEN_A L3 results for one item",
+  "PR6_REPLAY": {
+   "detected": true,
+   "message": "ValueError: ('SIDE_V_ORDER_INTERACTION:effect', 0.0136986301369863, -0.18493150684931506, -0.17123287671232876)"
+  },
+  "AUDIT_REPLAY": {
+   "detected": true,
+   "failed_checks": [
+    "E1:SIDE_V_ORDER_INTERACTION:effect",
+    "E1:SIDE_V_ORDER_INTERACTION:item_ci_contract",
+    "E1:SIDE_V_ORDER_INTERACTION:dialogue_ci_contract",
+    "E1:SIDE_V_ORDER_INTERACTION:signflip_p_contract",
+    "E1:SIDE_A_ORDER_INTERACTION:effect",
+    "E1:SIDE_A_ORDER_INTERACTION:item_ci_contract",
+    "E1:SIDE_A_ORDER_INTERACTION:dialogue_ci_contract",
+    "E1:SIDE_A_ORDER_INTERACTION:signflip_p_contract"
+   ]
+  }
+ },
+ {
+  "fixture": "dialogue_cluster_changed",
+  "experiment": "E1",
+  "note": "one item moved to another dialogue cluster",
+  "PR6_REPLAY": {
+   "detected": true,
+   "message": "ValueError: Official cluster count differs"
+  },
+  "AUDIT_REPLAY": {
+   "detected": true,
+   "failed_checks": [
+    "E1:clusters_equal_ERI1_official_map",
+    "E1:SIDE_V_L3_MINUS_RECODE:dialogue_ci_contract",
+    "E1:SIDE_A_L3_MINUS_RECODE:dialogue_ci_contract",
+    "E1:OTHER_L3_MINUS_RECODE:dialogue_ci_contract",
+    "E1:SIDE_V_ORDINAL_DOSE_SLOPE:dialogue_ci_contract",
+    "E1:SIDE_A_ORDINAL_DOSE_SLOPE:dialogue_ci_contract",
+    "E1:OTHER_ORDINAL_DOSE_SLOPE:dialogue_ci_contract",
+    "E1:SIDE_V_ORDER_INTERACTION:dialogue_ci_contract"
+   ]
+  }
+ },
+ {
+  "fixture": "candidate_probability_shifted",
+  "experiment": "E1",
+  "note": "0.05 moved between two candidates, sum still 1",
+  "PR6_REPLAY": {
+   "detected": true,
+   "message": "ValueError: Invalid candidate distribution"
+  },
+  "AUDIT_REPLAY": {
+   "detected": true,
+   "failed_checks": [
+    "E1:softmax_mean_sum_entropy_recomputed"
+   ]
+  }
+ },
+ {
+  "fixture": "same_marginals_different_pairing",
+  "experiment": "E1",
+  "note": "L3 outcomes swapped between two items; L3 marginal rate unchanged",
+  "PR6_REPLAY": {
+   "detected": true,
+   "message": "ValueError: ('SIDE_V_L3_MINUS_RECODE:item_CI', 0.0034246575342465335, [-0.476027397260274, -0.3424657534246575], [-0.476027397260274, -0.339041095890411])"
+  },
+  "AUDIT_REPLAY": {
+   "detected": true,
+   "failed_checks": [
+    "E1:SIDE_V_L3_MINUS_RECODE:item_ci_contract",
+    "E1:SIDE_V_L3_MINUS_RECODE:dialogue_ci_contract",
+    "E1:SIDE_A_L3_MINUS_RECODE:dialogue_ci_contract",
+    "E1:SIDE_V_ORDINAL_DOSE_SLOPE:item_ci_contract",
+    "E1:SIDE_V_ORDINAL_DOSE_SLOPE:dialogue_ci_contract",
+    "E1:SIDE_A_ORDINAL_DOSE_SLOPE:item_ci_contract",
+    "E1:SIDE_A_ORDINAL_DOSE_SLOPE:dialogue_ci_contract",
+    "E1:SIDE_V_ORDER_INTERACTION:item_ci_contract"
+   ]
+  }
+ },
+ {
+  "fixture": "swap_yA_yV_columns_only",
+  "experiment": "E1",
+  "note": "source labels swapped, outcomes left",
+  "PR6_REPLAY": {
+   "detected": true,
+   "message": "ValueError: ('V_ONLY_CORRECTNESS_L3_MINUS_RECODE:effect', 0.773972602739726, 0.2808219178082192, -0.4931506849315068)"
+  },
+  "AUDIT_REPLAY": {
+   "detected": true,
+   "failed_checks": [
+    "E1:outcome_rederived_from_labels",
+    "E1:labels_order_dualreadable_equal_main_source_measurements",
+    "E1:SIDE_V_L3_MINUS_RECODE:effect",
+    "E1:SIDE_V_L3_MINUS_RECODE:item_ci_contract",
+    "E1:SIDE_V_L3_MINUS_RECODE:dialogue_ci_contract",
+    "E1:SIDE_A_L3_MINUS_RECODE:effect",
+    "E1:SIDE_A_L3_MINUS_RECODE:item_ci_contract",
+    "E1:SIDE_A_L3_MINUS_RECODE:dialogue_ci_contract"
+   ]
+  }
+ },
+ {
+  "fixture": "swap_yA_yV_and_outcomes_consistently",
+  "experiment": "E1",
+  "note": "systematic SIDE mapping inversion, internally consistent",
+  "PR6_REPLAY": {
+   "detected": true,
+   "message": "ValueError: ('SIDE_V_L3_MINUS_RECODE:effect', 0.7773972602739726, 0.3698630136986301, -0.4075342465753425)"
+  },
+  "AUDIT_REPLAY": {
+   "detected": true,
+   "failed_checks": [
+    "E1:attempt_label_outcome_equal",
+    "E1:labels_order_dualreadable_equal_main_source_measurements",
+    "E1:SIDE_V_L3_MINUS_RECODE:effect",
+    "E1:SIDE_V_L3_MINUS_RECODE:item_ci_contract",
+    "E1:SIDE_V_L3_MINUS_RECODE:dialogue_ci_contract",
+    "E1:SIDE_A_L3_MINUS_RECODE:effect",
+    "E1:SIDE_A_L3_MINUS_RECODE:item_ci_contract",
+    "E1:SIDE_A_L3_MINUS_RECODE:dialogue_ci_contract"
+   ]
+  }
+ },
+ {
+  "fixture": "visual_contract_frame_index_changed",
+  "experiment": "E1",
+  "note": "one BLUR_L3 sampled frame index changed",
+  "PR6_REPLAY": {
+   "detected": false,
+   "message": ""
+  },
+  "AUDIT_REPLAY": {
+   "detected": true,
+   "failed_checks": [
+    "E1:sampling_fields_identical_across_5_conditions"
+   ]
+  }
+ },
+ {
+  "fixture": "E2_video_sha_changes_with_audio_condition",
+  "experiment": "E2",
+  "note": "video identity differs in A_SNR00 for one item",
+  "PR6_REPLAY": {
+   "detected": false,
+   "message": ""
+  },
+  "AUDIT_REPLAY": {
+   "detected": true,
+   "failed_checks": [
+    "E2:video_sha_constant_across_all_conditions"
+   ]
+  }
+ },
+ {
+  "fixture": "E2_other_to_parse_fail",
+  "experiment": "E2",
+  "note": "one SNR00 OTHER recoded as PARSE_FAIL",
+  "PR6_REPLAY": {
+   "detected": true,
+   "message": "ValueError: ('OTHER_HIGH_MINUS_RECODE:effect', 0.0022222222222222227, 0.051111111111111114, 0.05333333333333334)"
+  },
+  "AUDIT_REPLAY": {
+   "detected": true,
+   "failed_checks": [
+    "E2:OTHER_HIGH_MINUS_RECODE:effect",
+    "E2:OTHER_HIGH_MINUS_RECODE:item_ci_contract",
+    "E2:OTHER_HIGH_MINUS_RECODE:dialogue_ci_contract",
+    "E2:PARSE_FAIL_HIGH_MINUS_RECODE:effect",
+    "E2:PARSE_FAIL_HIGH_MINUS_RECODE:item_ci_contract",
+    "E2:PARSE_FAIL_HIGH_MINUS_RECODE:dialogue_ci_contract",
+    "E2:SHARED_plus_OTHER_complementary(no PF/TF)",
+    "E2:category_transitions_csv_rows"
+   ]
+  }
+ }
+]

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "checks": 67,
+  "planned_slots": 2336,
+  "fixed_ITT_items": 146,
+  "CPU_only": true,
+  "independent_statistics_implementation": true,
+  "max_abs_error": 8.326672684688674e-17
+}
