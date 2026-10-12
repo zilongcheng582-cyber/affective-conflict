@@ -1,0 +1,29 @@
+test_duplicate_attempt_rejected (test_source_logic.TestAttemptLedger.test_duplicate_attempt_rejected) ... ok
+test_journal_repair_appends_missing_only (test_source_logic.TestAttemptLedger.test_journal_repair_appends_missing_only) ... ok
+test_out_of_order_attempt_files_sorted (test_source_logic.TestAttemptLedger.test_out_of_order_attempt_files_sorted) ... ok
+test_pending_rule (test_source_logic.TestAttemptLedger.test_pending_rule) ... ok
+test_wrong_fingerprint_rejected (test_source_logic.TestAttemptLedger.test_wrong_fingerprint_rejected) ... ok
+test_core_classify_m1_is_audio_in_AV (test_source_logic.TestE1Classification.test_core_classify_m1_is_audio_in_AV) ... ok
+test_generation_failure_is_technical (test_source_logic.TestE1Classification.test_generation_failure_is_technical) ... ok
+test_parse_fail_not_other (test_source_logic.TestE1Classification.test_parse_fail_not_other) ... ok
+test_parser_exception_status_not_other (test_source_logic.TestE1Classification.test_parser_exception_status_not_other) ... ok
+test_scoring_failure_does_not_delete_generation (test_source_logic.TestE1Classification.test_scoring_failure_does_not_delete_generation) ... ok
+test_side_mapping_uses_frozen_yV_and_yA (test_source_logic.TestE1Classification.test_side_mapping_uses_frozen_yV_and_yA) ... ok
+test_yA_yV_swap_swaps_sides (test_source_logic.TestE1Classification.test_yA_yV_swap_swaps_sides) ... ok
+test_e2_parser_exception_with_label_would_be_counted (test_source_logic.TestE2Classification.test_e2_parser_exception_with_label_would_be_counted) ... ok
+test_shared_other_parsefail_tech (test_source_logic.TestE2Classification.test_shared_other_parsefail_tech) ... ok
+test_candidate_order_is_frozen_sequence (test_source_logic.TestInputConstruction.test_candidate_order_is_frozen_sequence) ... ok
+test_no_text_evidence_leak (test_source_logic.TestInputConstruction.test_no_text_evidence_leak) ... ok
+test_orders_place_media_correctly (test_source_logic.TestInputConstruction.test_orders_place_media_correctly) ... ok
+test_unimodal_arms_single_modality (test_source_logic.TestInputConstruction.test_unimodal_arms_single_modality) ... ok
+test_sign (test_source_logic.TestOrderInteractionSign.test_sign) ... ok
+test_strict (test_source_logic.TestParser.test_strict) ... ok
+test_cluster_ratio_is_item_weighted (test_source_logic.TestStatistics.test_cluster_ratio_is_item_weighted) ... ok
+test_e1_and_e2_estimators_agree (test_source_logic.TestStatistics.test_e1_and_e2_estimators_agree) ... ok
+test_holm_textbook (test_source_logic.TestStatistics.test_holm_textbook) ... ok
+test_single_category_zero_vector (test_source_logic.TestStatistics.test_single_category_zero_vector) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.208s
+
+OK
