@@ -1,0 +1,124 @@
+{
+  "role": "EXPLORATORY_PARALLEL_COMPARISON_NOT_SYMMETRY_TEST",
+  "ERI1_frozen": {
+    "items": 146,
+    "SIDE_A_SNR00_minus_RECODE": -0.1095890410958904,
+    "SIDE_V": 0.05821917808219178,
+    "OTHER": 0.05136986301369863,
+    "source": "/root/autodl-tmp/affective-conflict-eri1/closure_v1/github_evidence/ERI1_PRIMARY_RESULTS_V1.csv"
+  },
+  "E1_V2": [
+    {
+      "endpoint": "SIDE_V_L3_MINUS_RECODE",
+      "family": "PRIMARY_3_HOLM",
+      "effect": -0.4075342465753425,
+      "utterance_ci95": [
+        -0.476027397260274,
+        -0.339041095890411
+      ],
+      "dialogue_cluster_ci95": [
+        -0.47635135135135137,
+        -0.33793103448275863
+      ],
+      "p_two_sided": 9.99990000099999e-06,
+      "seed": 2026101203,
+      "items": 146,
+      "clusters": 134,
+      "ITT_denominator": 146,
+      "technical_missing_effect_bounds": [
+        -0.4075342465753425,
+        -0.4075342465753425
+      ],
+      "complete_case_items": 146,
+      "complete_case_effect": -0.4075342465753425,
+      "p_holm": 2.999970000299997e-05,
+      "ruling": "DECREASE"
+    },
+    {
+      "endpoint": "SIDE_A_L3_MINUS_RECODE",
+      "family": "PRIMARY_3_HOLM",
+      "effect": 0.3698630136986301,
+      "utterance_ci95": [
+        0.3013698630136986,
+        0.4383561643835616
+      ],
+      "dialogue_cluster_ci95": [
+        0.29859775641025643,
+        0.4433415492957746
+      ],
+      "p_two_sided": 9.99990000099999e-06,
+      "seed": 2026101213,
+      "items": 146,
+      "clusters": 134,
+      "ITT_denominator": 146,
+      "technical_missing_effect_bounds": [
+        0.3698630136986301,
+        0.3698630136986301
+      ],
+      "complete_case_items": 146,
+      "complete_case_effect": 0.3698630136986301,
+      "p_holm": 2.999970000299997e-05,
+      "ruling": "INCREASE"
+    },
+    {
+      "endpoint": "OTHER_L3_MINUS_RECODE",
+      "family": "PRIMARY_3_HOLM",
+      "effect": 0.03767123287671233,
+      "utterance_ci95": [
+        0.00684931506849315,
+        0.07191780821917808
+      ],
+      "dialogue_cluster_ci95": [
+        0.006711409395973154,
+        0.07191780821917808
+      ],
+      "p_two_sided": 0.04167958320416796,
+      "seed": 2026101223,
+      "items": 146,
+      "clusters": 134,
+      "ITT_denominator": 146,
+      "technical_missing_effect_bounds": [
+        0.03767123287671233,
+        0.03767123287671233
+      ],
+      "complete_case_items": 146,
+      "complete_case_effect": 0.03767123287671233,
+      "p_holm": 0.04167958320416796,
+      "ruling": "INCREASE"
+    }
+  ],
+  "E2_frozen": {
+    "estimate": -0.05333333333333334,
+    "item_ci95": [
+      -0.08,
+      -0.028888888888888888
+    ],
+    "dialogue_cluster_ci95": [
+      -0.08149897903234954,
+      -0.02843601895734597
+    ],
+    "two_sided_signflip_p": 2.999970000299997e-05,
+    "items": 225,
+    "dialogue_clusters": 177,
+    "seed": 2026101210,
+    "bootstrap_replicates": 10000,
+    "signflip_replicates": 100000,
+    "ITT_denominator_items": 225,
+    "joint_primary_cells": 900,
+    "technical_missing_ITT_rule": "NEGATIVE_H1_CONSERVATIVE_HIGH_SUCCESS_BASELINE_FAILURE",
+    "technical_failure_conservative_effect_bounds": [
+      -0.05333333333333334,
+      -0.05333333333333334
+    ],
+    "complete_case_items": 225,
+    "complete_case_effect": -0.05333333333333334,
+    "post_treatment_selection": false
+  },
+  "boundaries": [
+    "E1 and ERI1 share frozen conflict population but interventions are not calibrated equivalent",
+    "E2 uses 225 distinct consistent items",
+    "No percentage-difference proof of symmetry or asymmetry",
+    "No entropy causal mediation",
+    "No response-guided sigma change"
+  ]
+}

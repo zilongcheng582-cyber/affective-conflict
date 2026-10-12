@@ -1,0 +1,127 @@
+{
+  "experiment": "EMOTIONTALK_E1_VIDEO_DEGRADATION_EXECUTION_V2",
+  "items": 146,
+  "formal_slots": 2336,
+  "official_dialogue_clusters": 134,
+  "source_protocol_sha256": "03d201f1b47d966c853da9270219eda6d4fb81f1026bd7b56ea01ae59ed598f6",
+  "source_manifest_sha256": "d1706059145d881764487da0c2964418d31a43051fe06fcc291e3ef7582aaa34",
+  "model_revision": "ae9e1690543ffd5c0221dc27f79834d0294cba00",
+  "processor_identity": {
+    "PROCESSOR_REVISION_BINDING": "SAME_LOCAL_SNAPSHOT_AS_MODEL",
+    "binding_scope": "Existing local snapshot content identity, supported by retained download commit/etag metadata. Historical calls used this directory; no historical run-time weight checksum was retrospectively invented.",
+    "binding_status": "IMMUTABLE_COMMIT_BOUND",
+    "commit_content_verification": "bindings/HF_COMMIT_CONTENT_VERIFICATION.json",
+    "file_count": 9,
+    "hash_manifest": "PROCESSOR_FILE_HASH_MANIFEST.csv",
+    "hash_manifest_sha256": "e471b7e2830ec4f53ee249b2a6707480858e357b30b4dc1616e718ef6fe18d41",
+    "historical_loading_provenance": "PROCESSOR_LOADING_PROVENANCE.json",
+    "identity_evidence": "bindings/B3_MODEL_PROCESSOR_IDENTITY.json",
+    "identity_status": "IMMUTABLE_HF_COMMIT_RECOVERED",
+    "immutable_revision": "ae9e1690543ffd5c0221dc27f79834d0294cba00",
+    "loading_class": "Qwen2_5OmniProcessor",
+    "loading_method": "from_pretrained(str(MODEL), local_files_only=True)",
+    "local_snapshot_path": "/root/autodl-tmp/affective-conflict/models/Qwen2.5-Omni-7B",
+    "no_download_or_snapshot_update": true,
+    "repo_id": "Qwen/Qwen2.5-Omni-7B",
+    "revision_argument": "NOT_SEPARATELY_PINNED_IN_HISTORICAL_CALL",
+    "trust_remote_code_argument": "NOT_PASSED"
+  },
+  "source_code_commit": "34aa1b0340d906e5d625db7cb4a3def9199fa06e",
+  "conditions": [
+    "BLUR_L1",
+    "BLUR_L2",
+    "BLUR_L3",
+    "CLEAN",
+    "RECODE"
+  ],
+  "arms": [
+    "A_ONLY",
+    "A_THEN_V",
+    "V_ONLY",
+    "V_THEN_A"
+  ],
+  "candidate_scoring_scope": "ALL_FORMAL_ARMS",
+  "source_protocol_reviewed_fields": {
+    "blur": {
+      "algorithm": "FFmpeg gblur",
+      "sigma_native_short_side_fractions": [
+        0.01,
+        0.04,
+        0.12
+      ],
+      "steps": 3,
+      "planes": 15,
+      "sigmaV": "same as sigma",
+      "parameters_selected_before_pilot": true
+    },
+    "encoding": {
+      "codec": "libx264",
+      "crf": 0,
+      "pixel_format": "yuv420p",
+      "preset": "fast",
+      "threads": 1,
+      "timestamp_preservation": "-copyts -vsync 0 -enc_time_base original -video_track_timescale original denominator -movie_timescale original denominator",
+      "audio_tracks": 0,
+      "no_crop_or_resize_or_fps_reduction": true,
+      "encoder_time_base": "original stream time_base; prevents default frame-rate clock rounding for nonzero source PTS",
+      "ffmpeg_binary": "/root/autodl-tmp/affective-conflict-e1-video-v2/tools/ffmpeg",
+      "ffmpeg_sha256": "e7e7fb30477f717e6f55f9180a70386c62677ef8a4d4d1a5d948f4098aa3eb99",
+      "ffmpeg_version": "ffmpeg version 7.0.2-static https://johnvansickle.com/ffmpeg/  Copyright (c) 2000-2024 the FFmpeg developers",
+      "movie_timescale": "original stream time_base denominator; exact MP4 edit-list clock"
+    },
+    "primary": {
+      "contrast": "BLUR_L3 minus RECODE",
+      "endpoints": [
+        "SIDE_V",
+        "SIDE_A",
+        "OTHER"
+      ],
+      "weights": "equal utterance weight, average two presentation orders",
+      "multiplicity": "Holm across three primary two-sided paired sign-flip tests",
+      "bootstrap_replicates": 10000,
+      "signflip_replicates": 100000,
+      "seed": 2026101103,
+      "unit": "utterance paired; official dialogue cluster percentile bootstrap also reported",
+      "fixed_ITT": 146,
+      "technical_missing": "retain every item and report category-wise worst/best effect bounds; complete-case sensitivity secondary; no positive claim unless robust to conservative bounds",
+      "PARSE_FAIL": "separate category, never dropped"
+    },
+    "secondary": {
+      "family": "one Holm family for CLEAN-RECODE three category effects, three category ordinal dose slopes, three category order interactions, V_ONLY correctness and entropy L3-RECODE",
+      "dose_scores": {
+        "RECODE": 0,
+        "BLUR_L1": 1,
+        "BLUR_L2": 2,
+        "BLUR_L3": 3
+      },
+      "transitions": "all category matrices by each order and condition; no outcome-based filtering"
+    },
+    "scoring": "seven frozen candidate sequence teacher-forced probabilities and normalized entropy on every planned slot, preserving generation/scoring/parse as separate statuses; no entropy mediation claim",
+    "statistic_definition": {
+      "base_seed": 2026101103,
+      "endpoint_seed": "base+100+10*fixed_endpoint_index; independent cluster seed+1; signflip seed+2",
+      "bootstrap": "numpy linear percentile, 10000 draws; item equal-weight dialogue ratio bootstrap",
+      "signflip": "100000 two-sided, plus one correction, equality tolerance 1e-14",
+      "primary_alpha": 0.05,
+      "independent_tolerance": 1e-12,
+      "incomplete_ITT": "report worst/best category bounds, complete-case sensitivity; INCONCLUSIVE if primary contrast contains missing generation",
+      "scoring_failure_does_not_delete_valid_generation": true
+    },
+    "decoding": {
+      "do_sample": false,
+      "max_new_tokens": 16,
+      "dtype": "auto (frozen bf16 runtime)",
+      "use_audio_in_video": false,
+      "return_audio": false
+    },
+    "technical_retry": {
+      "max_identical_retries": 1,
+      "only_transient_generation_or_OOM": true,
+      "hard_scoring_parser_identity_or_code_error": "STOP_PRESERVE",
+      "PARSE_FAIL_OR_OTHER_NOT_RETRIED": true
+    }
+  },
+  "protocol_not_modified": true,
+  "ERI1_role": "Historical frozen comparator only; not migrated or modified",
+  "cross_experiment_limit": "E1 conflict choices and E2 consistent shared-label retention are different outcomes/populations; no shared physical-intensity scale, pooled denominator or arithmetic causal decomposition."
+}

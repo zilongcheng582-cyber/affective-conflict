@@ -1,0 +1,26 @@
+{
+  "PRIVATE_ONLY": [
+    "raw audio/video/text",
+    "raw generations and complete attempts",
+    "unreviewed logs/debug output",
+    "complete frozen source protocols containing private path references"
+  ],
+  "private_archive_location": "AutoDL; Windows complete backup explicitly waived",
+  "NOT_PUBLISHED": [
+    "model weights/checkpoints",
+    "environment/cache",
+    "tokens/passwords/private keys",
+    "dataset archives"
+  ],
+  "PUBLIC": [
+    "stable IDs and source labels",
+    "all formal final choices and failure states",
+    "all formal attempt identities/statuses",
+    "ontology candidate numeric scoring and entropy",
+    "media SHA256 and actual frame-contract metadata",
+    "frozen statistics/CI/transitions",
+    "reviewed original analysis/execution code",
+    "independent portable CPU replay"
+  ],
+  "statistical_reproducibility": "Requires actual clean-checkout validation report; no model/media regeneration claim"
+}

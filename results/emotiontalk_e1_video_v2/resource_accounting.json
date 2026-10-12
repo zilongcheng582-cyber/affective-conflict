@@ -1,0 +1,8 @@
+{
+  "gpu": "NVIDIA H20, 97871 MiB, 0 MiB",
+  "formal_active_model_seconds": 15514.99361038208,
+  "formal_generation_calls": 2336,
+  "formal_candidate_scoring_forward_calls": 11680,
+  "pilot_separately_accounted": true,
+  "initial_model_loading_and_release_verification_excluded_from_active_model_seconds": true
+}

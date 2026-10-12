@@ -1,0 +1,356 @@
+{
+  "status": "PASS",
+  "files": 69,
+  "bytes": 11602804,
+  "max_file_bytes": 2345011,
+  "findings": [],
+  "file_hashes": [
+    {
+      "path": "analyses/emotiontalk_e1_video_v2/.gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "path": "analyses/emotiontalk_e1_video_v2/README.md",
+      "bytes": 2578,
+      "sha256": "019954a0200076679531b0ff2f7b14b2b2c06441d791124fc852071ea012175f"
+    },
+    {
+      "path": "analyses/emotiontalk_e1_video_v2/replay.py",
+      "bytes": 9348,
+      "sha256": "4b04019180c2a8ff423ef6b965ff9f61f9df9edfdd98bffbf40b778e0bac1420"
+    },
+    {
+      "path": "analyses/emotiontalk_e1_video_v2/source_archive/e1e2_common.py",
+      "bytes": 2642,
+      "sha256": "2efb6ce6b768a62134d3cb6b93d8d94285a901a25eebbe75e18c3111b480f41e"
+    },
+    {
+      "path": "analyses/emotiontalk_e1_video_v2/source_archive/e1v2_analysis.py",
+      "bytes": 9652,
+      "sha256": "caad68068af557086cdd4fc689eb9802d98d45a339ee96d3ddd0f48e08195a28"
+    },
+    {
+      "path": "analyses/emotiontalk_e1_video_v2/source_archive/e1v2_cpu_contract_test.py",
+      "bytes": 1828,
+      "sha256": "df1510c7534ec8d5f1f2ce32f2aa61b2f7183c1686c94bdef194f60f0eb060bf"
+    },
+    {
+      "path": "analyses/emotiontalk_e1_video_v2/source_archive/e1v2_cpu_gate.py",
+      "bytes": 19014,
+      "sha256": "cfae60f808c0eadc531360d5dc02ba1bf3b2c547a63c83a9e419a14db883a49a"
+    },
+    {
+      "path": "analyses/emotiontalk_e1_video_v2/source_archive/e1v2_parallel_gate.py",
+      "bytes": 980,
+      "sha256": "3f679a2625d28242f616546aa732637163641dba7ca716416a85094468327f7c"
+    },
+    {
+      "path": "analyses/emotiontalk_e1_video_v2/source_archive/e1v2_pipeline.py",
+      "bytes": 14466,
+      "sha256": "10ca1f17c4ec65a9fab78249d8b6a86829d74f57e6c785244dda2f69295a1803"
+    },
+    {
+      "path": "analyses/emotiontalk_e1_video_v2/source_archive/e1v2_runner.py",
+      "bytes": 8307,
+      "sha256": "9fd1f9f31f7ca2c269c134f24bc31e8716ae3a145ca58a3984a06631700a27dc"
+    },
+    {
+      "path": "analyses/emotiontalk_e1_video_v2/source_archive/e1v2_verify.py",
+      "bytes": 9055,
+      "sha256": "ebd233b0d07b6eae0f0eb282f27a7d01a244fc165e3a683012229f9a05263ba6"
+    },
+    {
+      "path": "analyses/emotiontalk_e2_consistent_audio_v1/.gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "path": "analyses/emotiontalk_e2_consistent_audio_v1/README.md",
+      "bytes": 2572,
+      "sha256": "c889ab65d3cb3846c117226e3efbdebc4e347dccd0e94192353772d73de15704"
+    },
+    {
+      "path": "analyses/emotiontalk_e2_consistent_audio_v1/replay.py",
+      "bytes": 151,
+      "sha256": "ded1d4ad9153f2a05756ff4b215d94990606243553a5b372062d22581d03c058"
+    },
+    {
+      "path": "analyses/emotiontalk_e2_consistent_audio_v1/source_archive/e1e2_analysis.py",
+      "bytes": 10028,
+      "sha256": "a38fd4ed1b61d3878b0235b6c89d21f15457572342228fd1987a5d8ec964f781"
+    },
+    {
+      "path": "analyses/emotiontalk_e2_consistent_audio_v1/source_archive/e1e2_common.py",
+      "bytes": 2644,
+      "sha256": "4e1a7bb06b7673e86364301adc5f650f5a2858c442e3c79406d89de26fd1f7cf"
+    },
+    {
+      "path": "analyses/emotiontalk_e2_consistent_audio_v1/source_archive/e1e2_full_runner.py",
+      "bytes": 5003,
+      "sha256": "a278d7e16d3159dc20116a3ca7f4a0fd642627acce729b383f698eb0dd6adcf0"
+    },
+    {
+      "path": "analyses/emotiontalk_e2_consistent_audio_v1/source_archive/e1e2_media_gate.py",
+      "bytes": 9457,
+      "sha256": "3fc58d3c1a2e6ad5f800d85e354335fda80217cfeceaa23b1754a88dc3543633"
+    },
+    {
+      "path": "analyses/emotiontalk_e2_consistent_audio_v1/source_archive/e1e2_pipeline.py",
+      "bytes": 13676,
+      "sha256": "f636aae8a1257e201228a170874379c8b3bdf4ba1725c7985b53908d262230de"
+    },
+    {
+      "path": "analyses/emotiontalk_e2_consistent_audio_v1/source_archive/e1e2_source_gate.py",
+      "bytes": 7122,
+      "sha256": "bbdacde13d6976ccf7333c229a6517de833140b2f5aefdf86eebf6df5ea33984"
+    },
+    {
+      "path": "analyses/emotiontalk_e2_consistent_audio_v1/source_archive/e1e2_verify.py",
+      "bytes": 6458,
+      "sha256": "084383e7b73e3c39c6da476d8263072ec86a42d58cb3679430f488c9cdc3fae5"
+    },
+    {
+      "path": "docs/EMOTIONTALK_E1_E2_INTERVENTION_ARCHIVE.md",
+      "bytes": 885,
+      "sha256": "41cfb360523775fcdb6701838643bf112615003717176fc0110e5ffc49514996"
+    },
+    {
+      "path": "evidence/provenance/emotiontalk_e1_e2_migration_v1/.gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "path": "evidence/provenance/emotiontalk_e1_e2_migration_v1/PRIVATE_PUBLIC_BOUNDARY.json",
+      "bytes": 946,
+      "sha256": "f61a14083b186056b96d5b55b638f6ede3cdcd43dfca87d342b9d4ba06342dcc"
+    },
+    {
+      "path": "evidence/provenance/emotiontalk_e1_e2_migration_v1/PUBLIC_PROJECTION_LINEAGE.csv",
+      "bytes": 67390,
+      "sha256": "7b7dc8cd95b581b53b94189e0c2bceb068eff3cd514651cd13f8398e558eba20"
+    },
+    {
+      "path": "evidence/provenance/emotiontalk_e1_e2_migration_v1/README.md",
+      "bytes": 1254,
+      "sha256": "fd04f4859f26204df984c3e71655f465083e46672eb82a32cd0657c98f92b425"
+    },
+    {
+      "path": "evidence/provenance/emotiontalk_e1_e2_migration_v1/SOURCE_ARCHIVE_SCOPE.json",
+      "bytes": 330,
+      "sha256": "95839e5461cb5465ede8a384ddcc99fb5f107a5c466bab462a2e349bbe94963f"
+    },
+    {
+      "path": "evidence/provenance/emotiontalk_e1_e2_migration_v1/WINDOWS_PRIVATE_DOWNLOAD_WAIVER.json",
+      "bytes": 267,
+      "sha256": "51690bee1c70689778ef6e6d138fc79ea7cb511484c0c8dedf96e4d353cbe0ea"
+    },
+    {
+      "path": "results/emotiontalk_e1_video_v2/.gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "path": "results/emotiontalk_e1_video_v2/README.md",
+      "bytes": 2578,
+      "sha256": "019954a0200076679531b0ff2f7b14b2b2c06441d791124fc852071ea012175f"
+    },
+    {
+      "path": "results/emotiontalk_e1_video_v2/attempts.csv",
+      "bytes": 626698,
+      "sha256": "d686729b036248f439997743904518dcc937f00e7aaa31d05be6ed2035903041"
+    },
+    {
+      "path": "results/emotiontalk_e1_video_v2/candidate_probabilities.csv",
+      "bytes": 2345011,
+      "sha256": "4e6f973cf4144db67dcf9dbba2cd0da1ea6ab7585fc1c07a2d3734217a9b475f"
+    },
+    {
+      "path": "results/emotiontalk_e1_video_v2/category_transitions.csv",
+      "bytes": 74837,
+      "sha256": "18e27110ad29858312ce279ac88cefda6d74cacc7c9a16cff37512913bb76245"
+    },
+    {
+      "path": "results/emotiontalk_e1_video_v2/dose_trajectory.csv",
+      "bytes": 1315,
+      "sha256": "9e2a2bd6eabef86bcd17897083097417700af6116cf448910cc87995f423b079"
+    },
+    {
+      "path": "results/emotiontalk_e1_video_v2/execution_receipt.json",
+      "bytes": 387,
+      "sha256": "cd6897cf9caeaac60510745d22fc4dda8cf89f84f5b6f65cbbc7ddd3962513e5"
+    },
+    {
+      "path": "results/emotiontalk_e1_video_v2/ffmpeg_cpu_regression.json",
+      "bytes": 19198,
+      "sha256": "57826ab8b9fc8a03844b59cdc91a343f9e6fb0eb87467f2228d8d20b0b9287c1"
+    },
+    {
+      "path": "results/emotiontalk_e1_video_v2/full_outcomes.csv",
+      "bytes": 1107872,
+      "sha256": "bfce651f251f1953069fd51dd78f9ddbcb12da80972345da8df611dd4842154e"
+    },
+    {
+      "path": "results/emotiontalk_e1_video_v2/historical_comparison.json",
+      "bytes": 3624,
+      "sha256": "c1ef85078146c32c4a32b5234dd158730eb493afeebfc815ec43aac37040f889"
+    },
+    {
+      "path": "results/emotiontalk_e1_video_v2/independent_verification.json",
+      "bytes": 201,
+      "sha256": "767cbc40da4bd3f7f9cfb6a3a6ed9a0e8d468a21b64e09bb28da1f0351054d72"
+    },
+    {
+      "path": "results/emotiontalk_e1_video_v2/label_transitions.csv",
+      "bytes": 234233,
+      "sha256": "a3396b379e789a5f17b8c2d7e52e6091a4dff833b7b7d235ee1b57f8b06987d4"
+    },
+    {
+      "path": "results/emotiontalk_e1_video_v2/manifest.csv",
+      "bytes": 983929,
+      "sha256": "6a1a1cf54a8c14ec729fcde26cb630e62ac405cfcceb71e03174e8a88ab0bc97"
+    },
+    {
+      "path": "results/emotiontalk_e1_video_v2/order_effects.json",
+      "bytes": 2415,
+      "sha256": "c8c93b178bd6dad1ec3c6c546d3f92149e5d9985992634b5aeb2725b8c473d2d"
+    },
+    {
+      "path": "results/emotiontalk_e1_video_v2/outcome_accounting.csv",
+      "bytes": 2670,
+      "sha256": "65e3b160b00bf6b43ad3cf01ca11dbdbf651839f69d8fafe978eaba53d3a126c"
+    },
+    {
+      "path": "results/emotiontalk_e1_video_v2/pilot_acceptance.json",
+      "bytes": 571,
+      "sha256": "1fa10f4b94db7f8950b1a2c8a46b7c4f9b54b524a05771dfdcdeb61d625fc591"
+    },
+    {
+      "path": "results/emotiontalk_e1_video_v2/pilot_clean_reproduction.csv",
+      "bytes": 6232,
+      "sha256": "c3c3acc3ffc71136f392d6797246a637d701540eb4c63c8f0d0f79f06f276f62"
+    },
+    {
+      "path": "results/emotiontalk_e1_video_v2/protocol.json",
+      "bytes": 6015,
+      "sha256": "0c9b1a329d77038f35cd54624d5d6ea02492a0af21fc9891bd1518f77877d425"
+    },
+    {
+      "path": "results/emotiontalk_e1_video_v2/resource_accounting.json",
+      "bytes": 313,
+      "sha256": "55cb8d0d7dea04272aa52942750e211edb8af054e820aea91c8f0935aa1f3fc5"
+    },
+    {
+      "path": "results/emotiontalk_e1_video_v2/scientific_closure_report.md",
+      "bytes": 11423,
+      "sha256": "d668de355b950efa74c4ff663e15af9e4a68b195d8267ab50d972ad61ce73e0d"
+    },
+    {
+      "path": "results/emotiontalk_e1_video_v2/scientific_report.md",
+      "bytes": 8067,
+      "sha256": "a39e2d9446c9403aa4b5b2e856975c088048d6823a896c249c6b6b7daf3cb25a"
+    },
+    {
+      "path": "results/emotiontalk_e1_video_v2/scientific_results.json",
+      "bytes": 7471,
+      "sha256": "ce308c28da312a84b15f99bd8952db957d79e322aada90140c3d0d8c872c2676"
+    },
+    {
+      "path": "results/emotiontalk_e1_video_v2/visual_input_contract.csv",
+      "bytes": 791396,
+      "sha256": "6d1992caf3f7fc872f23f9bf04495626e62899eb3fbbfe9a1c8d63b2df35a899"
+    },
+    {
+      "path": "results/emotiontalk_e2_consistent_audio_v1/.gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "path": "results/emotiontalk_e2_consistent_audio_v1/README.md",
+      "bytes": 2572,
+      "sha256": "c889ab65d3cb3846c117226e3efbdebc4e347dccd0e94192353772d73de15704"
+    },
+    {
+      "path": "results/emotiontalk_e2_consistent_audio_v1/attempts.csv",
+      "bytes": 945556,
+      "sha256": "2226878e8306260871cbb3bb38bcf2f7b36fbf07ddaa97331f12369b45022f8b"
+    },
+    {
+      "path": "results/emotiontalk_e2_consistent_audio_v1/audio_manipulation_check.md",
+      "bytes": 1114,
+      "sha256": "e8b3669a997ad4e01d023014360d5e4b814aa98f0c7c853d5ddc319bcd69488f"
+    },
+    {
+      "path": "results/emotiontalk_e2_consistent_audio_v1/candidate_probabilities.csv",
+      "bytes": 1106597,
+      "sha256": "022426d3ce20bf4714bd2748cb17b0ccff35ebe21a468a9498da6f4144fe2390"
+    },
+    {
+      "path": "results/emotiontalk_e2_consistent_audio_v1/category_transitions.csv",
+      "bytes": 4468,
+      "sha256": "f0709abf1e1308cce506632b917e736431932a1f813f6fe42f9cf37b688d5eca"
+    },
+    {
+      "path": "results/emotiontalk_e2_consistent_audio_v1/descriptive_strata.csv",
+      "bytes": 9922,
+      "sha256": "0bf63a7529eb0ffe529d574e981365c7e7d70a2f13c03b692935fc97ee564834"
+    },
+    {
+      "path": "results/emotiontalk_e2_consistent_audio_v1/execution_receipt.json",
+      "bytes": 443,
+      "sha256": "7054619f11a5087dbea5b4f4d7a76aa769431de2d484488fd687d2ad97bea1b3"
+    },
+    {
+      "path": "results/emotiontalk_e2_consistent_audio_v1/full_outcomes.csv",
+      "bytes": 1594623,
+      "sha256": "bee95a4a6590c0c73f8ace896ece3275a6620aea60531b78df9e038c76ec7c33"
+    },
+    {
+      "path": "results/emotiontalk_e2_consistent_audio_v1/historical_e1_failed_gate.json",
+      "bytes": 1413,
+      "sha256": "bce94488dd9b35ba436de2b7ebe70a20f0501b8a6733ebfba59aa5466cf8d2fd"
+    },
+    {
+      "path": "results/emotiontalk_e2_consistent_audio_v1/independent_verification.json",
+      "bytes": 149,
+      "sha256": "52b5deaac324df0069543e2813f6422125efabe3fb2bc0d72563b823778e1d8e"
+    },
+    {
+      "path": "results/emotiontalk_e2_consistent_audio_v1/manifest.csv",
+      "bytes": 1471807,
+      "sha256": "d993aab9197be9e8e4af639fe263903227729a6068fb9324b46b63456ca27064"
+    },
+    {
+      "path": "results/emotiontalk_e2_consistent_audio_v1/outcome_accounting.csv",
+      "bytes": 2130,
+      "sha256": "6662f43fdf61970931ae76734573ac75b968366c5c8de59b633bc23a317933ed"
+    },
+    {
+      "path": "results/emotiontalk_e2_consistent_audio_v1/protocol.json",
+      "bytes": 4205,
+      "sha256": "014bce3466b85e73297fa57402e7aa63361be4849f698e07daa49fc798cec813"
+    },
+    {
+      "path": "results/emotiontalk_e2_consistent_audio_v1/scientific_report.md",
+      "bytes": 557,
+      "sha256": "7ac94ac31375cb73bc22244138eee60eab11d5740654e616ce020fbf9f89f78f"
+    },
+    {
+      "path": "results/emotiontalk_e2_consistent_audio_v1/scientific_results.json",
+      "bytes": 6164,
+      "sha256": "8d56852b9d35e61711ca8894b481f6b802b94f5cecb1125465c223a0800a6928"
+    },
+    {
+      "path": "results/emotiontalk_e2_consistent_audio_v1/source_e2_scientific_closure_report.md",
+      "bytes": 8017,
+      "sha256": "20f24d9eecdbf414feb54439bae0ed3100b91fc431ce642a72607fbf7cb38b6a"
+    },
+    {
+      "path": "results/emotiontalk_e2_consistent_audio_v1/source_independent_recomputation.csv",
+      "bytes": 518,
+      "sha256": "e12b966c60654bfda6c52eb4d3640adbefdc42fb3af3f305819c670f4928f3d1"
+    }
+  ],
+  "GPU_calls": 0,
+  "review_scope": "Secret/PII patterns, restricted structured fields, file types/sizes and Python parsing. Raw media/text/generation excluded by reviewed allowlists; source path/hash metadata retained."
+}
